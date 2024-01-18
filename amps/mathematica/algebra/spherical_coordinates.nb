@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5351,        132]
+NotebookOptionsPosition[      5001,        118]
+NotebookOutlinePosition[      5398,        134]
+CellTagsIndexPosition[      5355,        131]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{
+   "x", ",", " ", "y", ",", " ", "z", ",", " ", "v", ",", " ", "spherical"}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"options", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", "2"}], ",", 
+      RowBox[{"1", "/", "3"}], ",", 
+      RowBox[{"1", "/", "4"}], ",", 
+      RowBox[{"1", "/", "5"}], ",", 
+      RowBox[{"1", "/", "7"}], ",", "2", ",", " ", "3", ",", " ", "4", ",", 
+      " ", "5", ",", " ", "6", ",", " ", "7", ",", " ", "8", ",", " ", "9", 
+      ",", " ", "10", ",", " ", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "4", "]"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "5", "]"}]}], ",", 
+      RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+      RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+      RowBox[{"Sqrt", "[", "4", "]"}], ",", 
+      RowBox[{"Sqrt", "[", "5", "]"}], ",", " ", "Pi"}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "10000"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", "50000"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", "options", "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"y", "=", 
+     RowBox[{"RandomChoice", "[", "options", "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"z", "=", 
+     RowBox[{"RandomChoice", "[", "options", "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"v", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", "y", ",", " ", "z"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"spherical", " ", "=", " ", 
+     RowBox[{"ToSphericalCoordinates", "[", "v", "]"}]}], ";", 
+    "\[IndentingNewLine]", "\n", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/spherical_coordinates/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nConvert the following vector to spherical coordinates \
+$(x, y, z) = (\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "x", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<, \>\"", " ", "<>", "  ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "y", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<, \>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "z", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<)$\>\""}], ",", " ", "\[IndentingNewLine]", "\"\<Answer:\>\"", 
+        ",", " ", 
+        RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "spherical", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.81829535289909*^9, 3.8182954338560467`*^9}, {
+   3.818295486726039*^9, 3.818295527009115*^9}, {3.818295578532798*^9, 
+   3.8182957782618923`*^9}, {3.8183424272782497`*^9, 3.81834244468084*^9}, {
+   3.8183425199288187`*^9, 3.818342577633747*^9}, {3.818342624098048*^9, 
+   3.81834269372431*^9}, {3.818342890130205*^9, 3.818342907945835*^9}, {
+   3.818342952189973*^9, 3.818342955347266*^9}, {3.8183430213564377`*^9, 
+   3.818343170641333*^9}, {3.8183432106259203`*^9, 3.818343233131407*^9}, {
+   3.818343354969613*^9, 3.818343693321755*^9}, {3.818343741266302*^9, 
+   3.818343757525172*^9}, {3.818343789366783*^9, 3.818343936846263*^9}, 
+   3.818344009378625*^9, {3.818344505031809*^9, 3.818344521861948*^9}, {
+   3.818345392202031*^9, 3.81834541337024*^9}, {3.818345740905284*^9, 
+   3.8183460738042803`*^9}, {3.818346277007291*^9, 3.818346277982114*^9}, {
+   3.8183467699526176`*^9, 3.81834683585282*^9}, {3.818346878588751*^9, 
+   3.8183470324600973`*^9}, {3.818379204911439*^9, 3.8183792439215803`*^9}, {
+   3.8183869245852823`*^9, 3.818386925319161*^9}, {3.818391288616006*^9, 
+   3.8183912889193277`*^9}, {3.8185625424274883`*^9, 
+   3.818562554314526*^9}},ExpressionUUID->"e04666ad-f29c-45fc-8f13-\
+d3a4cf4fa2fe"]
+},
+WindowSize->{1920, 1035},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a7f019c3-4910-4c03-9b00-cbb4b70e827b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4439, 96, 367, "Input",ExpressionUUID->"e04666ad-f29c-45fc-8f13-d3a4cf4fa2fe"]
+}
+]
+*)
+

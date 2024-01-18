@@ -1,0 +1,220 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8588,        212]
+NotebookOptionsPosition[      7704,        189]
+NotebookOutlinePosition[      8217,        208]
+CellTagsIndexPosition[      8174,        205]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "5000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"4", ",", "8"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", 
+           RowBox[{"1", "/", "4"}], ",", 
+           RowBox[{"1", "/", "5"}], ",", 
+           RowBox[{"1", "/", "7"}], ",", 
+           RowBox[{"1", "/", "8"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"tmplist", " ", "=", " ", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "0"}], ",", 
+      RowBox[{"j", "<", "d"}], ",", 
+      RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"tmplist", " ", "=", " ", 
+        RowBox[{"Append", "[", 
+         RowBox[{"tmplist", ",", " ", 
+          RowBox[{"Round", "[", 
+           RowBox[{
+            RowBox[{"RandomReal", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+            "roundbasis"}], "]"}]}], "]"}]}], ";"}]}], "\[IndentingNewLine]", 
+     "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"numsamples", " ", "=", " ", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"20", ",", "30"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    
+    RowBox[{"list", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"tmplist", ",", " ", "numsamples"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"sol", " ", "=", " ", 
+     RowBox[{"Quiet", "[", 
+      RowBox[{"TeXForm", "[", 
+       RowBox[{"WolframAlpha", "[", 
+        RowBox[{
+         RowBox[{"\"\<Commonest[\>\"", "<>", " ", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"list", ",", "InputForm"}], "]"}], "<>", " ", 
+          "\"\<]\>\""}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"\"\<Result\>\"", ",", "2"}], "}"}], ",", 
+           "\"\<Content\>\""}], "}"}], ",", 
+         RowBox[{"PodStates", "\[Rule]", 
+          RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}]}], 
+        "]"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/counting_\
+and_statistics/mode/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nCompute the mode of $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", "list"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", "\"\<Answer:\>\"", ",", "sol"}], "}"}]}], 
+     "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8180908897843757`*^9, 3.8180908912869267`*^9}, {
+   3.818095257768118*^9, 3.8180954562297707`*^9}, {3.818095494539888*^9, 
+   3.818095498294013*^9}, {3.8180955399770813`*^9, 3.818095542238579*^9}, {
+   3.818096014851427*^9, 3.818096091537348*^9}, {3.818096182288501*^9, 
+   3.8180962886406374`*^9}, {3.8180963797275257`*^9, 3.818096417786272*^9}, {
+   3.8180964805609508`*^9, 3.8180965380561867`*^9}, {3.818096618499465*^9, 
+   3.818096618904733*^9}, {3.818096663723186*^9, 3.8180966676066856`*^9}, {
+   3.818096783420518*^9, 3.81809678478095*^9}, {3.8180968803635855`*^9, 
+   3.818096903581445*^9}, 3.8180969594555483`*^9, {3.818097992887192*^9, 
+   3.8180980201521683`*^9}, {3.818347151253566*^9, 3.818347213259348*^9}, 
+   3.818348455460208*^9, {3.81837497740064*^9, 3.8183749776554737`*^9}, {
+   3.818523284750983*^9, 3.818523333645061*^9}, 3.8185235870332212`*^9, {
+   3.8185239281591*^9, 3.818523928304886*^9}, {3.81852396831454*^9, 
+   3.818523978126368*^9}, {3.818524054061756*^9, 3.8185240545491867`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"1a028f2a-0c0f-43ca-a016-ea87421330dd"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$7755664\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$7755664\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 13, 45, 
+   32934026325188850703, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185236437804747`*^9, 3.818523867051117*^9, 
+  3.818523931841296*^9, 3.818534114111885*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"44603cd7-f77c-4df0-a756-44a62ecffc70"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$7755768\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$7755768\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 13, 46, 
+   32934026325188850703, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185236437804747`*^9, 3.818523867051117*^9, 
+  3.818523931841296*^9, 3.818534114329129*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"12d37c45-d57a-4ac0-b0c1-0ffbe13edacb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$7755892\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$7755892\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 13, 47, 
+   32934026325188850703, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185236437804747`*^9, 3.818523867051117*^9, 
+  3.818523931841296*^9, 3.818534114399737*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"3f44d8fb-06a3-4e14-96b1-2541eec23241"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Set\\\", \\\"::\\\", \\\
+\"shape\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 13, 48, 32934026325188850703, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185236437804747`*^9, 3.818523867051117*^9, 
+  3.818523931841296*^9, 3.818534114414608*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"385f3c60-31b0-4e42-ba35-f2363310cb8d"]
+}, Open  ]]
+},
+Evaluator->"Kernel2",
+WindowSize->{808, 857},
+WindowMargins->{{535, Automatic}, {Automatic, 0}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3b6aa300-c1bc-4540-b415-bf5ae86e7482"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4399, 100, 430, "Input",ExpressionUUID->"1a028f2a-0c0f-43ca-a016-ea87421330dd"],
+Cell[4982, 124, 725, 15, 39, "Message",ExpressionUUID->"44603cd7-f77c-4df0-a756-44a62ecffc70"],
+Cell[5710, 141, 725, 15, 39, "Message",ExpressionUUID->"12d37c45-d57a-4ac0-b0c1-0ffbe13edacb"],
+Cell[6438, 158, 725, 15, 39, "Message",ExpressionUUID->"3f44d8fb-06a3-4e14-96b1-2541eec23241"],
+Cell[7166, 175, 522, 11, 24, "Message",ExpressionUUID->"385f3c60-31b0-4e42-ba35-f2363310cb8d"]
+}, Open  ]]
+}
+]
+*)
+

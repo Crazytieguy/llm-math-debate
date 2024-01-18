@@ -1,0 +1,460 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19389,        452]
+NotebookOptionsPosition[     19013,        437]
+NotebookOutlinePosition[     19433,        454]
+CellTagsIndexPosition[     19390,        451]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{
+     "x", ",", "y", ",", "a", ",", "b", ",", "c", ",", "d", ",", "e", ",", 
+      "r", ",", "poly"}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"coeffs", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+          RowBox[{"{", "5", "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"coeffs", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "*", 
+           RowBox[{"coeffs", "[", 
+            RowBox[{"[", "5", "]"}], "]"}]}], ">", "0"}], " ", "&&", " ", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"coeffs", "[", 
+            RowBox[{"[", "2", "]"}], "]"}], "*", 
+           RowBox[{"coeffs", "[", 
+            RowBox[{"[", "5", "]"}], "]"}]}], ">", "0"}]}], " ", ")"}], "||", 
+       
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Norm", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"coeffs", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], ",", 
+              RowBox[{"coeffs", "[", 
+               RowBox[{"[", "3", "]"}], "]"}]}], "}"}], ",", "Infinity"}], 
+           "]"}], "\[Equal]", "0"}], "||", 
+         RowBox[{
+          RowBox[{"Norm", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"coeffs", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], ",", 
+              RowBox[{"coeffs", "[", 
+               RowBox[{"[", "4", "]"}], "]"}]}], "}"}], ",", "Infinity"}], 
+           "]"}], "\[Equal]", "0"}], "||", 
+         RowBox[{
+          RowBox[{"Norm", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"coeffs", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], ",", 
+              RowBox[{"coeffs", "[", 
+               RowBox[{"[", "2", "]"}], "]"}]}], "}"}], ",", "Infinity"}], 
+           "]"}], "\[Equal]", "0"}], "||", 
+         RowBox[{
+          RowBox[{"coeffs", "[", 
+           RowBox[{"[", "5", "]"}], "]"}], "\[Equal]", "0"}]}], ")"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "*", 
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], ">", "0"}], "  ", "&&", "  ", 
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "!=", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}]}], ",", 
+      RowBox[{"(*", " ", 
+       RowBox[{"if", " ", "ellipse"}], " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"If", " ", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"coeffs", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "<", "0"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"coeffs", "=", 
+           RowBox[{"coeffs", "*", 
+            RowBox[{"-", "1"}]}]}], ";"}]}], " ", 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{"multiply", " ", "by"}], " ", "-", 
+          RowBox[{
+          "1", " ", "so", " ", "the", " ", "properties", " ", "fnctn", " ", 
+           "works"}]}], "*)"}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"expression", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "*", 
+       RowBox[{"x", "^", "2"}]}], "+", 
+      RowBox[{
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "*", 
+       RowBox[{"y", "^", "2"}]}], "+", 
+      RowBox[{
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "3", "]"}], "]"}], "*", "x"}], "+", 
+      RowBox[{
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "4", "]"}], "]"}], "*", "y"}], "+", 
+      RowBox[{"coeffs", "[", 
+       RowBox[{"[", "5", "]"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"problemstr", "=", 
+     RowBox[{"\"\<Problem:\\nGiven the equation $\>\"", "<>", 
+      RowBox[{"ToString", "[", 
+       RowBox[{"TeXForm", "[", 
+        RowBox[{"TraditionalForm", "[", 
+         RowBox[{"expression", "\[Equal]", "0"}], "]"}], "]"}], "]"}], " ", 
+      "<>", "\"\<$, rewrite and classify the conic and state relevant \
+properties.\>\""}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"eqn", "=", 
+     RowBox[{"AddSides", "[", 
+      RowBox[{
+       RowBox[{"expression", "\[Equal]", "0"}], ",", 
+       RowBox[{"-", 
+        RowBox[{"First", "@", "expression"}]}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"poly", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"ResourceFunction", "[", "\"\<CompleteTheSquare\>\"", "]"}], 
+      "[", 
+      RowBox[{"eqn", ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"poly", "=", 
+     RowBox[{"AddSides", "[", 
+      RowBox[{
+       RowBox[{"poly", "\[Equal]", "0"}], ",", 
+       RowBox[{"-", 
+        RowBox[{"First", "@", "poly"}]}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ",", 
+      RowBox[{"(*", " ", "circle", " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"properties", "=", 
+        RowBox[{
+         RowBox[{"ResourceFunction", "[", "\"\<CircleProperties\>\"", "]"}], 
+         "[", 
+         RowBox[{"poly", ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{
+        "problemstr", "<>", 
+         "\"\<\\nAnswer:\\nClassification: Circle\\nEquation: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"TraditionalForm", "[", "poly", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\\nRadius: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Radius\>\"", "]"}], "]"}], "]"}], "<>",
+          "\[IndentingNewLine]", "\"\<$\\nCircumference: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Circumference\>\"", "]"}], "]"}], 
+          "]"}], "<>", "\[IndentingNewLine]", "\"\<$\\nCenter: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Center\>\"", "]"}], "]"}], "]"}], "<>",
+          "\[IndentingNewLine]", "\"\<$\\nArea Enclosed: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<AreaEnclosed\>\"", "]"}], "]"}], 
+          "]"}], " ", "<>", "\"\<$\>\""}]}]}]}], "\[IndentingNewLine]", "]"}],
+     ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"Xor", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "0"}]}], "]"}], ",", 
+      " ", 
+      RowBox[{"(*", " ", "parabola", " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"properties", "=", 
+        RowBox[{
+         RowBox[{"ResourceFunction", "[", "\"\<ParabolaProperties\>\"", "]"}],
+          "[", 
+         RowBox[{"poly", ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{
+        "problemstr", "<>", 
+         "\"\<\\nAnswer:\\nClassification: Parabola\\nEquation: $\>\"", "<>", 
+         
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"TraditionalForm", "[", "eqn", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\\nVertex: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Vertex\>\"", "]"}], "]"}], "]"}], "<>",
+          "\[IndentingNewLine]", "\"\<$\\nDirectrix: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Directrix\>\"", "]"}], "]"}], 
+          "]"}], "<>", "\[IndentingNewLine]", 
+         "\"\<$\\nFocal Parameter: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<FocalParameter\>\"", "]"}], "]"}], 
+          "]"}], "<>", "\[IndentingNewLine]", "\"\<$\\nFocus: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Focus\>\"", "]"}], "]"}], "]"}], 
+         " ", "<>", "\"\<$\>\""}]}]}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "*", 
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], ">", "0"}], "  ", "&&", "  ", 
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "!=", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}]}], ",", 
+      RowBox[{"(*", " ", "ellipse", " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"If", " ", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"coeffs", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "<", "0"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"poly", "=", 
+           RowBox[{"poly", "*", 
+            RowBox[{"-", "1"}]}]}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"properties", "=", 
+        RowBox[{
+         RowBox[{"ResourceFunction", "[", "\"\<EllipseProperties\>\"", "]"}], 
+         "[", 
+         RowBox[{"poly", ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{
+        "problemstr", "<>", 
+         "\"\<\\nAnswer:\\nClassification: Ellipse\\nEquation: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"TraditionalForm", "[", "poly", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\\nFoci: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Foci\>\"", "]"}], "]"}], "]"}], "<>",
+          "\[IndentingNewLine]", "\"\<$\\nEccentricity: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Eccentricity\>\"", "]"}], "]"}], 
+          "]"}], "<>", "\[IndentingNewLine]", "\"\<$\\nCenter: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Center\>\"", "]"}], "]"}], "]"}], "<>",
+          "\[IndentingNewLine]", "\"\<$\\nArea Enclosed: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<AreaEnclosed\>\"", "]"}], "]"}], 
+          "]"}], " ", "<>", "\"\<$\>\""}]}]}]}], "\[IndentingNewLine]", "]"}],
+     ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "*", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], "<", "0"}], ",", 
+      RowBox[{"(*", " ", "hyperbola", " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"properties", "=", 
+        RowBox[{
+         RowBox[{
+         "ResourceFunction", "[", "\"\<HyperbolaProperties\>\"", "]"}], "[", 
+         RowBox[{"poly", ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{
+        "problemstr", "<>", 
+         "\"\<\\nAnswer:\\nClassification: Hyperbola\\nEquation: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"TraditionalForm", "[", "poly", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\\nFoci: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Foci\>\"", "]"}], "]"}], "]"}], "<>",
+          "\[IndentingNewLine]", "\"\<$\\nEccentricity: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Eccentricity\>\"", "]"}], "]"}], 
+          "]"}], "<>", "\[IndentingNewLine]", "\"\<$\\nCenter: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Center\>\"", "]"}], "]"}], "]"}], "<>",
+          "\[IndentingNewLine]", "\"\<$\\nAsymptotes: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"properties", "[", "\"\<Asymptotes\>\"", "]"}], "]"}], 
+          "]"}], " ", "<>", "\"\<$\>\""}]}]}]}], "\[IndentingNewLine]", "]"}],
+     ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/algebra/conic_sections/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", "problemstr", "}"}]}], "]"}], ";"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818088020729041*^9, 3.818088022337034*^9}, 
+   3.8180900627643337`*^9, {3.8180901458167467`*^9, 3.818090204390074*^9}, {
+   3.818090277239903*^9, 3.818090278596499*^9}, {3.818109286300799*^9, 
+   3.8181095775787983`*^9}, {3.818109661285657*^9, 3.818109700994337*^9}, {
+   3.8181098626014423`*^9, 3.818109884752819*^9}, {3.81835016322571*^9, 
+   3.818350202759252*^9}, {3.818350250935178*^9, 3.8183502581426563`*^9}, 
+   3.818350292223682*^9, {3.818356153221096*^9, 3.818356155261098*^9}, {
+   3.8183562918490343`*^9, 3.818356305615864*^9}, {3.818356347695128*^9, 
+   3.818356347901265*^9}, {3.8183564819549303`*^9, 3.818356537481657*^9}, {
+   3.818356599111539*^9, 3.818356646478384*^9}, {3.818356717143536*^9, 
+   3.81835676346887*^9}, {3.818356823105893*^9, 3.81835682554536*^9}, {
+   3.818356862137166*^9, 3.8183568840877037`*^9}, {3.818356931510618*^9, 
+   3.818356953517606*^9}, {3.818356990933113*^9, 3.818357011491934*^9}, {
+   3.818357086450629*^9, 3.818357119608223*^9}, {3.818357150400889*^9, 
+   3.8183571532001867`*^9}, {3.818357249333083*^9, 3.818357290970701*^9}, {
+   3.818357328483601*^9, 3.818357341899427*^9}, {3.8183573778822327`*^9, 
+   3.818357451255336*^9}, {3.8183575246217813`*^9, 3.818357559564764*^9}, {
+   3.8183576040988398`*^9, 3.81835779082269*^9}, {3.818357824709549*^9, 
+   3.8183579052261744`*^9}, {3.818357953720792*^9, 3.818358015676086*^9}, {
+   3.818358081333482*^9, 3.818358088196116*^9}, {3.818358272190832*^9, 
+   3.8183582928316183`*^9}, {3.818358368604368*^9, 3.8183583965312023`*^9}, {
+   3.818358479823844*^9, 3.818358553719317*^9}, {3.818358820446159*^9, 
+   3.818358834260318*^9}, {3.8183588790436583`*^9, 3.818358918007702*^9}, {
+   3.818358948185164*^9, 3.818358957288563*^9}, {3.8183589882087717`*^9, 
+   3.818359120431857*^9}, {3.818359157906694*^9, 3.818359161248337*^9}, {
+   3.818359220152952*^9, 3.8183592203034077`*^9}, {3.8183592512943487`*^9, 
+   3.8183593596911716`*^9}, {3.818359395841092*^9, 3.818359446384069*^9}, {
+   3.8183607618039722`*^9, 3.818360768533484*^9}, {3.818361226242928*^9, 
+   3.81836126169661*^9}, {3.818361296545001*^9, 3.818361638766732*^9}, {
+   3.818361729830016*^9, 3.818361732251786*^9}, {3.818361783307253*^9, 
+   3.81836181788239*^9}, 3.818362737125401*^9, {3.818363847218672*^9, 
+   3.818363910532529*^9}, {3.8183639895250607`*^9, 3.818364088151836*^9}, {
+   3.818364353427054*^9, 3.8183644843258867`*^9}, {3.818364797418192*^9, 
+   3.8183649371677523`*^9}, {3.8183650198139963`*^9, 3.818365059571742*^9}, {
+   3.818365143734516*^9, 3.81836529281804*^9}, {3.81836532915322*^9, 
+   3.818365406822585*^9}, {3.818365444060787*^9, 3.8183654962769003`*^9}, {
+   3.81836553878647*^9, 3.818365604425002*^9}, 3.8183666567635527`*^9, {
+   3.8183666904342957`*^9, 3.818366713817605*^9}, {3.818366805063491*^9, 
+   3.8183668094949503`*^9}, {3.818366863468248*^9, 3.818366875722575*^9}, {
+   3.818366911155435*^9, 3.8183669147872553`*^9}, {3.818366985435671*^9, 
+   3.818366990426009*^9}, {3.8183670451335897`*^9, 3.818367099865954*^9}, {
+   3.818367161114797*^9, 3.818367196478397*^9}, {3.818367307188356*^9, 
+   3.818367312713743*^9}, {3.818367359816958*^9, 3.818367360839945*^9}, {
+   3.8183674234865303`*^9, 3.818367480427578*^9}, {3.818367586472148*^9, 
+   3.818367597264255*^9}, {3.8183676289502573`*^9, 3.81836763662961*^9}, {
+   3.8183677794654417`*^9, 3.818367802087105*^9}, {3.818367887020563*^9, 
+   3.8183679794095507`*^9}, {3.818368035185689*^9, 3.818368038446197*^9}, {
+   3.818368078398366*^9, 3.818368145827001*^9}, {3.818368210087968*^9, 
+   3.818368291196752*^9}, {3.818368339455985*^9, 3.8183683796688547`*^9}, {
+   3.818368423735078*^9, 3.818368425263698*^9}, {3.818368488787225*^9, 
+   3.818368509276767*^9}, {3.818385923578642*^9, 3.8183859242010927`*^9}, {
+   3.8184797977449083`*^9, 3.818479800655629*^9}, {3.8185235361572857`*^9, 
+   3.8185235368075027`*^9}, {3.81855329897305*^9, 3.81855330084956*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"c9931fc0-c619-4e6c-9b8e-ab109a109301"]
+},
+Evaluator->"Kernel7",
+WindowSize->{808, 857},
+WindowMargins->{{481, Automatic}, {Automatic, 20}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d440e080-3222-4e5c-bae4-59fed5361f94"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 18451, 415, 1501, "Input",ExpressionUUID->"c9931fc0-c619-4e6c-9b8e-ab109a109301"]
+}
+]
+*)
+

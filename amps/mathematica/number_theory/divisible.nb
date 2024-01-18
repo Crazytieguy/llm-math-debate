@@ -1,0 +1,113 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3852,        105]
+NotebookOptionsPosition[      3501,         91]
+NotebookOutlinePosition[      3899,        107]
+CellTagsIndexPosition[      3856,        104]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"n", ",", "m"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"Delete", "[", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "49"}], ",", "49"}], "]"}], ",", "50"}], "]"}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"m", " ", "=", 
+     RowBox[{
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"Abs", "[", "n", "]"}]}], "*", "50"}], ",", 
+         RowBox[{
+          RowBox[{"Abs", "[", "n", "]"}], "*", "50"}]}], "}"}], "]"}], "*", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", " ", 
+         RowBox[{"Product", "[", 
+          RowBox[{
+           RowBox[{"First", "[", "j", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"j", ",", 
+             RowBox[{"FactorInteger", "[", "n", "]"}]}], "}"}]}], "]"}], ",", 
+         "n"}], "}"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/divisible/\>\"", "<>", 
+       
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nDetermine whether $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+        "\"\<$ is divisible by $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "n", "]"}], "]"}], "<>", 
+        "\"\<$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"Divisible", "[", 
+           RowBox[{"m", ",", "n"}], "]"}], "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818090886788056*^9, 3.818090958960476*^9}, {
+  3.818092472453302*^9, 3.818092579229979*^9}, {3.818092609323649*^9, 
+  3.818092616982016*^9}, {3.81809274147688*^9, 3.818092746428862*^9}, {
+  3.818092803221058*^9, 3.81809280454242*^9}, {3.818092878679048*^9, 
+  3.8180929089108267`*^9}, {3.8180930244680157`*^9, 3.818093035805162*^9}, {
+  3.8180930761926527`*^9, 3.818093108907591*^9}, {3.818093175977071*^9, 
+  3.818093183380062*^9}, {3.818093389314501*^9, 3.818093432372789*^9}, {
+  3.818295538658236*^9, 3.8182955466490107`*^9}, {3.818295614695118*^9, 
+  3.818295737812532*^9}, {3.818372460445978*^9, 3.818372460731675*^9}, {
+  3.818550096381785*^9, 3.818550099299364*^9}, {3.818550134201066*^9, 
+  3.8185501351005363`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"d86a452c-f739-4935-b73f-b4fc2dc9d77f"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 482}, {37, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"bc3f57cc-d257-4441-a5e7-e2e955d46210"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2939, 69, 199, "Input",ExpressionUUID->"d86a452c-f739-4935-b73f-b4fc2dc9d77f"]
+}
+]
+*)
+

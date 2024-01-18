@@ -1,0 +1,164 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5753,        156]
+NotebookOptionsPosition[      5126,        139]
+NotebookOutlinePosition[      5524,        155]
+CellTagsIndexPosition[      5481,        152]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Get the _sample_ variance.", "Text",
+ CellChangeTimes->{{3.8180971596294937`*^9, 
+  3.818097172221459*^9}},ExpressionUUID->"249599dd-46e9-463b-96d6-\
+38633b779c18"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "30000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"d", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "0"}], ",", 
+      RowBox[{"j", "<", "d"}], ",", 
+      RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"list", " ", "=", " ", 
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", " ", 
+          RowBox[{"RandomInteger", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "15"}], ",", "15"}], "}"}], "]"}]}], "]"}]}], 
+       ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/counting_and_statistics/variance_and_\
+std/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nCompute the sample variance of $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", "list"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Variance", "[", "list", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818096952852516*^9, 3.818097013590309*^9}, 
+   3.818097208186442*^9, {3.818349759707807*^9, 3.8183498168511963`*^9}, {
+   3.818349897993286*^9, 3.81834989932789*^9}, {3.818374861371463*^9, 
+   3.818374861618804*^9}, {3.818560514272952*^9, 
+   3.818560525844894*^9}},ExpressionUUID->"3b04b101-0a89-40ef-8788-\
+146af505ee3e"],
+
+Cell["Get the _sample_ standard deviation.", "Text",
+ CellChangeTimes->{{3.8180971596294937`*^9, 
+  3.8180971816846857`*^9}},ExpressionUUID->"9b3ea424-679b-49a7-8ba4-\
+18ec5dcf6f6f"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "30000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"d", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "0"}], ",", 
+      RowBox[{"j", "<", "d"}], ",", 
+      RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"list", " ", "=", " ", 
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", " ", 
+          RowBox[{"RandomInteger", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "15"}], ",", "15"}], "}"}], "]"}]}], "]"}]}], 
+       ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/counting_and_statistics/variance_and_\
+std/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nCompute the sample standard deviation of $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", "list"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"StandardDeviation", "[", "list", "]"}], "]"}], "]"}], 
+         "<>", "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818097227758265*^9, 3.818097240650914*^9}, {
+  3.8183497997798634`*^9, 3.818349815635832*^9}, {3.818349901472664*^9, 
+  3.8183499026398897`*^9}, {3.818374864162635*^9, 3.8183748675232897`*^9}, {
+  3.818560520968278*^9, 
+  3.8185605285685883`*^9}},ExpressionUUID->"faccdf7e-21a0-4d27-b6db-\
+9041cfaae6b7"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 511}, {24, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2a50f101-ec9c-431b-a1e8-021de9fb6aba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 170, 3, 35, "Text",ExpressionUUID->"249599dd-46e9-463b-96d6-38633b779c18"],
+Cell[731, 25, 2097, 52, 241, "Input",ExpressionUUID->"3b04b101-0a89-40ef-8788-146af505ee3e"],
+Cell[2831, 79, 182, 3, 35, "Text",ExpressionUUID->"9b3ea424-679b-49a7-8ba4-18ec5dcf6f6f"],
+Cell[3016, 84, 2106, 53, 262, "Input",ExpressionUUID->"faccdf7e-21a0-4d27-b6db-9041cfaae6b7"]
+}
+]
+*)
+

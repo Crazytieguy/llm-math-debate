@@ -1,0 +1,430 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18980,        422]
+NotebookOptionsPosition[     18378,        404]
+NotebookOutlinePosition[     18836,        422]
+CellTagsIndexPosition[     18793,        419]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8181204959190626`*^9, 3.8181204970460615`*^9}, {
+  3.8181211772273693`*^9, 
+  3.8181211796874104`*^9}},ExpressionUUID->"69652b88-c7df-42f5-b73c-\
+0d8de93faaf1"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{
+   "f", ",", "g", ",", "a", ",", " ", "factored", ",", " ", "expanded", ",", 
+    "x"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", " ", "=", " ", "2500"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "0"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", "n"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f", "=", 
+     RowBox[{"ReadString", "[", 
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/algebra/\
+factor_polynomials/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"StringContainsQ", "[", 
+       RowBox[{"f", ",", "\"\<---\>\""}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"roundbasis", "=", 
+           RowBox[{"RandomChoice", "[", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", 
+              RowBox[{"RandomChoice", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"1", "/", "2"}], ",", 
+                 RowBox[{"1", "/", "3"}], ",", 
+                 RowBox[{"1", "/", "4"}], ",", 
+                 RowBox[{"1", "/", "5"}], ",", 
+                 RowBox[{"1", "/", "7"}], ",", 
+                 RowBox[{"1", "/", 
+                  RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+                 RowBox[{"1", "/", 
+                  RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+                 RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+                 RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+                 RowBox[{"Sqrt", "[", "5", "]"}]}], "}"}], "]"}]}], "}"}], 
+            "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          RowBox[{"f", " ", "=", " ", 
+           RowBox[{"Times", "[", 
+            RowBox[{
+             RowBox[{"RandomChoice", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", " ", "0.5"}], "}"}], "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "]"}], ",", 
+             RowBox[{"(", 
+              RowBox[{"x", " ", "-", " ", 
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "20"}], ",", "20"}], "}"}], "]"}], ",", " ", 
+                 "roundbasis"}], "]"}]}], ")"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"g", " ", "=", " ", 
+           RowBox[{"Times", "[", 
+            RowBox[{
+             RowBox[{"RandomChoice", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", " ", "0.5"}], "}"}], "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "]"}], ",", 
+             RowBox[{"(", 
+              RowBox[{"x", " ", "-", " ", 
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "20"}], ",", "20"}], "}"}], "]"}], ",", " ", 
+                 "roundbasis"}], "]"}]}], ")"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"a", " ", "=", " ", 
+           RowBox[{"RandomInteger", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "12"}], ",", "12"}], "}"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"factored", "=", 
+           RowBox[{"Times", "[", 
+            RowBox[{"a", ",", " ", "f", ",", "g"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"expanded", "=", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{
+             RowBox[{"Expand", "[", "factored", "]"}], "//", 
+             "TraditionalForm"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\[IndentingNewLine]", 
+          RowBox[{"sol", " ", "=", " ", 
+           RowBox[{"WolframAlpha", "[", 
+            RowBox[{
+             RowBox[{"\"\<factor \>\"", "<>", 
+              RowBox[{"ToString", "[", "expanded", "]"}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"\"\<Result\>\"", ",", "2"}], "}"}], ",", 
+               "\"\<Content\>\""}], "}"}], ",", 
+             RowBox[{"PodStates", "\[Rule]", 
+              RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}]}],
+             "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"ToString", "[", "expanded", "]"}], ">", "80"}], " ", "||",
+           " ", 
+          RowBox[{"a", " ", "===", " ", "0"}]}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/\
+algebra/factor_polynomials/\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+         " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+           "\"\<Problem:\\nFactor the following quadratic: $\>\"", " ", "<>", 
+            " ", 
+            RowBox[{"ToString", "[", "expanded", "]"}], " ", "<>", " ", 
+            "\"\<$\>\""}], ",", "\[IndentingNewLine]", "\"\<Answer:\>\"", ",",
+            " ", 
+           RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "sol", "]"}], "]"}], " ", "<>", " ", 
+            "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+     "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.818168860981554*^9, 3.8181688784208713`*^9}, {
+   3.818168936004943*^9, 3.818169027147499*^9}, {3.8181690721491747`*^9, 
+   3.8181691516053977`*^9}, {3.8181691945977163`*^9, 3.818169203053546*^9}, {
+   3.8181695988138533`*^9, 3.8181696316053696`*^9}, {3.818169688660844*^9, 
+   3.818169781229381*^9}, {3.8181698137339025`*^9, 3.8181698142139025`*^9}, {
+   3.8181698537263203`*^9, 3.8181698603823338`*^9}, {3.8181699294853287`*^9, 
+   3.818169985413475*^9}, {3.818170018926838*^9, 3.8181700279145384`*^9}, {
+   3.8181711954787807`*^9, 3.8181712613754683`*^9}, {3.8181713036715393`*^9, 
+   3.8181713119830427`*^9}, {3.818171433464857*^9, 3.8181714678634977`*^9}, {
+   3.8181715032951007`*^9, 3.8181715577354527`*^9}, {3.8181716219051495`*^9, 
+   3.818171774320366*^9}, {3.8181718061292562`*^9, 3.8181718160476437`*^9}, {
+   3.8181718771992903`*^9, 3.8181719385433683`*^9}, {3.8181719773453736`*^9, 
+   3.8181721143361034`*^9}, {3.818172203992446*^9, 3.818172214472427*^9}, {
+   3.8181722823369017`*^9, 3.818172355376501*^9}, 3.818172423673279*^9, {
+   3.8181724712990465`*^9, 3.81817248545617*^9}, {3.8181725809449005`*^9, 
+   3.8181726125686746`*^9}, {3.8181730453657084`*^9, 3.818173093899672*^9}, {
+   3.818173156813759*^9, 3.8181732026687207`*^9}, {3.8181732596431923`*^9, 
+   3.8181732872802277`*^9}, {3.818174978562085*^9, 3.818174983335918*^9}, {
+   3.818175051696175*^9, 3.8181750563528605`*^9}, {3.8181750968799534`*^9, 
+   3.8181752768005033`*^9}, {3.8181753119048815`*^9, 
+   3.8181753120688453`*^9}, {3.818175358907735*^9, 3.8181753924524975`*^9}, {
+   3.818175755230097*^9, 3.818175816348105*^9}, {3.8181758742345753`*^9, 
+   3.81817591684062*^9}, {3.8181759611117983`*^9, 3.818175961791204*^9}, {
+   3.818176028382146*^9, 3.818176034182376*^9}, {3.818176067661209*^9, 
+   3.818176093619204*^9}, {3.8181761443094063`*^9, 3.818176148011141*^9}, {
+   3.818176190234439*^9, 3.818176284849453*^9}, {3.818176368886882*^9, 
+   3.818176370527192*^9}, {3.8181764204472847`*^9, 3.818176480963606*^9}, {
+   3.8181765592028723`*^9, 3.818176561400758*^9}, {3.818176603594801*^9, 
+   3.8181766770692787`*^9}, {3.8181767287501097`*^9, 3.818176747258355*^9}, {
+   3.818176848513536*^9, 3.818176881376507*^9}, {3.818176949213294*^9, 
+   3.818176953131446*^9}, {3.818176987796709*^9, 3.818177003721683*^9}, {
+   3.818177039044009*^9, 3.818177099510545*^9}, {3.818177130542131*^9, 
+   3.818177154844798*^9}, {3.818177195444566*^9, 3.8181772233788433`*^9}, {
+   3.8181772602103453`*^9, 3.818177282240741*^9}, {3.818177329463066*^9, 
+   3.8181774882345343`*^9}, {3.8181775343147373`*^9, 3.818177717481482*^9}, {
+   3.81817777726618*^9, 3.818177789399103*^9}, {3.8181778755035152`*^9, 
+   3.8181778796520433`*^9}, {3.818177936818787*^9, 3.818177940450013*^9}, {
+   3.818178238104681*^9, 3.8181783808611813`*^9}, {3.8181785535698957`*^9, 
+   3.818178554525055*^9}, {3.818178602356838*^9, 3.818178797218936*^9}, {
+   3.8181852770082293`*^9, 3.818185277756753*^9}, {3.818185336243235*^9, 
+   3.818185339626289*^9}, {3.81818537040203*^9, 3.818185372385544*^9}, {
+   3.818198202480323*^9, 3.8181983074508343`*^9}, {3.818198369594163*^9, 
+   3.8181984543901052`*^9}, {3.818198495938356*^9, 3.81819850584015*^9}, {
+   3.818198589528281*^9, 3.818198690127357*^9}, {3.818198720186141*^9, 
+   3.818198771339672*^9}, {3.818198853789014*^9, 3.8181989091354113`*^9}, {
+   3.818198939626238*^9, 3.8181989794885063`*^9}, {3.818199018908617*^9, 
+   3.8181990523898497`*^9}, {3.8181990885596848`*^9, 3.818199115769717*^9}, {
+   3.8181993841651773`*^9, 3.81819949044846*^9}, {3.818199545919835*^9, 
+   3.81819961887289*^9}, {3.81819965259593*^9, 3.818199718185851*^9}, 
+   3.818200354840328*^9, {3.818200441764001*^9, 3.818200626095067*^9}, {
+   3.818200672756523*^9, 3.818200750916287*^9}, {3.818200801535708*^9, 
+   3.8182008922957907`*^9}, {3.818200930140326*^9, 3.81820102358781*^9}, {
+   3.81820107651929*^9, 3.818201162814434*^9}, {3.818204217814568*^9, 
+   3.8182042482816668`*^9}, {3.8182063495607033`*^9, 
+   3.8182063670778503`*^9}, {3.8182074368733807`*^9, 3.818207445599534*^9}, {
+   3.818383943228765*^9, 3.8183839633475323`*^9}, {3.818386172440261*^9, 
+   3.818386197612982*^9}, {3.818389783612686*^9, 3.818389784337525*^9}, {
+   3.8185512335652523`*^9, 3.818551264918001*^9}, {3.818551444454081*^9, 
+   3.818551499904512*^9}, {3.818551556066506*^9, 3.8185515561737823`*^9}, {
+   3.8185515978836946`*^9, 3.818551599375936*^9}, {3.8186203997622213`*^9, 
+   3.818620427623904*^9}, 3.8186205367968283`*^9},
+ CellLabel->"In[20]:=",ExpressionUUID->"48ae2c5c-c5dc-4a54-a953-5ec324065821"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{
+   "f", ",", "g", ",", "h", ",", "a", ",", " ", "factored", ",", " ", 
+    "expanded", ",", "x"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "n"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", 
+    RowBox[{"2", "*", "n"}]}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f", "=", 
+     RowBox[{"ReadString", "[", 
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/algebra/\
+factor_polynomials/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"StringContainsQ", "[", 
+       RowBox[{"f", ",", "\"\<---\>\""}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"roundbasis", " ", "=", " ", 
+           RowBox[{"RandomChoice", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0.7", ",", "0.2", ",", "0.05", ",", "0.05"}], "}"}], 
+             "\[Rule]", " ", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", 
+               RowBox[{"1", "/", "2"}], ",", 
+               RowBox[{"1", "/", "3"}], ",", 
+               RowBox[{"1", "/", "5"}]}], "}"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"f", " ", "=", " ", 
+           RowBox[{"Times", "[", 
+            RowBox[{
+             RowBox[{"RandomChoice", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", " ", "0.5"}], "}"}], "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "]"}], ",", 
+             RowBox[{"(", 
+              RowBox[{"x", " ", "-", " ", 
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "20"}], ",", "20"}], "}"}], "]"}], ",", " ", 
+                 "roundbasis"}], "]"}]}], ")"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"g", " ", "=", " ", 
+           RowBox[{"Times", "[", 
+            RowBox[{
+             RowBox[{"RandomChoice", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", " ", "0.5"}], "}"}], "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "]"}], ",", 
+             RowBox[{"(", 
+              RowBox[{"x", " ", "-", " ", 
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "20"}], ",", "20"}], "}"}], "]"}], ",", " ", 
+                 "roundbasis"}], "]"}]}], ")"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"h", "=", " ", 
+           RowBox[{"Times", "[", 
+            RowBox[{
+             RowBox[{"RandomChoice", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", " ", "0.5"}], "}"}], "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "]"}], ",", 
+             RowBox[{"(", 
+              RowBox[{"x", " ", "-", " ", 
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "20"}], ",", "20"}], "}"}], "]"}], ",", " ", 
+                 "roundbasis"}], "]"}]}], ")"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"a", " ", "=", " ", 
+           RowBox[{"RandomInteger", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "12"}], ",", "12"}], "}"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"factored", "=", 
+           RowBox[{"Times", "[", 
+            RowBox[{"a", ",", " ", "f", ",", "g", ",", " ", "h"}], "]"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"expanded", "=", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{
+             RowBox[{"Expand", "[", "factored", "]"}], "//", 
+             "TraditionalForm"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\[IndentingNewLine]", 
+          RowBox[{"sol", " ", "=", " ", 
+           RowBox[{"WolframAlpha", "[", 
+            RowBox[{
+             RowBox[{"\"\<factor \>\"", "<>", 
+              RowBox[{"ToString", "[", "expanded", "]"}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"\"\<Result\>\"", ",", "2"}], "}"}], ",", 
+               "\"\<Content\>\""}], "}"}], ",", 
+             RowBox[{"PodStates", "\[Rule]", 
+              RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}]}],
+             "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"ToString", "[", "expanded", "]"}], ">", "80"}], " ", "||",
+           " ", 
+          RowBox[{"a", " ", "===", " ", "0"}]}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/\
+algebra/factor_polynomials/\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+         " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+           "\"\<Problem:\\nFactor the following quadratic: $\>\"", " ", "<>", 
+            " ", 
+            RowBox[{"ToString", "[", "expanded", "]"}], " ", "<>", " ", 
+            "\"\<$\>\""}], ",", "\[IndentingNewLine]", "\"\<Answer:\>\"", ",",
+            " ", 
+           RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "sol", "]"}], "]"}], " ", "<>", " ", 
+            "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+     "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818201205916272*^9, 3.8182012409020357`*^9}, {
+   3.818204482314912*^9, 3.8182044853863363`*^9}, {3.818383985768484*^9, 
+   3.818383992641498*^9}, {3.8183843072899637`*^9, 3.818384309420372*^9}, {
+   3.818386176871069*^9, 3.818386194349271*^9}, {3.8183897862662582`*^9, 
+   3.818389809644538*^9}, 3.818551547440723*^9, 3.8185520566789007`*^9, {
+   3.818620432785336*^9, 3.8186204459435883`*^9}, {3.818620540836832*^9, 
+   3.818620542134102*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"0e34ad68-065d-462c-9cf9-c54977274703"]
+},
+Evaluator->"Kernel7",
+WindowSize->{1162, 775},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c4058612-c30d-47cd-a041-ea4842b12ed1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 209, 4, 30, "Input",ExpressionUUID->"69652b88-c7df-42f5-b73c-0d8de93faaf1"],
+Cell[770, 26, 10666, 209, 523, "Input",ExpressionUUID->"48ae2c5c-c5dc-4a54-a953-5ec324065821"],
+Cell[11439, 237, 6935, 165, 451, "Input",ExpressionUUID->"0e34ad68-065d-462c-9cf9-c54977274703"]
+}
+]
+*)
+

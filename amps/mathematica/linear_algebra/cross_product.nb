@@ -1,0 +1,126 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4156,        118]
+NotebookOptionsPosition[      3805,        104]
+NotebookOutlinePosition[      4203,        120]
+CellTagsIndexPosition[      4160,        117]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"x", ",", "y"}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}], ",", " ", 
+           RowBox[{"1", "/", "6"}], ",", 
+           RowBox[{"1", "/", "7"}], ",", " ", 
+           RowBox[{"1", "/", "8"}], ",", 
+           RowBox[{"1", "/", "9"}], ",", " ", 
+           RowBox[{"1", "/", "10"}], ",", 
+           RowBox[{"1", "/", "16"}], ",", " ", 
+           RowBox[{"1", "/", "100"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", "3", "}"}]}], "]"}], ",", " ", "roundbasis"}], "]"}]}], 
+    ";", 
+    RowBox[{"y", " ", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", "3", "}"}]}], "]"}], ",", " ", "roundbasis"}], "]"}]}], 
+    ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/cross_product/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the cross product of the following vectors:\>\"", 
+        ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$ and\>\""}], ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "y", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"Cross", "[", 
+             RowBox[{"x", ",", "y"}], "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8180270239977283`*^9, 3.818027098546504*^9}, {
+  3.818027197991537*^9, 3.818027198229637*^9}, {3.818300025839467*^9, 
+  3.8183001424647827`*^9}, {3.818300173317314*^9, 3.818300187977906*^9}, {
+  3.818371508364986*^9, 3.818371508738585*^9}, {3.81855779811405*^9, 
+  3.818557798598999*^9}, {3.818557921163293*^9, 3.8185579231537457`*^9}},
+ CellLabel->
+  "In[122]:=",ExpressionUUID->"1cce3f1d-0b41-4e97-a68b-c5ddad244025"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 411}, {24, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"869e6542-02ba-45e4-a54c-db57ab77598a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3243, 82, 283, "Input",ExpressionUUID->"1cce3f1d-0b41-4e97-a68b-c5ddad244025"]
+}
+]
+*)
+

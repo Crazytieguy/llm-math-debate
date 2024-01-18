@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3742,         95]
+NotebookOptionsPosition[      3301,         80]
+NotebookOutlinePosition[      3699,         96]
+CellTagsIndexPosition[      3656,         93]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Compute the nth r-gonal number.", "Text",
+ CellChangeTimes->{{3.8181077343312283`*^9, 
+  3.8181077511947193`*^9}},ExpressionUUID->"6a947612-cebf-44e0-a2d7-\
+84da35dc74cb"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "10"}], ",", 
+   RowBox[{"i", "+=", "1"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "0"}], ",", 
+      RowBox[{"j", "<", "50"}], ",", 
+      RowBox[{"j", "+=", "1"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/Desktop/mesa/number_theory/polygonal_number/\>\
+\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{
+            RowBox[{"i", "*", "50"}], "+", "j"}], "]"}], "<>", 
+          "\"\<.txt\>\""}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Problem:\\nDetermine the $n=\>\"", "<>", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", 
+             RowBox[{"i", "+", "3"}], "]"}], "]"}], "<>", "\"\<$ $\>\"", "<>", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", 
+             RowBox[{"j", "+", "1"}], "]"}], "]"}], "<>", 
+           "\"\<$-gonal number.\\nAnswer:\\n$\>\"", "<>", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", 
+             RowBox[{"PolygonalNumber", "[", 
+              RowBox[{
+               RowBox[{"i", "+", "3"}], ",", 
+               RowBox[{"j", "+", "1"}]}], "]"}], "]"}], "]"}], "<>", 
+           "\"\<$\>\""}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+     "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+   3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+   3.81808632938737*^9}, {3.8180864606956463`*^9, 3.818086496166914*^9}, 
+   3.818086576119206*^9, {3.8180869333727427`*^9, 3.818086978947751*^9}, {
+   3.818087041759931*^9, 3.818087072025712*^9}, {3.818087138651904*^9, 
+   3.818087209284032*^9}, {3.8180872575514927`*^9, 3.818087355644887*^9}, {
+   3.818107419899076*^9, 3.818107433530129*^9}, {3.8181076702509813`*^9, 
+   3.818107708675256*^9}, {3.818107759691596*^9, 3.818107827531969*^9}, {
+   3.818107863806439*^9, 3.818107911583202*^9}, {3.81810795091759*^9, 
+   3.818107974764435*^9}, {3.818108049279976*^9, 3.818108091160625*^9}, {
+   3.8181081472574253`*^9, 3.8181081691687107`*^9}, {3.8182972807535667`*^9, 
+   3.818297403340592*^9}, {3.818297436836419*^9, 3.818297455409552*^9}, {
+   3.818297490665792*^9, 3.818297506726818*^9}, {3.8185573928629627`*^9, 
+   3.818557412887569*^9}},ExpressionUUID->"98c74d87-aea8-4017-9b4b-\
+bc9a991dd3ec"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 542}, {12, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9d02523a-d5dd-4de8-bcf3-61f6d9150ada"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 177, 3, 35, "Text",ExpressionUUID->"6a947612-cebf-44e0-a2d7-84da35dc74cb"],
+Cell[738, 25, 2559, 53, 199, "Input",ExpressionUUID->"98c74d87-aea8-4017-9b4b-bc9a991dd3ec"]
+}
+]
+*)
+

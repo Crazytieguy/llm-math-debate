@@ -1,0 +1,153 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5380,        145]
+NotebookOptionsPosition[      4913,        129]
+NotebookOutlinePosition[      5333,        146]
+CellTagsIndexPosition[      5290,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"Clear", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.8", ",", "0.1", ",", "0.05", ",", "0.05"}], "}"}], "->", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"1", "/", "2"}], ",", 
+         RowBox[{"1", "/", "3"}], ",", 
+         RowBox[{"1", "/", "5"}]}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d1", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"d2", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"d1", ",", "7"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"q", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{"q", "==", "0"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "d1"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"q", " ", "+=", " ", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+              "roundbasis"}], "]"}], "*", 
+            RowBox[{"x", "^", "j"}]}]}], ";"}]}], "\[IndentingNewLine]", 
+        "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"p", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "0"}], ",", 
+      RowBox[{"j", "<", "d2"}], ",", 
+      RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"p", " ", "+=", " ", 
+        RowBox[{
+         RowBox[{"Round", "[", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+           "roundbasis"}], "]"}], "*", 
+         RowBox[{"x", "^", "j"}]}]}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/polynomial_quotient/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nFind the quotient of $\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"p", "//", "TraditionalForm"}], "]"}], "]"}], "<>", " ", 
+         "\"\<$ when divided by $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"q", "//", "TraditionalForm"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{
+            RowBox[{"PolynomialQuotient", "[", 
+             RowBox[{"p", ",", "q", ",", "x"}], "]"}], "//", 
+            "TraditionalForm"}], "]"}], "]"}], "<>", "\"\<$\>\""}]}], "}"}]}],
+      "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818088020729041*^9, 3.818088022337034*^9}, 
+   3.8180900627643337`*^9, {3.8180901458167467`*^9, 3.818090204390074*^9}, {
+   3.818090277239903*^9, 3.818090278596499*^9}, {3.818109286300799*^9, 
+   3.8181095775787983`*^9}, {3.818109661285657*^9, 3.818109700994337*^9}, {
+   3.8181098626014423`*^9, 3.818109884752819*^9}, {3.81835016322571*^9, 
+   3.818350202759252*^9}, {3.818350250935178*^9, 3.8183502581426563`*^9}, 
+   3.818350292223682*^9, {3.818390778557684*^9, 3.8183907788441153`*^9}, {
+   3.8185624842142277`*^9, 
+   3.818562488696375*^9}},ExpressionUUID->"77ecbccd-60d7-45f6-b168-\
+a765e73db3a0"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.818350199671474*^9},ExpressionUUID->"bba5c8ce-23f8-40cc-9e24-\
+856e42ccc83b"]
+},
+Evaluator->"Kernel2",
+WindowSize->{808, 857},
+WindowMargins->{{266, Automatic}, {38, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2aa7d3b6-dd0f-41b6-9fbe-eb46b690a255"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4220, 102, 472, "Input",ExpressionUUID->"77ecbccd-60d7-45f6-b168-a765e73db3a0"],
+Cell[4781, 124, 128, 3, 30, "Input",ExpressionUUID->"bba5c8ce-23f8-40cc-9e24-856e42ccc83b"]
+}
+]
+*)
+

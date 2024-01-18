@@ -1,0 +1,86 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2715,         78]
+NotebookOptionsPosition[      2364,         64]
+NotebookOutlinePosition[      2762,         80]
+CellTagsIndexPosition[      2719,         77]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"myCenterDot", "[", "e_", "]"}], ":=", "e"}], "\n", 
+ RowBox[{
+  RowBox[{"myCenterDot", "[", "args__", "]"}], ":=", 
+  RowBox[{"CenterDot", "[", "args", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "10000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "100000"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/factor_integer/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nFactor $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+        "\"\<$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"myCenterDot", "@@", 
+           RowBox[{"Superscript", "@@@", 
+            RowBox[{"FactorInteger", "[", "m", "]"}]}]}], "]"}], "]"}], "<>", 
+        "\"\<$\>\""}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+   3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+   3.81808632938737*^9}, {3.8180864606956463`*^9, 3.818086496166914*^9}, 
+   3.818086576119206*^9, {3.818295770369577*^9, 3.8182958453263683`*^9}, {
+   3.818372454420472*^9, 3.818372454913951*^9}, {3.818550146397957*^9, 
+   3.818550177587008*^9}, {3.818557467790539*^9, 
+   3.818557468408223*^9}},ExpressionUUID->"a85c6e48-83ec-4bcc-b612-\
+ae487eb9642a"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 550}, {13, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fb38b74a-b565-49ca-8768-773518608e99"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1802, 42, 199, "Input",ExpressionUUID->"a85c6e48-83ec-4bcc-b612-ae487eb9642a"]
+}
+]
+*)
+

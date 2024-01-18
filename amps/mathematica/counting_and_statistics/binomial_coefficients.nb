@@ -1,0 +1,146 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5473,        138]
+NotebookOptionsPosition[      5081,        123]
+NotebookOutlinePosition[      5519,        140]
+CellTagsIndexPosition[      5476,        137]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"roundbasis", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0.8", ",", "0.1", ",", "0.05", ",", "0.05"}], "}"}], 
+          "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
+            RowBox[{"1", "/", "2"}], ",", 
+            RowBox[{"1", "/", "3"}], ",", 
+            RowBox[{"1", "/", "4"}]}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"n", " ", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", 
+             RowBox[{"i", "+", "1"}]}], "}"}], "]"}], ",", "roundbasis"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"k", " ", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Round", "[", 
+            RowBox[{
+             RowBox[{"RandomReal", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Max", "[", 
+                 RowBox[{
+                  RowBox[{"n", "-", "10"}], ",", "0"}], "]"}], ",", "n"}], 
+               "}"}], "]"}], ",", "roundbasis"}], "]"}], ",", 
+           RowBox[{"Round", "[", 
+            RowBox[{
+             RowBox[{"RandomReal", "[", 
+              RowBox[{"{", 
+               RowBox[{"0", ",", 
+                RowBox[{"Max", "[", 
+                 RowBox[{"n", ",", 
+                  RowBox[{"n", "-", "10"}]}], "]"}]}], "}"}], "]"}], ",", 
+             "roundbasis"}], "]"}]}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"x", "=", 
+        RowBox[{"Binomial", "[", 
+         RowBox[{"n", ",", "k"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"x", ">", "10000000"}], "||", 
+       RowBox[{
+        RowBox[{"StringLength", "[", 
+         RowBox[{"ToString", "[", "x", "]"}], "]"}], ">", "30"}]}]}], "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/counting_and_statistics/binomial_\
+coefficients/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nCompute $\\\\binom{\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "n", "]"}], "]"}], "<>", "\"\<}{\>\"", "<>", 
+        
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "k", "]"}], "]"}], "<>", 
+        "\"\<}$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "x", "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818112279375554*^9, 3.81811248115975*^9}, {
+   3.818112514789439*^9, 3.8181126124523697`*^9}, {3.818112653167506*^9, 
+   3.818112706533431*^9}, {3.818112804047949*^9, 3.8181128260556183`*^9}, {
+   3.8181129202790337`*^9, 3.818112949830855*^9}, {3.818112980254321*^9, 
+   3.818113010011323*^9}, {3.818113051005477*^9, 3.818113051043248*^9}, {
+   3.818113081653234*^9, 3.81811308808211*^9}, {3.818113130819004*^9, 
+   3.818113245570814*^9}, {3.81811329874255*^9, 3.818113299770973*^9}, {
+   3.818113342909836*^9, 3.8181133510585747`*^9}, {3.818343095600731*^9, 
+   3.81834315201336*^9}, {3.8183431842277937`*^9, 3.8183431842478437`*^9}, {
+   3.8183433062144537`*^9, 3.818343307717183*^9}, {3.818343339308853*^9, 
+   3.8183433569222593`*^9}, {3.818343427784988*^9, 3.818343441526229*^9}, {
+   3.8183434927735243`*^9, 3.81834349499527*^9}, 3.818343543298945*^9, {
+   3.818343660484714*^9, 3.8183437165359583`*^9}, {3.818343754758381*^9, 
+   3.818343755445939*^9}, {3.818343791804042*^9, 3.818343814523073*^9}, {
+   3.818343872385672*^9, 3.8183438764795437`*^9}, {3.818343941062595*^9, 
+   3.8183439843133163`*^9}, {3.818344087901936*^9, 3.8183441270363607`*^9}, {
+   3.818344311298497*^9, 3.818344337544077*^9}, {3.818344481098669*^9, 
+   3.818344502049616*^9}, {3.8183749960568333`*^9, 3.818374996351054*^9}, {
+   3.818560142341363*^9, 
+   3.8185601735004883`*^9}},ExpressionUUID->"5d3fbd6e-cd4a-48ac-b89f-\
+c284baeeb217"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 524}, {16, Automatic}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cfcce2a7-3751-4612-bbba-348b63683dd7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4519, 101, 325, "Input",ExpressionUUID->"5d3fbd6e-cd4a-48ac-b89f-c284baeeb217"]
+}
+]
+*)
+

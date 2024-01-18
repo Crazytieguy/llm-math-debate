@@ -1,0 +1,133 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4747,        125]
+NotebookOptionsPosition[      4396,        111]
+NotebookOutlinePosition[      4794,        127]
+CellTagsIndexPosition[      4751,        124]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"count", " ", "=", " ", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"solved", " ", "=", " ", "False"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"While", "[", 
+     RowBox[{"True", ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"d", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "4"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"residues", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "20"}], "}"}], ",", 
+          RowBox[{"{", "d", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"moduli", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "20"}], "}"}], ",", 
+          RowBox[{"{", "d", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"x", "=", 
+        RowBox[{"ChineseRemainder", "[", 
+         RowBox[{"residues", ",", "moduli"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Head", "@", "x"}], "===", "Integer"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"solved", " ", "=", " ", "True"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Break", "[", "]"}], ";"}], ",", " ", "\[IndentingNewLine]", 
+         RowBox[{"count", " ", "+=", " ", "1"}]}], "]"}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{"solved", ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+       "problemstr", "=", 
+        "\"\<Problem:\\nFind the smallest $x$ such that\>\""}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "1"}], ",", 
+         RowBox[{"j", "<", 
+          RowBox[{"d", "+", "1"}]}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"problemstr", " ", "=", " ", 
+          RowBox[{
+          "problemstr", " ", "<>", " ", "\"\<\\n$x \\\\equiv \>\"", " ", "<>", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"residues", "[", 
+             RowBox[{"[", "j", "]"}], "]"}], "]"}], "<>", 
+           "\"\< \\\\pmod{\>\"", "<>", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"moduli", "[", 
+             RowBox[{"[", "j", "]"}], "]"}], "]"}], "<>", "\"\<}$\>\""}]}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/Desktop/mesa/number_theory/chinese_remainder_\
+theorem/\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+         RowBox[{"{", 
+          RowBox[{"problemstr", "<>", "\"\<\\nAnswer:\\n$\>\"", " ", "<>", 
+           RowBox[{"ToString", "[", 
+            RowBox[{"TeXForm", "[", "x", "]"}], "]"}], "<>", "\"\<$\>\""}], 
+          "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQ/dXrxM3CojeOZpO1boHoJ+5bH4LoJavs34PoHXeK
+v4DojOUNvEVA2qdBUghE78g6KwKifyR9lQTRliv55EC0ifsWLRCtqPtJG0yX
+HTcB0e9yllmBaLW33r4g+sbsz2B6TnRpBIj+5vY6CkQvj/7bXgykvfd87ADR
+4lYpU0D0uaczp4LoM+fq5oHo1nP1YHrRlKRFILro1rkVIDrvEuNaEB35di6Y
+nrJw3Y8LQLqGK/cXiOad8ZHtIpD+4ynIBaJTYo7Kguh09/NKIDp4cakGiC7V
+NbEE0R+1DziB6LKzyb4g+t+nySu/A+ljR+eAaTl7hvK/QDpJTwFMz8uM8Pcr
+BsqnMwaAaADvGrsS
+  "],ExpressionUUID->"d05b77d6-bfdb-41f5-af69-3e0b338aa782"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 523}, {31, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fe924d32-4ab5-4e06-855c-dc73cfa74016"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3834, 89, 514, "Input",ExpressionUUID->"d05b77d6-bfdb-41f5-af69-3e0b338aa782"]
+}
+]
+*)
+

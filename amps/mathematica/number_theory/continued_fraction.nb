@@ -1,0 +1,99 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3289,         91]
+NotebookOptionsPosition[      2898,         76]
+NotebookOutlinePosition[      3336,         93]
+CellTagsIndexPosition[      3293,         90]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "10000"}], ",", 
+    RowBox[{"i", "<", "50000"}], ",", 
+    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"b", "=", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"i", "+", "10"}]}], "}"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"a", " ", "=", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"ResourceFunction", "[", "\"\<CoprimeIntegerList\>\"", "]"}], 
+        "[", "b", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"x", "=", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"a", "/", "b"}], ",", 
+         RowBox[{"b", "/", "a"}]}], "}"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Export", "[", 
+      RowBox[{
+       RowBox[{
+       "\"\</Users/hendrycks/Desktop/mesa/number_theory/continued_fraction/\>\
+\"", "<>", 
+        RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<Problem:\\nIf $x = \>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"TeXForm", "[", "x", "]"}], "]"}], "<>", 
+          "\"\<$, then find \
+$\\\\frac{1}{x+\\\\frac{1}{x+\\\\frac{1}{x+\\\\ddots}}}$.\>\""}], ",", 
+         RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"ContinuedFractionK", "[", 
+             RowBox[{"x", ",", 
+              RowBox[{"{", 
+               RowBox[{"n", ",", "1", ",", "\[Infinity]"}], "}"}]}], "]"}], 
+            "]"}], "]"}], " ", "<>", "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], 
+   "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.818108512636196*^9, 3.8181085126441393`*^9}, {
+   3.8181085907891006`*^9, 3.818108633732786*^9}, {3.8181086777585077`*^9, 
+   3.818108796981131*^9}, 3.818108866667042*^9, {3.818294066195574*^9, 
+   3.8182940994970293`*^9}, {3.818294420312972*^9, 3.818294434124614*^9}, {
+   3.818294592024028*^9, 3.8182946169678926`*^9}, {3.818372421298688*^9, 
+   3.818372422011312*^9}, {3.818549912271132*^9, 3.818549917612061*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"279eccbc-5e2b-4ad8-94cb-6c89dd147508"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{285, Automatic}, {21, Automatic}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f8888e9b-72ca-4261-aa98-2fdf50366264"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2336, 54, 241, "Input",ExpressionUUID->"279eccbc-5e2b-4ad8-94cb-6c89dd147508"]
+}
+]
+*)
+

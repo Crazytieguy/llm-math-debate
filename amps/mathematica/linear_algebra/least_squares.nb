@@ -1,0 +1,119 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3990,        111]
+NotebookOptionsPosition[      3639,         97]
+NotebookOutlinePosition[      4037,        113]
+CellTagsIndexPosition[      3994,        110]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d1", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "5"}], "}"}], "]"}]}], ";", " ", 
+    RowBox[{"d2", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"d1", "+", "1"}], ",", "6"}], "}"}], "]"}]}], ";", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"d2", ",", "d1"}], "}"}]}], "]"}]}], ";", 
+    RowBox[{"b", " ", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"d2", ",", "1"}], "}"}]}], "]"}], ",", " ", "0.01"}], 
+      "]"}]}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/least_squares/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the least squares vector given the matrix\>\"", 
+        ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$ and the vector\>\""}], ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "b", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"LeastSquares", "[", 
+               RowBox[{"x", ",", "b"}], "]"}], ",", "0.001"}], "]"}], "]"}], 
+           "]"}], "]"}], "<>", "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8180272944904823`*^9, 3.818027365174474*^9}, {
+   3.818027395863275*^9, 3.818027401189232*^9}, {3.8180274553964453`*^9, 
+   3.8180274557789783`*^9}, {3.8180385600566072`*^9, 3.818038728915987*^9}, {
+   3.818039569656291*^9, 3.8180395797025757`*^9}, {3.818040548128949*^9, 
+   3.818040556155274*^9}, 3.818041174217945*^9, {3.818041216538665*^9, 
+   3.818041224343821*^9}, {3.8180421185518093`*^9, 3.8180421193554773`*^9}, {
+   3.8180421685486507`*^9, 3.818042191513482*^9}, {3.818301588332238*^9, 
+   3.8183016193061438`*^9}, {3.8183016992658043`*^9, 3.818301830023473*^9}, {
+   3.8183716515759697`*^9, 3.8183716519265842`*^9}, {3.8185580540650673`*^9, 
+   3.818558069676215*^9}},ExpressionUUID->"7dc313e9-597e-41cb-9135-\
+607de40e330c"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 521}, {48, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b5629785-7ad5-4cb9-9b88-388d09f7d4af"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3077, 75, 220, "Input",ExpressionUUID->"7dc313e9-597e-41cb-9135-607de40e330c"]
+}
+]
+*)
+

@@ -1,0 +1,114 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3840,        106]
+NotebookOptionsPosition[      3489,         92]
+NotebookOutlinePosition[      3887,        108]
+CellTagsIndexPosition[      3844,        105]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"d", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "0"}], ",", 
+      RowBox[{"j", "<", "d"}], ",", 
+      RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"list", " ", "=", " ", 
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", " ", 
+          RowBox[{"Power", "[", 
+           RowBox[{
+            RowBox[{"RandomChoice", "[", 
+             RowBox[{"Delete", "[", 
+              RowBox[{
+               RowBox[{"Range", "[", 
+                RowBox[{
+                 RowBox[{"-", "10"}], ",", "10"}], "]"}], ",", "11"}], "]"}], 
+             "]"}], ",", 
+            RowBox[{"RandomInteger", "[", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "d"}], "}"}], "]"}]}], "]"}]}], "]"}]}], 
+       ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"list", "=", 
+     RowBox[{
+      RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+      RowBox[{"list", ",", "\"\<RandomSample\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/counting_and_statistics/geometric_\
+mean/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nCompute the geometric mean of $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", "list"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{
+            RowBox[{"GeometricMean", "[", "list", "]"}], "//", "Simplify"}], 
+           "]"}], "]"}], "<>", "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818096120314279*^9, 3.818096138015921*^9}, {
+  3.818096182348482*^9, 3.8180962784016037`*^9}, {3.818096317670847*^9, 
+  3.818096334878079*^9}, {3.818096366822915*^9, 3.818096421405048*^9}, {
+  3.818346183063258*^9, 3.818346277322853*^9}, {3.8183463251690063`*^9, 
+  3.818346326727641*^9}, {3.818346418907508*^9, 3.8183464296684217`*^9}, {
+  3.818346853844821*^9, 3.8183468785069437`*^9}, {3.8183469110830717`*^9, 
+  3.818346962257595*^9}, {3.818375007457222*^9, 3.818375007750662*^9}, {
+  3.818560217078102*^9, 
+  3.818560228713318*^9}},ExpressionUUID->"d71bc8f8-fc55-4ac1-be46-\
+f0b04afd72bf"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 278}, {32, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"96c3987d-9df5-4f2a-b246-3ccce1f6d79f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2927, 70, 283, "Input",ExpressionUUID->"d71bc8f8-fc55-4ac1-be46-f0b04afd72bf"]
+}
+]
+*)
+

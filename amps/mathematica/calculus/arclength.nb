@@ -1,0 +1,474 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19124,        466]
+NotebookOptionsPosition[     17457,        435]
+NotebookOutlinePosition[     17972,        454]
+CellTagsIndexPosition[     17929,        451]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"f", ",", "g", ",", "h", ",", "x", ",", "combine"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"goodfunctions", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "Log", ",", " ", "Exp", ",", " ", "Sqrt", ",", " ", "Sin", ",", " ", 
+     "Cos", ",", " ", "Tan", ",", "Power", ",", "CubeRoot"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"okfunctions", "=", 
+   RowBox[{"{", 
+    RowBox[{"ArcTan", ",", " ", "ArcSin", ",", " ", "ArcCos"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"unusualfunctions", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "Sinh", ",", "Cosh", ",", "Tanh", ",", " ", "ArcSinh", ",", "ArcCosh", 
+     ",", "ArcTanh"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "0"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", "10000"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"roundbasis", " ", "=", " ", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0.7", ",", "0.2", ",", "0.05", ",", "0.05"}], "}"}], 
+          "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
+            RowBox[{"1", "/", "2"}], ",", 
+            RowBox[{"1", "/", "3"}], ",", 
+            RowBox[{"1", "/", "5"}]}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"combine", " ", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{"Plus", ",", "Subtract", ",", "Times", ",", "Divide"}], 
+          "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"f", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.85", ",", "0.1", ",", "0.05"}], "}"}], "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+            "goodfunctions", ",", "okfunctions", ",", "unusualfunctions"}], 
+            "}"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"fInside", " ", "=", " ", 
+        RowBox[{"x", "^", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+            "0.9", ",", "0.025", ",", "0.025", ",", "0.025", ",", "0.025"}], 
+            "}"}], "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}]}], 
+          "]"}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"g", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.85", ",", "0.1", ",", "0.05"}], "}"}], "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+            "goodfunctions", ",", "okfunctions", ",", "unusualfunctions"}], 
+            "}"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"gInside", " ", "=", " ", 
+        RowBox[{"x", "^", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+            "0.9", ",", "0.025", ",", "0.025", ",", "0.025", ",", "0.025"}], 
+            "}"}], "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}]}], 
+          "]"}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"ffinal", " ", "=", " ", 
+        RowBox[{"If", " ", "[", 
+         RowBox[{
+          RowBox[{"f", "===", " ", "Power"}], ",", " ", "\[IndentingNewLine]", 
+          RowBox[{"f", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"-", "5"}], ",", " ", "5"}], "}"}], "]"}], ",", " ",
+                "roundbasis"}], "]"}], "*", "fInside"}], " ", ",", " ", 
+            RowBox[{"RandomInteger", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "5"}], ",", "5"}], "}"}], "]"}]}], "]"}], ",", 
+          " ", 
+          RowBox[{"f", "[", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", " ", "5"}], "}"}], "]"}], ",", " ", 
+              "roundbasis"}], "]"}], "*", "fInside"}], " ", "]"}]}], "]"}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"gfinal", " ", "=", " ", 
+        RowBox[{"If", " ", "[", 
+         RowBox[{
+          RowBox[{"g", "===", " ", "Power"}], ",", " ", "\[IndentingNewLine]", 
+          RowBox[{"g", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"-", "5"}], ",", " ", "5"}], "}"}], "]"}], ",", " ",
+                "roundbasis"}], "]"}], "*", "gInside"}], " ", ",", " ", 
+            RowBox[{"RandomInteger", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "5"}], ",", "5"}], "}"}], "]"}]}], "]"}], ",", 
+          " ", 
+          RowBox[{"g", "[", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", " ", "5"}], "}"}], "]"}], ",", " ", 
+              "roundbasis"}], "]"}], "*", "gInside"}], " ", "]"}]}], "]"}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"tocombine", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0.8", ",", "0.2"}], "}"}], "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"False", ",", "True"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{"tocombine", ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"finalfunc", "=", 
+           RowBox[{"combine", "[", 
+            RowBox[{"ffinal", ",", "gfinal"}], "]"}]}], ";"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"finalfunc", " ", "=", " ", "ffinal"}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       RowBox[{"start", " ", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "5"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"end", " ", "=", " ", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"start", ",", 
+           RowBox[{"start", " ", "+", " ", "10"}]}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"answer", "=", 
+        RowBox[{"TimeConstrained", "[", 
+         RowBox[{
+          RowBox[{"TeXForm", "[", 
+           RowBox[{
+            RowBox[{"ArcLength", "[", 
+             RowBox[{"finalfunc", ",", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", "start", ",", "end"}], "}"}]}], "]"}], "//", 
+            "TraditionalForm"}], "]"}], ",", "5"}], "]"}]}], ";"}], " ", 
+      RowBox[{"(*", 
+       RowBox[{
+       "compute", " ", "texform", " ", "elsewhere", " ", "if", " ", "you", 
+        " ", "rerun"}], "*)"}], "\[IndentingNewLine]", ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"StringLength", "[", 
+         RowBox[{"ToString", "[", "answer", "]"}], "]"}], ">", "130"}], " ", "||",
+        " ", 
+       RowBox[{
+        RowBox[{"ToString", "[", "answer", "]"}], " ", "===", " ", 
+        "\"\<$Aborted\>\""}], " ", "||", " ", 
+       RowBox[{
+        RowBox[{"ToString", "[", "answer", "]"}], " ", "===", " ", 
+        "\"\<err\>\""}], "||", 
+       RowBox[{"ffinal", "===", "0"}], "||", 
+       RowBox[{"gfinal", "===", "0"}]}]}], "\[IndentingNewLine]", "]"}], " ", 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/calculus/arclength/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nFind the arclength of the function $f(x) = \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"finalfunc", "//", "TraditionalForm"}], "]"}], "]"}], 
+         "<>", "\"\<$ on the interval $x = \>\"", "<>", 
+         RowBox[{"ToString", "[", "start", "]"}], "<>", "\"\<$ to $x = \>\"", 
+         "<>", 
+         RowBox[{"ToString", "[", "end", "]"}], "<>", "\"\<$\>\""}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", "answer", " ", "]"}], "<>", "\"\<$\>\""}]}],
+        "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.8183100424422326`*^9, 3.8183101135785117`*^9}, {
+   3.818310468673251*^9, 3.8183104755153856`*^9}, 3.8183106755840054`*^9, {
+   3.818310712299943*^9, 3.8183107332274847`*^9}, {3.8183107676433744`*^9, 
+   3.8183108069869385`*^9}, {3.8183497011928005`*^9, 3.818349705412795*^9}, {
+   3.8183519642188625`*^9, 3.818351967719122*^9}, {3.818353950245414*^9, 
+   3.818353978391364*^9}, {3.818354035328945*^9, 3.8183541448128605`*^9}, {
+   3.8183541887148576`*^9, 3.81835436772678*^9}, {3.81835445406312*^9, 
+   3.818354458835622*^9}, {3.8183545360775414`*^9, 3.818354548188698*^9}, {
+   3.8183689490335503`*^9, 3.818368949775054*^9}, {3.8183693528845882`*^9, 
+   3.8183693816516743`*^9}, {3.8183772757297287`*^9, 3.818377292295587*^9}, {
+   3.818378014051262*^9, 3.818378017197229*^9}, {3.818378048484578*^9, 
+   3.8183780500122137`*^9}, {3.8183833051433163`*^9, 3.81838330541372*^9}, {
+   3.818388923398218*^9, 3.81838893214336*^9}, {3.8183905424437017`*^9, 
+   3.818390547353709*^9}, {3.8184258837565823`*^9, 3.818425886116012*^9}, {
+   3.818425917617878*^9, 3.818425920154455*^9}, {3.81843438670055*^9, 
+   3.818434388546384*^9}, {3.818436281144009*^9, 3.818436334888667*^9}, 
+   3.8184363717253237`*^9, {3.818443213074802*^9, 3.818443214472003*^9}, {
+   3.81844825000702*^9, 3.818448263525106*^9}, {3.8184484462932367`*^9, 
+   3.818448450794355*^9}, {3.818448597643611*^9, 
+   3.818448609306727*^9}},ExpressionUUID->"f07edfa5-7253-4035-a080-\
+870cd4e7bf46"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power", "infy", 
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"0\\\", \\\"4\\\"]]\\) encountered.\"", 2, 15, 37, 
+   32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448272958029*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"e4955c94-8515-4750-bb37-cf4210835c6f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ArcLength", "bdpt", 
+   "\"Evaluation point \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\
+\", \\\"ComplexInfinity\\\"}], \\\"}\\\"}]\\) is incompatible with the \
+coordinate assumptions of the specified coordinate chart.\"", 2, 15, 38, 
+   32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448272962729*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"21009979-4ae9-496a-b25b-56696badee4b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*SqrtBox[RowBox[{\\\"1\\\", \\\"+\\\", \
+SuperscriptBox[RowBox[{\\\"Sec\\\", \\\"[\\\", \\\"x\\\", \\\"]\\\"}], \
+\\\"4\\\"]}]]\\) does not converge on \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"5\\\", \\\",\\\", \\\"12\\\"}], \\\"}\\\"}]\\).\"", 2, 15, 39, 
+   32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448273320199*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"548fe044-65f4-4267-843b-76a6bea9374a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*SqrtBox[RowBox[{\\\"1\\\", \\\"+\\\", FractionBox[\
+\\\"9\\\", SuperscriptBox[\\\"x\\\", \\\"2\\\"]]}]]\\) does not converge on \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"5\\\"}], \
+\\\"}\\\"}]\\).\"", 2, 15, 40, 32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448316752696*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"d544d96e-a554-470c-9b74-935a79ecb9a4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*SqrtBox[RowBox[{\\\"1\\\", \\\"+\\\", FractionBox[\
+\\\"1\\\", SuperscriptBox[\\\"x\\\", \\\"2\\\"]]}]]\\) does not converge on \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"6\\\"}], \
+\\\"}\\\"}]\\).\"", 2, 15, 41, 32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448327914585*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"cc1e7491-fd35-41d3-888a-deeac0c94391"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Integrate\\\", \\\"::\\\
+\", \\\"idiv\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 15, 42, 32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448327919014*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"18a7edf3-e3f7-45e8-9e53-f715e4e29baf"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power", "infy", 
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"0\\\", \\\"3\\\"]]\\) encountered.\"", 2, 15, 43, 
+   32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448387205371*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"2ba4eab3-6f3c-4726-b310-cc66de2a4cb4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ArcLength", "bdpt", 
+   "\"Evaluation point \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\
+\", \\\"ComplexInfinity\\\"}], \\\"}\\\"}]\\) is incompatible with the \
+coordinate assumptions of the specified coordinate chart.\"", 2, 15, 44, 
+   32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.8184483872113953`*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"2834eba9-7fe3-46a8-82ca-3afddf4d51f8"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power", "infy", 
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0\\\"]\\) \
+encountered.\"", 2, 15, 45, 32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448387229722*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"5d7f665d-4c5a-4ee2-919b-5da6c0b77309"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 15, 46, 32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448387236307*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"faaf71ac-4e1d-492a-9e27-f7ccdc2ff887"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ArcLength", "bdpt", 
+   "\"Evaluation point \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\
+\", \\\"ComplexInfinity\\\"}], \\\"}\\\"}]\\) is incompatible with the \
+coordinate assumptions of the specified coordinate chart.\"", 2, 15, 47, 
+   32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.818448387242577*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"567bdcbf-900d-4c66-b1e4-88680f499330"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"ArcLength\\\", \\\"::\\\
+\", \\\"bdpt\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 15, 48, 32933460163879587741, "Kernel4"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818436463529408*^9, 3.8184432350347843`*^9, 
+  3.8184483872484617`*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"afcc9261-8b4f-4421-87fd-6008eddf7d93"]
+}, Open  ]]
+},
+Evaluator->"Kernel4",
+WindowSize->{1262, 739},
+WindowMargins->{{Automatic, 235}, {77, Automatic}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4af93bac-c738-48f5-88a9-ebd3ff8f9085"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 10551, 248, 682, "Input",ExpressionUUID->"f07edfa5-7253-4035-a080-870cd4e7bf46"],
+Cell[11134, 272, 452, 11, 42, "Message",ExpressionUUID->"e4955c94-8515-4750-bb37-cf4210835c6f"],
+Cell[11589, 285, 552, 12, 24, "Message",ExpressionUUID->"21009979-4ae9-496a-b25b-56696badee4b"],
+Cell[12144, 299, 610, 13, 30, "Message",ExpressionUUID->"548fe044-65f4-4267-843b-76a6bea9374a"],
+Cell[12757, 314, 584, 12, 46, "Message",ExpressionUUID->"d544d96e-a554-470c-9b74-935a79ecb9a4"],
+Cell[13344, 328, 584, 12, 46, "Message",ExpressionUUID->"cc1e7491-fd35-41d3-888a-deeac0c94391"],
+Cell[13931, 342, 505, 11, 24, "Message",ExpressionUUID->"18a7edf3-e3f7-45e8-9e53-f715e4e29baf"],
+Cell[14439, 355, 452, 11, 42, "Message",ExpressionUUID->"2ba4eab3-6f3c-4726-b310-cc66de2a4cb4"],
+Cell[14894, 368, 554, 12, 24, "Message",ExpressionUUID->"2834eba9-7fe3-46a8-82ca-3afddf4d51f8"],
+Cell[15451, 382, 421, 10, 40, "Message",ExpressionUUID->"5d7f665d-4c5a-4ee2-919b-5da6c0b77309"],
+Cell[15875, 394, 501, 11, 24, "Message",ExpressionUUID->"faaf71ac-4e1d-492a-9e27-f7ccdc2ff887"],
+Cell[16379, 407, 552, 12, 24, "Message",ExpressionUUID->"567bdcbf-900d-4c66-b1e4-88680f499330"],
+Cell[16934, 421, 507, 11, 24, "Message",ExpressionUUID->"afcc9261-8b4f-4421-87fd-6008eddf7d93"]
+}, Open  ]]
+}
+]
+*)
+

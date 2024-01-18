@@ -1,0 +1,215 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7411,        207]
+NotebookOptionsPosition[      6642,        187]
+NotebookOutlinePosition[      7040,        203]
+CellTagsIndexPosition[      6997,        200]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"oneSide", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Head", "[", "#", "]"}], "[", 
+      RowBox[{
+       RowBox[{"Subtract", "@@", "#"}], ",", "0"}], "]"}], "&"}], ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{
+     "x", ",", "y", ",", "z", ",", "p", ",", "q", ",", "u", ",", "v"}], "]"}],
+     ";", "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"p", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+         RowBox[{"{", "3", "}"}]}], "]"}], ",", " ", "roundbasis"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"q", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+         RowBox[{"{", "3", "}"}]}], "]"}], ",", " ", "roundbasis"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"r", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+         RowBox[{"{", "3", "}"}]}], "]"}], ",", " ", "roundbasis"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"eqn", " ", "=", " ", 
+     RowBox[{"With", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"u", "=", 
+          RowBox[{"q", "-", "p"}]}], ",", 
+         RowBox[{"v", "=", 
+          RowBox[{"r", "-", "p"}]}]}], "}"}], ",", 
+       RowBox[{"FullSimplify", "[", 
+        RowBox[{
+         RowBox[{"Expand", "[", 
+          RowBox[{
+           RowBox[{"Cross", "[", 
+            RowBox[{"u", ",", "v"}], "]"}], ".", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", "y", ",", "z"}], "}"}], "-", "p"}], ")"}]}], 
+          "]"}], "\[Equal]", "0"}], "]"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/convert_points_to_\
+plane/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the plane defined by the following points:\>\"", 
+        ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", 
+            RowBox[{"{", 
+             RowBox[{"p", ",", "q", ",", "r"}], "}"}]}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{
+            RowBox[{"eqn", "//", "oneSide"}], " ", "//", "TraditionalForm"}], 
+           "]"}], "]"}], "<>", "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], 
+  "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818123586349571*^9, 3.818123586380723*^9}, {
+  3.818123680833929*^9, 3.8181237285028477`*^9}, {3.818125016013176*^9, 
+  3.81812520224535*^9}, {3.818125237709646*^9, 3.818125241628689*^9}, {
+  3.818125279262878*^9, 3.818125292507691*^9}, {3.818303465847378*^9, 
+  3.818303500013525*^9}, {3.818303565924759*^9, 3.8183036230363398`*^9}, {
+  3.818303658444825*^9, 3.818303688129599*^9}, {3.8183715013798437`*^9, 
+  3.818371501747438*^9}, {3.8185577858200827`*^9, 3.8185577905348263`*^9}},
+ CellLabel->
+  "In[120]:=",ExpressionUUID->"73187024-f85c-4ae6-bd31-215fa960c7e6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"2\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 121, 159, 
+   32933687228108953757, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818371689536914*^9, 3.818558631295525*^9},
+ CellLabel->
+  "During evaluation of \
+In[120]:=",ExpressionUUID->"b2612448-ef33-40d6-bfc3-cd02e3c5c703"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"2\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 121, 160, 
+   32933687228108953757, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818371689536914*^9, 3.81855863505409*^9},
+ CellLabel->
+  "During evaluation of \
+In[120]:=",ExpressionUUID->"e60d0e29-c1ed-4d4e-8929-d19470a3c44b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"2\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 121, 161, 
+   32933687228108953757, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818371689536914*^9, 3.818558642290942*^9},
+ CellLabel->
+  "During evaluation of \
+In[120]:=",ExpressionUUID->"48d05f94-7fbd-4503-957b-04549bc068e9"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Symbol\\\", \\\"::\\\", \
+\\\"argx\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 121, 162, 32933687228108953757, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818371689536914*^9, 3.818558642301469*^9},
+ CellLabel->
+  "During evaluation of \
+In[120]:=",ExpressionUUID->"3ec4ab56-2bd9-491c-8e5c-cd5015e9ad8c"]
+}, Open  ]]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 461}, {Automatic, 37}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3c0a41ea-5496-41b0-96b0-413e183ef0cb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4248, 114, 325, "Input",ExpressionUUID->"73187024-f85c-4ae6-bd31-215fa960c7e6"],
+Cell[4831, 138, 437, 10, 24, "Message",ExpressionUUID->"b2612448-ef33-40d6-bfc3-cd02e3c5c703"],
+Cell[5271, 150, 436, 10, 24, "Message",ExpressionUUID->"e60d0e29-c1ed-4d4e-8929-d19470a3c44b"],
+Cell[5710, 162, 437, 10, 24, "Message",ExpressionUUID->"48d05f94-7fbd-4503-957b-04549bc068e9"],
+Cell[6150, 174, 476, 10, 24, "Message",ExpressionUUID->"3ec4ab56-2bd9-491c-8e5c-cd5015e9ad8c"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,100 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3606,         92]
+NotebookOptionsPosition[      3165,         77]
+NotebookOutlinePosition[      3563,         93]
+CellTagsIndexPosition[      3520,         90]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Find the multiplicative order of k modulo n.", "Text",
+ CellChangeTimes->{{3.818102972976576*^9, 3.818102980428609*^9}, {
+  3.818103613344282*^9, 3.818103619396235*^9}, {3.81810378351471*^9, 
+  3.818103802618129*^9}},ExpressionUUID->"a6cdafdd-5ed0-4cdc-9ef9-\
+f6ec50d03dc2"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "1000"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"k", " ", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"ResourceFunction", "[", "\"\<CoprimeIntegerList\>\"", "]"}], 
+       "[", "n", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/multiplicative_order/\>\
+\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the smallest integer $m$ such that $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "k", "]"}], "]"}], "<>", 
+        "\"\<^m \\\\equiv 1 \\\\pmod{\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "n", "]"}], "]"}], "<>", 
+        "\"\<}$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"MultiplicativeOrder", "[", 
+           RowBox[{"k", ",", "n"}], "]"}], "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+  3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+  3.81808632938737*^9}, {3.8181029481344748`*^9, 3.8181030614036818`*^9}, {
+  3.818103111267552*^9, 3.818103134507011*^9}, {3.8181031786886272`*^9, 
+  3.818103198370284*^9}, {3.818103343314039*^9, 3.818103349128991*^9}, {
+  3.818103450960734*^9, 3.8181034562386703`*^9}, {3.818103606102436*^9, 
+  3.8181037006920033`*^9}, {3.8181037977882137`*^9, 3.818103870609342*^9}, {
+  3.8181039529694347`*^9, 3.818103982415655*^9}, {3.8181040412967987`*^9, 
+  3.818104087047083*^9}, {3.818104143511881*^9, 3.8181041724462967`*^9}, {
+  3.818297104722374*^9, 3.818297233604582*^9}, {3.818372302567483*^9, 
+  3.8183723030393133`*^9}, {3.818550352333981*^9, 
+  3.818550374589734*^9}},ExpressionUUID->"136e7978-ecdb-46f9-b5a5-\
+61ab68dc8dfe"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{551, Automatic}, {Automatic, 33}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4167cf0f-e23d-4160-b679-31d0af6aba46"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 280, 4, 35, "Text",ExpressionUUID->"a6cdafdd-5ed0-4cdc-9ef9-f6ec50d03dc2"],
+Cell[841, 26, 2320, 49, 199, "Input",ExpressionUUID->"136e7978-ecdb-46f9-b5a5-61ab68dc8dfe"]
+}
+]
+*)
+

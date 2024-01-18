@@ -1,0 +1,423 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17366,        415]
+NotebookOptionsPosition[     16917,        400]
+NotebookOutlinePosition[     17315,        416]
+CellTagsIndexPosition[     17272,        413]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"x", ",", "p"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "9000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Dist", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"NormalDistribution", "[", 
+            RowBox[{
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"-", "2"}], ",", "2"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}], ",", 
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.5", ",", "3"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}]}], "]"}], ",", 
+           RowBox[{"LaplaceDistribution", "[", 
+            RowBox[{"0", ",", 
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.5", ",", "2"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"PoissonDistribution", "[", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", "4"}], "}"}], "]"}], ",", "0.1"}], "]"}], 
+            "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"BetaDistribution", "[", 
+            RowBox[{
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.1", ",", "2"}], "}"}], "]"}], ",", "0.1"}], "]"}],
+              ",", 
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.1", ",", "2"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"ExponentialDistribution", "[", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{"0.1", ",", "2"}], "}"}], "]"}], ",", "0.1"}], "]"}], 
+            "]"}]}], "\[IndentingNewLine]", "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"p", "=", "0"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"While", "[", 
+        RowBox[{
+         RowBox[{"p", "==", "0"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"j", "=", "0"}], ",", 
+            RowBox[{"j", "<", 
+             RowBox[{"RandomInteger", "[", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "3"}], "}"}], "]"}]}], ",", 
+            RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"p", " ", "+=", " ", 
+              RowBox[{
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "5"}], ",", "5"}], "}"}], "]"}], ",", " ", 
+                 "0.1"}], "]"}], "*", 
+               RowBox[{"x", "^", "j"}]}]}], ";"}]}], "\[IndentingNewLine]", 
+           "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"low", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"InverseCDF", "[", 
+           RowBox[{"Dist", ",", "0.01"}], "]"}], ",", "0.001"}], "]"}]}], ";",
+        "\[IndentingNewLine]", 
+       RowBox[{"high", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"InverseCDF", "[", 
+           RowBox[{"Dist", ",", "0.99"}], "]"}], ",", "0.001"}], "]"}]}], ";",
+        "\[IndentingNewLine]", 
+       RowBox[{"a", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"low", ",", 
+             RowBox[{"low", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"high", "-", "low"}], ")"}], "/", "2"}]}]}], "}"}], 
+           "]"}], ",", "0.01"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"b", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"a", ",", "high"}], "}"}], "]"}], ",", "0.01"}], "]"}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"ans", " ", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"Probability", "[", 
+           RowBox[{
+            RowBox[{"a", "<", "p", "<", "b"}], ",", 
+            RowBox[{"x", "\[Distributed]", "Dist"}]}], "]"}], ",", "0.01"}], 
+         "]"}]}], ";"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"ans", "<", "0.005"}], "||", "  ", 
+       RowBox[{"ans", " ", ">", "0.995"}], "||", 
+       RowBox[{
+        RowBox[{"StringLength", "[", 
+         RowBox[{"ToString", "[", "ans", "]"}], "]"}], ">", "6"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/counting_and_statistics/\
+probability/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nFind the probability that $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "a", "]"}], "]"}], "<>", "\"\< < \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"p", "//", "TraditionalForm"}], "]"}], "]"}], "<>", 
+         "\"\< < \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "b", "]"}], "]"}], "<>", 
+         "\"\<$ where $x \\\\sim $ \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "Dist", "]"}], "]"}], "<>", "\"\<.\>\""}], 
+        ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "ans", "]"}], "]"}], "<>", "\"\<$\>\""}]}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818088020729041*^9, 3.818088022337034*^9}, 
+   3.8180900627643337`*^9, {3.8180901458167467`*^9, 3.818090204390074*^9}, {
+   3.818090277239903*^9, 3.818090278596499*^9}, {3.818109286300799*^9, 
+   3.8181095775787983`*^9}, {3.818109661285657*^9, 3.818109700994337*^9}, {
+   3.8181098626014423`*^9, 3.818109884752819*^9}, {3.818110060934411*^9, 
+   3.818110077357823*^9}, {3.8181101140238733`*^9, 3.818110308812965*^9}, {
+   3.81811033904714*^9, 3.818110407160203*^9}, 3.8181104377304487`*^9, {
+   3.818115875291869*^9, 3.818115901411283*^9}, {3.8181161644410133`*^9, 
+   3.818116176838214*^9}, {3.8181162960589848`*^9, 3.81811657221546*^9}, {
+   3.8181167472217503`*^9, 3.818116822370129*^9}, {3.8181168549469767`*^9, 
+   3.818116891777717*^9}, {3.8181169961704693`*^9, 3.818117220013337*^9}, {
+   3.81811746534483*^9, 3.818117471241334*^9}, {3.818117503625113*^9, 
+   3.818117545150896*^9}, {3.818117576718836*^9, 3.818117703980688*^9}, {
+   3.818117737605239*^9, 3.818117745003372*^9}, 3.818118354039819*^9, {
+   3.818118568627561*^9, 3.8181185826737413`*^9}, 3.818347351376425*^9, {
+   3.818347447126319*^9, 3.8183474790001087`*^9}, {3.818347510971826*^9, 
+   3.818347580160432*^9}, 3.81834761818489*^9, {3.818347698655167*^9, 
+   3.8183477000863247`*^9}, {3.818347772071084*^9, 3.818347803380665*^9}, {
+   3.818347842324216*^9, 3.8183478439463997`*^9}, {3.81834793258532*^9, 
+   3.818347935376564*^9}, {3.8183479709360447`*^9, 3.818347976591617*^9}, {
+   3.8183765828663588`*^9, 
+   3.818376583098731*^9}},ExpressionUUID->"a8536b53-0e90-448d-9f52-\
+28d6b3db9bda"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"x", ",", "p", ",", "q", ",", "ans"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "9000"}], ",", 
+   RowBox[{"i", "<", "10000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Dist", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"NormalDistribution", "[", 
+            RowBox[{
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"-", "2"}], ",", "2"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}], ",", 
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.5", ",", "3"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}]}], "]"}], ",", 
+           RowBox[{"LaplaceDistribution", "[", 
+            RowBox[{"0", ",", 
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.5", ",", "2"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"PoissonDistribution", "[", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", "4"}], "}"}], "]"}], ",", "0.1"}], "]"}], 
+            "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"BetaDistribution", "[", 
+            RowBox[{
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.1", ",", "2"}], "}"}], "]"}], ",", "0.1"}], "]"}],
+              ",", 
+             RowBox[{"Round", "[", 
+              RowBox[{
+               RowBox[{"RandomReal", "[", 
+                RowBox[{"{", 
+                 RowBox[{"0.1", ",", "2"}], "}"}], "]"}], ",", "0.1"}], 
+              "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"ExponentialDistribution", "[", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{"0.1", ",", "2"}], "}"}], "]"}], ",", "0.1"}], "]"}], 
+            "]"}]}], "\[IndentingNewLine]", "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"p", "=", "0"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"While", "[", 
+        RowBox[{
+         RowBox[{"p", "==", "0"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"j", "=", "0"}], ",", 
+            RowBox[{"j", "<", 
+             RowBox[{"RandomInteger", "[", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "3"}], "}"}], "]"}]}], ",", 
+            RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"p", " ", "+=", " ", 
+              RowBox[{
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "3"}], ",", "3"}], "}"}], "]"}], ",", " ", 
+                 "0.1"}], "]"}], "*", 
+               RowBox[{"x", "^", "j"}]}]}], ";"}]}], "\[IndentingNewLine]", 
+           "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"q", "=", "0"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"While", "[", 
+        RowBox[{
+         RowBox[{"q", "==", "0"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"j", "=", "0"}], ",", 
+            RowBox[{"j", "<", 
+             RowBox[{"RandomInteger", "[", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "3"}], "}"}], "]"}]}], ",", 
+            RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"q", " ", "+=", " ", 
+              RowBox[{
+               RowBox[{"Round", "[", 
+                RowBox[{
+                 RowBox[{"RandomReal", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "3"}], ",", "3"}], "}"}], "]"}], ",", " ", 
+                 "0.1"}], "]"}], "*", 
+               RowBox[{"x", "^", "j"}]}]}], ";"}]}], "\[IndentingNewLine]", 
+           "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"ans", " ", "=", 
+        RowBox[{"Round", "[", " ", 
+         RowBox[{
+          RowBox[{"Probability", "[", 
+           RowBox[{
+            RowBox[{"p", "<", "q"}], " ", ",", 
+            RowBox[{"x", "\[Distributed]", "Dist"}]}], "]"}], ",", "0.01"}], 
+         "]"}]}], ";"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"ans", "<", "0.005"}], "  ", "||", "  ", 
+       RowBox[{"ans", " ", ">", "0.995"}], "||", 
+       RowBox[{
+        RowBox[{"StringLength", "[", 
+         RowBox[{"ToString", "[", "ans", "]"}], "]"}], ">", "6"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/counting_and_statistics/\
+probability/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nFind the probability that $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"p", "//", "TraditionalForm"}], "]"}], "]"}], "<>", 
+         "\"\< < \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"q", "//", "TraditionalForm"}], "]"}], "]"}], "<>", 
+         "\"\<$ where $x \\\\sim $ \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "Dist", "]"}], "]"}], "<>", "\"\<.\>\""}], 
+        ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "ans", "]"}], "]"}], "<>", "\"\<$\>\""}]}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818088020729041*^9, 3.818088022337034*^9}, 
+   3.8180900627643337`*^9, {3.8180901458167467`*^9, 3.818090204390074*^9}, {
+   3.818090277239903*^9, 3.818090278596499*^9}, {3.818109286300799*^9, 
+   3.8181095775787983`*^9}, {3.818109661285657*^9, 3.818109700994337*^9}, {
+   3.8181098626014423`*^9, 3.818109884752819*^9}, {3.818110060934411*^9, 
+   3.818110077357823*^9}, {3.8181101140238733`*^9, 3.818110308812965*^9}, {
+   3.81811033904714*^9, 3.818110407160203*^9}, 3.8181104377304487`*^9, {
+   3.818115875291869*^9, 3.818115901411283*^9}, {3.8181161644410133`*^9, 
+   3.818116176838214*^9}, {3.8181162960589848`*^9, 3.81811657221546*^9}, {
+   3.8181167472217503`*^9, 3.818116822370129*^9}, {3.8181168549469767`*^9, 
+   3.818116891777717*^9}, {3.8181169961704693`*^9, 3.818117220013337*^9}, {
+   3.81811746534483*^9, 3.818117471241334*^9}, {3.818117503625113*^9, 
+   3.818117545150896*^9}, {3.818117576718836*^9, 3.818117703980688*^9}, {
+   3.818117737605239*^9, 3.8181179213832283`*^9}, 3.8181179569750767`*^9, {
+   3.818117988126005*^9, 3.818117995724781*^9}, {3.818118029246311*^9, 
+   3.818118113402157*^9}, {3.818118146690988*^9, 3.818118217441751*^9}, {
+   3.818118248750094*^9, 3.818118288743774*^9}, {3.818118327440065*^9, 
+   3.818118336062839*^9}, 3.8183473538000317`*^9, 3.818347481323683*^9, {
+   3.818347683792859*^9, 3.818347713998315*^9}, {3.8183478107810383`*^9, 
+   3.818347836091584*^9}, {3.818347890106995*^9, 3.8183479503125668`*^9}, 
+   3.818348001921626*^9, 3.8183480593829737`*^9, {3.8183765863254747`*^9, 
+   3.818376589946809*^9}},ExpressionUUID->"d0564ba7-23cd-499c-8b71-\
+79e7dca4550a"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 216}, {Automatic, 20}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"79844cdf-676d-4d4c-8d3a-2badf37a13ec"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 8198, 190, 682, "Input",ExpressionUUID->"a8536b53-0e90-448d-9f52-28d6b3db9bda"],
+Cell[8759, 212, 8154, 186, 703, "Input",ExpressionUUID->"d0564ba7-23cd-499c-8b71-79e7dca4550a"]
+}
+]
+*)
+

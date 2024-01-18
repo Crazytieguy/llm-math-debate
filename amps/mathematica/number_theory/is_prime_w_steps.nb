@@ -1,0 +1,412 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16550,        404]
+NotebookOptionsPosition[     15260,        377]
+NotebookOutlinePosition[     15785,        396]
+CellTagsIndexPosition[     15742,        393]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "5000"}], ",", 
+   RowBox[{"i", "+=", "1"}], ",", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f", " ", "=", 
+     RowBox[{"ReadString", "[", 
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/number_\
+theory/is_prime/\>\"", "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"3", "*", "i"}], "]"}], "<>", "\"\<.txt\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringContainsQ", "[", 
+        RowBox[{"f", ",", "\"\<---\>\""}], "]"}], "||", 
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         RowBox[{"Prime", "[", 
+          RowBox[{"i", "+", "1"}], "]"}], "-", "2"}], "]"}]}], ",", ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"PrimeQ", "[", 
+          RowBox[{
+           RowBox[{"Prime", "[", 
+            RowBox[{"i", "+", "1"}], "]"}], "-", "2"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"sol", "=", 
+           RowBox[{
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", 
+              RowBox[{
+               RowBox[{"Prime", "[", 
+                RowBox[{"i", "+", "1"}], "]"}], "-", "2"}], "]"}], "]"}], 
+            "<>", "\"\< is prime.\>\""}]}], ";"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"sol", " ", "=", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"Quiet", "[", 
+             RowBox[{"WolframAlpha", "[", 
+              RowBox[{
+               RowBox[{"\"\<PrimeQ[\>\"", "<>", " ", 
+                RowBox[{"ToString", "[", 
+                 RowBox[{
+                  RowBox[{"Prime", "[", 
+                   RowBox[{"i", "+", "1"}], "]"}], "-", "2"}], "]"}], "<>", 
+                "\"\<]\>\""}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<Result\>\"", ",", "2"}], "}"}], ",", 
+                 "\"\<Content\>\""}], "}"}], ",", 
+               RowBox[{"PodStates", "\[Rule]", 
+                RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}],
+                ",", 
+               RowBox[{"TimeConstraint", "\[Rule]", "60"}]}], "]"}], "]"}], 
+            "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/\
+number_theory/is_prime/\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"3", "*", "i"}], "]"}], "<>", "\"\<.txt\>\""}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Problem:\\nIs the following number prime?\>\"", ",", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{
+             RowBox[{"Prime", "[", 
+              RowBox[{"i", "+", "1"}], "]"}], "-", "2"}], "]"}], ",", 
+           "\"\<Answer:\>\"", ",", "sol"}], "}"}]}], "]"}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"f", " ", "=", 
+     RowBox[{"ReadString", "[", 
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/number_\
+theory/is_prime/\>\"", "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{"3", "*", "i"}], "+", "1"}], "]"}], "<>", "\"\<.txt\>\""}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"StringContainsQ", "[", 
+       RowBox[{"f", ",", "\"\<---\>\""}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{
+        RowBox[{"sol", " ", "=", 
+         RowBox[{"Quiet", "[", 
+          RowBox[{"WolframAlpha", "[", 
+           RowBox[{
+            RowBox[{"\"\<PrimeQ[\>\"", "<>", " ", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"Prime", "[", 
+               RowBox[{"i", "+", "1"}], "]"}], "]"}], "<>", "\"\<]\>\""}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"\"\<Result\>\"", ",", "2"}], "}"}], ",", 
+              "\"\<Content\>\""}], "}"}], ",", 
+            RowBox[{"PodStates", "\[Rule]", 
+             RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}], 
+            ",", 
+            RowBox[{"TimeConstraint", "\[Rule]", "60"}]}], "]"}], "]"}]}], 
+        ";"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/\
+number_theory/is_prime/\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{
+            RowBox[{"3", "*", "i"}], "+", "1"}], "]"}], "<>", 
+          "\"\<.txt\>\""}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Problem:\\nIs the following number prime?\>\"", ",", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"Prime", "[", 
+             RowBox[{"i", "+", "1"}], "]"}], "]"}], ",", "\"\<Answer:\>\"", 
+           ",", " ", 
+           RowBox[{
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", 
+              RowBox[{"Prime", "[", 
+               RowBox[{"i", "+", "1"}], "]"}], "]"}], "]"}], "<>", 
+            "\"\< is prime.\>\""}]}], "\[IndentingNewLine]", 
+          RowBox[{"(*", 
+           RowBox[{"TeXForm", "[", "sol", "]"}], "*)"}], 
+          "\[IndentingNewLine]", "}"}]}], "]"}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"f", " ", "=", 
+     RowBox[{"ReadString", "[", 
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/number_\
+theory/is_prime/\>\"", "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{"3", "*", "i"}], "+", "2"}], "]"}], "<>", "\"\<.txt\>\""}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringContainsQ", "[", 
+        RowBox[{"f", ",", "\"\<---\>\""}], "]"}], "||", 
+       RowBox[{"PrimeQ", "[", 
+        RowBox[{
+         RowBox[{"Prime", "[", 
+          RowBox[{"i", "+", "1"}], "]"}], "+", "2"}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"PrimeQ", "[", 
+          RowBox[{
+           RowBox[{"Prime", "[", 
+            RowBox[{"i", "+", "1"}], "]"}], "+", "2"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"sol", "=", 
+           RowBox[{
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", 
+              RowBox[{
+               RowBox[{"Prime", "[", 
+                RowBox[{"i", "+", "1"}], "]"}], "+", "2"}], "]"}], "]"}], 
+            "<>", "\"\< is prime.\>\""}]}], ";"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"sol", " ", "=", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{"Quiet", "[", 
+             RowBox[{"WolframAlpha", "[", 
+              RowBox[{
+               RowBox[{"\"\<PrimeQ[\>\"", "<>", " ", 
+                RowBox[{"ToString", "[", 
+                 RowBox[{
+                  RowBox[{"Prime", "[", 
+                   RowBox[{"i", "+", "1"}], "]"}], "+", "2"}], "]"}], "<>", 
+                "\"\<]\>\""}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<Result\>\"", ",", "2"}], "}"}], ",", 
+                 "\"\<Content\>\""}], "}"}], ",", 
+               RowBox[{"PodStates", "\[Rule]", 
+                RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}],
+                ",", 
+               RowBox[{"TimeConstraint", "\[Rule]", "60"}]}], "]"}], "]"}], 
+            "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/\
+number_theory/is_prime/\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{
+            RowBox[{"3", "*", "i"}], "+", "2"}], "]"}], "<>", 
+          "\"\<.txt\>\""}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Problem:\\nIs the following number prime?\>\"", ",", 
+           RowBox[{"TeXForm", "[", 
+            RowBox[{
+             RowBox[{"Prime", "[", 
+              RowBox[{"i", "+", "1"}], "]"}], "+", "2"}], "]"}], ",", 
+           "\"\<Answer:\>\"", ",", "sol"}], "}"}]}], "]"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+   3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+   3.81808632938737*^9}, {3.8180864606956463`*^9, 3.818086496166914*^9}, 
+   3.818086576119206*^9, {3.8180869333727427`*^9, 3.818086978947751*^9}, {
+   3.818087041759931*^9, 3.818087072025712*^9}, {3.818087138651904*^9, 
+   3.818087209284032*^9}, {3.8180872575514927`*^9, 3.818087355644887*^9}, {
+   3.818121056900319*^9, 3.818121088295712*^9}, {3.818121482798233*^9, 
+   3.818121517836452*^9}, {3.818121559708008*^9, 3.81812161152765*^9}, {
+   3.8183724371906776`*^9, 3.818372437882951*^9}, {3.818384408282525*^9, 
+   3.8183844622645693`*^9}, {3.81854149148599*^9, 3.81854151995052*^9}, {
+   3.818541668817007*^9, 3.818541753162356*^9}, {3.818541818063478*^9, 
+   3.818541818795623*^9}, {3.818541871088784*^9, 3.8185418713952417`*^9}, {
+   3.818619233949605*^9, 3.818619330106596*^9}, {3.818619384626227*^9, 
+   3.818619401888237*^9}, {3.818622712196301*^9, 3.818622735749703*^9}, {
+   3.818622942046134*^9, 3.818623010417479*^9}, {3.818623062590888*^9, 
+   3.818623104416938*^9}, {3.818623288538212*^9, 3.81862329916745*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"b0aef631-b439-4378-b261-7446537bfe5a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$3312529\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$3312529\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 7, 9, 
+   32934659278977500958, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818623304993902*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"35dc24e4-8f72-45b6-b5a2-aec7f3ddf5b3"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$3312602\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$3312602\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 7, 10, 
+   32934659278977500958, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818623305017048*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"d892f19c-de27-4f67-bbe6-ac275a10f79b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$3313580\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$3313580\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 7, 11, 
+   32934659278977500958, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818623305760682*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"03a6f58f-be58-424c-b80b-62f9554be311"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Set\\\", \\\"::\\\", \\\
+\"shape\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 7, 12, 32934659278977500958, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.81862330576927*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"e039c52e-fdd7-4d60-95f9-1c3d77b265fb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TeXForm", "unspt", 
+   "\"TeXForm of \\!\\(\\*RowBox[{\\\"ItemBox\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"1\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"ItemSize\\\", \\\"\
+\[Rule]\\\", \\\"0.75`\\\"}], \\\",\\\", RowBox[{\\\"StripOnInput\\\", \\\"\
+\[Rule]\\\", \\\"False\\\"}]}], \\\"]\\\"}]\\) is not supported.\"", 2, 7, 13,
+    32934659278977500958, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8186233147904882`*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"ce82f437-3695-4b0b-b16b-ad3f3c93294a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TeXForm", "unspt", 
+   "\"TeXForm of \\!\\(\\*RowBox[{\\\"ItemBox\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"1\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"ItemSize\\\", \\\"\
+\[Rule]\\\", \\\"0.75`\\\"}], \\\",\\\", RowBox[{\\\"StripOnInput\\\", \\\"\
+\[Rule]\\\", \\\"False\\\"}]}], \\\"]\\\"}]\\) is not supported.\"", 2, 7, 14,
+    32934659278977500958, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818623314806912*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"09153148-a4ef-4a3d-bafc-0d2b79e5c63d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TeXForm", "unspt", 
+   "\"TeXForm of \\!\\(\\*RowBox[{\\\"ItemBox\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"\\\\\\\\\\\\\\\"(quotient)\\\\\\\\\\\\\\\"\\\\\\\"\\\", \
+\\\",\\\", RowBox[{\\\"Alignment\\\", \\\"\[Rule]\\\", \\\"Left\\\"}], \
+\\\",\\\", RowBox[{\\\"StripOnInput\\\", \\\"\[Rule]\\\", \\\"False\\\"}]}], \
+\\\"]\\\"}]\\) is not supported.\"", 2, 7, 15, 32934659278977500958, 
+   "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818623314813953*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"95c065ad-3876-4923-a14a-0456e364eb5f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"TeXForm\\\", \
+\\\"::\\\", \\\"unspt\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"", 2, 7, 16, 32934659278977500958, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818623314818343*^9},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"28f39781-fe6d-45a5-a040-3f85656fd960"]
+}, Open  ]]
+},
+Evaluator->"Kernel2",
+WindowSize->{807.75, 856.5},
+WindowMargins->{{Automatic, 542.25}, {Automatic, 41.25}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"85ab31b5-a502-4e85-85d9-c4238a09374a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 10017, 237, 1249, "Input",ExpressionUUID->"b0aef631-b439-4378-b261-7446537bfe5a"],
+Cell[10600, 261, 651, 14, 39, "Message",ExpressionUUID->"35dc24e4-8f72-45b6-b5a2-aec7f3ddf5b3"],
+Cell[11254, 277, 652, 14, 39, "Message",ExpressionUUID->"d892f19c-de27-4f67-bbe6-ac275a10f79b"],
+Cell[11909, 293, 652, 14, 39, "Message",ExpressionUUID->"03a6f58f-be58-424c-b80b-62f9554be311"],
+Cell[12564, 309, 448, 10, 24, "Message",ExpressionUUID->"e039c52e-fdd7-4d60-95f9-1c3d77b265fb"],
+Cell[13015, 321, 576, 12, 24, "Message",ExpressionUUID->"ce82f437-3695-4b0b-b16b-ad3f3c93294a"],
+Cell[13594, 335, 574, 12, 24, "Message",ExpressionUUID->"09153148-a4ef-4a3d-bafc-0d2b79e5c63d"],
+Cell[14171, 349, 617, 13, 24, "Message",ExpressionUUID->"95c065ad-3876-4923-a14a-0456e364eb5f"],
+Cell[14791, 364, 453, 10, 24, "Message",ExpressionUUID->"28f39781-fe6d-45a5-a040-3f85656fd960"]
+}, Open  ]]
+}
+]
+*)
+

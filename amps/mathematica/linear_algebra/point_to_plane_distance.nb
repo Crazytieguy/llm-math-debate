@@ -1,0 +1,292 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10332,        284]
+NotebookOptionsPosition[      9843,        268]
+NotebookOutlinePosition[     10281,        285]
+CellTagsIndexPosition[     10238,        282]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "30000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"x", ",", "y", ",", "z", ",", "p"}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", " ", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"1", "/", "2"}], ",", 
+        RowBox[{"1", "/", "3"}], ",", 
+        RowBox[{"1", "/", "5"}], ",", 
+        RowBox[{"1", "/", "7"}], ",", 
+        RowBox[{"1", "/", "10"}], ",", 
+        RowBox[{"1", "/", "32"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"p", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+         RowBox[{"{", "2", "}"}]}], "]"}], ",", " ", "roundbasis"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"coeffs", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+            RowBox[{"{", "3", "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+         "]"}]}], ";"}], "\[IndentingNewLine]", ",", 
+      RowBox[{
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+       RowBox[{"0", " ", "And", " ", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], "\[Equal]", "0"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"eqn", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "*", "x"}], "+", 
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "*", "y"}], "+", 
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "3", "]"}], "]"}]}], "==", "0"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"answer", "=", 
+     RowBox[{
+      RowBox[{"Abs", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "*", 
+         RowBox[{"p", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "*", 
+         RowBox[{"p", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "+", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "3", "]"}], "]"}]}], "]"}], "/", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "^", "2"}], "+", 
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "^", "2"}]}], "]"}]}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/point_to_plane_\
+distance/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the distance from the point $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"Map", "[", 
+          RowBox[{"TeXForm", ",", "p"}], "]"}], "]"}], "<>", 
+        "\"\<$ to the line $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "eqn", "]"}], "]"}], "<>", " ", 
+        "\"\<$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "answer", "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818123586349571*^9, 3.818123586380723*^9}, {
+  3.818123680833929*^9, 3.8181237285028477`*^9}, {3.818125016013176*^9, 
+  3.81812520224535*^9}, {3.818125237709646*^9, 3.818125241628689*^9}, {
+  3.818125279262878*^9, 3.818125292507691*^9}, {3.8182986038341827`*^9, 
+  3.81829860878027*^9}, {3.818298701182514*^9, 3.818298881194338*^9}, {
+  3.8182989569448843`*^9, 3.81829915943673*^9}, {3.818299199184349*^9, 
+  3.818299267052321*^9}, {3.81837182499508*^9, 3.8183718254344263`*^9}, {
+  3.818558185770306*^9, 
+  3.8185581902923927`*^9}},ExpressionUUID->"73187024-f85c-4ae6-bd31-\
+215fa960c7e6"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "30000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"x", ",", "y", ",", "z", ",", "p"}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", " ", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"1", "/", "2"}], ",", 
+        RowBox[{"1", "/", "3"}], ",", 
+        RowBox[{"1", "/", "5"}]}], "}"}], "]"}]}], ";", "\[IndentingNewLine]",
+     "\[IndentingNewLine]", 
+    RowBox[{"p", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+         RowBox[{"{", "3", "}"}]}], "]"}], ",", " ", "roundbasis"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"coeffs", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+            RowBox[{"{", "4", "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+         "]"}]}], ";"}], "\[IndentingNewLine]", ",", 
+      RowBox[{
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+       RowBox[{"0", " ", "And", " ", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], "\[Equal]", 
+       RowBox[{"0", "And", " ", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "3", "]"}], "]"}]}], "\[Equal]", "0"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"eqn", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "*", "x"}], "+", 
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "*", "y"}], "+", 
+       RowBox[{
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], "*", "z"}], "+", 
+       RowBox[{"coeffs", "[", 
+        RowBox[{"[", "4", "]"}], "]"}]}], "==", "0"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"answer", "=", 
+     RowBox[{
+      RowBox[{"Abs", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "*", 
+         RowBox[{"p", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "*", 
+         RowBox[{"p", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], "*", 
+         RowBox[{"p", "[", 
+          RowBox[{"[", "3", "]"}], "]"}]}], "+", 
+        RowBox[{"coeffs", "[", 
+         RowBox[{"[", "4", "]"}], "]"}]}], "]"}], "/", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "^", "2"}], "+", 
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "^", "2"}], "+", 
+        RowBox[{
+         RowBox[{"coeffs", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], "^", "2"}]}], "]"}]}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/point_to_plane_\
+distance/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the distance from the point $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"Map", "[", 
+          RowBox[{"TeXForm", ",", "p"}], "]"}], "]"}], "<>", 
+        "\"\<$ to the plane $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "eqn", "]"}], "]"}], "<>", " ", 
+        "\"\<$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "answer", "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8182992617015333`*^9, 3.818299327490357*^9}, {
+  3.818299400852337*^9, 3.818299401100091*^9}, {3.818371827931258*^9, 
+  3.81837183131464*^9}, {3.818558194919271*^9, 
+  3.818558206021481*^9}},ExpressionUUID->"11b89742-901b-4b22-b9b4-\
+6a7b1bdb4d93"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 461}, {Automatic, 37}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3c0a41ea-5496-41b0-96b0-413e183ef0cb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4612, 119, 430, "Input",ExpressionUUID->"73187024-f85c-4ae6-bd31-215fa960c7e6"],
+Cell[5173, 141, 4666, 125, 430, "Input",ExpressionUUID->"11b89742-901b-4b22-b9b4-6a7b1bdb4d93"]
+}
+]
+*)
+

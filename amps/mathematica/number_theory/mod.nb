@@ -1,0 +1,85 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2682,         77]
+NotebookOptionsPosition[      2331,         63]
+NotebookOutlinePosition[      2729,         79]
+CellTagsIndexPosition[      2686,         76]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "100000"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"n", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "100"}], "}"}], "]"}]}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\</Users/hendrycks/Desktop/mesa/number_theory/mod/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the smallest $x$ such that $x \\\\equiv \>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+        "\"\< \\\\pmod{\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "n", "]"}], "]"}], "<>", 
+        "\"\<}$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"Mod", "[", 
+           RowBox[{"m", ",", "n"}], "]"}], "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+   3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+   3.81808632938737*^9}, 3.818102997229513*^9, {3.818296343787524*^9, 
+   3.818296425088202*^9}, {3.818296655128961*^9, 3.8182967195666733`*^9}, {
+   3.818372322887945*^9, 3.818372323158183*^9}, {3.818550298771154*^9, 
+   3.818550308802606*^9}},ExpressionUUID->"8e39a0db-83e0-4068-abc3-\
+e2cb378fd5c3"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 540}, {47, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"818aa9d0-db78-44c8-9356-e31fb8c2b462"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1769, 41, 178, "Input",ExpressionUUID->"8e39a0db-83e0-4068-abc3-e2cb378fd5c3"]
+}
+]
+*)
+

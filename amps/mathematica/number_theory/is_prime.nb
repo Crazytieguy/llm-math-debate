@@ -1,0 +1,120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4127,        112]
+NotebookOptionsPosition[      3776,         98]
+NotebookOutlinePosition[      4174,        114]
+CellTagsIndexPosition[      4131,        111]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "10000"}], ",", 
+   RowBox[{"i", "+=", "1"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/number_theory/is_prime/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"3", "*", "i"}], "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nIs the following number prime?\>\"", ",", 
+        RowBox[{"TeXForm", "[", 
+         RowBox[{
+          RowBox[{"Prime", "[", 
+           RowBox[{"i", "+", "1"}], "]"}], "-", "2"}], "]"}], ",", 
+        "\"\<Answer:\>\"", ",", 
+        RowBox[{"TeXForm", "[", 
+         RowBox[{"PrimeQ", "[", 
+          RowBox[{
+           RowBox[{"Prime", "[", 
+            RowBox[{"i", "+", "1"}], "]"}], "-", "2"}], "]"}], "]"}]}], 
+       "}"}]}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/number_theory/is_prime/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{"3", "*", "i"}], "+", "1"}], "]"}], "<>", "\"\<.txt\>\""}], 
+      ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nIs the following number prime?\>\"", ",", 
+        RowBox[{"TeXForm", "[", 
+         RowBox[{"Prime", "[", 
+          RowBox[{"i", "+", "1"}], "]"}], "]"}], ",", "\"\<Answer:\>\"", ",", 
+        
+        RowBox[{"TeXForm", "[", "\"\<True\>\"", "]"}]}], "}"}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/number_theory/is_prime/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{"3", "*", "i"}], "+", "2"}], "]"}], "<>", "\"\<.txt\>\""}], 
+      ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nIs the following number prime?\>\"", ",", 
+        RowBox[{"TeXForm", "[", 
+         RowBox[{
+          RowBox[{"Prime", "[", 
+           RowBox[{"i", "+", "1"}], "]"}], "+", "2"}], "]"}], ",", 
+        "\"\<Answer:\>\"", ",", 
+        RowBox[{"TeXForm", "[", 
+         RowBox[{"PrimeQ", "[", 
+          RowBox[{
+           RowBox[{"Prime", "[", 
+            RowBox[{"i", "+", "1"}], "]"}], "+", "2"}], "]"}], "]"}]}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+   3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+   3.81808632938737*^9}, {3.8180864606956463`*^9, 3.818086496166914*^9}, 
+   3.818086576119206*^9, {3.8180869333727427`*^9, 3.818086978947751*^9}, {
+   3.818087041759931*^9, 3.818087072025712*^9}, {3.818087138651904*^9, 
+   3.818087209284032*^9}, {3.8180872575514927`*^9, 3.818087355644887*^9}, {
+   3.818121056900319*^9, 3.818121088295712*^9}, {3.818121482798233*^9, 
+   3.818121517836452*^9}, {3.818121559708008*^9, 3.81812161152765*^9}, {
+   3.8183724371906776`*^9, 3.818372437882951*^9}, {3.818384408282525*^9, 
+   3.8183844622645693`*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"b0aef631-b439-4378-b261-7446537bfe5a"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 542}, {Automatic, 23}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"85ab31b5-a502-4e85-85d9-c4238a09374a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3214, 76, 338, "Input",ExpressionUUID->"b0aef631-b439-4378-b261-7446537bfe5a"]
+}
+]
+*)
+

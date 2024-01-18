@@ -1,0 +1,197 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7786,        189]
+NotebookOptionsPosition[      7434,        175]
+NotebookOutlinePosition[      7832,        191]
+CellTagsIndexPosition[      7789,        188]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "0"}], ",", 
+    RowBox[{"i", "<", "10000"}], ",", 
+    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"d", " ", "=", " ", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "5"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"roundbasis", " ", "=", " ", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "/", "2"}], ",", 
+            RowBox[{"1", "/", "3"}], ",", " ", 
+            RowBox[{"1", "/", "4"}], ",", " ", 
+            RowBox[{"1", "/", "5"}], ",", 
+            RowBox[{"1", "/", "7"}], ",", " ", 
+            RowBox[{"1", "/", 
+             SqrtBox["2"]}], ",", 
+            RowBox[{"1", "/", 
+             SqrtBox["3"]}], ",", 
+            RowBox[{"Log", "[", "2", "]"}], ",", 
+            RowBox[{"1", "/", "\[Pi]"}], ",", 
+            RowBox[{"1", "/", "\[ExponentialE]"}], ",", " ", 
+            "\[ExponentialE]", ",", " ", "\[Pi]", ",", " ", 
+            RowBox[{"Sqrt", "[", "2", "]"}], ",", " ", 
+            RowBox[{"Sqrt", "[", "3", "]"}], ",", " ", 
+            RowBox[{"Sqrt", "[", "5", "]"}], ",", " ", "0.1", ",", "0.01", 
+            ",", " ", "0.001"}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{"Create", " ", "common", " ", "elements"}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"tmplist", " ", "=", " ", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"j", "=", "0"}], ",", 
+       RowBox[{"j", "<", "d"}], ",", 
+       RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"tmplist", " ", "=", " ", 
+         RowBox[{"Append", "[", 
+          RowBox[{"tmplist", ",", " ", 
+           RowBox[{"Round", "[", 
+            RowBox[{
+             RowBox[{"RandomReal", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+             "roundbasis"}], "]"}]}], "]"}]}], ";"}]}], "\[IndentingNewLine]",
+       "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"set1", " ", "=", " ", "tmplist"}], ";", 
+     RowBox[{"set2", " ", "=", " ", "tmplist"}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{"Add", " ", "extra", " ", "elements"}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"d", " ", "=", " ", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "12"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"j", "=", "0"}], ",", 
+       RowBox[{"j", "<", "d"}], ",", 
+       RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"set1", "=", " ", 
+         RowBox[{"DeleteDuplicates", "[", 
+          RowBox[{"Append", "[", 
+           RowBox[{"set1", ",", " ", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+              "roundbasis"}], "]"}]}], "]"}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"set2", "=", " ", 
+         RowBox[{"DeleteDuplicates", "[", 
+          RowBox[{"Append", "[", 
+           RowBox[{"set2", ",", " ", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+              "roundbasis"}], "]"}]}], "]"}], "]"}]}], ";"}]}], 
+      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Export", "[", 
+      RowBox[{
+       RowBox[{
+       "\"\</Users/hendrycks/Desktop/mesa/counting_and_statistics/set_\
+intersection/\>\"", "<>", 
+        RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\"\<Find the intersection of the following sets, namely $\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"Map", "[", 
+            RowBox[{"TeXForm", ",", 
+             RowBox[{
+              RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+              RowBox[{"set1", ",", "\"\<RandomSample\>\""}], "]"}]}], "]"}], 
+           "]"}], "<>", "\"\< \\\\cap \>\"", " ", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"Map", "[", 
+            RowBox[{"TeXForm", ",", 
+             RowBox[{
+              RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+              RowBox[{"set2", ",", "\"\<RandomSample\>\""}], "]"}]}], "]"}], 
+           "]"}], "<>", "\"\<$.\>\""}], ",", " ", 
+         RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+          RowBox[{"ToString", "[", "\[IndentingNewLine]", 
+           RowBox[{"Map", "[", 
+            RowBox[{"TeXForm", ",", 
+             RowBox[{"Sort", "[", 
+              RowBox[{
+               RowBox[{"Intersection", "[", 
+                RowBox[{"set1", ",", " ", "set2"}], "]"}], ",", "Less"}], 
+              "]"}]}], "]"}], "]"}], "<>", "\"\<$\>\""}]}], "}"}]}], "]"}], 
+     ";"}]}], " ", "\[IndentingNewLine]", "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8180974743643184`*^9, 3.818097495177867*^9}, {
+   3.818097781123395*^9, 3.818097852962449*^9}, {3.818097918085286*^9, 
+   3.818098184547865*^9}, {3.81809840604876*^9, 3.818098441125146*^9}, {
+   3.818098501643176*^9, 3.818098544565281*^9}, {3.818098713395774*^9, 
+   3.818098713489311*^9}, {3.818098758528672*^9, 3.818098891002842*^9}, {
+   3.8180989426462574`*^9, 3.818099064191843*^9}, {3.8180990967931213`*^9, 
+   3.8180991227737374`*^9}, {3.8180991626619263`*^9, 
+   3.8180991684843655`*^9}, {3.818099929532176*^9, 3.818099951416164*^9}, {
+   3.818100038702155*^9, 3.8181001526192627`*^9}, {3.818100225228636*^9, 
+   3.818100251129964*^9}, {3.818100320313879*^9, 3.818100410760673*^9}, {
+   3.818100448263835*^9, 3.818100528727137*^9}, 3.8181006244722433`*^9, {
+   3.818100906709301*^9, 3.81810091129429*^9}, {3.818199555332008*^9, 
+   3.818199558355504*^9}, {3.818349202813363*^9, 3.8183492213868017`*^9}, {
+   3.818349252563167*^9, 3.818349252962019*^9}, {3.818349379129138*^9, 
+   3.818349381390821*^9}, {3.818349602602975*^9, 3.818349614336814*^9}, {
+   3.818349711534925*^9, 3.818349711580676*^9}, {3.818374890107512*^9, 
+   3.818374890386497*^9}, {3.8185604487626047`*^9, 
+   3.818560449171372*^9}},ExpressionUUID->"48eb65f3-617c-471f-bf42-\
+7fb038ec33f1"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{507, Automatic}, {Automatic, 49}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a7de341f-3ab2-4603-be0a-d4a9bbd3ce03"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 6872, 153, 717, "Input",ExpressionUUID->"48eb65f3-617c-471f-bf42-7fb038ec33f1"]
+}
+]
+*)
+

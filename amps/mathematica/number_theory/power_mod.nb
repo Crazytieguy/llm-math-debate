@@ -1,0 +1,105 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3639,         97]
+NotebookOptionsPosition[      3198,         82]
+NotebookOutlinePosition[      3596,         98]
+CellTagsIndexPosition[      3553,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Find a^b mod m.", "Text",
+ CellChangeTimes->{{3.818102972976576*^9, 3.818102980428609*^9}, {
+  3.818103613344282*^9, 
+  3.818103619396235*^9}},ExpressionUUID->"d4429600-1f4e-47ea-b243-\
+b96d53449c78"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"a", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2500"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"b", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2500"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"m", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"a", "+", "1"}], ",", "3000"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/power_mod/\>\"", "<>", 
+       
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nSimplify $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "a", "]"}], "]"}], "<>", "\"\<^\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "b", "]"}], "]"}], "<>", 
+        "\"\< \\\\pmod{\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+        "\"\<}$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"PowerMod", "[", 
+           RowBox[{"a", ",", "b", ",", "m"}], "]"}], "]"}], "]"}], "<>", 
+        "\"\<$\>\""}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+  3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+  3.81808632938737*^9}, {3.8181029481344748`*^9, 3.8181030614036818`*^9}, {
+  3.818103111267552*^9, 3.818103134507011*^9}, {3.8181031786886272`*^9, 
+  3.818103198370284*^9}, {3.818103343314039*^9, 3.818103349128991*^9}, {
+  3.818103450960734*^9, 3.8181034562386703`*^9}, {3.818103606102436*^9, 
+  3.8181037006920033`*^9}, {3.818103880211636*^9, 3.818103963800027*^9}, {
+  3.8182975631729517`*^9, 3.8182976778246117`*^9}, {3.818372295037484*^9, 
+  3.818372295310211*^9}, {3.818549537345407*^9, 3.8185495458945*^9}, {
+  3.818550392138084*^9, 3.818550392657773*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"122ba033-521f-4d2e-b208-c52555c1ac86"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 543}, {28, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"877edc17-c15e-4260-9dd5-f588ab27a696"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 206, 4, 35, "Text",ExpressionUUID->"d4429600-1f4e-47ea-b243-b96d53449c78"],
+Cell[767, 26, 2427, 54, 220, "Input",ExpressionUUID->"122ba033-521f-4d2e-b208-c52555c1ac86"]
+}
+]
+*)
+

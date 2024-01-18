@@ -1,0 +1,118 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3909,        110]
+NotebookOptionsPosition[      3558,         96]
+NotebookOutlinePosition[      3956,        112]
+CellTagsIndexPosition[      3913,        109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"a", ",", "x"}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}], ",", " ", 
+           RowBox[{"1", "/", "6"}], ",", 
+           RowBox[{"1", "/", "7"}], ",", " ", 
+           RowBox[{"1", "/", "8"}], ",", 
+           RowBox[{"1", "/", "9"}], ",", " ", 
+           RowBox[{"1", "/", "10"}], ",", 
+           RowBox[{"1", "/", "16"}], ",", " ", 
+           RowBox[{"1", "/", "100"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"a", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"d", ",", "d"}], "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+      "]"}]}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/characteristic_\
+polynomial/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the characteristic polynomial of the following \
+matrix:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "a", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"CharacteristicPolynomial", "[", 
+            RowBox[{"a", ",", "x"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818028244485001*^9, 3.8180282975201883`*^9}, {
+  3.818028330632131*^9, 3.818028330855337*^9}, {3.8180284031504707`*^9, 
+  3.8180284707862186`*^9}, {3.818028511863504*^9, 3.818028530466846*^9}, {
+  3.818028664992255*^9, 3.8180286659756937`*^9}, {3.8180287448939867`*^9, 
+  3.818028745469819*^9}, {3.818299867266765*^9, 3.818299969374688*^9}, {
+  3.818371493900442*^9, 3.818371494338715*^9}, {3.818557756804435*^9, 
+  3.818557761843918*^9}},
+ CellLabel->
+  "In[119]:=",ExpressionUUID->"3e1bf37d-89bc-479e-ac26-6e643e8c2119"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 431}, {25, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5cd119f8-b3e0-4f5d-a22a-8b996b06a066"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2996, 74, 283, "Input",ExpressionUUID->"3e1bf37d-89bc-479e-ac26-6e643e8c2119"]
+}
+]
+*)
+

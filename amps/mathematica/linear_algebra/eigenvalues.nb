@@ -1,0 +1,172 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6220,        164]
+NotebookOptionsPosition[      5774,        149]
+NotebookOutlinePosition[      6172,        165]
+CellTagsIndexPosition[      6129,        162]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "30000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "2"}], "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+      "]"}]}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/eigenvalues/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the eigenvalues of the following matrix:\>\"", 
+        ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Sort", "[", 
+            RowBox[{"Eigenvalues", "[", "x", "]"}], "]"}], "]"}], "]"}], 
+         "<>", "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8180289776010513`*^9, 3.818029023648452*^9}, {
+   3.818029095750916*^9, 3.818029095981702*^9}, {3.818029273898573*^9, 
+   3.818029278969871*^9}, {3.818029670990357*^9, 3.8180296878295403`*^9}, {
+   3.818029749340394*^9, 3.8180297653393517`*^9}, {3.818029826114593*^9, 
+   3.8180298867356377`*^9}, {3.818030017998193*^9, 3.8180300338276787`*^9}, {
+   3.8183008424075947`*^9, 3.8183008663103027`*^9}, {3.818300905967184*^9, 
+   3.818300912582221*^9}, {3.818300959838606*^9, 3.818301007579965*^9}, {
+   3.818371606278006*^9, 3.818371610192883*^9}, 3.818432578864688*^9, {
+   3.818557962600998*^9, 
+   3.8185579691051273`*^9}},ExpressionUUID->"83618167-8260-418f-84b7-\
+9dc4bb9c7575"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "30000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "3"}], "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+      "]"}]}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/eigenvalues/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the eigenvalues of the following matrix (round \
+your answer to three decimal places):\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Sort", "[", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"Eigenvalues", "[", "x", "]"}], ",", "0.001"}], "]"}], 
+            "]"}], "]"}], "]"}], "<>", "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8180289776010513`*^9, 3.818029023648452*^9}, {
+   3.818029095750916*^9, 3.818029095981702*^9}, {3.818029273898573*^9, 
+   3.818029278969871*^9}, {3.818029670990357*^9, 3.8180296878295403`*^9}, {
+   3.818029749340394*^9, 3.8180297653393517`*^9}, {3.818029826114593*^9, 
+   3.81802982716961*^9}, {3.8180298982794733`*^9, 3.818029927878334*^9}, 
+   3.8180300442963543`*^9, {3.818300889440053*^9, 3.8183008919905567`*^9}, {
+   3.818300992109598*^9, 3.818301066050613*^9}, 3.818301199267548*^9, {
+   3.818371612223886*^9, 3.818371615920513*^9}, {3.818557975505247*^9, 
+   3.818557981663796*^9}},ExpressionUUID->"6cb1fd08-4985-43a9-903e-\
+b902fb6a8572"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{526, Automatic}, {Automatic, 50}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"48ad69b2-7e26-47c3-ab00-cd0e50839b43"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2560, 62, 178, "Input",ExpressionUUID->"83618167-8260-418f-84b7-9dc4bb9c7575"],
+Cell[3121, 84, 2649, 63, 199, "Input",ExpressionUUID->"6cb1fd08-4985-43a9-903e-b902fb6a8572"]
+}
+]
+*)
+

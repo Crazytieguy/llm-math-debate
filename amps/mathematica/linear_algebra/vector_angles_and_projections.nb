@@ -1,0 +1,310 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11939,        302]
+NotebookOptionsPosition[     11281,        283]
+NotebookOutlinePosition[     11795,        302]
+CellTagsIndexPosition[     11752,        299]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "2500"}], ",", 
+   RowBox[{"i", "<", "10000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "10"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+          RowBox[{"{", "d", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"y", " ", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+          RowBox[{"{", "d", "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      ",", 
+      RowBox[{
+       RowBox[{"x", "\[Equal]", "0"}], " ", "||", 
+       RowBox[{"y", "\[Equal]", "0"}]}]}], "]"}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/vector_angles_and_\
+projections/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the angle between the following two vectors:\>\"",
+         ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$ and\>\""}], ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "y", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"FullSimplify", "[", 
+            RowBox[{"VectorAngle", "[", 
+             RowBox[{"x", ",", "y"}], "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818035368736032*^9, 3.818035449666312*^9}, {
+  3.818035489004348*^9, 3.8180354892411547`*^9}, {3.818035706908515*^9, 
+  3.818035713020924*^9}, {3.8180358862335653`*^9, 3.81803588987984*^9}, {
+  3.81803593237737*^9, 3.81803593316704*^9}, {3.8180359743502293`*^9, 
+  3.818035988029954*^9}, {3.818305155372435*^9, 3.818305185042894*^9}, {
+  3.818305229593525*^9, 3.818305249424902*^9}, {3.818305379002434*^9, 
+  3.81830541442448*^9}, {3.818371947539077*^9, 3.818371947626191*^9}, {
+  3.8185583996375628`*^9, 3.818558405726323*^9}, {3.818558449058688*^9, 
+  3.818558450303752*^9}, {3.818601356481194*^9, 3.818601374518402*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"5f77f1f5-7de9-4c0d-897f-e574963b6275"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "20000"}], ",", 
+   RowBox[{"i", "<", "30000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+            RowBox[{"{", "d", "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+         "]"}]}], ";", 
+       RowBox[{"y", " ", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+            RowBox[{"{", "d", "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+         "]"}]}], ";"}], "\[IndentingNewLine]", ",", 
+      RowBox[{
+       RowBox[{"x", "\[Equal]", "0"}], " ", "||", 
+       RowBox[{"y", "\[Equal]", "0"}]}]}], "]"}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/vector_angles_and_\
+projections/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the angle between the following two vectors:\>\"",
+         ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$ and\>\""}], ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "y", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"FullSimplify", "[", 
+            RowBox[{"VectorAngle", "[", 
+             RowBox[{"x", ",", "y"}], "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8180266921945877`*^9, 3.818026699738781*^9}, {
+   3.8180267888635817`*^9, 3.818026826804942*^9}, 3.8180353808124332`*^9, 
+   3.8180354568272963`*^9, {3.8180355778326883`*^9, 3.818035611447755*^9}, {
+   3.818035648575211*^9, 3.818035654965868*^9}, 3.818035717373424*^9, 
+   3.818035896376639*^9, {3.818035990238398*^9, 3.818036020180781*^9}, {
+   3.818305061396038*^9, 3.818305065939698*^9}, {3.818305105506753*^9, 
+   3.818305123595501*^9}, {3.818305202796773*^9, 3.818305252609027*^9}, {
+   3.818305426297804*^9, 3.818305430273493*^9}, {3.8183719501760798`*^9, 
+   3.81837195256701*^9}, {3.818558422078657*^9, 3.8185584468318768`*^9}, {
+   3.818599917436976*^9, 3.8185999246063833`*^9}, {3.818600695875204*^9, 
+   3.8186007005585337`*^9}, {3.818600933471327*^9, 3.8186009403504333`*^9}, {
+   3.818601044695992*^9, 3.818601054035048*^9}, {3.818601168560912*^9, 
+   3.818601170104518*^9}, {3.8186012809811296`*^9, 
+   3.818601311763028*^9}},ExpressionUUID->"e85253ca-2517-4ecb-b93f-\
+2304a7a67822"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "30000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+            RowBox[{"{", "d", "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+         "]"}]}], ";", 
+       RowBox[{"y", " ", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+            RowBox[{"{", "d", "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+         "]"}]}], ";"}], "\[IndentingNewLine]", ",", 
+      RowBox[{
+       RowBox[{"x", "\[Equal]", "0"}], " ", "||", 
+       RowBox[{"y", "\[Equal]", "0"}]}]}], "]"}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/vector_angles_and_\
+projections/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the projection of the first vector onto the \
+second:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$,\>\""}], ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "y", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"FullSimplify", "[", 
+            RowBox[{"Projection", "[", 
+             RowBox[{"x", ",", "y"}], "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8180266921945877`*^9, 3.818026699738781*^9}, {
+   3.8180267888635817`*^9, 3.818026826804942*^9}, 3.8180353808124332`*^9, 
+   3.8180354568272963`*^9, {3.8180355778326883`*^9, 3.818035611447755*^9}, {
+   3.818035648575211*^9, 3.818035654965868*^9}, 3.818035717373424*^9, 
+   3.818035896376639*^9, {3.818035990238398*^9, 3.8180360836278353`*^9}, {
+   3.818305067348083*^9, 3.818305068796226*^9}, {3.8183052470189133`*^9, 
+   3.818305294855357*^9}, {3.818305439177649*^9, 3.818305442576528*^9}, 
+   3.818305486362933*^9, {3.8183719567836847`*^9, 3.8183719615747757`*^9}, {
+   3.818558429544537*^9, 3.8185584432243633`*^9}, {3.8185982780003433`*^9, 
+   3.818598278567626*^9}, {3.818598402722397*^9, 
+   3.818598403537125*^9}},ExpressionUUID->"4f3a1136-9331-4f42-9a1c-\
+88126ef1edf1"]
+},
+Evaluator->"Kernel8",
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 501}, {Automatic, 38}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d1b8acde-d3e4-4135-84e8-d5100d5f9f70"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3030, 72, 317, "Input",ExpressionUUID->"5f77f1f5-7de9-4c0d-897f-e574963b6275"],
+Cell[3591, 94, 3955, 94, 283, "Input",ExpressionUUID->"e85253ca-2517-4ecb-b93f-2304a7a67822"],
+Cell[7549, 190, 3728, 91, 304, "Input",ExpressionUUID->"4f3a1136-9331-4f42-9a1c-88126ef1edf1"]
+}
+]
+*)
+

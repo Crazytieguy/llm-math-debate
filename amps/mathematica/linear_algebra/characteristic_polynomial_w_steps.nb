@@ -1,0 +1,452 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18454,        444]
+NotebookOptionsPosition[     16549,        410]
+NotebookOutlinePosition[     16987,        427]
+CellTagsIndexPosition[     16944,        424]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "3500"}], ",", 
+   RowBox[{"i", "<", "5000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"a", ",", "x"}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}], ",", " ", 
+           RowBox[{"1", "/", "6"}], ",", 
+           RowBox[{"1", "/", "7"}], ",", " ", 
+           RowBox[{"1", "/", "8"}], ",", 
+           RowBox[{"1", "/", "9"}], ",", " ", 
+           RowBox[{"1", "/", "10"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"a", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"d", ",", "d"}], "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+      "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"sol", "=", 
+     RowBox[{"WolframAlpha", "[", 
+      RowBox[{
+       RowBox[{"\"\<characteristic polynomial \>\"", "<>", " ", 
+        RowBox[{"StringReplace", "[", 
+         RowBox[{
+          RowBox[{"ToString", "[", 
+           RowBox[{"a", ",", "InputForm"}], "]"}], ",", 
+          RowBox[{"Whitespace", "\[Rule]", "\"\<\>\""}]}], "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Result\>\"", ",", "4"}], "}"}], ",", 
+         "\"\<Content\>\""}], "}"}], ",", 
+       RowBox[{"PodStates", "\[Rule]", 
+        RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}]}], 
+      "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/linear_\
+algebra/characteristic_polynomial/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the characteristic polynomial of the following \
+matrix:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "a", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}], ",", " ", "\"\<Answer:\>\"", ",", 
+        RowBox[{"TeXForm", "[", "sol", "]"}]}], "}"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818028244485001*^9, 3.8180282975201883`*^9}, {
+   3.818028330632131*^9, 3.818028330855337*^9}, {3.8180284031504707`*^9, 
+   3.8180284707862186`*^9}, {3.818028511863504*^9, 3.818028530466846*^9}, {
+   3.818028664992255*^9, 3.8180286659756937`*^9}, {3.8180287448939867`*^9, 
+   3.818028745469819*^9}, {3.818299867266765*^9, 3.818299969374688*^9}, {
+   3.818371493900442*^9, 3.818371494338715*^9}, {3.818534398038904*^9, 
+   3.818534411587813*^9}, {3.818534462043255*^9, 3.818534544977551*^9}, 
+   3.818534588201211*^9, {3.818534668574092*^9, 3.8185346990656347`*^9}, 
+   3.818534905271386*^9, {3.8185350794979258`*^9, 3.818535086140607*^9}, {
+   3.818536339725802*^9, 3.818536340799489*^9}, {3.81853687331106*^9, 
+   3.8185368738955603`*^9}, {3.8185432459072866`*^9, 3.818543247491271*^9}, {
+   3.818544808148746*^9, 3.8185448085380077`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"3e1bf37d-89bc-479e-ac26-6e643e8c2119"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$14027585\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$14027585\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 22, 65, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818536365178831*^9, 3.8185368780206137`*^9, 
+  3.818543254396431*^9, 3.818544818943513*^9},
+ CellLabel->
+  "During evaluation of \
+In[22]:=",ExpressionUUID->"e4c9e8a9-d1f3-4ee2-a8c5-7d0ab1b97445"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$14027711\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$14027711\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 22, 66, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818536365178831*^9, 3.8185368780206137`*^9, 
+  3.818543254396431*^9, 3.8185448191402473`*^9},
+ CellLabel->
+  "During evaluation of \
+In[22]:=",ExpressionUUID->"e04f0808-5f5c-4ac3-adf8-3af399ca0b58"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$14027916\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$14027916\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 22, 67, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818536365178831*^9, 3.8185368780206137`*^9, 
+  3.818543254396431*^9, 3.8185448191951923`*^9},
+ CellLabel->
+  "During evaluation of \
+In[22]:=",ExpressionUUID->"313f8b0a-547b-4be4-b74a-2b90deaca322"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Set\\\", \\\"::\\\", \\\
+\"shape\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 22, 68, 32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818536365178831*^9, 3.8185368780206137`*^9, 
+  3.818543254396431*^9, 3.8185448192634706`*^9},
+ CellLabel->
+  "During evaluation of \
+In[22]:=",ExpressionUUID->"39c076bf-fbaa-40ac-ba36-2e27c69f9406"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WolframAlpha", "timeout", 
+   "\"The call to \\!\\(\\*RowBox[{\\\"WolframAlpha\\\", \\\"[\\\", \
+\\\"\\\\\\\"characteristic polynomial \
+{{23/4,-37/4,-21/8},{-33/8,-4,-27/8},{51/8,6,73/8}}\\\\\\\"\\\", \
+\\\"]\\\"}]\\) has exceeded \\!\\(\\*RowBox[{\\\"30.`\\\"}]\\) seconds. \
+Increasing the value of the TimeConstraint option may improve the result.\"", 
+   2, 22, 69, 32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818536365178831*^9, 3.8185368780206137`*^9, 
+  3.818543254396431*^9, 3.818547938832568*^9},
+ CellLabel->
+  "During evaluation of \
+In[22]:=",ExpressionUUID->"6813888c-96ec-48b4-a838-9b5712ff5452"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WolframAlpha", "timeout", 
+   "\"The call to \\!\\(\\*RowBox[{\\\"WolframAlpha\\\", \\\"[\\\", \
+\\\"\\\\\\\"characteristic polynomial {{1,-51/7},{22/7,-22/7}}\\\\\\\"\\\", \
+\\\"]\\\"}]\\) has exceeded \\!\\(\\*RowBox[{\\\"30.`\\\"}]\\) seconds. \
+Increasing the value of the TimeConstraint option may improve the result.\"", 
+   2, 22, 70, 32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818536365178831*^9, 3.8185368780206137`*^9, 
+  3.818543254396431*^9, 3.818547994681881*^9},
+ CellLabel->
+  "During evaluation of \
+In[22]:=",ExpressionUUID->"9ad39a9d-6008-47ad-a1ba-3ea40a26e36a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "5000"}], ",", 
+   RowBox[{"i", "<", "10000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"a", ",", "x"}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", " ", 
+           RowBox[{"1", "/", "4"}], ",", " ", 
+           RowBox[{"1", "/", "5"}], ",", " ", 
+           RowBox[{"1", "/", "6"}], ",", 
+           RowBox[{"1", "/", "7"}], ",", " ", 
+           RowBox[{"1", "/", "8"}], ",", 
+           RowBox[{"1", "/", "9"}], ",", " ", 
+           RowBox[{"1", "/", "10"}]}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"a", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"d", ",", "d"}], "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+      "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"sol", "=", 
+     RowBox[{"WolframAlpha", "[", 
+      RowBox[{
+       RowBox[{"\"\<characteristic polynomial \>\"", "<>", " ", 
+        RowBox[{"StringReplace", "[", 
+         RowBox[{
+          RowBox[{"ToString", "[", 
+           RowBox[{"a", ",", "InputForm"}], "]"}], ",", 
+          RowBox[{"Whitespace", "\[Rule]", "\"\<\>\""}]}], "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Result\>\"", ",", "4"}], "}"}], ",", 
+         "\"\<Content\>\""}], "}"}], ",", 
+       RowBox[{"PodStates", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<Result__Step-by-step solution\>\"", ",", " ", 
+          "\"\<Result__Row operations\>\""}], "}"}]}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/linear_\
+algebra/characteristic_polynomial/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the characteristic polynomial of the following \
+matrix:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "a", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}], ",", " ", "\"\<Answer:\>\"", ",", 
+        RowBox[{"TeXForm", "[", "sol", "]"}]}], "}"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8185350525308113`*^9, 3.818535066226005*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"3fc015a9-b4f5-44f8-a5d6-82450be35cf0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$16687053\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$16687053\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 23, 71, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818548672235218*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"23a4c9ed-bf2d-4f28-bee3-a47d91db997f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$16687187\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$16687187\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 23, 72, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818548696913886*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"c7804ab4-d479-4d91-977b-b3814d8c3aab"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set", "shape", 
+   "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"System`Convert`TeXFormDump`fw$16687390\\\", \\\",\\\", \
+\\\"System`Convert`TeXFormDump`fs$16687390\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Plain\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Plain\\\\\\\"\\\
+\"}], \\\"}\\\"}], \\\"}\\\"}]\\) are not the same shape.\"", 2, 23, 73, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818548699712535*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"caca1091-079c-4176-be77-ed142167c028"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Set\\\", \\\"::\\\", \\\
+\"shape\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 23, 74, 32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185487002131853`*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"d1157145-9b7c-4a9b-85e6-9a52b88df97c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WolframAlpha", "timeout", 
+   "\"The call to \\!\\(\\*RowBox[{\\\"WolframAlpha\\\", \\\"[\\\", \
+\\\"\\\\\\\"characteristic polynomial \
+{{7,5,8},{-4,2,0},{1,-5,9}}\\\\\\\"\\\", \\\"]\\\"}]\\) has exceeded \
+\\!\\(\\*RowBox[{\\\"30.`\\\"}]\\) seconds. Increasing the value of the \
+TimeConstraint option may improve the result.\"", 2, 23, 75, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818550671529951*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"98c3f989-01ab-45e3-b296-2d264dea1b42"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WolframAlpha", "timeout", 
+   "\"The call to \\!\\(\\*RowBox[{\\\"WolframAlpha\\\", \\\"[\\\", \
+\\\"\\\\\\\"characteristic polynomial \
+{{-2/3,0,-2/3},{-25/3,-26/3,17/3},{5/3,-2/3,4}}\\\\\\\"\\\", \\\"]\\\"}]\\) \
+has exceeded \\!\\(\\*RowBox[{\\\"30.`\\\"}]\\) seconds. Increasing the value \
+of the TimeConstraint option may improve the result.\"", 2, 23, 76, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818552554199333*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"b356b610-0666-4201-a5bd-03614c652a89"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WolframAlpha", "timeout", 
+   "\"The call to \\!\\(\\*RowBox[{\\\"WolframAlpha\\\", \\\"[\\\", \
+\\\"\\\\\\\"characteristic polynomial \
+{{-2/5,-42/5,-11/2},{7,1,0},{37/5,71/10,87/10}}\\\\\\\"\\\", \\\"]\\\"}]\\) \
+has exceeded \\!\\(\\*RowBox[{\\\"30.`\\\"}]\\) seconds. Increasing the value \
+of the TimeConstraint option may improve the result.\"", 2, 23, 77, 
+   32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818554340818748*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"80fbe362-c612-44c5-a165-7938e27ca981"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"WolframAlpha\\\", \
+\\\"::\\\", \\\"timeout\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"", 2, 23, 78, 32934022950060162699, "Kernel6"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185543487190533`*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"76753d9e-95bb-4705-8059-d83703d4695f"]
+}, Open  ]]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 334}, {Automatic, 22}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5cd119f8-b3e0-4f5d-a22a-8b996b06a066"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3895, 88, 346, "Input",ExpressionUUID->"3e1bf37d-89bc-479e-ac26-6e643e8c2119"],
+Cell[4478, 112, 727, 15, 39, "Message",ExpressionUUID->"e4c9e8a9-d1f3-4ee2-a8c5-7d0ab1b97445"],
+Cell[5208, 129, 729, 15, 39, "Message",ExpressionUUID->"e04f0808-5f5c-4ac3-adf8-3af399ca0b58"],
+Cell[5940, 146, 729, 15, 39, "Message",ExpressionUUID->"313f8b0a-547b-4be4-b74a-2b90deaca322"],
+Cell[6672, 163, 524, 11, 24, "Message",ExpressionUUID->"39c076bf-fbaa-40ac-ba36-2e27c69f9406"],
+Cell[7199, 176, 695, 14, 39, "Message",ExpressionUUID->"6813888c-96ec-48b4-a838-9b5712ff5452"],
+Cell[7897, 192, 666, 13, 39, "Message",ExpressionUUID->"9ad39a9d-6008-47ad-a1ba-3ea40a26e36a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8600, 210, 3184, 80, 346, "Input",ExpressionUUID->"3fc015a9-b4f5-44f8-a5d6-82450be35cf0"],
+Cell[11787, 292, 656, 14, 39, "Message",ExpressionUUID->"23a4c9ed-bf2d-4f28-bee3-a47d91db997f"],
+Cell[12446, 308, 656, 14, 39, "Message",ExpressionUUID->"c7804ab4-d479-4d91-977b-b3814d8c3aab"],
+Cell[13105, 324, 656, 14, 39, "Message",ExpressionUUID->"caca1091-079c-4176-be77-ed142167c028"],
+Cell[13764, 340, 453, 10, 24, "Message",ExpressionUUID->"d1157145-9b7c-4a9b-85e6-9a52b88df97c"],
+Cell[14220, 352, 600, 13, 39, "Message",ExpressionUUID->"98c3f989-01ab-45e3-b296-2d264dea1b42"],
+Cell[14823, 367, 620, 13, 39, "Message",ExpressionUUID->"b356b610-0666-4201-a5bd-03614c652a89"],
+Cell[15446, 382, 620, 13, 39, "Message",ExpressionUUID->"80fbe362-c612-44c5-a165-7938e27ca981"],
+Cell[16069, 397, 464, 10, 24, "Message",ExpressionUUID->"76753d9e-95bb-4705-8059-d83703d4695f"]
+}, Open  ]]
+}
+]
+*)
+

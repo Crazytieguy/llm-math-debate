@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5300,        132]
+NotebookOptionsPosition[      4887,        116]
+NotebookOutlinePosition[      5347,        134]
+CellTagsIndexPosition[      5304,        131]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "50000"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", "100000"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"p", ",", "polytype", ",", "problemstr"}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"polytype", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Convex\>\"", ",", "\"\<Simple\>\""}], "}"}], "]"}]}], ";",
+     "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "4", ",", "6", ",", "7", ",", "8", ",", "9"}], "}"}],
+       "]"}]}], ";", " ", 
+    RowBox[{"(*", 
+     RowBox[{
+     "5", " ", "leads", " ", "to", " ", "an", " ", "unknown", " ", "bug"}], 
+     "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"p", " ", "=", 
+     RowBox[{"RandomPolygon", "[", 
+      RowBox[{"{", 
+       RowBox[{"polytype", ",", "d"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"problemstr", "=", 
+     RowBox[{"\"\<Problem:\\nA polygon with $\>\"", " ", "<>", " ", 
+      RowBox[{"ToString", "[", 
+       RowBox[{"TeXForm", "[", "d", "]"}], "]"}], "<>", 
+      "\"\<$ vertices has the coordinates $\>\"", "<>", " ", 
+      RowBox[{"ToString", "[", 
+       RowBox[{"TeXForm", "[", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"PolygonCoordinates", "[", "p", "]"}], ",", "0.001"}], 
+         "]"}], "]"}], "]"}], "<>", 
+      "\"\<$. Estimate the polygon's interior angles (in radians), area, and \
+perimeter. Also, classify the polygon as 'Simple' or 'Convex'.\>\""}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"problemstr", "=", 
+     RowBox[{"problemstr", "<>", "\"\<\\nAnswer:\>\"", "<>", 
+      RowBox[{"StringRiffle", "[", 
+       RowBox[{
+        RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\"\<\\nAngles: $\>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", 
+              RowBox[{"Round", "[", 
+               RowBox[{
+                RowBox[{"PolygonAngle", "[", "p", "]"}], ",", "0.01"}], "]"}],
+               "]"}], "]"}], "<>", "\"\<$\>\""}], ",", "\[IndentingNewLine]", 
+           
+           RowBox[{"\"\<\\nArea: $\>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", 
+              RowBox[{"Round", "[", 
+               RowBox[{
+                RowBox[{"Area", "[", "p", "]"}], ",", "0.01"}], "]"}], "]"}], 
+             "]"}], "<>", "\"\<$\>\""}], ",", "\[IndentingNewLine]", 
+           RowBox[{"\"\<\\nPerimeter: $\>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", 
+              RowBox[{"Round", "[", 
+               RowBox[{
+                RowBox[{"Perimeter", "[", "p", "]"}], ",", "0.01"}], "]"}], 
+              "]"}], "]"}], "<>", "\"\<$\>\""}], ",", "\[IndentingNewLine]", 
+           RowBox[{"\"\<\\nType: \>\"", " ", "<>", " ", "polytype"}]}], 
+          "\[IndentingNewLine]", "}"}], ",", "\"\<RandomSample\>\""}], "]"}], 
+       "]"}]}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\</Users/hendrycks/Desktop/mesa/geometry/polygons/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", "problemstr", "}"}]}], "]"}], ";"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818217813634761*^9, 3.818217837080963*^9}, {
+   3.818217907697928*^9, 3.81821810542533*^9}, {3.818218136442562*^9, 
+   3.8182182417316008`*^9}, {3.818218279119192*^9, 3.818218293121264*^9}, {
+   3.8182184141689253`*^9, 3.818218466185913*^9}, {3.8182185038244743`*^9, 
+   3.818218515466341*^9}, {3.818305548450625*^9, 3.818305562546404*^9}, {
+   3.818306745705093*^9, 3.818306748817051*^9}, {3.818374577598752*^9, 
+   3.818374578508297*^9}, 3.818374623427103*^9, {3.818375295159329*^9, 
+   3.818375308392407*^9}, {3.8183754788650227`*^9, 3.81837548488922*^9}, {
+   3.818557610311101*^9, 
+   3.818557628160665*^9}},ExpressionUUID->"3335f226-c32c-4d01-84fc-\
+6d6eff050ed1"]
+},
+Evaluator->"Kernel6",
+WindowSize->{808, 857},
+WindowMargins->{{531, Automatic}, {23, Automatic}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"026e3c0b-27ee-42ce-9cf8-64eb9ccf61e5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4325, 94, 451, "Input",ExpressionUUID->"3335f226-c32c-4d01-84fc-6d6eff050ed1"]
+}
+]
+*)
+

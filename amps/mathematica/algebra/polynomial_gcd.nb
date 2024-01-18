@@ -1,0 +1,165 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5990,        157]
+NotebookOptionsPosition[      5638,        143]
+NotebookOutlinePosition[      6036,        159]
+CellTagsIndexPosition[      5993,        156]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", "x", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.8", ",", "0.1", ",", "0.05", ",", "0.05"}], "}"}], "->", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"1", "/", "2"}], ",", 
+         RowBox[{"1", "/", "3"}], ",", 
+         RowBox[{"1", "/", "5"}]}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d1", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"d2", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"q", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"p", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{"q", "==", "0"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "d1"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"q", " ", "+=", " ", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}], "]"}], ",", " ", 
+              "roundbasis"}], "]"}], "*", 
+            RowBox[{"x", "^", "j"}]}]}], ";"}]}], "\[IndentingNewLine]", 
+        "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{"p", "==", "0"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "d2"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"p", " ", "+=", " ", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "5"}], ",", "5"}], "}"}], "]"}], ",", " ", 
+              "roundbasis"}], "]"}], "*", 
+            RowBox[{"x", "^", "j"}]}]}], ";"}]}], "\[IndentingNewLine]", 
+        "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"p", " ", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"p", ",", 
+        RowBox[{"Expand", "[", 
+         RowBox[{"q", "*", "p"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/polynomial_gcd/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nFind the greatest common divisor of $\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"p", "//", "TraditionalForm"}], "]"}], "]"}], "<>", " ", 
+         "\"\<$ and $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"q", "//", "TraditionalForm"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{
+            RowBox[{"PolynomialGCD", "[", 
+             RowBox[{"p", ",", "q"}], "]"}], "//", "TraditionalForm"}], "]"}],
+           "]"}], "<>", "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818088020729041*^9, 3.818088022337034*^9}, 
+   3.8180900627643337`*^9, {3.8180901458167467`*^9, 3.818090204390074*^9}, {
+   3.818090277239903*^9, 3.818090278596499*^9}, {3.818109286300799*^9, 
+   3.8181095775787983`*^9}, {3.818109661285657*^9, 3.818109700994337*^9}, {
+   3.8181098626014423`*^9, 3.818109884752819*^9}, {3.818110060934411*^9, 
+   3.818110077357823*^9}, {3.8181101140238733`*^9, 3.818110308812965*^9}, {
+   3.81811033904714*^9, 3.818110407160203*^9}, 3.8181104377304487`*^9, 
+   3.8181161850306587`*^9, 3.818171995752747*^9, {3.818204848680443*^9, 
+   3.8182048550399017`*^9}, {3.818349998118205*^9, 3.818350072082841*^9}, {
+   3.818350103955689*^9, 3.8183501297772713`*^9}, 3.818350265582962*^9, {
+   3.818390760047333*^9, 3.81839076033252*^9}, {3.818562462760903*^9, 
+   3.818562467525608*^9}, 3.8212308027088413`*^9, {3.821231258673361*^9, 
+   3.821231270289895*^9}, {3.8212313026181993`*^9, 3.821231318209725*^9}, 
+   3.821231378322274*^9},ExpressionUUID->"fa6db542-8bc8-4a3e-84ed-\
+7b01e84715b0"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 423}, {Automatic, 43}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a4720092-14b3-4fc9-b253-115d88931c3a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 5076, 121, 514, "Input",ExpressionUUID->"fa6db542-8bc8-4a3e-84ed-7b01e84715b0"]
+}
+]
+*)
+

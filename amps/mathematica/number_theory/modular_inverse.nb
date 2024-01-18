@@ -1,0 +1,97 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3286,         89]
+NotebookOptionsPosition[      2845,         74]
+NotebookOutlinePosition[      3243,         90]
+CellTagsIndexPosition[      3200,         87]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Compute the modular inverse of m modulo n.", "Text",
+ CellChangeTimes->{{3.818102972976576*^9, 
+  3.818102980428609*^9}},ExpressionUUID->"1ec12c75-171c-455d-b0ab-\
+2123bdb490f8"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "2500"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"m", " ", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"ResourceFunction", "[", "\"\<CoprimeIntegerList\>\"", "]"}], 
+       "[", "n", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/modular_inverse/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nFind the modular multiplicative inverse $x$, or $x$ \
+such that $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+        "\"\<x \\\\equiv 1 \\\\pmod{\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "n", "]"}], "]"}], "<>", 
+        "\"\<}$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"ModularInverse", "[", 
+           RowBox[{"m", ",", "n"}], "]"}], "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+  3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+  3.81808632938737*^9}, {3.8181029481344748`*^9, 3.8181030614036818`*^9}, {
+  3.818103111267552*^9, 3.818103134507011*^9}, {3.8181031786886272`*^9, 
+  3.818103198370284*^9}, {3.818103343314039*^9, 3.818103349128991*^9}, {
+  3.818103450960734*^9, 3.8181034562386703`*^9}, {3.818296843838378*^9, 
+  3.8182969984152393`*^9}, {3.8183723160794992`*^9, 3.8183723163735533`*^9}, {
+  3.818550324645879*^9, 
+  3.8185503297779284`*^9}},ExpressionUUID->"5e1b56bd-66ca-4493-8911-\
+43c8c4d91e6a"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 427}, {Automatic, 48}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"48775759-ce84-40bc-8225-e14e3431ba8e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 184, 3, 35, "Text",ExpressionUUID->"1ec12c75-171c-455d-b0ab-2123bdb490f8"],
+Cell[745, 25, 2096, 47, 199, "Input",ExpressionUUID->"5e1b56bd-66ca-4493-8911-43c8c4d91e6a"]
+}
+]
+*)
+

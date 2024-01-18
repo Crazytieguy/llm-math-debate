@@ -1,0 +1,363 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13398,        355]
+NotebookOptionsPosition[     12760,        338]
+NotebookOutlinePosition[     13158,        354]
+CellTagsIndexPosition[     13115,        351]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "40000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"d", ",", "d"}], "}"}]}], "]"}], ",", 
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "}"}], "]"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"p", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/powers_and_exp/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nCompute\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<^\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "p", "]"}], "]"}], "<>", "\"\<$.\>\""}], 
+        ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"MatrixPower", "[", 
+             RowBox[{"x", ",", "p"}], "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818036678687248*^9, 3.8180367229561577`*^9}, 
+   3.81803675534172*^9, {3.818036793221307*^9, 3.818036937560093*^9}, {
+   3.8180369772021437`*^9, 3.8180369780872383`*^9}, 3.818037058693943*^9, {
+   3.8180373533215322`*^9, 3.81803735387395*^9}, {3.818303773543806*^9, 
+   3.818303856029252*^9}, {3.818303933118198*^9, 3.818303936859933*^9}, {
+   3.818304071067852*^9, 3.818304072066293*^9}, {3.818371706446548*^9, 
+   3.818371716430066*^9}, {3.818558222670035*^9, 
+   3.818558235384742*^9}},ExpressionUUID->"1f01eea0-8f70-449f-a219-\
+a41a46ea13fe"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "40000"}], ",", 
+   RowBox[{"i", "<", "45000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"RandomReal", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"d", ",", "d"}], "}"}]}], "]"}], "+", 
+        RowBox[{
+         RowBox[{"RandomReal", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"d", ",", "d"}], "}"}]}], "]"}], "*", "I"}]}], ",", " ", 
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", " ", 
+          RowBox[{"1", "/", "2"}]}], "}"}], "]"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"p", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/powers_and_exp/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nCompute\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<^\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "p", "]"}], "]"}], "<>", "\"\<$.\>\""}], 
+        ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"MatrixPower", "[", 
+             RowBox[{"x", ",", "p"}], "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818037041229659*^9, 3.818037064133759*^9}, {
+   3.818037146819214*^9, 3.818037179017625*^9}, {3.818037245355612*^9, 
+   3.818037286177803*^9}, {3.818037348778079*^9, 3.818037349369109*^9}, {
+   3.818303858655148*^9, 3.81830394849188*^9}, 3.8183040762609673`*^9, {
+   3.818371720190544*^9, 3.818371724772808*^9}, {3.818558237724743*^9, 
+   3.818558243909185*^9}},ExpressionUUID->"4001b5fc-ac7b-4c34-bd97-\
+ff3b37d0c3d2"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"randomNilpotentMatrix", "[", 
+   RowBox[{
+    RowBox[{"n_Integer", "?", "Positive"}], ",", 
+    RowBox[{"p_Integer", "?", "Positive"}]}], "]"}], ":=", 
+  RowBox[{"With", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"uf", "=", 
+      RowBox[{"First", "[", 
+       RowBox[{"HermiteDecomposition", "[", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"n", ",", "n"}], "}"}]}], "]"}], "]"}], "]"}]}], "}"}], 
+    ",", 
+    RowBox[{
+     RowBox[{"LinearSolve", "[", 
+      RowBox[{"uf", ",", 
+       RowBox[{"SparseArray", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Band", "[", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "2"}], "}"}], "]"}], "\[Rule]", 
+           RowBox[{"ConstantArray", "[", 
+            RowBox[{"1", ",", 
+             RowBox[{
+              RowBox[{"Min", "[", 
+               RowBox[{"p", ",", "n"}], "]"}], "-", "1"}]}], "]"}]}], "}"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"n", ",", "n"}], "}"}]}], "]"}]}], "]"}], ".", "uf"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "45000"}], ",", 
+   RowBox[{"i", "<", "48000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "4"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"randomNilpotentMatrix", "[", 
+      RowBox[{"d", ",", "d"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/powers_and_exp/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nCompute\>\"", ",", 
+        RowBox[{"\"\<$e^\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"MatrixExp", "[", "x", "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.818037356289258*^9, 3.818037392696135*^9}, {
+   3.8180380650159693`*^9, 3.818038078214591*^9}, 3.818038115373602*^9, {
+   3.8180381594456587`*^9, 3.818038173653236*^9}, {3.818038205269005*^9, 
+   3.818038205381154*^9}, {3.818304016179956*^9, 3.818304111600889*^9}, {
+   3.818304148739009*^9, 3.818304149257359*^9}, {3.818371735173109*^9, 
+   3.818371738636842*^9}, {3.818558254829644*^9, 
+   3.818558263245782*^9}},ExpressionUUID->"c0d898e4-20e9-48aa-a2c8-\
+2a95af14393f"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "48000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "4"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"BlockRandom", "[", 
+     RowBox[{
+      RowBox[{"SeedRandom", "[", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"With", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"n", "=", "d"}], " ", 
+          RowBox[{"(*", 
+           RowBox[{"matrix", " ", "size"}], "*)"}], ",", 
+          RowBox[{"erange", "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", "2"}], "}"}]}]}], " ", 
+         RowBox[{"(*", 
+          RowBox[{"range", " ", "of", " ", "eigenvalues"}], "*)"}], "}"}], 
+        ",", 
+        RowBox[{
+         RowBox[{"vm", "=", 
+          RowBox[{"First", "[", 
+           RowBox[{"HermiteDecomposition", "[", 
+            RowBox[{"RandomInteger", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"n", ",", "n"}], "}"}]}], "]"}], "]"}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"jm", "=", 
+          RowBox[{"SparseArray", "[", 
+           RowBox[{
+            RowBox[{"Band", "[", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "1"}], "}"}], "]"}], "\[Rule]", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"If", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Length", "[", "#", "]"}], "\[Equal]", "1"}], ",", 
+                 RowBox[{"{", "#", "}"}], ",", 
+                 RowBox[{
+                  RowBox[{"DiagonalMatrix", "[", "#", "]"}], "+", 
+                  RowBox[{"DiagonalMatrix", "[", 
+                   RowBox[{
+                    RowBox[{"RandomInteger", "[", 
+                    RowBox[{"1", ",", 
+                    RowBox[{
+                    RowBox[{"Length", "[", "#", "]"}], "-", "1"}]}], "]"}], 
+                    ",", "1"}], "]"}]}]}], "]"}], "&"}], "/@", 
+              RowBox[{"Split", "[", 
+               RowBox[{"Sort", "[", 
+                RowBox[{"RandomInteger", "[", 
+                 RowBox[{"erange", ",", "n"}], "]"}], "]"}], "]"}]}], ")"}]}],
+            "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"x", "=", 
+          RowBox[{
+           RowBox[{"Inverse", "[", "vm", "]"}], ".", "jm", ".", "vm"}]}]}]}], 
+       "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/powers_and_exp/\>\"", 
+       "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nCompute\>\"", ",", 
+        RowBox[{"\"\<$e^\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"MatrixExp", "[", "x", "]"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818038272921689*^9, 3.8180383059150248`*^9}, {
+  3.818304091996789*^9, 3.818304115331806*^9}, {3.8183717417326937`*^9, 
+  3.81837174535655*^9}, {3.818558274030995*^9, 
+  3.818558280780888*^9}},ExpressionUUID->"445b1dd4-2593-4a0e-8053-\
+8bd729c2e6a9"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 476}, {Automatic, 47}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"99fee160-c139-4bb4-b2ab-e449c075e5da"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2557, 63, 220, "Input",ExpressionUUID->"1f01eea0-8f70-449f-a219-a41a46ea13fe"],
+Cell[3118, 85, 2738, 70, 241, "Input",ExpressionUUID->"4001b5fc-ac7b-4c34-bd97-ff3b37d0c3d2"],
+Cell[5859, 157, 3058, 80, 241, "Input",ExpressionUUID->"c0d898e4-20e9-48aa-a2c8-2a95af14393f"],
+Cell[8920, 239, 3836, 97, 367, "Input",ExpressionUUID->"445b1dd4-2593-4a0e-8053-8bd729c2e6a9"]
+}
+]
+*)
+

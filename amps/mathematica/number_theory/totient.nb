@@ -1,0 +1,76 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2302,         68]
+NotebookOptionsPosition[      1951,         54]
+NotebookOutlinePosition[      2349,         70]
+CellTagsIndexPosition[      2306,         67]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m", "=", 
+     RowBox[{"i", "+", "1"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/totient/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nCompute the Euler totient function $\\\\phi(\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+        "\"\<)$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"EulerPhi", "[", "m", "]"}], "]"}], "]"}], "<>", 
+        "\"\<$\>\""}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818087472256961*^9, 3.818087524431148*^9}, {
+  3.8180875721723957`*^9, 3.818087580022006*^9}, {3.8180876761003313`*^9, 
+  3.8180876773873177`*^9}, {3.818298282995945*^9, 3.818298341497306*^9}, {
+  3.818372266535387*^9, 3.818372266990738*^9}, {3.818549498469481*^9, 
+  3.8185495032725286`*^9}, {3.818550427215908*^9, 
+  3.818550427669097*^9}},ExpressionUUID->"ad7e75ee-9fb9-438c-b45b-\
+f6005b02c6d2"]
+},
+WindowSize->{808, 665},
+WindowMargins->{{Automatic, 495}, {62, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c60bd20e-a3f7-4f24-ab50-9491242fa979"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1389, 32, 136, "Input",ExpressionUUID->"ad7e75ee-9fb9-438c-b45b-f6005b02c6d2"]
+}
+]
+*)
+

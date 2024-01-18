@@ -1,0 +1,4509 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+
+\setlength{\parindent}{0pt}
+\linespread{1.15}
+\title{llm math debate WolframAlpha examples}
+
+\begin{document}
+
+\maketitle
+
+Problem:\\
+Given the equation $-5 x^2+x+y^2-y-8=0$, complete the square.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Complete the square}: \\
+      y^2-y-5 x^2+x-8=0           \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Add }8 \text{to }\text{both }\text{sides}: \\
+      y^2-y-5 x^2+x=8                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Group }\text{terms }\text{with }x \text{and }y \text{separately, }\text{leaving }\text{placeholder }\text{constants}: \\
+      \left(-5 x^2+x+\underline{\text{   }}\right)+\left(y^2-y+\underline{\text{   }}\right)=\underline{\text{   }}+8             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(-5 x^2+x+\underline{\text{   }}\right)=-5 \left(x^2-\frac{x}{5}+\underline{\text{   }}\right):                               \\
+      \fbox{$-5 \left(x^2-\frac{x}{5}+\underline{\text{   }}\right)$}+\left(y^2-y+\underline{\text{   }}\right)=\underline{\text{   }}+8 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Take }\text{one }\text{half }\text{of }\text{the }\text{coefficient }\text{of }x \text{and }\text{square }\text{it. }\text{Then }\text{add }\text{it }\text{to }\text{both }\text{sides }\text{of }\text{the }\text{equation, }\text{multiplying }\text{by }\text{the }\text{factored }\text{constant }-5 \text{on }\text{the }\text{right.} \\
+        \text{Insert }\left(\frac{\frac{-1}{5}}{2}\right)^2=\frac{1}{100} \text{on }\text{the }\text{left }\text{and }\frac{-5}{100}=-\frac{1}{20} \text{on }\text{the }\text{right}:                                                                                                                                                                      \\
+      \end{array}
+      \\
+      -5 \left(x^2-\frac{x}{5}+\fbox{$\frac{1}{100}$}\right)+\left(y^2-y+\underline{\text{   }}\right)=\fbox{$-\frac{1}{20}$}+8 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      8-\frac{1}{20}=\frac{159}{20}:                                                                                  \\
+      -5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\underline{\text{   }}\right)=\fbox{$\frac{159}{20}$} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Take }\text{one }\text{half }\text{of }\text{the }\text{coefficient }\text{of }y \text{and }\text{square }\text{it, }\text{then }\text{add }\text{it }\text{to }\text{both }\text{sides.} \\
+        \text{Add }\left(\frac{-1}{2}\right)^2=\frac{1}{4} \text{to }\text{both }\text{sides}:                                                                                                          \\
+      \end{array}
+      \\
+      -5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\fbox{$\frac{1}{4}$}\right)=\fbox{$\frac{1}{4}$}+\frac{159}{20} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{159}{20}+\frac{1}{4}=\frac{41}{5}:                                                           \\
+      -5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\frac{1}{4}\right)=\fbox{$\frac{41}{5}$} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      x^2-\frac{x}{5}+\frac{1}{100}=\left(x-\frac{1}{10}\right)^2:                          \\
+      -5 \fbox{$\left(x-\frac{1}{10}\right)^2$}+\left(y^2-y+\frac{1}{4}\right)=\frac{41}{5} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      y^2-y+\frac{1}{4}=\left(y-\frac{1}{2}\right)^2: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                                                     \\
+            \text{}        & -5 \left(x-\frac{1}{10}\right)^2+\fbox{$\left(y-\frac{1}{2}\right)^2$}=\frac{41}{5} \\
+          \end{array}
+      $}                                              \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Factor the following quadratic: $\frac{45 x}{2}-9 x^2$\\
+Answer:\\
+$\begin{array}{l}
+
+    \begin{array}{l}
+      \text{Factor the following}: \\
+      \frac{45 x}{2}-9 x^2         \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Put }\text{each }\text{term }\text{in }\frac{45 x}{2}-9 x^2 \text{over }\text{the }\text{common }\text{denominator }2: \frac{45 x}{2}-9 x^2 \text{= }\frac{45 x}{2}-\frac{18 x^2}{2}: \\
+      \frac{45 x}{2}-\frac{18 x^2}{2}                                                                                                                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{45 x}{2}-\frac{18 x^2}{2}=\frac{45 x-18 x^2}{2}: \\
+      \frac{45 x-18 x^2}{2}                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Factor }-9 x \text{out }\text{of }45 x-18 x^2: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                 \\
+            \text{}        & \frac{\fbox{$-9 x (2 x-5)$}}{2} \\
+          \end{array}
+      $}                                                   \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Multiply and expand $p(x) = -\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}$ and $q(x) = \frac{6 x}{e}+\frac{3}{e}$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Expand the following}:                                                                      \\
+      \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right) \left(\frac{6 x}{e}+\frac{3}{e}\right) \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right) \left(\frac{6 x}{e}+\frac{3}{e}\right)=\frac{3 \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}+\frac{6 x \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                                                                                                                 \\
+            \text{}        & \frac{3 \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}+\frac{6 x \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e} \\
+          \end{array}
+      $}                                                                                                                                                                                                                                                 \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the roots of the following polynomial: $-11 x^2-13 x+5$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Solve for }x: \\
+      -11 x^2-13 x+5=0    \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Divide }\text{both }\text{sides }\text{by }-11: \\
+      x^2+\frac{13 x}{11}-\frac{5}{11}=0                    \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{5}{11} \text{to }\text{both }\text{sides}: \\
+      x^2+\frac{13 x}{11}=\frac{5}{11}                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{169}{484} \text{to }\text{both }\text{sides}: \\
+      x^2+\frac{13 x}{11}+\frac{169}{484}=\frac{389}{484}            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+      \left(x+\frac{13}{22}\right)^2=\frac{389}{484}                                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}:   \\
+      x+\frac{13}{22}=\frac{\sqrt{389}}{22}\text{ or }x+\frac{13}{22}=-\frac{\sqrt{389}}{22} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }\frac{13}{22} \text{from }\text{both }\text{sides}:                             \\
+      \fbox{$x=\frac{\sqrt{389}}{22}-\frac{13}{22}$}\text{ or }x+\frac{13}{22}=-\frac{\sqrt{389}}{22} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }\frac{13}{22} \text{from }\text{both }\text{sides}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                                                                 \\
+            \text{}        & x=\frac{\sqrt{389}}{22}-\frac{13}{22}\text{ or }\fbox{$x=-\frac{13}{22}-\frac{\sqrt{389}}{22}$} \\
+          \end{array}
+      $}                                                                  \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Simplify the following radical expression: $\sqrt{61}+\sqrt{125}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Simplify the following}: \\
+      \sqrt{61}+\sqrt{125}           \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \sqrt{125} \text{= }\sqrt{5^3} \text{= }5 \sqrt{5}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                               \\
+            \text{}        & \sqrt{61}+\fbox{$5 \sqrt{5}$} \\
+          \end{array}
+      $}                                                  \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Solve $\sqrt{4 x+5}+\sqrt{14 x+11}=13$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Solve for }x:            \\
+      \sqrt{4 x+5}+\sqrt{14 x+11}=13 \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \left(\sqrt{4 x+5}+\sqrt{14 x+11}\right)^2=16+18 x+2 \sqrt{4 x+5} \sqrt{14 x+11}=16+18 x+2 \sqrt{(4 x+5) (14 x+11)}=169: \\
+      16+18 x+2 \sqrt{(4 x+5) (14 x+11)}=169                                                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }18 x+16 \text{from }\text{both }\text{sides}: \\
+      2 \sqrt{(4 x+5) (14 x+11)}=153-18 x                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Raise }\text{both }\text{sides }\text{to }\text{the }\text{power }\text{of }\text{two}: \\
+      4 (4 x+5) (14 x+11)=(153-18 x)^2                                                              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Expand }\text{out }\text{terms }\text{of }\text{the }\text{left }\text{hand }\text{side}: \\
+      224 x^2+456 x+220=(153-18 x)^2                                                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Expand }\text{out }\text{terms }\text{of }\text{the }\text{right }\text{hand }\text{side}: \\
+      224 x^2+456 x+220=324 x^2-5508 x+23409                                                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }324 x^2-5508 x+23409 \text{from }\text{both }\text{sides}: \\
+      -100 x^2+5964 x-23189=0                                                    \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Divide }\text{both }\text{sides }\text{by }-100: \\
+      x^2-\frac{1491 x}{25}+\frac{23189}{100}=0              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }\frac{23189}{100} \text{from }\text{both }\text{sides}: \\
+      x^2-\frac{1491 x}{25}=-\frac{23189}{100}                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{2223081}{2500} \text{to }\text{both }\text{sides}: \\
+      x^2-\frac{1491 x}{25}+\frac{2223081}{2500}=\frac{410839}{625}       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+      \left(x-\frac{1491}{50}\right)^2=\frac{410839}{625}                                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}:               \\
+      x-\frac{1491}{50}=\frac{13 \sqrt{2431}}{25}\text{ or }x-\frac{1491}{50}=-\frac{13 \sqrt{2431}}{25} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{1491}{50} \text{to }\text{both }\text{sides}:                                              \\
+      \fbox{$x=\frac{1491}{50}+\frac{13 \sqrt{2431}}{25}$}\text{ or }x-\frac{1491}{50}=-\frac{13 \sqrt{2431}}{25} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{1491}{50} \text{to }\text{both }\text{sides}:                                             \\
+      x=\frac{1491}{50}+\frac{13 \sqrt{2431}}{25}\text{ or }\fbox{$x=\frac{1491}{50}-\frac{13 \sqrt{2431}}{25}$} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \sqrt{4 x+5}+\sqrt{14 x+11} \text{$\approx $ }13.:             \\
+      \text{So }\text{this }\text{solution }\text{is }\text{correct} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \sqrt{4 x+5}+\sqrt{14 x+11} \text{$\approx $ }43.1221:           \\
+      \text{So }\text{this }\text{solution }\text{is }\text{incorrect} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{solution }\text{is}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                             \\
+            \text{}        & x=\frac{1491}{50}-\frac{13 \sqrt{2431}}{25} \\
+          \end{array}
+      $}                                    \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Solve the following system of two equations:
+$-\sqrt{3} x-9 \sqrt{3} y+4 \sqrt{3}=0$, $4 \sqrt{3} x-11 \sqrt{3} y-\sqrt{3}=0$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Solve the following system}: \\
+      \{
+      \begin{array}{l}
+        -9 \sqrt{3} y-\sqrt{3} x+4 \sqrt{3}=0  \\
+        -11 \sqrt{3} y+4 \sqrt{3} x-\sqrt{3}=0 \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Express }\text{the }\text{system }\text{in }\text{standard }\text{form}: \\
+      \{
+      \begin{array}{l}
+        -9 \sqrt{3} y-\sqrt{3} x=-4 \sqrt{3} \\
+        -11 \sqrt{3} y+4 \sqrt{3} x=\sqrt{3} \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Express }\text{the }\text{system }\text{in }\text{matrix }\text{form}: \\
+      \left(
+      \begin{array}{cc}
+          -\sqrt{3}  & -9 \sqrt{3}  \\
+          4 \sqrt{3} & -11 \sqrt{3} \\
+        \end{array}
+      \right)\left(
+      \begin{array}{c}
+          x \\
+          y \\
+        \end{array}
+      \right) \text{= }\left(
+      \begin{array}{c}
+          -4 \sqrt{3} \\
+          \sqrt{3}    \\
+        \end{array}
+      \right)                                                                      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Solve }\text{the }\text{system }\text{with }\text{Cramer's }\text{rule}: \\
+      x=\frac{
+        \begin{array}{|c|c|}
+          -4 \sqrt{3} & -9 \sqrt{3}  \\
+          \sqrt{3}    & -11 \sqrt{3} \\
+        \end{array}
+      }{
+        \begin{array}{|c|c|}
+          -\sqrt{3}  & -9 \sqrt{3}  \\
+          4 \sqrt{3} & -11 \sqrt{3} \\
+        \end{array}
+      }\text{ and }y=\frac{
+        \begin{array}{|c|c|}
+          -\sqrt{3}  & -4 \sqrt{3} \\
+          4 \sqrt{3} & \sqrt{3}    \\
+        \end{array}
+      }{
+        \begin{array}{|c|c|}
+          -\sqrt{3}  & -9 \sqrt{3}  \\
+          4 \sqrt{3} & -11 \sqrt{3} \\
+        \end{array}
+      }                                                                              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Evaluate }\text{the }\text{determinant }
+      \begin{array}{|c|c|}
+        -\sqrt{3}  & -9 \sqrt{3}  \\
+        4 \sqrt{3} & -11 \sqrt{3} \\
+      \end{array}
+      =141:           \\
+      x=\frac{
+        \begin{array}{|c|c|}
+          -4 \sqrt{3} & -9 \sqrt{3}  \\
+          \sqrt{3}    & -11 \sqrt{3} \\
+        \end{array}
+      }{\fbox{$141$}}\text{ and }y=\frac{
+        \begin{array}{|c|c|}
+          -\sqrt{3}  & -4 \sqrt{3} \\
+          4 \sqrt{3} & \sqrt{3}    \\
+        \end{array}
+      }{\fbox{$141$}} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Evaluate }\text{the }\text{determinant }
+      \begin{array}{|c|c|}
+        -4 \sqrt{3} & -9 \sqrt{3}  \\
+        \sqrt{3}    & -11 \sqrt{3} \\
+      \end{array}
+      =159:  \\
+      x=\frac{\fbox{$159$}}{141}\text{ and }y=\frac{
+        \begin{array}{|c|c|}
+          -\sqrt{3}  & -4 \sqrt{3} \\
+          4 \sqrt{3} & \sqrt{3}    \\
+        \end{array}
+      }{141} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }\text{159 }\text{and }\text{141 }\text{is }3, \text{so }\frac{159}{141}=\frac{53\times 3}{47\times 3}=\frac{53}{47}: \\
+      x=\fbox{$\frac{53}{47}$}\text{ and }y=\frac{
+        \begin{array}{|c|c|}
+          -\sqrt{3}  & -4 \sqrt{3} \\
+          4 \sqrt{3} & \sqrt{3}    \\
+        \end{array}
+      }{141}                                                                                                                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Evaluate }\text{the }\text{determinant }
+      \begin{array}{|c|c|}
+        -\sqrt{3}  & -4 \sqrt{3} \\
+        4 \sqrt{3} & \sqrt{3}    \\
+      \end{array}
+      =45:                                                 \\
+      x=\frac{53}{47}\text{ and }y=\frac{\fbox{$45$}}{141} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }\text{45 }\text{and }\text{141 }\text{is }3, \text{so }\frac{45}{141}=\frac{15\times 3}{47\times 3}=\frac{15}{47}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                     \\
+            \text{}        & x=\frac{53}{47}\text{ and }y=\fbox{$\frac{15}{47}$} \\
+          \end{array}
+      $}                                                                                                                                                 \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Differentiate the following function:
+$\sqrt[3]{6-\frac{x}{2}}+e^{-2 x-3}$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Possible derivation:}                                 \\
+      \frac{d}{dx}\left(e^{-3-2 x}+\sqrt[3]{6-\frac{x}{2}}\right) \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term:}                 \\
+      \text{= }\frac{d}{dx}\left(e^{-3-2 x}\right)+\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Using }\text{the }\text{chain }\text{rule, }\frac{d}{dx}\left(e^{-2 x-3}\right)=\frac{de^u}{du} \frac{du}{dx}, \text{where }u=-2 x-3 \text{and }\frac{d\text{}}{du}\left(e^u\right)=e^u: \\
+      \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)+\fbox{$e^{-3-2 x} \left(\frac{d}{dx}(-3-2 x)\right)$}                                                                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term }\text{and }\text{factor }\text{out }\text{constants:} \\
+      \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)+\fbox{$\frac{d}{dx}(-3)-2 \left(\frac{d}{dx}(x)\right)$} e^{-3-2 x}      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{derivative }\text{of }-3 \text{is }\text{zero}:                                                             \\
+      \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)+e^{-3-2 x} \left(-2 \left(\frac{d}{dx}(x)\right)+\fbox{$0$}\right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Simplify }\text{the }\text{expression}:                                                       \\
+      \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Using }\text{the }\text{chain }\text{rule, }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)=\frac{d\sqrt[3]{u}}{du} \frac{du}{dx}, \text{where }u=6-\frac{x}{2} \text{and }\frac{d\text{}}{du}\left(\sqrt[3]{u}\right)=\frac{1}{3 u^{2/3}}: \\
+      \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)+\fbox{$\frac{\frac{d}{dx}\left(6-\frac{x}{2}\right)}{3 \left(6-\frac{x}{2}\right)^{2/3}}$}                                                                                                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term }\text{and }\text{factor }\text{out }\text{constants:}                                 \\
+      \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)+\fbox{$\frac{d}{dx}(6)-\frac{1}{2} \left(\frac{d}{dx}(x)\right)$} \frac{1}{3 \left(6-\frac{x}{2}\right)^{2/3}} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{derivative }\text{of }6 \text{is }\text{zero}:                                                                                     \\
+      \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)+\frac{-\frac{1}{2} \left(\frac{d}{dx}(x)\right)+\fbox{$0$}}{3 \left(6-\frac{x}{2}\right)^{2/3}} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Simplify }\text{the }\text{expression}:                                                                  \\
+      \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)-\frac{\frac{d}{dx}(x)}{6 \left(6-\frac{x}{2}\right)^{2/3}} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{derivative }\text{of }x \text{is }1:                                                       \\
+      \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)-\fbox{$1$} \frac{1}{6 \left(6-\frac{x}{2}\right)^{2/3}} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{derivative }\text{of }x \text{is }1:                          \\
+      \text{= }-\frac{1}{6 \left(6-\frac{x}{2}\right)^{2/3}}-\fbox{$1$} 2 e^{-3-2 x} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Simplify }\text{the }\text{expression}:                       \\
+      \text{= }-2 e^{-3-2 x}-\frac{1}{6 \left(6-\frac{x}{2}\right)^{2/3}} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Simplify }\text{the }\text{expression}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                              \\
+            \text{}        & \text{= }-2 e^{-3-2 x}-\frac{1}{6 \sqrt[3]{6-\frac{x}{2}}^2} \\
+          \end{array}
+      $}                                            \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the geometric mean of ${3, 729, 729, 5}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the geometric mean of the list}: \\
+      (3,729,729,5)\text{}                        \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{The }\text{geometric }\text{mean }\text{of }\text{a }\text{list }\text{of }\text{numbers }\text{is }\text{given }\text{by}: \\
+      (\text{product of elements})^{\frac{1}{(\text{number of elements})}}                                                              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      (\text{product of elements}) \text{= }3 \text{$\times $ }\text{729 }\text{$\times $ }\text{729 }\text{$\times $ }5: \\
+      \sqrt[(\text{number of elements})]{(3 \text{$\times $ }\text{729 }\text{$\times $ }\text{729 }\text{$\times $ }5)}  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Counting, }\text{we }\text{see }\text{that }\text{the }\text{list }\text{has }4 \text{elements}:                                                                                       \\
+      (3 \text{$\times $ }\text{729 }\text{$\times $ }\text{729 }\text{$\times $ }5)^{\frac{1}{4}} \text{= }\sqrt[4]{3 \text{$\times $ }\text{729 }\text{$\times $ }\text{729 }\text{$\times $ }5} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3 \text{$\times $ }\text{729 }\text{$\times $ }\text{729 }\text{$\times $ }5=7971615: \\
+      \sqrt[4]{7971615}                                                                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \sqrt[4]{7971615} \text{= }\sqrt[4]{3^{13}\times 5} \text{= }3^3 \sqrt[4]{3} \sqrt[4]{5}: \\
+      3^3 \sqrt[4]{3} \sqrt[4]{5}                                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3^3=3\times 3^2:                             \\
+      \fbox{$3\times 3^2$} \sqrt[4]{3} \sqrt[4]{5} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3^2=9:                                     \\
+      3\times \fbox{$9$} \sqrt[4]{3} \sqrt[4]{5} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3\times 9 \text{= }27:              \\
+      \fbox{$27$} \sqrt[4]{3} \sqrt[4]{5} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \sqrt[4]{3} \sqrt[4]{5}=\sqrt[4]{3\times 5}: \\
+      27 \fbox{$\sqrt[4]{3\times 5}$}              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3\times 5 \text{= }15: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                          \\
+            \text{}        & 27 \sqrt[4]{\fbox{$15$}} \\
+          \end{array}
+      $}                     \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the mean of ${8, -5}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the mean of the list}: \\
+      (8,-5)\text{}                     \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{The }\text{mean }\text{of }\text{a }\text{list }\text{of }\text{numbers }\text{is }\text{given }\text{by}: \\
+      \frac{(\text{sum of elements})}{(\text{number of elements})}                                                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      (\text{sum of elements}) \text{= }8-5:  \\
+      \frac{8-5}{(\text{number of elements})} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Counting, }\text{we }\text{see }\text{that }\text{the }\text{list }\text{has }2 \text{elements}: \\
+      \frac{8-5}{2}                                                                                          \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      8-5 \text{= }3: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                        \\
+            \text{}        & \frac{3}{2}\approx 1.5 \\
+          \end{array}
+      $}              \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the median of ${\frac{3}{4}, -1, \frac{3}{\sqrt{2}}, -3, \frac{25}{3}, 8, -4 \log (2), -\frac{4}{3}, 3}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the median of the list}:                                                                                                                                                       \\
+      \left(\frac{3}{4},-1,\frac{3}{\sqrt{2}},-3,\frac{25}{3},8,-4 \log (2),-\frac{4}{3},3\right)\text{ = }\left(\frac{3}{4},-1,3\ 2^{-1/2},-3,\frac{25}{3},8,-4 \log (2),-\frac{4}{3},3\right) \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{The }\text{list, }\text{sorted }\text{from }\text{smallest }\text{to }\text{largest, }\text{is}: \\
+      \left(-3,-4 \log (2),-\frac{4}{3},-1,\frac{3}{4},3\ 2^{-1/2},3,8,\frac{25}{3}\right)                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{median }\text{of }\text{the }\text{list }\left(-3,-4 \log (2),-\frac{4}{3},-1,\frac{3}{4},3\ 2^{-1/2},3,8,\frac{25}{3}\right) \text{is }\text{the }\text{element }\text{in }\text{the }\text{middle, }\text{which }\text{is}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                      \\
+            \text{}        & \fbox{$\frac{3}{4}$} \\
+          \end{array}
+      $}                                                                                                                                                                                                                                             \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the mode of ${-\frac{19}{2}, 10, -\frac{19}{2}, \frac{19}{2}, 0, 10, \frac{19}{2}, \frac{19}{2}, \frac{19}{2}, 10, 0, 10, 4, 0, 4, 10, 10, 4, 10, 4, 10, 10, \frac{19}{2}, 10, 4, -\frac{19}{2}, 10, 4}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the mode (commonest element) of the list}:                                                                                                                      \\
+      \left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right) \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right)=\left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right): \\
+      \left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right)                                                                                                                                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{sorted }\text{list }\text{is}:                                                                                                                            \\
+      \left(-\frac{19}{2},-\frac{19}{2},-\frac{19}{2},0,0,0,4,4,4,4,4,4,\frac{19}{2},\frac{19}{2},\frac{19}{2},\frac{19}{2},\frac{19}{2},10,10,10,10,10,10,10,10,10,10,10\right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{tally }\text{of }\text{each }\text{element }\text{is}: \\
+
+      \begin{array}{cccccc}
+        \text{element} & -\frac{19}{2} & 0 & 4 & \frac{19}{2} & 10 \\
+        \text{tally}   & 3             & 3 & 6 & 5            & 11 \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{element }\text{10 }\text{appears }\text{11 }\text{times. }\text{Thus }\text{the }\text{mode }\text{of }\text{the }\text{list }\text{is}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &    \\
+            \text{}        & 10 \\
+          \end{array}
+      $}                                                                                                                                                        \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the range of ${0, -1, -\frac{33}{10}, -\frac{5}{2}, 3, -\frac{311}{32}, 5, -2, -5, -\frac{28}{3}, -3}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the range of the list}:                                                                                                                                                         \\
+      \left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right)\text{ = }\left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right) \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{The }\text{range }\text{of }\text{a }\text{list }\text{is }\text{given }\text{by}: \\
+      (\text{largest element})-(\text{smallest element})                                       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},\fbox{$5$},-2,-5,-\frac{28}{3},-3\right)  \text{We }\text{see }\text{that }\text{the }\text{largest }\text{element }\text{is }5: \\
+      5-(\text{smallest element})                                                                                                                                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(0,-1,-\frac{33}{10},-\frac{5}{2},3,\fbox{$-\frac{311}{32}$},5,-2,-5,-\frac{28}{3},-3\right)  \text{We }\text{see }\text{that }\text{the }\text{smallest }\text{element }\text{is }-\frac{311}{32}: \\
+      -\frac{-311}{32}+5                                                                                                                                                                                       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -\frac{-311}{32}+5=\frac{471}{32}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                \\
+            \text{}        & \frac{471}{32} \\
+          \end{array}
+      $}                                 \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the sample variance of ${-6, -15, -1, -11}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the (sample) variance of the list}: \\
+      (-6,-15,-1,-11)\text{}                         \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{The }\text{(sample) }\text{variance }\text{of }\text{a }\text{list }\text{of }\text{numbers }X=\left\{X_1,X_2,\ldots ,X_n\right\} \text{with }\text{mean }\mu =\frac{X_1+X_2+\ldots +X_n}{n} \text{is }\text{given }\text{by}: \\
+      \frac{\left| X_1-\mu \right| {}^2+\left| X_2-\mu \right| {}^2+\ldots +\left| X_n-\mu \right| {}^2}{n-1}                                                                                                                              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{There }\text{are }n=4 \text{elements }\text{in }\text{the }\text{list }X=\{-6,-15,-1,-11\}:                           \\
+      \frac{\left| X_1-\mu \right| {}^2+\left| X_2-\mu \right| {}^2+\left| X_3-\mu \right| {}^2+\left| X_4-\mu \right| {}^2}{4-1} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{The }\text{elements }X_i \text{of }\text{the }\text{list }X=\{-6,-15,-1,-11\} \text{are:} \\
+
+        \begin{array}{l}
+          X_1=-6  \\
+          X_2=-15 \\
+          X_3=-1  \\
+          X_4=-11 \\
+        \end{array}
+        \\
+      \end{array}
+      \\
+      \frac{| -\mu -6| ^2+| -\mu -15| ^2+| -\mu -1| ^2+| -\mu -11| ^2}{4-1} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{mean }(\mu ) \text{is }\text{given }\text{by$\backslash $n$\backslash $n}\mu =\frac{X_1+X_2+X_3+X_4}{4}=\frac{-6-15-1-11}{4}=-\frac{33}{4}: \\
+      \frac{\left| -\frac{-33}{4}-6\right| ^2+\left| -\frac{-33}{4}-15\right| ^2+\left| -\frac{-33}{4}-1\right| ^2+\left| -\frac{-33}{4}-11\right| ^2}{4-1}        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{The values of the differences are:} \\
+
+        \begin{array}{l}
+          -\frac{-33}{4}-6=\frac{9}{4}    \\
+          -\frac{-33}{4}-15=-\frac{27}{4} \\
+          -\frac{-33}{4}-1=\frac{29}{4}   \\
+          -\frac{-33}{4}-11=-\frac{11}{4} \\
+          4-1=3                           \\
+        \end{array}
+        \\
+      \end{array}
+      \\
+      \frac{\left| \frac{9}{4}\right| ^2+\left| -\frac{27}{4}\right| ^2+\left| \frac{29}{4}\right| ^2+\left| -\frac{11}{4}\right| ^2}{3} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{The }\text{values }\text{of }\text{the }\text{terms }\text{in }\text{the }\text{numerator }\text{are}: \\
+
+        \begin{array}{l}
+          \left| \frac{9}{4}\right| ^2 \text{= }\frac{81}{16}    \\
+          \left| -\frac{27}{4}\right| ^2 \text{= }\frac{729}{16} \\
+          \left| \frac{29}{4}\right| ^2 \text{= }\frac{841}{16}  \\
+          \left| -\frac{11}{4}\right| ^2 \text{= }\frac{121}{16} \\
+        \end{array}
+        \\
+      \end{array}
+      \\
+      \frac{\frac{81}{16}+\frac{729}{16}+\frac{841}{16}+\frac{121}{16}}{3} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{81}{16}+\frac{729}{16}+\frac{841}{16}+\frac{121}{16}=\frac{443}{4}: \\
+      \frac{\frac{443}{4}}{3}                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{\frac{443}{4}}{3}=\frac{443}{12}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                \\
+            \text{}        & \frac{443}{12} \\
+          \end{array}
+      $}                                      \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Add the two matrices
+$\left(
+  \begin{array}{cc}
+      -\frac{19}{6} & \frac{53}{6} \\
+      \frac{13}{6}  & -\frac{2}{3} \\
+    \end{array}
+  \right)$ and
+$\left(
+  \begin{array}{cc}
+      \frac{10}{3} & -\frac{1}{2} \\
+      2            & 9            \\
+    \end{array}
+  \right)$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Simplify the following}: \\
+      \left(
+      \begin{array}{cc}
+          -\frac{19}{6} & \frac{53}{6} \\
+          \frac{13}{6}  & -\frac{2}{3} \\
+        \end{array}
+      \right)+\left(
+      \begin{array}{cc}
+          \frac{10}{3} & -\frac{1}{2} \\
+          2            & 9            \\
+        \end{array}
+      \right)                        \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{cc}
+          -\frac{19}{6} & \frac{53}{6} \\
+          \frac{13}{6}  & -\frac{2}{3} \\
+        \end{array}
+      \right)+\left(
+      \begin{array}{cc}
+          \frac{10}{3} & -\frac{1}{2} \\
+          2            & 9            \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          -\frac{19}{6}+\frac{10}{3} & \frac{53}{6}-\frac{1}{2} \\
+          \frac{13}{6}+2             & -\frac{2}{3}+9           \\
+        \end{array}
+      \right): \\
+      \left(
+      \begin{array}{cc}
+          -\frac{19}{6}+\frac{10}{3} & \frac{53}{6}-\frac{1}{2} \\
+          \frac{13}{6}+2             & -\frac{2}{3}+9           \\
+        \end{array}
+      \right)  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }-\frac{19}{6}+\frac{10}{3} \text{over }\text{the }\text{common }\text{denominator }6. -\frac{19}{6}+\frac{10}{3} \text{= }\frac{-19}{6}+\frac{2\times 10}{6}: \\
+      \left(
+      \begin{array}{cc}
+          \fbox{$\frac{-19}{6}+\frac{2\times 10}{6}$} & \frac{53}{6}-\frac{1}{2} \\
+          \frac{13}{6}+2                              & -\frac{2}{3}+9           \\
+        \end{array}
+      \right)                                                                                                                                                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      2\times 10 \text{= }20: \\
+      \left(
+      \begin{array}{cc}
+          \frac{-19}{6}+\frac{\fbox{$20$}}{6} & \frac{53}{6}-\frac{1}{2} \\
+          \frac{13}{6}+2                      & -\frac{2}{3}+9           \\
+        \end{array}
+      \right)                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -\frac{19}{6}+\frac{20}{6} \text{= }\frac{-19+20}{6}: \\
+      \left(
+      \begin{array}{cc}
+          \fbox{$\frac{-19+20}{6}$} & \frac{53}{6}-\frac{1}{2} \\
+          \frac{13}{6}+2            & -\frac{2}{3}+9           \\
+        \end{array}
+      \right)                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -19+20=1: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}    & \frac{53}{6}-\frac{1}{2} \\
+          \frac{13}{6}+2 & -\frac{2}{3}+9           \\
+        \end{array}
+      \right)   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }\frac{53}{6}-\frac{1}{2} \text{over }\text{the }\text{common }\text{denominator }6. \frac{53}{6}-\frac{1}{2} \text{= }\frac{53}{6}-\frac{3}{6}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}    & \fbox{$\frac{53}{6}-\frac{3}{6}$} \\
+          \frac{13}{6}+2 & -\frac{2}{3}+9                    \\
+        \end{array}
+      \right)                                                                                                                                                    \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{53}{6}-\frac{3}{6} \text{= }\frac{53-3}{6}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}    & \fbox{$\frac{53-3}{6}$} \\
+          \frac{13}{6}+2 & -\frac{2}{3}+9          \\
+        \end{array}
+      \right)                                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{c}
+
+        \begin{array}{ccc}
+          \text{} & 5       & 3 \\
+          -       & \text{} & 3 \\
+          \hline
+          \text{} & 5       & 0 \\
+        \end{array}
+        \\
+      \end{array}
+      :       \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}    & \frac{\fbox{$50$}}{6} \\
+          \frac{13}{6}+2 & -\frac{2}{3}+9        \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }\text{50 }\text{and }6 \text{is }2, \text{so }\frac{50}{6}=\frac{2\times 25}{2\times 3}=\frac{2}{2}\times \frac{25}{3}=\frac{25}{3}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}    & \fbox{$\frac{25}{3}$} \\
+          \frac{13}{6}+2 & -\frac{2}{3}+9        \\
+        \end{array}
+      \right)                                                                                                                                                              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }\frac{13}{6}+2 \text{over }\text{the }\text{common }\text{denominator }6. \frac{13}{6}+2 \text{= }\frac{13}{6}+\frac{6\times 2}{6}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}                               & \frac{25}{3}   \\
+          \fbox{$\frac{13}{6}+\frac{6\times 2}{6}$} & -\frac{2}{3}+9 \\
+        \end{array}
+      \right)                                                                                                                                        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      6\times 2 \text{= }12: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}                        & \frac{25}{3}   \\
+          \frac{13}{6}+\frac{\fbox{$12$}}{6} & -\frac{2}{3}+9 \\
+        \end{array}
+      \right)                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{13}{6}+\frac{12}{6} \text{= }\frac{13+12}{6}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}              & \frac{25}{3}   \\
+          \fbox{$\frac{13+12}{6}$} & -\frac{2}{3}+9 \\
+        \end{array}
+      \right)                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{c}
+
+        \begin{array}{ccc}
+          \hline
+          \text{} & 1 & 3 \\
+          \hline
+          +       & 1 & 2 \\
+          \text{} & 2 & 5 \\
+        \end{array}
+        \\
+      \end{array}
+      :       \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}           & \frac{25}{3}   \\
+          \frac{\fbox{$25$}}{6} & -\frac{2}{3}+9 \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }-\frac{2}{3}+9 \text{over }\text{the }\text{common }\text{denominator }3. -\frac{2}{3}+9 \text{= }\frac{-2}{3}+\frac{3\times 9}{3}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}  & \frac{25}{3}                              \\
+          \frac{25}{6} & \fbox{$\frac{-2}{3}+\frac{3\times 9}{3}$} \\
+        \end{array}
+      \right)                                                                                                                                        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3\times 9 \text{= }27: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}  & \frac{25}{3}                       \\
+          \frac{25}{6} & \frac{-2}{3}+\frac{\fbox{$27$}}{3} \\
+        \end{array}
+      \right)                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -\frac{2}{3}+\frac{27}{3} \text{= }\frac{-2+27}{3}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{1}{6}  & \frac{25}{3}             \\
+          \frac{25}{6} & \fbox{$\frac{-2+27}{3}$} \\
+        \end{array}
+      \right)                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -2+27=25: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &        \\
+            \text{}        & \left(
+            \begin{array}{cc}
+                \frac{1}{6}  & \frac{25}{3}          \\
+                \frac{25}{6} & \frac{\fbox{$25$}}{3} \\
+              \end{array}
+            \right)                 \\
+          \end{array}
+      $}        \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the characteristic polynomial of the following matrix:
+$\left(
+  \begin{array}{ccc}
+      0  & 6  & -1 \\
+      -4 & -9 & -5 \\
+      -7 & 1  & -2 \\
+    \end{array}
+  \right)$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the characteristic polynomial of the matrix }M\text{ with respect to the variable }\lambda : \\
+      M=\left(
+      \begin{array}{ccc}
+          0  & 6  & -1 \\
+          -4 & -9 & -5 \\
+          -7 & 1  & -2 \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{To }\text{find }\text{the }\text{characteristic }\text{polynomial }\text{of }\text{a }\text{matrix, }\text{subtract }\text{a }\text{variable }\text{multiplied }\text{by }\text{the }\text{identity }\text{matrix }\text{and }\text{take }\text{the }\text{determinant}: \\
+      | M-\lambda  \mathbb{I}|                                                                                                                                                                                                                                                       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{lll}
+        | M-\lambda  \mathbb{I}| & = & \left|
+        \begin{array}{ccc}
+          0  & 6  & -1 \\
+          -4 & -9 & -5 \\
+          -7 & 1  & -2 \\
+        \end{array}
+        -\lambda
+        \begin{array}{ccc}
+          1 & 0 & 0 \\
+          0 & 1 & 0 \\
+          0 & 0 & 1 \\
+        \end{array}
+        \right|                               \\
+        \text{}                  & = & \left|
+        \begin{array}{ccc}
+          0  & 6  & -1 \\
+          -4 & -9 & -5 \\
+          -7 & 1  & -2 \\
+        \end{array}
+        -
+        \begin{array}{ccc}
+          \lambda & 0       & 0       \\
+          0       & \lambda & 0       \\
+          0       & 0       & \lambda \\
+        \end{array}
+        \right|                               \\
+      \end{array}
+      \\
+      \text{= }\left|
+      \begin{array}{ccc}
+        -\lambda & 6           & -1          \\
+        -4       & -\lambda -9 & -5          \\
+        -7       & 1           & -\lambda -2 \\
+      \end{array}
+      \right| \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Row }3 \text{has }\text{as }\text{many }\text{or }\text{more }\text{ones }\text{than }\text{the }\text{others}: \\
+      \text{= }\left|
+      \begin{array}{ccc}
+        -\lambda & 6           & -1          \\
+        -4       & -\lambda -9 & -5          \\
+        -7       & 1           & -\lambda -2 \\
+      \end{array}
+      \right|                                                                                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{determinant }\text{of }\text{the }\text{matrix }\left(
+      \begin{array}{ccc}
+          -\lambda & 6           & -1          \\
+          -4       & -\lambda -9 & -5          \\
+          -7       & 1           & -\lambda -2 \\
+        \end{array}
+      \right) \text{is }\text{given }\text{by }(-7)\, \left|
+      \begin{array}{cc}
+        6           & -1 \\
+        -\lambda -9 & -5 \\
+      \end{array}
+      \right| +(-1)\, \left|
+      \begin{array}{cc}
+        -\lambda & -1 \\
+        -4       & -5 \\
+      \end{array}
+      \right| +(-\lambda -2) \left|
+      \begin{array}{cc}
+        -\lambda & 6           \\
+        -4       & -\lambda -9 \\
+      \end{array}
+      \right| : \\
+      \text{= }(-7)\, \left|
+      \begin{array}{cc}
+        6           & -1 \\
+        -\lambda -9 & -5 \\
+      \end{array}
+      \right| +(-1)\, \left|
+      \begin{array}{cc}
+        -\lambda & -1 \\
+        -4       & -5 \\
+      \end{array}
+      \right| +(-\lambda -2) \left|
+      \begin{array}{cc}
+        -\lambda & 6           \\
+        -4       & -\lambda -9 \\
+      \end{array}
+      \right|   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      (-7)\, \left|
+      \begin{array}{cc}
+        6           & -1 \\
+        -\lambda -9 & -5 \\
+      \end{array}
+      \right| =(-7)\, (6 (-5)-(-1)\, -\lambda -9)=-7 (-\lambda -39)=\fbox{$-7 (-\lambda -39)$}: \\
+      \text{= }\fbox{$-7 (-\lambda -39)$}+(-1)\, \left|
+      \begin{array}{cc}
+        -\lambda & -1 \\
+        -4       & -5 \\
+      \end{array}
+      \right| +(-\lambda -2) \left|
+      \begin{array}{cc}
+        -\lambda & 6           \\
+        -4       & -\lambda -9 \\
+      \end{array}
+      \right|                                                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      (-1)\, \left|
+      \begin{array}{cc}
+        -\lambda & -1 \\
+        -4       & -5 \\
+      \end{array}
+      \right| =(-1)\, (5 \lambda -(-1)\, (-4))=-(5 \lambda -4)=\fbox{$4-5 \lambda $}: \\
+      \text{= }-7 (-\lambda -39)+\fbox{$4-5 \lambda $}+(-\lambda -2) \left|
+      \begin{array}{cc}
+        -\lambda & 6           \\
+        -4       & -\lambda -9 \\
+      \end{array}
+      \right|                                                                         \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      (-\lambda -2) \left|
+      \begin{array}{cc}
+        -\lambda & 6           \\
+        -4       & -\lambda -9 \\
+      \end{array}
+      \right| =(-\lambda -2) ((-\lambda ) (-\lambda -9)-6 (-4))=(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)=\fbox{$(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)$}: \\
+      \text{= }-7 (-\lambda -39)+(4-5 \lambda )+\fbox{$(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)$}                                                                      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -7 (-\lambda -39)+(4-5 \lambda )+\fbox{$(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)$}\, =\, -\lambda ^3-11 \lambda ^2-40 \lambda +229: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                    \\
+            \text{}        & \text{= }-\lambda ^3-11 \lambda ^2-40 \lambda +229 \\
+          \end{array}
+      $}                                                                                                                                             \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the cross product of the following vectors:
+$\left(
+  \begin{array}{c}
+      -9 \\
+      -6 \\
+      5  \\
+    \end{array}
+  \right)$ and
+$\left(
+  \begin{array}{c}
+      -3 \\
+      5  \\
+      4  \\
+    \end{array}
+  \right)$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Compute the following cross product}: \\
+      \, (-9,-6,5)\, \times \, (-3,5,4)\,         \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Construct }\text{a }\text{matrix }\text{where }\text{the }\text{first }\text{row }\text{contains }\text{unit }\text{vectors }\hat{\text{i}}, \hat{\text{j}}, \text{and }\hat{\text{k}}; \text{and }\text{the }\text{second }\text{and }\text{third }\text{rows }\text{are }\text{made }\text{of }\text{vectors }\, (-9,-6,5)\,  \text{and }\, (-3,5,4)\, : \\
+      \left(
+      \begin{array}{ccc}
+          \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+          -9             & -6             & 5              \\
+          -3             & 5              & 4              \\
+        \end{array}
+      \right)                                                                                                                                                                                                                                                                                                                                                          \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Take }\text{the }\text{determinant }\text{of }\text{this }\text{matrix}: \\
+      \left|
+      \begin{array}{ccc}
+        \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+        -9             & -6             & 5              \\
+        -3             & 5              & 4              \\
+      \end{array}
+      \right|                                                                        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Expand }\text{with }\text{respect }\text{to }\text{row }1: \\
+      \text{= }\left|
+      \begin{array}{ccc}
+        \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+        -9             & -6             & 5              \\
+        -3             & 5              & 4              \\
+      \end{array}
+      \right|                                                          \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{determinant }\text{of }\text{the }\text{matrix }\left(
+      \begin{array}{ccc}
+          \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+          -9             & -6             & 5              \\
+          -3             & 5              & 4              \\
+        \end{array}
+      \right) \text{is }\text{given }\text{by }\hat{\text{i}} \left|
+      \begin{array}{cc}
+        -6 & 5 \\
+        5  & 4 \\
+      \end{array}
+      \right| +\left(-\hat{\text{j}}\right) \left|
+      \begin{array}{cc}
+        -9 & 5 \\
+        -3 & 4 \\
+      \end{array}
+      \right| +\hat{\text{k}} \left|
+      \begin{array}{cc}
+        -9 & -6 \\
+        -3 & 5  \\
+      \end{array}
+      \right| : \\
+      \text{= }\hat{\text{i}} \left|
+      \begin{array}{cc}
+        -6 & 5 \\
+        5  & 4 \\
+      \end{array}
+      \right| +\left(-\hat{\text{j}}\right) \left|
+      \begin{array}{cc}
+        -9 & 5 \\
+        -3 & 4 \\
+      \end{array}
+      \right| +\hat{\text{k}} \left|
+      \begin{array}{cc}
+        -9 & -6 \\
+        -3 & 5  \\
+      \end{array}
+      \right|   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \hat{\text{i}} \left|
+      \begin{array}{cc}
+        -6 & 5 \\
+        5  & 4 \\
+      \end{array}
+      \right| =\hat{\text{i}} ((-6)\, \times \, 4-5\ 5)=\hat{\text{i}} (-49)=\fbox{$-49 \hat{\text{i}}$}: \\
+      \text{= }\fbox{$-49 \hat{\text{i}}$}+\left(-\hat{\text{j}}\right) \left|
+      \begin{array}{cc}
+        -9 & 5 \\
+        -3 & 4 \\
+      \end{array}
+      \right| +\hat{\text{k}} \left|
+      \begin{array}{cc}
+        -9 & -6 \\
+        -3 & 5  \\
+      \end{array}
+      \right|                                                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -\hat{\text{j}} \left|
+      \begin{array}{cc}
+        -9 & 5 \\
+        -3 & 4 \\
+      \end{array}
+      \right| =-\hat{\text{j}} ((-9)\, \times \, 4-5 (-3))=-\hat{\text{j}} (-21)=\fbox{$21 \hat{\text{j}}$}: \\
+      \text{= }-49 \hat{\text{i}}+\fbox{$21 \hat{\text{j}}$}+\hat{\text{k}} \left|
+      \begin{array}{cc}
+        -9 & -6 \\
+        -3 & 5  \\
+      \end{array}
+      \right|                                                                                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \hat{\text{k}} \left|
+      \begin{array}{cc}
+        -9 & -6 \\
+        -3 & 5  \\
+      \end{array}
+      \right| =\hat{\text{k}} ((-9)\, \times \, 5-(-6)\, (-3))=\hat{\text{k}} (-63)=\fbox{$-63 \hat{\text{k}}$}: \\
+      \text{= }-49 \hat{\text{i}}+21 \hat{\text{j}}+\fbox{$-63 \hat{\text{k}}$}                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Order }\text{the }\text{terms }\text{in }\text{a }\text{more }\text{natural }\text{way}: \\
+      \text{= }-49 \hat{\text{i}}+21 \hat{\text{j}}-63 \hat{\text{k}}                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -49 \hat{\text{i}}+21 \hat{\text{j}}-63 \hat{\text{k}}=\, (-49,21,-63)\, : \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                   \\
+            \text{}        & \, (-49,21,-63)\, \\
+          \end{array}
+      $}                                                                         \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the determinant of the matrix
+$\left(
+  \begin{array}{cc}
+      -2 & -5 \\
+      2  & -4 \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the determinant}: \\
+      \left|
+      \begin{array}{cc}
+        -2 & -5 \\
+        2  & -4 \\
+      \end{array}
+      \right|                      \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Multiply }\text{along }\text{the }\text{diagonals }\text{and }\text{subtract}: \\
+      (-2)\, (-4)-(-5)\, \times \, 2                                                       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -2 (-4) \text{= }8: \\
+      8--5\times 2        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -(-5) \text{= }5: \\
+      8+5\times 2       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      5\times 2 \text{= }10: \\
+      8+10                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      8+10=18: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &    \\
+            \text{}        & 18 \\
+          \end{array}
+      $}       \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the dot product of the following two vectors:
+$\left(
+  \begin{array}{c}
+      -\frac{2}{e}  \\
+      \frac{1}{e}   \\
+      -\frac{26}{e} \\
+      \frac{6}{e}   \\
+      \frac{10}{e}  \\
+      \frac{13}{e}  \\
+    \end{array}
+  \right)$ and
+$\left(
+  \begin{array}{c}
+      -\frac{5}{e}  \\
+      \frac{23}{e}  \\
+      -\frac{7}{e}  \\
+      -\frac{8}{e}  \\
+      \frac{19}{e}  \\
+      -\frac{15}{e} \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Take the dot product of the following vectors}:                                                                                                                                            \\
+      \, \left(-\frac{2}{e},\frac{1}{e},-\frac{26}{e},\frac{6}{e},\frac{10}{e},\frac{13}{e}\right)\, .\, \left(-\frac{5}{e},\frac{23}{e},-\frac{7}{e},-\frac{8}{e},\frac{19}{e},-\frac{15}{e}\right)\, \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Multiply }\text{the }\text{row }\text{vector }\text{with }\text{the }\text{column }\text{vector}: \\
+      \, \left(-\frac{2}{e},\frac{1}{e},-\frac{26}{e},\frac{6}{e},\frac{10}{e},\frac{13}{e}\right)\, .\left(
+      \begin{array}{c}
+          -\frac{5}{e}  \\
+          \frac{23}{e}  \\
+          -\frac{7}{e}  \\
+          -\frac{8}{e}  \\
+          \frac{19}{e}  \\
+          -\frac{15}{e} \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{cccccc}
+          -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          -\frac{5}{e}  \\
+          \frac{23}{e}  \\
+          -\frac{7}{e}  \\
+          -\frac{8}{e}  \\
+          \frac{19}{e}  \\
+          -\frac{15}{e} \\
+        \end{array}
+      \right):                           \\
+      -\frac{2 (-5)}{e e}=\frac{10}{e^2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{cccccc}
+          -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          -\frac{5}{e}  \\
+          \frac{23}{e}  \\
+          -\frac{7}{e}  \\
+          -\frac{8}{e}  \\
+          \frac{19}{e}  \\
+          -\frac{15}{e} \\
+        \end{array}
+      \right):                      \\
+      \frac{23}{e e}=\frac{23}{e^2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{cccccc}
+          -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          -\frac{5}{e}  \\
+          \frac{23}{e}  \\
+          -\frac{7}{e}  \\
+          -\frac{8}{e}  \\
+          \frac{19}{e}  \\
+          -\frac{15}{e} \\
+        \end{array}
+      \right):                             \\
+      -\frac{26 (-7)}{e e}=\frac{182}{e^2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{cccccc}
+          -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          -\frac{5}{e}  \\
+          \frac{23}{e}  \\
+          -\frac{7}{e}  \\
+          -\frac{8}{e}  \\
+          \frac{19}{e}  \\
+          -\frac{15}{e} \\
+        \end{array}
+      \right):                           \\
+      \frac{6 (-8)}{e e}=-\frac{48}{e^2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{cccccc}
+          -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          -\frac{5}{e}  \\
+          \frac{23}{e}  \\
+          -\frac{7}{e}  \\
+          -\frac{8}{e}  \\
+          \frac{19}{e}  \\
+          -\frac{15}{e} \\
+        \end{array}
+      \right):                           \\
+      \frac{10\ 19}{e e}=\frac{190}{e^2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{cccccc}
+          -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          -\frac{5}{e}  \\
+          \frac{23}{e}  \\
+          -\frac{7}{e}  \\
+          -\frac{8}{e}  \\
+          \frac{19}{e}  \\
+          -\frac{15}{e} \\
+        \end{array}
+      \right):                              \\
+      \frac{13 (-15)}{e e}=-\frac{195}{e^2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(-\frac{2}{e}\right)\, \left(-\frac{5}{e}\right)+\frac{23}{e e}+\left(-\frac{26}{e}\right)\, \left(-\frac{7}{e}\right)+\frac{6 (-8)}{e e}+\frac{10\ 19}{e e}+\frac{13 (-15)}{e e}: \\
+      \frac{10}{e^2}+\frac{23}{e^2}+\frac{182}{e^2}-\frac{48}{e^2}+\frac{190}{e^2}-\frac{195}{e^2}                                                                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\text{like }\text{terms. }\frac{10}{e^2}+\frac{23}{e^2}+\frac{182}{e^2}-\frac{48}{e^2}+\frac{190}{e^2}-\frac{195}{e^2} \text{= }\frac{162}{e^2}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                 \\
+            \text{}        & \frac{162}{e^2} \\
+          \end{array}
+      $}                                                                                                                                                          \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the eigenvalues of the following matrix:
+$\left(
+  \begin{array}{cc}
+      \frac{42}{5} & -4 \\
+      -\frac{9}{5} & 1  \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find all the eigenvalues of the matrix }M: \\
+      M=\left(
+      \begin{array}{cc}
+          \frac{42}{5} & -4 \\
+          -\frac{9}{5} & 1  \\
+        \end{array}
+      \right)                                          \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Find }\lambda \in \mathbb{C} \text{such }\text{that }M v=\lambda  v \text{for }\text{some }\text{nonzero }\text{vector }v: \\
+      M v=\lambda  v                                                                                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Rewrite }\text{the }\text{equation }M v=\lambda  v \text{as }(M-\mathbb{I} \lambda ) v=0: \\
+      (M-\mathbb{I} \lambda ) v=0                                                                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Find }\text{all }\lambda  \text{such }\text{that }| M-\mathbb{I} \lambda | =0: \\
+      | M-\mathbb{I} \lambda | =0                                                          \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{lll}
+        M-\mathbb{I} \lambda & = & \fbox{$\left(
+            \begin{array}{cc}
+              \frac{42}{5} & -4 \\
+              -\frac{9}{5} & 1  \\
+            \end{array}
+            \right)$}-\fbox{$\left(
+            \begin{array}{cc}
+              1 & 0 \\
+              0 & 1 \\
+            \end{array}
+        \right)$} \lambda                        \\
+        \text{}              & = & \left(
+        \begin{array}{cc}
+            \frac{42}{5}-\lambda & -4        \\
+            -\frac{9}{5}         & 1-\lambda \\
+          \end{array}
+        \right)                                  \\
+      \end{array}
+      \\
+      \left|
+      \begin{array}{cc}
+        \frac{42}{5}-\lambda & -4        \\
+        -\frac{9}{5}         & 1-\lambda \\
+      \end{array}
+      \right| =0 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left|
+      \begin{array}{cc}
+        \frac{42}{5}-\lambda & -4        \\
+        -\frac{9}{5}         & 1-\lambda \\
+      \end{array}
+      \right| =\lambda ^2-\frac{47 \lambda }{5}+\frac{6}{5}: \\
+      \lambda ^2-\frac{47 \lambda }{5}+\frac{6}{5}=0         \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }\frac{6}{5} \text{from }\text{both }\text{sides}: \\
+      \lambda ^2-\frac{47 \lambda }{5}=-\frac{6}{5}                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{2209}{100} \text{to }\text{both }\text{sides}:    \\
+      \lambda ^2-\frac{47 \lambda }{5}+\frac{2209}{100}=\frac{2089}{100} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+      \left(\lambda -\frac{47}{10}\right)^2=\frac{2089}{100}                                        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}:                   \\
+      \lambda -\frac{47}{10}=\frac{\sqrt{2089}}{10}\text{ or }\lambda -\frac{47}{10}=-\frac{\sqrt{2089}}{10} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{47}{10} \text{to }\text{both }\text{sides}:                                                    \\
+      \fbox{$\lambda =\frac{47}{10}+\frac{\sqrt{2089}}{10}$}\text{ or }\lambda -\frac{47}{10}=-\frac{\sqrt{2089}}{10} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{47}{10} \text{to }\text{both }\text{sides}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                                                                                \\
+            \text{}        & \lambda =\frac{47}{10}+\frac{\sqrt{2089}}{10}\text{ or }\fbox{$\lambda =\frac{47}{10}-\frac{\sqrt{2089}}{10}$} \\
+          \end{array}
+      $}                                                           \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the eigenvectors of the following matrix:
+$\left(
+  \begin{array}{cc}
+      9 & -5 \\
+      1 & -4 \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find all the eigenvalues and eigenvectors of the matrix }M: \\
+      M=\left(
+      \begin{array}{cc}
+          9 & -5 \\
+          1 & -4 \\
+        \end{array}
+      \right)                                                           \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Find }\lambda \in \mathbb{C} \text{such }\text{that }M v=\lambda  v \text{for }\text{some }\text{nonzero }\text{vector }v: \\
+      M v=\lambda  v                                                                                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Rewrite }\text{the }\text{equation }M v=\lambda  v \text{as }(M-\mathbb{I} \lambda ) v=0: \\
+      (M-\mathbb{I} \lambda ) v=0                                                                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Find }\text{all }\lambda  \text{such }\text{that }| M-\mathbb{I} \lambda | =0: \\
+      | M-\mathbb{I} \lambda | =0                                                          \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{lll}
+        M-\mathbb{I} \lambda & = & \fbox{$\left(
+            \begin{array}{cc}
+              9 & -5 \\
+              1 & -4 \\
+            \end{array}
+            \right)$}-\fbox{$\left(
+            \begin{array}{cc}
+              1 & 0 \\
+              0 & 1 \\
+            \end{array}
+        \right)$} \lambda                        \\
+        \text{}              & = & \left(
+        \begin{array}{cc}
+            9-\lambda & -5          \\
+            1         & -\lambda -4 \\
+          \end{array}
+        \right)                                  \\
+      \end{array}
+      \\
+      \left|
+      \begin{array}{cc}
+        9-\lambda & -5          \\
+        1         & -\lambda -4 \\
+      \end{array}
+      \right| =0 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left|
+      \begin{array}{cc}
+        9-\lambda & -5          \\
+        1         & -\lambda -4 \\
+      \end{array}
+      \right| =\lambda ^2-5 \lambda -31: \\
+      \lambda ^2-5 \lambda -31=0         \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\text{31 }\text{to }\text{both }\text{sides}: \\
+      \lambda ^2-5 \lambda =31                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{25}{4} \text{to }\text{both }\text{sides}: \\
+      \lambda ^2-5 \lambda +\frac{25}{4}=\frac{149}{4}            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+      \left(\lambda -\frac{5}{2}\right)^2=\frac{149}{4}                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}:           \\
+      \lambda -\frac{5}{2}=\frac{\sqrt{149}}{2}\text{ or }\lambda -\frac{5}{2}=-\frac{\sqrt{149}}{2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{5}{2} \text{to }\text{both }\text{sides}:                                              \\
+      \fbox{$\lambda =\frac{5}{2}+\frac{\sqrt{149}}{2}$}\text{ or }\lambda -\frac{5}{2}=-\frac{\sqrt{149}}{2} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{5}{2} \text{to }\text{both }\text{sides}:                                             \\
+      \lambda =\frac{5}{2}+\frac{\sqrt{149}}{2}\text{ or }\fbox{$\lambda =\frac{5}{2}-\frac{\sqrt{149}}{2}$} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Find }\text{all }v \text{such }\text{that }(M-\mathbb{I} \lambda ) v=0 \text{for }\text{some }\text{eigenvalue }\lambda : \\
+      (M-\mathbb{I} \lambda ) v=0                                                                                                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Substitute }\left(
+      \begin{array}{cc}
+          9-\lambda & -5          \\
+          1         & -\lambda -4 \\
+        \end{array}
+      \right) \text{for }(M-\mathbb{I} \lambda ): \\
+      \fbox{$\left(
+          \begin{array}{cc}
+            9-\lambda & -5          \\
+            1         & -\lambda -4 \\
+          \end{array}
+      \right)$} v=0                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Write }v \text{as }\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right) \text{and }0 \text{as }\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right):  \\
+      \left(
+      \begin{array}{cc}
+          9-\lambda & -5          \\
+          1         & -\lambda -4 \\
+        \end{array}
+      \right).\fbox{$\left(
+          \begin{array}{c}
+            v_1 \\
+            v_2 \\
+          \end{array}
+          \right)$}=\fbox{$\left(
+          \begin{array}{c}
+            0 \\
+            0 \\
+          \end{array}
+      \right)$} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{First, }\text{substitute }\frac{5}{2}+\frac{\sqrt{149}}{2} \text{for }\lambda  \text{in }\text{the }\text{matrix }\left(
+      \begin{array}{cc}
+          9-\lambda & -5          \\
+          1         & -\lambda -4 \\
+        \end{array}
+      \right) \text{and }\text{solve }\text{the }\text{system}: \\
+      \fbox{$\left(
+          \begin{array}{cc}
+            \frac{13}{2}-\frac{\sqrt{149}}{2} & -5                                 \\
+            1                                 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+          \end{array}
+          \right)$}.\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right)                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{In }\text{augmented }\text{matrix }\text{form, }\text{the }\text{system }\text{is }\text{written }\text{as}: \\
+      \left(
+      \begin{array}{ccc}
+          \frac{13}{2}-\frac{\sqrt{149}}{2} & -5                                 & 0 \\
+          1                                 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+        \end{array}
+      \right)                                                                                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Swap }\text{row }1 \text{with }\text{row }2: \\
+      \left(
+      \begin{array}{ccc}
+          1                                 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+          \frac{13}{2}-\frac{\sqrt{149}}{2} & -5                                 & 0 \\
+        \end{array}
+      \right)                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }\left(\frac{13}{2}-\frac{\sqrt{149}}{2}\right)\, \times \, \text{(row }1) \text{from }\text{row }2: \\
+      \left(
+      \begin{array}{ccc}
+          1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+          0 & 0                                  & 0 \\
+        \end{array}
+      \right)                                                                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Translated }\text{back }\text{to }\text{a }\text{matrix }\text{equation, }\text{the }\text{reduced }\text{system }\left(
+      \begin{array}{ccc}
+          1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+          0 & 0                                  & 0 \\
+        \end{array}
+      \right) \text{is}: \\
+      \left(
+      \begin{array}{cc}
+          1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+          0 & 0                                  \\
+        \end{array}
+      \right)\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right)            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{As }\text{a }\text{scalar }\text{equation, }\text{the }\text{system }\left(
+      \begin{array}{cc}
+          1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+          0 & 0                                  \\
+        \end{array}
+      \right)\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right) \text{translates }\text{to}:                      \\
+      v_1+\left(-\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2=0 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Rewrite }\text{the }\text{equation }\text{as}:     \\
+      v_1=-\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{According }\text{to }\text{the }\text{above }\text{equation}: \\
+      v\text{ = }\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)\text{ = }\left(
+      \begin{array}{c}
+          -\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+          v_2                                                  \\
+        \end{array}
+      \right)                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Letting }v_2=1 \text{in }\left(
+      \begin{array}{c}
+          -\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+          v_2                                                  \\
+        \end{array}
+      \right), \text{we }\text{find }\text{that }\left(
+      \begin{array}{c}
+          \frac{13}{2}+\frac{\sqrt{149}}{2} \\
+          1                                 \\
+        \end{array}
+      \right) \text{is }\text{an }\text{eigenvector }\text{of }\text{the }\text{matrix }\left(
+      \begin{array}{cc}
+          9 & -5 \\
+          1 & -4 \\
+        \end{array}
+      \right) \text{associated }\text{with }\text{the }\text{eigenvalue }\frac{5}{2}+\frac{\sqrt{149}}{2}: \\
+      v=\left(
+      \begin{array}{c}
+          \frac{13}{2}+\frac{\sqrt{149}}{2} \\
+          1                                 \\
+        \end{array}
+      \right)                                                                                              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Substitute }\frac{5}{2}-\frac{\sqrt{149}}{2} \text{for }\lambda  \text{in }\text{the }\text{matrix }\left(
+      \begin{array}{cc}
+          9-\lambda & -5          \\
+          1         & -\lambda -4 \\
+        \end{array}
+      \right) \text{and }\text{solve }\text{the }\text{system}: \\
+      \fbox{$\left(
+          \begin{array}{cc}
+            \frac{13}{2}+\frac{\sqrt{149}}{2} & -5                                \\
+            1                                 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+          \end{array}
+          \right)$}.\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right)                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{In }\text{augmented }\text{matrix }\text{form, }\text{the }\text{system }\text{is }\text{written }\text{as}: \\
+      \left(
+      \begin{array}{ccc}
+          \frac{13}{2}+\frac{\sqrt{149}}{2} & -5                                & 0 \\
+          1                                 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+        \end{array}
+      \right)                                                                                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Swap }\text{row }1 \text{with }\text{row }2: \\
+      \left(
+      \begin{array}{ccc}
+          1                                 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+          \frac{13}{2}+\frac{\sqrt{149}}{2} & -5                                & 0 \\
+        \end{array}
+      \right)                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }\left(\frac{13}{2}+\frac{\sqrt{149}}{2}\right)\, \times \, \text{(row }1) \text{from }\text{row }2: \\
+      \left(
+      \begin{array}{ccc}
+          1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+          0 & 0                                 & 0 \\
+        \end{array}
+      \right)                                                                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Translated }\text{back }\text{to }\text{a }\text{matrix }\text{equation, }\text{the }\text{reduced }\text{system }\left(
+      \begin{array}{ccc}
+          1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+          0 & 0                                 & 0 \\
+        \end{array}
+      \right) \text{is}: \\
+      \left(
+      \begin{array}{cc}
+          1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+          0 & 0                                 \\
+        \end{array}
+      \right)\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right)            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{As }\text{a }\text{scalar }\text{equation, }\text{the }\text{system }\left(
+      \begin{array}{cc}
+          1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+          0 & 0                                 \\
+        \end{array}
+      \right)\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right) \text{translates }\text{to}:                     \\
+      v_1+\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2=0 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Rewrite }\text{the }\text{equation }\text{as}:    \\
+      v_1=-\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{According }\text{to }\text{the }\text{above }\text{equation}: \\
+      v\text{ = }\left(
+      \begin{array}{c}
+          v_1 \\
+          v_2 \\
+        \end{array}
+      \right)\text{ = }\left(
+      \begin{array}{c}
+          -\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+          v_2                                                 \\
+        \end{array}
+      \right)                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Letting }v_2=1 \text{in }\left(
+      \begin{array}{c}
+          -\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+          v_2                                                 \\
+        \end{array}
+      \right), \text{we }\text{find }\text{that }\left(
+      \begin{array}{c}
+          \frac{13}{2}-\frac{\sqrt{149}}{2} \\
+          1                                 \\
+        \end{array}
+      \right) \text{is }\text{an }\text{eigenvector }\text{of }\text{the }\text{matrix }\left(
+      \begin{array}{cc}
+          9 & -5 \\
+          1 & -4 \\
+        \end{array}
+      \right) \text{associated }\text{with }\text{the }\text{eigenvalue }\frac{5}{2}-\frac{\sqrt{149}}{2}: \\
+      v=\left(
+      \begin{array}{c}
+          \frac{13}{2}-\frac{\sqrt{149}}{2} \\
+          1                                 \\
+        \end{array}
+      \right)                                                                                              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{We }\text{found }\text{the }\text{following }\text{eigenvalue/eigenvector }\text{pair}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} & \\
+            \text{}        &
+            \begin{array}{c|c}
+              \text{Eigenvalue}                & \text{Eigenvector} \\
+              \hline
+              \frac{5}{2}+\frac{\sqrt{149}}{2} & \left(
+              \begin{array}{c}
+                  \frac{13}{2}+\frac{\sqrt{149}}{2} \\
+                  1                                 \\
+                \end{array}
+              \right)                                               \\
+              \frac{5}{2}-\frac{\sqrt{149}}{2} & \left(
+              \begin{array}{c}
+                  \frac{13}{2}-\frac{\sqrt{149}}{2} \\
+                  1                                 \\
+                \end{array}
+              \right)                                               \\
+            \end{array}
+            \\
+          \end{array}
+      $}                                                                                            \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the $\ell_2$ norm of the following vector:
+$\left(
+  \begin{array}{c}
+      8   \\
+      9   \\
+      -8  \\
+      8   \\
+      -3  \\
+      -9  \\
+      5   \\
+      -10 \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the norm of the vector }\, (8,9,-8,8,-3,-9,5,-10)\, : \\
+      \| \, (8,9,-8,8,-3,-9,5,-10)\, \|                                \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{The }\text{formula }\text{for }\text{the }\text{8-dimensional }\text{Euclidean }\text{norm }\text{comes }\text{from }\text{the }\text{8-dimensional }\text{Pythagorean }\text{theorem}: \\
+      \left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7,v_8\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2+v_8^2}                                                                    \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Substitute }\, (8,9,-8,8,-3,-9,5,-10)\,  \text{into }\text{the }\text{formula}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                                                                     \\
+            \text{}        & \| \, (8,9,-8,8,-3,-9,5,-10)\, \| =\sqrt{8^2+9^2+(-8)^2+8^2+(-3)^2+(-9)^2+5^2+(-10)^2}=2 \sqrt{122} \\
+          \end{array}
+      $}                                                                                    \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Multiply the scalar $-\frac{1}{16}$ and the matrix
+$\left(
+  \begin{array}{cc}
+      -6 & -2 \\
+      0  & 6  \\
+      -8 & 6  \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Simplify the following}: \\
+      \frac{-1}{16}\left(
+      \begin{array}{cc}
+          -6 & -2 \\
+          0  & 6  \\
+          -8 & 6  \\
+        \end{array}
+      \right)                        \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \frac{-1}{16}\left(
+      \begin{array}{cc}
+          -6 & -2 \\
+          0  & 6  \\
+          -8 & 6  \\
+        \end{array}
+      \right)=\frac{-1\left(
+        \begin{array}{cc}
+          -6 & -2 \\
+          0  & 6  \\
+          -8 & 6  \\
+        \end{array}
+      \right)}{16}: \\
+      \frac{-1\left(
+        \begin{array}{cc}
+          -6 & -2 \\
+          0  & 6  \\
+          -8 & 6  \\
+        \end{array}
+      \right)}{16}  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -1\left(
+      \begin{array}{cc}
+          -6 & -2 \\
+          0  & 6  \\
+          -8 & 6  \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          -(-6) & -(-2) \\
+          -0    & -6    \\
+          -(-8) & -6    \\
+        \end{array}
+      \right):       \\
+      \frac{\fbox{$\left(
+            \begin{array}{cc}
+              -(-6) & -(-2) \\
+              0     & -6    \\
+              -(-8) & -6    \\
+            \end{array}
+      \right)$}}{16} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -(-6) \text{= }6: \\
+      \frac{1}{16}\left(
+      \begin{array}{cc}
+          \fbox{$6$} & -(-2) \\
+          0          & -6    \\
+          -(-8)      & -6    \\
+        \end{array}
+      \right)           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -(-2) \text{= }2: \\
+      \frac{1}{16}\left(
+      \begin{array}{cc}
+          6     & \fbox{$2$} \\
+          0     & -6         \\
+          -(-8) & -6         \\
+        \end{array}
+      \right)           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -(-8) \text{= }8: \\
+      \frac{1}{16}\left(
+      \begin{array}{cc}
+          6          & 2  \\
+          0          & -6 \\
+          \fbox{$8$} & -6 \\
+        \end{array}
+      \right)           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{1}{16}\left(
+      \begin{array}{cc}
+          6 & 2  \\
+          0 & -6 \\
+          8 & -6 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{6}{16} & \frac{2}{16}  \\
+          \frac{0}{16} & \frac{-6}{16} \\
+          \frac{8}{16} & \frac{-6}{16} \\
+        \end{array}
+      \right): \\
+      \left(
+      \begin{array}{cc}
+          \frac{6}{16} & \frac{2}{16}  \\
+          \frac{0}{16} & \frac{-6}{16} \\
+          \frac{8}{16} & \frac{-6}{16} \\
+        \end{array}
+      \right)  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }6 \text{and }\text{16 }\text{is }2, \text{so }\frac{6}{16}=\frac{2\times 3}{2\times 8}=\frac{2}{2}\times \frac{3}{8}=\frac{3}{8}: \\
+      \left(
+      \begin{array}{cc}
+          \fbox{$\frac{3}{8}$} & \frac{2}{16}  \\
+          \frac{0}{16}         & \frac{-6}{16} \\
+          \frac{8}{16}         & \frac{-6}{16} \\
+        \end{array}
+      \right)                                                                                                                                                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }2 \text{and }\text{16 }\text{is }2, \text{so }\frac{2}{16}=\frac{2\times 1}{2\times 8}=\frac{2}{2}\times \frac{1}{8}=\frac{1}{8}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{3}{8}  & \frac{1}{\fbox{$8$}} \\
+          \frac{0}{16} & \frac{-6}{16}        \\
+          \frac{8}{16} & \frac{-6}{16}        \\
+        \end{array}
+      \right)                                                                                                                                                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{0}{16}=0: \\
+      \left(
+      \begin{array}{cc}
+          \frac{3}{8}  & \frac{1}{8}   \\
+          \fbox{$0$}   & \frac{-6}{16} \\
+          \frac{8}{16} & \frac{-6}{16} \\
+        \end{array}
+      \right)         \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }-6 \text{and }\text{16 }\text{is }2, \text{so }\frac{-6}{16}=\frac{2 (-3)}{2\times 8}=\frac{2}{2}\times \frac{-3}{8}=\frac{-3}{8}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{3}{8}  & \frac{1}{8}           \\
+          0            & \fbox{$\frac{-3}{8}$} \\
+          \frac{8}{16} & \frac{-6}{16}         \\
+        \end{array}
+      \right)                                                                                                                                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }8 \text{and }\text{16 }\text{is }8, \text{so }\frac{8}{16}=\frac{8\times 1}{8\times 2}=\frac{8}{8}\times \frac{1}{2}=\frac{1}{2}: \\
+      \left(
+      \begin{array}{cc}
+          \frac{3}{8}          & \frac{1}{8}   \\
+          0                    & \frac{-3}{8}  \\
+          \frac{1}{\fbox{$2$}} & \frac{-6}{16} \\
+        \end{array}
+      \right)                                                                                                                                                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{gcd }\text{of }-6 \text{and }\text{16 }\text{is }2, \text{so }\frac{-6}{16}=\frac{2 (-3)}{2\times 8}=\frac{2}{2}\times \frac{-3}{8}=\frac{-3}{8}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &        \\
+            \text{}        & \left(
+            \begin{array}{cc}
+                \frac{3}{8} & \frac{1}{8}           \\
+                0           & \frac{-3}{8}          \\
+                \frac{1}{2} & \fbox{$\frac{-3}{8}$} \\
+              \end{array}
+            \right)                 \\
+          \end{array}
+      $}                                                                                                                                                                 \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Multiply
+$\left(
+  \begin{array}{ccc}
+      2           & 1 & \frac{4}{3}  \\
+      \frac{2}{3} & 0 & \frac{1}{3}  \\
+      \frac{1}{3} & 3 & -\frac{8}{3} \\
+    \end{array}
+  \right)$ and
+$\left(
+  \begin{array}{cc}
+      3            & \frac{2}{3} \\
+      \frac{2}{3}  & \frac{7}{3} \\
+      -\frac{7}{3} & \frac{7}{3} \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Multiply the following matrices}: \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)                                 \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{The }\text{dimensions }\text{of }\text{the }\text{first }\text{matrix }\text{are }3\times 3 \text{and }\text{the }\text{dimensions }\text{of }\text{the }\text{second }\text{matrix }\text{are }3\times 2. \\
+        \text{This }\text{means }\text{the }\text{dimensions }\text{of }\text{the }\text{product }\text{are }3\times 2:                                                                                                  \\
+      \end{array}
+      \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \_ & \_ \\
+          \_ & \_ \\
+          \_ & \_ \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Highlight }\text{the }1^{\text{st}} \text{row }\text{and }\text{the }1^{\text{st}} \text{column}: \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \_ & \_ \\
+          \_ & \_ \\
+          \_ & \_ \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Multiply }\text{corresponding }\text{components }\text{and }\text{add: }2\ 3+\frac{2}{3}+\frac{4 (-7)}{3\ 3}=\frac{32}{9}.                                   \\
+        \text{Place }\text{this }\text{number }\text{into }\text{the }1^{\text{st}} \text{row }\text{and }1^{\text{st}} \text{column }\text{of }\text{the }\text{product}: \\
+      \end{array}
+      \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \fbox{$\frac{32}{9}$} & \_ \\
+          \_                    & \_ \\
+          \_                    & \_ \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Highlight }\text{the }1^{\text{st}} \text{row }\text{and }\text{the }2^{\text{nd}} \text{column}: \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9} & \_ \\
+          \_           & \_ \\
+          \_           & \_ \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Multiply }\text{corresponding }\text{components }\text{and }\text{add: }\frac{2\ 2}{3}+\frac{7}{3}+\frac{4\ 7}{3\ 3}=\frac{61}{9}.                           \\
+        \text{Place }\text{this }\text{number }\text{into }\text{the }1^{\text{st}} \text{row }\text{and }2^{\text{nd}} \text{column }\text{of }\text{the }\text{product}: \\
+      \end{array}
+      \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9} & \fbox{$\frac{61}{9}$} \\
+          \_           & \_                    \\
+          \_           & \_                    \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Highlight }\text{the }2^{\text{nd}} \text{row }\text{and }\text{the }1^{\text{st}} \text{column}: \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9} & \frac{61}{9} \\
+          \_           & \_           \\
+          \_           & \_           \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Multiply }\text{corresponding }\text{components }\text{and }\text{add: }\frac{2\ 3}{3}+\frac{0\ 2}{3}-\frac{7}{3\ 3}=\frac{11}{9}.                           \\
+        \text{Place }\text{this }\text{number }\text{into }\text{the }2^{\text{nd}} \text{row }\text{and }1^{\text{st}} \text{column }\text{of }\text{the }\text{product}: \\
+      \end{array}
+      \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9}          & \frac{61}{9} \\
+          \fbox{$\frac{11}{9}$} & \_           \\
+          \_                    & \_           \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Highlight }\text{the }2^{\text{nd}} \text{row }\text{and }\text{the }2^{\text{nd}} \text{column}: \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9} & \frac{61}{9} \\
+          \frac{11}{9} & \_           \\
+          \_           & \_           \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Multiply }\text{corresponding }\text{components }\text{and }\text{add: }\frac{2\ 2}{3\ 3}+\frac{0\ 7}{3}+\frac{7}{3\ 3}=\frac{11}{9}.                        \\
+        \text{Place }\text{this }\text{number }\text{into }\text{the }2^{\text{nd}} \text{row }\text{and }2^{\text{nd}} \text{column }\text{of }\text{the }\text{product}: \\
+      \end{array}
+      \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9} & \frac{61}{9}          \\
+          \frac{11}{9} & \fbox{$\frac{11}{9}$} \\
+          \_           & \_                    \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Highlight }\text{the }3^{\text{rd}} \text{row }\text{and }\text{the }1^{\text{st}} \text{column}: \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9} & \frac{61}{9} \\
+          \frac{11}{9} & \frac{11}{9} \\
+          \_           & \_           \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Multiply }\text{corresponding }\text{components }\text{and }\text{add: }\frac{3}{3}+\frac{3\ 2}{3}+\left(-\frac{8}{3}\right)\, \left(-\frac{7}{3}\right)=\frac{83}{9}. \\
+        \text{Place }\text{this }\text{number }\text{into }\text{the }3^{\text{rd}} \text{row }\text{and }1^{\text{st}} \text{column }\text{of }\text{the }\text{product}:           \\
+      \end{array}
+      \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9}          & \frac{61}{9} \\
+          \frac{11}{9}          & \frac{11}{9} \\
+          \fbox{$\frac{83}{9}$} & \_           \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Highlight }\text{the }3^{\text{rd}} \text{row }\text{and }\text{the }2^{\text{nd}} \text{column}: \\
+      \left(
+      \begin{array}{ccc}
+          2           & 1 & \frac{4}{3}  \\
+          \frac{2}{3} & 0 & \frac{1}{3}  \\
+          \frac{1}{3} & 3 & -\frac{8}{3} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{cc}
+          3            & \frac{2}{3} \\
+          \frac{2}{3}  & \frac{7}{3} \\
+          -\frac{7}{3} & \frac{7}{3} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{cc}
+          \frac{32}{9} & \frac{61}{9} \\
+          \frac{11}{9} & \frac{11}{9} \\
+          \frac{83}{9} & \_           \\
+        \end{array}
+      \right)                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Multiply }\text{corresponding }\text{components }\text{and }\text{add: }\frac{2}{3\ 3}+\frac{3\ 7}{3}+\left(-\frac{8}{3}\right)\, \times \, \frac{7}{3}=1.   \\
+        \text{Place }\text{this }\text{number }\text{into }\text{the }3^{\text{rd}} \text{row }\text{and }2^{\text{nd}} \text{column }\text{of }\text{the }\text{product}: \\
+      \end{array}
+      \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &        \\
+            \text{}        & \left(
+            \begin{array}{ccc}
+                2           & 1 & \frac{4}{3}  \\
+                \frac{2}{3} & 0 & \frac{1}{3}  \\
+                \frac{1}{3} & 3 & -\frac{8}{3} \\
+              \end{array}
+            \right).\left(
+            \begin{array}{cc}
+                3            & \frac{2}{3} \\
+                \frac{2}{3}  & \frac{7}{3} \\
+                -\frac{7}{3} & \frac{7}{3} \\
+              \end{array}
+            \right)=\left(
+            \begin{array}{cc}
+                \frac{32}{9} & \frac{61}{9} \\
+                \frac{11}{9} & \frac{11}{9} \\
+                \frac{83}{9} & \fbox{$1$}   \\
+              \end{array}
+            \right)                 \\
+          \end{array}
+      $} \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Give a list of vectors that forms a basis for the null space of the following matrix:
+$\left(
+  \begin{array}{ccc}
+      1  & -7 & 7 \\
+      -2 & 2  & 8 \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the null space of the matrix }M: \\
+      M=\left(
+      \begin{array}{ccc}
+          1  & -7 & 7 \\
+          -2 & 2  & 8 \\
+        \end{array}
+      \right)                                     \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{The }\text{null }\text{space }\text{of }\text{matrix }M=\left(
+      \begin{array}{ccc}
+          1  & -7 & 7 \\
+          -2 & 2  & 8 \\
+        \end{array}
+      \right) \text{is }\text{the }\text{set }\text{of }\text{all }\text{vectors }v=\left(
+      \begin{array}{c}
+          x_1 \\
+          x_2 \\
+          x_3 \\
+        \end{array}
+      \right) \text{such }\text{that }M.v=0: \\
+      \left(
+      \begin{array}{ccc}
+          1  & -7 & 7 \\
+          -2 & 2  & 8 \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          x_1 \\
+          x_2 \\
+          x_3 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right)                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Reduce }\text{the }\text{matrix }\left(
+      \begin{array}{ccc}
+          1  & -7 & 7 \\
+          -2 & 2  & 8 \\
+        \end{array}
+      \right) \text{to }\text{row }\text{echelon }\text{form}: \\
+      \left(
+      \begin{array}{ccc}
+          1  & -7 & 7 \\
+          -2 & 2  & 8 \\
+        \end{array}
+      \right)                                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }2\, \times \, \text{(row }1) \text{to }\text{row }2: \\
+      \left(
+      \begin{array}{ccc}
+          1 & -7  & 7  \\
+          0 & -12 & 22 \\
+        \end{array}
+      \right)                                                         \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Divide }\text{row }2 \text{by }-12: \\
+      \left(
+      \begin{array}{ccc}
+          1 & -7 & 7             \\
+          0 & 1  & -\frac{11}{6} \\
+        \end{array}
+      \right)                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }7\, \times \, \text{(row }2) \text{to }\text{row }1: \\
+      \left(
+      \begin{array}{ccc}
+          1 & 0 & -\frac{35}{6} \\
+          0 & 1 & -\frac{11}{6} \\
+        \end{array}
+      \right)                                                         \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Free }\text{variables }\text{in }\text{the }\text{null }\text{space }\left(
+      \begin{array}{c}
+          x_1 \\
+          x_2 \\
+          x_3 \\
+        \end{array}
+      \right) \text{correspond }\text{to }\text{the }\text{columns }\text{in }\left(
+      \begin{array}{ccc}
+          1 & 0 & -\frac{35}{6} \\
+          0 & 1 & -\frac{11}{6} \\
+        \end{array}
+      \right) \text{which }\text{have }\text{no }\text{pivot.}                                                                                                                                                                 \\
+      \text{Column }3 \text{is }\text{the }\text{only }\text{column }\text{with }\text{no }\text{pivot, }\text{so }\text{we }\text{may }\text{take }x_3 \text{to }\text{be }\text{the }\text{only }\text{free }\text{variable} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Multiply }\text{out }\text{the }\text{reduced }\text{matrix }\left(
+      \begin{array}{ccc}
+          1 & 0 & -\frac{35}{6} \\
+          0 & 1 & -\frac{11}{6} \\
+        \end{array}
+      \right) \text{with }\text{the }\text{proposed }\text{solution }\text{vector }\left(
+      \begin{array}{c}
+          x_1 \\
+          x_2 \\
+          x_3 \\
+        \end{array}
+      \right): \\
+      \left(
+      \begin{array}{ccc}
+          1 & 0 & -\frac{35}{6} \\
+          0 & 1 & -\frac{11}{6} \\
+        \end{array}
+      \right).\left(
+      \begin{array}{c}
+          x_1 \\
+          x_2 \\
+          x_3 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          x_1-\frac{35 x_3}{6} \\
+          x_2-\frac{11 x_3}{6} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          0 \\
+          0 \\
+        \end{array}
+      \right)  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Solve }\text{the }\text{equations }\{
+      \begin{array}{l}
+        x_1-\frac{35 x_3}{6}=0 \\
+        x_2-\frac{11 x_3}{6}=0 \\
+      \end{array}
+      \text{for }x_1 \text{and }x_2: \\
+      \{
+      \begin{array}{l}
+        x_1=\frac{35 x_3}{6} \\
+        x_2=\frac{11 x_3}{6} \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Rewrite }v \text{in }\text{terms }\text{of }\text{the }\text{free }\text{variable }x_3, \text{and }\text{assign }\text{it }\text{an }\text{arbitrary }\text{real }\text{value }\text{of }x: \\
+      v=\left(
+      \begin{array}{c}
+          x_1 \\
+          x_2 \\
+          x_3 \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          \frac{35 x_3}{6} \\
+          \frac{11 x_3}{6} \\
+          x_3              \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          \frac{35 x}{6} \\
+          \frac{11 x}{6} \\
+          x              \\
+        \end{array}
+      \right)\text{ for }x\in \mathbb{R}                                                                                                                                                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Since }x \text{is }\text{taken }\text{from }\mathbb{R}, \text{we }\text{can }\text{replace }\text{it }\text{with }6 x: \\
+      \left(
+      \begin{array}{c}
+          \frac{35 x}{6} \\
+          \frac{11 x}{6} \\
+          x              \\
+        \end{array}
+      \right)\, \rightarrow \, \left(
+      \begin{array}{c}
+          \frac{35 (6 x)}{6} \\
+          \frac{11 (6 x)}{6} \\
+          6 x                \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{c}
+          35 x \\
+          11 x \\
+          6 x  \\
+        \end{array}
+      \right)\text{ for }x\in \mathbb{R}                                                                                           \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Rewrite }\text{the }\text{solution }\text{vector }v=\left(
+      \begin{array}{c}
+          35 x \\
+          11 x \\
+          6 x  \\
+        \end{array}
+      \right) \text{in }\text{set }\text{notation}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                        \\
+            \text{}        & \{\, (35 x,11 x,6 x)\, \text{$\, $: }x\in \mathbb{R}\} \\
+          \end{array}
+      $}                                            \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the (pseudo)inverse of
+$\left(
+  \begin{array}{cc}
+      -1 & 4  \\
+      2  & -5 \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the inverse}: \\
+      \left(
+      \begin{array}{cc}
+        -1 & 4  \\
+        2  & -5 \\
+      \end{array}
+      \right)^{-1}             \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Using }\text{a }\text{formula }\text{for }\text{the }\text{inverse }\text{of }\text{a }\text{2$\times $2 }\text{matrix, }\left(
+      \begin{array}{cc}
+        -1 & 4  \\
+        2  & -5 \\
+      \end{array}
+      \right)^{-1}=\frac{1}{-(-5)-2\times 4}\left(
+      \begin{array}{cc}
+          -5 & -4 \\
+          -2 & -1 \\
+        \end{array}
+      \right): \\
+      \frac{1}{-(-5)-2\times 4}\left(
+      \begin{array}{cc}
+          -5 & -4 \\
+          -2 & -1 \\
+        \end{array}
+      \right)  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Simplify: }\frac{1}{-(-5)-2\times 4}=-\frac{1}{3}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                    \\
+            \text{}        & -\frac{1}{3}\left(
+            \begin{array}{cc}
+                -5 & -4 \\
+                -2 & -1 \\
+              \end{array}
+            \right)                             \\
+          \end{array}
+      $}                                                       \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the rank of
+$\left(
+  \begin{array}{c}
+      -5 \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the rank of the matrix}: \\
+      M=\left(
+      \begin{array}{c}
+          -5 \\
+        \end{array}
+      \right)                             \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{As }\text{each }\text{row }\text{of }\text{matrix }M \text{has }\text{only }\text{zeroes }\text{to }\text{the }\text{left }\text{of }\text{the }\text{main }\text{diagonal, }\text{it }\text{is }\text{in }\text{row }\text{echelon }\text{form}: \\
+      \left(
+      \begin{array}{c}
+          -5 \\
+        \end{array}
+      \right)                                                                                                                                                                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{There }\text{is }1 \text{nonzero }\text{row }\text{in }\text{the }\text{row }\text{echelon }\text{matrix, }\text{so }\text{the }\text{rank }\text{is }1: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                   \\
+            \text{}        & \text{rank}\left(
+            \begin{array}{c}
+                -5 \\
+              \end{array}
+            \right)=1                          \\
+          \end{array}
+      $}                                                                                                                                                             \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Convert the following matrix to reduced row echelon form:
+$\left(
+  \begin{array}{cc}
+      7  & -3 \\
+      -8 & -9 \\
+      -9 & 4  \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Do row reduction}: \\
+      \left(
+      \begin{array}{cc}
+          7  & -3 \\
+          -8 & -9 \\
+          -9 & 4  \\
+        \end{array}
+      \right)                  \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Swap }\text{row }1 \text{with }\text{row }3: \\
+      \left(
+      \begin{array}{cc}
+          -9 & 4  \\
+          -8 & -9 \\
+          7  & -3 \\
+        \end{array}
+      \right)                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }\frac{8}{9}\, \times \, \text{(row }1) \text{from }\text{row }2: \\
+      \left(
+      \begin{array}{cc}
+          -9 & 4              \\
+          0  & -\frac{113}{9} \\
+          7  & -3             \\
+        \end{array}
+      \right)                                                                          \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{7}{9}\, \times \, \text{(row }1) \text{to }\text{row }3: \\
+      \left(
+      \begin{array}{cc}
+          -9 & 4              \\
+          0  & -\frac{113}{9} \\
+          0  & \frac{1}{9}    \\
+        \end{array}
+      \right)                                                                   \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\frac{1}{113}\, \times \, \text{(row }2) \text{to }\text{row }3: \\
+      \left(
+      \begin{array}{cc}
+          -9 & 4              \\
+          0  & -\frac{113}{9} \\
+          0  & 0              \\
+        \end{array}
+      \right)                                                                     \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Multiply }\text{row }2 \text{by }-\frac{9}{113}: \\
+      \left(
+      \begin{array}{cc}
+          -9 & 4 \\
+          0  & 1 \\
+          0  & 0 \\
+        \end{array}
+      \right)                                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Subtract }4\, \times \, \text{(row }2) \text{from }\text{row }1: \\
+      \left(
+      \begin{array}{cc}
+          -9 & 0 \\
+          0  & 1 \\
+          0  & 0 \\
+        \end{array}
+      \right)                                                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Divide }\text{row }1 \text{by }-9: \\
+      \left(
+      \begin{array}{cc}
+          1 & 0 \\
+          0 & 1 \\
+          0 & 0 \\
+        \end{array}
+      \right)                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{This }\text{matrix }\text{is }\text{now }\text{in }\text{reduced }\text{row }\text{echelon }\text{form.$\backslash $nAll }\text{non-zero }\text{rows }\text{are }\text{above }\text{rows }\text{of }\text{all }\text{zeros:} \\
+      \left(
+      \begin{array}{cc}
+          1 & 0 \\
+          0 & 1 \\
+          0 & 0 \\
+        \end{array}
+      \right)                                                                                                                                                                                                                            \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Each }\text{pivot }\text{is }\text{1 }\text{and }\text{is }\text{strictly }\text{to }\text{the }\text{right }\text{of }\text{every }\text{pivot }\text{above }\text{it}: \\
+      \left(
+      \begin{array}{cc}
+          1 & 0 \\
+          0 & 1 \\
+          0 & 0 \\
+        \end{array}
+      \right)                                                                                                                                                                        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Each }\text{pivot }\text{is }\text{the }\text{only }\text{non-zero }\text{entry }\text{in }\text{its }\text{column}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &        \\
+            \text{}        & \left(
+            \begin{array}{cc}
+                1 & 0 \\
+                0 & 1 \\
+                0 & 0 \\
+              \end{array}
+            \right)                 \\
+          \end{array}
+      $}                                                                                                                         \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Subtract the second matrix from the first:
+$\left(
+  \begin{array}{ccc}
+      \frac{7}{2}   & \frac{28}{3} & \frac{31}{6} \\
+      -\frac{14}{3} & -2           & -\frac{5}{3} \\
+    \end{array}
+  \right)$
+$\left(
+  \begin{array}{ccc}
+      \frac{13}{3} & \frac{15}{2}  & \frac{55}{6} \\
+      \frac{2}{3}  & -\frac{31}{6} & \frac{19}{2} \\
+    \end{array}
+  \right)$\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Simplify the following}: \\
+      \left(
+      \begin{array}{ccc}
+          \frac{7}{2}   & \frac{28}{3} & \frac{31}{6} \\
+          -\frac{14}{3} & -2           & -\frac{5}{3} \\
+        \end{array}
+      \right)-\left(
+      \begin{array}{ccc}
+          \frac{13}{3} & \frac{15}{2}  & \frac{55}{6} \\
+          \frac{2}{3}  & -\frac{31}{6} & \frac{19}{2} \\
+        \end{array}
+      \right)                        \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      -1\left(
+      \begin{array}{ccc}
+          \frac{13}{3} & \frac{15}{2}  & \frac{55}{6} \\
+          \frac{2}{3}  & -\frac{31}{6} & \frac{19}{2} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{ccc}
+          -\frac{13}{3} & -\frac{15}{2}  & -\frac{55}{6} \\
+          -\frac{2}{3}  & -\frac{-31}{6} & -\frac{19}{2} \\
+        \end{array}
+      \right):  \\
+      \left(
+      \begin{array}{ccc}
+          \frac{7}{2}   & \frac{28}{3} & \frac{31}{6} \\
+          -\frac{14}{3} & -2           & -\frac{5}{3} \\
+        \end{array}
+      \right)+\fbox{$\left(
+          \begin{array}{ccc}
+            -\frac{13}{3} & -\frac{15}{2}  & -\frac{55}{6} \\
+            -\frac{2}{3}  & -\frac{-31}{6} & -\frac{19}{2} \\
+          \end{array}
+      \right)$} \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -(-31) \text{= }31: \\
+      \left(
+      \begin{array}{ccc}
+          \frac{7}{2}   & \frac{28}{3} & \frac{31}{6} \\
+          -\frac{14}{3} & -2           & -\frac{5}{3} \\
+        \end{array}
+      \right)+\left(
+      \begin{array}{ccc}
+          -\frac{13}{3} & -\frac{15}{2}         & -\frac{55}{6} \\
+          -\frac{2}{3}  & \frac{\fbox{$31$}}{6} & -\frac{19}{2} \\
+        \end{array}
+      \right)             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \left(
+      \begin{array}{ccc}
+          \frac{7}{2}   & \frac{28}{3} & \frac{31}{6} \\
+          -\frac{14}{3} & -2           & -\frac{5}{3} \\
+        \end{array}
+      \right)+\left(
+      \begin{array}{ccc}
+          -\frac{13}{3} & -\frac{15}{2} & -\frac{55}{6} \\
+          -\frac{2}{3}  & \frac{31}{6}  & -\frac{19}{2} \\
+        \end{array}
+      \right)=\left(
+      \begin{array}{ccc}
+          \frac{7}{2}-\frac{13}{3}  & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right): \\
+      \left(
+      \begin{array}{ccc}
+          \frac{7}{2}-\frac{13}{3}  & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }\frac{7}{2}-\frac{13}{3} \text{over }\text{the }\text{common }\text{denominator }6. \frac{7}{2}-\frac{13}{3} \text{= }\frac{3\times 7}{6}+\frac{2 (-13)}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          \fbox{$\frac{3\times 7}{6}+\frac{2 (-13)}{6}$} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3}                      & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                                                                                                                                                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3\times 7 \text{= }21: \\
+      \left(
+      \begin{array}{ccc}
+          \frac{\fbox{$21$}}{6}+\frac{2 (-13)}{6} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3}               & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      2 (-13) \text{= }-26: \\
+      \left(
+      \begin{array}{ccc}
+          \frac{21}{6}+\frac{\fbox{$-26$}}{6} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3}           & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{21}{6}-\frac{26}{6} \text{= }\frac{21-26}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          \fbox{$\frac{21-26}{6}$}  & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      21-26 \text{= }-(26-21): \\
+      \left(
+      \begin{array}{ccc}
+          \frac{\fbox{$-(26-21)$}}{6} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3}   & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{c}
+
+        \begin{array}{ccc}
+          \text{} & 2 & 6 \\
+          -       & 2 & 1 \\
+          \hline
+          \text{} & 0 & 5 \\
+        \end{array}
+        \\
+      \end{array}
+      :       \\
+      \left(
+      \begin{array}{ccc}
+          \frac{-\fbox{$5$}}{6}     & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}           & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }\frac{28}{3}-\frac{15}{2} \text{over }\text{the }\text{common }\text{denominator }6. \frac{28}{3}-\frac{15}{2} \text{= }\frac{2\times 28}{6}+\frac{3 (-15)}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \fbox{$\frac{2\times 28}{6}+\frac{3 (-15)}{6}$} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}                                 & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                                                                                                                                                    \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      2\times 28 \text{= }56: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \frac{\fbox{$56$}}{6}+\frac{3 (-15)}{6} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}                         & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3 (-15) \text{= }-45: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \frac{56}{6}+\frac{\fbox{$-45$}}{6} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}                     & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{56}{6}-\frac{45}{6} \text{= }\frac{56-45}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \fbox{$\frac{56-45}{6}$} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}          & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{c}
+
+        \begin{array}{ccc}
+          \text{} & 5 & 6 \\
+          -       & 4 & 5 \\
+          \hline
+          \text{} & 1 & 1 \\
+        \end{array}
+        \\
+      \end{array}
+      :       \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \frac{\fbox{$11$}}{6} & \frac{31}{6}-\frac{55}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6}       & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{31}{6}-\frac{55}{6} \text{= }\frac{31-55}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \frac{11}{6}    & \fbox{$\frac{31-55}{6}$}  \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      31-55 \text{= }-(55-31): \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \frac{11}{6}    & \frac{\fbox{$-(55-31)$}}{6} \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2}   \\
+        \end{array}
+      \right)                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{c}
+
+        \begin{array}{ccc}
+          \text{} & 5 & 5 \\
+          -       & 3 & 1 \\
+          \hline
+          \text{} & 2 & 4 \\
+        \end{array}
+        \\
+      \end{array}
+      :       \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \frac{11}{6}    & \frac{-\fbox{$24$}}{6}    \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right) \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \frac{24}{6}=\frac{6\times 4}{6}=4: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}              & \frac{11}{6}    & -\fbox{$4$}               \\
+          -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -\frac{14}{3}-\frac{2}{3} \text{= }\frac{-14-2}{3}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}             & \frac{11}{6}    & -4                        \\
+          \fbox{$\frac{-14-2}{3}$} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -14-2=-(14+2): \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}               & \frac{11}{6}    & -4                        \\
+          \frac{\fbox{$-(14+2)$}}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)        \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      14+2=16: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}           & \frac{11}{6}    & -4                        \\
+          \frac{-\fbox{$16$}}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }-2+\frac{31}{6} \text{over }\text{the }\text{common }\text{denominator }6. -2+\frac{31}{6} \text{= }\frac{6 (-2)}{6}+\frac{31}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6}                           & -4                        \\
+          -\frac{16}{3} & \fbox{$\frac{6 (-2)}{6}+\frac{31}{6}$} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                                                                                                                       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      6 (-2) \text{= }-12: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6}                        & -4                        \\
+          -\frac{16}{3} & \frac{\fbox{$-12$}}{6}+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -\frac{12}{6}+\frac{31}{6} \text{= }\frac{-12+31}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6}              & -4                        \\
+          -\frac{16}{3} & \fbox{$\frac{-12+31}{6}$} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -12+31=19: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6}          & -4                        \\
+          -\frac{16}{3} & \frac{\fbox{$19$}}{6} & -\frac{5}{3}-\frac{19}{2} \\
+        \end{array}
+      \right)    \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Put }-\frac{5}{3}-\frac{19}{2} \text{over }\text{the }\text{common }\text{denominator }6. -\frac{5}{3}-\frac{19}{2} \text{= }\frac{2 (-5)}{6}+\frac{3 (-19)}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6} & -4                                          \\
+          -\frac{16}{3} & \frac{19}{6} & \fbox{$\frac{2 (-5)}{6}+\frac{3 (-19)}{6}$} \\
+        \end{array}
+      \right)                                                                                                                                                                \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      2 (-5) \text{= }-10: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6} & -4                                       \\
+          -\frac{16}{3} & \frac{19}{6} & \frac{\fbox{$-10$}}{6}+\frac{3 (-19)}{6} \\
+        \end{array}
+      \right)              \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      3 (-19) \text{= }-57: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6} & -4                                   \\
+          -\frac{16}{3} & \frac{19}{6} & \frac{-10}{6}+\frac{\fbox{$-57$}}{6} \\
+        \end{array}
+      \right)               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -\frac{10}{6}-\frac{57}{6} \text{= }\frac{-10-57}{6}: \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6} & -4                        \\
+          -\frac{16}{3} & \frac{19}{6} & \fbox{$\frac{-10-57}{6}$} \\
+        \end{array}
+      \right)                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      -10-57=-(10+57): \\
+      \left(
+      \begin{array}{ccc}
+          -\frac{5}{6}  & \frac{11}{6} & -4                          \\
+          -\frac{16}{3} & \frac{19}{6} & \frac{\fbox{$-(10+57)$}}{6} \\
+        \end{array}
+      \right)          \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{c}
+
+        \begin{array}{ccc}
+          \hline
+          \text{} & 5 & 7 \\
+          \hline
+          +       & 1 & 0 \\
+          \text{} & 6 & 7 \\
+        \end{array}
+        \\
+      \end{array}
+      :  \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &        \\
+            \text{}        & \left(
+            \begin{array}{ccc}
+                -\frac{5}{6}  & \frac{11}{6} & -4                     \\
+                -\frac{16}{3} & \frac{19}{6} & \frac{-\fbox{$67$}}{6} \\
+              \end{array}
+            \right)                 \\
+          \end{array}
+      $} \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the trace of
+$\left(
+  \begin{array}{cccc}
+      -3 e & -4 e & -2 e & -2 e \\
+      -2 e & -2 e & -4 e & -4 e \\
+      e    & 3 e  & 2 e  & -3 e \\
+      -2 e & 3 e  & -3 e & 3 e  \\
+    \end{array}
+  \right)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the trace of the matrix:} \\
+      \left(
+      \begin{array}{cccc}
+          -3 e & -4 e & -2 e & -2 e \\
+          -2 e & -2 e & -4 e & -4 e \\
+          e    & 3 e  & 2 e  & -3 e \\
+          -2 e & 3 e  & -3 e & 3 e  \\
+        \end{array}
+      \right)                              \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Locate }\text{the }\text{elements }\text{on }\text{the }\text{main }\text{diagonal}: \\
+      \left(
+      \begin{array}{cccc}
+          -3 e & -4 e & -2 e & -2 e \\
+          -2 e & -2 e & -4 e & -4 e \\
+          e    & 3 e  & 2 e  & -3 e \\
+          -2 e & 3 e  & -3 e & 3 e  \\
+        \end{array}
+      \right)                                                                                    \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Write }\text{out }\text{the }\text{sum }\text{of }\text{the }\text{elements }\text{on }\text{the }\text{main }\text{diagonal}: \\
+      -3 e\, \text{+$\, $}-2 e\, \text{+$\, $}2 e\, \text{+$\, $}3 e                                                                       \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Add }\text{like }\text{terms. }-3 e-2 e+2 e+3 e \text{= }0: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &   \\
+            \text{}        & 0 \\
+          \end{array}
+      $}                                                                \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Convert $6876$ to base $26$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Convert the following to base }26: \\
+      6876_{10}                                \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Determine }\text{the }\text{powers }\text{of }\text{26 }\text{that }\text{will }\text{be }\text{used }\text{as }\text{the }\text{places }\text{of }\text{the }\text{digits }\text{in }\text{the }\text{base-26 }\text{representation }\text{of }6876: \\
+
+      \begin{array}{|c|c|c}
+        \hline
+        \text{Power} & \text{Base}^{\text{Power}} & \text{Place value} \\
+        \hline
+        3            & 26^3                       & 17576              \\
+        \hline
+        2            & 26^2                       & 676                \\
+        1            & 26^1                       & 26                 \\
+        0            & 26^0                       & 1                  \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Label }\text{each }\text{place }\text{of }\text{the }\text{base-26 }\text{representation }\text{of }\text{6876 }\text{with }\text{the }\text{appropriate }\text{power }\text{of }26: \\
+
+      \begin{array}{ccccccc}
+        \text{Place} &   &   & 26^2       & 26^1       & 26^0       &                  \\
+                     &   &   & \downarrow & \downarrow & \downarrow &                  \\
+        6876_{10}    & = & ( & \_\_       & \_\_       & \_\_       & )_{\text{}_{26}} \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Determine }\text{the }\text{value }\text{of }\text{the }\text{first }\text{digit }\text{from }\text{the }\text{right }\text{of }\text{6876 }\text{in }\text{base }26: \\
+
+      \begin{array}{l}
+        \frac{6876}{26}=264 \text{with remainder} \fbox{$12$} \\
+
+        \begin{array}{ccccccc}
+          \text{Place} &   &   & 26^2       & 26^1       & 26^0       &                  \\
+                       &   &   & \downarrow & \downarrow & \downarrow &                  \\
+          6876_{10}    & = & ( & \_\_       & \_\_       & 12         & )_{\text{}_{26}} \\
+        \end{array}
+        \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Determine }\text{the }\text{value }\text{of }\text{the }\text{next }\text{digit }\text{from }\text{the }\text{right }\text{of }\text{6876 }\text{in }\text{base }26: \\
+
+      \begin{array}{l}
+        \frac{264}{26}=10 \text{with remainder} \fbox{$4$} \\
+
+        \begin{array}{ccccccc}
+          \text{Place} &   &   & 26^2       & 26^1       & 26^0       &                  \\
+                       &   &   & \downarrow & \downarrow & \downarrow &                  \\
+          6876_{10}    & = & ( & \_\_       & 4          & 12         & )_{\text{}_{26}} \\
+        \end{array}
+        \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Determine }\text{the }\text{value }\text{of }\text{the }\text{last }\text{remaining }\text{digit }\text{of }\text{6876 }\text{in }\text{base }26: \\
+
+      \begin{array}{l}
+        \frac{10}{26}=0 \text{with remainder} \fbox{$10$} \\
+
+        \begin{array}{ccccccc}
+          \text{Place} &   &   & 26^2       & 26^1       & 26^0       &                  \\
+                       &   &   & \downarrow & \downarrow & \downarrow &                  \\
+          6876_{10}    & = & ( & 10         & 4          & 12         & )_{\text{}_{26}} \\
+        \end{array}
+        \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Convert }\text{all }\text{digits }\text{that }\text{are }\text{greater }\text{than }\text{9 }\text{to }\text{their }\text{base }\text{26 }\text{alphabetical }\text{equivalent}: \\
+
+      \begin{array}{ccc}
+        \text{Base-26 digit value} &             & \text{Base-26 digit} \\
+        10                         & \rightarrow & \text{a}             \\
+        4                          & \rightarrow & 4                    \\
+        12                         & \rightarrow & \text{c}             \\
+      \end{array}
+      \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{number }6876_{10} \text{is }\text{equivalent }\text{to }\text{a4c}_{26} \text{in }\text{base }26. \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                           \\
+            \text{}        & 6876_{10}=\text{a4c}_{26} \\
+          \end{array}
+      $}                                                                                                                 \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Factor $2$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Factor the following integer}: \\
+      2                                    \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{No }\text{primes }\text{less }\text{than }2 \text{divide }\text{into }\text{it. }\text{Therefore }2 \text{is }\text{prime}: \\
+      2=2                                                                                                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Since }2 \text{is }\text{prime }\text{it }\text{has }\text{an }\text{exponent }\text{of }1: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &       \\
+            \text{}        & 2=2^1 \\
+          \end{array}
+      $}                                                                                                \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the greatest common divisor of $\{-783,-198\}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the greatest common divisor}: \\
+      \gcd (-783,-198)                         \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Any }\text{divisor }\text{of }\text{a }\text{negative }\text{number }\text{is }\text{also }\text{a }\text{divisor }\text{of }\text{its }\text{absolute }\text{value}: \\
+      \gcd (-783,-198)=\gcd (783,198)                                                                                                                                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Find }\text{the }\text{divisors }\text{of }\text{each }\text{integer }\text{and }\text{select }\text{the }\text{largest }\text{element }\text{they }\text{have }\text{in }\text{common}: \\
+        \text{The }\text{divisors }\text{of }\text{783 }\text{are}:                                                                                                                                    \\
+      \end{array}
+      \\
+      1,3,9,27,29,87,261,783 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{divisors }\text{of }\text{198 }\text{are}: \\
+      1,2,3,6,9,11,18,22,33,66,99,198                             \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{The }\text{largest }\text{number }\text{common }\text{to }\text{both }\text{divisor }\text{lists }\text{is }9: \\
+        \text{divisors }\text{of }\text{783: }1,3,9,27,29,87,261,783                                                         \\
+        \text{divisors }\text{of }\text{198: }1,2,3,6,9,11,18,22,33,66,99,198                                                \\
+      \end{array}
+      \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                    \\
+            \text{}        & \gcd (-783,-198)=9 \\
+          \end{array}
+      $} \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Is the following number prime?
+0\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Test for primality}:                \\
+      \text{is }0\text{ a }\text{prime number?} \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Since }\text{every }\text{positive }\text{integer }\text{is }\text{a }\text{divisor }\text{of }0, \text{it }\text{is }\text{not }\text{prime}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                            \\
+            \text{}        & 0\text{ is }\text{not}\text{ a }\text{prime} \text{number} \\
+          \end{array}
+      $}                                                                                                                                                   \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Find the least common multiple of $\{-53,-39\}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Find the least common multiple}: \\
+      \text{lcm}(-53,-39)                    \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Any }\text{multiple }\text{of }\text{a }\text{negative }\text{number }\text{is }\text{also }\text{a }\text{multiple }\text{of }\text{its }\text{absolute }\text{value}: \\
+      \text{lcm}(-53,-39)=\text{lcm}(53,39)                                                                                                                                         \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Find }\text{the }\text{prime }\text{factorization }\text{of }\text{each }\text{integer}: \\
+        \text{The }\text{prime }\text{factorization }\text{of }\text{53 }\text{is}:                    \\
+      \end{array}
+      \\
+      53=53^1 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{The }\text{prime }\text{factorization }\text{of }\text{39 }\text{is}: \\
+      39=3\times 13                                                               \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+
+      \begin{array}{l}
+        \text{Find the largest power of each prime factor}                                                                                                           \\
+        \text{The }\text{largest }\text{power }\text{of }3 \text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }3^1          \\
+        \text{The }\text{largest }\text{power }\text{of }\text{13 }\text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }13^1 \\
+        \text{The }\text{largest }\text{power }\text{of }\text{53 }\text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }53^1 \\
+        \text{Therefore }\text{lcm}(53,39)=\left(3^1\times 13^1\times 53^1=2067\right):                                                                              \\
+      \end{array}
+      \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                          \\
+            \text{}        & \text{lcm}(-53,-39)=2067 \\
+          \end{array}
+      $} \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Are the following numbers relatively prime (coprime)? $\{185,416\}$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Determine if the following numbers are coprime to each other}: \\
+      416\text{ and }185                                                   \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{By }\text{definition, }\text{these }\text{numbers }\text{are }\text{coprime }\text{if }\text{their }\text{gcd }\text{is }1: \\
+      \gcd (416,185)=1                                                                                                                  \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      \text{Since }\text{these }\text{numbers }\text{have }\text{a }\text{gcd }\text{equal }\text{to }1, \text{they }\text{are }\text{coprime}: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &                                                     \\
+            \text{}        & \text{416 }\text{and }185 \text{are }\text{coprime} \\
+          \end{array}
+      $}                                                                                                                                        \\
+    \end{array}
+    \\
+  \end{array}
+$
+\newpage
+Problem:\\
+Compute the Euler totient function $\phi(2)$.\\
+Answer:\\
+$
+  \begin{array}{l}
+
+    \begin{array}{l}
+      \text{Compute the Euler phi function for }2: \\
+      \phi (2)                                     \\
+    \end{array}
+    \\
+    \hline
+
+    \begin{array}{l}
+      \text{Apply }\text{the }\text{the }\text{Euler }\text{phi }\text{function }\text{definition }\text{to }2:                                 \\
+      \phi (2) \text{is }\text{the }\text{number }\text{of }\text{elements }\text{of }\{1,2\} \text{that }\text{are }\text{coprime }\text{to }2 \\
+    \end{array}
+    \\
+
+    \begin{array}{l}
+      2 \text{is }\text{prime} \text{Since }\text{the }\text{divisors }\text{of }\text{a }\text{prime }\text{number }\text{are }\text{1 }\text{and }\text{itself, }\text{all }\text{positive }\text{integers }\text{less }\text{than }2 \text{are }\text{coprime }\text{to }2: \\
+      \fbox{$
+          \begin{array}{ll}
+            \text{Answer:} &            \\
+            \text{}        & \phi (2)=1 \\
+          \end{array}
+      $}                                                                                                                                                                                                                                                                       \\
+    \end{array}
+    \\
+  \end{array}
+$
+
+\end{document}

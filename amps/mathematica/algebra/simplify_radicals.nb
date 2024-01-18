@@ -1,0 +1,499 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19428,        491]
+NotebookOptionsPosition[     18794,        474]
+NotebookOutlinePosition[     19192,        490]
+CellTagsIndexPosition[     19149,        487]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Clear", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "x", ",", "y", ",", "z"}], 
+  "]"}]], "Input",
+ CellLabel->
+  "In[491]:=",ExpressionUUID->"0e64a806-9b9e-4f2e-a698-977fd359dc0e"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"k", "=", "0"}], ",", 
+   RowBox[{"k", "<", "8000"}], ",", 
+   RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"simplifiedlist", "=", 
+     RowBox[{"{", "}"}]}], ";", " ", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{"We", "'"}], "ll", " ", "simplify", " ", "in", " ", "the", " ", 
+      "background", " ", "as", " ", "we", " ", "go", " ", "along", " ", "for",
+       " ", "speed", " ", "and", " ", "format", " ", "consistency"}], "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{"For", " ", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "0"}], ",", 
+      RowBox[{"i", "<", "2"}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"a", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "196"}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a", "=", 
+        RowBox[{
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.05", ",", "0.95"}], "}"}], "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"HoldForm", "[", "a", "]"}], ",", 
+             RowBox[{"HoldForm", "[", 
+              SqrtBox["a"], "]"}]}], "}"}]}], "]"}], "/.", " ", 
+         RowBox[{"OwnValues", "@", "a"}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"d", " ", "=", " ", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "d"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"tmp", "=", 
+           RowBox[{"RandomInteger", "[", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "81"}], "}"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"tmp", "=", 
+           RowBox[{
+            RowBox[{"RandomChoice", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0.2", ",", "0.8"}], "}"}], "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"HoldForm", "[", "tmp", "]"}], ",", 
+                RowBox[{"HoldForm", "[", 
+                 SqrtBox["tmp"], "]"}]}], "}"}]}], "]"}], "/.", " ", 
+            RowBox[{"OwnValues", "@", "tmp"}]}]}], ";", 
+          RowBox[{"a", "=", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"RandomChoice", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", "0.5"}], "}"}], "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"HoldForm", "[", 
+                  RowBox[{"a", "-", "tmp"}], "]"}], ",", 
+                 RowBox[{"HoldForm", "[", 
+                  RowBox[{"a", "+", "tmp"}], "]"}]}], "}"}]}], "]"}], "/.", 
+             " ", 
+             RowBox[{"OwnValues", "@", "tmp"}]}], " ", "/.", " ", 
+            RowBox[{"OwnValues", "@", "a"}]}]}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"tonest", " ", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0.9", ",", "0.1"}], "}"}], "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"False", ",", "True"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{"tonest", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a", ",", "asimp"}], "}"}], "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"HoldForm", "[", 
+               SqrtBox["a"], "]"}], "/.", " ", 
+              RowBox[{"OwnValues", "@", "a"}]}], ",", 
+             RowBox[{
+              RowBox[{"ResourceFunction", "[", "\"\<RadicalDenest\>\"", "]"}],
+               "[", 
+              RowBox[{
+               RowBox[{
+                SqrtBox["a"], "/.", " ", 
+                RowBox[{"OwnValues", "@", "a"}]}], "/.", " ", 
+               RowBox[{"HoldForm", "\[Rule]", "Identity"}]}], "]"}]}], 
+            "}"}]}], ";"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a", ",", "asimp"}], "}"}], "=", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"HoldForm", "[", "a", "]"}], ",", "a"}], "}"}], "/.", 
+            " ", 
+            RowBox[{"OwnValues", "@", "a"}]}]}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"list", " ", "=", " ", 
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", 
+          RowBox[{"a", "  ", "/.", " ", 
+           RowBox[{"OwnValues", "@", "a"}]}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"simplifiedlist", "=", 
+        RowBox[{"Append", "[", 
+         RowBox[{"simplifiedlist", ",", 
+          RowBox[{
+           RowBox[{"asimp", "  ", "/.", " ", 
+            RowBox[{"OwnValues", "@", "asimp"}]}], "/.", " ", 
+           RowBox[{"HoldForm", "\[Rule]", "Identity"}]}]}], "]"}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "b"}], "}"}], "=", "list"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"asimp", ",", "bsimp"}], "}"}], "=", "simplifiedlist"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"unsimplified", ",", "almostsimplified"}], "}"}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "+", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "+", "bsimp"}]}], "}"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "-", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "-", "bsimp"}]}], "}"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "*", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "*", "bsimp"}]}], "}"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "/", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "/", "bsimp"}]}], "}"}]}], "}"}], "]"}], "/.", 
+       " ", 
+       RowBox[{"OwnValues", "@", "a"}]}], "/.", " ", 
+      RowBox[{"OwnValues", "@", "b"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"solution", " ", "=", 
+     RowBox[{
+      RowBox[{"Simplify", "[", "almostsimplified", "]"}], "//", 
+      "TraditionalForm"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/algebra/simplify_radicals/\>\"\
+", "<>", 
+       RowBox[{"ToString", "[", "k", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nSimplify the following radical expression: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "unsimplified", "]"}], "]"}], " ", "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "solution", "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{
+  3.818171630871934*^9, {3.818172915671363*^9, 3.818173069106298*^9}, {
+   3.8181731411677523`*^9, 3.8181734018163433`*^9}, {3.818173437869752*^9, 
+   3.818173708926214*^9}, {3.818173746992695*^9, 3.818173775252524*^9}, {
+   3.818173807250909*^9, 3.8181738134519653`*^9}, {3.8181738451405907`*^9, 
+   3.818173868849504*^9}, {3.8181739166417017`*^9, 3.818173919128091*^9}, {
+   3.818173998462199*^9, 3.8181740017963037`*^9}, {3.818174095316689*^9, 
+   3.818174096082573*^9}, {3.818174168099619*^9, 3.818174190271357*^9}, {
+   3.8181742764118013`*^9, 3.8181743137313547`*^9}, {3.818174353793188*^9, 
+   3.8181744474796963`*^9}, {3.818174710503215*^9, 3.818174736051193*^9}, {
+   3.818174791309073*^9, 3.8181747919124613`*^9}, {3.818174826483378*^9, 
+   3.818174828840598*^9}, 3.8181748619952583`*^9, {3.818174906113882*^9, 
+   3.818174966692704*^9}, {3.818175041997348*^9, 3.81817504233858*^9}, {
+   3.818175104203226*^9, 3.818175126888092*^9}, {3.818175206492723*^9, 
+   3.818175225517399*^9}, {3.818175293463244*^9, 3.8181753247072983`*^9}, {
+   3.8181755996671753`*^9, 3.818175600922728*^9}, {3.8181756702606*^9, 
+   3.818175672796832*^9}, {3.818182617716044*^9, 3.8181826181355667`*^9}, {
+   3.8182929981507807`*^9, 3.818293024485058*^9}, {3.818293075708467*^9, 
+   3.818293076748136*^9}, {3.818293115588352*^9, 3.818293124658895*^9}, 
+   3.8183503800509453`*^9, {3.8183919416411467`*^9, 
+   3.818391942552349*^9}},ExpressionUUID->"dc4fdca6-5088-4e0f-a290-\
+0c3b706233e1"],
+
+Cell["Now with cube roots", "Text",
+ CellChangeTimes->{{3.8181754458610992`*^9, 
+  3.818175449636922*^9}},ExpressionUUID->"56e315a6-487b-4f7d-ad95-\
+98253259dece"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"k", "=", "8000"}], ",", 
+   RowBox[{"k", "<", "10000"}], ",", 
+   RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"simplifiedlist", "=", 
+     RowBox[{"{", "}"}]}], ";", " ", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{"We", "'"}], "ll", " ", "simplify", " ", "in", " ", "the", " ", 
+      "background", " ", "as", " ", "we", " ", "go", " ", "along", " ", "for",
+       " ", "speed", " ", "and", " ", "format", " ", "consistency"}], "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{"For", " ", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "0"}], ",", 
+      RowBox[{"i", "<", "2"}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"a", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "196"}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"a", "=", 
+        RowBox[{
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.05", ",", "0.95"}], "}"}], "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"HoldForm", "[", "a", "]"}], ",", 
+             RowBox[{"HoldForm", "[", 
+              RadicalBox["a", "3",
+               MultilineFunction->None,
+               SurdForm->True], "]"}]}], "}"}]}], "]"}], "/.", " ", 
+         RowBox[{"OwnValues", "@", "a"}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"d", " ", "=", " ", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "d"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"tmp", "=", 
+           RowBox[{"RandomInteger", "[", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "81"}], "}"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"tmp", "=", 
+           RowBox[{
+            RowBox[{"RandomChoice", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0.2", ",", "0.8"}], "}"}], "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"HoldForm", "[", "tmp", "]"}], ",", 
+                RowBox[{"HoldForm", "[", 
+                 RadicalBox["tmp", "3",
+                  MultilineFunction->None,
+                  SurdForm->True], "]"}]}], "}"}]}], "]"}], "/.", " ", 
+            RowBox[{"OwnValues", "@", "tmp"}]}]}], ";", 
+          RowBox[{"a", "=", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"RandomChoice", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", "0.5"}], "}"}], "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"HoldForm", "[", 
+                  RowBox[{"a", "-", "tmp"}], "]"}], ",", 
+                 RowBox[{"HoldForm", "[", 
+                  RowBox[{"a", "+", "tmp"}], "]"}]}], "}"}]}], "]"}], "/.", 
+             " ", 
+             RowBox[{"OwnValues", "@", "tmp"}]}], " ", "/.", " ", 
+            RowBox[{"OwnValues", "@", "a"}]}]}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"tonest", " ", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0.9", ",", "0.1"}], "}"}], "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"False", ",", "True"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{"tonest", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a", ",", "asimp"}], "}"}], "=", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"HoldForm", "[", 
+               RadicalBox["a", "3",
+                MultilineFunction->None,
+                SurdForm->True], "]"}], "/.", " ", 
+              RowBox[{"OwnValues", "@", "a"}]}], ",", 
+             RowBox[{
+              RowBox[{"ResourceFunction", "[", "\"\<RadicalDenest\>\"", "]"}],
+               "[", 
+              RowBox[{
+               RowBox[{
+                RadicalBox["a", "3",
+                 MultilineFunction->None,
+                 SurdForm->True], "/.", " ", 
+                RowBox[{"OwnValues", "@", "a"}]}], "/.", " ", 
+               RowBox[{"HoldForm", "\[Rule]", "Identity"}]}], "]"}]}], 
+            "}"}]}], ";"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a", ",", "asimp"}], "}"}], "=", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"HoldForm", "[", "a", "]"}], ",", "a"}], "}"}], "/.", 
+            " ", 
+            RowBox[{"OwnValues", "@", "a"}]}]}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"list", " ", "=", " ", 
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", 
+          RowBox[{"a", "  ", "/.", " ", 
+           RowBox[{"OwnValues", "@", "a"}]}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"simplifiedlist", "=", 
+        RowBox[{"Append", "[", 
+         RowBox[{"simplifiedlist", ",", 
+          RowBox[{
+           RowBox[{"asimp", "  ", "/.", " ", 
+            RowBox[{"OwnValues", "@", "asimp"}]}], "/.", " ", 
+           RowBox[{"HoldForm", "\[Rule]", "Identity"}]}]}], "]"}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "b"}], "}"}], "=", "list"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"asimp", ",", "bsimp"}], "}"}], "=", "simplifiedlist"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"unsimplified", ",", "almostsimplified"}], "}"}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "+", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "+", "bsimp"}]}], "}"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "-", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "-", "bsimp"}]}], "}"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "*", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "*", "bsimp"}]}], "}"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"HoldForm", "[", 
+             RowBox[{"a", "/", "b"}], "]"}], ",", 
+            RowBox[{"asimp", "/", "bsimp"}]}], "}"}]}], "}"}], "]"}], "/.", 
+       " ", 
+       RowBox[{"OwnValues", "@", "a"}]}], "/.", " ", 
+      RowBox[{"OwnValues", "@", "b"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"solution", " ", "=", 
+     RowBox[{
+      RowBox[{"Simplify", "[", "almostsimplified", "]"}], "//", 
+      "TraditionalForm"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/algebra/simplify_radicals/\>\"\
+", "<>", 
+       RowBox[{"ToString", "[", "k", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nSimplify the following radical expression: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "unsimplified", "]"}], "]"}], " ", "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "solution", "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818175414026627*^9, 3.818175500190721*^9}, {
+  3.8181826250116043`*^9, 3.818182625335086*^9}, {3.818293038894047*^9, 
+  3.8182930452137203`*^9}, {3.818293079756957*^9, 3.8182930802039213`*^9}, {
+  3.818350363013027*^9, 3.818350369492078*^9}, {3.818391945784602*^9, 
+  3.81839194900795*^9}},ExpressionUUID->"d05effd7-d93e-427d-bcd0-\
+7981dfa12ad4"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 506}, {44, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8a5ca6e7-9e3b-47de-9bce-8c20e73ca850"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 207, 5, 30, "Input",ExpressionUUID->"0e64a806-9b9e-4f2e-a698-977fd359dc0e"],
+Cell[768, 27, 9323, 223, 912, "Input",ExpressionUUID->"dc4fdca6-5088-4e0f-a290-0c3b706233e1"],
+Cell[10094, 252, 163, 3, 35, "Text",ExpressionUUID->"56e315a6-487b-4f7d-ad95-98253259dece"],
+Cell[10260, 257, 8530, 215, 921, "Input",ExpressionUUID->"d05effd7-d93e-427d-bcd0-7981dfa12ad4"]
+}
+]
+*)
+

@@ -1,0 +1,171 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6015,        163]
+NotebookOptionsPosition[      5248,        143]
+NotebookOutlinePosition[      5646,        159]
+CellTagsIndexPosition[      5603,        156]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "1000"}], ",", "1000"}], "}"}], ",", 
+       RowBox[{"{", "2", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"addcoprime", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"True", ",", "False"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{"addcoprime", ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"list", "=", 
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+              "ResourceFunction", "[", "\"\<CoprimeIntegerList\>\"", "]"}], 
+              "[", 
+              RowBox[{"list", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+             "\"\<RandomSample\>\""}], "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"list", "=", 
+     RowBox[{
+      RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+      RowBox[{"list", ",", "\"\<RandomSample\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/relatively_prime/\>\"",
+        "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nAre the following numbers relatively prime (coprime)? \
+$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "list", "]"}], "]"}], "<>", 
+        "\"\<$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"CoprimeQ", " ", "@@", "list"}], "]"}], "]"}], "<>", 
+        "\"\<$\>\""}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818093568717853*^9, 3.81809362534902*^9}, {
+  3.81809367147264*^9, 3.818093686134107*^9}, {3.818297847864382*^9, 
+  3.818297918628088*^9}, {3.818297973467245*^9, 3.8182980721421623`*^9}, {
+  3.818298107951475*^9, 3.818298194436915*^9}, {3.818372273265111*^9, 
+  3.8183722749507513`*^9}, {3.818376747545895*^9, 3.8183767646064453`*^9}, {
+  3.818376964040696*^9, 3.818377009375235*^9}, {3.818377144804549*^9, 
+  3.818377145379545*^9}, {3.818549514137567*^9, 3.818549518541835*^9}, {
+  3.8185504053482723`*^9, 3.818550406099824*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"5e37482c-822e-484d-bcd5-056748d464a6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partw", 
+   "\"Part \\!\\(\\*RowBox[{\\\"1\\\"}]\\) of \\!\\(\\*RowBox[{\\\"{\\\", \
+\\\"}\\\"}]\\) does not exist.\"", 2, 20, 1, 32934204184598376732, "Kernel8"},
+  
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.81837701609945*^9, 3.818553911598398*^9},
+ CellLabel->
+  "During evaluation of \
+In[20]:=",ExpressionUUID->"837bd3a0-ef67-432f-a68a-317e63f1b235"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partw", 
+   "\"Part \\!\\(\\*RowBox[{\\\"1\\\"}]\\) of \\!\\(\\*RowBox[{\\\"{\\\", \
+\\\"}\\\"}]\\) does not exist.\"", 2, 20, 2, 32934204184598376732, "Kernel8"},
+  
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.81837701609945*^9, 3.818553929887683*^9},
+ CellLabel->
+  "During evaluation of \
+In[20]:=",ExpressionUUID->"a6db392d-70d6-4fc7-81f1-f1372fbcdc68"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partw", 
+   "\"Part \\!\\(\\*RowBox[{\\\"1\\\"}]\\) of \\!\\(\\*RowBox[{\\\"{\\\", \
+\\\"}\\\"}]\\) does not exist.\"", 2, 20, 3, 32934204184598376732, "Kernel8"},
+  
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.81837701609945*^9, 3.818553969936594*^9},
+ CellLabel->
+  "During evaluation of \
+In[20]:=",ExpressionUUID->"eab2a509-2e07-415f-9a22-a35b1392c883"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
+\\\"partw\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 20, 4, 32934204184598376732, "Kernel8"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.81837701609945*^9, 3.818553969959857*^9},
+ CellLabel->
+  "During evaluation of \
+In[20]:=",ExpressionUUID->"c3a4ac1f-1e09-4b6f-a1a3-b73db14ef1f5"]
+}, Open  ]]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 470}, {37, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d077d964-1404-4e50-92d5-3eae571b45d0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2923, 70, 346, "Input",ExpressionUUID->"5e37482c-822e-484d-bcd5-056748d464a6"],
+Cell[3506, 94, 415, 10, 24, "Message",ExpressionUUID->"837bd3a0-ef67-432f-a68a-317e63f1b235"],
+Cell[3924, 106, 415, 10, 24, "Message",ExpressionUUID->"a6db392d-70d6-4fc7-81f1-f1372fbcdc68"],
+Cell[4342, 118, 415, 10, 24, "Message",ExpressionUUID->"eab2a509-2e07-415f-9a22-a35b1392c883"],
+Cell[4760, 130, 472, 10, 24, "Message",ExpressionUUID->"c3a4ac1f-1e09-4b6f-a1a3-b73db14ef1f5"]
+}, Open  ]]
+}
+]
+*)
+

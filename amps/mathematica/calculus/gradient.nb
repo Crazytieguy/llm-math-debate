@@ -1,0 +1,240 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8721,        232]
+NotebookOptionsPosition[      8367,        218]
+NotebookOutlinePosition[      8767,        234]
+CellTagsIndexPosition[      8724,        231]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"f", ",", "g", ",", "h", ",", "x", ",", "y", ",", "z"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"powerfunction", "=", " ", 
+   RowBox[{"{", "Power", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"goodfunctions", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "Log", ",", " ", "Exp", ",", " ", "Sqrt", ",", " ", "Sin", ",", " ", 
+     "Cos", ",", " ", "Tan", ",", "CubeRoot"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"okfunctions", "=", 
+   RowBox[{"{", 
+    RowBox[{"ArcTan", ",", " ", "ArcSin", ",", " ", "ArcCos"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"unusualfunctions", "=", 
+    RowBox[{"{", 
+     RowBox[{
+     "Sinh", ",", "Cosh", ",", "Tanh", ",", " ", "ArcSinh", ",", "ArcCosh", 
+      ",", "ArcTanh"}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "10000"}], ",", " ", 
+   RowBox[{"i", " ", "<", "50000"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0.4", ",", "0.45", ",", "0.1", ",", "0.05"}], "}"}], 
+        "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "powerfunction", ",", " ", "goodfunctions", ",", "okfunctions", ",", 
+          "unusualfunctions"}], "}"}]}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"g", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0.40", ",", "0.45", ",", "0.1", ",", "0.05"}], "}"}], 
+        "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "powerfunction", ",", "goodfunctions", ",", "okfunctions", ",", 
+          "unusualfunctions"}], "}"}]}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"h", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0.40", ",", "0.45", ",", "0.1", ",", "0.05"}], "}"}], 
+        "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "powerfunction", ",", " ", "goodfunctions", ",", "okfunctions", ",", 
+          "unusualfunctions"}], "}"}]}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"fInside", " ", "=", " ", 
+     RowBox[{"x", "^", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+         "0.9", ",", "0.025", ",", "0.025", ",", "0.025", ",", "0.025"}], 
+         "}"}], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}]}], 
+       "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"gInside", " ", "=", " ", 
+     RowBox[{"y", "^", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+         "0.9", ",", "0.025", ",", "0.025", ",", "0.025", ",", "0.025"}], 
+         "}"}], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}]}], 
+       "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"hInside", " ", "=", " ", 
+     RowBox[{"z", "^", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+         "0.9", ",", "0.025", ",", "0.025", ",", "0.025", ",", "0.025"}], 
+         "}"}], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}]}], 
+       "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fCombine", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"Plus", ",", "Subtract", ",", "Times", ",", "Divide"}], "}"}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"gCombine", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"Plus", ",", "Subtract", ",", "Times", ",", "Divide"}], "}"}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fIn", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "0.06", ",", "0.06", ",", "0.06", ",", "0.06", ",", "0.06", ",", 
+         "0.06", ",", "0.06", ",", "0.06", ",", "0.06", ",", "0.44"}], "}"}], 
+       "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"fInside", ",", "gInside", ",", "hInside", ",", 
+         RowBox[{"fCombine", "[", 
+          RowBox[{"fInside", " ", ",", "gInside"}], "]"}], ",", 
+         RowBox[{"fCombine", "[", 
+          RowBox[{"gInside", " ", ",", "fInside"}], "]"}], ",", 
+         RowBox[{"fCombine", "[", 
+          RowBox[{"gInside", ",", "hInside"}], "]"}], ",", 
+         RowBox[{"fCombine", "[", 
+          RowBox[{"hInside", ",", "gInside"}], "]"}], ",", 
+         RowBox[{"fCombine", "[", 
+          RowBox[{"fInside", ",", "hInside"}], "]"}], ",", 
+         RowBox[{"fCombine", "[", 
+          RowBox[{"hInside", ",", "fInside"}], "]"}], ",", 
+         RowBox[{"fCombine", "[", 
+          RowBox[{
+           RowBox[{"gCombine", "[", 
+            RowBox[{"fInside", ",", "gInside"}], "]"}], ",", "hInside"}], 
+          "]"}]}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"ffinal", " ", "=", " ", 
+     RowBox[{"If", " ", "[", 
+      RowBox[{
+       RowBox[{"f", "===", " ", "Power"}], ",", " ", "\[IndentingNewLine]", 
+       RowBox[{"f", "[", 
+        RowBox[{"fIn", " ", ",", " ", 
+         RowBox[{"RandomChoice", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+            "0.05", ",", " ", "0.05", ",", " ", "0.05", ",", "0.05", ",", 
+             "0.05", ",", "0.5", ",", "0.05", ",", "0.05", ",", "0.05", ",", 
+             "0.05", ",", "0.05"}], "}"}], "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", " ", 
+             RowBox[{
+              RowBox[{"-", "3"}], "/", "2"}], ",", " ", 
+             RowBox[{"-", "1"}], ",", 
+             RowBox[{
+              RowBox[{"-", "1"}], "/", "2"}], ",", 
+             RowBox[{"1", "/", "2"}], ",", "1", ",", 
+             RowBox[{"3", "/", "2"}], ",", "2", ",", "3", ",", "4", ",", 
+             "5"}], "}"}]}], "]"}]}], "]"}], ",", " ", 
+       RowBox[{"f", "[", "fIn", " ", "]"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"answer", " ", "=", 
+     RowBox[{"Grad", "[", 
+      RowBox[{"ffinal", ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\</Users/hendrycks/Desktop/mesa/calculus/gradient/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nFind the gradient of the function $f(x,y,z)$ where \
+$f(x,y,z) = \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"ffinal", " ", "//", " ", "TraditionalForm"}], "]"}], 
+          "]"}], "<>", "\"\<$\>\""}], ",", "\[IndentingNewLine]", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"answer", " ", "//", " ", "TraditionalForm"}], "]"}], 
+          "]"}], "<>", "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], 
+  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.818350682682105*^9, 3.81835098671739*^9}, {
+  3.8183784077562933`*^9, 3.818378427357951*^9}, {3.81837846194193*^9, 
+  3.818378462212687*^9}, {3.818560668202609*^9, 3.818560668587372*^9}, {
+  3.8185608062040663`*^9, 
+  3.8185608094562397`*^9}},ExpressionUUID->"efb23373-c16f-418f-abee-\
+b34e644b9ba3"]
+},
+WindowSize->{1303, 598},
+WindowMargins->{{Automatic, 153}, {Automatic, 154}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c8fdf78d-04cc-4106-b660-94c13f847af6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 7805, 196, 556, "Input",ExpressionUUID->"efb23373-c16f-418f-abee-b34e644b9ba3"]
+}
+]
+*)
+

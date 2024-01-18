@@ -1,0 +1,119 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4110,        111]
+NotebookOptionsPosition[      3760,         97]
+NotebookOutlinePosition[      4157,        113]
+CellTagsIndexPosition[      4114,        110]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], ",", 
+           RowBox[{"1", "/", "3"}], ",", 
+           RowBox[{"1", "/", "4"}], ",", 
+           RowBox[{"1", "/", "5"}], ",", 
+           RowBox[{"1", "/", "7"}], ",", 
+           RowBox[{"1", "/", 
+            RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+           RowBox[{"1", "/", 
+            RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+           RowBox[{"1", "/", 
+            RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+           RowBox[{"Log", "[", "2", "]"}], ",", 
+           RowBox[{"1", "/", "\[Pi]"}], ",", 
+           RowBox[{"1", "/", 
+            RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], ",", 
+           RowBox[{"1", "/", "E"}], ",", "E", ",", "\[Pi]", ",", 
+           RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+           RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+           RowBox[{"Sqrt", "[", "5", "]"}], ",", "0.1", ",", "0.01", ",", 
+           "0.001"}], "}"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "7"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"d", ",", "d"}], "}"}]}], "]"}], ",", " ", "roundbasis"}], 
+      "]"}]}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\</Users/hendrycks/Desktop/mesa/linear_algebra/trace/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nCompute the trace of\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", "  ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Tr", "[", "x", "]"}], "]"}], "]"}], "<>", "\"\<$\>\""}]}],
+        "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8180272944904823`*^9, 3.818027365174474*^9}, {
+  3.818027395863275*^9, 3.818027401189232*^9}, {3.8180274553964453`*^9, 
+  3.8180274557789783`*^9}, {3.818027566390522*^9, 3.81802762046008*^9}, {
+  3.8180276537302313`*^9, 3.8180276757831793`*^9}, {3.818027724911373*^9, 
+  3.8180277881559057`*^9}, {3.818304790664163*^9, 3.818304837080895*^9}, {
+  3.8183048940702333`*^9, 3.81830490037236*^9}, {3.818371930600273*^9, 
+  3.8183719309114656`*^9}, {3.8185583733286133`*^9, 
+  3.818558380038157*^9}},ExpressionUUID->"a23c4c99-c790-43fe-a8b7-\
+c817cde096ad"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 551}, {0, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b6552063-1ef5-44c9-82dd-dd0ce1458933"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3198, 75, 241, "Input",ExpressionUUID->"a23c4c99-c790-43fe-a8b7-c817cde096ad"]
+}
+]
+*)
+

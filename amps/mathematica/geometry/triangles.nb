@@ -1,0 +1,635 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     26977,        627]
+NotebookOptionsPosition[     26334,        607]
+NotebookOutlinePosition[     26794,        625]
+CellTagsIndexPosition[     26751,        622]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "89620"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", "100000"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{
+     "a", ",", "b", ",", "c", ",", "theta", ",", "psi", ",", "tri", ",", "x", 
+      ",", "answer", ",", "problemstr"}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"1", "/", "2"}], ",", "0.5", ",", "0.25", ",", "0.1", ",", 
+        "0.01"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"(*", 
+     RowBox[{
+     "First", " ", "choose", " ", "way", " ", "to", " ", "specify", " ", 
+      "triangle"}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"triangletype", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "4"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"triangletype", " ", "\[Equal]", "1"}], ",", " ", 
+      RowBox[{"(*", "SSS", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"a", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"2", "*", "roundbasis"}], ",", "15"}], "}"}], "]"}], ",",
+           "roundbasis"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"b", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"2", "*", "roundbasis"}], ",", "15"}], "}"}], "]"}], ",",
+           "roundbasis"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"c", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Max", "[", 
+               RowBox[{
+                RowBox[{"a", "-", "b"}], ",", 
+                RowBox[{"b", "-", "a"}]}], "]"}], "+", "roundbasis"}], ",", 
+             RowBox[{"a", "+", "b", "-", "roundbasis"}]}], "}"}], "]"}], ",", 
+          "roundbasis"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"tri", " ", "=", 
+        RowBox[{"SSSTriangle", "[", 
+         RowBox[{"a", ",", "b", ",", "c"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{"\"\<Problem:\\nA triangle has sides $\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "a", "]"}], "]"}], "<>", "\"\<, \>\"", "<>",
+          " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "b", "]"}], "]"}], "<>", "\"\<, \>\"", "<>",
+          " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "c", "]"}], "]"}], "<>", "\"\<$. \>\""}]}], 
+       ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"triangletype", "\[Equal]", "2"}], ",", 
+      RowBox[{"(*", "SAS", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"a", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "15"}], "}"}], "]"}], ",", "roundbasis"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"theta", " ", "=", " ", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"RandomInteger", "[", 
+               RowBox[{"{", 
+                RowBox[{"2", ",", "175"}], "}"}], "]"}], ",", 
+              RowBox[{"RandomChoice", "[", 
+               RowBox[{"{", 
+                RowBox[{"2", ",", "5"}], "}"}], "]"}]}], "]"}], "/", "180"}], 
+           "*", "\[Pi]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"theta", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"RandomInteger", "[", 
+             RowBox[{"{", 
+              RowBox[{"2", ",", "175"}], "}"}], "]"}], " ", "Degree"}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"RandomInteger", "[", 
+              RowBox[{"{", 
+               RowBox[{"2", ",", "175"}], "}"}], "]"}], "/", "180"}], "*", 
+            "\[Pi]"}]}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"b", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "10"}], "}"}], "]"}], ",", "roundbasis"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"tri", " ", "=", 
+        RowBox[{"SASTriangle", "[", 
+         RowBox[{"a", ",", "theta", ",", "b"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{
+        "\"\<Problem:\\nA side-angle-side triangle has sides $\>\"", " ", "<>",
+          " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "a", "]"}], "]"}], "<>", "\"\<$ and $\>\"", 
+         "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "b", "]"}], "]"}], "<>", 
+         "\"\<$ and an angle $\>\"", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "theta", "]"}], "]"}], "<>", 
+         "\"\<$. \>\""}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"triangletype", "\[Equal]", "3"}], ",", 
+      RowBox[{"(*", "ASA", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"theta", " ", "=", " ", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "175"}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"psi", " ", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", 
+           RowBox[{"180", "-", "theta", "-", "2"}]}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"theta", ",", " ", "psi"}], "}"}], " ", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"theta", " ", "Degree"}], ",", 
+             RowBox[{"psi", " ", "Degree"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"theta", "/", "180"}], "*", "\[Pi]"}], ",", 
+             RowBox[{
+              RowBox[{"psi", "/", "180"}], "*", "\[Pi]"}]}], "}"}]}], "}"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"a", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "15"}], "}"}], "]"}], ",", "roundbasis"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"tri", " ", "=", 
+        RowBox[{"ASATriangle", "[", 
+         RowBox[{"theta", ",", "a", ",", "psi"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{
+        "\"\<Problem:\\nA angle-side-angle triangle has angle $\>\"", " ", "<>",
+          " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "theta", "]"}], "]"}], "<>", 
+         "\"\<$, a side of length $\>\"", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "a", "]"}], "]"}], "<>", 
+         "\"\<$ and an angle of measure $\>\"", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "psi", "]"}], "]"}], "<>", 
+         "\"\<$. \>\""}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"triangletype", "\[Equal]", "4"}], ",", 
+      RowBox[{"(*", "AAS", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"theta", " ", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "175"}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"psi", " ", "=", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", 
+           RowBox[{"180", "-", "theta", "-", "2"}]}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"theta", ",", " ", "psi"}], "}"}], " ", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"theta", " ", "Degree"}], ",", 
+             RowBox[{"psi", " ", "Degree"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"theta", "/", "180"}], "*", "\[Pi]"}], ",", 
+             RowBox[{
+              RowBox[{"psi", "/", "180"}], "*", "\[Pi]"}]}], "}"}]}], "}"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"a", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "10"}], "}"}], "]"}], ",", "roundbasis"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"tri", " ", "=", 
+        RowBox[{"AASTriangle", "[", 
+         RowBox[{"theta", ",", "psi", ",", "a"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{
+        "\"\<Problem:\\nA angle-angle-side triangle has angles $\>\"", " ", "<>",
+          " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "theta", "]"}], "]"}], "<>", 
+         "\"\<$ and $\>\"", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "psi", "]"}], "]"}], "<>", 
+         "\"\<$ and a side of length $\>\"", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "a", "]"}], "]"}], "<>", "\"\<$. \>\""}]}], 
+       ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"(*", 
+     RowBox[{
+     "Choose", " ", "one", " ", "of", " ", "four", " ", "modes", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"locations", "/", "angles"}], ",", " ", 
+        RowBox[{"triangle", " ", "stats"}], ",", " ", 
+        RowBox[{"triangle", " ", "centers"}], ",", " ", 
+        RowBox[{"triangle", " ", "lines"}]}]}]}], "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{"problemcategory", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "4"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"problemcategory", "\[Equal]", "1"}], ",", 
+      RowBox[{"(*", 
+       RowBox[{
+       "Predict", " ", "coordinate", " ", "locations", " ", "and", " ", 
+        "angles"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"problemstr", " ", "=", " ", 
+        RowBox[{
+        "problemstr", " ", "<>", 
+         "\"\<Determine the locations of the triangle's vertices and the \
+three interior angles.\\nAnswer:\>\""}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"verticesstr", "=", 
+        RowBox[{"\"\<\\nVertices: $\>\"", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", 
+            RowBox[{"tri", "[", 
+             RowBox[{"[", "1", "]"}], "]"}]}], "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"anglesstr", "=", 
+        RowBox[{"\"\<\\nAngles: $\>\"", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", 
+            RowBox[{"Map", "[", 
+             RowBox[{"Simplify", ",", 
+              RowBox[{"PolygonAngle", "[", "tri", "]"}]}], "]"}]}], "]"}], 
+          "]"}], " ", "<>", "\"\<$\>\""}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{"problemstr", "<>", 
+         RowBox[{"StringRiffle", "[", 
+          RowBox[{
+           RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"verticesstr", ",", " ", "anglesstr"}], "}"}], ",", 
+            "\"\<RandomSample\>\""}], "]"}], "]"}]}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"problemcategory", "\[Equal]", "2"}], ",", 
+      RowBox[{"(*", 
+       RowBox[{"triangle", " ", "stats"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"problemstr", " ", "=", " ", 
+        RowBox[{
+        "problemstr", " ", "<>", 
+         "\"\<Determine the area, circumradius, inradius, and semiperimeter \
+of the triangle.\\nAnswer:\>\""}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"infolist", "=", 
+        RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"measuretypes", "=", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<Area\>\"", ",", "\"\<Circumradius\>\"", ",", "\"\<Inradius\>\"",
+           ",", "\"\<Semiperimeter\>\""}], "}"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "4"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"value", "=", 
+           RowBox[{"TriangleMeasurement", "[", 
+            RowBox[{"tri", ",", 
+             RowBox[{"measuretypes", "[", 
+              RowBox[{"[", 
+               RowBox[{"j", "+", "1"}], "]"}], "]"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Head", "@", "value"}], "===", "Real"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"value", "=", 
+              RowBox[{"Round", "[", 
+               RowBox[{"value", ",", "0.01"}], "]"}]}], ";"}]}], 
+           "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"infolist", " ", "=", " ", 
+           RowBox[{"Append", "[", 
+            RowBox[{"infolist", ",", 
+             RowBox[{"\"\<\\n\>\"", "<>", 
+              RowBox[{"measuretypes", "[", 
+               RowBox[{"[", 
+                RowBox[{"j", "+", "1"}], "]"}], "]"}], "<>", "\"\<: $\>\"", "<>", 
+              RowBox[{"ToString", "[", 
+               RowBox[{"TeXForm", "[", "value", "]"}], "]"}], "<>", 
+              "\"\<$\>\""}]}], "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}],
+        ";", "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{"problemstr", "<>", 
+         RowBox[{"StringRiffle", "[", 
+          RowBox[{
+           RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+           RowBox[{"infolist", ",", "\"\<RandomSample\>\""}], "]"}], 
+          "]"}]}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"problemcategory", "\[Equal]", "3"}], ",", 
+      RowBox[{"(*", 
+       RowBox[{"triangle", " ", "centers"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"problemstr", " ", "=", " ", 
+        RowBox[{
+        "problemstr", " ", "<>", 
+         "\"\<Determine the centroid, circumcenter, incenter, orthocenter, \
+nine point center, and symmedian point of the triangle.\\nAnswer:\>\""}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"infolist", "=", 
+        RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"centertypes", "=", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<Centroid\>\"", ",", "\"\<Circumcenter\>\"", ",", 
+          "\"\<Incenter\>\"", ",", "\"\<Orthocenter\>\"", ",", 
+          "\"\<NinePointCenter\>\"", ",", "\"\<SymmedianPoint\>\""}], "}"}]}],
+        ";", "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "6"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"value", " ", "=", 
+           RowBox[{"TriangleCenter", "[", 
+            RowBox[{"tri", ",", 
+             RowBox[{"centertypes", "[", 
+              RowBox[{"[", 
+               RowBox[{"j", "+", "1"}], "]"}], "]"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Head", "@", "value"}], "===", "Real"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"value", "=", 
+              RowBox[{"Round", "[", 
+               RowBox[{"value", ",", "0.01"}], "]"}]}], ";"}]}], 
+           "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"infolist", "=", 
+           RowBox[{"Append", "[", 
+            RowBox[{"infolist", ",", 
+             RowBox[{"\"\<\\n\>\"", "<>", 
+              RowBox[{"centertypes", "[", 
+               RowBox[{"[", 
+                RowBox[{"j", "+", "1"}], "]"}], "]"}], "<>", "\"\<: $\>\"", "<>", 
+              RowBox[{"ToString", "[", 
+               RowBox[{"TeXForm", "[", "value", "]"}], "]"}], "<>", 
+              "\"\<$\>\""}]}], "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}],
+        ";", "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{"problemstr", "<>", 
+         RowBox[{"StringRiffle", "[", 
+          RowBox[{
+           RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+           RowBox[{"infolist", ",", "\"\<RandomSample\>\""}], "]"}], 
+          "]"}]}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"problemcategory", "\[Equal]", "4"}], ",", 
+      RowBox[{"(*", 
+       RowBox[{"triangle", " ", "lines"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"problemstr", " ", "=", " ", 
+        RowBox[{
+        "problemstr", " ", "<>", 
+         "\"\<Determine points to define lines for the triangle's altitude, \
+cevian, median, and symmedian lines.\\nAnswer:\>\""}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"infolist", "=", 
+        RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"linetypes", "=", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<Altitude\>\"", ",", "\"\<Cevian\>\"", ",", "\"\<Median\>\"", 
+          ",", "\"\<Symmedian\>\""}], "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"j", "=", "0"}], ",", 
+         RowBox[{"j", "<", "4"}], ",", 
+         RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"value", " ", "=", 
+           RowBox[{
+            RowBox[{"TriangleConstruct", "[", 
+             RowBox[{"tri", ",", 
+              RowBox[{"linetypes", "[", 
+               RowBox[{"[", 
+                RowBox[{"j", "+", "1"}], "]"}], "]"}]}], "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Head", "@", 
+              RowBox[{"value", "[", 
+               RowBox[{"[", 
+                RowBox[{"1", ",", "1"}], "]"}], "]"}]}], "===", "Real"}], ",",
+             "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"value", "=", 
+              RowBox[{"Round", "[", 
+               RowBox[{"value", ",", "0.01"}], "]"}]}], ";"}]}], 
+           "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"infolist", "=", 
+           RowBox[{"Append", "[", 
+            RowBox[{"infolist", ",", 
+             RowBox[{"\"\<\\n\>\"", "<>", 
+              RowBox[{"linetypes", "[", 
+               RowBox[{"[", 
+                RowBox[{"j", "+", "1"}], "]"}], "]"}], "<>", "\"\<: $\>\"", "<>", 
+              RowBox[{"ToString", "[", 
+               RowBox[{"TeXForm", "[", "value", "]"}], "]"}], "<>", 
+              "\"\<$\>\""}]}], "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}],
+        ";", "\[IndentingNewLine]", 
+       RowBox[{"problemstr", "=", 
+        RowBox[{"problemstr", "<>", 
+         RowBox[{"StringRiffle", "[", 
+          RowBox[{
+           RowBox[{"ResourceFunction", "[", "\"\<Shuffle\>\"", "]"}], "[", 
+           RowBox[{"infolist", ",", "\"\<RandomSample\>\""}], "]"}], 
+          "]"}]}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\</Users/hendrycks/Desktop/mesa/geometry/triangles/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", "problemstr", "}"}]}], "]"}], ";"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818196762104704*^9, 3.81819682984699*^9}, {
+   3.818196863838332*^9, 3.818196929490198*^9}, {3.8181969598579073`*^9, 
+   3.818197060886421*^9}, {3.81819730674886*^9, 3.818197320779873*^9}, {
+   3.818197354737962*^9, 3.818197478797658*^9}, {3.818197685325934*^9, 
+   3.818197747227302*^9}, {3.818197782423958*^9, 3.818197798936241*^9}, {
+   3.818197845230646*^9, 3.818197910567981*^9}, {3.8181980375413113`*^9, 
+   3.8181980654375677`*^9}, {3.8181981194594517`*^9, 3.818198186713266*^9}, {
+   3.818198216720776*^9, 3.818198306764379*^9}, {3.8181983522918673`*^9, 
+   3.818198612919725*^9}, {3.818198670174263*^9, 3.818198674141409*^9}, {
+   3.818198726275366*^9, 3.818198831241207*^9}, {3.818198868151721*^9, 
+   3.818198933796639*^9}, {3.818198969267927*^9, 3.818199001289833*^9}, {
+   3.818199484502317*^9, 3.8181994927032633`*^9}, {3.818199642775988*^9, 
+   3.818199679495225*^9}, {3.818199751165209*^9, 3.8181997819552507`*^9}, {
+   3.818199850417696*^9, 3.818199920830608*^9}, {3.818200473649482*^9, 
+   3.8182007341830263`*^9}, {3.818200804829193*^9, 3.8182008888567963`*^9}, {
+   3.8182009350389423`*^9, 3.818201015187941*^9}, {3.818201061603642*^9, 
+   3.8182015419941387`*^9}, {3.818201616560272*^9, 3.818201898941558*^9}, {
+   3.818201929444145*^9, 3.8182019866493797`*^9}, {3.818202027670477*^9, 
+   3.818202027826305*^9}, {3.818202181316903*^9, 3.818202344526078*^9}, 
+   3.818202425792322*^9, {3.818202470277155*^9, 3.8182025469670258`*^9}, {
+   3.818202635282526*^9, 3.81820263531458*^9}, {3.818202715518388*^9, 
+   3.8182028044755373`*^9}, 3.818202857679152*^9, {3.818202918837306*^9, 
+   3.8182029269897547`*^9}, {3.818203032098435*^9, 3.818203052795601*^9}, {
+   3.8182032474501753`*^9, 3.81820328959125*^9}, 3.8182034599629707`*^9, {
+   3.8182069946258583`*^9, 3.8182070610813313`*^9}, {3.81820711020287*^9, 
+   3.818207111029745*^9}, {3.818207194677148*^9, 3.818207302399387*^9}, {
+   3.818207449806609*^9, 3.818207463159862*^9}, {3.818207501531391*^9, 
+   3.8182075413161*^9}, {3.818207583332546*^9, 3.8182076266962337`*^9}, {
+   3.8182120106754417`*^9, 3.81821204388867*^9}, {3.818212075247504*^9, 
+   3.8182120990861998`*^9}, {3.818212144381144*^9, 3.8182121448029623`*^9}, {
+   3.8182128851757317`*^9, 3.8182129349055634`*^9}, {3.818213028038562*^9, 
+   3.818213155174575*^9}, {3.8182143320125713`*^9, 3.818214435540111*^9}, {
+   3.81821488040766*^9, 3.818214907200062*^9}, {3.8182149851149797`*^9, 
+   3.8182150236513844`*^9}, {3.818215072088894*^9, 3.8182151059933653`*^9}, {
+   3.818215424708584*^9, 3.818215441228549*^9}, {3.818215493555703*^9, 
+   3.818215515702693*^9}, {3.818215554025886*^9, 3.818215559981291*^9}, {
+   3.8182156539373493`*^9, 3.8182156654645853`*^9}, {3.8182159901883593`*^9, 
+   3.818216001502924*^9}, {3.81821604619746*^9, 3.818216047463763*^9}, {
+   3.8182161228567877`*^9, 3.81821613449306*^9}, {3.818216179178801*^9, 
+   3.818216197294443*^9}, {3.81821623640443*^9, 3.8182162407955227`*^9}, {
+   3.818216358681211*^9, 3.818216359098167*^9}, {3.8182165216815453`*^9, 
+   3.818216650272004*^9}, {3.8182166809627934`*^9, 3.818216686194989*^9}, {
+   3.818216754389204*^9, 3.818216799659595*^9}, {3.818216832251647*^9, 
+   3.8182169003630037`*^9}, {3.81821693076766*^9, 3.818217004881878*^9}, {
+   3.818217057904792*^9, 3.818217120336782*^9}, {3.8182171600385838`*^9, 
+   3.818217168842512*^9}, {3.818305740970502*^9, 3.81830574372119*^9}, {
+   3.818306713563408*^9, 3.818306714338441*^9}, {3.818306923003632*^9, 
+   3.818306923458053*^9}, {3.818374009459361*^9, 3.8183740200338163`*^9}, {
+   3.818472613059046*^9, 3.818472644081533*^9}, {3.81847521933263*^9, 
+   3.81847521975454*^9}, {3.818475277162161*^9, 3.818475280004455*^9}, {
+   3.818550527577911*^9, 3.818550539855936*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"3b0f5bbe-a35b-4687-81cc-7aefdf24a6c0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Simplify", "time", 
+   "\"Time spent on a transformation exceeded \
+\\!\\(\\*RowBox[{\\\"300.`\\\"}]\\) seconds, and the transformation was \
+aborted. Increasing the value of TimeConstraint option may improve the result \
+of simplification.\"", 2, 1, 1, 32934209388177271809, "Kernel5"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185160037115173`*^9, 3.818553584126878*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"59f9d6c9-2720-4bbd-b3b2-e71f6f61657f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Simplify", "time", 
+   "\"Time spent on a transformation exceeded \
+\\!\\(\\*RowBox[{\\\"300.`\\\"}]\\) seconds, and the transformation was \
+aborted. Increasing the value of TimeConstraint option may improve the result \
+of simplification.\"", 2, 1, 2, 32934209388177271809, "Kernel5"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8185160037115173`*^9, 3.81855599310357*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"7473d5fe-5a17-4765-930f-1b7a49017839"]
+}, Open  ]]
+},
+Evaluator->"Kernel5",
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 493}, {Automatic, 40}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c5a0660a-e7ca-476c-8101-2e04978ba06e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 24673, 556, 2488, "Input",ExpressionUUID->"3b0f5bbe-a35b-4687-81cc-7aefdf24a6c0"],
+Cell[25256, 580, 530, 11, 42, "Message",ExpressionUUID->"59f9d6c9-2720-4bbd-b3b2-e71f6f61657f"],
+Cell[25789, 593, 529, 11, 42, "Message",ExpressionUUID->"7473d5fe-5a17-4765-930f-1b7a49017839"]
+}, Open  ]]
+}
+]
+*)
+

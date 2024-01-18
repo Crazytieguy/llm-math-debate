@@ -1,0 +1,213 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8521,        205]
+NotebookOptionsPosition[      7753,        185]
+NotebookOutlinePosition[      8151,        201]
+CellTagsIndexPosition[      8108,        198]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "10000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ResourceFunction", "[", "\"\<RepeatUntil\>\"", "]"}], "[", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"d", " ", "=", " ", 
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "10"}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"dist1", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"DirichletDistribution", "[", 
+            RowBox[{"ConstantArray", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{"0.1", ",", "4"}], "}"}], "]"}], ",", 
+              RowBox[{"d", "+", "1"}]}], "]"}], "]"}], "]"}], ",", "0.001"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"dist2", "=", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"DirichletDistribution", "[", 
+            RowBox[{"ConstantArray", "[", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{"0.1", ",", "4"}], "}"}], "]"}], ",", 
+              RowBox[{"d", "+", "1"}]}], "]"}], "]"}], "]"}], ",", "0.001"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"answer", " ", "=", " ", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+           "ResourceFunction", "[", "\"\<KullbackLeiblerDivergence\>\"", 
+            "]"}], "[", 
+           RowBox[{
+            RowBox[{"EmpiricalDistribution", "[", 
+             RowBox[{"dist1", "\[Rule]", 
+              RowBox[{"Range", "[", "d", "]"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"EmpiricalDistribution", "[", 
+             RowBox[{"dist2", "\[Rule]", 
+              RowBox[{"Range", "[", "d", "]"}]}], "]"}]}], "]"}], ",", 
+          "0.01"}], "]"}]}], ";"}], "\[IndentingNewLine]", ",", 
+      RowBox[{
+       RowBox[{"StringLength", "[", 
+        RowBox[{"ToString", "[", "answer", "]"}], "]"}], ">", "5"}]}], "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/counting_and_statistics/kl_\
+divergence/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nDetermine the KL Divergence between the empirical \
+distributions $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "dist1", "]"}], "]"}], "<>", 
+         "\"\<$ and $\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "dist2", "]"}], "]"}], "<>", "\"\<$.\>\""}],
+         ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "answer", "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818186064108363*^9, 3.818186142751458*^9}, {
+  3.8181861733600693`*^9, 3.818186177638969*^9}, {3.81818655550456*^9, 
+  3.8181865583754387`*^9}, {3.818186863826686*^9, 3.818186885386183*^9}, {
+  3.8181869907656813`*^9, 3.818187017363413*^9}, {3.8181870583584023`*^9, 
+  3.818187120123887*^9}, {3.8181926699296713`*^9, 3.818192679580587*^9}, {
+  3.818192861487578*^9, 3.818192909111704*^9}, {3.818192977791992*^9, 
+  3.818193167360828*^9}, {3.818193207558148*^9, 3.818193231774454*^9}, {
+  3.818193262157599*^9, 3.8181932626134367`*^9}, {3.818193304111197*^9, 
+  3.818193326170971*^9}, {3.8181954340014553`*^9, 3.818195518378633*^9}, {
+  3.8181955652595367`*^9, 3.8181956662277718`*^9}, {3.818196106437483*^9, 
+  3.81819610807331*^9}, {3.818346670082412*^9, 3.818346674170158*^9}, {
+  3.818375020504244*^9, 3.818375020830146*^9}, {3.81837558219309*^9, 
+  3.8183755825657797`*^9}},ExpressionUUID->"b048bd18-8920-4ff5-9103-\
+85d106ca89bb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "EmpiricalDistribution", "wtspc", 
+   "\"The argument at position \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"1\\\", \
+\\\",\\\", \\\"1\\\"}], \\\"}\\\"}]\\) in \
+\\!\\(\\*RowBox[{\\\"EmpiricalDistribution\\\", \\\"[\\\", RowBox[{RowBox[{\\\
+\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.`\\\"}], \\\"}\\\"}], \\\"\[Rule]\\\", RowBox[{\\\"{\\\", RowBox[{\\\"1\
+\\\", \\\",\\\", \\\"2\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}]}], \
+\\\"]\\\"}]\\) should be a vector of non-negative values with length equal to \
+the data.\"", 2, 14, 1, 32933035443906678628, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8183754275845613`*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"63cca905-c36b-4b85-8dcb-fde869978edd"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "EmpiricalDistribution", "wtspc", 
+   "\"The argument at position \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"1\\\", \
+\\\",\\\", \\\"1\\\"}], \\\"}\\\"}]\\) in \
+\\!\\(\\*RowBox[{\\\"EmpiricalDistribution\\\", \\\"[\\\", RowBox[{RowBox[{\\\
+\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.`\\\"}], \\\"}\\\"}], \\\"\[Rule]\\\", RowBox[{\\\"{\\\", RowBox[{\\\"1\
+\\\", \\\",\\\", \\\"2\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}]}], \
+\\\"]\\\"}]\\) should be a vector of non-negative values with length equal to \
+the data.\"", 2, 14, 2, 32933035443906678628, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818375427621932*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"dd170cb2-0b6b-4abe-8e82-b3800011d7bc"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "EmpiricalDistribution", "wtspc", 
+   "\"The argument at position \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"1\\\", \
+\\\",\\\", \\\"1\\\"}], \\\"}\\\"}]\\) in \
+\\!\\(\\*RowBox[{\\\"EmpiricalDistribution\\\", \\\"[\\\", RowBox[{RowBox[{\\\
+\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.`\\\"}], \\\"}\\\"}], \\\"\[Rule]\\\", RowBox[{\\\"{\\\", RowBox[{\\\"1\
+\\\", \\\",\\\", \\\"2\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}]}], \
+\\\"]\\\"}]\\) should be a vector of non-negative values with length equal to \
+the data.\"", 2, 14, 3, 32933035443906678628, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818375483153007*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"4a605f59-0f3d-4868-9574-1cd61ea409e8"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"EmpiricalDistribution\\\
+\", \\\"::\\\", \\\"wtspc\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"", 2, 14, 4, 32933035443906678628, "Kernel2"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.818375483156946*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"1f2fdb31-78ee-4120-a858-202c1aaa198a"]
+}, Open  ]]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 513}, {23, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"af369f4d-2bca-4179-8067-2eae93fa9a3a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4248, 97, 472, "Input",ExpressionUUID->"b048bd18-8920-4ff5-9103-85d106ca89bb"],
+Cell[4831, 121, 811, 15, 39, "Message",ExpressionUUID->"63cca905-c36b-4b85-8dcb-fde869978edd"],
+Cell[5645, 138, 809, 15, 39, "Message",ExpressionUUID->"dd170cb2-0b6b-4abe-8e82-b3800011d7bc"],
+Cell[6457, 155, 809, 15, 39, "Message",ExpressionUUID->"4a605f59-0f3d-4868-9574-1cd61ea409e8"],
+Cell[7269, 172, 468, 10, 24, "Message",ExpressionUUID->"1f2fdb31-78ee-4120-a858-202c1aaa198a"]
+}, Open  ]]
+}
+]
+*)
+

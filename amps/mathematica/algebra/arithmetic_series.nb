@@ -1,0 +1,162 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6033,        154]
+NotebookOptionsPosition[      5682,        140]
+NotebookOutlinePosition[      6079,        156]
+CellTagsIndexPosition[      6036,        153]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{
+   "a", ",", " ", "k", ",", " ", "max", ",", " ", "an", ",", " ", "sum"}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", " ", "=", " ", "50000"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"options", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", "2"}], ",", 
+      RowBox[{"1", "/", "3"}], ",", 
+      RowBox[{"1", "/", "4"}], ",", 
+      RowBox[{"1", "/", "5"}], ",", 
+      RowBox[{"1", "/", "7"}], ",", "2", ",", " ", "3", ",", " ", "4", ",", 
+      " ", "5", ",", " ", "6", ",", " ", "7", ",", " ", "8", ",", " ", "9", 
+      ",", " ", "10", ",", " ", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "5", "]"}]}], ",", 
+      RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+      RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+      RowBox[{"Sqrt", "[", "5", "]"}], ",", " ", "Pi"}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "0"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", "n"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"a", "=", 
+     RowBox[{
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "100"}], ",", "100"}], "}"}], "]"}], "/", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{"Delete", "[", 
+        RowBox[{
+         RowBox[{"Range", "[", 
+          RowBox[{
+           RowBox[{"-", "100"}], ",", "100"}], "]"}], ",", "101"}], "]"}], 
+       "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"k", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"RandomReal", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", 
+       RowBox[{"RandomChoice", "[", "options", "]"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"max", " ", "=", " ", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "30"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"an", " ", "=", " ", 
+     RowBox[{"a", " ", "+", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"max", "-", "1"}], ")"}], "*", "k"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"sum", " ", "=", " ", 
+     RowBox[{"max", "*", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"a", "+", "an"}], ")"}], "/", "2"}]}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/arithmetic_series/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nConsider the arithmetic sequence defined by \
+$a_1=\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "a", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$, and $a_n=a_{n-1}+\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "k", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$ for $n > 1$. Compute the nth partial sum, \
+$S_n=\\\\sum_{k=1}^n a_k$, where $n=\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "max", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$.\>\""}], " ", ",", " ", "\[IndentingNewLine]", 
+        "\"\<Answer:\>\"", ",", " ", 
+        RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "sum", "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], "\n", "]"}]}], "Input",
+ CellChangeTimes->{{3.81829535289909*^9, 3.8182954338560467`*^9}, {
+   3.818295486726039*^9, 3.818295527009115*^9}, {3.818295578532798*^9, 
+   3.8182957782618923`*^9}, {3.8183424272782497`*^9, 3.81834244468084*^9}, {
+   3.8183425199288187`*^9, 3.818342577633747*^9}, {3.818342624098048*^9, 
+   3.81834269372431*^9}, {3.818342890130205*^9, 3.818342907945835*^9}, {
+   3.818342952189973*^9, 3.818342955347266*^9}, {3.8183430213564377`*^9, 
+   3.818343170641333*^9}, {3.8183432106259203`*^9, 3.818343233131407*^9}, {
+   3.818343354969613*^9, 3.818343693321755*^9}, {3.818343741266302*^9, 
+   3.818343757525172*^9}, {3.818343789366783*^9, 3.818343936846263*^9}, 
+   3.818344009378625*^9, {3.818344505031809*^9, 3.818344521861948*^9}, {
+   3.818345392202031*^9, 3.81834541337024*^9}, {3.818345740905284*^9, 
+   3.8183460738042803`*^9}, {3.818346277007291*^9, 3.818346277982114*^9}, {
+   3.818380059256898*^9, 3.818380112098255*^9}, {3.818380144289407*^9, 
+   3.818380169548163*^9}, {3.8183851703536263`*^9, 3.818385171055377*^9}, {
+   3.818385276213958*^9, 3.818385276476103*^9}, {3.818558951192605*^9, 
+   3.818559015499304*^9}, {3.81856126752495*^9, 
+   3.818561331200845*^9}},ExpressionUUID->"e04666ad-f29c-45fc-8f13-\
+d3a4cf4fa2fe"]
+},
+WindowSize->{1920, 1035},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"02a5e9be-0fcf-4418-83f4-e6db6c63b156"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 5120, 118, 388, "Input",ExpressionUUID->"e04666ad-f29c-45fc-8f13-d3a4cf4fa2fe"]
+}
+]
+*)
+

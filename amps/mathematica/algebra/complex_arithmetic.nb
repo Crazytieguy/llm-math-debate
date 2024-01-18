@@ -1,0 +1,481 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18483,        473]
+NotebookOptionsPosition[     17725,        454]
+NotebookOutlinePosition[     18144,        471]
+CellTagsIndexPosition[     18101,        468]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"k", " ", "=", " ", "12500"}], ";"}]], "Input",
+ CellChangeTimes->{{3.818188381705186*^9, 3.818188647615245*^9}, {
+   3.818188777481182*^9, 3.8181888384533978`*^9}, {3.818188879357246*^9, 
+   3.8181888989512243`*^9}, {3.818188961802144*^9, 3.818188996952765*^9}, {
+   3.8181890670120153`*^9, 3.818189127404963*^9}, {3.818189172340541*^9, 
+   3.818189200553877*^9}, {3.818189529219202*^9, 3.818189531368061*^9}, 
+   3.818381931451981*^9, {3.818385705855134*^9, 3.818385706332616*^9}, {
+   3.818561785565359*^9, 3.818561790451684*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"8e6b623b-dc1f-4f5d-b194-5c71eec80755"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "k"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"nonintegers", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", 
+       RowBox[{"1", "/", "3"}], ",", 
+       RowBox[{"1", "/", "4"}], ",", 
+       RowBox[{"1", "/", "5"}], ",", 
+       RowBox[{"1", "/", "7"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"Log", "[", "2", "]"}], ",", 
+       RowBox[{"1", "/", "\[Pi]"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], ",", 
+       RowBox[{"1", "/", "E"}], ",", "E", ",", "\[Pi]", ",", 
+       RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "5", "]"}], ",", "0.1"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.1", ",", "0.9"}], "}"}], "\[Rule]", " ", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"RandomChoice", "[", "nonintegers", "]"}]}], "}"}]}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Round", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+         ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"y", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Round", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+         ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/complex_arithmetic/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nFind $x+y$ where $x=\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "x", "]"}], "]"}], " ", "<>", 
+         "\"\<$ and $y=\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "y", "]"}], "]"}], "<>", "\"\<$\>\""}], ",",
+         " ", "\"\<Answer:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"x", "+", "y"}], "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{
+  3.818189196648123*^9, {3.818189533881896*^9, 3.8181895345977983`*^9}, {
+   3.818350565479315*^9, 3.818350586111104*^9}, {3.8183820357423162`*^9, 
+   3.818382044745665*^9}, {3.81838213030009*^9, 3.818382132690209*^9}, {
+   3.8183855805401773`*^9, 3.818385604577654*^9}, 3.818385682264369*^9, {
+   3.818561622368075*^9, 3.818561631382082*^9}, 3.818561738341354*^9, {
+   3.818561778518903*^9, 3.818561778917527*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"2b62ac3b-9b68-4c13-8163-8dce26789175"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "k"}], ",", 
+   RowBox[{"i", "<", 
+    RowBox[{"2", "*", "k"}]}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"nonintegers", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", 
+       RowBox[{"1", "/", "3"}], ",", 
+       RowBox[{"1", "/", "4"}], ",", 
+       RowBox[{"1", "/", "5"}], ",", 
+       RowBox[{"1", "/", "7"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"Log", "[", "2", "]"}], ",", 
+       RowBox[{"1", "/", "\[Pi]"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], ",", 
+       RowBox[{"1", "/", "E"}], ",", "E", ",", "\[Pi]", ",", 
+       RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "5", "]"}], ",", "0.1"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.1", ",", "0.9"}], "}"}], "\[Rule]", " ", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"RandomChoice", "[", "nonintegers", "]"}]}], "}"}]}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Round", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+         ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"y", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Round", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+         ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/complex_arithmetic/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nFind $x-y$ where $x=\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "x", "]"}], "]"}], " ", "<>", 
+         "\"\<$ and $y=\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "y", "]"}], "]"}], "<>", "\"\<$\>\""}], ",",
+         " ", "\"\<Answer:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"x", "-", "y"}], "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8181892103343573`*^9, 3.818189226049705*^9}, {
+   3.818189536794343*^9, 3.8181895374787188`*^9}, 3.8183505895285797`*^9, {
+   3.81838205451709*^9, 3.8183820576734867`*^9}, {3.81838213436308*^9, 
+   3.818382136162353*^9}, {3.818385584459153*^9, 3.8183856024678917`*^9}, 
+   3.8183856855570087`*^9, {3.818561634475112*^9, 3.818561661829741*^9}, {
+   3.818561776230495*^9, 3.818561776556528*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"ede6681a-2cc7-445b-9e59-c456b7a4494b"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", 
+    RowBox[{"2", "*", "k"}]}], ",", 
+   RowBox[{"i", "<", 
+    RowBox[{"3", "*", "k"}]}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"nonintegers", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", 
+       RowBox[{"1", "/", "3"}], ",", 
+       RowBox[{"1", "/", "4"}], ",", 
+       RowBox[{"1", "/", "5"}], ",", 
+       RowBox[{"1", "/", "7"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"Log", "[", "2", "]"}], ",", 
+       RowBox[{"1", "/", "\[Pi]"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], ",", 
+       RowBox[{"1", "/", "E"}], ",", "E", ",", "\[Pi]", ",", 
+       RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "5", "]"}], ",", "0.1"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.1", ",", "0.9"}], "}"}], "\[Rule]", " ", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"RandomChoice", "[", "nonintegers", "]"}]}], "}"}]}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Round", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+         ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"y", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Round", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+         ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/complex_arithmetic/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nFind $x \\\\cdot y$ where $x=\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "x", "]"}], "]"}], " ", "<>", 
+         "\"\<$ and $y=\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "y", "]"}], "]"}], "<>", "\"\<$\>\""}], ",",
+         " ", "\"\<Answer:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"x", "*", "y"}], "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818189280487852*^9, 3.818189301126672*^9}, 
+   3.818189478467704*^9, {3.818189539224255*^9, 3.818189539820293*^9}, {
+   3.8181896140639877`*^9, 3.818189615406516*^9}, 3.8183505939931707`*^9, {
+   3.818382307898328*^9, 3.8183823106941223`*^9}, {3.8183855875302896`*^9, 
+   3.818385607057336*^9}, 3.8183856877514353`*^9, {3.818561640607766*^9, 
+   3.818561659502461*^9}, {3.818561774261366*^9, 3.8185617745884457`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"b21e9e3e-6f83-4b81-a47d-263470450ece"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", 
+    RowBox[{"3", "*", "k"}]}], ",", 
+   RowBox[{"i", "<", 
+    RowBox[{"4", "*", "k"}]}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"nonintegers", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], ",", 
+       RowBox[{"1", "/", "3"}], ",", 
+       RowBox[{"1", "/", "4"}], ",", 
+       RowBox[{"1", "/", "5"}], ",", 
+       RowBox[{"1", "/", "7"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+       RowBox[{"Log", "[", "2", "]"}], ",", 
+       RowBox[{"1", "/", "\[Pi]"}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], ",", 
+       RowBox[{"1", "/", "E"}], ",", "E", ",", "\[Pi]", ",", 
+       RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+       RowBox[{"Sqrt", "[", "5", "]"}], ",", "0.1"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.1", ",", "0.9"}], "}"}], "\[Rule]", " ", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"RandomChoice", "[", "nonintegers", "]"}]}], "}"}]}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Round", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+         ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"y", " ", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Norm", "[", 
+        RowBox[{"y", "-", "0"}], "]"}], "<", "0.001"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"y", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", "\[IndentingNewLine]", 
+          RowBox[{"Round", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"RandomReal", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+             RowBox[{
+              RowBox[{"RandomReal", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}],
+             ",", " ", "roundbasis"}], "]"}], "}"}], "]"}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/complex_arithmetic/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nFind $\\\\frac{x}{y}$ where $x=\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "x", "]"}], "]"}], " ", "<>", 
+         "\"\<$ and $y=\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "y", "]"}], "]"}], "<>", "\"\<$\>\""}], ",",
+         " ", "\"\<Answer:\>\"", ",", 
+        RowBox[{"\"\<$\>\"", " ", "<>", " ", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"x", "/", "y"}], "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8181893845868273`*^9, 3.8181894236541033`*^9}, {
+   3.818189541666285*^9, 3.818189542270447*^9}, {3.818189610696597*^9, 
+   3.818189631222096*^9}, 3.818350597408722*^9, {3.818382312697329*^9, 
+   3.8183823184505033`*^9}, {3.818385590442277*^9, 3.818385610632922*^9}, 
+   3.8183856897341537`*^9, {3.8185616480258303`*^9, 3.818561707830489*^9}, {
+   3.818561749670689*^9, 3.81856177258099*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"a7b03579-0e08-4465-939c-578f76a44dc8"]
+},
+Evaluator->"Kernel6",
+WindowSize->{1920, 1035},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e7eab951-529a-442e-b685-d553ae698d9e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 645, 10, 30, "Input",ExpressionUUID->"8e6b623b-dc1f-4f5d-b194-5c71eec80755"],
+Cell[1206, 32, 4031, 101, 241, "Input",ExpressionUUID->"2b62ac3b-9b68-4c13-8163-8dce26789175"],
+Cell[5240, 135, 4013, 101, 220, "Input",ExpressionUUID->"ede6681a-2cc7-445b-9e59-c456b7a4494b"],
+Cell[9256, 238, 4071, 102, 220, "Input",ExpressionUUID->"b21e9e3e-6f83-4b81-a47d-263470450ece"],
+Cell[13330, 342, 4391, 110, 338, "Input",ExpressionUUID->"a7b03579-0e08-4465-939c-578f76a44dc8"]
+}
+]
+*)
+

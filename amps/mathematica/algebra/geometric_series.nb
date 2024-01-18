@@ -1,0 +1,247 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8963,        239]
+NotebookOptionsPosition[      8612,        225]
+NotebookOutlinePosition[      9009,        241]
+CellTagsIndexPosition[      8966,        238]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", " ", 
+   RowBox[{"c", ",", " ", "a", ",", " ", "max", ",", " ", "sum", ",", "k"}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", " ", "=", " ", "50000"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"options", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "/", "2"}], ",", 
+     RowBox[{"1", "/", "3"}], ",", 
+     RowBox[{"1", "/", "4"}], ",", 
+     RowBox[{"1", "/", "5"}], ",", 
+     RowBox[{"1", "/", "6"}], ",", 
+     RowBox[{"1", "/", "7"}], ",", 
+     RowBox[{"1", "/", "8"}], ",", 
+     RowBox[{"1", "/", "10"}], ",", 
+     RowBox[{"1", "/", "32"}], ",", 
+     RowBox[{"1", "/", "64"}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "5", "]"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "6", "]"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "7", "]"}]}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"moreOptions", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", "2"}], ",", 
+      RowBox[{"1", "/", "3"}], ",", 
+      RowBox[{"1", "/", "4"}], ",", 
+      RowBox[{"1", "/", "5"}], ",", 
+      RowBox[{"1", "/", "7"}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", "5", "]"}]}], ",", 
+      RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+      RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+      RowBox[{"Sqrt", "[", "5", "]"}], ",", " ", "Pi", ",", " ", 
+      RowBox[{"Pi", "^", "2"}], ",", " ", 
+      RowBox[{"1", "/", "Pi"}], ",", " ", 
+      RowBox[{"1", "/", 
+       RowBox[{"Pi", "^", "2"}]}], ",", " ", "E", ",", " ", 
+      RowBox[{"1", "/", "E"}]}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "0"}], ",", " ", 
+   RowBox[{"i", " ", "<", " ", "n"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"c", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", "options", "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", " ", "[", 
+     RowBox[{
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0.3", ",", " ", "0.7"}], "}"}], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"True", ",", " ", "False"}], "}"}]}], "]"}], ",", "  ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{
+        "30", "%", " ", "of", " ", "the", " ", "time", " ", "get", " ", 
+         "something", " ", "that", " ", "diverges", " ", "if", " ", "max"}], 
+        "=", 
+        RowBox[{"\\", 
+         RowBox[{"infty", " ", "[", 
+          RowBox[{"--", 
+           RowBox[{">", " ", 
+            RowBox[{
+            "diverges", " ", "15", "%", " ", "of", " ", "the", " ", 
+             "time"}]}]}], "]"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"c", " ", "=", " ", 
+        RowBox[{"1", "/", "c"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";",
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"a", "=", 
+     RowBox[{
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "100"}], ",", "100"}], "}"}], "]"}], "/", 
+      RowBox[{"RandomChoice", "[", 
+       RowBox[{"Delete", "[", 
+        RowBox[{
+         RowBox[{"Range", "[", 
+          RowBox[{
+           RowBox[{"-", "100"}], ",", "100"}], "]"}], ",", "101"}], "]"}], 
+       "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"max", " ", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "0.5"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\[Infinity]", ",", 
+         RowBox[{"RandomInteger", "[", 
+          RowBox[{"{", 
+           RowBox[{"3", ",", "15"}], "}"}], "]"}]}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"If", " ", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"max", " ", "===", " ", "\[Infinity]"}], " ", "&&", " ", 
+       RowBox[{
+        RowBox[{"Abs", "[", "c", "]"}], " ", "\[GreaterEqual]", " ", "1"}]}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"sum", " ", "=", " ", "\"\<Divergent\>\""}], ";"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"sum", " ", "=", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{
+           UnderoverscriptBox["\[Sum]", 
+            RowBox[{"k", "=", "0"}], "max"], 
+           RowBox[{"a", "*", 
+            SuperscriptBox["c", "k"]}]}], "]"}], "]"}]}], ";"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", " ", "[", 
+     RowBox[{
+      RowBox[{"sum", " ", "===", " ", "\"\<Divergent\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/Desktop/mesa/algebra/geometric_series/\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+         " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+           "\"\<Problem:\\nCompute the following expression, or identify that \
+it diverges: $\\\\sum_{k=0}^\>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "max", "]"}], "]"}], " ", "<>", " ", 
+            "\"\< \>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "a", "]"}], "]"}], " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "c", "]"}], "]"}], " ", "<>", " ", 
+            "\"\<^\>\"", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "t", "]"}], "]"}], " ", "<>", 
+            "\"\<$\>\""}], " ", ",", " ", "\[IndentingNewLine]", 
+           "\"\<Answer:\>\"", ",", " ", "\"\<$\\\\text{Diverges}$\>\""}], 
+          "}"}]}], "]"}], ";"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/Desktop/mesa/algebra/geometric_series/\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+         " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+           "\"\<Problem:\\nCompute the following expression: \
+$\\\\sum_{k=0}^\>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "max", "]"}], "]"}], " ", "<>", " ", 
+            "\"\< \>\"", " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "a", "]"}], "]"}], " ", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "c", "]"}], "]"}], " ", "<>", " ", 
+            "\"\<^\>\"", "<>", " ", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "k", "]"}], "]"}], " ", "<>", 
+            "\"\<$\>\""}], " ", ",", " ", "\[IndentingNewLine]", 
+           "\"\<Answer:\>\"", ",", " ", 
+           RowBox[{
+           "\"\<$\>\"", " ", "<>", " ", "sum", " ", "<>", " ", 
+            "\"\<$\>\""}]}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+     "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQHXFUhv1S0RvHPSnWgiB6m/V1cRC9xuuBDIhexxOo
+DKJzEj1swPTzDOaXQLrw5FRWEP1ox18+EL3C3UQMRJspM8uA6B7d7SogeomW
+iy2I9nCpswfRTiJsriD6nEw2mP6QvtoXRJ9tDUkA0V3sIakgusZEJQNEC7HH
+l4Poi96rFoLNbV2xHGzPuQ0rQfSGPavXguhpItIHQDRHRIbtbyC9IE/ABUSb
+VWYHgujvZZKhIJpB+nI0iD6zzSweRNubM07+B7Lnks4UEL1H2Y//P5DeZLMZ
+TFfMOCEMov0Ox4qA6H2ZTA4gmsGdG0ybJ14JCCl+4/gpIy8MRAMAXZOt5g==
+
+  "],ExpressionUUID->"e04666ad-f29c-45fc-8f13-d3a4cf4fa2fe"]
+},
+WindowSize->{1920, 1035},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"eaccfbe8-1a3b-444a-9f2a-5b54c744a4cf"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 8050, 203, 697, "Input",ExpressionUUID->"e04666ad-f29c-45fc-8f13-d3a4cf4fa2fe"]
+}
+]
+*)
+

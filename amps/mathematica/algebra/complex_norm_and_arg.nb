@@ -1,0 +1,246 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9387,        238]
+NotebookOptionsPosition[      8523,        216]
+NotebookOutlinePosition[      9016,        234]
+CellTagsIndexPosition[      8973,        231]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"nonintegers", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "/", "2"}], ",", 
+     RowBox[{"1", "/", "3"}], ",", 
+     RowBox[{"1", "/", "4"}], ",", 
+     RowBox[{"1", "/", "5"}], ",", 
+     RowBox[{"1", "/", "7"}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+     RowBox[{"Log", "[", "2", "]"}], ",", 
+     RowBox[{"1", "/", "\[Pi]"}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], ",", 
+     RowBox[{"1", "/", "E"}], ",", "E", ",", "\[Pi]", ",", 
+     RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+     RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+     RowBox[{"Sqrt", "[", "5", "]"}], ",", "0.1"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roundbasis", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.1", ",", "0.9"}], "}"}], "\[Rule]", " ", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"RandomChoice", "[", "nonintegers", "]"}]}], "}"}]}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Round", "[", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", 
+           "roundbasis"}], "]"}], "*", 
+         RowBox[{"Exp", "[", 
+          RowBox[{"I", " ", "*", 
+           RowBox[{"RandomInteger", "[", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "360"}], "}"}], "]"}], "*", 
+           RowBox[{"\[Pi]", "/", "180"}]}], "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"Round", "[", 
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+           "roundbasis"}], "]"}], "*", 
+         RowBox[{"ExpToTrig", "[", 
+          RowBox[{"Exp", "[", 
+           RowBox[{"I", " ", "*", 
+            RowBox[{"RandomInteger", "[", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "360"}], "}"}], "]"}], "*", 
+            RowBox[{"\[Pi]", "/", "180"}]}], "]"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "+", 
+           RowBox[{
+            RowBox[{"RandomReal", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], "*", "I"}]}], 
+          ",", " ", "roundbasis"}], "]"}]}], "}"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/algebra/complex_norm_and_arg/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+        "\"\<Problem:\\nFind the norm and argument (phase angle in radians) \
+of $\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "x", "]"}], "]"}], "<>", "\"\<$.\>\""}], 
+        ",", " ", 
+        RowBox[{"\"\<Answer:\\nNorm: $\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Norm", "[", "x", "]"}], "]"}], "]"}], " ", "<>", " ", 
+         "\"\<$\>\""}], ",", " ", 
+        RowBox[{"\"\<Argument: $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Arg", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.818186064108363*^9, 3.818186142751458*^9}, {
+   3.8181861733600693`*^9, 3.818186177638969*^9}, {3.81818655550456*^9, 
+   3.8181865583754387`*^9}, {3.818186863826686*^9, 3.818186885386183*^9}, {
+   3.8181869907656813`*^9, 3.818187017363413*^9}, {3.8181870583584023`*^9, 
+   3.818187120123887*^9}, {3.8181926699296713`*^9, 3.818192679580587*^9}, {
+   3.818192861487578*^9, 3.818192909111704*^9}, {3.818192977791992*^9, 
+   3.818193167360828*^9}, {3.818292284743515*^9, 3.8182926770933733`*^9}, {
+   3.818292770934164*^9, 3.818292817681486*^9}, {3.818292882320861*^9, 
+   3.818292912392377*^9}, 3.818292964174781*^9, {3.818385766789609*^9, 
+   3.818385789986475*^9}, {3.818561921500534*^9, 
+   3.818561940363879*^9}},ExpressionUUID->"4d8ef4a3-bde2-4db8-b82e-\
+0be3e3cf8d26"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "N", "meprec", 
+   "\"Internal precision limit $MaxExtraPrecision = \\!\\(\\*RowBox[{\\\"50.`\
+\\\"}]\\) reached while evaluating \\!\\(\\*RowBox[{\\\"Log\\\", \\\"[\\\", \
+RowBox[{SuperscriptBox[RowBox[{\\\"Cos\\\", \\\"[\\\", FractionBox[RowBox[{\\\
+\"11\\\", \\\" \\\", \\\"\[Pi]\\\"}], \\\"60\\\"], \\\"]\\\"}], \\\"2\\\"], \
+\\\"+\\\", SuperscriptBox[RowBox[{\\\"Sin\\\", \\\"[\\\", \
+FractionBox[RowBox[{\\\"11\\\", \\\" \\\", \\\"\[Pi]\\\"}], \\\"60\\\"], \
+\\\"]\\\"}], \\\"2\\\"]}], \\\"]\\\"}]\\).\"", 2, 12, 14, 
+   32933127025809892555, "Kernel3"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.818385730399559*^9, {3.818385787286582*^9, 3.8183858062695227`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"e91c9072-9973-4b18-9651-cf1be7a1e587"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "N", "meprec", 
+   "\"Internal precision limit $MaxExtraPrecision = \\!\\(\\*RowBox[{\\\"50.`\
+\\\"}]\\) reached while evaluating \\!\\(\\*RowBox[{\\\"Log\\\", \\\"[\\\", \
+RowBox[{SuperscriptBox[RowBox[{\\\"Cos\\\", \\\"[\\\", FractionBox[RowBox[{\\\
+\"13\\\", \\\" \\\", \\\"\[Pi]\\\"}], \\\"60\\\"], \\\"]\\\"}], \\\"2\\\"], \
+\\\"+\\\", SuperscriptBox[RowBox[{\\\"Sin\\\", \\\"[\\\", \
+FractionBox[RowBox[{\\\"13\\\", \\\" \\\", \\\"\[Pi]\\\"}], \\\"60\\\"], \
+\\\"]\\\"}], \\\"2\\\"]}], \\\"]\\\"}]\\).\"", 2, 12, 15, 
+   32933127025809892555, "Kernel3"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.818385730399559*^9, {3.818385787286582*^9, 3.818385806305921*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"ed4be624-e08f-4a2e-96e2-a10905ac5bbb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "N", "meprec", 
+   "\"Internal precision limit $MaxExtraPrecision = \\!\\(\\*RowBox[{\\\"50.`\
+\\\"}]\\) reached while evaluating \\!\\(\\*RowBox[{\\\"Log\\\", \\\"[\\\", \
+RowBox[{SuperscriptBox[RowBox[{\\\"Cos\\\", \\\"[\\\", FractionBox[RowBox[{\\\
+\"19\\\", \\\" \\\", \\\"\[Pi]\\\"}], \\\"90\\\"], \\\"]\\\"}], \\\"2\\\"], \
+\\\"+\\\", SuperscriptBox[RowBox[{\\\"Sin\\\", \\\"[\\\", \
+FractionBox[RowBox[{\\\"19\\\", \\\" \\\", \\\"\[Pi]\\\"}], \\\"90\\\"], \
+\\\"]\\\"}], \\\"2\\\"]}], \\\"]\\\"}]\\).\"", 2, 12, 16, 
+   32933127025809892555, "Kernel3"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.818385730399559*^9, {3.818385787286582*^9, 3.818385806376054*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"545cdfcc-dcaf-4103-b254-b1859022e15d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"N\\\", \\\"::\\\", \
+\\\"meprec\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 12, 17, 32933127025809892555, "Kernel3"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.818385730399559*^9, {3.818385787286582*^9, 3.818385806381403*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"4e2b3387-0ddb-4366-9c0b-c7803784c320"]
+}, Open  ]]
+},
+WindowSize->{1106, 707},
+WindowMargins->{{Automatic, 386}, {Automatic, 24}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"0f768d99-e509-4cda-8401-243b3e1e6f2e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4930, 124, 262, "Input",ExpressionUUID->"4d8ef4a3-bde2-4db8-b82e-0be3e3cf8d26"],
+Cell[5513, 148, 830, 16, 40, "Message",ExpressionUUID->"e91c9072-9973-4b18-9651-cf1be7a1e587"],
+Cell[6346, 166, 828, 16, 40, "Message",ExpressionUUID->"ed4be624-e08f-4a2e-96e2-a10905ac5bbb"],
+Cell[7177, 184, 828, 16, 40, "Message",ExpressionUUID->"545cdfcc-dcaf-4103-b254-b1859022e15d"],
+Cell[8008, 202, 499, 11, 24, "Message",ExpressionUUID->"4e2b3387-0ddb-4366-9c0b-c7803784c320"]
+}, Open  ]]
+}
+]
+*)
+

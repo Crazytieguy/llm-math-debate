@@ -1,0 +1,127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4450,        119]
+NotebookOptionsPosition[      4099,        105]
+NotebookOutlinePosition[      4497,        121]
+CellTagsIndexPosition[      4454,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"d", " ", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "15"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "0"}], ",", 
+      RowBox[{"j", "<", "d"}], ",", 
+      RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"roundbasis", "=", 
+        RowBox[{"RandomChoice", "[", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"RandomChoice", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "/", "2"}], ",", 
+              RowBox[{"1", "/", "3"}], ",", 
+              RowBox[{"1", "/", "4"}], ",", 
+              RowBox[{"1", "/", "5"}], ",", 
+              RowBox[{"1", "/", "7"}], ",", 
+              RowBox[{"1", "/", 
+               RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+              RowBox[{"1", "/", 
+               RowBox[{"Sqrt", "[", "3", "]"}]}], ",", 
+              RowBox[{"1", "/", 
+               RowBox[{"Sqrt", "[", "5", "]"}]}], ",", 
+              RowBox[{"Log", "[", "2", "]"}], ",", 
+              RowBox[{"1", "/", "\[Pi]"}], ",", 
+              RowBox[{"1", "/", 
+               RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], ",", 
+              RowBox[{"1", "/", "E"}], ",", "E", ",", "\[Pi]", ",", 
+              RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+              RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+              RowBox[{"Sqrt", "[", "5", "]"}]}], "}"}], "]"}]}], "}"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"list", " ", "=", " ", 
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", " ", 
+          RowBox[{"Round", "[", 
+           RowBox[{
+            RowBox[{"RandomReal", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "10"}], ",", "10"}], "}"}], "]"}], ",", " ", 
+            "roundbasis"}], "]"}]}], "]"}]}], ";"}]}], "\[IndentingNewLine]", 
+     "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/counting_and_statistics/median/\>\"",
+        "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nCompute the median of $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", "list"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"Median", "[", "list", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.818095786827795*^9, 3.8180958049865932`*^9}, {
+   3.818096012066554*^9, 3.8180960126355677`*^9}, 3.818204977988069*^9, {
+   3.818347028600315*^9, 3.81834703445533*^9}, {3.818347082143317*^9, 
+   3.818347103878716*^9}, 3.818348428125288*^9, {3.818375037559004*^9, 
+   3.8183750378539*^9}, {3.81852291077006*^9, 3.818522914453313*^9}, {
+   3.818523512746872*^9, 3.818523513496546*^9}, {3.818560337578582*^9, 
+   3.8185603379472523`*^9}},ExpressionUUID->"d776d5fe-91d0-43e4-9843-\
+304b8b609220"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 282}, {Automatic, 39}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"49b5f17a-9e94-4b0b-b0a7-e5c19c86d2b4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3537, 83, 325, "Input",ExpressionUUID->"d776d5fe-91d0-43e4-9843-304b8b609220"]
+}
+]
+*)
+

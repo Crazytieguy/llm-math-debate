@@ -1,0 +1,128 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4597,        120]
+NotebookOptionsPosition[      4130,        103]
+NotebookOutlinePosition[      4644,        122]
+CellTagsIndexPosition[      4601,        119]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"myCenterDot", "[", "e_", "]"}], ":=", "e"}], "\n", 
+ RowBox[{
+  RowBox[{"myCenterDot", "[", "args__", "]"}], ":=", 
+  RowBox[{"CenterDot", "[", "args", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "5000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m", "=", 
+     RowBox[{"i", "+", "2"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"f", "=", 
+     RowBox[{"ReadString", "[", 
+      RowBox[{
+      "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/number_\
+theory/factor_integer/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"StringContainsQ", "[", 
+       RowBox[{"f", ",", "\"\<---\>\""}], "]"}], ",", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"PrimeQ", "[", "m", "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"sol", "=", 
+           RowBox[{
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+            "\"\< is prime.\>\""}]}], ";"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"sol", " ", "=", " ", 
+           RowBox[{"Quiet", "[", 
+            RowBox[{"TeXForm", "[", 
+             RowBox[{"WolframAlpha", "[", 
+              RowBox[{
+               RowBox[{"\"\<FactorInteger[\>\"", "<>", " ", 
+                RowBox[{"ToString", "[", "m", "]"}], "<>", " ", "\"\<]\>\""}],
+                ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<Result\>\"", ",", "2"}], "}"}], ",", 
+                 "\"\<Content\>\""}], "}"}], ",", 
+               RowBox[{"PodStates", "\[Rule]", 
+                RowBox[{"{", "\"\<Result__Step-by-step solution\>\"", "}"}]}],
+                ",", 
+               RowBox[{"TimeConstraint", "\[Rule]", "60"}]}], "]"}], "]"}], 
+            "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{
+         "\"\</Users/hendrycks/research/year3/maths-beta/mesa_solutions/\
+number_theory/factor_integer/\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", 
+         " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\"\<Problem:\\nFactor $\>\"", "<>", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"TeXForm", "[", "m", "]"}], "]"}], "<>", 
+            "\"\<$.\\nAnswer:\>\""}], ",", "sol"}], "}"}]}], "]"}]}]}], 
+     "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.818086077449224*^9, 3.818086094999227*^9}, {
+   3.818086139799214*^9, 3.818086251452291*^9}, {3.818086316553257*^9, 
+   3.81808632938737*^9}, {3.8180864606956463`*^9, 3.818086496166914*^9}, 
+   3.818086576119206*^9, {3.818295770369577*^9, 3.8182958453263683`*^9}, {
+   3.818372454420472*^9, 3.818372454913951*^9}, {3.818525628753134*^9, 
+   3.818525724862657*^9}, {3.818526401344186*^9, 3.8185264016049137`*^9}, {
+   3.81861949971704*^9, 3.8186195260518208`*^9}, {3.81861964360842*^9, 
+   3.81861964748755*^9}, {3.8186220435352983`*^9, 3.818622069075982*^9}, {
+   3.818622149420211*^9, 
+   3.818622259865498*^9}},ExpressionUUID->"a85c6e48-83ec-4bcc-b612-\
+ae487eb9642a"]
+},
+Evaluator->"Kernel3",
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 390}, {Automatic, 45}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fb38b74a-b565-49ca-8768-773518608e99"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3568, 81, 472, "Input",ExpressionUUID->"a85c6e48-83ec-4bcc-b612-ae487eb9642a"]
+}
+]
+*)
+

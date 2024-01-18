@@ -1,0 +1,104 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3349,         96]
+NotebookOptionsPosition[      2976,         81]
+NotebookOutlinePosition[      3396,         98]
+CellTagsIndexPosition[      3353,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "10000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d1", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "5"}], "}"}], "]"}]}], ";", " ", 
+    RowBox[{"d2", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "5"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"d1", ",", "d2"}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/linear_algebra/null_space/\>\"\
+", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nGive a list of vectors that forms a basis for the null \
+space of the following matrix (round your answer to three decimal \
+places):\>\"", ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", " ", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Map", "[", 
+           RowBox[{"TeXForm", ",", 
+            RowBox[{"Round", "[", 
+             RowBox[{
+              RowBox[{"Sort", "[", 
+               RowBox[{"NullSpace", "[", "x", "]"}], "]"}], ",", " ", 
+              "0.001"}], "]"}]}], "]"}], "]"}], "<>", "\"\<$\>\""}]}], 
+       "}"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818032013111095*^9, 3.818032073349771*^9}, {
+   3.818032242603565*^9, 3.8180322804406013`*^9}, {3.818032339900332*^9, 
+   3.8180323436798897`*^9}, {3.8180324049427137`*^9, 
+   3.8180324059480457`*^9}, {3.8183028340928497`*^9, 3.818302902545079*^9}, {
+   3.818302970158455*^9, 3.818302978319475*^9}, {3.818303028792736*^9, 
+   3.8183030353992453`*^9}, 3.818303156751196*^9, {3.818303197437859*^9, 
+   3.81830324199474*^9}, {3.818371790636445*^9, 
+   3.818371790947605*^9}},ExpressionUUID->"761cb400-ac52-41ab-befd-\
+e221818d3843"]
+},
+Evaluator->"Kernel3",
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 491}, {35, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7cca206a-8e0f-4efc-9008-5c26263408b5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2414, 59, 220, "Input",ExpressionUUID->"761cb400-ac52-41ab-befd-e221818d3843"]
+}
+]
+*)
+

@@ -1,0 +1,167 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6090,        159]
+NotebookOptionsPosition[      5463,        142]
+NotebookOutlinePosition[      5861,        158]
+CellTagsIndexPosition[      5818,        155]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Convert x to base b.", "Text",
+ CellChangeTimes->{{3.81810430145477*^9, 
+  3.818104314350555*^9}},ExpressionUUID->"55ae4afe-af62-4d05-80b4-\
+ec7f6bd62d31"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "30000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "3000"}], "}"}], "]"}], ",", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"0.001", ",", "1"}], "}"}], "]"}], ",", 
+          RowBox[{"RandomChoice", "[", 
+           RowBox[{"{", 
+            RowBox[{"0.1", ",", "0.01", ",", "0.001"}], "}"}], "]"}]}], 
+         "]"}]}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"b", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"Delete", "[", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{"2", ",", "36"}], "]"}], ",", " ", "9"}], "]"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/convert_base/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nConvert $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "x", "]"}], "]"}], "<>", 
+        "\"\<$ to base $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "b", "]"}], "]"}], "<>", 
+        "\"\<$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"BaseForm", "[", 
+           RowBox[{"x", ",", "b"}], "]"}], "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818104238775667*^9, 3.818104387358612*^9}, {
+   3.81810441832775*^9, 3.818104454452873*^9}, {3.818104638343299*^9, 
+   3.8181046993659687`*^9}, {3.818104750295095*^9, 3.8181048044780283`*^9}, 
+   3.8181061737844048`*^9, {3.818294694012545*^9, 3.818294762809374*^9}, {
+   3.818375991425907*^9, 3.8183759918649673`*^9}, {3.8185499476113377`*^9, 
+   3.81854996129342*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"8eb4004c-1f2e-4b10-bfc5-cef80596697e"],
+
+Cell["Convert x_b to base 10.", "Text",
+ CellChangeTimes->{{3.818106095716016*^9, 
+  3.818106101971671*^9}},ExpressionUUID->"758a4325-c8dd-4549-b60f-\
+931b82c6d6b0"],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "30000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"x", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"RandomInteger", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "3000"}], "}"}], "]"}], ",", 
+        RowBox[{"Round", "[", 
+         RowBox[{
+          RowBox[{"RandomReal", "[", 
+           RowBox[{"{", 
+            RowBox[{"0.001", ",", "1"}], "}"}], "]"}], ",", 
+          RowBox[{"RandomChoice", "[", 
+           RowBox[{"{", 
+            RowBox[{"0.1", ",", "0.01", ",", "0.001"}], "}"}], "]"}]}], 
+         "]"}]}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"b", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"Delete", "[", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{"2", ",", "36"}], "]"}], ",", " ", "9"}], "]"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/number_theory/convert_base/\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{"\"\<Problem:\\nConvert $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{"BaseForm", "[", 
+           RowBox[{"x", ",", "b"}], "]"}], "]"}], "]"}], "<>", 
+        "\"\<$ to base 10.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "x", "]"}], "]"}], "<>", "\"\<$\>\""}], 
+       "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.818106082843855*^9, 3.8181061307424383`*^9}, 
+   3.818106175384431*^9, {3.818106292113874*^9, 3.818106337735759*^9}, {
+   3.818106482258573*^9, 3.818106497136023*^9}, {3.818106560929743*^9, 
+   3.818106617704875*^9}, 3.818294696660102*^9, {3.818294796345598*^9, 
+   3.818294866948698*^9}, {3.818294918761883*^9, 3.818294919718717*^9}, {
+   3.8183759940488997`*^9, 3.818375997017103*^9}, {3.8185499560844*^9, 
+   3.818549964268498*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"8b0fc7e2-d79f-4217-86c8-c22db1fabd42"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 506}, {26, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7a005d97-3750-4fc6-bd16-b84da39131b5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 161, 3, 35, "Text",ExpressionUUID->"55ae4afe-af62-4d05-80b4-ec7f6bd62d31"],
+Cell[722, 25, 2310, 55, 220, "Input",ExpressionUUID->"8eb4004c-1f2e-4b10-bfc5-cef80596697e"],
+Cell[3035, 82, 165, 3, 35, "Text",ExpressionUUID->"758a4325-c8dd-4549-b60f-931b82c6d6b0"],
+Cell[3203, 87, 2256, 53, 220, "Input",ExpressionUUID->"8b0fc7e2-d79f-4217-86c8-c22db1fabd42"]
+}
+]
+*)
+

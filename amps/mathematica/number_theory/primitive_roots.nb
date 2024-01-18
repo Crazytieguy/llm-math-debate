@@ -1,0 +1,105 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3613,         97]
+NotebookOptionsPosition[      3172,         82]
+NotebookOutlinePosition[      3570,         98]
+CellTagsIndexPosition[      3527,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Return the (up to the first 10) primitive roots of n.", "Text",
+ CellChangeTimes->{{3.8180939086219263`*^9, 3.81809391501369*^9}, {
+  3.818094241694675*^9, 3.818094247374382*^9}, {3.818094520375174*^9, 
+  3.818094524631077*^9}},ExpressionUUID->"8b69c55a-599a-4ef8-815d-\
+18a14cb1e0bd"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"j", " ", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"i", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"While", "[", 
+  RowBox[{
+   RowBox[{"i", "<", "10000"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"roots", " ", "=", 
+     RowBox[{"PrimitiveRootList", "[", "j", "]"}]}], " ", ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Length", "[", "roots", "]"}], " ", "<", " ", "1"}], ",", 
+      RowBox[{
+       RowBox[{"roots", " ", "=", 
+        RowBox[{"PrimitiveRootList", "[", 
+         RowBox[{"j", "+", "1"}], "]"}]}], " ", ";", 
+       RowBox[{"j", "++"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mathematica/number_theory/primitive_roots/\
+\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Problem:\\nReturn up to the first 10 primitive roots of $\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", "j", "]"}], "]"}], "<>", 
+        "\"\<$.\\nAnswer:\\n$\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"TeXForm", "[", 
+          RowBox[{
+           RowBox[{"Sort", "[", "roots", "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"1", ";;", 
+             RowBox[{"Min", "[", 
+              RowBox[{"10", ",", 
+               RowBox[{"Length", "[", "roots", "]"}]}], "]"}]}], "]"}], "]"}],
+           "]"}], "]"}], "<>", "\"\<$.\>\""}], "}"}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"j", "++"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"i", "++"}], ";"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.818094076215255*^9, 3.818094284783423*^9}, {
+   3.818094316295843*^9, 3.818094365039459*^9}, {3.818094435532097*^9, 
+   3.818094456880438*^9}, {3.818094502075794*^9, 3.818094513332225*^9}, {
+   3.818094585065337*^9, 3.818094729736225*^9}, {3.818094794982642*^9, 
+   3.818094869151331*^9}, 3.8180950775598373`*^9, {3.8182977175265827`*^9, 
+   3.8182977904980392`*^9}, {3.8183722803609667`*^9, 3.8183722806469793`*^9}},
+ 
+ CellLabel->"In[25]:=",ExpressionUUID->"d6d988ec-3a1d-4b78-94ad-52b419d7f191"]
+},
+WindowSize->{808, 857},
+WindowMargins->{{Automatic, 435}, {46, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9cbfe8fe-f32a-4141-bfc7-1f0c0589ee79"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 291, 4, 35, "Text",ExpressionUUID->"8b69c55a-599a-4ef8-815d-18a14cb1e0bd"],
+Cell[852, 26, 2316, 54, 283, "Input",ExpressionUUID->"d6d988ec-3a1d-4b78-94ad-52b419d7f191"]
+}
+]
+*)
+

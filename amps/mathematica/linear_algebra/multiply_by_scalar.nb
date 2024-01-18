@@ -1,0 +1,118 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3843,        110]
+NotebookOptionsPosition[      3470,         95]
+NotebookOutlinePosition[      3890,        112]
+CellTagsIndexPosition[      3847,        109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "10000"}], ",", 
+   RowBox[{"i", "<", "50000"}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"numerator", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"Join", "[", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "15"}], ",", 
+          RowBox[{"-", "1"}]}], "]"}], ",", 
+        RowBox[{"Range", "[", 
+         RowBox[{"1", ",", "15"}], "]"}]}], "]"}], "]"}]}], ";", " ", 
+    RowBox[{"denominator", "=", " ", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{"{", 
+       RowBox[{
+       "2", ",", "3", ",", " ", "4", ",", " ", "5", ",", " ", "6", ",", "7", 
+        ",", " ", "8", ",", "9", ",", " ", "10", ",", "16", ",", "32", ",", 
+        "64", ",", " ", "100"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"scalar", "=", 
+     RowBox[{"numerator", "/", "denominator"}]}], ";", "\[IndentingNewLine]", 
+    
+    RowBox[{"d1", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "4"}], "}"}], "]"}]}], ";", " ", 
+    RowBox[{"d2", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "4"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"x", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"d1", ",", "d2"}], "}"}]}], "]"}]}], ";", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{
+      "\"\</Users/hendrycks/Desktop/mesa/linear_algebra/multiply_by_scalar/\>\
+\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.txt\>\""}], ",", " ", 
+      
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Problem:\\nMultiply the scalar $\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", "scalar", "]"}], "]"}], "<>", 
+         "\"\<$ and the matrix\>\""}], ",", 
+        RowBox[{"\"\<$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", "x", "]"}], "]"}], "]"}], "<>", 
+         "\"\<$.\>\""}], ",", 
+        RowBox[{"\"\<Answer:\\n$\>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"TeXForm", "[", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"scalar", "*", "x"}], "]"}], "]"}], "]"}], "<>", 
+         "\"\<$\>\""}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8180262663895607`*^9, 3.818026280315557*^9}, {
+  3.81802638025599*^9, 3.81802650641879*^9}, {3.818026538539371*^9, 
+  3.818026543745223*^9}, {3.8183023710297832`*^9, 3.8183024436194487`*^9}, {
+  3.818371565769642*^9, 3.818371566304976*^9}, {3.818558087752215*^9, 
+  3.8185580928266983`*^9}},ExpressionUUID->"2eb1911f-d53d-4376-ad24-\
+237166942919"]
+},
+Evaluator->"Kernel2",
+WindowSize->{808, 857},
+WindowMargins->{{429, Automatic}, {30, Automatic}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2f18ab51-b641-467d-ae89-b4223225366b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2908, 73, 262, "Input",ExpressionUUID->"2eb1911f-d53d-4376-ad24-237166942919"]
+}
+]
+*)
+
