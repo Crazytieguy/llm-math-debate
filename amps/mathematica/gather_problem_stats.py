@@ -12,6 +12,7 @@ csv_writer = csv.DictWriter(
 )
 csv_writer.writeheader()
 
+# Note - this only works before formatting
 identify_step = """\\end{array}
  \\\\
  """
