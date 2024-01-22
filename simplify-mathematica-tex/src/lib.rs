@@ -39,10 +39,14 @@ mod tests {
     \end{array}
     \\
 \end{array}";
-        let expected = r"Simplify the following: \\
-$\sqrt{61}+\sqrt{125}$ \\
+        let expected = r"Simplify the following:
+
+$\sqrt{61}+\sqrt{125}$
+
 \hrule
-$\sqrt{125} = \sqrt{5^3} = 5 \sqrt{5}$ \\
+
+1. $\sqrt{125} = \sqrt{5^3} = 5 \sqrt{5}$:
+
 Answer: $\sqrt{61}+5 \sqrt{5}$";
         let actual = simplify_tex(input).unwrap();
         assert_eq!(actual, expected);

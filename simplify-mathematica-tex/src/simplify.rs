@@ -69,13 +69,14 @@ fn unwrap_fboxes_and_text(nodes: Vec<Node>) -> Vec<Node> {
             Node::Brackets(Brackets(content)) => {
                 vec![Node::Brackets(Brackets(unwrap_fboxes_and_text(content)))]
             }
-            Node::Text(Text(s)) => {
-                if !s.contains(char::is_alphabetic) {
-                    vec![Node::Raw(s)]
-                } else {
-                    vec![Node::Text(Text(s))]
-                }
-            }
+            // Unfortunately this breaks some edge cases, like \underline{\text{  }}
+            // Node::Text(Text(s)) => {
+            //     if !s.contains(char::is_alphabetic) {
+            //         vec![Node::Raw(s)]
+            //     } else {
+            //         vec![Node::Text(Text(s))]
+            //     }
+            // }
             _ => vec![elem],
         })
         .group_by(|elem| matches!(elem, Node::Space(_) | Node::Text(_)))
@@ -103,21 +104,27 @@ fn unwrap_fboxes_and_text(nodes: Vec<Node>) -> Vec<Node> {
 }
 
 fn clean_whitespace(nodes: Vec<Node>) -> Vec<Node> {
-    nodes
+    let is_whitespace = |elem: &Node| matches!(elem, Node::Space(_) | Node::NewLine);
+    let mut cleaned = nodes
         .into_iter()
-        .group_by(|elem| matches!(elem, Node::Space(_) | Node::NewLine))
+        .skip_while(is_whitespace)
+        .group_by(is_whitespace)
         .into_iter()
         .flat_map(|(is_whitespace, mut group)| {
             if !is_whitespace {
                 return group.collect_vec();
             }
             if group.contains(&Node::NewLine) {
-                vec![Node::NewLine]
+                vec![Node::NewLine, Node::NewLine]
             } else {
                 vec![Node::Space(" ")]
             }
         })
-        .collect()
+        .collect_vec();
+    while cleaned.last().is_some_and(is_whitespace) {
+        cleaned.pop();
+    }
+    cleaned
 }
 
 fn fix_text_math_contexts(nodes: Vec<Node>) -> Vec<Node> {
@@ -153,6 +160,9 @@ fn fix_text_math_contexts(nodes: Vec<Node>) -> Vec<Node> {
                             }),
                         );
                     }
+                    Node::Raw(s) if &s == ":" => {
+                        after_math_part.insert(0, Node::Raw(s));
+                    }
                     _ => {
                         last_math_elem = Some(elem);
                         break;
@@ -185,6 +195,9 @@ fn fix_text_math_contexts(nodes: Vec<Node>) -> Vec<Node> {
                             content: None,
                             second_content: None,
                         }));
+                    }
+                    Node::Raw(s) if &s == ":" => {
+                        before_math_part.push(Node::Raw(s));
                     }
                     _ => {
                         math_content.push(elem);
