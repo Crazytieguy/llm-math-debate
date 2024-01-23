@@ -19,9 +19,11 @@ fn serialize_node(node: Node, buf: &mut String) {
             }
             buf.push_str(r"\end{array}");
         }
-        Node::Text(Text(s)) => {
+        Node::Text(Text(elements)) => {
             buf.push_str(r"\text{");
-            buf.push_str(&s);
+            for element in elements {
+                serialize_node(element, buf);
+            }
             buf.push('}');
         }
         Node::Tag(Tag {

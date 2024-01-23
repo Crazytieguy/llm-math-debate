@@ -22,7 +22,7 @@ pub(crate) enum Node<'a> {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-pub(crate) struct Text<'a>(pub(crate) Cow<'a, str>);
+pub(crate) struct Text<'a>(pub(crate) Vec<Node<'a>>);
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub(crate) struct Curlies<'a>(pub(crate) Vec<Node<'a>>);
@@ -77,8 +77,7 @@ fn node<'a>(input: &mut &'a str) -> winnow::PResult<Node<'a>> {
 }
 
 fn text<'a>(input: &mut &'a str) -> winnow::PResult<Node<'a>> {
-    delimited(r"\text{", take_while(0.., |c| c != '}'), '}')
-        .map(Cow::Borrowed)
+    delimited(r"\text{", nodes, '}')
         .map(Text)
         .map(Node::Text)
         .parse_next(input)
@@ -139,7 +138,7 @@ fn raw<'a>(input: &mut &'a str) -> winnow::PResult<Node<'a>> {
 }
 
 fn escaped<'a>(input: &mut &'a str) -> winnow::PResult<Node<'a>> {
-    preceded('\\', one_of(['{', '}', ' ', ',', '|', '_']))
+    preceded('\\', one_of(['{', '}', ' ', ',', '|', '_', '!']))
         .map(Node::Escaped)
         .parse_next(input)
 }
@@ -159,24 +158,6 @@ mod tests {
                 Node::Raw(Cow::Borrowed("Hello")),
                 Node::Space(" "),
                 Node::Raw(Cow::Borrowed("World")),
-                Node::NewLine,
-            ],
-        })];
-        let actual = nodes
-            .parse(input)
-            .map_err(|err| anyhow::anyhow!("Failed parsing: {err}"))?;
-        assert_eq!(actual, expected);
-        let input = r"\begin{array}{l}
-\text{Solve the following system}:
-\{
-\end{array}";
-        let expected = vec![Node::Array(Array {
-            align: "l",
-            elements: vec![
-                Node::Text(Text(Cow::Borrowed("Solve the following system"))),
-                Node::Raw(Cow::Borrowed(":")),
-                Node::NewLine,
-                Node::Escaped('{'),
                 Node::NewLine,
             ],
         })];

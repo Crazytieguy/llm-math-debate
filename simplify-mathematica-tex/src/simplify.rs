@@ -89,16 +89,16 @@ fn unwrap_fboxes_and_text(nodes: Vec<Node>) -> Vec<Node> {
             if elems.iter().all(|elem| matches!(elem, Node::Space(_))) {
                 return elems;
             }
-            vec![Node::Text(Text(Cow::Owned(
+            vec![Node::Text(Text(
                 elems
                     .into_iter()
-                    .map(|elem| match elem {
-                        Node::Space(s) => Cow::Borrowed(s),
-                        Node::Text(Text(s)) => s,
+                    .flat_map(|elem| match elem {
+                        Node::Space(s) => vec![Node::Space(s)],
+                        Node::Text(Text(elems)) => elems,
                         _ => unreachable!(),
                     })
-                    .collect::<String>(),
-            )))]
+                    .collect(),
+            ))]
         })
         .collect()
 }
@@ -141,8 +141,9 @@ fn fix_text_math_contexts(nodes: Vec<Node>) -> Vec<Node> {
             let mut last_math_elem = None;
             while let Some(elem) = elems.pop() {
                 match elem {
-                    Node::Text(Text(s)) => {
-                        after_math_part.insert(0, Node::Raw(s));
+                    Node::Text(Text(mut elems)) => {
+                        elems.append(&mut after_math_part);
+                        after_math_part = elems;
                     }
                     Node::Space(s) => after_math_part.insert(0, Node::Space(s)),
                     Node::NewLine => after_math_part.insert(0, Node::NewLine),
@@ -180,8 +181,8 @@ fn fix_text_math_contexts(nodes: Vec<Node>) -> Vec<Node> {
                     continue;
                 }
                 match elem {
-                    Node::Text(Text(s)) => {
-                        before_math_part.push(Node::Raw(s));
+                    Node::Text(Text(elems)) => {
+                        before_math_part.extend(elems);
                     }
                     Node::Space(s) => before_math_part.push(Node::Space(s)),
                     Node::NewLine => before_math_part.push(Node::NewLine),
@@ -249,7 +250,7 @@ fn unwrap_answer_box(flattened: &mut Vec<Node>) -> anyhow::Result<()> {
         .positions(|node| *node == Node::Ampersand)
         .nth(1)
         .ok_or_else(|| anyhow!("No second ampersand found"))?;
-    flattened.push(Node::Text(Text(Cow::Borrowed("Answer:"))));
+    flattened.push(Node::Text(Text(vec![Node::Raw(Cow::Borrowed("Answer:"))])));
     flattened.extend(answer_array.into_iter().skip(second_ampersand_position + 1));
     Ok(())
 }
@@ -262,6 +263,19 @@ fn flatten_and_number_solution_steps(parsed_tex: Vec<Node>) -> anyhow::Result<Ve
                 align: "l",
                 elements,
             }) => Some(elements),
+            Node::Math(Math { content }) => {
+                content
+                    .into_iter()
+                    .exactly_one()
+                    .ok()
+                    .and_then(|node| match node {
+                        Node::Array(Array {
+                            align: "l",
+                            elements,
+                        }) => Some(elements),
+                        _ => None,
+                    })
+            }
             _ => None,
         })
         .ok_or_else(|| anyhow!("No top level answer array found"))?;
@@ -274,7 +288,7 @@ fn flatten_and_number_solution_steps(parsed_tex: Vec<Node>) -> anyhow::Result<Ve
                 elements: children,
             }) => {
                 if arrays_found > 0 {
-                    simplified.push(Node::Text(Text(Cow::Owned(format!("{arrays_found}. ")))));
+                    simplified.push(Node::Text(Text(vec![Node::Raw(Cow::Owned(format!("{arrays_found}. ")))])));
                 }
                 simplified.extend(children);
                 arrays_found += 1;
