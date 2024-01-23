@@ -1,4 +1,5 @@
 use anyhow::anyhow;
+use pyo3::{exceptions::PyValueError, prelude::*};
 use serialize::serialize;
 use simplify::simplify;
 use winnow::Parser;
@@ -7,12 +8,28 @@ mod parse;
 mod serialize;
 mod simplify;
 
-pub fn simplify_tex(tex: &str) -> anyhow::Result<String> {
+fn simplify_tex(tex: &str) -> anyhow::Result<String> {
     let parsed = parse::nodes
         .parse(tex)
-        .map_err(|err| anyhow!("Error parsing TeX: {}", err))?;
+        .map_err(|err| anyhow!("Error parsing TeX\n{}", err))?;
     let simplified = simplify(parsed)?;
     Ok(serialize(simplified))
+}
+
+/// Formats the sum of two numbers as string.
+#[pyfunction]
+#[pyo3(name = "simplify_tex")]
+fn simplify_tex_py(py: Python<'_>, tex: &str) -> PyResult<String> {
+    py.allow_threads(|| simplify_tex(tex).map_err(|err| PyValueError::new_err(err.to_string())))
+}
+
+/// A Python module implemented in Rust. The name of this function must match
+/// the `lib.name` setting in the `Cargo.toml`, else Python will not be able to
+/// import the module.
+#[pymodule]
+fn simplify_mathematica_tex(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(simplify_tex_py, m)?)?;
+    Ok(())
 }
 
 #[cfg(test)]
