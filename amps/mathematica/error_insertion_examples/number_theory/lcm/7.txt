@@ -45,4 +45,3 @@ Answer: lcm$(-87,-40,-58)=3480$
 ```
 
 Insert an error into step 1.
-

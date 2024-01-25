@@ -31,4 +31,3 @@ Answer: $\sqrt{7}$
 ```
 
 Insert an error into step 2.
-

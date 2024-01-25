@@ -38,4 +38,3 @@ Answer: $\gcd (462,-456)=6$
 ```
 
 Insert an error into step 2.
-

@@ -23,4 +23,3 @@ Answer: $-1\text{ and }-507$ are coprime
 ```
 
 Insert an error into step 2.
-

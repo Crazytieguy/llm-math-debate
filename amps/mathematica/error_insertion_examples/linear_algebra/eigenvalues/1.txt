@@ -92,4 +92,3 @@ Answer: $\lambda =\frac{i \sqrt{47}}{2}-\frac{15}{2}\text{ or }\lambda =-\frac{i
 ```
 
 Insert an error into step 5.
-

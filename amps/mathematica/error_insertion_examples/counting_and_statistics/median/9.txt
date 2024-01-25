@@ -27,4 +27,3 @@ Answer: $\frac{7 \log (2)-1}{2}$
 ```
 
 Insert an error into step 1.
-

@@ -39,4 +39,3 @@ Answer: $\gcd (326,928,825)=1$
 ```
 
 Insert an error into step 2.
-

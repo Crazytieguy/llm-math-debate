@@ -135,4 +135,3 @@ Answer: $\, (-24,42,-18)\,$
 ```
 
 Insert an error into step 2.
-

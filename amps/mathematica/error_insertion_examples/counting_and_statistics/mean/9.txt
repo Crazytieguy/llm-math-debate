@@ -35,4 +35,3 @@ Answer: $-2$
 ```
 
 Insert an error into step 1.
-

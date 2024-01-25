@@ -43,4 +43,3 @@ Answer: $12\times 2^{4/5}$
 ```
 
 Insert an error into step 3.
-

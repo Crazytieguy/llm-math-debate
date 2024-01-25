@@ -31,4 +31,3 @@ Answer: $\phi (3981)=\left(3981 \left(1-\frac{1}{3}\right) \left(1-\frac{1}{1327
 ```
 
 Insert an error into step 2.
-

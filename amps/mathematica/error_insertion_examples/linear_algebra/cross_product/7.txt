@@ -135,4 +135,3 @@ Answer: $\, \left(\frac{74}{9},-\frac{524}{9},-\frac{95}{3}\right)\,$
 ```
 
 Insert an error into step 2.
-

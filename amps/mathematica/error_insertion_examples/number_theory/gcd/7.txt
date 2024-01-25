@@ -34,4 +34,3 @@ Answer: $\gcd (271,336)=1$
 ```
 
 Insert an error into step 3.
-

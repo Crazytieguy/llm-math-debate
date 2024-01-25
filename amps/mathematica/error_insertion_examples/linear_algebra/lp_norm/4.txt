@@ -23,4 +23,3 @@ Answer: $\left\| \, \left(-\frac{51}{10},\frac{73}{10},-\frac{19}{2},-\frac{23}{
 ```
 
 Insert an error into step 2.
-

@@ -23,4 +23,3 @@ Answer: 756 and $-141$ are not coprime
 ```
 
 Insert an error into step 2.
-

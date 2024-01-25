@@ -92,4 +92,3 @@ Answer: $\lambda =i \sqrt{38}-3\text{ or }\lambda =-i \sqrt{38}-3$
 ```
 
 Insert an error into step 8.
-

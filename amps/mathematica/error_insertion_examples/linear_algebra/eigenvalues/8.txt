@@ -92,4 +92,3 @@ Answer: $\lambda =\frac{i \sqrt{2211}}{8}-\frac{23}{8}\text{ or }\lambda =-\frac
 ```
 
 Insert an error into step 7.
-

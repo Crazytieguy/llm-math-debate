@@ -23,4 +23,3 @@ Answer: $\frac{3-\frac{8}{\pi }}{2} = \frac{3-\frac{8}{\pi }}{2}$
 ```
 
 Insert an error into step 1.
-

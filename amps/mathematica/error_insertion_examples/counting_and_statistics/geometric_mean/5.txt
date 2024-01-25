@@ -39,4 +39,3 @@ Answer: $6 \sqrt[6]{2} \sqrt[3]{3}\times 5^{2/3}$
 ```
 
 Insert an error into step 2.
-

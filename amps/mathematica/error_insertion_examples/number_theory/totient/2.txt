@@ -23,4 +23,3 @@ Answer: $\phi (3407)=3406$
 ```
 
 Insert an error into step 1.
-

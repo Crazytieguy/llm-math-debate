@@ -23,4 +23,3 @@ Answer: 284 and $725$ are coprime
 ```
 
 Insert an error into step 1.
-

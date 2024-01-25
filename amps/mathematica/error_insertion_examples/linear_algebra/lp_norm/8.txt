@@ -23,4 +23,3 @@ Answer: $\left\| \, \left(-\frac{46}{5},3,-3,-\frac{28}{5},-\frac{29}{5},-\frac{
 ```
 
 Insert an error into step 1.
-

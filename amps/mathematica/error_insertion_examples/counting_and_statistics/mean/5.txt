@@ -35,4 +35,3 @@ Answer: $\frac{5}{3}\approx 1.66667$
 ```
 
 Insert an error into step 4.
-

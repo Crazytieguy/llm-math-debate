@@ -23,4 +23,3 @@ Answer: $\left\| \, \left(\frac{19}{10},-\frac{44}{5},-\frac{89}{10},-2,\frac{31
 ```
 
 Insert an error into step 2.
-

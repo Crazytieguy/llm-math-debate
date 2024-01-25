@@ -135,4 +135,3 @@ Answer: $\, \left(\frac{4657}{100},-\frac{397}{10},\frac{3451}{50}\right)\,$
 ```
 
 Insert an error into step 3.
-

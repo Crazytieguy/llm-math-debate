@@ -31,4 +31,3 @@ Answer: $\frac{15}{4}\approx 3.75$
 ```
 
 Insert an error into step 3.
-

@@ -47,4 +47,3 @@ Answer: $8 \sqrt[6]{2} \sqrt{3} \sqrt[3]{5}$
 ```
 
 Insert an error into step 2.
-

@@ -78,4 +78,3 @@ Answer: $\lambda =-7.08242\text{ or }\lambda =2.79121\, -2.39712 i\text{ or }\la
 ```
 
 Insert an error into step 6.
-

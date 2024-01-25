@@ -35,4 +35,3 @@ Answer: lcm$(7,61)=427$
 ```
 
 Insert an error into step 2.
-

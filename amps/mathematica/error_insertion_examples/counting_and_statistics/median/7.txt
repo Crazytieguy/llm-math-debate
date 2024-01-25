@@ -27,4 +27,3 @@ Answer: $\frac{0-6}{2} = -3$
 ```
 
 Insert an error into step 1.
-

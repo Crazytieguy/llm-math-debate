@@ -27,4 +27,3 @@ Answer: $0$
 ```
 
 Insert an error into step 2.
-

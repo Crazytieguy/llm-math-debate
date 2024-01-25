@@ -19,4 +19,3 @@ Answer: $\frac{5-2 \sqrt{5}}{2}=\frac{1}{2} \left(5-2 \sqrt{5}\right)$
 ```
 
 Insert an error into step 1.
-

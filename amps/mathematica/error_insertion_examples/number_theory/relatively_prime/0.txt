@@ -23,4 +23,3 @@ Answer: 1000 and $-905$ are not coprime
 ```
 
 Insert an error into step 2.
-

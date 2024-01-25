@@ -36,4 +36,3 @@ Answer: lcm$(63,6)=126$
 ```
 
 Insert an error into step 3.
-

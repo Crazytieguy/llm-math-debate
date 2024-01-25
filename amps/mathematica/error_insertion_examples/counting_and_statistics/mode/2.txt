@@ -34,4 +34,3 @@ Answer: $\left(-8,\frac{17}{2}\right)$
 ```
 
 Insert an error into step 1.
-

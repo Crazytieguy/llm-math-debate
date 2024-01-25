@@ -31,4 +31,3 @@ Answer: $\frac{113}{7}$
 ```
 
 Insert an error into step 1.
-

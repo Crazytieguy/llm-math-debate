@@ -23,4 +23,3 @@ Answer: $\phi (4049)=4048$
 ```
 
 Insert an error into step 2.
-

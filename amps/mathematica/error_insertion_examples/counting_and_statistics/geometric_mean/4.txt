@@ -47,4 +47,3 @@ Answer: $27$
 ```
 
 Insert an error into step 8.
-

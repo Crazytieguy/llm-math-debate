@@ -23,4 +23,3 @@ Answer: $\left\| \, \left(\frac{79}{9},-\frac{40}{9},-\frac{5}{3},\frac{83}{9},\
 ```
 
 Insert an error into step 1.
-

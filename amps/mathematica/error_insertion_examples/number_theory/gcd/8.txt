@@ -34,4 +34,3 @@ Answer: $\gcd (16,417)=1$
 ```
 
 Insert an error into step 1.
-

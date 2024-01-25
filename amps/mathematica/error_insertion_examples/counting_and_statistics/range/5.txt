@@ -31,4 +31,3 @@ Answer: $\frac{52}{3}$
 ```
 
 Insert an error into step 4.
-

@@ -23,4 +23,3 @@ Answer: $\left\| \, \left(\frac{17}{4},1,-\frac{5}{4},-3,-\frac{29}{4},-\frac{31
 ```
 
 Insert an error into step 2.
-

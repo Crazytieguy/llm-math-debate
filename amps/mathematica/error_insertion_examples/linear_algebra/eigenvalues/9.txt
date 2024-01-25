@@ -84,4 +84,3 @@ Answer: $\lambda =-1\text{ or }\lambda =-9$
 ```
 
 Insert an error into step 9.
-

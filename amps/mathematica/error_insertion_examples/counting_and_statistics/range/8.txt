@@ -31,4 +31,3 @@ Answer: $\frac{75}{4}$
 ```
 
 Insert an error into step 4.
-

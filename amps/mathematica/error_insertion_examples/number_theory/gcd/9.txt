@@ -43,4 +43,3 @@ Answer: $\gcd (5,272,-137)=1$
 ```
 
 Insert an error into step 2.
-

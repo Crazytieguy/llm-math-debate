@@ -23,4 +23,3 @@ Answer: $\frac{9}{e}$
 ```
 
 Insert an error into step 1.
-

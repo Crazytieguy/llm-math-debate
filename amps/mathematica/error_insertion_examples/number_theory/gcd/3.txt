@@ -34,4 +34,3 @@ Answer: $\gcd (401,153)=1$
 ```
 
 Insert an error into step 2.
-

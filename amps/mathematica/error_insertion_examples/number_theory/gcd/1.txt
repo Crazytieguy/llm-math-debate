@@ -38,4 +38,3 @@ Answer: $\gcd (45,-216)=9$
 ```
 
 Insert an error into step 1.
-

@@ -31,4 +31,3 @@ Answer: $\frac{1}{8} (-5 e)$
 ```
 
 Insert an error into step 2.
-

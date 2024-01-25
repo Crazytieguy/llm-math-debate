@@ -34,4 +34,3 @@ Answer: $-\frac{11}{2}$
 ```
 
 Insert an error into step 2.
-

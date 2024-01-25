@@ -23,4 +23,3 @@ Answer: $\left\| \, \left(-\frac{41}{9},\frac{16}{3},-\frac{26}{9},-\frac{44}{9}
 ```
 
 Insert an error into step 2.
-

@@ -35,4 +35,3 @@ Answer: $10\times 3^{2/3}$
 ```
 
 Insert an error into step 5.
-

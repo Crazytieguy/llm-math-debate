@@ -31,4 +31,3 @@ Answer: $\frac{897}{64}$
 ```
 
 Insert an error into step 2.
-

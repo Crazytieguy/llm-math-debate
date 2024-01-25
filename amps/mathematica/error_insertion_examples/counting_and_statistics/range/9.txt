@@ -31,4 +31,3 @@ Answer: $\frac{97}{10}$
 ```
 
 Insert an error into step 3.
-

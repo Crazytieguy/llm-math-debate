@@ -34,4 +34,3 @@ Answer: $\left(-\frac{65}{8},-\frac{17}{4}\right)$
 ```
 
 Insert an error into step 2.
-

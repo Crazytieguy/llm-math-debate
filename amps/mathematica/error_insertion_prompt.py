@@ -6,7 +6,7 @@ import typer
 
 def main(domain: str, problem_class: str):
     prompt = sample_error_prompt(domain, problem_class)
-    print(prompt)
+    print(prompt, end="")
 
 
 def sample_error_prompt(domain: str, problem_class: str):

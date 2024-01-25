@@ -31,4 +31,3 @@ Answer: $\phi (2168)=\left(2168 \left(1-\frac{1}{2}\right) \left(1-\frac{1}{271}
 ```
 
 Insert an error into step 1.
-

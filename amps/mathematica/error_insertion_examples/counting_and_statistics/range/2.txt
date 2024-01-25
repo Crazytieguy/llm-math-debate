@@ -31,4 +31,3 @@ Answer: $\frac{339}{32}$
 ```
 
 Insert an error into step 1.
-

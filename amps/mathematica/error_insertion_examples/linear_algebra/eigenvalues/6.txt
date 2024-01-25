@@ -92,4 +92,3 @@ Answer: $\lambda =\frac{17}{4}+\frac{i \sqrt{311}}{4}\text{ or }\lambda =\frac{1
 ```
 
 Insert an error into step 2.
-

@@ -23,4 +23,3 @@ Answer: $-675\text{ and }-846$ are not coprime
 ```
 
 Insert an error into step 1.
-

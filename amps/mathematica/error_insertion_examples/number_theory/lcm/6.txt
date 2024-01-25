@@ -40,4 +40,3 @@ Answer: lcm$(54,-44)=1188$
 ```
 
 Insert an error into step 1.
-

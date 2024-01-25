@@ -27,4 +27,3 @@ Answer: $\frac{-8 \log (2)-6}{2}$
 ```
 
 Insert an error into step 3.
-

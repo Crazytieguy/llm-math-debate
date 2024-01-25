@@ -35,4 +35,3 @@ Answer: $-\frac{3 e}{2}$
 ```
 
 Insert an error into step 2.
-

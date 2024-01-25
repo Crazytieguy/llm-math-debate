@@ -41,4 +41,3 @@ Answer: lcm$(-87,66)=1914$
 ```
 
 Insert an error into step 4.
-

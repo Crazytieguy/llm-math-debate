@@ -35,4 +35,3 @@ Answer: $2 \sqrt[6]{5}\times 7^{5/6}$
 ```
 
 Insert an error into step 4.
-

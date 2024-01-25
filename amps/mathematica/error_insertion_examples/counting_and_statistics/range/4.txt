@@ -31,4 +31,3 @@ Answer: $\frac{338}{21}$
 ```
 
 Insert an error into step 2.
-

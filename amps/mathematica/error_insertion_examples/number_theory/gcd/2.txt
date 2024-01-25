@@ -38,4 +38,3 @@ Answer: $\gcd (475,-944)=1$
 ```
 
 Insert an error into step 1.
-
