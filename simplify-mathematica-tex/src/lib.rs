@@ -62,7 +62,7 @@ $\sqrt{61}+\sqrt{125}$
 
 \hrule
 
-1. $\sqrt{125}\text{ = }\sqrt{5^3}\text{ = }5 \sqrt{5}$:
+1. $\sqrt{125} = \sqrt{5^3} = 5 \sqrt{5}$:
 
 Answer: $\sqrt{61}+5 \sqrt{5}$";
         let actual = simplify_tex(input).unwrap();

@@ -69,14 +69,15 @@ fn unwrap_fboxes_and_text(nodes: Vec<Node>) -> Vec<Node> {
             Node::Brackets(Brackets(content)) => {
                 vec![Node::Brackets(Brackets(unwrap_fboxes_and_text(content)))]
             }
-            // Unfortunately this breaks some edge cases, like \underline{\text{  }}
-            // Node::Text(Text(s)) => {
-            //     if !s.contains(char::is_alphabetic) {
-            //         vec![Node::Raw(s)]
-            //     } else {
-            //         vec![Node::Text(Text(s))]
-            //     }
-            // }
+            Node::Text(Text(elems))
+                if elems.contains(&Node::Raw(Cow::Borrowed("=")))
+                    && elems.iter().all(|el| {
+                        [Node::Space(" "), Node::Raw(Cow::Borrowed("="))].contains(el)
+                    }) =>
+            {
+                elems
+            }
+            Node::Text(Text(elems)) => vec![Node::Text(Text(unwrap_fboxes_and_text(elems)))],
             _ => vec![elem],
         })
         .group_by(|elem| matches!(elem, Node::Space(_) | Node::Text(_)))
@@ -288,7 +289,9 @@ fn flatten_and_number_solution_steps(parsed_tex: Vec<Node>) -> anyhow::Result<Ve
                 elements: children,
             }) => {
                 if arrays_found > 0 {
-                    simplified.push(Node::Text(Text(vec![Node::Raw(Cow::Owned(format!("{arrays_found}. ")))])));
+                    simplified.push(Node::Text(Text(vec![Node::Raw(Cow::Owned(format!(
+                        "{arrays_found}. "
+                    )))])));
                 }
                 simplified.extend(children);
                 arrays_found += 1;

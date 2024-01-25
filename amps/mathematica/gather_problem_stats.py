@@ -19,7 +19,7 @@ def main():
     \\\\
     """
 
-    for domain in Path("amps/mathematica").iterdir():
+    for domain in Path("amps/mathematica/original").iterdir():
         if not domain.is_dir():
             continue
         for problem_class in domain.iterdir():
