@@ -1,0 +1,23 @@
+Explanation: In the final answer, the coefficient $2$ of the term $2 \sqrt{26}$ is dropped.
+
+Note: Make sure to only introduce the error in the final answer.
+
+```
+
+1. $\sqrt{20} = \sqrt{2^2\times 5} = 2 \sqrt{5}$:
+
+$\sqrt{187}-2 \sqrt{5}+\sqrt{104}+\sqrt{38}$
+
+2. $\sqrt{104} = \sqrt{2^3\times 13} = 2 \sqrt{2} \sqrt{13}$:
+
+$\sqrt{187}-2 \sqrt{5}+2 \sqrt{2} \sqrt{13}+\sqrt{38}$
+
+3. $\sqrt{2} \sqrt{13}=\sqrt{2\times 13}$:
+
+$\sqrt{187}-2 \sqrt{5}+2 \sqrt{2\times 13}+\sqrt{38}$
+
+4. $2\times 13 = 26:$
+
+Answer: $\sqrt{187}-2 \sqrt{5}+\sqrt{26}+\sqrt{38}$
+
+```

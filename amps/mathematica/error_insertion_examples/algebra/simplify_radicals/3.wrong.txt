@@ -1,0 +1,11 @@
+Explanation: $\sqrt{42}$ is not $\sqrt{3^2\times 7}$ but $\sqrt{2\times 3\times 7}$, which can't be simplified.
+
+Note: Make sure to carry the error onto subsequent steps, replacing $\sqrt{42}$ with $3 \sqrt{7}$.
+
+```
+
+1. $\sqrt{42} = \sqrt{3^2\times 7} = 3 \sqrt{7}:$
+
+Answer: $\sqrt{193}-\sqrt{36}+3 \sqrt{7}$
+
+```

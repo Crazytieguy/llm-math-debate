@@ -1,0 +1,29 @@
+Given the following problem:
+
+```
+
+Simplify the following:
+
+$\sqrt{80}+\sqrt{7}+\sqrt{44}$
+
+```
+
+And correct solution:
+
+```
+
+1. $\sqrt{80} = \sqrt{2^4\times 5} = 2^2 \sqrt{5}$:
+
+$2^2 \sqrt{5}+\sqrt{7}+\sqrt{44}$
+
+2. $2^2=4:$
+
+$4 \sqrt{5}+\sqrt{7}+\sqrt{44}$
+
+3. $\sqrt{44} = \sqrt{2^2\times 11} = 2 \sqrt{11}$:
+
+Answer: $4 \sqrt{5}+\sqrt{7}+2 \sqrt{11}$
+
+```
+
+Insert an error into step 3.

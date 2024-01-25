@@ -1,0 +1,33 @@
+Given the following problem:
+
+```
+
+Simplify the following:
+
+$\sqrt{135}-\left(\sqrt{186}-70\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. $-\left(\sqrt{186}-70\right)=70-\sqrt{186}$:
+
+$70-\sqrt{186}+\sqrt{135}$
+
+2. $\sqrt{135} = \sqrt{3^3\times 5} = 3 \sqrt{3} \sqrt{5}$:
+
+$70-\sqrt{186}+3 \sqrt{3} \sqrt{5}$
+
+3. $\sqrt{3} \sqrt{5}=\sqrt{3\times 5}$:
+
+$70-\sqrt{186}+3 \sqrt{3\times 5}$
+
+4. $3\times 5 = 15:$
+
+Answer: $70-\sqrt{186}+3 \sqrt{15}$
+
+```
+
+Insert an error into step 1.

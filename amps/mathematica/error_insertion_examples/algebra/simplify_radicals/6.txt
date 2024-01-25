@@ -1,0 +1,37 @@
+Given the following problem:
+
+```
+Simplify the following:
+
+$\left(\sqrt{55}+\sqrt{75}\right) \sqrt{55}$
+```
+
+And correct solution:
+
+```
+1. $\sqrt{75} = \sqrt{3\times 5^2} = 5 \sqrt{3}$:
+
+$\left(\sqrt{55}+5 \sqrt{3}\right) \sqrt{55}$
+
+2. $\sqrt{55} \left(5 \sqrt{3}+\sqrt{55}\right)=\sqrt{55}\times 5 \sqrt{3}+\sqrt{55} \sqrt{55}$:
+
+$\sqrt{55}\times 5 \sqrt{3}+\sqrt{55} \sqrt{55}$
+
+3. $\sqrt{55} \sqrt{3}=\sqrt{55\times 3}$:
+
+$\sqrt{55\times 3} 5+\sqrt{55} \sqrt{55}$
+
+4. $55\times 3 = 165:$
+
+$\sqrt{165}\times 5+\sqrt{55} \sqrt{55}$
+
+5. $\sqrt{55} \sqrt{55}=55:$
+
+$\sqrt{165}\times 5+55$
+
+6. Factor $5\text{ out of }55+5 \sqrt{165}\text{ giving }5 \left(\sqrt{165}+11\right):$
+
+Answer: $5 \left(\sqrt{165}+11\right)$
+```
+
+Insert an error into step 3.

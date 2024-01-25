@@ -1,0 +1,19 @@
+Explanation: $\sqrt{4}$ can be simplified further to $2$.
+
+Note: Make sure to carry the error onto the final answer, replacing $2$ with $\sqrt{4}$.
+
+```
+
+1. $\sqrt{80} = \sqrt{2^4\times 5} = 2^2 \sqrt{5}$:
+
+$2^2 \sqrt{5}+\sqrt{7}+\sqrt{44}$
+
+2. $2^2=4:$
+
+$4 \sqrt{5}+\sqrt{7}+\sqrt{44}$
+
+3. $\sqrt{44} = \sqrt{4\times 11} = \sqrt{4} \sqrt{11}$:
+
+Answer: $4 \sqrt{5}+\sqrt{7}+\sqrt{4} \sqrt{11}$
+
+```

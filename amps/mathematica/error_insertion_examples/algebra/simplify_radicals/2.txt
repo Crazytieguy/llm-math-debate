@@ -1,0 +1,33 @@
+Given the following problem:
+
+```
+
+Simplify the following:
+
+$\sqrt{187}-\sqrt{20}+\sqrt{104}+\sqrt{38}$
+
+```
+
+And correct solution:
+
+```
+
+1. $\sqrt{20} = \sqrt{2^2\times 5} = 2 \sqrt{5}$:
+
+$\sqrt{187}-2 \sqrt{5}+\sqrt{104}+\sqrt{38}$
+
+2. $\sqrt{104} = \sqrt{2^3\times 13} = 2 \sqrt{2} \sqrt{13}$:
+
+$\sqrt{187}-2 \sqrt{5}+2 \sqrt{2} \sqrt{13}+\sqrt{38}$
+
+3. $\sqrt{2} \sqrt{13}=\sqrt{2\times 13}$:
+
+$\sqrt{187}-2 \sqrt{5}+2 \sqrt{2\times 13}+\sqrt{38}$
+
+4. $2\times 13 = 26:$
+
+Answer: $\sqrt{187}-2 \sqrt{5}+2 \sqrt{26}+\sqrt{38}$
+
+```
+
+Insert an error into step 4.

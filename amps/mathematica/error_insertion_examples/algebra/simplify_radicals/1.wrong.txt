@@ -1,0 +1,23 @@
+Explanation: $-\left(\sqrt{186}-70\right)$ is $70-\sqrt{186}$, not $-\sqrt{186}-70$.
+
+Note: Make sure to carry the error onto subsequent steps, replacing $70-\sqrt{186}$ with $-\sqrt{186}-70$.
+
+```
+
+1. $-\left(\sqrt{186}-70\right)=-\sqrt{186}-70$:
+
+$-\sqrt{186}-70+\sqrt{135}$
+
+2. $\sqrt{135} = \sqrt{3^3\times 5} = 3 \sqrt{3} \sqrt{5}$:
+
+$-\sqrt{186}-70+3 \sqrt{3} \sqrt{5}$
+
+3. $\sqrt{3} \sqrt{5}=\sqrt{3\times 5}$:
+
+$-\sqrt{186}-70+3 \sqrt{3\times 5}$
+
+4. $3\times 5 = 15:$
+
+Answer: $-\sqrt{186}-70+3 \sqrt{15}$
+
+```

@@ -1,0 +1,15 @@
+Explanation: $\sqrt[4]{2^2}$ is $\sqrt{2}$, not $2$.
+
+Note: Make sure to carry the error onto the answer.
+
+```
+
+1. Multiply exponents. $\sqrt{\sqrt{164}}=\sqrt[4]{164}$:
+
+$\sqrt[4]{164}+\sqrt{129}$
+
+2. $\sqrt[4]{164} = \sqrt[4]{2^2\times 41} = 2 \sqrt[4]{41}$:
+
+Answer: $2 \sqrt[4]{41}+\sqrt{129}$
+
+```

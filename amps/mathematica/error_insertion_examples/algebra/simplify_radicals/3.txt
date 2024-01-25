@@ -1,0 +1,21 @@
+Given the following problem:
+
+```
+
+Simplify the following:
+
+$\sqrt{193}-\sqrt{36}+\sqrt{42}$
+
+```
+
+And correct solution:
+
+```
+
+1. $\sqrt{36} = \sqrt{6^2} = 6:$
+
+Answer: $\sqrt{193}-6+\sqrt{42}$
+
+```
+
+Insert an error into step 1.
