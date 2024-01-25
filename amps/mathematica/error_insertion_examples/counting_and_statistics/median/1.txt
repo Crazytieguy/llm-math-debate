@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the median of the list:
+
+$\left(-\sqrt{5},\frac{13}{\sqrt{2}},\frac{9}{e},-\frac{11}{3},6,-2 \sqrt{5},5,2 \pi ,-2 \sqrt{5},5,-\frac{60}{7},-2 \log (2),\frac{22}{\pi }\right) = \left(-\sqrt{5},13\ 2^{-1/2},\frac{9}{e},-\frac{11}{3},6,-2 \sqrt{5},5,2 \pi ,-2 \sqrt{5},5,-\frac{60}{7},-2 \log (2),\frac{22}{\pi }\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-\frac{60}{7},-2 \sqrt{5},-2 \sqrt{5},-\frac{11}{3},-\sqrt{5},-2 \log (2),\frac{9}{e},5,5,6,2 \pi ,\frac{22}{\pi },13\ 2^{-1/2}\right)$
+
+2. The median of the list $\left(-\frac{60}{7},-2 \sqrt{5},-2 \sqrt{5},-\frac{11}{3},-\sqrt{5},-2 \log (2),\frac{9}{e},5,5,6,2 \pi ,\frac{22}{\pi },13\ 2^{-1/2}\right)$ is the element in the middle, which is:
+
+Answer: $\frac{9}{e}$
+
+```
+
+Insert an error into step 1.
+

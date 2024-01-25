@@ -1,0 +1,87 @@
+Given the following problem:
+
+```
+
+Find all the eigenvalues of the matrix $M:$
+
+$M=\left(
+\begin{array}{cc}
+-1 & 0 \\
+ 4 & -9 \\
+\end{array}
+\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. Find $\lambda \in \mathbb{C}\text{ such that }M v=\lambda  v\text{ for some nonzero vector }v:$
+
+$M v=\lambda  v$
+
+2. Rewrite the equation $M v=\lambda  v\text{ as }(M-\mathbb{I} \lambda ) v=0:$
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+3. Find all $\lambda\text{  such that }| M-\mathbb{I} \lambda | =0:$
+
+$| M-\mathbb{I} \lambda | =0$
+
+4. $\begin{array}{lll}
+M-\mathbb{I} \lambda  & = & \left(
+\begin{array}{cc}
+-1 & 0 \\
+ 4 & -9 \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right) \lambda  \\
+\text{  }& = & \left(
+\begin{array}{cc}
+-\lambda -1 & 0 \\
+ 4 & -\lambda -9 \\
+\end{array}
+\right) \\
+\end{array}$
+
+$\left| 
+\begin{array}{cc}
+-\lambda -1 & 0 \\
+ 4 & -\lambda -9 \\
+\end{array}
+\right| =0$
+
+5. $\left| 
+\begin{array}{cc}
+-\lambda -1 & 0 \\
+ 4 & -\lambda -9 \\
+\end{array}
+\right| =\lambda ^2+10 \lambda +9:$
+
+$\lambda ^2+10 \lambda +9=0$
+
+6. The left hand side factors into a product with two terms:
+
+$(\lambda +1) (\lambda +9)=0$
+
+7. Split into two equations:
+
+$\lambda +1=0\text{ or }\lambda +9=0$
+
+8. Subtract $1$ from both sides:
+
+$\lambda =-1\text{ or }\lambda +9=0$
+
+9. Subtract $9$ from both sides:
+
+Answer: $\lambda =-1\text{ or }\lambda =-9$
+
+```
+
+Insert an error into step 9.
+

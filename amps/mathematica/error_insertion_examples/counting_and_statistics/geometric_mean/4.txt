@@ -1,0 +1,50 @@
+Given the following problem:
+
+```
+
+Find the geometric mean of the list:
+
+$(9,81)$
+
+```
+
+And correct solution:
+
+```
+
+1. The geometric mean of a list of numbers is given by:
+
+$(\text{product of elements})^{\frac{1}{(\text{number of elements})}}$
+
+2. $(\text{product of elements}) = 9\text{ $\times $ }81:$
+
+$\sqrt[(\text{number of elements})]{(9\text{ $\times $ }81)}$
+
+3. Counting, we see that the list has $2$ elements:
+
+$(9\text{ $\times $ }81)^{\frac{1}{2}} = \sqrt{9\text{ $\times $ }81}$
+
+4. $9\text{ $\times $ }81=729:$
+
+$\sqrt{729}$
+
+5. $\sqrt{729} = \sqrt{3^6} = 3^3:$
+
+$3^3$
+
+6. $3^3=3\times 3^2:$
+
+$3\times 3^2$
+
+7. $3^2=9:$
+
+$3\times 9$
+
+8. $3\times 9 = 27:$
+
+Answer: $27$
+
+```
+
+Insert an error into step 8.
+

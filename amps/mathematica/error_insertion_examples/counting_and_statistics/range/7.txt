@@ -1,0 +1,34 @@
+Given the following problem:
+
+```
+
+Find the range of the list:
+
+$\left(\frac{4}{7},-8,\frac{67}{16},6,\frac{385}{64},5,-4,-6,-\frac{24}{5},-3,-\frac{38}{5},5,-\frac{87}{16}\right) = \left(\frac{4}{7},-8,\frac{67}{16},6,\frac{385}{64},5,-4,-6,-\frac{24}{5},-3,-\frac{38}{5},5,-\frac{87}{16}\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The range of a list is given by:
+
+$(\text{largest element})-(\text{smallest element})$
+
+2. $\left(\frac{4}{7},-8,\frac{67}{16},6,\frac{385}{64},5,-4,-6,-\frac{24}{5},-3,-\frac{38}{5},5,-\frac{87}{16}\right)\text{  We see that the largest element is }\frac{385}{64}$:
+
+$\frac{385}{64}-(\text{smallest element})$
+
+3. $\left(\frac{4}{7},-8,\frac{67}{16},6,\frac{385}{64},5,-4,-6,-\frac{24}{5},-3,-\frac{38}{5},5,-\frac{87}{16}\right)\text{  We see that the smallest element is }-8:$
+
+$-(-8)+\frac{385}{64}$
+
+4. $-(-8)+\frac{385}{64}=\frac{897}{64}$:
+
+Answer: $\frac{897}{64}$
+
+```
+
+Insert an error into step 2.
+

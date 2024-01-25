@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the norm of the vector $\, \left(\frac{17}{4},1,-\frac{5}{4},-3,-\frac{29}{4},-\frac{31}{4},\frac{19}{4},-7\right)\,$ :
+
+$\left\| \, \left(\frac{17}{4},1,-\frac{5}{4},-3,-\frac{29}{4},-\frac{31}{4},\frac{19}{4},-7\right)\, \right\|$
+
+```
+
+And correct solution:
+
+```
+
+1. The formula for the 8-dimensional Euclidean norm comes from the 8-dimensional Pythagorean theorem:
+
+$\left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7,v_8\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2+v_8^2}$
+
+2. Substitute $\, \left(\frac{17}{4},1,-\frac{5}{4},-3,-\frac{29}{4},-\frac{31}{4},\frac{19}{4},-7\right)\,$ into the formula:
+
+Answer: $\left\| \, \left(\frac{17}{4},1,-\frac{5}{4},-3,-\frac{29}{4},-\frac{31}{4},\frac{19}{4},-7\right)\, \right\| =\sqrt{\left(\frac{17}{4}\right)^2+1^2+\left(\frac{-5}{4}\right)^2+(-3)^2+\left(\frac{-29}{4}\right)^2+\left(\frac{-31}{4}\right)^2+\left(\frac{19}{4}\right)^2+(-7)^2}=\frac{\sqrt{3421}}{4}$
+
+```
+
+Insert an error into step 2.
+

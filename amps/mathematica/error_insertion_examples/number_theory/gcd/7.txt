@@ -1,0 +1,37 @@
+Given the following problem:
+
+```
+
+Find the greatest common divisor:
+
+$\gcd (271,336)$
+
+```
+
+And correct solution:
+
+```
+
+1. $\begin{array}{l}
+\text{Find the divisors of each integer and select the largest element they have in common}: \\
+\text{ The divisors of 271 are}: \\
+\end{array}$
+
+$1,271$
+
+2. The divisors of 336 are:
+
+$1,2,3,4,6,7,8,12,14,16,21,24,28,42,48,56,84,112,168,336$
+
+3. $\begin{array}{l}
+\text{The largest number common to both divisor lists is }1: \\
+\text{ divisors of 271: }1,271 \\
+\text{ divisors of 336: }1,2,3,4,6,7,8,12,14,16,21,24,28,42,48,56,84,112,168,336 \\
+\end{array}$
+
+Answer: $\gcd (271,336)=1$
+
+```
+
+Insert an error into step 3.
+

@@ -1,0 +1,46 @@
+Given the following problem:
+
+```
+
+Find the greatest common divisor:
+
+$\gcd (-244,-467,-270)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any divisor of a negative number is also a divisor of its absolute value:
+
+$\gcd (-244,-467,-270)=\gcd (244,467,270)$
+
+2. $\begin{array}{l}
+\text{Find the divisors of each integer and select the largest element they have in common}: \\
+\text{ The divisors of 244 are}: \\
+\end{array}$
+
+$1,2,4,61,122,244$
+
+3. The divisors of 467 are:
+
+$1,467$
+
+4. The divisors of 270 are:
+
+$1,2,3,5,6,9,10,15,18,27,30,45,54,90,135,270$
+
+5. $\begin{array}{l}
+\text{The largest number common to all divisor lists is }1: \\
+\text{ divisors of 244: }1,2,4,61,122,244 \\
+\text{ divisors of 467: }1,467 \\
+\text{ divisors of 270: }1,2,3,5,6,9,10,15,18,27,30,45,54,90,135,270 \\
+\end{array}$
+
+Answer: $\gcd (-244,-467,-270)=1$
+
+```
+
+Insert an error into step 1.
+

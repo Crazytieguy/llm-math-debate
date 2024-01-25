@@ -1,0 +1,95 @@
+Given the following problem:
+
+```
+
+Find all the eigenvalues of the matrix $M:$
+
+$M=\left(
+\begin{array}{cc}
+-1 & -7 \\
+ 6 & -5 \\
+\end{array}
+\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. Find $\lambda \in \mathbb{C}\text{ such that }M v=\lambda  v\text{ for some nonzero vector }v:$
+
+$M v=\lambda  v$
+
+2. Rewrite the equation $M v=\lambda  v\text{ as }(M-\mathbb{I} \lambda ) v=0:$
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+3. Find all $\lambda\text{  such that }| M-\mathbb{I} \lambda | =0:$
+
+$| M-\mathbb{I} \lambda | =0$
+
+4. $\begin{array}{lll}
+M-\mathbb{I} \lambda  & = & \left(
+\begin{array}{cc}
+-1 & -7 \\
+ 6 & -5 \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right) \lambda  \\
+\text{  }& = & \left(
+\begin{array}{cc}
+-\lambda -1 & -7 \\
+ 6 & -\lambda -5 \\
+\end{array}
+\right) \\
+\end{array}$
+
+$\left| 
+\begin{array}{cc}
+-\lambda -1 & -7 \\
+ 6 & -\lambda -5 \\
+\end{array}
+\right| =0$
+
+5. $\left| 
+\begin{array}{cc}
+-\lambda -1 & -7 \\
+ 6 & -\lambda -5 \\
+\end{array}
+\right| =\lambda ^2+6 \lambda +47:$
+
+$\lambda ^2+6 \lambda +47=0$
+
+6. Subtract 47 from both sides:
+
+$\lambda ^2+6 \lambda =-47$
+
+7. Add $9$ to both sides:
+
+$\lambda ^2+6 \lambda +9=-38$
+
+8. Write the left hand side as a square:
+
+$(\lambda +3)^2=-38$
+
+9. Take the square root of both sides:
+
+$\lambda +3=i \sqrt{38}\text{ or }\lambda +3=-i \sqrt{38}$
+
+10. Subtract $3$ from both sides:
+
+$\lambda =i \sqrt{38}-3\text{ or }\lambda +3=-i \sqrt{38}$
+
+11. Subtract $3$ from both sides:
+
+Answer: $\lambda =i \sqrt{38}-3\text{ or }\lambda =-i \sqrt{38}-3$
+
+```
+
+Insert an error into step 8.
+

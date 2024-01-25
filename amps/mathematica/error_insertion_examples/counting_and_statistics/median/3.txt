@@ -1,0 +1,30 @@
+Given the following problem:
+
+```
+
+Find the median of the list:
+
+$(-9,-8,-6,3,-8 \log (2),0)$
+
+```
+
+And correct solution:
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$(-9,-8,-6,-8 \log (2),0,3)$
+
+2. The two elements in the middle of the list $(-9,-8,-6,-8 \log (2),0,3)\text{ are }-6\text{ and }-8 \log (2):$
+
+$(-9,-8,-6,-8 \log (2),0,3)$
+
+3. The median is the average of the two middle elements, $-6\text{ and }-8 \log (2).$ This average is:
+
+Answer: $\frac{-8 \log (2)-6}{2}$
+
+```
+
+Insert an error into step 3.
+

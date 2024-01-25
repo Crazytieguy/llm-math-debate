@@ -1,0 +1,33 @@
+Given the following problem:
+
+```
+
+Find the mode (commonest element) of the list:
+
+$(-5,-7,7,-7,3,-5,-7,-5,-7,7,-7,-6,7,-7,7,-5,3,-7,3,-5,3,-5)$
+
+```
+
+And correct solution:
+
+```
+
+1. The sorted list is:
+
+$(-7,-7,-7,-7,-7,-7,-7,-6,-5,-5,-5,-5,-5,-5,3,3,3,3,7,7,7,7)$
+
+2. The tally of each element is:
+
+$\begin{array}{cccccc}
+\text{element }& -7 & -6 & -5 & 3 & 7 \\
+\text{ tally }& 7 & 1 & 6 & 4 & 4 \\
+\end{array}$
+
+3. The element $-7\text{ appears }7$ times. Thus the mode of the list is:
+
+Answer: $-7$
+
+```
+
+Insert an error into step 1.
+

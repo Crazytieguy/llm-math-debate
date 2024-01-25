@@ -1,0 +1,95 @@
+Given the following problem:
+
+```
+
+Find all the eigenvalues of the matrix $M:$
+
+$M=\left(
+\begin{array}{cc}
+-\frac{9}{2} & \frac{17}{4} \\
+ -\frac{35}{4} & -\frac{5}{4} \\
+\end{array}
+\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. Find $\lambda \in \mathbb{C}\text{ such that }M v=\lambda  v\text{ for some nonzero vector }v:$
+
+$M v=\lambda  v$
+
+2. Rewrite the equation $M v=\lambda  v\text{ as }(M-\mathbb{I} \lambda ) v=0:$
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+3. Find all $\lambda\text{  such that }| M-\mathbb{I} \lambda | =0:$
+
+$| M-\mathbb{I} \lambda | =0$
+
+4. $\begin{array}{lll}
+M-\mathbb{I} \lambda  & = & \left(
+\begin{array}{cc}
+-\frac{9}{2} & \frac{17}{4} \\
+ -\frac{35}{4} & -\frac{5}{4} \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right) \lambda  \\
+\text{  }& = & \left(
+\begin{array}{cc}
+-\lambda -\frac{9}{2} & \frac{17}{4} \\
+ -\frac{35}{4} & -\lambda -\frac{5}{4} \\
+\end{array}
+\right) \\
+\end{array}$
+
+$\left| 
+\begin{array}{cc}
+-\lambda -\frac{9}{2} & \frac{17}{4} \\
+ -\frac{35}{4} & -\lambda -\frac{5}{4} \\
+\end{array}
+\right| =0$
+
+5. $\left| 
+\begin{array}{cc}
+-\lambda -\frac{9}{2} & \frac{17}{4} \\
+ -\frac{35}{4} & -\lambda -\frac{5}{4} \\
+\end{array}
+\right| =\lambda ^2+\frac{23 \lambda }{4}+\frac{685}{16}$:
+
+$\lambda ^2+\frac{23 \lambda }{4}+\frac{685}{16}=0$
+
+6. Subtract $\frac{685}{16}$ from both sides:
+
+$\lambda ^2+\frac{23 \lambda }{4}=-\frac{685}{16}$
+
+7. Add $\frac{529}{64}$ to both sides:
+
+$\lambda ^2+\frac{23 \lambda }{4}+\frac{529}{64}=-\frac{2211}{64}$
+
+8. Write the left hand side as a square:
+
+$\left(\lambda +\frac{23}{8}\right)^2=-\frac{2211}{64}$
+
+9. Take the square root of both sides:
+
+$\lambda +\frac{23}{8}=\frac{i \sqrt{2211}}{8}\text{ or }\lambda +\frac{23}{8}=-\frac{i \sqrt{2211}}{8}$
+
+10. Subtract $\frac{23}{8}$ from both sides:
+
+$\lambda =\frac{i \sqrt{2211}}{8}-\frac{23}{8}\text{ or }\lambda +\frac{23}{8}=-\frac{i \sqrt{2211}}{8}$
+
+11. Subtract $\frac{23}{8}$ from both sides:
+
+Answer: $\lambda =\frac{i \sqrt{2211}}{8}-\frac{23}{8}\text{ or }\lambda =-\frac{i \sqrt{2211}}{8}-\frac{23}{8}$
+
+```
+
+Insert an error into step 7.
+

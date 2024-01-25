@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the median of the list:
+
+$\left(3,9,8,\frac{7}{5},\frac{9}{\sqrt{\pi }},-\frac{16}{7},-3 \sqrt{2},4 \sqrt{5},8,-6,-10\right) = \left(3,9,8,\frac{7}{5},9 \pi ^{-1/2},-\frac{16}{7},-3 \sqrt{2},4 \sqrt{5},8,-6,-10\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-10,-6,-3 \sqrt{2},-\frac{16}{7},\frac{7}{5},3,9 \pi ^{-1/2},8,8,4 \sqrt{5},9\right)$
+
+2. The median of the list $\left(-10,-6,-3 \sqrt{2},-\frac{16}{7},\frac{7}{5},3,9 \pi ^{-1/2},8,8,4 \sqrt{5},9\right)$ is the element in the middle, which is:
+
+Answer: $3$
+
+```
+
+Insert an error into step 1.
+

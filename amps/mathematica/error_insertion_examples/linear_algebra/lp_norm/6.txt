@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the norm of the vector $\, \left(\frac{14}{5},-\frac{29}{5},-\frac{13}{10},-\frac{67}{10},6,\frac{27}{10},2\right)\,$ :
+
+$\left\| \, \left(\frac{14}{5},-\frac{29}{5},-\frac{13}{10},-\frac{67}{10},6,\frac{27}{10},2\right)\, \right\|$
+
+```
+
+And correct solution:
+
+```
+
+1. The formula for the 7-dimensional Euclidean norm comes from the 7-dimensional Pythagorean theorem:
+
+$\left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2}$
+
+2. Substitute $\, \left(\frac{14}{5},-\frac{29}{5},-\frac{13}{10},-\frac{67}{10},6,\frac{27}{10},2\right)\,$ into the formula:
+
+Answer: $\left\| \, \left(\frac{14}{5},-\frac{29}{5},-\frac{13}{10},-\frac{67}{10},6,\frac{27}{10},2\right)\, \right\| =\sqrt{\left(\frac{14}{5}\right)^2+\left(\frac{-29}{5}\right)^2+\left(\frac{-13}{10}\right)^2+\left(\frac{-67}{10}\right)^2+6^2+\left(\frac{27}{10}\right)^2+2^2}=\frac{\sqrt{\frac{2707}{5}}}{2}$
+
+```
+
+Insert an error into step 2.
+

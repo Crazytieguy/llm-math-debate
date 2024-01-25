@@ -1,0 +1,38 @@
+Given the following problem:
+
+```
+
+Find the mean of the list:
+
+$(-1,0,-2,3,-10,-2)$
+
+```
+
+And correct solution:
+
+```
+
+1. The mean of a list of numbers is given by:
+
+$\frac{(\text{sum of elements})}{(\text{number of elements})}$
+
+2. $(\text{sum of elements}) = -1+0-2+3-10-2:$
+
+$\frac{-1+0-2+3-10-2}{(\text{number of elements})}$
+
+3. Counting, we see that the list has $6$ elements:
+
+$\frac{-1+0-2+3-10-2}{6}$
+
+4. $-1+0-2+3-10-2 = -12:$
+
+$\frac{-12}{6}$
+
+5. $\frac{-12}{6}=-2:$
+
+Answer: $-2$
+
+```
+
+Insert an error into step 1.
+

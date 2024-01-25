@@ -1,0 +1,30 @@
+Given the following problem:
+
+```
+
+Find the median of the list:
+
+$\left(7 \log (2),8,-2 \sqrt{3},-1\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-2 \sqrt{3},-1,7 \log (2),8\right)$
+
+2. The two elements in the middle of the list $\left(-2 \sqrt{3},-1,7 \log (2),8\right)\text{ are }-1\text{ and }7 \log (2):$
+
+$\left(-2 \sqrt{3},-1,7 \log (2),8\right)$
+
+3. The median is the average of the two middle elements, $-1\text{ and }7 \log (2).$ This average is:
+
+Answer: $\frac{7 \log (2)-1}{2}$
+
+```
+
+Insert an error into step 1.
+

@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the norm of the vector $\, \left(\frac{79}{9},-\frac{40}{9},-\frac{5}{3},\frac{83}{9},\frac{37}{9},-1,\frac{71}{9}\right)\,$ :
+
+$\left\| \, \left(\frac{79}{9},-\frac{40}{9},-\frac{5}{3},\frac{83}{9},\frac{37}{9},-1,\frac{71}{9}\right)\, \right\|$
+
+```
+
+And correct solution:
+
+```
+
+1. The formula for the 7-dimensional Euclidean norm comes from the 7-dimensional Pythagorean theorem:
+
+$\left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2}$
+
+2. Substitute $\, \left(\frac{79}{9},-\frac{40}{9},-\frac{5}{3},\frac{83}{9},\frac{37}{9},-1,\frac{71}{9}\right)\,$ into the formula:
+
+Answer: $\left\| \, \left(\frac{79}{9},-\frac{40}{9},-\frac{5}{3},\frac{83}{9},\frac{37}{9},-1,\frac{71}{9}\right)\, \right\| =\sqrt{\left(\frac{79}{9}\right)^2+\left(\frac{-40}{9}\right)^2+\left(\frac{-5}{3}\right)^2+\left(\frac{83}{9}\right)^2+\left(\frac{37}{9}\right)^2+(-1)^2+\left(\frac{71}{9}\right)^2}=\frac{\sqrt{21446}}{9}$
+
+```
+
+Insert an error into step 1.
+

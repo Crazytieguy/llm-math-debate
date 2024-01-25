@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the norm of the vector $\, \left(-\frac{51}{10},\frac{73}{10},-\frac{19}{2},-\frac{23}{5},\frac{49}{5},\frac{7}{10},-\frac{41}{10}\right)\,$ :
+
+$\left\| \, \left(-\frac{51}{10},\frac{73}{10},-\frac{19}{2},-\frac{23}{5},\frac{49}{5},\frac{7}{10},-\frac{41}{10}\right)\, \right\|$
+
+```
+
+And correct solution:
+
+```
+
+1. The formula for the 7-dimensional Euclidean norm comes from the 7-dimensional Pythagorean theorem:
+
+$\left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2}$
+
+2. Substitute $\, \left(-\frac{51}{10},\frac{73}{10},-\frac{19}{2},-\frac{23}{5},\frac{49}{5},\frac{7}{10},-\frac{41}{10}\right)\,$ into the formula:
+
+Answer: $\left\| \, \left(-\frac{51}{10},\frac{73}{10},-\frac{19}{2},-\frac{23}{5},\frac{49}{5},\frac{7}{10},-\frac{41}{10}\right)\, \right\| =\sqrt{\left(\frac{-51}{10}\right)^2+\left(\frac{73}{10}\right)^2+\left(\frac{-19}{2}\right)^2+\left(\frac{-23}{5}\right)^2+\left(\frac{49}{5}\right)^2+\left(\frac{7}{10}\right)^2+\left(\frac{-41}{10}\right)^2}=\frac{\sqrt{\frac{6081}{5}}}{2}$
+
+```
+
+Insert an error into step 2.
+

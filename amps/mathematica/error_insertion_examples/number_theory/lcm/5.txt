@@ -1,0 +1,43 @@
+Given the following problem:
+
+```
+
+Find the least common multiple:
+
+lcm$(-57,-67)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any multiple of a negative number is also a multiple of its absolute value:
+
+lcm$(-57,-67)=\text{lcm}(57,67)$
+
+2. $\begin{array}{l}
+\text{Find the prime factorization of each integer}: \\
+\text{ The prime factorization of 57 is}: \\
+\end{array}$
+
+$57=3\times 19$
+
+3. The prime factorization of 67 is:
+
+$67=67^1$
+
+4. $\begin{array}{l}
+\text{Find the largest power of each prime factor }\\
+\text{ The largest power of }3\text{ that appears in the prime factorizations is }3^1 \\
+\text{ The largest power of 19 that appears in the prime factorizations is }19^1 \\
+\text{ The largest power of 67 that appears in the prime factorizations is }67^1 \\
+\text{ Therefore lcm}(57,67)=\left(3^1\times 19^1\times 67^1=3819\right): \\
+\end{array}$
+
+Answer: lcm$(-57,-67)=3819$
+
+```
+
+Insert an error into step 1.
+

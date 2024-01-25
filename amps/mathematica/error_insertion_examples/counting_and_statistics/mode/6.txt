@@ -1,0 +1,37 @@
+Given the following problem:
+
+```
+
+Find the mode (commonest element) of the list:
+
+$\left(\frac{11}{2},-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},\frac{11}{2},-\frac{7}{2},1,-2,-\frac{7}{2},-2,-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},-\frac{7}{2},-2,-\frac{7}{2},-2,1,\frac{11}{2},-\frac{7}{2},-\frac{7}{2},1,-2\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. $\left(\frac{11}{2},-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},\frac{11}{2},-\frac{7}{2},1,-2,-\frac{7}{2},-2,-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},-\frac{7}{2},-2,-\frac{7}{2},-2,1,\frac{11}{2},-\frac{7}{2},-\frac{7}{2},1,-2\right)=\left(\frac{11}{2},-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},\frac{11}{2},-\frac{7}{2},1,-2,-\frac{7}{2},-2,-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},-\frac{7}{2},-2,-\frac{7}{2},-2,1,\frac{11}{2},-\frac{7}{2},-\frac{7}{2},1,-2\right):$
+
+$\left(\frac{11}{2},-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},\frac{11}{2},-\frac{7}{2},1,-2,-\frac{7}{2},-2,-2,\frac{11}{2},-\frac{7}{2},\frac{11}{2},-\frac{7}{2},-2,-\frac{7}{2},-2,1,\frac{11}{2},-\frac{7}{2},-\frac{7}{2},1,-2\right)$
+
+2. The sorted list is:
+
+$\left(-\frac{7}{2},-\frac{7}{2},-\frac{7}{2},-\frac{7}{2},-\frac{7}{2},-\frac{7}{2},-\frac{7}{2},-\frac{7}{2},-2,-2,-2,-2,-2,-2,-2,1,1,1,\frac{11}{2},\frac{11}{2},\frac{11}{2},\frac{11}{2},\frac{11}{2},\frac{11}{2},\frac{11}{2}\right)$
+
+3. The tally of each element is:
+
+$\begin{array}{ccccc}
+\text{element }& -\frac{7}{2} & -2 & 1 & \frac{11}{2} \\
+\text{ tally }& 8 & 7 & 3 & 7 \\
+\end{array}$
+
+4. The element $-\frac{7}{2}\text{ appears }8$ times. Thus the mode of the list is:
+
+Answer: $-\frac{7}{2}$
+
+```
+
+Insert an error into step 1.
+

@@ -1,0 +1,46 @@
+Given the following problem:
+
+```
+
+Find the greatest common divisor:
+
+$\gcd (-30,501,-13)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any divisor of a negative number is also a divisor of its absolute value:
+
+$\gcd (-30,501,-13)=\gcd (30,501,13)$
+
+2. $\begin{array}{l}
+\text{Find the divisors of each integer and select the largest element they have in common}: \\
+\text{ The divisors of 30 are}: \\
+\end{array}$
+
+$1,2,3,5,6,10,15,30$
+
+3. The divisors of 501 are:
+
+$1,3,167,501$
+
+4. The divisors of 13 are:
+
+$1,13$
+
+5. $\begin{array}{l}
+\text{The largest number common to all divisor lists is }1: \\
+\text{ divisors of 30: }1,2,3,5,6,10,15,30 \\
+\text{ divisors of 501: }1,3,167,501 \\
+\text{ divisors of 13: }1,13 \\
+\end{array}$
+
+Answer: $\gcd (-30,501,-13)=1$
+
+```
+
+Insert an error into step 2.
+

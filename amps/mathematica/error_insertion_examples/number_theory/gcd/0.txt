@@ -1,0 +1,41 @@
+Given the following problem:
+
+```
+
+Find the greatest common divisor:
+
+$\gcd (462,-456)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any divisor of a negative number is also a divisor of its absolute value:
+
+$\gcd (462,-456)=\gcd (462,456)$
+
+2. $\begin{array}{l}
+\text{Find the divisors of each integer and select the largest element they have in common}: \\
+\text{ The divisors of 462 are}: \\
+\end{array}$
+
+$1,2,3,6,7,11,14,21,22,33,42,66,77,154,231,462$
+
+3. The divisors of 456 are:
+
+$1,2,3,4,6,8,12,19,24,38,57,76,114,152,228,456$
+
+4. $\begin{array}{l}
+\text{The largest number common to both divisor lists is }6: \\
+\text{ divisors of 462: }1,2,3,6,7,11,14,21,22,33,42,66,77,154,231,462 \\
+\text{ divisors of 456: }1,2,3,4,6,8,12,19,24,38,57,76,114,152,228,456 \\
+\end{array}$
+
+Answer: $\gcd (462,-456)=6$
+
+```
+
+Insert an error into step 2.
+

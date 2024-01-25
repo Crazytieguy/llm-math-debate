@@ -1,0 +1,138 @@
+Given the following problem:
+
+```
+
+Compute the following cross product:
+
+$\, (4,6,7)\, \times \, (9,-4,-9)\,$
+
+```
+
+And correct solution:
+
+```
+
+1. Construct a matrix where the first row contains unit vectors $\hat{\text{i}}, \hat{\text{j}},\text{ and }\hat{\text{k}};\text{ and the second and third rows are made of vectors }\, (4,6,7)\,\text{  and }\, (9,-4,-9)\,$ :
+
+$\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ 4 & 6 & 7 \\
+ 9 & -4 & -9 \\
+\end{array}
+\right)$
+
+2. Take the determinant of this matrix:
+
+$\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ 4 & 6 & 7 \\
+ 9 & -4 & -9 \\
+\end{array}
+\right|$
+
+3. Expand with respect to row $1:$
+
+= $\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ 4 & 6 & 7 \\
+ 9 & -4 & -9 \\
+\end{array}
+\right|$
+
+4. The determinant of the matrix $\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ 4 & 6 & 7 \\
+ 9 & -4 & -9 \\
+\end{array}
+\right)\text{ is given by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+6 & 7 \\
+ -4 & -9 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+4 & 7 \\
+ 9 & -9 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+4 & 6 \\
+ 9 & -4 \\
+\end{array}
+\right|$ :
+
+= $\hat{\text{i}} \left| 
+\begin{array}{cc}
+6 & 7 \\
+ -4 & -9 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+4 & 7 \\
+ 9 & -9 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+4 & 6 \\
+ 9 & -4 \\
+\end{array}
+\right|$
+
+5. $\hat{\text{i}} \left| 
+\begin{array}{cc}
+6 & 7 \\
+ -4 & -9 \\
+\end{array}
+\right| =\hat{\text{i}} (6 (-9)-7 (-4))=\hat{\text{i}} (-26)=-26 \hat{\text{i}}$:
+
+= $-26 \hat{\text{i}}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+4 & 7 \\
+ 9 & -9 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+4 & 6 \\
+ 9 & -4 \\
+\end{array}
+\right|$
+
+6. $-\hat{\text{j}} \left| 
+\begin{array}{cc}
+4 & 7 \\
+ 9 & -9 \\
+\end{array}
+\right| =-\hat{\text{j}} (4 (-9)-7\ 9)=-\hat{\text{j}} (-99)=99 \hat{\text{j}}$:
+
+= $-26 \hat{\text{i}}+99 \hat{\text{j}}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+4 & 6 \\
+ 9 & -4 \\
+\end{array}
+\right|$
+
+7. $\hat{\text{k}} \left| 
+\begin{array}{cc}
+4 & 6 \\
+ 9 & -4 \\
+\end{array}
+\right| =\hat{\text{k}} (4 (-4)-6\ 9)=\hat{\text{k}} (-70)=-70 \hat{\text{k}}$:
+
+= $-26 \hat{\text{i}}+99 \hat{\text{j}}+-70 \hat{\text{k}}$
+
+8. Order the terms in a more natural way:
+
+= $-26 \hat{\text{i}}+99 \hat{\text{j}}-70 \hat{\text{k}}$
+
+9. $-26 \hat{\text{i}}+99 \hat{\text{j}}-70 \hat{\text{k}}=\, (-26,99,-70)\,$ :
+
+Answer: $\, (-26,99,-70)\,$
+
+```
+
+Insert an error into step 8.
+

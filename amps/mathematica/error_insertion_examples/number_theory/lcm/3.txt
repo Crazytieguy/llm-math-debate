@@ -1,0 +1,49 @@
+Given the following problem:
+
+```
+
+Find the least common multiple:
+
+lcm$(-87,-66,13)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any multiple of a negative number is also a multiple of its absolute value:
+
+lcm$(-87,-66,13)=\text{lcm}(87,66,13)$
+
+2. $\begin{array}{l}
+\text{Find the prime factorization of each integer}: \\
+\text{ The prime factorization of 87 is}: \\
+\end{array}$
+
+$87=3\times 29$
+
+3. The prime factorization of 66 is:
+
+$66=2\times 3\times 11$
+
+4. The prime factorization of 13 is:
+
+$13=13^1$
+
+5. $\begin{array}{l}
+\text{Find the largest power of each prime factor }\\
+\text{ The largest power of }2\text{ that appears in the prime factorizations is }2^1 \\
+\text{ The largest power of }3\text{ that appears in the prime factorizations is }3^1 \\
+\text{ The largest power of 11 that appears in the prime factorizations is }11^1 \\
+\text{ The largest power of 13 that appears in the prime factorizations is }13^1 \\
+\text{ The largest power of 29 that appears in the prime factorizations is }29^1 \\
+\text{ Therefore lcm}(87,66,13)=\left(2^1\times 3^1\times 11^1\times 13^1\times 29^1=24882\right): \\
+\end{array}$
+
+Answer: lcm$(-87,-66,13)=24882$
+
+```
+
+Insert an error into step 2.
+

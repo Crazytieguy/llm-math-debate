@@ -1,0 +1,138 @@
+Given the following problem:
+
+```
+
+Compute the following cross product:
+
+$\, \left(-\frac{36}{5},-\frac{48}{5},\frac{46}{5}\right)\, \times \, \left(-5,-3,\frac{26}{5}\right)\,$
+
+```
+
+And correct solution:
+
+```
+
+1. Construct a matrix where the first row contains unit vectors $\hat{\text{i}}, \hat{\text{j}},\text{ and }\hat{\text{k}};\text{ and the second and third rows are made of vectors }\, \left(-\frac{36}{5},-\frac{48}{5},\frac{46}{5}\right)\,\text{  and }\, \left(-5,-3,\frac{26}{5}\right)\,$ :
+
+$\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -\frac{36}{5} & -\frac{48}{5} & \frac{46}{5} \\
+ -5 & -3 & \frac{26}{5} \\
+\end{array}
+\right)$
+
+2. Take the determinant of this matrix:
+
+$\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -\frac{36}{5} & -\frac{48}{5} & \frac{46}{5} \\
+ -5 & -3 & \frac{26}{5} \\
+\end{array}
+\right|$
+
+3. Expand with respect to row $1:$
+
+= $\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -\frac{36}{5} & -\frac{48}{5} & \frac{46}{5} \\
+ -5 & -3 & \frac{26}{5} \\
+\end{array}
+\right|$
+
+4. The determinant of the matrix $\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -\frac{36}{5} & -\frac{48}{5} & \frac{46}{5} \\
+ -5 & -3 & \frac{26}{5} \\
+\end{array}
+\right)\text{ is given by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+-\frac{48}{5} & \frac{46}{5} \\
+ -3 & \frac{26}{5} \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-\frac{36}{5} & \frac{46}{5} \\
+ -5 & \frac{26}{5} \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-\frac{36}{5} & -\frac{48}{5} \\
+ -5 & -3 \\
+\end{array}
+\right|$ :
+
+= $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-\frac{48}{5} & \frac{46}{5} \\
+ -3 & \frac{26}{5} \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-\frac{36}{5} & \frac{46}{5} \\
+ -5 & \frac{26}{5} \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-\frac{36}{5} & -\frac{48}{5} \\
+ -5 & -3 \\
+\end{array}
+\right|$
+
+5. $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-\frac{48}{5} & \frac{46}{5} \\
+ -3 & \frac{26}{5} \\
+\end{array}
+\right| =\hat{\text{i}} \left(\left(-\frac{48}{5}\right)\, \times \, \frac{26}{5}-\frac{46 (-3)}{5}\right)=\frac{\hat{\text{i}} (-558)}{25}=-\frac{558 \hat{\text{i}}}{25}$:
+
+= $-\frac{558 \hat{\text{i}}}{25}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-\frac{36}{5} & \frac{46}{5} \\
+ -5 & \frac{26}{5} \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-\frac{36}{5} & -\frac{48}{5} \\
+ -5 & -3 \\
+\end{array}
+\right|$
+
+6. $-\hat{\text{j}} \left| 
+\begin{array}{cc}
+-\frac{36}{5} & \frac{46}{5} \\
+ -5 & \frac{26}{5} \\
+\end{array}
+\right| =-\hat{\text{j}} \left(\left(-\frac{36}{5}\right)\, \times \, \frac{26}{5}-\frac{46 (-5)}{5}\right)=\frac{-\hat{\text{j}} 214}{25}=-\frac{214 \hat{\text{j}}}{25}$:
+
+= $\frac{-558 \hat{\text{i}}}{25}+-\frac{214 \hat{\text{j}}}{25}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+-\frac{36}{5} & -\frac{48}{5} \\
+ -5 & -3 \\
+\end{array}
+\right|$
+
+7. $\hat{\text{k}} \left| 
+\begin{array}{cc}
+-\frac{36}{5} & -\frac{48}{5} \\
+ -5 & -3 \\
+\end{array}
+\right| =\hat{\text{k}} \left(\left(-\frac{36}{5}\right)\, (-3)-\left(-\frac{48}{5}\right)\, (-5)\right)=\frac{\hat{\text{k}} (-132)}{5}=-\frac{132 \hat{\text{k}}}{5}$:
+
+= $\frac{-558 \hat{\text{i}}}{25}-\frac{214 \hat{\text{j}}}{25}+-\frac{132 \hat{\text{k}}}{5}$
+
+8. Order the terms in a more natural way:
+
+= $-\frac{558 \hat{\text{i}}}{25}-\frac{214 \hat{\text{j}}}{25}-\frac{132 \hat{\text{k}}}{5}$
+
+9. $-\frac{558 \hat{\text{i}}}{25}-\frac{214 \hat{\text{j}}}{25}-\frac{132 \hat{\text{k}}}{5}=\, \left(-\frac{558}{25},-\frac{214}{25},-\frac{132}{5}\right)\,$ :
+
+Answer: $\, \left(-\frac{558}{25},-\frac{214}{25},-\frac{132}{5}\right)\,$
+
+```
+
+Insert an error into step 5.
+

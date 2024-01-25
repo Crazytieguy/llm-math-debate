@@ -1,0 +1,39 @@
+Given the following problem:
+
+```
+
+Find the least common multiple:
+
+lcm$(63,6)$
+
+```
+
+And correct solution:
+
+```
+
+1. $\begin{array}{l}
+\text{Find the prime factorization of each integer}: \\
+\text{ The prime factorization of 63 is}: \\
+\end{array}$
+
+$63=3^2\times 7$
+
+2. The prime factorization of $6$ is:
+
+$6=2\times 3$
+
+3. $\begin{array}{l}
+\text{Find the largest power of each prime factor }\\
+\text{ The largest power of }2\text{ that appears in the prime factorizations is }2^1 \\
+\text{ The largest power of }3\text{ that appears in the prime factorizations is }3^2 \\
+\text{ The largest power of }7\text{ that appears in the prime factorizations is }7^1 \\
+\text{ Therefore lcm}(63,6)=\left(2^1\times 3^2\times 7^1=126\right): \\
+\end{array}$
+
+Answer: lcm$(63,6)=126$
+
+```
+
+Insert an error into step 3.
+

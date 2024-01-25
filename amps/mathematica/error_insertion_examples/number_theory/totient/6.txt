@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Compute the Euler phi function for $4049:$
+
+$\phi (4049)$
+
+```
+
+And correct solution:
+
+```
+
+1. Apply the the Euler phi function definition to $4049:$
+
+$\phi (4049)\text{ is the number of elements of }\{1,2,\ldots ,4049\}\text{ that are coprime to }4049$
+
+2. 4049 is prime Since the divisors of a prime number are 1 and itself, all positive integers less than 4049 are coprime to $4049:$
+
+Answer: $\phi (4049)=4048$
+
+```
+
+Insert an error into step 2.
+

@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Determine if the following numbers are coprime to each other:
+
+$284\text{ and }725$
+
+```
+
+And correct solution:
+
+```
+
+1. By definition, these numbers are coprime if their gcd is $1:$
+
+$\gcd (284,725)=1$
+
+2. Since these numbers have a gcd equal to $1,$ they are coprime:
+
+Answer: 284 and $725$ are coprime
+
+```
+
+Insert an error into step 1.
+

@@ -25,6 +25,7 @@ def format_error_insertion_prompt(problem: str) -> str:
     )
 
     return f"""Given the following problem:
+
 ```
 
 {problem}

@@ -1,0 +1,34 @@
+Given the following problem:
+
+```
+
+Find the range of the list:
+
+$\left(9,-4,-4,-\frac{39}{4},6\right) = \left(9,-4,-4,-\frac{39}{4},6\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The range of a list is given by:
+
+$(\text{largest element})-(\text{smallest element})$
+
+2. $\left(9,-4,-4,-\frac{39}{4},6\right)\text{  We see that the largest element is }9:$
+
+$9-(\text{smallest element})$
+
+3. $\left(9,-4,-4,-\frac{39}{4},6\right)\text{  We see that the smallest element is }-\frac{39}{4}$:
+
+$-\frac{-39}{4}+9$
+
+4. $-\frac{-39}{4}+9=\frac{75}{4}$:
+
+Answer: $\frac{75}{4}$
+
+```
+
+Insert an error into step 4.
+

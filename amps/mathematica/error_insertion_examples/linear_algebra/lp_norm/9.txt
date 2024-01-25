@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the norm of the vector $\, (3,0,-2,10,-1,3,-6,7)\,$ :
+
+$\| \, (3,0,-2,10,-1,3,-6,7)\, \|$
+
+```
+
+And correct solution:
+
+```
+
+1. The formula for the 8-dimensional Euclidean norm comes from the 8-dimensional Pythagorean theorem:
+
+$\left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7,v_8\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2+v_8^2}$
+
+2. Substitute $\, (3,0,-2,10,-1,3,-6,7)\,$ into the formula:
+
+Answer: $\| \, (3,0,-2,10,-1,3,-6,7)\, \| =\sqrt{3^2+0^2+(-2)^2+10^2+(-1)^2+3^2+(-6)^2+7^2}=4 \sqrt{13}$
+
+```
+
+Insert an error into step 2.
+

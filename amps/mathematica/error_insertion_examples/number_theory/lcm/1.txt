@@ -1,0 +1,47 @@
+Given the following problem:
+
+```
+
+Find the least common multiple:
+
+lcm$(-86,-32,-37)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any multiple of a negative number is also a multiple of its absolute value:
+
+lcm$(-86,-32,-37)=\text{lcm}(86,32,37)$
+
+2. $\begin{array}{l}
+\text{Find the prime factorization of each integer}: \\
+\text{ The prime factorization of 86 is}: \\
+\end{array}$
+
+$86=2\times 43$
+
+3. The prime factorization of 32 is:
+
+$32=2^5$
+
+4. The prime factorization of 37 is:
+
+$37=37^1$
+
+5. $\begin{array}{l}
+\text{Find the largest power of each prime factor }\\
+\text{ The largest power of }2\text{ that appears in the prime factorizations is }2^5 \\
+\text{ The largest power of 37 that appears in the prime factorizations is }37^1 \\
+\text{ The largest power of 43 that appears in the prime factorizations is }43^1 \\
+\text{ Therefore lcm}(86,32,37)=\left(2^5\times 37^1\times 43^1=50912\right): \\
+\end{array}$
+
+Answer: lcm$(-86,-32,-37)=50912$
+
+```
+
+Insert an error into step 2.
+

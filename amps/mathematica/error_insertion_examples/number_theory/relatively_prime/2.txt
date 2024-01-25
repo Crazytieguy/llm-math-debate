@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Determine if the following numbers are coprime to each other:
+
+$876\text{ and }443$
+
+```
+
+And correct solution:
+
+```
+
+1. By definition, these numbers are coprime if their gcd is $1:$
+
+$\gcd (876,443)=1$
+
+2. Since these numbers have a gcd equal to $1,$ they are coprime:
+
+Answer: 876 and $443$ are coprime
+
+```
+
+Insert an error into step 2.
+

@@ -1,0 +1,138 @@
+Given the following problem:
+
+```
+
+Compute the following cross product:
+
+$\, (-7,-7,9)\, \times \, (3,1,-7)\,$
+
+```
+
+And correct solution:
+
+```
+
+1. Construct a matrix where the first row contains unit vectors $\hat{\text{i}}, \hat{\text{j}},\text{ and }\hat{\text{k}};\text{ and the second and third rows are made of vectors }\, (-7,-7,9)\,\text{  and }\, (3,1,-7)\,$ :
+
+$\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -7 & -7 & 9 \\
+ 3 & 1 & -7 \\
+\end{array}
+\right)$
+
+2. Take the determinant of this matrix:
+
+$\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -7 & -7 & 9 \\
+ 3 & 1 & -7 \\
+\end{array}
+\right|$
+
+3. Expand with respect to row $1:$
+
+= $\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -7 & -7 & 9 \\
+ 3 & 1 & -7 \\
+\end{array}
+\right|$
+
+4. The determinant of the matrix $\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -7 & -7 & 9 \\
+ 3 & 1 & -7 \\
+\end{array}
+\right)\text{ is given by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+-7 & 9 \\
+ 1 & -7 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-7 & 9 \\
+ 3 & -7 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-7 & -7 \\
+ 3 & 1 \\
+\end{array}
+\right|$ :
+
+= $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-7 & 9 \\
+ 1 & -7 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-7 & 9 \\
+ 3 & -7 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-7 & -7 \\
+ 3 & 1 \\
+\end{array}
+\right|$
+
+5. $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-7 & 9 \\
+ 1 & -7 \\
+\end{array}
+\right| =\hat{\text{i}} ((-7)\, (-7)-9\ 1)=\hat{\text{i}} 40=40 \hat{\text{i}}$:
+
+= $40 \hat{\text{i}}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-7 & 9 \\
+ 3 & -7 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-7 & -7 \\
+ 3 & 1 \\
+\end{array}
+\right|$
+
+6. $-\hat{\text{j}} \left| 
+\begin{array}{cc}
+-7 & 9 \\
+ 3 & -7 \\
+\end{array}
+\right| =-\hat{\text{j}} ((-7)\, (-7)-9\ 3)=-\hat{\text{j}} 22=-22 \hat{\text{j}}$:
+
+= $40 \hat{\text{i}}+-22 \hat{\text{j}}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+-7 & -7 \\
+ 3 & 1 \\
+\end{array}
+\right|$
+
+7. $\hat{\text{k}} \left| 
+\begin{array}{cc}
+-7 & -7 \\
+ 3 & 1 \\
+\end{array}
+\right| =\hat{\text{k}} ((-7)\, \times \, 1-(-7)\, \times \, 3)=\hat{\text{k}} 14=14 \hat{\text{k}}$:
+
+= $40 \hat{\text{i}}-22 \hat{\text{j}}+14 \hat{\text{k}}$
+
+8. Order the terms in a more natural way:
+
+= $40 \hat{\text{i}}-22 \hat{\text{j}}+14 \hat{\text{k}}$
+
+9. $40 \hat{\text{i}}-22 \hat{\text{j}}+14 \hat{\text{k}}=\, (40,-22,14)\,$ :
+
+Answer: $\, (40,-22,14)\,$
+
+```
+
+Insert an error into step 9.
+

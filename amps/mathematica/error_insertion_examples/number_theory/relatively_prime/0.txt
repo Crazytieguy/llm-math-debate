@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Determine if the following numbers are coprime to each other:
+
+$1000\text{ and }-905$
+
+```
+
+And correct solution:
+
+```
+
+1. By definition, these numbers are coprime if their gcd is $1:$
+
+$\gcd (1000,-905)=5$
+
+2. Since these numbers have a gcd greater than $1,$ they are not coprime:
+
+Answer: 1000 and $-905$ are not coprime
+
+```
+
+Insert an error into step 2.
+

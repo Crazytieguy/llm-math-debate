@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the median of the list:
+
+$\left(1,10,-14 \log (2),7,8,\frac{17}{\sqrt{5}},5,-\frac{7}{e},0,\frac{21}{\sqrt{5}},-7,-\frac{9}{e},-9,5,6\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-14 \log (2),-9,-7,-\frac{9}{e},-\frac{7}{e},0,1,5,5,6,7,17\ 5^{-1/2},8,21\ 5^{-1/2},10\right)$
+
+2. The median of the list $\left(-14 \log (2),-9,-7,-\frac{9}{e},-\frac{7}{e},0,1,5,5,6,7,17\ 5^{-1/2},8,21\ 5^{-1/2},10\right)$ is the element in the middle, which is:
+
+Answer: $5$
+
+```
+
+Insert an error into step 1.
+

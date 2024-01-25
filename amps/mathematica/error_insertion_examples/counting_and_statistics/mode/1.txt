@@ -1,0 +1,33 @@
+Given the following problem:
+
+```
+
+Find the mode (commonest element) of the list:
+
+$(-9,1,0,0,0,-2,-9,-2,1,0,-9,-2,-9,0,0,1,-9,-2,-2,0,-9,4,-9,1,1,-2,4)$
+
+```
+
+And correct solution:
+
+```
+
+1. The sorted list is:
+
+$(-9,-9,-9,-9,-9,-9,-9,-2,-2,-2,-2,-2,-2,0,0,0,0,0,0,0,1,1,1,1,1,4,4)$
+
+2. The tally of each element is:
+
+$\begin{array}{cccccc}
+\text{element }& -9 & -2 & 0 & 1 & 4 \\
+\text{ tally }& 7 & 6 & 7 & 5 & 2 \\
+\end{array}$
+
+3. The elements $-9\text{ and }0\text{ appear }7$ times. Thus the modes of the list are:
+
+Answer: $(-9,0)$
+
+```
+
+Insert an error into step 2.
+

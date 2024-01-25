@@ -1,0 +1,30 @@
+Given the following problem:
+
+```
+
+Find the median of the list:
+
+$\left(-6,-\frac{29}{\pi },0,7,e,-3 e,0,-3 \sqrt{3},12 \log (2),3 e,-\frac{2}{\sqrt{3}},2\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-\frac{29}{\pi },-3 e,-6,-3 \sqrt{3},-2\ 3^{-1/2},0,0,2,e,7,3 e,12 \log (2)\right)$
+
+2. The two elements in the middle of the list $\left(-\frac{29}{\pi },-3 e,-6,-3 \sqrt{3},-\frac{2}{\sqrt{3}},0,0,2,e,7,3 e,12 \log (2)\right)\text{ are both equal to }0:$
+
+$\left(-\frac{29}{\pi },-3 e,-6,-3 \sqrt{3},-2\ 3^{-1/2},0,0,2,e,7,3 e,12 \log (2)\right)$
+
+3. Since the two elements in the middle are both equal to $0,$ their average (and thus the median) is:
+
+Answer: $0$
+
+```
+
+Insert an error into step 2.
+

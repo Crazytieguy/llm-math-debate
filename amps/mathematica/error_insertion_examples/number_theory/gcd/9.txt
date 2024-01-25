@@ -1,0 +1,46 @@
+Given the following problem:
+
+```
+
+Find the greatest common divisor:
+
+$\gcd (5,272,-137)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any divisor of a negative number is also a divisor of its absolute value:
+
+$\gcd (5,272,-137)=\gcd (5,272,137)$
+
+2. $\begin{array}{l}
+\text{Find the divisors of each integer and select the largest element they have in common}: \\
+\text{ The divisors of }5\text{ are}: \\
+\end{array}$
+
+$1,5$
+
+3. The divisors of 272 are:
+
+$1,2,4,8,16,17,34,68,136,272$
+
+4. The divisors of 137 are:
+
+$1,137$
+
+5. $\begin{array}{l}
+\text{The largest number common to all divisor lists is }1: \\
+\text{ divisors of }5: 1,5 \\
+\text{ divisors of 272: }1,2,4,8,16,17,34,68,136,272 \\
+\text{ divisors of 137: }1,137 \\
+\end{array}$
+
+Answer: $\gcd (5,272,-137)=1$
+
+```
+
+Insert an error into step 2.
+

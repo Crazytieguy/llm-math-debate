@@ -1,0 +1,81 @@
+Given the following problem:
+
+```
+
+Find all the eigenvalues of the matrix $M:$
+
+$M=\left(
+\begin{array}{ccc}
+-8 & -5 & -5 \\
+ 6 & -2 & 7 \\
+ 9 & 7 & -9 \\
+\end{array}
+\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. Find $\lambda \in \mathbb{C}\text{ such that }M v=\lambda  v\text{ for some nonzero vector }v:$
+
+$M v=\lambda  v$
+
+2. Rewrite the equation $M v=\lambda  v\text{ as }(M-\mathbb{I} \lambda ) v=0:$
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+3. Find all $\lambda\text{  such that }| M-\mathbb{I} \lambda | =0:$
+
+$| M-\mathbb{I} \lambda | =0$
+
+4. $\begin{array}{lll}
+M-\mathbb{I} \lambda  & = & \left(
+\begin{array}{ccc}
+-8 & -5 & -5 \\
+ 6 & -2 & 7 \\
+ 9 & 7 & -9 \\
+\end{array}
+\right)-\left(
+\begin{array}{ccc}
+1 & 0 & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1 \\
+\end{array}
+\right) \lambda  \\
+\text{  }& = & \left(
+\begin{array}{ccc}
+-\lambda -8 & -5 & -5 \\
+ 6 & -\lambda -2 & 7 \\
+ 9 & 7 & -\lambda -9 \\
+\end{array}
+\right) \\
+\end{array}$
+
+$\left| 
+\begin{array}{ccc}
+-\lambda -8 & -5 & -5 \\
+ 6 & -\lambda -2 & 7 \\
+ 9 & 7 & -\lambda -9 \\
+\end{array}
+\right| =0$
+
+5. $\left| 
+\begin{array}{ccc}
+-\lambda -8 & -5 & -5 \\
+ 6 & -\lambda -2 & 7 \\
+ 9 & 7 & -\lambda -9 \\
+\end{array}
+\right| =-\lambda ^3-19 \lambda ^2-132 \lambda -637:$
+
+$-\lambda ^3-19 \lambda ^2-132 \lambda -637=0$
+
+6. Solving the equation $-\lambda ^3-19 \lambda ^2-132 \lambda -637=0\text{ for }\lambda$ yields the following eigenvalues:
+
+Answer: $\lambda =-12.5208\text{ or }\lambda =-3.23959-6.35455 i\text{ or }\lambda =-3.23959+6.35455 i$
+
+```
+
+Insert an error into step 1.
+

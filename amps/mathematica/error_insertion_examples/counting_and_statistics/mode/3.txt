@@ -1,0 +1,33 @@
+Given the following problem:
+
+```
+
+Find the mode (commonest element) of the list:
+
+$(-7,-6,3,3,9,-7,9,-7,3,7,9,3,-3,9,-3,-6,3,-6,9,-7,-6)$
+
+```
+
+And correct solution:
+
+```
+
+1. The sorted list is:
+
+$(-7,-7,-7,-7,-6,-6,-6,-6,-3,-3,3,3,3,3,3,7,9,9,9,9,9)$
+
+2. The tally of each element is:
+
+$\begin{array}{ccccccc}
+\text{element }& -7 & -6 & -3 & 3 & 7 & 9 \\
+\text{ tally }& 4 & 4 & 2 & 5 & 1 & 5 \\
+\end{array}$
+
+3. The elements $3\text{ and }9\text{ appear }5$ times. Thus the modes of the list are:
+
+Answer: $(3,9)$
+
+```
+
+Insert an error into step 1.
+

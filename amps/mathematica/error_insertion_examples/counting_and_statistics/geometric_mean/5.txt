@@ -1,0 +1,42 @@
+Given the following problem:
+
+```
+
+Find the geometric mean of the list:
+
+$(125,9,8,10,216,27)$
+
+```
+
+And correct solution:
+
+```
+
+1. The geometric mean of a list of numbers is given by:
+
+$(\text{product of elements})^{\frac{1}{(\text{number of elements})}}$
+
+2. $(\text{product of elements}) =\text{ 125 $\times $ }9\text{ $\times $ }8\text{ $\times $ 10 $\times $ 216 $\times $ }27:$
+
+$\sqrt[(\text{number of elements})]{(\text{125 $\times $ }9\text{ $\times $ }8\text{ $\times $ 10 $\times $ 216 $\times $ }27)}$
+
+3. Counting, we see that the list has $6$ elements:
+
+$(\text{125 $\times $ }9\text{ $\times $ }8\text{ $\times $ 10 $\times $ 216 $\times $ }27)^{\frac{1}{6}} = \sqrt[6]{\text{125 $\times $ }9\text{ $\times $ }8\text{ $\times $ 10 $\times $ 216 $\times $ }27}$
+
+4. 125 $\times $ $9\text{ $\times $ }8\text{ $\times $ 10 $\times $ 216 $\times $ }27=524880000:$
+
+$\sqrt[6]{524880000}$
+
+5. $\sqrt[6]{524880000} = \sqrt[6]{2^7\times 3^8\times 5^4} = 2\times 3 \sqrt[6]{2} \sqrt[3]{3}\times 5^{2/3}$:
+
+$2\times 3 \sqrt[6]{2} \sqrt[3]{3}\times 5^{2/3}$
+
+6. $2\times 3 = 6:$
+
+Answer: $6 \sqrt[6]{2} \sqrt[3]{3}\times 5^{2/3}$
+
+```
+
+Insert an error into step 2.
+

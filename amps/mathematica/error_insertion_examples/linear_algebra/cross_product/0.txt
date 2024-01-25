@@ -1,0 +1,138 @@
+Given the following problem:
+
+```
+
+Compute the following cross product:
+
+$\, (-8,-3,6)\, \times \, (-3,5,2)\,$
+
+```
+
+And correct solution:
+
+```
+
+1. Construct a matrix where the first row contains unit vectors $\hat{\text{i}}, \hat{\text{j}},\text{ and }\hat{\text{k}};\text{ and the second and third rows are made of vectors }\, (-8,-3,6)\,\text{  and }\, (-3,5,2)\,$ :
+
+$\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -8 & -3 & 6 \\
+ -3 & 5 & 2 \\
+\end{array}
+\right)$
+
+2. Take the determinant of this matrix:
+
+$\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -8 & -3 & 6 \\
+ -3 & 5 & 2 \\
+\end{array}
+\right|$
+
+3. Expand with respect to row $1:$
+
+= $\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -8 & -3 & 6 \\
+ -3 & 5 & 2 \\
+\end{array}
+\right|$
+
+4. The determinant of the matrix $\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -8 & -3 & 6 \\
+ -3 & 5 & 2 \\
+\end{array}
+\right)\text{ is given by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+-3 & 6 \\
+ 5 & 2 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-8 & 6 \\
+ -3 & 2 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-8 & -3 \\
+ -3 & 5 \\
+\end{array}
+\right|$ :
+
+= $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-3 & 6 \\
+ 5 & 2 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-8 & 6 \\
+ -3 & 2 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-8 & -3 \\
+ -3 & 5 \\
+\end{array}
+\right|$
+
+5. $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-3 & 6 \\
+ 5 & 2 \\
+\end{array}
+\right| =\hat{\text{i}} ((-3)\, \times \, 2-6\ 5)=\hat{\text{i}} (-36)=-36 \hat{\text{i}}$:
+
+= $-36 \hat{\text{i}}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-8 & 6 \\
+ -3 & 2 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-8 & -3 \\
+ -3 & 5 \\
+\end{array}
+\right|$
+
+6. $-\hat{\text{j}} \left| 
+\begin{array}{cc}
+-8 & 6 \\
+ -3 & 2 \\
+\end{array}
+\right| =-\hat{\text{j}} ((-8)\, \times \, 2-6 (-3))=-\hat{\text{j}} 2=-2 \hat{\text{j}}$:
+
+= $-36 \hat{\text{i}}+-2 \hat{\text{j}}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+-8 & -3 \\
+ -3 & 5 \\
+\end{array}
+\right|$
+
+7. $\hat{\text{k}} \left| 
+\begin{array}{cc}
+-8 & -3 \\
+ -3 & 5 \\
+\end{array}
+\right| =\hat{\text{k}} ((-8)\, \times \, 5-(-3)\, (-3))=\hat{\text{k}} (-49)=-49 \hat{\text{k}}$:
+
+= $-36 \hat{\text{i}}-2 \hat{\text{j}}+-49 \hat{\text{k}}$
+
+8. Order the terms in a more natural way:
+
+= $-36 \hat{\text{i}}-2 \hat{\text{j}}-49 \hat{\text{k}}$
+
+9. $-36 \hat{\text{i}}-2 \hat{\text{j}}-49 \hat{\text{k}}=\, (-36,-2,-49)\,$ :
+
+Answer: $\, (-36,-2,-49)\,$
+
+```
+
+Insert an error into step 1.
+

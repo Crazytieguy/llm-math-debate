@@ -1,0 +1,138 @@
+Given the following problem:
+
+```
+
+Compute the following cross product:
+
+$\, (-2,7,-9)\, \times \, (-8,1,-6)\,$
+
+```
+
+And correct solution:
+
+```
+
+1. Construct a matrix where the first row contains unit vectors $\hat{\text{i}}, \hat{\text{j}},\text{ and }\hat{\text{k}};\text{ and the second and third rows are made of vectors }\, (-2,7,-9)\,\text{  and }\, (-8,1,-6)\,$ :
+
+$\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -2 & 7 & -9 \\
+ -8 & 1 & -6 \\
+\end{array}
+\right)$
+
+2. Take the determinant of this matrix:
+
+$\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -2 & 7 & -9 \\
+ -8 & 1 & -6 \\
+\end{array}
+\right|$
+
+3. Expand with respect to row $1:$
+
+= $\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -2 & 7 & -9 \\
+ -8 & 1 & -6 \\
+\end{array}
+\right|$
+
+4. The determinant of the matrix $\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -2 & 7 & -9 \\
+ -8 & 1 & -6 \\
+\end{array}
+\right)\text{ is given by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+7 & -9 \\
+ 1 & -6 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-2 & -9 \\
+ -8 & -6 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-2 & 7 \\
+ -8 & 1 \\
+\end{array}
+\right|$ :
+
+= $\hat{\text{i}} \left| 
+\begin{array}{cc}
+7 & -9 \\
+ 1 & -6 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-2 & -9 \\
+ -8 & -6 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-2 & 7 \\
+ -8 & 1 \\
+\end{array}
+\right|$
+
+5. $\hat{\text{i}} \left| 
+\begin{array}{cc}
+7 & -9 \\
+ 1 & -6 \\
+\end{array}
+\right| =\hat{\text{i}} (7 (-6)-(-9)\, \times \, 1)=\hat{\text{i}} (-33)=-33 \hat{\text{i}}$:
+
+= $-33 \hat{\text{i}}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-2 & -9 \\
+ -8 & -6 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-2 & 7 \\
+ -8 & 1 \\
+\end{array}
+\right|$
+
+6. $-\hat{\text{j}} \left| 
+\begin{array}{cc}
+-2 & -9 \\
+ -8 & -6 \\
+\end{array}
+\right| =-\hat{\text{j}} ((-2)\, (-6)-(-9)\, (-8))=-\hat{\text{j}} (-60)=60 \hat{\text{j}}$:
+
+= $-33 \hat{\text{i}}+60 \hat{\text{j}}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+-2 & 7 \\
+ -8 & 1 \\
+\end{array}
+\right|$
+
+7. $\hat{\text{k}} \left| 
+\begin{array}{cc}
+-2 & 7 \\
+ -8 & 1 \\
+\end{array}
+\right| =\hat{\text{k}} ((-2)\, \times \, 1-7 (-8))=\hat{\text{k}} 54=54 \hat{\text{k}}$:
+
+= $-33 \hat{\text{i}}+60 \hat{\text{j}}+54 \hat{\text{k}}$
+
+8. Order the terms in a more natural way:
+
+= $-33 \hat{\text{i}}+60 \hat{\text{j}}+54 \hat{\text{k}}$
+
+9. $-33 \hat{\text{i}}+60 \hat{\text{j}}+54 \hat{\text{k}}=\, (-33,60,54)\,$ :
+
+Answer: $\, (-33,60,54)\,$
+
+```
+
+Insert an error into step 9.
+

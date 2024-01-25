@@ -1,0 +1,34 @@
+Given the following problem:
+
+```
+
+Find the range of the list:
+
+$\left(\frac{19}{16},\frac{35}{32},-\frac{6}{5},-7,-\frac{18}{7},-\frac{13}{4},-\frac{62}{7},-9,8,-\frac{13}{5}\right) = \left(\frac{19}{16},\frac{35}{32},-\frac{6}{5},-7,-\frac{18}{7},-\frac{13}{4},-\frac{62}{7},-9,8,-\frac{13}{5}\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The range of a list is given by:
+
+$(\text{largest element})-(\text{smallest element})$
+
+2. $\left(\frac{19}{16},\frac{35}{32},-\frac{6}{5},-7,-\frac{18}{7},-\frac{13}{4},-\frac{62}{7},-9,8,-\frac{13}{5}\right)\text{  We see that the largest element is }8:$
+
+$8-(\text{smallest element})$
+
+3. $\left(\frac{19}{16},\frac{35}{32},-\frac{6}{5},-7,-\frac{18}{7},-\frac{13}{4},-\frac{62}{7},-9,8,-\frac{13}{5}\right)\text{  We see that the smallest element is }-9:$
+
+$-(-9)+8$
+
+4. $-(-9)+8=17:$
+
+Answer: $17$
+
+```
+
+Insert an error into step 2.
+

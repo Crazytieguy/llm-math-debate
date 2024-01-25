@@ -1,0 +1,41 @@
+Given the following problem:
+
+```
+
+Find the greatest common divisor:
+
+$\gcd (475,-944)$
+
+```
+
+And correct solution:
+
+```
+
+1. Any divisor of a negative number is also a divisor of its absolute value:
+
+$\gcd (475,-944)=\gcd (475,944)$
+
+2. $\begin{array}{l}
+\text{Find the divisors of each integer and select the largest element they have in common}: \\
+\text{ The divisors of 475 are}: \\
+\end{array}$
+
+$1,5,19,25,95,475$
+
+3. The divisors of 944 are:
+
+$1,2,4,8,16,59,118,236,472,944$
+
+4. $\begin{array}{l}
+\text{The largest number common to both divisor lists is }1: \\
+\text{ divisors of 475: }1,5,19,25,95,475 \\
+\text{ divisors of 944: }1,2,4,8,16,59,118,236,472,944 \\
+\end{array}$
+
+Answer: $\gcd (475,-944)=1$
+
+```
+
+Insert an error into step 1.
+

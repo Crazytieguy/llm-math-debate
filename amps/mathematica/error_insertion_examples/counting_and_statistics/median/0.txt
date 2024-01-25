@@ -1,0 +1,26 @@
+Given the following problem:
+
+```
+
+Find the median of the list:
+
+$\left(-7,-\frac{8}{\pi },3,\frac{14}{\sqrt{\pi }}\right)$
+
+```
+
+And correct solution:
+
+```
+
+1. The two elements in the middle of the list $\left(-7,-\frac{8}{\pi },3,\frac{14}{\sqrt{\pi }}\right)\text{ are }-\frac{8}{\pi }\text{ and }3:$
+
+$\left(-7,-\frac{8}{\pi },3,14 \pi ^{-1/2}\right)$
+
+2. The median is the average of the two middle elements, $-\frac{8}{\pi }\text{ and }3.$ This average is:
+
+Answer: $\frac{3-\frac{8}{\pi }}{2} = \frac{3-\frac{8}{\pi }}{2}$
+
+```
+
+Insert an error into step 1.
+

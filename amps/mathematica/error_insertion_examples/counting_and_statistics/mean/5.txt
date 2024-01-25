@@ -1,0 +1,38 @@
+Given the following problem:
+
+```
+
+Find the mean of the list:
+
+$(6,-9,0,3,0,10)$
+
+```
+
+And correct solution:
+
+```
+
+1. The mean of a list of numbers is given by:
+
+$\frac{(\text{sum of elements})}{(\text{number of elements})}$
+
+2. $(\text{sum of elements}) = 6-9+0+3+0+10:$
+
+$\frac{6-9+0+3+0+10}{(\text{number of elements})}$
+
+3. Counting, we see that the list has $6$ elements:
+
+$\frac{6-9+0+3+0+10}{6}$
+
+4. $6-9+0+3+0+10 = 10:$
+
+$\frac{10}{6}$
+
+5. $\frac{10}{6}=\frac{5}{3}$:
+
+Answer: $\frac{5}{3}\approx 1.66667$
+
+```
+
+Insert an error into step 4.
+
