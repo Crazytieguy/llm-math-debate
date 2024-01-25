@@ -1,0 +1,27 @@
+Explanation: The second to last element in the list, $3 e$, was dropped.
+
+Note: Make sure to carry the error onto subsequent steps, replacing $-3 e+3 e-3 e+e+0-2 e+3 e-4 e$ with $-3 e+3 e-3 e+e+0-2 e-4 e$ and $-5 e$ with $-8 e$.
+
+```
+
+1. The mean of a list of numbers is given by:
+
+$\frac{(\text{sum of elements})}{(\text{number of elements})}$
+
+2. $(\text{sum of elements}) = -3 e+3 e-3 e+e+0-2 e-4 e:$
+
+$\frac{-3 e+3 e-3 e+e+0-2 e-4 e}{(\text{number of elements})}$
+
+3. Counting, we see that the list has $8$ elements:
+
+$\frac{-3 e+3 e-3 e+e+0-2 e-4 e}{8}$
+
+4. $-3 e+3 e-3 e+e+0-2 e-4 e = -8 e:$
+
+$\frac{-8 e}{8}$
+
+5. $\frac{-8 e}{8} = -e$:
+
+Answer: $-e$
+
+```

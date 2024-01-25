@@ -1,0 +1,15 @@
+Explanation: This computes the median, not the mean.
+
+Note: Make sure to follow through and compute the median instead of the mean, but use the word mean.
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-6 \sqrt{2},-4 \sqrt{2},-2 \sqrt{2}\right)$
+
+2. The mean of the list $\left(-6 \sqrt{2},-4 \sqrt{2},-2 \sqrt{2}\right)$ is the element in the middle, which is:
+
+Answer: $-4 \sqrt{2}$
+
+```

@@ -1,0 +1,27 @@
+Explanation: The list has $6$ elements, not $5$ elements.
+
+Note: Make sure to carry the error onto subsequent steps, replacing $6$ with $5$.
+
+```
+
+1. The mean of a list of numbers is given by:
+
+$\frac{(\text{sum of elements})}{(\text{number of elements})}$
+
+2. $(\text{sum of elements}) = -9-4+7-2-9+7:$
+
+$\frac{-9-4+7-2-9+7}{(\text{number of elements})}$
+
+3. Counting, we see that the list has $5$ elements:
+
+$\frac{-9-4+7-2-9+7}{5}$
+
+4. $-9-4+7-2-9+7 = -10:$
+
+$\frac{-10}{5}$
+
+5. $\frac{-10}{5}=-2$:
+
+Answer: $-2$
+
+```
