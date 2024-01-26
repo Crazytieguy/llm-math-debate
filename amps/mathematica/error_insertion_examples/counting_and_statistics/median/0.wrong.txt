@@ -1,0 +1,19 @@
+Explanation: The original list is already sorted, and the sorting here is done incorrectly. Specifically, $\frac{14}{\sqrt{\pi }}$ is greater than $3$, and should therefore be at the end of the list.
+
+Note: Make sure to carry the error onto subsequent steps, replacing $\left(-7,-\frac{8}{\pi },3,14 \pi ^{-1/2}\right)$ with $\left(-7,-\frac{8}{\pi },14 \pi ^{-1/2},3\right)$.
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-7,-\frac{8}{\pi },14 \pi ^{-1/2},3\right)$
+
+2. The two elements in the middle of the list $\left(-7,-\frac{8}{\pi },14 \pi ^{-1/2},3\right)\text{ are }-\frac{8}{\pi }\text{ and }14 \pi ^{-1/2}:$
+
+$\left(-7,-\frac{8}{\pi },14 \pi ^{-1/2},3\right)$
+
+3. The median is the average of the two middle elements, $-\frac{8}{\pi }\text{ and }14 \pi ^{-1/2}.$ This average is:
+
+Answer: $\frac{14 \pi ^{-1/2}-\frac{8}{\pi }}{2} = 7 \pi ^{-1/2}-\frac{4}{\pi }$
+
+```

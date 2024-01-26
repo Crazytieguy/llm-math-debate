@@ -1,0 +1,19 @@
+Explanation: The average of $-6$ and $-8 \log (2)$ is $\frac{-8 \log (2)-6}{2}$, not $\frac{-7 \log (2)}{2}$.
+
+Note: Make sure to copy everything up to the final answer correctly.
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$(-9,-8,-6,-8 \log (2),0,3)$
+
+2. The two elements in the middle of the list $(-9,-8,-6,-8 \log (2),0,3)\text{ are }-6\text{ and }-8 \log (2):$
+
+$(-9,-8,-6,-8 \log (2),0,3)$
+
+3. The median is the average of the two middle elements, $-6\text{ and }-8 \log (2).$ This average is:
+
+Answer: $\frac{-7 \log (2)}{2}$
+
+```

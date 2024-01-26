@@ -1,0 +1,19 @@
+Explanation: There are three $-1$s in the original list, and one of them was dropped.
+
+Note: Make sure to carry the error onto subsequent steps, replacing $\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,-1,0,1,4,2 e\right)$ with $\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,0,1,4,2 e\right)$ and computing the average of the two middle numbers instead of taking the middle number.
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,0,1,4,2 e\right)$
+
+2. The two elements in the middle of the list $\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,0,1,4,2 e\right)\text{ are }-7 2^{-1/2}\text{ and }-1:$
+
+$\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,0,1,4,2 e\right)$
+
+3. The median is the average of the two middle elements, $-7 2^{-1/2}\text{ and }-1.$ This average is:
+
+Answer: $\frac{-1-7 2^{-1/2}}{2}$
+
+```

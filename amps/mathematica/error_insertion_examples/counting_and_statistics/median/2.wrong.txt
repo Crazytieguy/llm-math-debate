@@ -1,0 +1,15 @@
+Explanation: The list has an even number of elements and middle elements are the two $0$s, so the median is $0$, not $2$.
+
+Note: Make sure to drop step 3 which is no longer required, and replace it with the final answer.
+
+```
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-\frac{29}{\pi },-3 e,-6,-3 \sqrt{3},-2\ 3^{-1/2},0,0,2,e,7,3 e,12 \log (2)\right)$
+
+2. The median of the list $\left(-\frac{29}{\pi },-3 e,-6,-3 \sqrt{3},-\frac{2}{\sqrt{3}},0,0,2,e,7,3 e,12 \log (2)\right)$ is the element in the middle, which is:
+
+Answer: $2$
+
+```
