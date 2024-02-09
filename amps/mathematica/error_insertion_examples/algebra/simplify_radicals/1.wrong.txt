@@ -2,6 +2,8 @@ Explanation: $-\left(\sqrt{186}-70\right)$ is $70-\sqrt{186}$, not $-\sqrt{186}-
 
 Note: Make sure to carry the error onto subsequent steps, replacing $70-\sqrt{186}$ with $-\sqrt{186}-70$.
 
+Modified solution:
+
 ```
 
 1. $-\left(\sqrt{186}-70\right)=-\sqrt{186}-70$:

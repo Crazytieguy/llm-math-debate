@@ -2,6 +2,8 @@ Explanation: $\sqrt{55} \sqrt{3}$ is $\sqrt{55\times 3}$, not $\sqrt{55 + 3}$.
 
 Note: Make sure to carry the error onto subsequent steps, replacing $55\times 3$ with $55 + 3$ and $165$ with $58$.
 
+Modified solution:
+
 ```
 
 1. $\sqrt{75} = \sqrt{3\times 5^2} = 5 \sqrt{3}$:

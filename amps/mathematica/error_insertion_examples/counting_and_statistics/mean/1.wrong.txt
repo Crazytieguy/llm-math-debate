@@ -2,6 +2,8 @@ Explanation: The second to last element in the list, $3 e$, was dropped.
 
 Note: Make sure to carry the error onto subsequent steps, replacing $-3 e+3 e-3 e+e+0-2 e+3 e-4 e$ with $-3 e+3 e-3 e+e+0-2 e-4 e$ and $-5 e$ with $-8 e$.
 
+Modified solution:
+
 ```
 
 1. The mean of a list of numbers is given by:

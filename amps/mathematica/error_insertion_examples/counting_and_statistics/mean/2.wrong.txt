@@ -2,6 +2,8 @@ Explanation: This computes the median, not the mean.
 
 Note: Make sure to follow through and compute the median instead of the mean, but use the word mean.
 
+Modified solution:
+
 ```
 
 1. The list, sorted from smallest to largest, is:

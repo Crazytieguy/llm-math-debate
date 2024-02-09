@@ -2,6 +2,8 @@ Explanation: There are three $-1$s in the original list, and one of them was dro
 
 Note: Make sure to carry the error onto subsequent steps, replacing $\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,-1,0,1,4,2 e\right)$ with $\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,0,1,4,2 e\right)$ and computing the average of the two middle numbers instead of taking the middle number.
 
+Modified solution:
+
 ```
 
 1. The list, sorted from smallest to largest, is:

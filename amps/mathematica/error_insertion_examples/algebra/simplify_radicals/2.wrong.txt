@@ -2,6 +2,8 @@ Explanation: In the final answer, the coefficient $2$ of the term $2 \sqrt{26}$ 
 
 Note: Make sure to only introduce the error in the final answer.
 
+Modified solution:
+
 ```
 
 1. $\sqrt{20} = \sqrt{2^2\times 5} = 2 \sqrt{5}$:

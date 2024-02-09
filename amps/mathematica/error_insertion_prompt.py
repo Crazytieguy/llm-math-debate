@@ -3,6 +3,8 @@ from pathlib import Path
 
 import typer
 
+from .pydantic_models import Solution, parse_solution_file
+
 
 def main(domain: str, problem_class: str):
     prompt = sample_error_prompt(domain, problem_class)
@@ -11,24 +13,19 @@ def main(domain: str, problem_class: str):
 
 def sample_error_prompt(domain: str, problem_class: str):
     problem_file = randomly_select_problem(domain, problem_class)
-    return format_error_insertion_prompt(problem_file.read_text())
+    solution = parse_solution_file(domain, problem_class, problem_file)
+    return format_error_insertion_prompt(solution)
 
 
-def format_error_insertion_prompt(problem: str) -> str:
-    problem, solution = problem.split("\n\n\\hrule\n\n")
-    step = random.choice(
-        [
-            step
-            for line in solution.splitlines()
-            if (step := safe_int(line.split(". ")[0])) is not None
-        ]
-    )
+def format_error_insertion_prompt(solution: Solution, step: int | None = None) -> str:
+    if step is None:
+        step = random.randint(1, solution.steps)
 
     return f"""Given the following problem:
 
 ```
 
-{problem}
+{solution.problem}
 
 ```
 
@@ -36,7 +33,7 @@ And correct solution:
 
 ```
 
-{solution}
+{solution.solution}
 
 ```
 
@@ -53,13 +50,6 @@ def randomly_select_problem(domain: str, problem_class: str) -> Path:
     files = list(dir.iterdir())
     problem_file = random.choice(files)
     return problem_file
-
-
-def safe_int(x: str) -> int | None:
-    try:
-        return int(x)
-    except ValueError:
-        return None
 
 
 if __name__ == "__main__":

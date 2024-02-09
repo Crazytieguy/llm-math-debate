@@ -2,6 +2,8 @@ Explanation: The original list is already sorted, and the sorting here is done i
 
 Note: Make sure to carry the error onto subsequent steps, replacing $\left(-7,-\frac{8}{\pi },3,14 \pi ^{-1/2}\right)$ with $\left(-7,-\frac{8}{\pi },14 \pi ^{-1/2},3\right)$.
 
+Modified solution:
+
 ```
 
 1. The list, sorted from smallest to largest, is:

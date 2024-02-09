@@ -2,6 +2,8 @@ Explanation: The negative sign of elements in the list was ignored.
 
 Note: Make sure to carry the error onto subsequent steps, replacing $-4 e-2 e+e-e-2 e-3 e-2 e+e$ with $4 e+2 e+e+e+2 e+3 e+2 e+e$ and $-12 e$ with $16 e$.
 
+Modified solution:
+
 ```
 
 1. The mean of a list of numbers is given by:

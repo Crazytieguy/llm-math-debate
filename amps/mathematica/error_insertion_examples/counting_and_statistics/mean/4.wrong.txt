@@ -2,6 +2,8 @@ Explanation: The list has $6$ elements, not $5$ elements.
 
 Note: Make sure to carry the error onto subsequent steps, replacing $6$ with $5$.
 
+Modified solution:
+
 ```
 
 1. The mean of a list of numbers is given by:

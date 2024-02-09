@@ -2,6 +2,8 @@ Explanation: $\sqrt{4}$ can be simplified further to $2$.
 
 Note: Make sure to carry the error onto the final answer, replacing $2$ with $\sqrt{4}$.
 
+Modified solution:
+
 ```
 
 1. $\sqrt{80} = \sqrt{2^4\times 5} = 2^2 \sqrt{5}$:

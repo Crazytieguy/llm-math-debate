@@ -2,6 +2,8 @@ Explanation: $\sqrt[4]{2^2}$ is $\sqrt{2}$, not $2$.
 
 Note: Make sure to carry the error onto the answer.
 
+Modified solution:
+
 ```
 
 1. Multiply exponents. $\sqrt{\sqrt{164}}=\sqrt[4]{164}$:

@@ -2,6 +2,8 @@ Explanation: The average of $-6$ and $-8 \log (2)$ is $\frac{-8 \log (2)-6}{2}$,
 
 Note: Make sure to copy everything up to the final answer correctly.
 
+Modified solution:
+
 ```
 
 1. The list, sorted from smallest to largest, is:

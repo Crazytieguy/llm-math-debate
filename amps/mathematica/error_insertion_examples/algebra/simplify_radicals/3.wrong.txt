@@ -2,6 +2,8 @@ Explanation: $\sqrt{42}$ is not $\sqrt{3^2\times 7}$ but $\sqrt{2\times 3\times 
 
 Note: Make sure to carry the error onto subsequent steps, replacing $\sqrt{42}$ with $3 \sqrt{7}$.
 
+Modified solution:
+
 ```
 
 1. $\sqrt{42} = \sqrt{3^2\times 7} = 3 \sqrt{7}:$

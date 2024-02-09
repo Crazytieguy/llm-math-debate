@@ -2,6 +2,8 @@ Explanation: While sorting the list, the elements $-2 \log (2)$ and $\frac{9}{e}
 
 Note: Make sure to carry the error onto subsequent steps, dropping $-2 \log (2)$ and $\frac{9}{e}$ from the list and replacing $\frac{9}{e}$ with $5$.
 
+Modified solution:
+
 ```
 
 1. The list, sorted from smallest to largest, is:

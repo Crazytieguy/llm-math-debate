@@ -1,0 +1,6 @@
+{
+  "exclude": [
+    "amps/mathematica/formatted",
+    "amps/mathematica/original",
+  ]
+}
