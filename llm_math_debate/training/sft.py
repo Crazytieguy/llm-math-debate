@@ -41,7 +41,7 @@ def main(
     dataset_path: str = "amps/mathematica/solution_dataset.jsonl",
 ):
     dataset_dict = load_and_split_dataset(dataset_path)
-    dataset = dataset_dict["train"].map(format_prompt, batched=True)
+    dataset = dataset_dict["train"].map(format_prompt, batched=False)
 
     quantization_config = BitsAndBytesConfig(load_in_8bit=True)
     device_map = (
