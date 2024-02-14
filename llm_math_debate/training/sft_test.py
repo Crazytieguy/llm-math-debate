@@ -1,16 +1,15 @@
 import json
 from pathlib import Path
+from typing import Optional
 
 import torch
 import typer
-from accelerate import Accelerator
 from peft import PeftModel  # type: ignore
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     BitsAndBytesConfig,
 )
-from trl import is_xpu_available
 
 from ..data_processing.load_dataset import load_and_split_dataset
 from .sft import format_prompt
@@ -20,23 +19,18 @@ def main(
     base_model: str = "meta-llama/Llama-2-70b-hf",
     model_dir: str = "llama-70b-solution-classifier",
     dataset_path: str = "amps/mathematica/solution_dataset.jsonl",
-    output_path: Path | None = None,
+    output_path: Optional[Path] = None,
 ):
     if output_path is None:
         output_path = Path(f"{model_dir}-test.jsonl")
     dataset_dict = load_and_split_dataset(dataset_path)
     dataset = dataset_dict["test"]
     quantization_config = BitsAndBytesConfig(load_in_8bit=True)
-    device_map = (
-        {"": f"xpu:{Accelerator().local_process_index}"}
-        if is_xpu_available()
-        else {"": Accelerator().local_process_index}
-    )
 
     model = AutoModelForCausalLM.from_pretrained(
         base_model,
         quantization_config=quantization_config,
-        device_map=device_map,
+        device_map="auto",
         torch_dtype=torch.bfloat16,
     )
     model = PeftModel.from_pretrained(model, model_dir)

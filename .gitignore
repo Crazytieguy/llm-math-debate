@@ -2,3 +2,4 @@ target
 indent.log
 latex-workshop
 __pycache__
+job_outputs

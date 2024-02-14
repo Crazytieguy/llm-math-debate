@@ -4,7 +4,6 @@ Based mostly on https://github.com/huggingface/trl/blob/main/examples/scripts/sf
 
 import torch
 import typer
-from accelerate import Accelerator
 from peft import LoraConfig  # type: ignore
 from tqdm import tqdm
 from transformers import (
@@ -13,7 +12,7 @@ from transformers import (
     BitsAndBytesConfig,
     TrainingArguments,
 )
-from trl import DataCollatorForCompletionOnlyLM, SFTTrainer, is_xpu_available
+from trl import DataCollatorForCompletionOnlyLM, SFTTrainer
 
 from ..data_processing.load_dataset import load_and_split_dataset
 from ..data_processing.pydantic_models import Solution
@@ -44,22 +43,17 @@ def main(
     dataset = dataset_dict["train"].map(format_prompt, batched=False)
 
     quantization_config = BitsAndBytesConfig(load_in_8bit=True)
-    device_map = (
-        {"": f"xpu:{Accelerator().local_process_index}"}
-        if is_xpu_available()
-        else {"": Accelerator().local_process_index}
-    )
 
     model = AutoModelForCausalLM.from_pretrained(
         base_model,
         quantization_config=quantization_config,
-        device_map=device_map,
+        device_map="auto",
         torch_dtype=torch.bfloat16,
     )
 
     training_args = TrainingArguments(
         output_dir=output_dir,
-        per_device_train_batch_size=4,  # critical for memory usage
+        per_device_train_batch_size=1,  # critical for memory usage
         gradient_accumulation_steps=1,
         learning_rate=1e-4,
         logging_steps=1,
