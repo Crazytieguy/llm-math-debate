@@ -36,8 +36,8 @@ Correct: {"yes" if solution.solution_error is None else "no"}"""
 
 
 def main(
-    base_model: str = "meta-llama/Llama-2-13b-hf",
-    output_dir: str = "llama-13b-solution-classifier",
+    base_model: str = "meta-llama/Llama-2-70b-hf",
+    output_dir: str = "llama-70b-solution-classifier",
     dataset_path: str = "amps/mathematica/solution_dataset.jsonl",
 ):
     dataset_dict = load_and_split_dataset(dataset_path)
@@ -71,8 +71,8 @@ def main(
     )
 
     peft_config = LoraConfig(
-        r=64,
-        lora_alpha=16,
+        r=128,
+        lora_alpha=8,
         bias="none",
         task_type="CAUSAL_LM",
     )

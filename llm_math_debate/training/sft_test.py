@@ -1,5 +1,5 @@
-from collections import Counter, defaultdict
-from pprint import pprint
+import json
+from pathlib import Path
 
 import torch
 import typer
@@ -13,15 +13,17 @@ from transformers import (
 from trl import is_xpu_available
 
 from ..data_processing.load_dataset import load_and_split_dataset
-from ..data_processing.pydantic_models import Solution
 from .sft import format_prompt
 
 
 def main(
-    base_model: str = "meta-llama/Llama-2-13b-hf",
-    model_dir: str = "llama-13b-solution-classifier",
+    base_model: str = "meta-llama/Llama-2-70b-hf",
+    model_dir: str = "llama-70b-solution-classifier",
     dataset_path: str = "amps/mathematica/solution_dataset.jsonl",
+    output_path: Path | None = None,
 ):
+    if output_path is None:
+        output_path = Path(f"{model_dir}-test.jsonl")
     dataset_dict = load_and_split_dataset(dataset_path)
     dataset = dataset_dict["test"]
     quantization_config = BitsAndBytesConfig(load_in_8bit=True)
@@ -41,11 +43,10 @@ def main(
 
     tokenizer = AutoTokenizer.from_pretrained(base_model)
 
-    stats_by_domain_class = defaultdict(Counter)
-    stats_by_number_of_steps = defaultdict(Counter)
+    data = []
     for sample in dataset:
-        solution = Solution.model_validate(sample)
-        formatted = format_prompt(sample)  # type: ignore
+        assert isinstance(sample, dict)
+        formatted = format_prompt(sample)
         prompt = formatted["text"].removesuffix(" yes").removesuffix(" no")
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(model.device)
         outputs = model.generate(input_ids=input_ids, max_new_tokens=10)
@@ -56,15 +57,10 @@ def main(
         correct = formatted["text"].split(" ")[-1]
         inferred = output_text.split(" ")[-1]
         is_correct = correct == inferred
-        is_correct_str = "correct" if is_correct else "incorrect"
-        stats_by_domain_class[f"{solution.domain}/{solution.problem_class}"][
-            is_correct_str
-        ] += 1
-        stats_by_number_of_steps[solution.steps][is_correct_str] += 1
-    print("Stats by domain class:")
-    pprint(dict(stats_by_domain_class))
-    print("Stats by number of steps:")
-    pprint(dict(stats_by_number_of_steps))
+        sample["inferred"] = inferred
+        sample["is_correct"] = is_correct
+        data.append(sample)
+    output_path.write_text("\n".join(json.dumps(sample) for sample in data))
 
 
 if __name__ == "__main__":
