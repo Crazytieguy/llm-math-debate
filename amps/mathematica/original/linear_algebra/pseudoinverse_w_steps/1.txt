@@ -1,0 +1,144 @@
+Problem:
+Compute the (pseudo)inverse of
+$\left(
+\begin{array}{ccc}
+ 1 & 1 & 3 \\
+ 0 & 3 & 1 \\
+ -4 & -4 & -1 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the inverse}: \\
+ \left(
+\begin{array}{ccc}
+ 1 & 1 & 3 \\
+ 0 & 3 & 1 \\
+ -4 & -4 & -1 \\
+\end{array}
+\right)^{-1} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{To }\text{find }\text{the }\text{inverse, }\text{augment }\text{the }\text{given }\text{matrix }\text{with }\text{the }\text{identity }\text{matrix }\text{and }\text{perform }\text{Gaussian }\text{elimination}: \\
+ \left(
+\begin{array}{ccc|ccc}
+ 1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 1 & 0 & 1 & 0 \\
+ -4 & -4 & -1 & 0 & 0 & 1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }4\, \times \, \text{(row }1) \text{to }\text{row }3: \\
+ \left(
+\begin{array}{ccc|ccc}
+ 1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 1 & 0 & 1 & 0 \\
+ 0 & 0 & 11 & 4 & 0 & 1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{row }3 \text{by }11: \\
+ \left(
+\begin{array}{ccc|ccc}
+ 1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 1 & 0 & 1 & 0 \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\text{row }3 \text{from }\text{row }2: \\
+ \left(
+\begin{array}{ccc|ccc}
+ 1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 0 & -\frac{4}{11} & 1 & -\frac{1}{11} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }3\, \times \, \text{(row }3) \text{from }\text{row }1: \\
+ \left(
+\begin{array}{ccc|ccc}
+ 1 & 1 & 0 & -\frac{1}{11} & 0 & -\frac{3}{11} \\
+ 0 & 3 & 0 & -\frac{4}{11} & 1 & -\frac{1}{11} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{row }2 \text{by }3: \\
+ \left(
+\begin{array}{ccc|ccc}
+ 1 & 1 & 0 & -\frac{1}{11} & 0 & -\frac{3}{11} \\
+ 0 & 1 & 0 & -\frac{4}{33} & \frac{1}{3} & -\frac{1}{33} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\text{row }2 \text{from }\text{row }1: \\
+ \left(
+\begin{array}{ccc|ccc}
+ 1 & 0 & 0 & \frac{1}{33} & -\frac{1}{3} & -\frac{8}{33} \\
+ 0 & 1 & 0 & -\frac{4}{33} & \frac{1}{3} & -\frac{1}{33} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Read }\text{off }\text{the }\text{inverse}: \\
+ \left(
+\begin{array}{ccc}
+ 1 & 1 & 3 \\
+ 0 & 3 & 1 \\
+ -4 & -4 & -1 \\
+\end{array}
+\right)^{-1}=\left(
+\begin{array}{ccc}
+ \frac{1}{33} & -\frac{1}{3} & -\frac{8}{33} \\
+ -\frac{4}{33} & \frac{1}{3} & -\frac{1}{33} \\
+ \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{by }\text{factoring }\text{out }\text{an }\text{appropriate }\text{term}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \frac{1}{33}\left(
+\begin{array}{ccc}
+ 1 & -11 & -8 \\
+ -4 & 11 & -1 \\
+ 12 & 0 & 3 \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

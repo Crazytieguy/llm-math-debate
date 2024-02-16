@@ -1,0 +1,15 @@
+Problem:
+Compute
+$\left(
+\begin{array}{cc}
+ 2 & 0 \\
+ \frac{3}{2} & 3 \\
+\end{array}
+\right)^3$.
+Answer:
+$\left(
+\begin{array}{cc}
+ 8 & 0 \\
+ \frac{57}{2} & 27 \\
+\end{array}
+\right)$

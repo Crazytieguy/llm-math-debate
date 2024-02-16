@@ -1,0 +1,7 @@
+Problem:
+A side-angle-side triangle has sides $10.2$ and $6.2$ and an angle $100 {}^{\circ}$. Determine the area, circumradius, inradius, and semiperimeter of the triangle.
+Answer:
+Inradius: $2.13$ 
+Circumradius: $6.51$ 
+Area: $31.14$ 
+Semiperimeter: $14.61$

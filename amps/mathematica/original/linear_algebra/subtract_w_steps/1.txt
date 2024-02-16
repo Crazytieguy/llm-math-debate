@@ -1,0 +1,516 @@
+Problem:
+Subtract the second matrix from the first:
+$\left(
+\begin{array}{cc}
+ \frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)$
+$\left(
+\begin{array}{cc}
+ 5 & -\frac{75}{8} \\
+ \frac{33}{16} & -\frac{97}{16} \\
+ \frac{117}{16} & \frac{77}{8} \\
+\end{array}
+\right)$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Simplify the following}: \\
+ \left(
+\begin{array}{cc}
+ \frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+ 5 & -\frac{75}{8} \\
+ \frac{33}{16} & -\frac{97}{16} \\
+ \frac{117}{16} & \frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ -1\left(
+\begin{array}{cc}
+ 5 & -\frac{75}{8} \\
+ \frac{33}{16} & -\frac{97}{16} \\
+ \frac{117}{16} & \frac{77}{8} \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+ -5 & -\frac{-75}{8} \\
+ -\frac{33}{16} & -\frac{-97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{cc}
+ \frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\fbox{$\left(
+\begin{array}{cc}
+ -5 & -\frac{-75}{8} \\
+ -\frac{33}{16} & -\frac{-97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right)$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -(-75) \text{= }75: \\
+ \left(
+\begin{array}{cc}
+ \frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+ -5 & \frac{\fbox{$75$}}{8} \\
+ -\frac{33}{16} & -\frac{-97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -(-97) \text{= }97: \\
+ \left(
+\begin{array}{cc}
+ \frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+ -5 & \frac{75}{8} \\
+ -\frac{33}{16} & \frac{\fbox{$97$}}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cc}
+ \frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+ -5 & \frac{75}{8} \\
+ -\frac{33}{16} & \frac{97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+ \frac{61}{16}-5 & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{cc}
+ \frac{61}{16}-5 & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }\frac{61}{16}-5 \text{over }\text{the }\text{common }\text{denominator }\text{16. }\frac{61}{16}-5 \text{= }\frac{61}{16}+\frac{16 (-5)}{16}: \\
+ \left(
+\begin{array}{cc}
+ \fbox{$\frac{61}{16}+\frac{16 (-5)}{16}$} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 16 (-5) \text{= }-80: \\
+ \left(
+\begin{array}{cc}
+ \frac{61}{16}+\frac{\fbox{$-80$}}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{61}{16}-\frac{80}{16} \text{= }\frac{61-80}{16}: \\
+ \left(
+\begin{array}{cc}
+ \fbox{$\frac{61-80}{16}$} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 61-80 \text{= }-(80-61): \\
+ \left(
+\begin{array}{cc}
+ \frac{\fbox{$-(80-61)$}}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+\hline
+ \text{} & 7 & 10 \\
+\hline
+ \text{} & 8 & 0 \\
+ - & 6 & 1 \\
+ \text{} & 1 & 9 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{cc}
+ \frac{-\fbox{$19$}}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }\frac{79}{16}+\frac{75}{8} \text{over }\text{the }\text{common }\text{denominator }\text{16. }\frac{79}{16}+\frac{75}{8} \text{= }\frac{79}{16}+\frac{2\times 75}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \fbox{$\frac{79}{16}+\frac{2\times 75}{16}$} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2\times 75 \text{= }150: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{79}{16}+\frac{\fbox{$150$}}{16} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{79}{16}+\frac{150}{16} \text{= }\frac{79+150}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \fbox{$\frac{79+150}{16}$} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{cccc}
+\hline
+ \text{} & 1 & \text{} & \text{} \\
+\hline
+ \text{} & 1 & 5 & 0 \\
+ + & \text{} & 7 & 9 \\
+ \text{} & 2 & 2 & 9 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{\fbox{$229$}}{16} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{119}{16}-\frac{33}{16} \text{= }\frac{-119-33}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ \fbox{$\frac{-119-33}{16}$} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -119-33=-(119+33): \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ \frac{\fbox{$-(119+33)$}}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{cccc}
+\hline
+ \text{} & \text{} & 1 & \text{} \\
+\hline
+ \text{} & 1 & 1 & 9 \\
+ + & \text{} & 3 & 3 \\
+ \text{} & 1 & 5 & 2 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ \frac{-\fbox{$152$}}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }\text{152 }\text{and }\text{16 }\text{is }8, \text{so }\frac{-152}{16}=\frac{-(8\times 19)}{8\times 2}=\frac{8}{8}\times \frac{-19}{2}=\frac{-19}{2}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ \frac{-\fbox{$19$}}{\fbox{$2$}} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{83}{16}+\frac{97}{16} \text{= }\frac{-83+97}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \fbox{$\frac{-83+97}{16}$} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -83+97=14: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{\fbox{$14$}}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }\text{14 }\text{and }\text{16 }\text{is }2, \text{so }\frac{14}{16}=\frac{2\times 7}{2\times 8}=\frac{2}{2}\times \frac{7}{8}=\frac{7}{8}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \fbox{$\frac{7}{8}$} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }6-\frac{117}{16} \text{over }\text{the }\text{common }\text{denominator }\text{16. }6-\frac{117}{16} \text{= }\frac{16\times 6}{16}-\frac{117}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \fbox{$\frac{16\times 6}{16}-\frac{117}{16}$} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 16\times 6 \text{= }96: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{\fbox{$96$}}{16}-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{96}{16}-\frac{117}{16} \text{= }\frac{96-117}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \fbox{$\frac{96-117}{16}$} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 96-117 \text{= }-(117-96): \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{\fbox{$-(117-96)$}}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{cccc}
+\hline
+ \text{} & 0 & 11 & \text{} \\
+\hline
+ \text{} & 1 & 1 & 7 \\
+ - & \text{} & 9 & 6 \\
+ \text{} & 0 & 2 & 1 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{-\fbox{$21$}}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }\frac{117}{16}-\frac{77}{8} \text{over }\text{the }\text{common }\text{denominator }\text{16. }\frac{117}{16}-\frac{77}{8} \text{= }\frac{117}{16}+\frac{2 (-77)}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \fbox{$\frac{117}{16}+\frac{2 (-77)}{16}$} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2 (-77) \text{= }-154: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{117}{16}+\frac{\fbox{$-154$}}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{117}{16}-\frac{154}{16} \text{= }\frac{117-154}{16}: \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \fbox{$\frac{117-154}{16}$} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 117-154 \text{= }-(154-117): \\
+ \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{\fbox{$-(154-117)$}}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{cccc}
+\hline
+ \text{} & \text{} & 4 & 14 \\
+\hline
+ \text{} & 1 & 5 & 4 \\
+ - & 1 & 1 & 7 \\
+ \text{} & 0 & 3 & 7 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \left(
+\begin{array}{cc}
+ -\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{-\fbox{$37$}}{16} \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

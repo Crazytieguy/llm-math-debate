@@ -1,0 +1,107 @@
+Find the determinant:
+
+$\left| 
+\begin{array}{ccc}
+-2 & 5 & -1 \\
+ -4 & 2 & -2 \\
+ -1 & 4 & 1 \\
+\end{array}
+\right|$
+
+\hrule
+
+1. Row $3$ has as many or more ones than the others:
+
+= $\left| 
+\begin{array}{ccc}
+-2 & 5 & -1 \\
+ -4 & 2 & -2 \\
+ -1 & 4 & 1 \\
+\end{array}
+\right|$
+
+2. The determinant of the matrix $\left(
+\begin{array}{ccc}
+-2 & 5 & -1 \\
+ -4 & 2 & -2 \\
+ -1 & 4 & 1 \\
+\end{array}
+\right)\text{ is given by }(-1)\, \left| 
+\begin{array}{cc}
+5 & -1 \\
+ 2 & -2 \\
+\end{array}
+\right| +(-4)\, \left| 
+\begin{array}{cc}
+-2 & -1 \\
+ -4 & -2 \\
+\end{array}
+\right| +1 \left| 
+\begin{array}{cc}
+-2 & 5 \\
+ -4 & 2 \\
+\end{array}
+\right|$ :
+
+= $(-1)\, \left| 
+\begin{array}{cc}
+5 & -1 \\
+ 2 & -2 \\
+\end{array}
+\right| +(-4)\, \left| 
+\begin{array}{cc}
+-2 & -1 \\
+ -4 & -2 \\
+\end{array}
+\right| +1 \left| 
+\begin{array}{cc}
+-2 & 5 \\
+ -4 & 2 \\
+\end{array}
+\right|$
+
+3. $(-1)\, \left| 
+\begin{array}{cc}
+5 & -1 \\
+ 2 & -2 \\
+\end{array}
+\right| =(-1)\, (5 (-2)-(-1)\, \times \, 2)=-(-8)=8$:
+
+= $8+(-4)\, \left| 
+\begin{array}{cc}
+-2 & -1 \\
+ -4 & -2 \\
+\end{array}
+\right| +1 \left| 
+\begin{array}{cc}
+-2 & 5 \\
+ -4 & 2 \\
+\end{array}
+\right|$
+
+4. $(-4)\, \left| 
+\begin{array}{cc}
+-2 & -1 \\
+ -4 & -2 \\
+\end{array}
+\right| =(-4)\, ((-2)\, (-2)-(-1)\, (-4))=-4\times 0=0$:
+
+= $8+0+1 \left| 
+\begin{array}{cc}
+-2 & 5 \\
+ -4 & 2 \\
+\end{array}
+\right|$
+
+5. $1 \left| 
+\begin{array}{cc}
+-2 & 5 \\
+ -4 & 2 \\
+\end{array}
+\right| =1 ((-2)\, \times \, 2-5 (-4))=1\times 16=16$:
+
+= $8+16$
+
+6. $8+16\, =\, 24:$
+
+Answer: = $24$

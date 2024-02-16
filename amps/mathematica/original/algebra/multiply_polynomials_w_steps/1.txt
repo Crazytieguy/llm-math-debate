@@ -1,0 +1,36 @@
+Problem:
+Multiply and expand $p(x) = -9 x^2-11 x+13$ and $q(x) = -8 x-10$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Expand the following}: \\
+ \left(-9 x^2-11 x+13\right) (-8 x-10) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{rrrrrrr}
+ \text{x}^2 & \text{x}^2 & -9 x^2 & - & 11 x & + & 13 \\
+ \text{x}^2 & \text{x}^2 & \text{x}^2 & \text{x}^2 & -8 x & - & 10 \\
+\hline
+ \text{x}^2 & \text{x}^2 & 90 x^2 & + & 110 x & - & 130 \\
+ 72 x^3 & + & 88 x^2 & - & 104 x & + & 0 \\
+ 72 x^3 & + & 178 x^2 & + & 6 x & - & 130 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 72 x^3+178 x^2+6 x-130 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

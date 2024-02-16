@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $\sqrt{-15 x-2}+\sqrt{-8 x-2}=7$
+Answer:
+$\left\{\left\{x\to -23+2 \sqrt{118}\right\}\right\}$

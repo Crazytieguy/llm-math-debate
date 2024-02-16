@@ -1,0 +1,5 @@
+Problem:
+Find the sixth order series of the inverse of the following function around 6:
+$\frac{1}{16 x^4}$
+Answer:
+$\frac{1}{2 \sqrt[4]{x}}$

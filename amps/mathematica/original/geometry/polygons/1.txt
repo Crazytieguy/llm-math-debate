@@ -1,0 +1,14 @@
+Problem:
+A polygon with $4$ vertices has the coordinates $\left(
+\begin{array}{cc}
+ 0. & 0. \\
+ 0.233 & 0.171 \\
+ 0.636 & 0.413 \\
+ 0.924 & 0.302 \\
+\end{array}
+\right)$. Estimate the polygon's interior angles (in radians), area, and perimeter. Also, classify the polygon as 'Simple' or 'Convex'.
+Answer:
+Angles: $\{0.32,3.05,2.23,0.69\}$ 
+Area: $0.1$ 
+Perimeter: $2.04$ 
+Type: Convex

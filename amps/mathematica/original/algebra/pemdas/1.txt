@@ -1,0 +1,4 @@
+Problem:
+Simplify $\frac{4}{7}+((14+20)+8)$.
+Answer:
+$\frac{298}{7}$

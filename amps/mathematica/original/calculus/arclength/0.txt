@@ -1,0 +1,4 @@
+Problem:
+Find the arclength of the function $f(x) = e^{-x}-\sin ^{-1}(2 x)$ on the interval $x = 2$ to $x = 4$
+Answer:
+$\int_2^4 \sqrt{\left(-\frac{2}{\sqrt{1-4 x^2}}-e^{-x}\right)^2+1} \, dx$

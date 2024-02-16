@@ -1,0 +1,5 @@
+Problem:
+Find the range of the following function:
+$\sqrt{\cos (3 x+6)}$
+Answer:
+$0\leq y\leq 1$

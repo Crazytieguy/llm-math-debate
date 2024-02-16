@@ -1,0 +1,5 @@
+Problem:
+Find the integral of the following function:
+$\frac{1}{x+2}-\frac{4}{3 \sqrt[3]{-4 x-9}^2}$
+Answer:
+$\frac{-4 x-9}{\sqrt[3]{-4 x-9}^2}+\log (x+2)$

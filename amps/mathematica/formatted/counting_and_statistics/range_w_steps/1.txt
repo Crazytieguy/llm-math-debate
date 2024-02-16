@@ -1,0 +1,21 @@
+Find the range of the list:
+
+$\left(-5,\frac{3}{2},-4,-\frac{279}{32},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,9,-4,-3,1\right) = \left(-5,\frac{3}{2},-4,-\frac{279}{32},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,9,-4,-3,1\right)$
+
+\hrule
+
+1. The range of a list is given by:
+
+$(\text{largest element})-(\text{smallest element})$
+
+2. $\left(-5,\frac{3}{2},-4,-\frac{279}{32},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,9,-4,-3,1\right)\text{  We see that the largest element is }9:$
+
+$9-(\text{smallest element})$
+
+3. $\left(-5,\frac{3}{2},-4,-\frac{279}{32},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,9,-4,-3,1\right)\text{  We see that the smallest element is }-\frac{279}{32}$:
+
+$-\frac{-279}{32}+9$
+
+4. $-\frac{-279}{32}+9=\frac{567}{32}$:
+
+Answer: $\frac{567}{32}$

@@ -1,0 +1,5 @@
+Problem:
+Orthogonalize the following vectors:
+${\{-1,-2,2\}, \{1,0,-1\}, \{2,-1,-3\}}$
+Answer:
+${\left\{-\frac{1}{3},-\frac{2}{3},\frac{2}{3}\right\}, \left\{\frac{2}{3},-\frac{2}{3},-\frac{1}{3}\right\}, \left\{-\frac{2}{3},-\frac{1}{3},-\frac{2}{3}\right\}}$

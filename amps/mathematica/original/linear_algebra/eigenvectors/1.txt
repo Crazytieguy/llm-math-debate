@@ -1,0 +1,10 @@
+Problem:
+Find the eigenvectors of the following matrix:
+$\left(
+\begin{array}{cc}
+ 2 & 4 \\
+ -2 & -5 \\
+\end{array}
+\right)$.
+Answer:
+${\left\{\frac{1}{4} \left(-7-\sqrt{17}\right),1\right\}, \left\{\frac{1}{4} \left(\sqrt{17}-7\right),1\right\}}$

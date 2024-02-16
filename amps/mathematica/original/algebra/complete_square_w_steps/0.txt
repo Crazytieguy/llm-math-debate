@@ -1,0 +1,81 @@
+Problem:
+Given the equation $-5 x^2+x+y^2-y-8=0$, complete the square.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Complete the square}: \\
+ y^2-y-5 x^2+x-8=0 \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Add }8 \text{to }\text{both }\text{sides}: \\
+ y^2-y-5 x^2+x=8 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Group }\text{terms }\text{with }x \text{and }y \text{separately, }\text{leaving }\text{placeholder }\text{constants}: \\
+ \left(-5 x^2+x+\underline{\text{   }}\right)+\left(y^2-y+\underline{\text{   }}\right)=\underline{\text{   }}+8 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(-5 x^2+x+\underline{\text{   }}\right)=-5 \left(x^2-\frac{x}{5}+\underline{\text{   }}\right): \\
+ \fbox{$-5 \left(x^2-\frac{x}{5}+\underline{\text{   }}\right)$}+\left(y^2-y+\underline{\text{   }}\right)=\underline{\text{   }}+8 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Take }\text{one }\text{half }\text{of }\text{the }\text{coefficient }\text{of }x \text{and }\text{square }\text{it. }\text{Then }\text{add }\text{it }\text{to }\text{both }\text{sides }\text{of }\text{the }\text{equation, }\text{multiplying }\text{by }\text{the }\text{factored }\text{constant }-5 \text{on }\text{the }\text{right.} \\
+ \text{Insert }\left(\frac{\frac{-1}{5}}{2}\right)^2=\frac{1}{100} \text{on }\text{the }\text{left }\text{and }\frac{-5}{100}=-\frac{1}{20} \text{on }\text{the }\text{right}: \\
+\end{array}
+ \\
+ -5 \left(x^2-\frac{x}{5}+\fbox{$\frac{1}{100}$}\right)+\left(y^2-y+\underline{\text{   }}\right)=\fbox{$-\frac{1}{20}$}+8 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 8-\frac{1}{20}=\frac{159}{20}: \\
+ -5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\underline{\text{   }}\right)=\fbox{$\frac{159}{20}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Take }\text{one }\text{half }\text{of }\text{the }\text{coefficient }\text{of }y \text{and }\text{square }\text{it, }\text{then }\text{add }\text{it }\text{to }\text{both }\text{sides.} \\
+ \text{Add }\left(\frac{-1}{2}\right)^2=\frac{1}{4} \text{to }\text{both }\text{sides}: \\
+\end{array}
+ \\
+ -5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\fbox{$\frac{1}{4}$}\right)=\fbox{$\frac{1}{4}$}+\frac{159}{20} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{159}{20}+\frac{1}{4}=\frac{41}{5}: \\
+ -5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\frac{1}{4}\right)=\fbox{$\frac{41}{5}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ x^2-\frac{x}{5}+\frac{1}{100}=\left(x-\frac{1}{10}\right)^2: \\
+ -5 \fbox{$\left(x-\frac{1}{10}\right)^2$}+\left(y^2-y+\frac{1}{4}\right)=\frac{41}{5} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ y^2-y+\frac{1}{4}=\left(y-\frac{1}{2}\right)^2: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & -5 \left(x-\frac{1}{10}\right)^2+\fbox{$\left(y-\frac{1}{2}\right)^2$}=\frac{41}{5} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

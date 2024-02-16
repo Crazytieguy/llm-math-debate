@@ -1,0 +1,78 @@
+Convert the following to base $26:$
+
+$6876_{10}$
+
+\hrule
+
+1. Determine the powers of 26 that will be used as the places of the digits in the base-26 representation of $6876:$
+
+$\begin{array}{|c|c|c}
+\hline
+\text{ Power }&\text{ Base}^{\text{Power}} &\text{ Place value }\\
+\hline
+ 3 & 26^3 & 17576 \\
+\hline
+ 2 & 26^2 & 676 \\
+ 1 & 26^1 & 26 \\
+ 0 & 26^0 & 1 \\
+\end{array}$
+
+2. Label each place of the base-26 representation of 6876 with the appropriate power of $26:$
+
+$\begin{array}{ccccccc}
+\text{Place }&   &   & 26^2 & 26^1 & 26^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 6876_{10} & = & ( & \_\_ & \_\_ & \_\_ & )_{\text{}_{26}} \\
+\end{array}$
+
+3. Determine the value of the first digit from the right of 6876 in base $26:$
+
+$\begin{array}{l}
+\frac{6876}{26}=264\text{ with remainder }12 \\
+ 
+\begin{array}{ccccccc}
+\text{Place }&   &   & 26^2 & 26^1 & 26^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 6876_{10} & = & ( & \_\_ & \_\_ & 12 & )_{\text{}_{26}} \\
+\end{array}
+ \\
+\end{array}$
+
+4. Determine the value of the next digit from the right of 6876 in base $26:$
+
+$\begin{array}{l}
+\frac{264}{26}=10\text{ with remainder }4 \\
+ 
+\begin{array}{ccccccc}
+\text{Place }&   &   & 26^2 & 26^1 & 26^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 6876_{10} & = & ( & \_\_ & 4 & 12 & )_{\text{}_{26}} \\
+\end{array}
+ \\
+\end{array}$
+
+5. Determine the value of the last remaining digit of 6876 in base $26:$
+
+$\begin{array}{l}
+\frac{10}{26}=0\text{ with remainder }10 \\
+ 
+\begin{array}{ccccccc}
+\text{Place }&   &   & 26^2 & 26^1 & 26^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 6876_{10} & = & ( & 10 & 4 & 12 & )_{\text{}_{26}} \\
+\end{array}
+ \\
+\end{array}$
+
+6. Convert all digits that are greater than 9 to their base 26 alphabetical equivalent:
+
+$\begin{array}{ccc}
+\text{Base-26 digit value }&   &\text{ Base-26 digit }\\
+ 10 & \rightarrow  &\text{ a }\\
+ 4 & \rightarrow  & 4 \\
+ 12 & \rightarrow  &\text{ c }\\
+\end{array}$
+
+7. The number $6876_{10}\text{ is equivalent to a4c}_{26}\text{ in base }26.$
+
+Answer: $6876_{10}=\text{a4c}_{26}$

@@ -1,0 +1,31 @@
+Find the trace of the matrix:
+
+$\left(
+\begin{array}{cccc}
+-3 e & -4 e & -2 e & -2 e \\
+ -2 e & -2 e & -4 e & -4 e \\
+ e & 3 e & 2 e & -3 e \\
+ -2 e & 3 e & -3 e & 3 e \\
+\end{array}
+\right)$
+
+\hrule
+
+1. Locate the elements on the main diagonal:
+
+$\left(
+\begin{array}{cccc}
+-3 e & -4 e & -2 e & -2 e \\
+ -2 e & -2 e & -4 e & -4 e \\
+ e & 3 e & 2 e & -3 e \\
+ -2 e & 3 e & -3 e & 3 e \\
+\end{array}
+\right)$
+
+2. Write out the sum of the elements on the main diagonal:
+
+$-3 e\,\text{ +$\, $}-2 e\,\text{ +$\, $}2 e\,\text{ +$\, $}3 e$
+
+3. Add like terms. $-3 e-2 e+2 e+3 e = 0:$
+
+Answer: $0$

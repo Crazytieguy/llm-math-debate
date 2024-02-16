@@ -1,0 +1,5 @@
+Problem:
+Find the coefficient of the fourth term in the series expansion of the following function around 4:
+$1$
+Answer:
+$0$

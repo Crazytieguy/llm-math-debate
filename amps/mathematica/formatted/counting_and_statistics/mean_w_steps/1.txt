@@ -1,0 +1,21 @@
+Find the mean of the list:
+
+$(-8 \log (2),-\log (2),-8 \log (2),-13 \log (2),-14 \log (2))$
+
+\hrule
+
+1. The mean of a list of numbers is given by:
+
+$\frac{(\text{sum of elements})}{(\text{number of elements})}$
+
+2. $(\text{sum of elements}) = -8 \log (2)-\log (2)-8 \log (2)-13 \log (2)-14 \log (2):$
+
+$\frac{-8 \log (2)-\log (2)-8 \log (2)-13 \log (2)-14 \log (2)}{(\text{number of elements})}$
+
+3. Counting, we see that the list has $5$ elements:
+
+$\frac{-8 \log (2)-\log (2)-8 \log (2)-13 \log (2)-14 \log (2)}{5}$
+
+4. $-8 \log (2)-\log (2)-8 \log (2)-13 \log (2)-14 \log (2) = -44 \log (2):$
+
+Answer: $\frac{1}{5} (-44 \log (2))$

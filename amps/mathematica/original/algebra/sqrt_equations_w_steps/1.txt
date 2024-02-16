@@ -1,0 +1,113 @@
+Problem:
+Solve $\sqrt{11 x-11}+\sqrt{15 x+2}=9$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Solve for }x: \\
+ \sqrt{11 x-11}+\sqrt{15 x+2}=9 \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \left(\sqrt{11 x-11}+\sqrt{15 x+2}\right)^2=-9+26 x+2 \sqrt{11 x-11} \sqrt{15 x+2}=-9+26 x+2 \sqrt{(11 x-11) (15 x+2)}=81: \\
+ -9+26 x+2 \sqrt{(11 x-11) (15 x+2)}=81 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }26 x-9 \text{from }\text{both }\text{sides}: \\
+ 2 \sqrt{(11 x-11) (15 x+2)}=90-26 x \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Raise }\text{both }\text{sides }\text{to }\text{the }\text{power }\text{of }\text{two}: \\
+ 4 (11 x-11) (15 x+2)=(90-26 x)^2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Expand }\text{out }\text{terms }\text{of }\text{the }\text{left }\text{hand }\text{side}: \\
+ 660 x^2-572 x-88=(90-26 x)^2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Expand }\text{out }\text{terms }\text{of }\text{the }\text{right }\text{hand }\text{side}: \\
+ 660 x^2-572 x-88=676 x^2-4680 x+8100 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }676 x^2-4680 x+8100 \text{from }\text{both }\text{sides}: \\
+ -16 x^2+4108 x-8188=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{both }\text{sides }\text{by }-16: \\
+ x^2-\frac{1027 x}{4}+\frac{2047}{4}=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{2047}{4} \text{from }\text{both }\text{sides}: \\
+ x^2-\frac{1027 x}{4}=-\frac{2047}{4} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{1054729}{64} \text{to }\text{both }\text{sides}: \\
+ x^2-\frac{1027 x}{4}+\frac{1054729}{64}=\frac{1021977}{64} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+ \left(x-\frac{1027}{8}\right)^2=\frac{1021977}{64} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}: \\
+ x-\frac{1027}{8}=\frac{9 \sqrt{12617}}{8}\text{ or }x-\frac{1027}{8}=-\frac{9 \sqrt{12617}}{8} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{1027}{8} \text{to }\text{both }\text{sides}: \\
+ \fbox{$x=\frac{1027}{8}+\frac{9 \sqrt{12617}}{8}$}\text{ or }x-\frac{1027}{8}=-\frac{9 \sqrt{12617}}{8} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{1027}{8} \text{to }\text{both }\text{sides}: \\
+ x=\frac{1027}{8}+\frac{9 \sqrt{12617}}{8}\text{ or }\fbox{$x=\frac{1027}{8}-\frac{9 \sqrt{12617}}{8}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \sqrt{11 x-11}+\sqrt{15 x+2} \text{$\approx $ }9.: \\
+ \text{So }\text{this }\text{solution }\text{is }\text{correct} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \sqrt{11 x-11}+\sqrt{15 x+2} \text{$\approx $ }114.663: \\
+ \text{So }\text{this }\text{solution }\text{is }\text{incorrect} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{solution }\text{is}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & x=\frac{1027}{8}-\frac{9 \sqrt{12617}}{8} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

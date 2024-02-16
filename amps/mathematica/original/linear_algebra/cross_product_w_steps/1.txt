@@ -1,0 +1,169 @@
+Problem:
+Find the cross product of the following vectors:
+$\left(
+\begin{array}{c}
+ -5 \\
+ -9 \\
+ -3 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ -6 \\
+ 10 \\
+ -10 \\
+\end{array}
+\right)$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Compute the following cross product}: \\
+ \, (-5,-9,-3)\, \times \, (-6,10,-10)\,  \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Construct }\text{a }\text{matrix }\text{where }\text{the }\text{first }\text{row }\text{contains }\text{unit }\text{vectors }\hat{\text{i}}, \hat{\text{j}}, \text{and }\hat{\text{k}}; \text{and }\text{the }\text{second }\text{and }\text{third }\text{rows }\text{are }\text{made }\text{of }\text{vectors }\, (-5,-9,-3)\,  \text{and }\, (-6,10,-10)\, : \\
+ \left(
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -5 & -9 & -3 \\
+ -6 & 10 & -10 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Take }\text{the }\text{determinant }\text{of }\text{this }\text{matrix}: \\
+ \left| 
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -5 & -9 & -3 \\
+ -6 & 10 & -10 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Expand }\text{with }\text{respect }\text{to }\text{row }1: \\
+  \text{= }\left| 
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -5 & -9 & -3 \\
+ -6 & 10 & -10 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{determinant }\text{of }\text{the }\text{matrix }\left(
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -5 & -9 & -3 \\
+ -6 & 10 & -10 \\
+\end{array}
+\right) \text{is }\text{given }\text{by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+ -9 & -3 \\
+ 10 & -10 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+ -5 & -3 \\
+ -6 & -10 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -5 & -9 \\
+ -6 & 10 \\
+\end{array}
+\right| : \\
+  \text{= }\hat{\text{i}} \left| 
+\begin{array}{cc}
+ -9 & -3 \\
+ 10 & -10 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+ -5 & -3 \\
+ -6 & -10 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -5 & -9 \\
+ -6 & 10 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \hat{\text{i}} \left| 
+\begin{array}{cc}
+ -9 & -3 \\
+ 10 & -10 \\
+\end{array}
+\right| =\hat{\text{i}} ((-9)\, (-10)-(-3)\, \times \, 10)=\hat{\text{i}} 120=\fbox{$120 \hat{\text{i}}$}: \\
+  \text{= }\fbox{$120 \hat{\text{i}}$}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+ -5 & -3 \\
+ -6 & -10 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -5 & -9 \\
+ -6 & 10 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\hat{\text{j}} \left| 
+\begin{array}{cc}
+ -5 & -3 \\
+ -6 & -10 \\
+\end{array}
+\right| =-\hat{\text{j}} ((-5)\, (-10)-(-3)\, (-6))=-\hat{\text{j}} 32=\fbox{$-32 \hat{\text{j}}$}: \\
+  \text{= }120 \hat{\text{i}}+\fbox{$-32 \hat{\text{j}}$}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -5 & -9 \\
+ -6 & 10 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \hat{\text{k}} \left| 
+\begin{array}{cc}
+ -5 & -9 \\
+ -6 & 10 \\
+\end{array}
+\right| =\hat{\text{k}} ((-5)\, \times \, 10-(-9)\, (-6))=\hat{\text{k}} (-104)=\fbox{$-104 \hat{\text{k}}$}: \\
+  \text{= }120 \hat{\text{i}}-32 \hat{\text{j}}+\fbox{$-104 \hat{\text{k}}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Order }\text{the }\text{terms }\text{in }\text{a }\text{more }\text{natural }\text{way}: \\
+  \text{= }120 \hat{\text{i}}-32 \hat{\text{j}}-104 \hat{\text{k}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 120 \hat{\text{i}}-32 \hat{\text{j}}-104 \hat{\text{k}}=\, (120,-32,-104)\, : \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \, (120,-32,-104)\,  \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

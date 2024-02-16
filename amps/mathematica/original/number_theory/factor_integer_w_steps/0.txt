@@ -1,0 +1,29 @@
+Problem:
+Factor $2$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Factor the following integer}: \\
+ 2 \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{No }\text{primes }\text{less }\text{than }2 \text{divide }\text{into }\text{it. }\text{Therefore }2 \text{is }\text{prime}: \\
+ 2=2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Since }2 \text{is }\text{prime }\text{it }\text{has }\text{an }\text{exponent }\text{of }1: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 2=2^1 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

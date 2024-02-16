@@ -1,0 +1,13 @@
+Factor the following:
+
+$8 x^2-264 x+2176$
+
+\hrule
+
+1. Factor $8\text{ out of }8 x^2-264 x+2176:$
+
+$8 \left(x^2-33 x+272\right)$
+
+2. The factors of 272 that sum to $-33\text{ are }-16\text{ and }-17.\text{ So, }x^2-33 x+272=(x-16) (x-17):$
+
+Answer: $8 (x-16) (x-17)$

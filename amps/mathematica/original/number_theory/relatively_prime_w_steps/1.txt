@@ -1,0 +1,29 @@
+Problem:
+Are the following numbers relatively prime (coprime)? $\{877,906\}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Determine if the following numbers are coprime to each other}: \\
+ 906\text{ and }877 \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{By }\text{definition, }\text{these }\text{numbers }\text{are }\text{coprime }\text{if }\text{their }\text{gcd }\text{is }1: \\
+ \gcd (906,877)=1 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Since }\text{these }\text{numbers }\text{have }\text{a }\text{gcd }\text{equal }\text{to }1, \text{they }\text{are }\text{coprime}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \text{906 }\text{and }877 \text{are }\text{coprime} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

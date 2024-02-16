@@ -1,0 +1,4 @@
+Problem:
+Find the expectation of $-4.8 x^3+4.5 x^2-3.5 x+2.2$ where $x \sim $ \text{LaplaceDistribution}[0,0.7]
+Answer:
+$6.61$

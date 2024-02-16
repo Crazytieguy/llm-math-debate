@@ -1,0 +1,4 @@
+Problem:
+Simplify $1824^1101 \pmod{1960}$.
+Answer:
+$904$

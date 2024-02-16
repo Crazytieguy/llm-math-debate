@@ -1,0 +1,4 @@
+Problem:
+Find all roots of the following function: $\tan (8-5 x)=0$
+Answer:
+$\left\{\left\{x\to \fbox{$\frac{1}{5} (\pi  c_1+8)\text{ if }c_1\in \mathbb{Z}$}\right\}\right\}$

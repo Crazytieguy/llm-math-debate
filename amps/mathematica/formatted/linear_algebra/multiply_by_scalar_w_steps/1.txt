@@ -1,0 +1,187 @@
+Simplify the following:
+
+$\frac{-3}{2}\left(
+\begin{array}{cc}
+6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. $\frac{-3}{2}\left(
+\begin{array}{cc}
+6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)=\frac{-3\left(
+\begin{array}{cc}
+6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)}{2}$:
+
+$\frac{-3\left(
+\begin{array}{cc}
+6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)}{2}$
+
+2. $-3\left(
+\begin{array}{cc}
+6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+-3\times 6 & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & -3\times 0 \\
+\end{array}
+\right):$
+
+$\frac{\left(
+\begin{array}{cc}
+-3\times 6 & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & -3\times 0 \\
+\end{array}
+\right)}{2}$
+
+3. $0 (-3)=0:$
+
+$\frac{1}{2}\left(
+\begin{array}{cc}
+-3\times 6 & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & 0 \\
+\end{array}
+\right)$
+
+4. $-3\times 6 = -18:$
+
+$\frac{1}{2}\left(
+\begin{array}{cc}
+-18 & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & 0 \\
+\end{array}
+\right)$
+
+5. $-3\times 3 = -9:$
+
+$\frac{1}{2}\left(
+\begin{array}{cc}
+-18 & -9 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & 0 \\
+\end{array}
+\right)$
+
+6. $-3 (-6) = 18:$
+
+$\frac{1}{2}\left(
+\begin{array}{cc}
+-18 & -9 \\
+ 18 & -3 (-4) \\
+ -3\times 4 & 0 \\
+\end{array}
+\right)$
+
+7. $-3 (-4) = 12:$
+
+$\frac{1}{2}\left(
+\begin{array}{cc}
+-18 & -9 \\
+ 18 & 12 \\
+ -3\times 4 & 0 \\
+\end{array}
+\right)$
+
+8. $-3\times 4 = -12:$
+
+$\frac{1}{2}\left(
+\begin{array}{cc}
+-18 & -9 \\
+ 18 & 12 \\
+ -12 & 0 \\
+\end{array}
+\right)$
+
+9. $\frac{1}{2}\left(
+\begin{array}{cc}
+-18 & -9 \\
+ 18 & 12 \\
+ -12 & 0 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+\frac{-18}{2} & \frac{-9}{2} \\
+ \frac{18}{2} & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cc}
+\frac{-18}{2} & \frac{-9}{2} \\
+ \frac{18}{2} & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right)$
+
+10. The gcd of $-18\text{ and }2\text{ is }2,\text{ so }\frac{-18}{2}=\frac{2 (-9)}{2\times 1}=\frac{2}{2}\times -9=-9:$
+
+$\left(
+\begin{array}{cc}
+-9 & \frac{-9}{2} \\
+ \frac{18}{2} & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right)$
+
+11. The gcd of 18 and $2\text{ is }2,\text{ so }\frac{18}{2}=\frac{2\times 9}{2\times 1}=\frac{2}{2}\times 9=9:$
+
+$\left(
+\begin{array}{cc}
+-9 & \frac{-9}{2} \\
+ 9 & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right)$
+
+12. The gcd of 12 and $2\text{ is }2,\text{ so }\frac{12}{2}=\frac{2\times 6}{2\times 1}=\frac{2}{2}\times 6=6:$
+
+$\left(
+\begin{array}{cc}
+-9 & \frac{-9}{2} \\
+ 9 & 6 \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right)$
+
+13. The gcd of $-12\text{ and }2\text{ is }2,\text{ so }\frac{-12}{2}=\frac{2 (-6)}{2\times 1}=\frac{2}{2}\times -6=-6:$
+
+$\left(
+\begin{array}{cc}
+-9 & \frac{-9}{2} \\
+ 9 & 6 \\
+ -6 & \frac{0}{2} \\
+\end{array}
+\right)$
+
+14. $\frac{0}{2}=0:$
+
+Answer: $\left(
+\begin{array}{cc}
+-9 & \frac{-9}{2} \\
+ 9 & 6 \\
+ -6 & 0 \\
+\end{array}
+\right)$

@@ -1,0 +1,14 @@
+Problem:
+Given the equation $-x^2+3 y^2-5 y+4=0$, rewrite and classify the conic and state relevant properties.
+Answer:
+Classification: Hyperbola
+Equation: $3 \left(y-\frac{5}{6}\right)^2-x^2=-\frac{23}{12}$
+Foci: $\left(
+\begin{array}{cc}
+ -\frac{\sqrt{23}}{3} & \frac{5}{6} \\
+ \frac{\sqrt{23}}{3} & \frac{5}{6} \\
+\end{array}
+\right)$
+Eccentricity: $\frac{2}{\sqrt{3}}$
+Center: $\left\{0,\frac{5}{6}\right\}$
+Asymptotes: $\left\{y=\frac{x}{\sqrt{3}}+\frac{5}{6},y=\frac{5}{6}-\frac{x}{\sqrt{3}}\right\}$

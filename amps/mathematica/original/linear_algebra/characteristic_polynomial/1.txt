@@ -1,0 +1,11 @@
+Problem:
+Find the characteristic polynomial of the following matrix:
+$\left(
+\begin{array}{ccc}
+ -8 & -5 & -7 \\
+ -3 & -4 & 0 \\
+ 9 & 7 & 7 \\
+\end{array}
+\right)$
+Answer:
+$-x^3-5 x^2+4 x+14$

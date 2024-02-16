@@ -1,0 +1,5 @@
+Problem:
+Solve the following system of two equations: 
+$-10 \sqrt{5} x+4 \sqrt{5} y-8 \sqrt{5}=0$, $10 \sqrt{5} x+8 \sqrt{5} y=0$
+Answer:
+$x=-\frac{8}{15}$, $y=\frac{2}{3}$

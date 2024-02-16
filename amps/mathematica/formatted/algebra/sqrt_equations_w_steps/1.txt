@@ -1,0 +1,69 @@
+Solve for $x:$
+
+$\sqrt{11 x-11}+\sqrt{15 x+2}=9$
+
+\hrule
+
+1. $\left(\sqrt{11 x-11}+\sqrt{15 x+2}\right)^2=-9+26 x+2 \sqrt{11 x-11} \sqrt{15 x+2}=-9+26 x+2 \sqrt{(11 x-11) (15 x+2)}=81:$
+
+$-9+26 x+2 \sqrt{(11 x-11) (15 x+2)}=81$
+
+2. Subtract $26 x-9$ from both sides:
+
+$2 \sqrt{(11 x-11) (15 x+2)}=90-26 x$
+
+3. Raise both sides to the power of two:
+
+$4 (11 x-11) (15 x+2)=(90-26 x)^2$
+
+4. Expand out terms of the left hand side:
+
+$660 x^2-572 x-88=(90-26 x)^2$
+
+5. Expand out terms of the right hand side:
+
+$660 x^2-572 x-88=676 x^2-4680 x+8100$
+
+6. Subtract $676 x^2-4680 x+8100$ from both sides:
+
+$-16 x^2+4108 x-8188=0$
+
+7. Divide both sides by $-16:$
+
+$x^2-\frac{1027 x}{4}+\frac{2047}{4}=0$
+
+8. Subtract $\frac{2047}{4}$ from both sides:
+
+$x^2-\frac{1027 x}{4}=-\frac{2047}{4}$
+
+9. Add $\frac{1054729}{64}$ to both sides:
+
+$x^2-\frac{1027 x}{4}+\frac{1054729}{64}=\frac{1021977}{64}$
+
+10. Write the left hand side as a square:
+
+$\left(x-\frac{1027}{8}\right)^2=\frac{1021977}{64}$
+
+11. Take the square root of both sides:
+
+$x-\frac{1027}{8}=\frac{9 \sqrt{12617}}{8}\text{ or }x-\frac{1027}{8}=-\frac{9 \sqrt{12617}}{8}$
+
+12. Add $\frac{1027}{8}$ to both sides:
+
+$x=\frac{1027}{8}+\frac{9 \sqrt{12617}}{8}\text{ or }x-\frac{1027}{8}=-\frac{9 \sqrt{12617}}{8}$
+
+13. Add $\frac{1027}{8}$ to both sides:
+
+$x=\frac{1027}{8}+\frac{9 \sqrt{12617}}{8}\text{ or }x=\frac{1027}{8}-\frac{9 \sqrt{12617}}{8}$
+
+14. $\sqrt{11 x-11}+\sqrt{15 x+2}\text{ $\approx $ }9.:$
+
+So this solution is correct
+
+15. $\sqrt{11 x-11}+\sqrt{15 x+2}\text{ $\approx $ }114.663:$
+
+So this solution is incorrect
+
+16. The solution is:
+
+Answer: $x=\frac{1027}{8}-\frac{9 \sqrt{12617}}{8}$

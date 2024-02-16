@@ -1,0 +1,167 @@
+Simplify the following:
+
+$\frac{-1}{16}\left(
+\begin{array}{cc}
+-6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. $\frac{-1}{16}\left(
+\begin{array}{cc}
+-6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)=\frac{-1\left(
+\begin{array}{cc}
+-6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)}{16}$:
+
+$\frac{-1\left(
+\begin{array}{cc}
+-6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)}{16}$
+
+2. $-1\left(
+\begin{array}{cc}
+-6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+-(-6) & -(-2) \\
+ -0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right):$
+
+$\frac{\left(
+\begin{array}{cc}
+-(-6) & -(-2) \\
+ 0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right)}{16}$
+
+3. $-(-6) = 6:$
+
+$\frac{1}{16}\left(
+\begin{array}{cc}
+6 & -(-2) \\
+ 0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right)$
+
+4. $-(-2) = 2:$
+
+$\frac{1}{16}\left(
+\begin{array}{cc}
+6 & 2 \\
+ 0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right)$
+
+5. $-(-8) = 8:$
+
+$\frac{1}{16}\left(
+\begin{array}{cc}
+6 & 2 \\
+ 0 & -6 \\
+ 8 & -6 \\
+\end{array}
+\right)$
+
+6. $\frac{1}{16}\left(
+\begin{array}{cc}
+6 & 2 \\
+ 0 & -6 \\
+ 8 & -6 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+\frac{6}{16} & \frac{2}{16} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cc}
+\frac{6}{16} & \frac{2}{16} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right)$
+
+7. The gcd of $6\text{ and 16 is }2,\text{ so }\frac{6}{16}=\frac{2\times 3}{2\times 8}=\frac{2}{2}\times \frac{3}{8}=\frac{3}{8}$:
+
+$\left(
+\begin{array}{cc}
+\frac{3}{8} & \frac{2}{16} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right)$
+
+8. The gcd of $2\text{ and 16 is }2,\text{ so }\frac{2}{16}=\frac{2\times 1}{2\times 8}=\frac{2}{2}\times \frac{1}{8}=\frac{1}{8}$:
+
+$\left(
+\begin{array}{cc}
+\frac{3}{8} & \frac{1}{8} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right)$
+
+9. $\frac{0}{16}=0:$
+
+$\left(
+\begin{array}{cc}
+\frac{3}{8} & \frac{1}{8} \\
+ 0 & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right)$
+
+10. The gcd of $-6\text{ and 16 is }2,\text{ so }\frac{-6}{16}=\frac{2 (-3)}{2\times 8}=\frac{2}{2}\times \frac{-3}{8}=\frac{-3}{8}$:
+
+$\left(
+\begin{array}{cc}
+\frac{3}{8} & \frac{1}{8} \\
+ 0 & \frac{-3}{8} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right)$
+
+11. The gcd of $8\text{ and 16 is }8,\text{ so }\frac{8}{16}=\frac{8\times 1}{8\times 2}=\frac{8}{8}\times \frac{1}{2}=\frac{1}{2}$:
+
+$\left(
+\begin{array}{cc}
+\frac{3}{8} & \frac{1}{8} \\
+ 0 & \frac{-3}{8} \\
+ \frac{1}{2} & \frac{-6}{16} \\
+\end{array}
+\right)$
+
+12. The gcd of $-6\text{ and 16 is }2,\text{ so }\frac{-6}{16}=\frac{2 (-3)}{2\times 8}=\frac{2}{2}\times \frac{-3}{8}=\frac{-3}{8}$:
+
+Answer: $\left(
+\begin{array}{cc}
+\frac{3}{8} & \frac{1}{8} \\
+ 0 & \frac{-3}{8} \\
+ \frac{1}{2} & \frac{-3}{8} \\
+\end{array}
+\right)$

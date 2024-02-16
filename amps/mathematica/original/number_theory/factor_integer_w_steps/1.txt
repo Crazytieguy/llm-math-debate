@@ -1,0 +1,35 @@
+Problem:
+Factor $3$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Factor the following integer}: \\
+ 3 \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ 3 \text{is }\text{not }\text{divisible }\text{by }2 \text{since }3 \text{is }\text{odd }\text{and }2 \text{is }\text{even}: \\
+ 3=3(3 \text{is }\text{not }\text{divisible }\text{by }2) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{No }\text{primes }\text{less }\text{than }3 \text{divide }\text{into }\text{it. }\text{Therefore }3 \text{is }\text{prime}: \\
+ 3=3 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Since }3 \text{is }\text{prime }\text{it }\text{has }\text{an }\text{exponent }\text{of }1: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 3=3^1 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

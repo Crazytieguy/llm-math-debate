@@ -1,0 +1,10 @@
+Problem:
+Find the eigenvectors of the following matrix:
+$\left(
+\begin{array}{cc}
+ 6 & -1 \\
+ 9 & -2 \\
+\end{array}
+\right)$.
+Answer:
+${\left\{\frac{1}{9} \left(4-\sqrt{7}\right),1\right\}, \left\{\frac{1}{9} \left(4+\sqrt{7}\right),1\right\}}$

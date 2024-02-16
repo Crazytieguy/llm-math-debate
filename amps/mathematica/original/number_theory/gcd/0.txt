@@ -1,0 +1,4 @@
+Problem:
+Find the greatest common disvior of $\left\{-\frac{5594}{7},-781\right\}$.
+Answer:
+$\frac{1}{7}$

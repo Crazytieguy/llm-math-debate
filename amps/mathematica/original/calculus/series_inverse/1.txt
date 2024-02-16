@@ -1,0 +1,5 @@
+Problem:
+Find the second order series of the inverse of the following function around 2:
+$-\sqrt[3]{3} \sqrt[3]{x}$
+Answer:
+$\sqrt[3]{15} \left(x+\sqrt[3]{15}\right)^2-15^{2/3} \left(x+\sqrt[3]{15}\right)+5$

@@ -1,0 +1,4 @@
+Problem:
+Simplify $2286^2328 \pmod{2792}$.
+Answer:
+$88$

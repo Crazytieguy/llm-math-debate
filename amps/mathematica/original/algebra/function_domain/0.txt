@@ -1,0 +1,5 @@
+Problem:
+Find the domain of the following function:
+$\sqrt{7 x-1}-\sin (7 x+6)$
+Answer:
+$x\geq \frac{1}{7}$

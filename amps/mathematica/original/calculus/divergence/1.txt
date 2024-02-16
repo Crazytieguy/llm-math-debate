@@ -1,0 +1,4 @@
+Problem:
+Find the divergence of the vector field $f(x,y,z)\uvec{i} + g(x,y,z)\uvec{j} + h(x,y,z)\uvec{k}$ where $f(x,y,z) = x$, $g(x,y,z) = \sqrt{y}$, and $h(x,y,z) = y$
+Answer:
+$\frac{1}{2 \sqrt{y}}+1$

@@ -1,0 +1,4 @@
+Problem:
+Find the smallest $x$ such that $x \equiv 75626 \pmod{4}$.
+Answer:
+$2$

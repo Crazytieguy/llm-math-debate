@@ -1,0 +1,24 @@
+Problem:
+Is the following number prime?
+2
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Test for primality}: \\
+ \text{is }2\text{ a }\text{prime number?} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{The }\text{only }\text{divisors }\text{of }2 \text{are }1 \text{and }\text{itself. }\text{This }\text{means }2 \text{is }\text{prime}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 2\text{ is a }\text{prime} \text{number} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

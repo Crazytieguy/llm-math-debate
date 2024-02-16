@@ -1,0 +1,59 @@
+Problem:
+Find the roots of the following polynomial: $15 x^2+6 x-10$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Solve for }x: \\
+ 15 x^2+6 x-10=0 \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Divide }\text{both }\text{sides }\text{by }15: \\
+ x^2+\frac{2 x}{5}-\frac{2}{3}=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{2}{3} \text{to }\text{both }\text{sides}: \\
+ x^2+\frac{2 x}{5}=\frac{2}{3} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{1}{25} \text{to }\text{both }\text{sides}: \\
+ x^2+\frac{2 x}{5}+\frac{1}{25}=\frac{53}{75} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+ \left(x+\frac{1}{5}\right)^2=\frac{53}{75} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}: \\
+ x+\frac{1}{5}=\frac{\sqrt{\frac{53}{3}}}{5}\text{ or }x+\frac{1}{5}=-\frac{\sqrt{\frac{53}{3}}}{5} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{1}{5} \text{from }\text{both }\text{sides}: \\
+ \fbox{$x=\frac{\sqrt{\frac{53}{3}}}{5}-\frac{1}{5}$}\text{ or }x+\frac{1}{5}=-\frac{\sqrt{\frac{53}{3}}}{5} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{1}{5} \text{from }\text{both }\text{sides}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & x=\frac{\sqrt{\frac{53}{3}}}{5}-\frac{1}{5}\text{ or }\fbox{$x=-\frac{1}{5}-\frac{\sqrt{\frac{53}{3}}}{5}$} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

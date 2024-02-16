@@ -1,0 +1,4 @@
+Problem:
+Compute the range of ${-3, 0, 2, -2 \pi, -2 e, 6, 9, \frac{22}{\sqrt{5}}, -9, \frac{13}{\sqrt{2}}, \frac{3}{\sqrt{\pi }}, 6, -\frac{22}{e}, -8}$.
+Answer:
+$9+\frac{22}{\sqrt{5}}$

@@ -1,0 +1,33 @@
+Solve for $x:$
+
+$15 x^2+6 x-10=0$
+
+\hrule
+
+1. Divide both sides by $15:$
+
+$x^2+\frac{2 x}{5}-\frac{2}{3}=0$
+
+2. Add $\frac{2}{3}$ to both sides:
+
+$x^2+\frac{2 x}{5}=\frac{2}{3}$
+
+3. Add $\frac{1}{25}$ to both sides:
+
+$x^2+\frac{2 x}{5}+\frac{1}{25}=\frac{53}{75}$
+
+4. Write the left hand side as a square:
+
+$\left(x+\frac{1}{5}\right)^2=\frac{53}{75}$
+
+5. Take the square root of both sides:
+
+$x+\frac{1}{5}=\frac{\sqrt{\frac{53}{3}}}{5}\text{ or }x+\frac{1}{5}=-\frac{\sqrt{\frac{53}{3}}}{5}$
+
+6. Subtract $\frac{1}{5}$ from both sides:
+
+$x=\frac{\sqrt{\frac{53}{3}}}{5}-\frac{1}{5}\text{ or }x+\frac{1}{5}=-\frac{\sqrt{\frac{53}{3}}}{5}$
+
+7. Subtract $\frac{1}{5}$ from both sides:
+
+Answer: $x=\frac{\sqrt{\frac{53}{3}}}{5}-\frac{1}{5}\text{ or }x=-\frac{1}{5}-\frac{\sqrt{\frac{53}{3}}}{5}$

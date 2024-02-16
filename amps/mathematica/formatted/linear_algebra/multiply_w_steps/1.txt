@@ -1,0 +1,445 @@
+Multiply the following matrices:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)$
+
+\hrule
+
+1. $\begin{array}{l}
+\text{The dimensions of the first matrix are }3\times 2\text{ and the dimensions of the second matrix are }2\times 3. \\
+\text{ This means the dimensions of the product are }3\times 3: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+2. Highlight the $1^{\text{st}}\text{ row and the }1^{\text{st}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+3. $\begin{array}{l}
+\text{Multiply corresponding components and add: }\frac{15\ 8}{7\ 7}+\frac{1}{7} \left(-\frac{18}{7}\right)=\frac{102}{49}. \\
+\text{ Place this number into the }1^{\text{st}}\text{ row and }1^{\text{st}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \_ & \_ \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+4. Highlight the $1^{\text{st}}\text{ row and the }2^{\text{nd}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \_ & \_ \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+5. $\begin{array}{l}
+\text{Multiply corresponding components and add: }\frac{15 (-2)}{7\ 7}+\frac{18\ 8}{7\ 7}=\frac{114}{49}. \\
+\text{ Place this number into the }1^{\text{st}}\text{ row and }2^{\text{nd}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \_ \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+6. Highlight the $1^{\text{st}}\text{ row and the }3^{\text{rd}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \_ \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+7. $\begin{array}{l}
+\text{Multiply corresponding components and add: }\frac{15\ 10}{7\ 7}+\frac{18\ 19}{7\ 7}=\frac{492}{49}. \\
+\text{ Place this number into the }1^{\text{st}}\text{ row and }3^{\text{rd}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+8. Highlight the $2^{\text{nd}}\text{ row and the }1^{\text{st}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ \_ & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+9. $\begin{array}{l}
+\text{Multiply corresponding components and add: }(-2)\, \times \, \frac{8}{7}+\frac{2}{7\ 7}=-\frac{110}{49}. \\
+\text{ Place this number into the }2^{\text{nd}}\text{ row and }1^{\text{st}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+10. Highlight the $2^{\text{nd}}\text{ row and the }2^{\text{nd}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \_ & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+11. $\begin{array}{l}
+\text{Multiply corresponding components and add: }(-2)\, \left(-\frac{2}{7}\right)+\left(-\frac{2}{7}\right)\, \times \, \frac{8}{7}=\frac{12}{49}. \\
+\text{ Place this number into the }2^{\text{nd}}\text{ row and }2^{\text{nd}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+12. Highlight the $2^{\text{nd}}\text{ row and the }3^{\text{rd}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & \_ \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+13. $\begin{array}{l}
+\text{Multiply corresponding components and add: }(-2)\, \times \, \frac{10}{7}+\left(-\frac{2}{7}\right)\, \times \, \frac{19}{7}=-\frac{178}{49}. \\
+\text{ Place this number into the }2^{\text{nd}}\text{ row and }3^{\text{rd}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & -\frac{178}{49} \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+14. Highlight the $3^{\text{rd}}\text{ row and the }1^{\text{st}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & -\frac{178}{49} \\
+ \_ & \_ & \_ \\
+\end{array}
+\right)$
+
+15. $\begin{array}{l}
+\text{Multiply corresponding components and add: }\left(-\frac{17}{7}\right)\, \times \, \frac{8}{7}+\frac{1}{7} \left(-\frac{9}{7}\right)=-\frac{145}{49}. \\
+\text{ Place this number into the }3^{\text{rd}}\text{ row and }1^{\text{st}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & -\frac{178}{49} \\
+ -\frac{145}{49} & \_ & \_ \\
+\end{array}
+\right)$
+
+16. Highlight the $3^{\text{rd}}\text{ row and the }2^{\text{nd}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & -\frac{178}{49} \\
+ -\frac{145}{49} & \_ & \_ \\
+\end{array}
+\right)$
+
+17. $\begin{array}{l}
+\text{Multiply corresponding components and add: }\left(-\frac{17}{7}\right)\, \left(-\frac{2}{7}\right)+\frac{9\ 8}{7\ 7}=\frac{106}{49}. \\
+\text{ Place this number into the }3^{\text{rd}}\text{ row and }2^{\text{nd}}\text{ column of the product}: \\
+\end{array}$
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & -\frac{178}{49} \\
+ -\frac{145}{49} & \frac{106}{49} & \_ \\
+\end{array}
+\right)$
+
+18. Highlight the $3^{\text{rd}}\text{ row and the }3^{\text{rd}}$ column:
+
+$\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & -\frac{178}{49} \\
+ -\frac{145}{49} & \frac{106}{49} & \_ \\
+\end{array}
+\right)$
+
+19. $\begin{array}{l}
+\text{Multiply corresponding components and add: }\left(-\frac{17}{7}\right)\, \times \, \frac{10}{7}+\frac{9\ 19}{7\ 7}=\frac{1}{49}. \\
+\text{ Place this number into the }3^{\text{rd}}\text{ row and }3^{\text{rd}}\text{ column of the product}: \\
+\end{array}$
+
+Answer: $\left(
+\begin{array}{cc}
+\frac{15}{7} & \frac{18}{7} \\
+ -2 & -\frac{2}{7} \\
+ -\frac{17}{7} & \frac{9}{7} \\
+\end{array}
+\right).\left(
+\begin{array}{ccc}
+\frac{8}{7} & -\frac{2}{7} & \frac{10}{7} \\
+ -\frac{1}{7} & \frac{8}{7} & \frac{19}{7} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+\frac{102}{49} & \frac{114}{49} & \frac{492}{49} \\
+ -\frac{110}{49} & \frac{12}{49} & -\frac{178}{49} \\
+ -\frac{145}{49} & \frac{106}{49} & \frac{1}{49} \\
+\end{array}
+\right)$

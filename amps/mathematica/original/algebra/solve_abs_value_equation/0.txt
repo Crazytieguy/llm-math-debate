@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $\left| \sqrt{2}-\frac{31 x}{\sqrt{2}}\right| =\frac{25}{\sqrt{2}}$
+Answer:
+$\left\{\left\{x\to -\frac{23}{31}\right\},\left\{x\to \frac{27}{31}\right\}\right\}$

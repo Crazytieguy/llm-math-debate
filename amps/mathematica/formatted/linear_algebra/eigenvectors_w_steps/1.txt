@@ -1,0 +1,440 @@
+Find all the eigenvalues and eigenvectors of the matrix $M:$
+
+$M=\left(
+\begin{array}{cc}
+7 & 5 \\
+ -10 & 3 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. Find $\lambda \in \mathbb{C}\text{ such that }M v=\lambda  v\text{ for some nonzero vector }v:$
+
+$M v=\lambda  v$
+
+2. Rewrite the equation $M v=\lambda  v\text{ as }(M-\mathbb{I} \lambda ) v=0:$
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+3. Find all $\lambda\text{  such that }| M-\mathbb{I} \lambda | =0:$
+
+$| M-\mathbb{I} \lambda | =0$
+
+4. $\begin{array}{lll}
+M-\mathbb{I} \lambda  & = & \left(
+\begin{array}{cc}
+7 & 5 \\
+ -10 & 3 \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right) \lambda  \\
+\text{  }& = & \left(
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right) \\
+\end{array}$
+
+$\left| 
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right| =0$
+
+5. $\left| 
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right| =\lambda ^2-10 \lambda +71:$
+
+$\lambda ^2-10 \lambda +71=0$
+
+6. Subtract 71 from both sides:
+
+$\lambda ^2-10 \lambda =-71$
+
+7. Add 25 to both sides:
+
+$\lambda ^2-10 \lambda +25=-46$
+
+8. Write the left hand side as a square:
+
+$(\lambda -5)^2=-46$
+
+9. Take the square root of both sides:
+
+$\lambda -5=i \sqrt{46}\text{ or }\lambda -5=-i \sqrt{46}$
+
+10. Add $5$ to both sides:
+
+$\lambda =5+i \sqrt{46}\text{ or }\lambda -5=-i \sqrt{46}$
+
+11. Add $5$ to both sides:
+
+$\lambda =5+i \sqrt{46}\text{ or }\lambda =5-i \sqrt{46}$
+
+12. Find all $v\text{ such that }(M-\mathbb{I} \lambda ) v=0\text{ for some eigenvalue }\lambda$ :
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+13. Substitute $\left(
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right)\text{ for }(M-\mathbb{I} \lambda ):$
+
+$\left(
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right) v=0$
+
+14. Write $v\text{ as }\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)\text{ and }0\text{ as }\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+15. First, substitute $5+i \sqrt{46}\text{ for }\lambda\text{  in the matrix }\left(
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right)$ and solve the system:
+
+$\left(
+\begin{array}{cc}
+2-i \sqrt{46} & 5 \\
+ -10 & -i \sqrt{46}-2 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+16. In augmented matrix form, the system is written as:
+
+$\left(
+\begin{array}{ccc}
+2-i \sqrt{46} & 5 & 0 \\
+ -10 & -i \sqrt{46}-2 & 0 \\
+\end{array}
+\right)$
+
+17. Swap row $1\text{ with row }2:$
+
+$\left(
+\begin{array}{ccc}
+-10 & -i \sqrt{46}-2 & 0 \\
+ 2-i \sqrt{46} & 5 & 0 \\
+\end{array}
+\right)$
+
+18. Add $\frac{1}{10} \left(2-i \sqrt{46}\right)\, \times \,\text{ (row }1)\text{ to row }2:$
+
+$\left(
+\begin{array}{ccc}
+-10 & -i \sqrt{46}-2 & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$
+
+19. Divide row $1\text{ by }-10:$
+
+$\left(
+\begin{array}{ccc}
+1 & \frac{1}{10} \left(2+i \sqrt{46}\right) & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$
+
+20. Translated back to a matrix equation, the reduced system $\left(
+\begin{array}{ccc}
+1 & \frac{1}{10} \left(2+i \sqrt{46}\right) & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$ is:
+
+$\left(
+\begin{array}{cc}
+1 & \frac{1}{10} \left(2+i \sqrt{46}\right) \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+21. As a scalar equation, the system $\left(
+\begin{array}{cc}
+1 & \frac{1}{10} \left(2+i \sqrt{46}\right) \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$ translates to:
+
+$v_1+\frac{1}{10} \left(i \sqrt{46}+2\right) v_2=0$
+
+22. Rewrite the equation as:
+
+$v_1=-\frac{1}{10} \left(2+i \sqrt{46}\right) v_2$
+
+23. According to the above equation:
+
+$v = \left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right) = \left(
+\begin{array}{c}
+-\frac{1}{10} \left(2+i \sqrt{46}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right)$
+
+24. Letting $v_2=1\text{ in }\left(
+\begin{array}{c}
+-\frac{1}{10} \left(2+i \sqrt{46}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right),\text{ we find that }\left(
+\begin{array}{c}
+\frac{1}{10} \left(-i \sqrt{46}-2\right) \\
+ 1 \\
+\end{array}
+\right)\text{ is an eigenvector of the matrix }\left(
+\begin{array}{cc}
+7 & 5 \\
+ -10 & 3 \\
+\end{array}
+\right)\text{ associated with the eigenvalue }5+i \sqrt{46}$:
+
+$v=\left(
+\begin{array}{c}
+\frac{1}{10} \left(-i \sqrt{46}-2\right) \\
+ 1 \\
+\end{array}
+\right)$
+
+25. Substitute $5-i \sqrt{46}\text{ for }\lambda\text{  in the matrix }\left(
+\begin{array}{cc}
+7-\lambda  & 5 \\
+ -10 & 3-\lambda  \\
+\end{array}
+\right)$ and solve the system:
+
+$\left(
+\begin{array}{cc}
+2+i \sqrt{46} & 5 \\
+ -10 & i \sqrt{46}-2 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+26. In augmented matrix form, the system is written as:
+
+$\left(
+\begin{array}{ccc}
+2+i \sqrt{46} & 5 & 0 \\
+ -10 & i \sqrt{46}-2 & 0 \\
+\end{array}
+\right)$
+
+27. Swap row $1\text{ with row }2:$
+
+$\left(
+\begin{array}{ccc}
+-10 & i \sqrt{46}-2 & 0 \\
+ 2+i \sqrt{46} & 5 & 0 \\
+\end{array}
+\right)$
+
+28. Add $\frac{1}{10} \left(2+i \sqrt{46}\right)\, \times \,\text{ (row }1)\text{ to row }2:$
+
+$\left(
+\begin{array}{ccc}
+-10 & i \sqrt{46}-2 & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$
+
+29. Divide row $1\text{ by }-10:$
+
+$\left(
+\begin{array}{ccc}
+1 & \frac{1}{10} \left(2-i \sqrt{46}\right) & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$
+
+30. Translated back to a matrix equation, the reduced system $\left(
+\begin{array}{ccc}
+1 & \frac{1}{10} \left(2-i \sqrt{46}\right) & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$ is:
+
+$\left(
+\begin{array}{cc}
+1 & \frac{1}{10} \left(2-i \sqrt{46}\right) \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+31. As a scalar equation, the system $\left(
+\begin{array}{cc}
+1 & \frac{1}{10} \left(2-i \sqrt{46}\right) \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$ translates to:
+
+$v_1+\frac{1}{10} \left(-i \sqrt{46}+2\right) v_2=0$
+
+32. Rewrite the equation as:
+
+$v_1=-\frac{1}{10} \left(2-i \sqrt{46}\right) v_2$
+
+33. According to the above equation:
+
+$v = \left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right) = \left(
+\begin{array}{c}
+-\frac{1}{10} \left(2-i \sqrt{46}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right)$
+
+34. Letting $v_2=1\text{ in }\left(
+\begin{array}{c}
+-\frac{1}{10} \left(2-i \sqrt{46}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right),\text{ we find that }\left(
+\begin{array}{c}
+\frac{1}{10} \left(i \sqrt{46}-2\right) \\
+ 1 \\
+\end{array}
+\right)\text{ is an eigenvector of the matrix }\left(
+\begin{array}{cc}
+7 & 5 \\
+ -10 & 3 \\
+\end{array}
+\right)\text{ associated with the eigenvalue }5-i \sqrt{46}$:
+
+$v=\left(
+\begin{array}{c}
+\frac{1}{10} \left(i \sqrt{46}-2\right) \\
+ 1 \\
+\end{array}
+\right)$
+
+35. We found the following eigenvalue/eigenvector pair:
+
+Answer:
+
+$\begin{array}{c|c}
+\text{Eigenvalue }&\text{ Eigenvector }\\
+\hline
+ 5+i \sqrt{46} & \left(
+\begin{array}{c}
+\frac{1}{10} \left(-i \sqrt{46}-2\right) \\
+ 1 \\
+\end{array}
+\right) \\
+ 5-i \sqrt{46} & \left(
+\begin{array}{c}
+\frac{1}{10} \left(i \sqrt{46}-2\right) \\
+ 1 \\
+\end{array}
+\right) \\
+\end{array}$

@@ -1,0 +1,4 @@
+Problem:
+Compute the geometric mean of ${-4, -7, 25, 64}$.
+Answer:
+$4 \sqrt{5} \sqrt[4]{7}$

@@ -1,0 +1,14 @@
+Problem:
+A polyhedron has vertices with the coordinates $\left(
+\begin{array}{ccc}
+ 0.459 & 0.321 & 0.521 \\
+ 0.561 & 0.493 & 0.835 \\
+ 0.451 & 0.77 & 0.381 \\
+ 0.907 & 0.548 & 0.607 \\
+ 0.217 & 0.977 & 0.414 \\
+\end{array}
+\right)$. Estimate the polyhedron's surface area, volume, and the solid angle at the first listed point p spanned by edges with common point p.
+Answer:
+Surface Area: $0.58$ 
+Volume: $0.02$ 
+Solid Angle: $0.97$

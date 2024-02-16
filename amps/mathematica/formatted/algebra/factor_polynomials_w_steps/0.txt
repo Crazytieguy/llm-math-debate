@@ -1,0 +1,17 @@
+Factor the following:
+
+$\frac{45 x}{2}-9 x^2$
+
+\hrule
+
+1. Put each term in $\frac{45 x}{2}-9 x^2\text{ over the common denominator }2: \frac{45 x}{2}-9 x^2 = \frac{45 x}{2}-\frac{18 x^2}{2}$:
+
+$\frac{45 x}{2}-\frac{18 x^2}{2}$
+
+2. $\frac{45 x}{2}-\frac{18 x^2}{2}=\frac{45 x-18 x^2}{2}$:
+
+$\frac{45 x-18 x^2}{2}$
+
+3. Factor $-9 x\text{ out of }45 x-18 x^2:$
+
+Answer: $\frac{-9 x (2 x-5)}{2}$

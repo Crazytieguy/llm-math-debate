@@ -1,0 +1,169 @@
+Problem:
+Find the cross product of the following vectors:
+$\left(
+\begin{array}{c}
+ -9 \\
+ -6 \\
+ 5 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ -3 \\
+ 5 \\
+ 4 \\
+\end{array}
+\right)$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Compute the following cross product}: \\
+ \, (-9,-6,5)\, \times \, (-3,5,4)\,  \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Construct }\text{a }\text{matrix }\text{where }\text{the }\text{first }\text{row }\text{contains }\text{unit }\text{vectors }\hat{\text{i}}, \hat{\text{j}}, \text{and }\hat{\text{k}}; \text{and }\text{the }\text{second }\text{and }\text{third }\text{rows }\text{are }\text{made }\text{of }\text{vectors }\, (-9,-6,5)\,  \text{and }\, (-3,5,4)\, : \\
+ \left(
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Take }\text{the }\text{determinant }\text{of }\text{this }\text{matrix}: \\
+ \left| 
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Expand }\text{with }\text{respect }\text{to }\text{row }1: \\
+  \text{= }\left| 
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{determinant }\text{of }\text{the }\text{matrix }\left(
+\begin{array}{ccc}
+ \hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right) \text{is }\text{given }\text{by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+ -6 & 5 \\
+ 5 & 4 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+ -9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right| : \\
+  \text{= }\hat{\text{i}} \left| 
+\begin{array}{cc}
+ -6 & 5 \\
+ 5 & 4 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+ -9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \hat{\text{i}} \left| 
+\begin{array}{cc}
+ -6 & 5 \\
+ 5 & 4 \\
+\end{array}
+\right| =\hat{\text{i}} ((-6)\, \times \, 4-5\ 5)=\hat{\text{i}} (-49)=\fbox{$-49 \hat{\text{i}}$}: \\
+  \text{= }\fbox{$-49 \hat{\text{i}}$}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+ -9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\hat{\text{j}} \left| 
+\begin{array}{cc}
+ -9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| =-\hat{\text{j}} ((-9)\, \times \, 4-5 (-3))=-\hat{\text{j}} (-21)=\fbox{$21 \hat{\text{j}}$}: \\
+  \text{= }-49 \hat{\text{i}}+\fbox{$21 \hat{\text{j}}$}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+ -9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \hat{\text{k}} \left| 
+\begin{array}{cc}
+ -9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right| =\hat{\text{k}} ((-9)\, \times \, 5-(-6)\, (-3))=\hat{\text{k}} (-63)=\fbox{$-63 \hat{\text{k}}$}: \\
+  \text{= }-49 \hat{\text{i}}+21 \hat{\text{j}}+\fbox{$-63 \hat{\text{k}}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Order }\text{the }\text{terms }\text{in }\text{a }\text{more }\text{natural }\text{way}: \\
+  \text{= }-49 \hat{\text{i}}+21 \hat{\text{j}}-63 \hat{\text{k}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -49 \hat{\text{i}}+21 \hat{\text{j}}-63 \hat{\text{k}}=\, (-49,21,-63)\, : \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \, (-49,21,-63)\,  \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

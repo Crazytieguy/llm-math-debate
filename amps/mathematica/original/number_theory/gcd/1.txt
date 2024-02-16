@@ -1,0 +1,4 @@
+Problem:
+Find the greatest common disvior of $\left\{\frac{114}{5},327\right\}$.
+Answer:
+$\frac{3}{5}$

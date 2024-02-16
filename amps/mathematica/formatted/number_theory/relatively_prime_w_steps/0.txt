@@ -1,0 +1,13 @@
+Determine if the following numbers are coprime to each other:
+
+$416\text{ and }185$
+
+\hrule
+
+1. By definition, these numbers are coprime if their gcd is $1:$
+
+$\gcd (416,185)=1$
+
+2. Since these numbers have a gcd equal to $1,$ they are coprime:
+
+Answer: 416 and $185$ are coprime

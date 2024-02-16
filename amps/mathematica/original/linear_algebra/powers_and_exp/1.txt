@@ -1,0 +1,17 @@
+Problem:
+Compute
+$\left(
+\begin{array}{ccc}
+ -2 & 0 & 2 \\
+ 2 & 3 & -1 \\
+ -1 & 2 & 1 \\
+\end{array}
+\right)^3$.
+Answer:
+$\left(
+\begin{array}{ccc}
+ 6 & 8 & -2 \\
+ 8 & 21 & -1 \\
+ 9 & 18 & -1 \\
+\end{array}
+\right)$

@@ -1,0 +1,3 @@
+Find the difference between two sets, namely ${-4 \sqrt{2}, 9, -6.11, 2 \sqrt{2}, -\frac{17}{2}, -7, -\sqrt{5}, -\frac{19}{2}} \setminus {-5, -7, 2 \sqrt{2}, \sqrt{5}}$.
+Answer:
+${-\frac{19}{2}, -\frac{17}{2}, -6.11, -4 \sqrt{2}, -\sqrt{5}, 9}$

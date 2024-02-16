@@ -1,0 +1,184 @@
+Take the dot product of the following vectors:
+
+$\, (8,4,4,8,0,-9,-3,7)\, .\, (4,-6,-4,-5,7,5,2,-9)\,$
+
+\hrule
+
+1. Multiply the row vector with the column vector:
+
+$\, (8,4,4,8,0,-9,-3,7)\, .\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right)$
+
+2. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$8\ 4=32$
+
+3. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$4 (-6)=-24$
+
+4. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$4 (-4)=-16$
+
+5. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$8 (-5)=-40$
+
+6. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$0\ 7=0$
+
+7. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$-9\ 5=-45$
+
+8. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$-3\ 2=-6$
+
+9. $\left(
+\begin{array}{cccccccc}
+8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right):$
+
+$7 (-9)=-63$
+
+10. $8\ 4+4 (-6)+4 (-4)+8 (-5)+0\ 7+(-9)\, \times \, 5+(-3)\, \times \, 2+7 (-9):$
+
+$32-24-16-40+0-45-6-63$
+
+11. $32-24-16-40+0-45-6-63=32-24-16-40-45-6-63:$
+
+$32-24-16-40-45-6-63$
+
+12. $32-24-16-40-45-6-63=-162:$
+
+Answer: $-162$

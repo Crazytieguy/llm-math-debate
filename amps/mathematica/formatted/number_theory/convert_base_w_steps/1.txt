@@ -1,0 +1,78 @@
+Convert the following to base $24:$
+
+$2745_{10}$
+
+\hrule
+
+1. Determine the powers of 24 that will be used as the places of the digits in the base-24 representation of $2745:$
+
+$\begin{array}{|c|c|c}
+\hline
+\text{ Power }&\text{ Base}^{\text{Power}} &\text{ Place value }\\
+\hline
+ 3 & 24^3 & 13824 \\
+\hline
+ 2 & 24^2 & 576 \\
+ 1 & 24^1 & 24 \\
+ 0 & 24^0 & 1 \\
+\end{array}$
+
+2. Label each place of the base-24 representation of 2745 with the appropriate power of $24:$
+
+$\begin{array}{ccccccc}
+\text{Place }&   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & \_\_ & \_\_ & \_\_ & )_{\text{}_{24}} \\
+\end{array}$
+
+3. Determine the value of the first digit from the right of 2745 in base $24:$
+
+$\begin{array}{l}
+\frac{2745}{24}=114\text{ with remainder }9 \\
+ 
+\begin{array}{ccccccc}
+\text{Place }&   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & \_\_ & \_\_ & 9 & )_{\text{}_{24}} \\
+\end{array}
+ \\
+\end{array}$
+
+4. Determine the value of the next digit from the right of 2745 in base $24:$
+
+$\begin{array}{l}
+\frac{114}{24}=4\text{ with remainder }18 \\
+ 
+\begin{array}{ccccccc}
+\text{Place }&   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & \_\_ & 18 & 9 & )_{\text{}_{24}} \\
+\end{array}
+ \\
+\end{array}$
+
+5. Determine the value of the last remaining digit of 2745 in base $24:$
+
+$\begin{array}{l}
+\frac{4}{24}=0\text{ with remainder }4 \\
+ 
+\begin{array}{ccccccc}
+\text{Place }&   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & 4 & 18 & 9 & )_{\text{}_{24}} \\
+\end{array}
+ \\
+\end{array}$
+
+6. Convert all digits that are greater than 9 to their base 24 alphabetical equivalent:
+
+$\begin{array}{ccc}
+\text{Base-24 digit value }&   &\text{ Base-24 digit }\\
+ 4 & \rightarrow  & 4 \\
+ 18 & \rightarrow  &\text{ i }\\
+ 9 & \rightarrow  & 9 \\
+\end{array}$
+
+7. The number $2745_{10}\text{ is equivalent to 4i9}_{24}\text{ in base }24.$
+
+Answer: $2745_{10}=\text{4i9}_{24}$

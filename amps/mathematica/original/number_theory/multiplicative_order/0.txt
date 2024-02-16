@@ -1,0 +1,4 @@
+Problem:
+Find the smallest integer $m$ such that $17^m \equiv 1 \pmod{554}$.
+Answer:
+$276$

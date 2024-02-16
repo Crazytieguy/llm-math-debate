@@ -1,0 +1,24 @@
+Problem:
+Find the cross product of the following vectors:
+$\left(
+\begin{array}{c}
+ -\frac{10}{3} \\
+ \frac{11}{3} \\
+ -4 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ \frac{29}{3} \\
+ -\frac{19}{3} \\
+ -\frac{20}{3} \\
+\end{array}
+\right)$
+Answer:
+$\left(
+\begin{array}{c}
+ -\frac{448}{9} \\
+ -\frac{548}{9} \\
+ -\frac{43}{3} \\
+\end{array}
+\right)$

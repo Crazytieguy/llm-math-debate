@@ -1,0 +1,10 @@
+Problem:
+Find the jacobian of the vector valued function $\begin{pmatrix} f(x,y,z)\\ g(x,y,z) \\ h(x,y,z)\end{pmatrix}$ where $f(x,y,z) = \cosh (x)$, $g(x,y,z) = y^5$, and $h(x,y,z) = \cosh ^{-1}(x)$
+Answer:
+$\left(
+\begin{array}{ccc}
+ \sinh (x) & 0 & 0 \\
+ 0 & 5 y^4 & 0 \\
+ \frac{1}{\sqrt{x-1} \sqrt{x+1}} & 0 & 0 \\
+\end{array}
+\right)$

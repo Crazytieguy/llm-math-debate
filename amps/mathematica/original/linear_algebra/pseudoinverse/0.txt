@@ -1,0 +1,17 @@
+Problem:
+Compute the (pseudo)inverse of
+$\left(
+\begin{array}{ccc}
+ 4 & 2 & \frac{38}{9} \\
+ \frac{43}{9} & -\frac{2}{9} & \frac{17}{9} \\
+ \frac{11}{9} & \frac{17}{9} & -\frac{41}{9} \\
+\end{array}
+\right)$.
+Answer:
+$\left(
+\begin{array}{ccc}
+ -\frac{621}{18754} & \frac{2076}{9377} & \frac{573}{9377} \\
+ \frac{2925}{9377} & -\frac{2841}{9377} & \frac{1533}{9377} \\
+ \frac{2259}{18754} & -\frac{621}{9377} & -\frac{1269}{9377} \\
+\end{array}
+\right)$

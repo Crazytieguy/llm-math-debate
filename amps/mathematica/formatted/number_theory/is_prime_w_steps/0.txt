@@ -1,0 +1,9 @@
+Test for primality:
+
+is $0$ a prime number?
+
+\hrule
+
+1. Since every positive integer is a divisor of $0,$ it is not prime:
+
+Answer: $0$ is not a prime number

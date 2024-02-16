@@ -1,0 +1,111 @@
+Do row reduction:
+
+$\left(
+\begin{array}{cc}
+7 & -3 \\
+ -8 & -9 \\
+ -9 & 4 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. Swap row $1\text{ with row }3:$
+
+$\left(
+\begin{array}{cc}
+-9 & 4 \\
+ -8 & -9 \\
+ 7 & -3 \\
+\end{array}
+\right)$
+
+2. Subtract $\frac{8}{9}\, \times \,\text{ (row }1)\text{ from row }2:$
+
+$\left(
+\begin{array}{cc}
+-9 & 4 \\
+ 0 & -\frac{113}{9} \\
+ 7 & -3 \\
+\end{array}
+\right)$
+
+3. Add $\frac{7}{9}\, \times \,\text{ (row }1)\text{ to row }3:$
+
+$\left(
+\begin{array}{cc}
+-9 & 4 \\
+ 0 & -\frac{113}{9} \\
+ 0 & \frac{1}{9} \\
+\end{array}
+\right)$
+
+4. Add $\frac{1}{113}\, \times \,\text{ (row }2)\text{ to row }3:$
+
+$\left(
+\begin{array}{cc}
+-9 & 4 \\
+ 0 & -\frac{113}{9} \\
+ 0 & 0 \\
+\end{array}
+\right)$
+
+5. Multiply row $2\text{ by }-\frac{9}{113}$:
+
+$\left(
+\begin{array}{cc}
+-9 & 4 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right)$
+
+6. Subtract $4\, \times \,\text{ (row }2)\text{ from row }1:$
+
+$\left(
+\begin{array}{cc}
+-9 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right)$
+
+7. Divide row $1\text{ by }-9:$
+
+$\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right)$
+
+8. This matrix is now in reduced row echelon form.$\backslash $nAll non-zero rows are above rows of all zeros:
+
+$\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right)$
+
+9. Each pivot is 1 and is strictly to the right of every pivot above it:
+
+$\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right)$
+
+10. Each pivot is the only non-zero entry in its column:
+
+Answer: $\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right)$

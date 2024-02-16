@@ -1,0 +1,13 @@
+Problem:
+Compute the trace of
+$\left(
+\begin{array}{ccccc}
+ 4 & 1 & 7 & 5 & -7 \\
+ 2 & 4 & 1 & -6 & -2 \\
+ 9 & 2 & -8 & 3 & 6 \\
+ -5 & -4 & -3 & 8 & 5 \\
+ -3 & -8 & 8 & -4 & 2 \\
+\end{array}
+\right)$.
+Answer:
+$10$

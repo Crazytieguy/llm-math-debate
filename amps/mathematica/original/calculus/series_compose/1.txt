@@ -1,0 +1,4 @@
+Problem:
+Find the second order expansion about $x = 5$ of the composition $f(g(x))$ for $f(x) = \sqrt[3]{x^3}$ and $g(x) = $\log (x)$
+Answer:
+$\frac{1}{50} (x-5)^2+\frac{4 (x-5)}{5}+5-\log (5)$

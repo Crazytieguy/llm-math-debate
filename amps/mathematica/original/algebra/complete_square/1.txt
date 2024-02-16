@@ -1,0 +1,4 @@
+Problem:
+Complete the square for the following quadratic: $-7 x^2-9$
+Answer:
+$-7 x^2-9$

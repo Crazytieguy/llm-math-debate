@@ -1,0 +1,4 @@
+Problem:
+Determine the KL Divergence between the empirical distributions $\{0.124,0.402,0.317\}$ and $\{0.018,0.16,0.431\}$.
+Answer:
+$0.28$

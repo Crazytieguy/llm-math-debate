@@ -1,0 +1,5 @@
+Problem:
+Solve for $y=f(x)$ given the following parametric equations:
+$y(t)=441 (t-2)^2, x(t)=7 t-15$
+Answer:
+$y=9 x^2+18 x+9$

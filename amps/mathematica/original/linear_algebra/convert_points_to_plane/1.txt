@@ -1,0 +1,5 @@
+Problem:
+Find the plane defined by the following points:
+${\{-4,-4,-3\}, \{-5,4,0\}, \{-4,0,1\}}$.
+Answer:
+$5 x+y-z+21=0$

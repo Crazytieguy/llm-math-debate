@@ -1,0 +1,27 @@
+Find the trace of the matrix:
+
+$\left(
+\begin{array}{cc}
+9 & -2 \\
+ -4 & 7 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. Locate the elements on the main diagonal:
+
+$\left(
+\begin{array}{cc}
+9 & -2 \\
+ -4 & 7 \\
+\end{array}
+\right)$
+
+2. Write out the sum of the elements on the main diagonal:
+
+$9\,\text{ +$\, $}7$
+
+3. $9+7=16:$
+
+Answer: $16$

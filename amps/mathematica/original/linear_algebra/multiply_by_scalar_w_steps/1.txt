@@ -1,0 +1,234 @@
+Problem:
+Multiply the scalar $-\frac{3}{2}$ and the matrix
+$\left(
+\begin{array}{cc}
+ 6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Simplify the following}: \\
+ \frac{-3}{2}\left(
+\begin{array}{cc}
+ 6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \frac{-3}{2}\left(
+\begin{array}{cc}
+ 6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)=\frac{-3\left(
+\begin{array}{cc}
+ 6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)}{2}: \\
+ \frac{-3\left(
+\begin{array}{cc}
+ 6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)}{2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -3\left(
+\begin{array}{cc}
+ 6 & 3 \\
+ -6 & -4 \\
+ 4 & 0 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+ -3\times 6 & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & -3\times 0 \\
+\end{array}
+\right): \\
+ \frac{\fbox{$\left(
+\begin{array}{cc}
+ -3\times 6 & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & -3\times 0 \\
+\end{array}
+\right)$}}{2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 0 (-3)=0: \\
+ \frac{1}{2}\left(
+\begin{array}{cc}
+ -3\times 6 & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & \fbox{$0$} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -3\times 6 \text{= }-18: \\
+ \frac{1}{2}\left(
+\begin{array}{cc}
+ \fbox{$-18$} & -3\times 3 \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -3\times 3 \text{= }-9: \\
+ \frac{1}{2}\left(
+\begin{array}{cc}
+ -18 & \fbox{$-9$} \\
+ -3 (-6) & -3 (-4) \\
+ -3\times 4 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -3 (-6) \text{= }18: \\
+ \frac{1}{2}\left(
+\begin{array}{cc}
+ -18 & -9 \\
+ \fbox{$18$} & -3 (-4) \\
+ -3\times 4 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -3 (-4) \text{= }12: \\
+ \frac{1}{2}\left(
+\begin{array}{cc}
+ -18 & -9 \\
+ 18 & \fbox{$12$} \\
+ -3\times 4 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -3\times 4 \text{= }-12: \\
+ \frac{1}{2}\left(
+\begin{array}{cc}
+ -18 & -9 \\
+ 18 & 12 \\
+ \fbox{$-12$} & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{1}{2}\left(
+\begin{array}{cc}
+ -18 & -9 \\
+ 18 & 12 \\
+ -12 & 0 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+ \frac{-18}{2} & \frac{-9}{2} \\
+ \frac{18}{2} & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{cc}
+ \frac{-18}{2} & \frac{-9}{2} \\
+ \frac{18}{2} & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }-18 \text{and }2 \text{is }2, \text{so }\frac{-18}{2}=\frac{2 (-9)}{2\times 1}=\frac{2}{2}\times -9=-9: \\
+ \left(
+\begin{array}{cc}
+ \fbox{$-9$} & \frac{-9}{2} \\
+ \frac{18}{2} & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }\text{18 }\text{and }2 \text{is }2, \text{so }\frac{18}{2}=\frac{2\times 9}{2\times 1}=\frac{2}{2}\times 9=9: \\
+ \left(
+\begin{array}{cc}
+ -9 & \frac{-9}{2} \\
+ \fbox{$9$} & \frac{12}{2} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }\text{12 }\text{and }2 \text{is }2, \text{so }\frac{12}{2}=\frac{2\times 6}{2\times 1}=\frac{2}{2}\times 6=6: \\
+ \left(
+\begin{array}{cc}
+ -9 & \frac{-9}{2} \\
+ 9 & \fbox{$6$} \\
+ \frac{-12}{2} & \frac{0}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }-12 \text{and }2 \text{is }2, \text{so }\frac{-12}{2}=\frac{2 (-6)}{2\times 1}=\frac{2}{2}\times -6=-6: \\
+ \left(
+\begin{array}{cc}
+ -9 & \frac{-9}{2} \\
+ 9 & 6 \\
+ \fbox{$-6$} & \frac{0}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{0}{2}=0: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \left(
+\begin{array}{cc}
+ -9 & \frac{-9}{2} \\
+ 9 & 6 \\
+ -6 & \fbox{$0$} \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

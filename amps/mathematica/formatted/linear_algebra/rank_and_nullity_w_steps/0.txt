@@ -1,0 +1,25 @@
+Find the rank of the matrix:
+
+$M=\left(
+\begin{array}{c}
+-5 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. As each row of matrix $M$ has only zeroes to the left of the main diagonal, it is in row echelon form:
+
+$\left(
+\begin{array}{c}
+-5 \\
+\end{array}
+\right)$
+
+2. There is $1\text{ nonzero row in the row echelon matrix, so the rank is }1:$
+
+Answer: rank$\left(
+\begin{array}{c}
+-5 \\
+\end{array}
+\right)=1$

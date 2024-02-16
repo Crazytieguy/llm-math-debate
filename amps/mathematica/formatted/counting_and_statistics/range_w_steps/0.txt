@@ -1,0 +1,21 @@
+Find the range of the list:
+
+$\left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right) = \left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right)$
+
+\hrule
+
+1. The range of a list is given by:
+
+$(\text{largest element})-(\text{smallest element})$
+
+2. $\left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right)\text{  We see that the largest element is }5:$
+
+$5-(\text{smallest element})$
+
+3. $\left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right)\text{  We see that the smallest element is }-\frac{311}{32}$:
+
+$-\frac{-311}{32}+5$
+
+4. $-\frac{-311}{32}+5=\frac{471}{32}$:
+
+Answer: $\frac{471}{32}$

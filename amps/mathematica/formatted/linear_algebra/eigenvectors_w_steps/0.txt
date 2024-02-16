@@ -1,0 +1,422 @@
+Find all the eigenvalues and eigenvectors of the matrix $M:$
+
+$M=\left(
+\begin{array}{cc}
+9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. Find $\lambda \in \mathbb{C}\text{ such that }M v=\lambda  v\text{ for some nonzero vector }v:$
+
+$M v=\lambda  v$
+
+2. Rewrite the equation $M v=\lambda  v\text{ as }(M-\mathbb{I} \lambda ) v=0:$
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+3. Find all $\lambda\text{  such that }| M-\mathbb{I} \lambda | =0:$
+
+$| M-\mathbb{I} \lambda | =0$
+
+4. $\begin{array}{lll}
+M-\mathbb{I} \lambda  & = & \left(
+\begin{array}{cc}
+9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right) \lambda  \\
+\text{  }& = & \left(
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right) \\
+\end{array}$
+
+$\left| 
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right| =0$
+
+5. $\left| 
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right| =\lambda ^2-5 \lambda -31:$
+
+$\lambda ^2-5 \lambda -31=0$
+
+6. Add 31 to both sides:
+
+$\lambda ^2-5 \lambda =31$
+
+7. Add $\frac{25}{4}$ to both sides:
+
+$\lambda ^2-5 \lambda +\frac{25}{4}=\frac{149}{4}$
+
+8. Write the left hand side as a square:
+
+$\left(\lambda -\frac{5}{2}\right)^2=\frac{149}{4}$
+
+9. Take the square root of both sides:
+
+$\lambda -\frac{5}{2}=\frac{\sqrt{149}}{2}\text{ or }\lambda -\frac{5}{2}=-\frac{\sqrt{149}}{2}$
+
+10. Add $\frac{5}{2}$ to both sides:
+
+$\lambda =\frac{5}{2}+\frac{\sqrt{149}}{2}\text{ or }\lambda -\frac{5}{2}=-\frac{\sqrt{149}}{2}$
+
+11. Add $\frac{5}{2}$ to both sides:
+
+$\lambda =\frac{5}{2}+\frac{\sqrt{149}}{2}\text{ or }\lambda =\frac{5}{2}-\frac{\sqrt{149}}{2}$
+
+12. Find all $v\text{ such that }(M-\mathbb{I} \lambda ) v=0\text{ for some eigenvalue }\lambda$ :
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+13. Substitute $\left(
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right)\text{ for }(M-\mathbb{I} \lambda ):$
+
+$\left(
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right) v=0$
+
+14. Write $v\text{ as }\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)\text{ and }0\text{ as }\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+15. First, substitute $\frac{5}{2}+\frac{\sqrt{149}}{2}\text{ for }\lambda\text{  in the matrix }\left(
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right)$ and solve the system:
+
+$\left(
+\begin{array}{cc}
+\frac{13}{2}-\frac{\sqrt{149}}{2} & -5 \\
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+16. In augmented matrix form, the system is written as:
+
+$\left(
+\begin{array}{ccc}
+\frac{13}{2}-\frac{\sqrt{149}}{2} & -5 & 0 \\
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+\end{array}
+\right)$
+
+17. Swap row $1\text{ with row }2:$
+
+$\left(
+\begin{array}{ccc}
+1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+ \frac{13}{2}-\frac{\sqrt{149}}{2} & -5 & 0 \\
+\end{array}
+\right)$
+
+18. Subtract $\left(\frac{13}{2}-\frac{\sqrt{149}}{2}\right)\, \times \,\text{ (row }1)\text{ from row }2:$
+
+$\left(
+\begin{array}{ccc}
+1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$
+
+19. Translated back to a matrix equation, the reduced system $\left(
+\begin{array}{ccc}
+1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$ is:
+
+$\left(
+\begin{array}{cc}
+1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+20. As a scalar equation, the system $\left(
+\begin{array}{cc}
+1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$ translates to:
+
+$v_1+\left(-\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2=0$
+
+21. Rewrite the equation as:
+
+$v_1=-\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2$
+
+22. According to the above equation:
+
+$v = \left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right) = \left(
+\begin{array}{c}
+-\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right)$
+
+23. Letting $v_2=1\text{ in }\left(
+\begin{array}{c}
+-\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right),\text{ we find that }\left(
+\begin{array}{c}
+\frac{13}{2}+\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right)\text{ is an eigenvector of the matrix }\left(
+\begin{array}{cc}
+9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right)\text{ associated with the eigenvalue }\frac{5}{2}+\frac{\sqrt{149}}{2}$:
+
+$v=\left(
+\begin{array}{c}
+\frac{13}{2}+\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right)$
+
+24. Substitute $\frac{5}{2}-\frac{\sqrt{149}}{2}\text{ for }\lambda\text{  in the matrix }\left(
+\begin{array}{cc}
+9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right)$ and solve the system:
+
+$\left(
+\begin{array}{cc}
+\frac{13}{2}+\frac{\sqrt{149}}{2} & -5 \\
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+25. In augmented matrix form, the system is written as:
+
+$\left(
+\begin{array}{ccc}
+\frac{13}{2}+\frac{\sqrt{149}}{2} & -5 & 0 \\
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+\end{array}
+\right)$
+
+26. Swap row $1\text{ with row }2:$
+
+$\left(
+\begin{array}{ccc}
+1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+ \frac{13}{2}+\frac{\sqrt{149}}{2} & -5 & 0 \\
+\end{array}
+\right)$
+
+27. Subtract $\left(\frac{13}{2}+\frac{\sqrt{149}}{2}\right)\, \times \,\text{ (row }1)\text{ from row }2:$
+
+$\left(
+\begin{array}{ccc}
+1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$
+
+28. Translated back to a matrix equation, the reduced system $\left(
+\begin{array}{ccc}
+1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right)$ is:
+
+$\left(
+\begin{array}{cc}
+1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+29. As a scalar equation, the system $\left(
+\begin{array}{cc}
+1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$ translates to:
+
+$v_1+\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2=0$
+
+30. Rewrite the equation as:
+
+$v_1=-\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2$
+
+31. According to the above equation:
+
+$v = \left(
+\begin{array}{c}
+v_1 \\
+ v_2 \\
+\end{array}
+\right) = \left(
+\begin{array}{c}
+-\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right)$
+
+32. Letting $v_2=1\text{ in }\left(
+\begin{array}{c}
+-\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right),\text{ we find that }\left(
+\begin{array}{c}
+\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right)\text{ is an eigenvector of the matrix }\left(
+\begin{array}{cc}
+9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right)\text{ associated with the eigenvalue }\frac{5}{2}-\frac{\sqrt{149}}{2}$:
+
+$v=\left(
+\begin{array}{c}
+\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right)$
+
+33. We found the following eigenvalue/eigenvector pair:
+
+Answer:
+
+$\begin{array}{c|c}
+\text{Eigenvalue }&\text{ Eigenvector }\\
+\hline
+ \frac{5}{2}+\frac{\sqrt{149}}{2} & \left(
+\begin{array}{c}
+\frac{13}{2}+\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \\
+ \frac{5}{2}-\frac{\sqrt{149}}{2} & \left(
+\begin{array}{c}
+\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \\
+\end{array}$

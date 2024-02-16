@@ -1,0 +1,425 @@
+Simplify the following:
+
+$\left(
+\begin{array}{cc}
+\frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+5 & -\frac{75}{8} \\
+ \frac{33}{16} & -\frac{97}{16} \\
+ \frac{117}{16} & \frac{77}{8} \\
+\end{array}
+\right)$
+
+\hrule
+
+1. $-1\left(
+\begin{array}{cc}
+5 & -\frac{75}{8} \\
+ \frac{33}{16} & -\frac{97}{16} \\
+ \frac{117}{16} & \frac{77}{8} \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+-5 & -\frac{-75}{8} \\
+ -\frac{33}{16} & -\frac{-97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cc}
+\frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+-5 & -\frac{-75}{8} \\
+ -\frac{33}{16} & -\frac{-97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right)$
+
+2. $-(-75) = 75:$
+
+$\left(
+\begin{array}{cc}
+\frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+-5 & \frac{75}{8} \\
+ -\frac{33}{16} & -\frac{-97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right)$
+
+3. $-(-97) = 97:$
+
+$\left(
+\begin{array}{cc}
+\frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+-5 & \frac{75}{8} \\
+ -\frac{33}{16} & \frac{97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right)$
+
+4. $\left(
+\begin{array}{cc}
+\frac{61}{16} & \frac{79}{16} \\
+ -\frac{119}{16} & -\frac{83}{16} \\
+ 6 & \frac{117}{16} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+-5 & \frac{75}{8} \\
+ -\frac{33}{16} & \frac{97}{16} \\
+ -\frac{117}{16} & -\frac{77}{8} \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+\frac{61}{16}-5 & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cc}
+\frac{61}{16}-5 & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+5. Put $\frac{61}{16}-5\text{ over the common denominator 16. }\frac{61}{16}-5 = \frac{61}{16}+\frac{16 (-5)}{16}$:
+
+$\left(
+\begin{array}{cc}
+\frac{61}{16}+\frac{16 (-5)}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+6. $16 (-5) = -80:$
+
+$\left(
+\begin{array}{cc}
+\frac{61}{16}+\frac{-80}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+7. $\frac{61}{16}-\frac{80}{16} = \frac{61-80}{16}$:
+
+$\left(
+\begin{array}{cc}
+\frac{61-80}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+8. $61-80 = -(80-61):$
+
+$\left(
+\begin{array}{cc}
+\frac{-(80-61)}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+9. $\begin{array}{c}
+\begin{array}{ccc}
+\hline
+\text{  }& 7 & 10 \\
+\hline
+\text{  }& 8 & 0 \\
+ - & 6 & 1 \\
+\text{  }& 1 & 9 \\
+\end{array}
+ \\
+\end{array}$
+
+:
+
+$\left(
+\begin{array}{cc}
+\frac{-19}{16} & \frac{79}{16}+\frac{75}{8} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+10. Put $\frac{79}{16}+\frac{75}{8}\text{ over the common denominator 16. }\frac{79}{16}+\frac{75}{8} = \frac{79}{16}+\frac{2\times 75}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{79}{16}+\frac{2\times 75}{16} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+11. $2\times 75 = 150:$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{79}{16}+\frac{150}{16} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+12. $\frac{79}{16}+\frac{150}{16} = \frac{79+150}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{79+150}{16} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+13. $\begin{array}{c}
+\begin{array}{cccc}
+\hline
+\text{  }& 1 &\text{  }&\text{  }\\
+\hline
+\text{  }& 1 & 5 & 0 \\
+ + &\text{  }& 7 & 9 \\
+\text{  }& 2 & 2 & 9 \\
+\end{array}
+ \\
+\end{array}$
+
+:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{119}{16}-\frac{33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+14. $-\frac{119}{16}-\frac{33}{16} = \frac{-119-33}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ \frac{-119-33}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+15. $-119-33=-(119+33):$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ \frac{-(119+33)}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+16. $\begin{array}{c}
+\begin{array}{cccc}
+\hline
+\text{  }&\text{  }& 1 &\text{  }\\
+\hline
+\text{  }& 1 & 1 & 9 \\
+ + &\text{  }& 3 & 3 \\
+\text{  }& 1 & 5 & 2 \\
+\end{array}
+ \\
+\end{array}$
+
+:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ \frac{-152}{16} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+17. The gcd of 152 and 16 is $8,\text{ so }\frac{-152}{16}=\frac{-(8\times 19)}{8\times 2}=\frac{8}{8}\times \frac{-19}{2}=\frac{-19}{2}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ \frac{-19}{2} & -\frac{83}{16}+\frac{97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+18. $-\frac{83}{16}+\frac{97}{16} = \frac{-83+97}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{-83+97}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+19. $-83+97=14:$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{14}{16} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+20. The gcd of 14 and 16 is $2,\text{ so }\frac{14}{16}=\frac{2\times 7}{2\times 8}=\frac{2}{2}\times \frac{7}{8}=\frac{7}{8}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ 6-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+21. Put $6-\frac{117}{16}\text{ over the common denominator 16. }6-\frac{117}{16} = \frac{16\times 6}{16}-\frac{117}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{16\times 6}{16}-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+22. $16\times 6 = 96:$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{96}{16}-\frac{117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+23. $\frac{96}{16}-\frac{117}{16} = \frac{96-117}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{96-117}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+24. $96-117 = -(117-96):$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{-(117-96)}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+25. $\begin{array}{c}
+\begin{array}{cccc}
+\hline
+\text{  }& 0 & 11 &\text{  }\\
+\hline
+\text{  }& 1 & 1 & 7 \\
+ - &\text{  }& 9 & 6 \\
+\text{  }& 0 & 2 & 1 \\
+\end{array}
+ \\
+\end{array}$
+
+:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ \frac{-21}{16} & \frac{117}{16}-\frac{77}{8} \\
+\end{array}
+\right)$
+
+26. Put $\frac{117}{16}-\frac{77}{8}\text{ over the common denominator 16. }\frac{117}{16}-\frac{77}{8} = \frac{117}{16}+\frac{2 (-77)}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{117}{16}+\frac{2 (-77)}{16} \\
+\end{array}
+\right)$
+
+27. $2 (-77) = -154:$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{117}{16}+\frac{-154}{16} \\
+\end{array}
+\right)$
+
+28. $\frac{117}{16}-\frac{154}{16} = \frac{117-154}{16}$:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{117-154}{16} \\
+\end{array}
+\right)$
+
+29. $117-154 = -(154-117):$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{-(154-117)}{16} \\
+\end{array}
+\right)$
+
+30. $\begin{array}{c}
+\begin{array}{cccc}
+\hline
+\text{  }&\text{  }& 4 & 14 \\
+\hline
+\text{  }& 1 & 5 & 4 \\
+ - & 1 & 1 & 7 \\
+\text{  }& 0 & 3 & 7 \\
+\end{array}
+ \\
+\end{array}$
+
+:
+
+Answer: $\left(
+\begin{array}{cc}
+-\frac{19}{16} & \frac{229}{16} \\
+ -\frac{19}{2} & \frac{7}{8} \\
+ -\frac{21}{16} & \frac{-37}{16} \\
+\end{array}
+\right)$

@@ -1,0 +1,47 @@
+Problem:
+Compute the geometric mean of ${25, 36, 7}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the geometric mean of the list}: \\
+ (25,36,7)\text{} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{The }\text{geometric }\text{mean }\text{of }\text{a }\text{list }\text{of }\text{numbers }\text{is }\text{given }\text{by}: \\
+ (\text{product of elements})^{\frac{1}{(\text{number of elements})}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ (\text{product of elements}) \text{= }\text{25 }\text{$\times $ }\text{36 }\text{$\times $ }7: \\
+ \sqrt[(\text{number of elements})]{(\text{25 }\text{$\times $ }\text{36 }\text{$\times $ }7)} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Counting, }\text{we }\text{see }\text{that }\text{the }\text{list }\text{has }3 \text{elements}: \\
+ (\text{25 }\text{$\times $ }\text{36 }\text{$\times $ }7)^{\frac{1}{3}} \text{= }\sqrt[3]{\text{25 }\text{$\times $ }\text{36 }\text{$\times $ }7} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{25 }\text{$\times $ }\text{36 }\text{$\times $ }7=6300: \\
+ \sqrt[3]{6300} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \sqrt[3]{6300} \text{= }\sqrt[3]{7\times 30^2} \text{= }\sqrt[3]{7}\times 30^{2/3}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \sqrt[3]{7}\times 30^{2/3} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,125 @@
+Compute the following cross product:
+
+$\, (-9,-6,5)\, \times \, (-3,5,4)\,$
+
+\hrule
+
+1. Construct a matrix where the first row contains unit vectors $\hat{\text{i}}, \hat{\text{j}},\text{ and }\hat{\text{k}};\text{ and the second and third rows are made of vectors }\, (-9,-6,5)\,\text{  and }\, (-3,5,4)\,$ :
+
+$\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right)$
+
+2. Take the determinant of this matrix:
+
+$\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right|$
+
+3. Expand with respect to row $1:$
+
+= $\left| 
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right|$
+
+4. The determinant of the matrix $\left(
+\begin{array}{ccc}
+\hat{\text{i}} & \hat{\text{j}} & \hat{\text{k}} \\
+ -9 & -6 & 5 \\
+ -3 & 5 & 4 \\
+\end{array}
+\right)\text{ is given by }\hat{\text{i}} \left| 
+\begin{array}{cc}
+-6 & 5 \\
+ 5 & 4 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right|$ :
+
+= $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-6 & 5 \\
+ 5 & 4 \\
+\end{array}
+\right| +\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right|$
+
+5. $\hat{\text{i}} \left| 
+\begin{array}{cc}
+-6 & 5 \\
+ 5 & 4 \\
+\end{array}
+\right| =\hat{\text{i}} ((-6)\, \times \, 4-5\ 5)=\hat{\text{i}} (-49)=-49 \hat{\text{i}}$:
+
+= $-49 \hat{\text{i}}+\left(-\hat{\text{j}}\right) \left| 
+\begin{array}{cc}
+-9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| +\hat{\text{k}} \left| 
+\begin{array}{cc}
+-9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right|$
+
+6. $-\hat{\text{j}} \left| 
+\begin{array}{cc}
+-9 & 5 \\
+ -3 & 4 \\
+\end{array}
+\right| =-\hat{\text{j}} ((-9)\, \times \, 4-5 (-3))=-\hat{\text{j}} (-21)=21 \hat{\text{j}}$:
+
+= $-49 \hat{\text{i}}+21 \hat{\text{j}}+\hat{\text{k}} \left| 
+\begin{array}{cc}
+-9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right|$
+
+7. $\hat{\text{k}} \left| 
+\begin{array}{cc}
+-9 & -6 \\
+ -3 & 5 \\
+\end{array}
+\right| =\hat{\text{k}} ((-9)\, \times \, 5-(-6)\, (-3))=\hat{\text{k}} (-63)=-63 \hat{\text{k}}$:
+
+= $-49 \hat{\text{i}}+21 \hat{\text{j}}+-63 \hat{\text{k}}$
+
+8. Order the terms in a more natural way:
+
+= $-49 \hat{\text{i}}+21 \hat{\text{j}}-63 \hat{\text{k}}$
+
+9. $-49 \hat{\text{i}}+21 \hat{\text{j}}-63 \hat{\text{k}}=\, (-49,21,-63)\,$ :
+
+Answer: $\, (-49,21,-63)\,$

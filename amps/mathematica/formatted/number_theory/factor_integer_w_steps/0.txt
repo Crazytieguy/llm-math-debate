@@ -1,0 +1,13 @@
+Factor the following integer:
+
+$2$
+
+\hrule
+
+1. No primes less than $2\text{ divide into it. Therefore }2$ is prime:
+
+$2=2$
+
+2. Since $2\text{ is prime it has an exponent of }1:$
+
+Answer: $2=2^1$

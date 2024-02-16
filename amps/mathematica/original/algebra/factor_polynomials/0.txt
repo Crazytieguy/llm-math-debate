@@ -1,0 +1,4 @@
+Problem:
+Factor the following quadratic: $-2 x^2-50 x-288$
+Answer:
+$-2 (-x-16) (-x-9)$

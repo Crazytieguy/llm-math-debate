@@ -1,0 +1,508 @@
+Problem:
+Find the eigenvectors of the following matrix:
+$\left(
+\begin{array}{cc}
+ 9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find all the eigenvalues and eigenvectors of the matrix }M: \\
+ M=\left(
+\begin{array}{cc}
+ 9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Find }\lambda \in \mathbb{C} \text{such }\text{that }M v=\lambda  v \text{for }\text{some }\text{nonzero }\text{vector }v: \\
+ M v=\lambda  v \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Rewrite }\text{the }\text{equation }M v=\lambda  v \text{as }(M-\mathbb{I} \lambda ) v=0: \\
+ (M-\mathbb{I} \lambda ) v=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Find }\text{all }\lambda  \text{such }\text{that }| M-\mathbb{I} \lambda | =0: \\
+ | M-\mathbb{I} \lambda | =0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{lll}
+ M-\mathbb{I} \lambda  & = & \fbox{$\left(
+\begin{array}{cc}
+ 9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right)$}-\fbox{$\left(
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right)$} \lambda  \\
+ \text{} & = & \left(
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ \left| 
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right| =0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left| 
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right| =\lambda ^2-5 \lambda -31: \\
+ \lambda ^2-5 \lambda -31=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\text{31 }\text{to }\text{both }\text{sides}: \\
+ \lambda ^2-5 \lambda =31 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{25}{4} \text{to }\text{both }\text{sides}: \\
+ \lambda ^2-5 \lambda +\frac{25}{4}=\frac{149}{4} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+ \left(\lambda -\frac{5}{2}\right)^2=\frac{149}{4} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}: \\
+ \lambda -\frac{5}{2}=\frac{\sqrt{149}}{2}\text{ or }\lambda -\frac{5}{2}=-\frac{\sqrt{149}}{2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{5}{2} \text{to }\text{both }\text{sides}: \\
+ \fbox{$\lambda =\frac{5}{2}+\frac{\sqrt{149}}{2}$}\text{ or }\lambda -\frac{5}{2}=-\frac{\sqrt{149}}{2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{5}{2} \text{to }\text{both }\text{sides}: \\
+ \lambda =\frac{5}{2}+\frac{\sqrt{149}}{2}\text{ or }\fbox{$\lambda =\frac{5}{2}-\frac{\sqrt{149}}{2}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Find }\text{all }v \text{such }\text{that }(M-\mathbb{I} \lambda ) v=0 \text{for }\text{some }\text{eigenvalue }\lambda : \\
+ (M-\mathbb{I} \lambda ) v=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Substitute }\left(
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right) \text{for }(M-\mathbb{I} \lambda ): \\
+ \fbox{$\left(
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right)$} v=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }v \text{as }\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right) \text{and }0 \text{as }\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right).\fbox{$\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)$}=\fbox{$\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right)$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{First, }\text{substitute }\frac{5}{2}+\frac{\sqrt{149}}{2} \text{for }\lambda  \text{in }\text{the }\text{matrix }\left(
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right) \text{and }\text{solve }\text{the }\text{system}: \\
+ \fbox{$\left(
+\begin{array}{cc}
+ \frac{13}{2}-\frac{\sqrt{149}}{2} & -5 \\
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+\end{array}
+\right)$}.\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{In }\text{augmented }\text{matrix }\text{form, }\text{the }\text{system }\text{is }\text{written }\text{as}: \\
+ \left(
+\begin{array}{ccc}
+ \frac{13}{2}-\frac{\sqrt{149}}{2} & -5 & 0 \\
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Swap }\text{row }1 \text{with }\text{row }2: \\
+ \left(
+\begin{array}{ccc}
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+ \frac{13}{2}-\frac{\sqrt{149}}{2} & -5 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\left(\frac{13}{2}-\frac{\sqrt{149}}{2}\right)\, \times \, \text{(row }1) \text{from }\text{row }2: \\
+ \left(
+\begin{array}{ccc}
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Translated }\text{back }\text{to }\text{a }\text{matrix }\text{equation, }\text{the }\text{reduced }\text{system }\left(
+\begin{array}{ccc}
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right) \text{is}: \\
+ \left(
+\begin{array}{cc}
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{As }\text{a }\text{scalar }\text{equation, }\text{the }\text{system }\left(
+\begin{array}{cc}
+ 1 & -\frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \text{translates }\text{to}: \\
+ v_1+\left(-\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Rewrite }\text{the }\text{equation }\text{as}: \\
+ v_1=-\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{According }\text{to }\text{the }\text{above }\text{equation}: \\
+ v\text{ = }\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)\text{ = }\left(
+\begin{array}{c}
+ -\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Letting }v_2=1 \text{in }\left(
+\begin{array}{c}
+ -\left(-\frac{13}{2}-\frac{\sqrt{149}}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right), \text{we }\text{find }\text{that }\left(
+\begin{array}{c}
+ \frac{13}{2}+\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \text{is }\text{an }\text{eigenvector }\text{of }\text{the }\text{matrix }\left(
+\begin{array}{cc}
+ 9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right) \text{associated }\text{with }\text{the }\text{eigenvalue }\frac{5}{2}+\frac{\sqrt{149}}{2}: \\
+ v=\left(
+\begin{array}{c}
+ \frac{13}{2}+\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Substitute }\frac{5}{2}-\frac{\sqrt{149}}{2} \text{for }\lambda  \text{in }\text{the }\text{matrix }\left(
+\begin{array}{cc}
+ 9-\lambda  & -5 \\
+ 1 & -\lambda -4 \\
+\end{array}
+\right) \text{and }\text{solve }\text{the }\text{system}: \\
+ \fbox{$\left(
+\begin{array}{cc}
+ \frac{13}{2}+\frac{\sqrt{149}}{2} & -5 \\
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+\end{array}
+\right)$}.\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{In }\text{augmented }\text{matrix }\text{form, }\text{the }\text{system }\text{is }\text{written }\text{as}: \\
+ \left(
+\begin{array}{ccc}
+ \frac{13}{2}+\frac{\sqrt{149}}{2} & -5 & 0 \\
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Swap }\text{row }1 \text{with }\text{row }2: \\
+ \left(
+\begin{array}{ccc}
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+ \frac{13}{2}+\frac{\sqrt{149}}{2} & -5 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\left(\frac{13}{2}+\frac{\sqrt{149}}{2}\right)\, \times \, \text{(row }1) \text{from }\text{row }2: \\
+ \left(
+\begin{array}{ccc}
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Translated }\text{back }\text{to }\text{a }\text{matrix }\text{equation, }\text{the }\text{reduced }\text{system }\left(
+\begin{array}{ccc}
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} & 0 \\
+ 0 & 0 & 0 \\
+\end{array}
+\right) \text{is}: \\
+ \left(
+\begin{array}{cc}
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{As }\text{a }\text{scalar }\text{equation, }\text{the }\text{system }\left(
+\begin{array}{cc}
+ 1 & \frac{\sqrt{149}}{2}-\frac{13}{2} \\
+ 0 & 0 \\
+\end{array}
+\right)\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \text{translates }\text{to}: \\
+ v_1+\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Rewrite }\text{the }\text{equation }\text{as}: \\
+ v_1=-\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{According }\text{to }\text{the }\text{above }\text{equation}: \\
+ v\text{ = }\left(
+\begin{array}{c}
+ v_1 \\
+ v_2 \\
+\end{array}
+\right)\text{ = }\left(
+\begin{array}{c}
+ -\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Letting }v_2=1 \text{in }\left(
+\begin{array}{c}
+ -\left(\frac{\sqrt{149}}{2}-\frac{13}{2}\right) v_2 \\
+ v_2 \\
+\end{array}
+\right), \text{we }\text{find }\text{that }\left(
+\begin{array}{c}
+ \frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \text{is }\text{an }\text{eigenvector }\text{of }\text{the }\text{matrix }\left(
+\begin{array}{cc}
+ 9 & -5 \\
+ 1 & -4 \\
+\end{array}
+\right) \text{associated }\text{with }\text{the }\text{eigenvalue }\frac{5}{2}-\frac{\sqrt{149}}{2}: \\
+ v=\left(
+\begin{array}{c}
+ \frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{We }\text{found }\text{the }\text{following }\text{eigenvalue/eigenvector }\text{pair}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 
+\begin{array}{c|c}
+ \text{Eigenvalue} & \text{Eigenvector} \\
+\hline
+ \frac{5}{2}+\frac{\sqrt{149}}{2} & \left(
+\begin{array}{c}
+ \frac{13}{2}+\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \\
+ \frac{5}{2}-\frac{\sqrt{149}}{2} & \left(
+\begin{array}{c}
+ \frac{13}{2}-\frac{\sqrt{149}}{2} \\
+ 1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

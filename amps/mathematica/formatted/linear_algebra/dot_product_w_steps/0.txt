@@ -1,0 +1,128 @@
+Take the dot product of the following vectors:
+
+$\, \left(-\frac{2}{e},\frac{1}{e},-\frac{26}{e},\frac{6}{e},\frac{10}{e},\frac{13}{e}\right)\, .\, \left(-\frac{5}{e},\frac{23}{e},-\frac{7}{e},-\frac{8}{e},\frac{19}{e},-\frac{15}{e}\right)\,$
+
+\hrule
+
+1. Multiply the row vector with the column vector:
+
+$\, \left(-\frac{2}{e},\frac{1}{e},-\frac{26}{e},\frac{6}{e},\frac{10}{e},\frac{13}{e}\right)\, .\left(
+\begin{array}{c}
+-\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right)$
+
+2. $\left(
+\begin{array}{cccccc}
+-\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+-\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right):$
+
+$-\frac{2 (-5)}{e e}=\frac{10}{e^2}$
+
+3. $\left(
+\begin{array}{cccccc}
+-\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+-\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right):$
+
+$\frac{23}{e e}=\frac{23}{e^2}$
+
+4. $\left(
+\begin{array}{cccccc}
+-\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+-\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right):$
+
+$-\frac{26 (-7)}{e e}=\frac{182}{e^2}$
+
+5. $\left(
+\begin{array}{cccccc}
+-\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+-\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right):$
+
+$\frac{6 (-8)}{e e}=-\frac{48}{e^2}$
+
+6. $\left(
+\begin{array}{cccccc}
+-\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+-\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right):$
+
+$\frac{10\ 19}{e e}=\frac{190}{e^2}$
+
+7. $\left(
+\begin{array}{cccccc}
+-\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+-\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right):$
+
+$\frac{13 (-15)}{e e}=-\frac{195}{e^2}$
+
+8. $\left(-\frac{2}{e}\right)\, \left(-\frac{5}{e}\right)+\frac{23}{e e}+\left(-\frac{26}{e}\right)\, \left(-\frac{7}{e}\right)+\frac{6 (-8)}{e e}+\frac{10\ 19}{e e}+\frac{13 (-15)}{e e}$:
+
+$\frac{10}{e^2}+\frac{23}{e^2}+\frac{182}{e^2}-\frac{48}{e^2}+\frac{190}{e^2}-\frac{195}{e^2}$
+
+9. Add like terms. $\frac{10}{e^2}+\frac{23}{e^2}+\frac{182}{e^2}-\frac{48}{e^2}+\frac{190}{e^2}-\frac{195}{e^2} = \frac{162}{e^2}$:
+
+Answer: $\frac{162}{e^2}$

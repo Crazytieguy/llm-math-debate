@@ -1,0 +1,4 @@
+Problem:
+Compute the Euler totient function $\phi(2)$.
+Answer:
+$1$

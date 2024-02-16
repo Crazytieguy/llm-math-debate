@@ -1,0 +1,4 @@
+Problem:
+Multiply and expand $p(x) = \frac{10 x^2}{\pi }+\frac{26 x}{\pi }+\frac{12}{\pi }$ and $q(x) = \frac{40 x^2}{\pi }-\frac{24 x}{\pi }-\frac{3}{\pi }$
+Answer:
+$\frac{400 x^4}{\pi ^2}+\frac{800 x^3}{\pi ^2}-\frac{174 x^2}{\pi ^2}-\frac{366 x}{\pi ^2}-\frac{36}{\pi ^2}$

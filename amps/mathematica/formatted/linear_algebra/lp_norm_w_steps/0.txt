@@ -1,0 +1,13 @@
+Find the norm of the vector $\, (8,9,-8,8,-3,-9,5,-10)\,$ :
+
+$\| \, (8,9,-8,8,-3,-9,5,-10)\, \|$
+
+\hrule
+
+1. The formula for the 8-dimensional Euclidean norm comes from the 8-dimensional Pythagorean theorem:
+
+$\left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7,v_8\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2+v_8^2}$
+
+2. Substitute $\, (8,9,-8,8,-3,-9,5,-10)\,$ into the formula:
+
+Answer: $\| \, (8,9,-8,8,-3,-9,5,-10)\, \| =\sqrt{8^2+9^2+(-8)^2+8^2+(-3)^2+(-9)^2+5^2+(-10)^2}=2 \sqrt{122}$

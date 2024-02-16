@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $\frac{\log \left(x-\frac{23}{4}\right)}{\log (3)}+\frac{\log \left(11 x+\frac{47}{2}\right)}{\log (3)}=\frac{\log \left(\frac{47}{2}-\frac{79 x}{4}\right)}{\log (3)}$
+Answer:
+$\left\{\left\{x\to \frac{1}{44} \left(40-\sqrt{29518}\right)\right\},\left\{x\to \frac{1}{44} \left(40+\sqrt{29518}\right)\right\}\right\}$

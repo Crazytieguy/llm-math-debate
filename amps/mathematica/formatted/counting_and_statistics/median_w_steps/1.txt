@@ -1,0 +1,13 @@
+Find the median of the list:
+
+$\left(-7,-1,-7,0,1,-1,4,-1,-\frac{7}{\sqrt{2}},-\frac{29}{3},2 e\right) = \left(-7,-1,-7,0,1,-1,4,-1,-7\ 2^{-1/2},-\frac{29}{3},2 e\right)$
+
+\hrule
+
+1. The list, sorted from smallest to largest, is:
+
+$\left(-\frac{29}{3},-7,-7,-7\ 2^{-1/2},-1,-1,-1,0,1,4,2 e\right)$
+
+2. The median of the list $\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,-1,0,1,4,2 e\right)$ is the element in the middle, which is:
+
+Answer: $-1$

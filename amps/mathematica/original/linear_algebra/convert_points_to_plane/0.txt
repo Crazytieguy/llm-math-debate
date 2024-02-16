@@ -1,0 +1,5 @@
+Problem:
+Find the plane defined by the following points:
+${\{5,-4,-1\}, \{1,-3,-1\}, \{-2,0,-3\}}$.
+Answer:
+$2 x+8 y+9 z+31=0$

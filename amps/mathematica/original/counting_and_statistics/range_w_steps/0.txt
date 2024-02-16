@@ -1,0 +1,41 @@
+Problem:
+Compute the range of ${0, -1, -\frac{33}{10}, -\frac{5}{2}, 3, -\frac{311}{32}, 5, -2, -5, -\frac{28}{3}, -3}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the range of the list}: \\
+ \left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right)\text{ = }\left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},5,-2,-5,-\frac{28}{3},-3\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{The }\text{range }\text{of }\text{a }\text{list }\text{is }\text{given }\text{by}: \\
+ (\text{largest element})-(\text{smallest element}) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(0,-1,-\frac{33}{10},-\frac{5}{2},3,-\frac{311}{32},\fbox{$5$},-2,-5,-\frac{28}{3},-3\right)  \text{We }\text{see }\text{that }\text{the }\text{largest }\text{element }\text{is }5: \\
+ 5-(\text{smallest element}) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(0,-1,-\frac{33}{10},-\frac{5}{2},3,\fbox{$-\frac{311}{32}$},5,-2,-5,-\frac{28}{3},-3\right)  \text{We }\text{see }\text{that }\text{the }\text{smallest }\text{element }\text{is }-\frac{311}{32}: \\
+ -\frac{-311}{32}+5 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{-311}{32}+5=\frac{471}{32}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \frac{471}{32} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,4 @@
+Problem:
+Multiply and expand $p(x) = -4 \sqrt{2} x^2-9 \sqrt{2} x+9 \sqrt{2}$ and $q(x) = -3 \sqrt{2} x^2-8 \sqrt{2} x+6 \sqrt{2}$
+Answer:
+$24 x^4+118 x^3+42 x^2-252 x+108$

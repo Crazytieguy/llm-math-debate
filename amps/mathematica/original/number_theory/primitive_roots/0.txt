@@ -1,0 +1,4 @@
+Problem:
+Return up to the first 10 primitive roots of $2$.
+Answer:
+$\{1\}$.

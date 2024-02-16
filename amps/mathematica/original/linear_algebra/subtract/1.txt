@@ -1,0 +1,24 @@
+Problem:
+Subtract the second matrix from the first:
+$\left(
+\begin{array}{cc}
+ -\frac{73}{16} & \frac{151}{16} \\
+ -\frac{5}{4} & -\frac{7}{16} \\
+ 8 & \frac{13}{4} \\
+\end{array}
+\right)$
+$\left(
+\begin{array}{cc}
+ \frac{5}{8} & \frac{37}{4} \\
+ \frac{41}{16} & -\frac{17}{16} \\
+ \frac{57}{8} & \frac{51}{16} \\
+\end{array}
+\right)$
+Answer:
+$\left(
+\begin{array}{cc}
+ -\frac{83}{16} & \frac{3}{16} \\
+ -\frac{61}{16} & \frac{5}{8} \\
+ \frac{7}{8} & \frac{1}{16} \\
+\end{array}
+\right)$

@@ -1,0 +1,166 @@
+Problem:
+Solve the following system of two equations: 
+$-\frac{46 x}{7}-\frac{146 y}{7}-\frac{34}{7}=0$, $2 x-4 y-\frac{108}{7}=0$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Solve the following system}: \\
+ \{
+\begin{array}{l}
+ -\frac{146 y}{7}-\frac{46 x}{7}-\frac{34}{7}=0 \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}
+ \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{In }\text{the }\text{first }\text{equation, }\text{look }\text{to }\text{solve }\text{for }x: \\
+ \{
+\begin{array}{l}
+ \fbox{$-\frac{146 y}{7}-\frac{46 x}{7}-\frac{34}{7}=0$} \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Bring }-\frac{146 y}{7}-\frac{46 x}{7}-\frac{34}{7} \text{together }\text{using }\text{the }\text{common }\text{denominator }7: \\
+ \{
+\begin{array}{l}
+ \fbox{$-\frac{2}{7} (73 y+23 x+17)=0$} \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Multiply }\text{both }\text{sides }\text{by }-\frac{7}{2}: \\
+ \{
+\begin{array}{l}
+ \fbox{$73 y+23 x+17=0$} \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }73 y+17 \text{from }\text{both }\text{sides}: \\
+ \{
+\begin{array}{l}
+ \fbox{$23 x=-73 y-17$} \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{both }\text{sides }\text{by }23: \\
+ \{
+\begin{array}{l}
+ \fbox{$x=-\frac{73 y}{23}-\frac{17}{23}$} \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Substitute }x=-\frac{73 y}{23}-\frac{17}{23} \text{into }\text{the }\text{second }\text{equation}: \\
+ \{
+\begin{array}{l}
+ x=-\frac{73 y}{23}-\frac{17}{23} \\
+ \fbox{$-\frac{108}{7}+2 \left(-\frac{73 y}{23}-\frac{17}{23}\right)-4 y=0$} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{108}{7}+2 \left(\frac{-73 y}{23}-\frac{17}{23}\right)-4 y=-4 y+\left(-\frac{146 y}{23}-\frac{34}{23}\right)-\frac{108}{7}=-\frac{238 y}{23}-\frac{2722}{161}: \\
+ \{
+\begin{array}{l}
+ x=-\frac{73 y}{23}-\frac{17}{23} \\
+ \fbox{$-\frac{238 y}{23}-\frac{2722}{161}$}=0 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{In }\text{the }\text{second }\text{equation, }\text{look }\text{to }\text{solve }\text{for }y: \\
+ \{
+\begin{array}{l}
+ x=-\frac{73 y}{23}-\frac{17}{23} \\
+ \fbox{$-\frac{238 y}{23}-\frac{2722}{161}=0$} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Bring }-\frac{238 y}{23}-\frac{2722}{161} \text{together }\text{using }\text{the }\text{common }\text{denominator }161: \\
+ \{
+\begin{array}{l}
+ x=-\frac{73 y}{23}-\frac{17}{23} \\
+ \fbox{$-\frac{2}{161} (833 y+1361)=0$} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Multiply }\text{both }\text{sides }\text{by }-\frac{161}{2}: \\
+ \{
+\begin{array}{l}
+ x=-\frac{73 y}{23}-\frac{17}{23} \\
+ \fbox{$833 y+1361=0$} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\text{1361 }\text{from }\text{both }\text{sides}: \\
+ \{
+\begin{array}{l}
+ x=-\frac{73 y}{23}-\frac{17}{23} \\
+ \fbox{$833 y=-1361$} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{both }\text{sides }\text{by }833: \\
+ \{
+\begin{array}{l}
+ x=-\frac{73 y}{23}-\frac{17}{23} \\
+ \fbox{$y=-\frac{1361}{833}$} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Substitute }y=-\frac{1361}{833} \text{into }\text{the }\text{first }\text{equation}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \{
+\begin{array}{l}
+ \fbox{$x=\frac{3704}{833}$} \\
+ y=-\frac{1361}{833} \\
+\end{array}
+ \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

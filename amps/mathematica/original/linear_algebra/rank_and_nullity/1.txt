@@ -1,0 +1,9 @@
+Problem:
+Compute the rank of
+$\left(
+\begin{array}{cc}
+ -\frac{17}{2} & 7 \\
+\end{array}
+\right)$.
+Answer:
+$1$

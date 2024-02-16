@@ -1,0 +1,27 @@
+Problem:
+Add the two matrices
+$\left(
+\begin{array}{cccc}
+ -8 & 8 & -1 & 6 \\
+ 3 & -9 & -6 & 1 \\
+ 5 & 1 & 10 & -1 \\
+ -5 & 0 & 4 & 8 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{cccc}
+ -1 & 3 & 3 & 6 \\
+ 5 & -9 & -5 & 9 \\
+ 4 & -4 & 10 & 0 \\
+ 8 & 4 & -9 & -3 \\
+\end{array}
+\right)$
+Answer:
+$\left(
+\begin{array}{cccc}
+ -9 & 11 & 2 & 12 \\
+ 8 & -18 & -11 & 10 \\
+ 9 & -3 & 20 & -1 \\
+ 3 & 4 & -5 & 5 \\
+\end{array}
+\right)$

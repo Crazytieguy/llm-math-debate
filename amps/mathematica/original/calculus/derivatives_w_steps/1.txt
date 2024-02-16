@@ -1,0 +1,96 @@
+Problem:
+Differentiate the following function:
+$\sqrt[3]{4 x^2-7}-\log (2 x+1)$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Possible derivation:} \\
+ \frac{d}{dx}\left(-\log (1+2 x)+\sqrt[3]{-7+4 x^2}\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term }\text{and }\text{factor }\text{out }\text{constants:} \\
+  \text{= }\frac{d}{dx}\left(\sqrt[3]{-7+4 x^2}\right)-\frac{d}{dx}(\log (1+2 x)) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Using }\text{the }\text{chain }\text{rule, }\frac{d}{dx}\left(\sqrt[3]{4 x^2-7}\right)=\frac{d\sqrt[3]{u}}{du} \frac{du}{dx}, \text{where }u=4 x^2-7 \text{and }\frac{d\text{}}{du}\left(\sqrt[3]{u}\right)=\frac{1}{3 u^{2/3}}: \\
+  \text{= }-\left(\frac{d}{dx}(\log (1+2 x))\right)+\fbox{$\frac{\frac{d}{dx}\left(-7+4 x^2\right)}{3 \left(-7+4 x^2\right)^{2/3}}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term }\text{and }\text{factor }\text{out }\text{constants:} \\
+  \text{= }-\left(\frac{d}{dx}(\log (1+2 x))\right)+\fbox{$\frac{d}{dx}(-7)+4 \left(\frac{d}{dx}\left(x^2\right)\right)$} \frac{1}{3 \left(-7+4 x^2\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{derivative }\text{of }-7 \text{is }\text{zero}: \\
+  \text{= }-\left(\frac{d}{dx}(\log (1+2 x))\right)+\frac{4 \left(\frac{d}{dx}\left(x^2\right)\right)+\fbox{$0$}}{3 \left(-7+4 x^2\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+  \text{= }\frac{4 \left(\frac{d}{dx}\left(x^2\right)\right)}{3 \left(-7+4 x^2\right)^{2/3}}-\frac{d}{dx}(\log (1+2 x)) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Use }\text{the }\text{power }\text{rule, }\frac{d}{dx}\left(x^n\right)=n x^{n-1}, \text{where }n=2.\text{$\backslash $n}\frac{d}{dx}\left(x^2\right)=2 x: \\
+  \text{= }-\left(\frac{d}{dx}(\log (1+2 x))\right)+\fbox{$2 x$} \frac{4}{3 \left(-7+4 x^2\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+  \text{= }\frac{8 x}{3 \left(-7+4 x^2\right)^{2/3}}-\frac{d}{dx}(\log (1+2 x)) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Using }\text{the }\text{chain }\text{rule, }\frac{d}{dx}(\log (2 x+1))=\frac{d\log (u)}{du} \frac{du}{dx}, \text{where }u=2 x+1 \text{and }\frac{d\text{}}{du}(\log (u))=\frac{1}{u}: \\
+  \text{= }\frac{8 x}{3 \left(-7+4 x^2\right)^{2/3}}-\fbox{$\frac{\frac{d}{dx}(1+2 x)}{1+2 x}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term }\text{and }\text{factor }\text{out }\text{constants:} \\
+  \text{= }\frac{8 x}{3 \left(-7+4 x^2\right)^{2/3}}-\frac{\fbox{$\frac{d}{dx}(1)+2 \left(\frac{d}{dx}(x)\right)$}}{2 x+1} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{derivative }\text{of }1 \text{is }\text{zero}: \\
+  \text{= }\frac{8 x}{3 \left(-7+4 x^2\right)^{2/3}}-\frac{2 \left(\frac{d}{dx}(x)\right)+\fbox{$0$}}{1+2 x} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+  \text{= }\frac{8 x}{3 \left(-7+4 x^2\right)^{2/3}}-\frac{2 \left(\frac{d}{dx}(x)\right)}{1+2 x} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{derivative }\text{of }x \text{is }1: \\
+  \text{= }\frac{8 x}{3 \left(-7+4 x^2\right)^{2/3}}-\fbox{$1$} \frac{2}{1+2 x} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} &  \text{= }-\frac{2}{1+2 x}+\frac{8 x}{3 \sqrt[3]{-7+4 x^2}^2} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

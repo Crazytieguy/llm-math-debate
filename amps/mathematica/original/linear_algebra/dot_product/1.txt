@@ -1,0 +1,16 @@
+Problem:
+Find the dot product of the following two vectors:
+$\left(
+\begin{array}{c}
+ -\frac{11}{2} \\
+ 9 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ -\frac{13}{2} \\
+ 5 \\
+\end{array}
+\right)$.
+Answer:
+$\frac{323}{4}$

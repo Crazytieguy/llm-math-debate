@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $\sqrt{-5 x-15}+\sqrt{-5 x-6}=14$
+Answer:
+$\left\{\left\{x\to -\frac{46729}{3920}\right\}\right\}$

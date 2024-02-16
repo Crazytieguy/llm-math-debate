@@ -1,0 +1,68 @@
+Find the (sample) variance of the list:
+
+$(-6,-15,-1,-11)$
+
+\hrule
+
+1. The (sample) variance of a list of numbers $X=\left\{X_1,X_2,\ldots ,X_n\right\}\text{ with mean }\mu =\frac{X_1+X_2+\ldots +X_n}{n}$ is given by:
+
+$\frac{\left| X_1-\mu \right| {}^2+\left| X_2-\mu \right| {}^2+\ldots +\left| X_n-\mu \right| {}^2}{n-1}$
+
+2. There are $n=4\text{ elements in the list }X=\{-6,-15,-1,-11\}$:
+
+$\frac{\left| X_1-\mu \right| {}^2+\left| X_2-\mu \right| {}^2+\left| X_3-\mu \right| {}^2+\left| X_4-\mu \right| {}^2}{4-1}$
+
+3. $\begin{array}{l}
+\text{The elements }X_i\text{ of the list }X=\{-6,-15,-1,-11\}\text{ are: }\\
+ 
+\begin{array}{l}
+X_1=-6 \\
+ X_2=-15 \\
+ X_3=-1 \\
+ X_4=-11 \\
+\end{array}
+ \\
+\end{array}$
+
+$\frac{| -\mu -6| ^2+| -\mu -15| ^2+| -\mu -1| ^2+| -\mu -11| ^2}{4-1}$
+
+4. The mean $(\mu )\text{ is given by$\backslash $n$\backslash $n}\mu =\frac{X_1+X_2+X_3+X_4}{4}=\frac{-6-15-1-11}{4}=-\frac{33}{4}$:
+
+$\frac{\left| -\frac{-33}{4}-6\right| ^2+\left| -\frac{-33}{4}-15\right| ^2+\left| -\frac{-33}{4}-1\right| ^2+\left| -\frac{-33}{4}-11\right| ^2}{4-1}$
+
+5. $\begin{array}{l}
+\text{The values of the differences are: }\\
+ 
+\begin{array}{l}
+-\frac{-33}{4}-6=\frac{9}{4} \\
+ -\frac{-33}{4}-15=-\frac{27}{4} \\
+ -\frac{-33}{4}-1=\frac{29}{4} \\
+ -\frac{-33}{4}-11=-\frac{11}{4} \\
+ 4-1=3 \\
+\end{array}
+ \\
+\end{array}$
+
+$\frac{\left| \frac{9}{4}\right| ^2+\left| -\frac{27}{4}\right| ^2+\left| \frac{29}{4}\right| ^2+\left| -\frac{11}{4}\right| ^2}{3}$
+
+6. $\begin{array}{l}
+\text{The values of the terms in the numerator are}: \\
+ 
+\begin{array}{l}
+\left| \frac{9}{4}\right| ^2 = \frac{81}{16} \\
+ \left| -\frac{27}{4}\right| ^2 = \frac{729}{16} \\
+ \left| \frac{29}{4}\right| ^2 = \frac{841}{16} \\
+ \left| -\frac{11}{4}\right| ^2 = \frac{121}{16} \\
+\end{array}
+ \\
+\end{array}$
+
+$\frac{\frac{81}{16}+\frac{729}{16}+\frac{841}{16}+\frac{121}{16}}{3}$
+
+7. $\frac{81}{16}+\frac{729}{16}+\frac{841}{16}+\frac{121}{16}=\frac{443}{4}$:
+
+$\frac{\frac{443}{4}}{3}$
+
+8. $\frac{\frac{443}{4}}{3}=\frac{443}{12}$:
+
+Answer: $\frac{443}{12}$

@@ -1,0 +1,54 @@
+Problem:
+Find the least common multiple of $\{-53,-39\}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the least common multiple}: \\
+ \text{lcm}(-53,-39) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Any }\text{multiple }\text{of }\text{a }\text{negative }\text{number }\text{is }\text{also }\text{a }\text{multiple }\text{of }\text{its }\text{absolute }\text{value}: \\
+ \text{lcm}(-53,-39)=\text{lcm}(53,39) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find }\text{the }\text{prime }\text{factorization }\text{of }\text{each }\text{integer}: \\
+ \text{The }\text{prime }\text{factorization }\text{of }\text{53 }\text{is}: \\
+\end{array}
+ \\
+ 53=53^1 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{prime }\text{factorization }\text{of }\text{39 }\text{is}: \\
+ 39=3\times 13 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the largest power of each prime factor} \\
+ \text{The }\text{largest }\text{power }\text{of }3 \text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }3^1 \\
+ \text{The }\text{largest }\text{power }\text{of }\text{13 }\text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }13^1 \\
+ \text{The }\text{largest }\text{power }\text{of }\text{53 }\text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }53^1 \\
+ \text{Therefore }\text{lcm}(53,39)=\left(3^1\times 13^1\times 53^1=2067\right): \\
+\end{array}
+ \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \text{lcm}(-53,-39)=2067 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

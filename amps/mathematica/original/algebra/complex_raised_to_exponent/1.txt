@@ -1,0 +1,4 @@
+Problem:
+Simplify the following expression $\left(3 \left(\cos \left(\frac{44}{45}\right)+i \sin \left(\frac{44}{45}\right)\right)\right)^6$
+Answer:
+$729 \left(\cos \left(\frac{88}{15}\right)+i \sin \left(\frac{88}{15}\right)\right)$

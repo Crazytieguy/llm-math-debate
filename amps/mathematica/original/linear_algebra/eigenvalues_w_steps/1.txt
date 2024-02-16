@@ -1,0 +1,101 @@
+Problem:
+Find the eigenvalues of the following matrix:
+$\left(
+\begin{array}{ccc}
+ 4 & 5 & -9 \\
+ 0 & -2 & -10 \\
+ -2 & 4 & -2 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find all the eigenvalues of the matrix }M: \\
+ M=\left(
+\begin{array}{ccc}
+ 4 & 5 & -9 \\
+ 0 & -2 & -10 \\
+ -2 & 4 & -2 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Find }\lambda \in \mathbb{C} \text{such }\text{that }M v=\lambda  v \text{for }\text{some }\text{nonzero }\text{vector }v: \\
+ M v=\lambda  v \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Rewrite }\text{the }\text{equation }M v=\lambda  v \text{as }(M-\mathbb{I} \lambda ) v=0: \\
+ (M-\mathbb{I} \lambda ) v=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Find }\text{all }\lambda  \text{such }\text{that }| M-\mathbb{I} \lambda | =0: \\
+ | M-\mathbb{I} \lambda | =0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{lll}
+ M-\mathbb{I} \lambda  & = & \fbox{$\left(
+\begin{array}{ccc}
+ 4 & 5 & -9 \\
+ 0 & -2 & -10 \\
+ -2 & 4 & -2 \\
+\end{array}
+\right)$}-\fbox{$\left(
+\begin{array}{ccc}
+ 1 & 0 & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1 \\
+\end{array}
+\right)$} \lambda  \\
+ \text{} & = & \left(
+\begin{array}{ccc}
+ 4-\lambda  & 5 & -9 \\
+ 0 & -\lambda -2 & -10 \\
+ -2 & 4 & -\lambda -2 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ \left| 
+\begin{array}{ccc}
+ 4-\lambda  & 5 & -9 \\
+ 0 & -\lambda -2 & -10 \\
+ -2 & 4 & -\lambda -2 \\
+\end{array}
+\right| =0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left| 
+\begin{array}{ccc}
+ 4-\lambda  & 5 & -9 \\
+ 0 & -\lambda -2 & -10 \\
+ -2 & 4 & -\lambda -2 \\
+\end{array}
+\right| =-\lambda ^3-10 \lambda +312: \\
+ -\lambda ^3-10 \lambda +312=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Solving }\text{the }\text{equation }-\lambda ^3-10 \lambda +312=0 \text{for }\lambda  \text{yields }\text{the }\text{following }\text{eigenvalues}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \lambda =6.29188\text{ or }\lambda =-3.14594-6.30006 i\text{ or }\lambda =-3.14594+6.30006 i \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

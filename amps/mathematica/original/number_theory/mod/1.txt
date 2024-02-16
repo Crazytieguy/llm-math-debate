@@ -1,0 +1,4 @@
+Problem:
+Find the smallest $x$ such that $x \equiv 72512 \pmod{2}$.
+Answer:
+$0$

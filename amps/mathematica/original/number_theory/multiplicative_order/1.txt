@@ -1,0 +1,4 @@
+Problem:
+Find the smallest integer $m$ such that $452^m \equiv 1 \pmod{645}$.
+Answer:
+$28$

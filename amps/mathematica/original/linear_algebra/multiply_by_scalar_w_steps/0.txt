@@ -1,0 +1,210 @@
+Problem:
+Multiply the scalar $-\frac{1}{16}$ and the matrix
+$\left(
+\begin{array}{cc}
+ -6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Simplify the following}: \\
+ \frac{-1}{16}\left(
+\begin{array}{cc}
+ -6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \frac{-1}{16}\left(
+\begin{array}{cc}
+ -6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)=\frac{-1\left(
+\begin{array}{cc}
+ -6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)}{16}: \\
+ \frac{-1\left(
+\begin{array}{cc}
+ -6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)}{16} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -1\left(
+\begin{array}{cc}
+ -6 & -2 \\
+ 0 & 6 \\
+ -8 & 6 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+ -(-6) & -(-2) \\
+ -0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right): \\
+ \frac{\fbox{$\left(
+\begin{array}{cc}
+ -(-6) & -(-2) \\
+ 0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right)$}}{16} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -(-6) \text{= }6: \\
+ \frac{1}{16}\left(
+\begin{array}{cc}
+ \fbox{$6$} & -(-2) \\
+ 0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -(-2) \text{= }2: \\
+ \frac{1}{16}\left(
+\begin{array}{cc}
+ 6 & \fbox{$2$} \\
+ 0 & -6 \\
+ -(-8) & -6 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -(-8) \text{= }8: \\
+ \frac{1}{16}\left(
+\begin{array}{cc}
+ 6 & 2 \\
+ 0 & -6 \\
+ \fbox{$8$} & -6 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{1}{16}\left(
+\begin{array}{cc}
+ 6 & 2 \\
+ 0 & -6 \\
+ 8 & -6 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+ \frac{6}{16} & \frac{2}{16} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{cc}
+ \frac{6}{16} & \frac{2}{16} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }6 \text{and }\text{16 }\text{is }2, \text{so }\frac{6}{16}=\frac{2\times 3}{2\times 8}=\frac{2}{2}\times \frac{3}{8}=\frac{3}{8}: \\
+ \left(
+\begin{array}{cc}
+ \fbox{$\frac{3}{8}$} & \frac{2}{16} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }2 \text{and }\text{16 }\text{is }2, \text{so }\frac{2}{16}=\frac{2\times 1}{2\times 8}=\frac{2}{2}\times \frac{1}{8}=\frac{1}{8}: \\
+ \left(
+\begin{array}{cc}
+ \frac{3}{8} & \frac{1}{\fbox{$8$}} \\
+ \frac{0}{16} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{0}{16}=0: \\
+ \left(
+\begin{array}{cc}
+ \frac{3}{8} & \frac{1}{8} \\
+ \fbox{$0$} & \frac{-6}{16} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }-6 \text{and }\text{16 }\text{is }2, \text{so }\frac{-6}{16}=\frac{2 (-3)}{2\times 8}=\frac{2}{2}\times \frac{-3}{8}=\frac{-3}{8}: \\
+ \left(
+\begin{array}{cc}
+ \frac{3}{8} & \frac{1}{8} \\
+ 0 & \fbox{$\frac{-3}{8}$} \\
+ \frac{8}{16} & \frac{-6}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }8 \text{and }\text{16 }\text{is }8, \text{so }\frac{8}{16}=\frac{8\times 1}{8\times 2}=\frac{8}{8}\times \frac{1}{2}=\frac{1}{2}: \\
+ \left(
+\begin{array}{cc}
+ \frac{3}{8} & \frac{1}{8} \\
+ 0 & \frac{-3}{8} \\
+ \frac{1}{\fbox{$2$}} & \frac{-6}{16} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }-6 \text{and }\text{16 }\text{is }2, \text{so }\frac{-6}{16}=\frac{2 (-3)}{2\times 8}=\frac{2}{2}\times \frac{-3}{8}=\frac{-3}{8}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \left(
+\begin{array}{cc}
+ \frac{3}{8} & \frac{1}{8} \\
+ 0 & \frac{-3}{8} \\
+ \frac{1}{2} & \fbox{$\frac{-3}{8}$} \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

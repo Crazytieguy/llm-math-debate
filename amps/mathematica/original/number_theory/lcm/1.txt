@@ -1,0 +1,4 @@
+Problem:
+Find the least common multiple of $\left\{-\frac{17}{5},4\right\}$.
+Answer:
+$68$

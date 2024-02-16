@@ -1,0 +1,5 @@
+Problem:
+Differentiate the following function:
+$\sin \left(7-x^2\right)+\cos ^{-1}(5-6 x)$
+Answer:
+$\frac{6}{\sqrt{1-(5-6 x)^2}}-2 x \cos \left(7-x^2\right)$

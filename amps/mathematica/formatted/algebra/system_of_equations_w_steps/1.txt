@@ -1,0 +1,113 @@
+Solve the following system:
+
+$\{
+\begin{array}{l}
+-\frac{146 y}{7}-\frac{46 x}{7}-\frac{34}{7}=0 \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}$
+
+\hrule
+
+1. In the first equation, look to solve for $x:$
+
+$\{
+\begin{array}{l}
+-\frac{146 y}{7}-\frac{46 x}{7}-\frac{34}{7}=0 \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}$
+
+2. Bring $-\frac{146 y}{7}-\frac{46 x}{7}-\frac{34}{7}\text{ together using the common denominator }7:$
+
+$\{
+\begin{array}{l}
+-\frac{2}{7} (73 y+23 x+17)=0 \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}$
+
+3. Multiply both sides by $-\frac{7}{2}$:
+
+$\{
+\begin{array}{l}
+73 y+23 x+17=0 \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}$
+
+4. Subtract $73 y+17$ from both sides:
+
+$\{
+\begin{array}{l}
+23 x=-73 y-17 \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}$
+
+5. Divide both sides by $23:$
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ -4 y+2 x-\frac{108}{7}=0 \\
+\end{array}$
+
+6. Substitute $x=-\frac{73 y}{23}-\frac{17}{23}$ into the second equation:
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ -\frac{108}{7}+2 \left(-\frac{73 y}{23}-\frac{17}{23}\right)-4 y=0 \\
+\end{array}$
+
+7. $-\frac{108}{7}+2 \left(\frac{-73 y}{23}-\frac{17}{23}\right)-4 y=-4 y+\left(-\frac{146 y}{23}-\frac{34}{23}\right)-\frac{108}{7}=-\frac{238 y}{23}-\frac{2722}{161}$:
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ -\frac{238 y}{23}-\frac{2722}{161}=0 \\
+\end{array}$
+
+8. In the second equation, look to solve for $y:$
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ -\frac{238 y}{23}-\frac{2722}{161}=0 \\
+\end{array}$
+
+9. Bring $-\frac{238 y}{23}-\frac{2722}{161}\text{ together using the common denominator }161:$
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ -\frac{2}{161} (833 y+1361)=0 \\
+\end{array}$
+
+10. Multiply both sides by $-\frac{161}{2}$:
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ 833 y+1361=0 \\
+\end{array}$
+
+11. Subtract 1361 from both sides:
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ 833 y=-1361 \\
+\end{array}$
+
+12. Divide both sides by $833:$
+
+$\{
+\begin{array}{l}
+x=-\frac{73 y}{23}-\frac{17}{23} \\
+ y=-\frac{1361}{833} \\
+\end{array}$
+
+13. Substitute $y=-\frac{1361}{833}$ into the first equation:
+
+Answer: $\{
+\begin{array}{l}
+x=\frac{3704}{833} \\
+ y=-\frac{1361}{833} \\
+\end{array}$

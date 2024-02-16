@@ -1,0 +1,6 @@
+Problem:
+Find the smallest $x$ such that
+$x \equiv 10 \pmod{4}$
+$x \equiv 18 \pmod{13}$
+Answer:
+$18$

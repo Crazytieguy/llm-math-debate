@@ -1,0 +1,4 @@
+Problem:
+Compute the following expression: $\sum_{k=0}^13 -\frac{48}{23}\frac{1}{\sqrt{2}}^k$
+Answer:
+$-\frac{381}{92}-\frac{21}{92 \sqrt{2}}-\frac{45 \sqrt{2}}{23}$

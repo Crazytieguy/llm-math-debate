@@ -1,0 +1,4 @@
+Problem:
+Find the curl of the vector field $f(x,y,z)\uvec{i} + g(x,y,z)\uvec{j} + h(x,y,z)\uvec{k}$ where $f(x,y,z) = \cos (z)$, $g(x,y,z) = \cosh (y)$, and $h(x,y,z) = \sin ^{-1}(y)$
+Answer:
+$\left\{\frac{1}{\sqrt{1-y^2}},-\sin (z),0\right\}$

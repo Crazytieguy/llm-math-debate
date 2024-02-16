@@ -1,0 +1,57 @@
+Find the rank of the matrix:
+
+$M=\left(
+\begin{array}{cc}
+-9 & -2 \\
+ 0 & 6 \\
+ 6 & 4 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. Reduce matrix $M$ to row echelon form:
+
+$\left(
+\begin{array}{cc}
+-9 & -2 \\
+ 0 & 6 \\
+ 6 & 4 \\
+\end{array}
+\right)$
+
+2. Add $\frac{2}{3}\, \times \,\text{ (row }1)\text{ to row }3:$
+
+$\left(
+\begin{array}{cc}
+-9 & -2 \\
+ 0 & 6 \\
+ 0 & \frac{8}{3} \\
+\end{array}
+\right)$
+
+3. Subtract $\frac{4}{9}\, \times \,\text{ (row }2)\text{ from row }3:$
+
+$\left(
+\begin{array}{cc}
+-9 & -2 \\
+ 0 & 6 \\
+ 0 & 0 \\
+\end{array}
+\right)$
+
+4. There are $2\text{ nonzero rows in the row echelon form of the matrix, so the rank is }2:$
+
+Answer: rank$\left(
+\begin{array}{cc}
+-9 & -2 \\
+ 0 & 6 \\
+ 6 & 4 \\
+\end{array}
+\right) =\text{ rank}\left(
+\begin{array}{cc}
+-9 & -2 \\
+ 0 & 6 \\
+ 0 & 0 \\
+\end{array}
+\right)=2$

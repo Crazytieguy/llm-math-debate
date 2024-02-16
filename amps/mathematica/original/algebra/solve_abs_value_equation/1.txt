@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $\left| -\frac{13 x}{\sqrt{2}}-\frac{15}{\sqrt{2}}\right| =8 \sqrt{2}$
+Answer:
+$\left\{\left\{x\to -\frac{31}{13}\right\},\left\{x\to \frac{1}{13}\right\}\right\}$

@@ -1,0 +1,51 @@
+Problem:
+Compute the trace of
+$\left(
+\begin{array}{cc}
+ 9 & -2 \\
+ -4 & 7 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the trace of the matrix:} \\
+ \left(
+\begin{array}{cc}
+ 9 & -2 \\
+ -4 & 7 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Locate }\text{the }\text{elements }\text{on }\text{the }\text{main }\text{diagonal}: \\
+ \left(
+\begin{array}{cc}
+ 9 & -2 \\
+ -4 & 7 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }\text{out }\text{the }\text{sum }\text{of }\text{the }\text{elements }\text{on }\text{the }\text{main }\text{diagonal}: \\
+ 9\, \text{+$\, $}7 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 9+7=16: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 16 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

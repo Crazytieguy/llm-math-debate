@@ -1,0 +1,4 @@
+Problem:
+Determine the $n=3$ $1$-gonal number.
+Answer:
+$1$

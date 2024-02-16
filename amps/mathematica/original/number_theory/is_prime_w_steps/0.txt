@@ -1,0 +1,24 @@
+Problem:
+Is the following number prime?
+0
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Test for primality}: \\
+ \text{is }0\text{ a }\text{prime number?} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Since }\text{every }\text{positive }\text{integer }\text{is }\text{a }\text{divisor }\text{of }0, \text{it }\text{is }\text{not }\text{prime}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 0\text{ is }\text{not}\text{ a }\text{prime} \text{number} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,4 @@
+Problem:
+Find the roots of the following polynomial: $\sqrt{2} x^2+\frac{19 x}{\sqrt{2}}+4 \sqrt{2}$
+Answer:
+$x=\frac{1}{2} \left(-\frac{19}{2}-\frac{3 \sqrt{33}}{2}\right)\lor x=\frac{1}{2} \left(\frac{3 \sqrt{33}}{2}-\frac{19}{2}\right)$

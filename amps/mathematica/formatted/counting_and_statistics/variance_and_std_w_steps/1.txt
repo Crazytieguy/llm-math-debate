@@ -1,0 +1,65 @@
+Find the (sample) variance of the list:
+
+$(8,-6,-13)$
+
+\hrule
+
+1. The (sample) variance of a list of numbers $X=\left\{X_1,X_2,\ldots ,X_n\right\}\text{ with mean }\mu =\frac{X_1+X_2+\ldots +X_n}{n}$ is given by:
+
+$\frac{\left| X_1-\mu \right| {}^2+\left| X_2-\mu \right| {}^2+\ldots +\left| X_n-\mu \right| {}^2}{n-1}$
+
+2. There are $n=3\text{ elements in the list }X=\{8,-6,-13\}$:
+
+$\frac{\left| X_1-\mu \right| {}^2+\left| X_2-\mu \right| {}^2+\left| X_3-\mu \right| {}^2}{3-1}$
+
+3. $\begin{array}{l}
+\text{The elements }X_i\text{ of the list }X=\{8,-6,-13\}\text{ are: }\\
+ 
+\begin{array}{l}
+X_1=8 \\
+ X_2=-6 \\
+ X_3=-13 \\
+\end{array}
+ \\
+\end{array}$
+
+$\frac{| 8-\mu | ^2+| -\mu -6| ^2+| -\mu -13| ^2}{3-1}$
+
+4. The mean $(\mu )\text{ is given by$\backslash $n$\backslash $n}\mu =\frac{X_1+X_2+X_3}{3}=\frac{8-6-13}{3}=-\frac{11}{3}$:
+
+$\frac{\left| 8-\left(-\frac{11}{3}\right)\right| ^2+\left| -\frac{-11}{3}-6\right| ^2+\left| -\frac{-11}{3}-13\right| ^2}{3-1}$
+
+5. $\begin{array}{l}
+\text{The values of the differences are: }\\
+ 
+\begin{array}{l}
+-\frac{-11}{3}+8=\frac{35}{3} \\
+ -\frac{-11}{3}-6=-\frac{7}{3} \\
+ -\frac{-11}{3}-13=-\frac{28}{3} \\
+ 3-1=2 \\
+\end{array}
+ \\
+\end{array}$
+
+$\frac{\left| \frac{35}{3}\right| ^2+\left| -\frac{7}{3}\right| ^2+\left| -\frac{28}{3}\right| ^2}{2}$
+
+6. $\begin{array}{l}
+\text{The values of the terms in the numerator are}: \\
+ 
+\begin{array}{l}
+\left| \frac{35}{3}\right| ^2 = \frac{1225}{9} \\
+ \left| -\frac{7}{3}\right| ^2 = \frac{49}{9} \\
+ \left| -\frac{28}{3}\right| ^2 = \frac{784}{9} \\
+\end{array}
+ \\
+\end{array}$
+
+$\frac{\frac{1225}{9}+\frac{49}{9}+\frac{784}{9}}{2}$
+
+7. $\frac{1225}{9}+\frac{49}{9}+\frac{784}{9}=\frac{686}{3}$:
+
+$\frac{\frac{686}{3}}{2}$
+
+8. $\frac{\frac{686}{3}}{2}=\frac{343}{3}$:
+
+Answer: $\frac{343}{3}$

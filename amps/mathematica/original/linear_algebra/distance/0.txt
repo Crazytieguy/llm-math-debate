@@ -1,0 +1,24 @@
+Problem:
+Find the distance between the following two vectors:
+$\left(
+\begin{array}{c}
+ -\pi  \\
+ -2 \pi  \\
+ -2 \pi  \\
+ 0 \\
+ \pi  \\
+ -\pi  \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ \pi  \\
+ 0 \\
+ -3 \pi  \\
+ -2 \pi  \\
+ -2 \pi  \\
+ -3 \pi  \\
+\end{array}
+\right)$.
+Answer:
+$\sqrt{26} \pi$

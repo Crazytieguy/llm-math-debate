@@ -1,0 +1,4 @@
+Problem:
+Compute the mean of ${9, 2, 4 \sqrt{5}, 4, 9, \frac{1}{e}, -2 \sqrt{3}, \frac{6}{\sqrt{5}}, \frac{9}{\sqrt{\pi }}, \frac{48}{7}}$.
+Answer:
+$\frac{1}{2} \left(4+\frac{9}{\sqrt{\pi }}\right)$

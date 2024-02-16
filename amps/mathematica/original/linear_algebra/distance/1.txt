@@ -1,0 +1,24 @@
+Problem:
+Find the distance between the following two vectors:
+$\left(
+\begin{array}{c}
+ 10 \\
+ 4 \\
+ -7 \\
+ -9 \\
+ 2 \\
+ 3 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ -7 \\
+ -7 \\
+ -1 \\
+ -5 \\
+ 0 \\
+ 1 \\
+\end{array}
+\right)$.
+Answer:
+$\sqrt{470}$

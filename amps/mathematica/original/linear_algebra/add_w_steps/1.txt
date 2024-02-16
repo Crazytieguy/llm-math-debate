@@ -1,0 +1,459 @@
+Problem:
+Add the two matrices
+$\left(
+\begin{array}{ccc}
+ -\frac{17}{2} & -\frac{19}{2} & \frac{13}{2} \\
+ -9 & \frac{1}{2} & 3 \\
+ -10 & -\frac{7}{2} & -\frac{9}{2} \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{ccc}
+ -2 & -10 & 9 \\
+ 1 & \frac{17}{2} & 7 \\
+ -6 & -\frac{1}{2} & -\frac{1}{2} \\
+\end{array}
+\right)$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Simplify the following}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{17}{2} & -\frac{19}{2} & \frac{13}{2} \\
+ -9 & \frac{1}{2} & 3 \\
+ -10 & -\frac{7}{2} & -\frac{9}{2} \\
+\end{array}
+\right)+\left(
+\begin{array}{ccc}
+ -2 & -10 & 9 \\
+ 1 & \frac{17}{2} & 7 \\
+ -6 & -\frac{1}{2} & -\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{ccc}
+ -\frac{17}{2} & -\frac{19}{2} & \frac{13}{2} \\
+ -9 & \frac{1}{2} & 3 \\
+ -10 & -\frac{7}{2} & -\frac{9}{2} \\
+\end{array}
+\right)+\left(
+\begin{array}{ccc}
+ -2 & -10 & 9 \\
+ 1 & \frac{17}{2} & 7 \\
+ -6 & -\frac{1}{2} & -\frac{1}{2} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+ -\frac{17}{2}-2 & -\frac{19}{2}-10 & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{17}{2}-2 & -\frac{19}{2}-10 & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }-\frac{17}{2}-2 \text{over }\text{the }\text{common }\text{denominator }2. -\frac{17}{2}-2 \text{= }\frac{-17}{2}+\frac{2 (-2)}{2}: \\
+ \left(
+\begin{array}{ccc}
+ \fbox{$\frac{-17}{2}+\frac{2 (-2)}{2}$} & -\frac{19}{2}-10 & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2 (-2) \text{= }-4: \\
+ \left(
+\begin{array}{ccc}
+ \frac{-17}{2}+\frac{\fbox{$-4$}}{2} & -\frac{19}{2}-10 & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{17}{2}-\frac{4}{2} \text{= }\frac{-17-4}{2}: \\
+ \left(
+\begin{array}{ccc}
+ \fbox{$\frac{-17-4}{2}$} & -\frac{19}{2}-10 & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -17-4=-(17+4): \\
+ \left(
+\begin{array}{ccc}
+ \frac{\fbox{$-(17+4)$}}{2} & -\frac{19}{2}-10 & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+\hline
+ \text{} & 1 & \text{} \\
+\hline
+ \text{} & 1 & 7 \\
+ + & \text{} & 4 \\
+ \text{} & 2 & 1 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{ccc}
+ \frac{-\fbox{$21$}}{2} & -\frac{19}{2}-10 & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }-\frac{19}{2}-10 \text{over }\text{the }\text{common }\text{denominator }2. -\frac{19}{2}-10 \text{= }\frac{-19}{2}+\frac{2 (-10)}{2}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & \fbox{$\frac{-19}{2}+\frac{2 (-10)}{2}$} & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2 (-10) \text{= }-20: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & \frac{-19}{2}+\frac{\fbox{$-20$}}{2} & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{19}{2}-\frac{20}{2} \text{= }\frac{-19-20}{2}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & \fbox{$\frac{-19-20}{2}$} & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -19-20=-(19+20): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & \frac{\fbox{$-(19+20)$}}{2} & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+\hline
+ \text{} & 2 & 0 \\
+\hline
+ + & 1 & 9 \\
+ \text{} & 3 & 9 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & \frac{-\fbox{$39$}}{2} & \frac{13}{2}+9 \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }\frac{13}{2}+9 \text{over }\text{the }\text{common }\text{denominator }2. \frac{13}{2}+9 \text{= }\frac{13}{2}+\frac{2\times 9}{2}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \fbox{$\frac{13}{2}+\frac{2\times 9}{2}$} \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2\times 9 \text{= }18: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{13}{2}+\frac{\fbox{$18$}}{2} \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{13}{2}+\frac{18}{2} \text{= }\frac{13+18}{2}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \fbox{$\frac{13+18}{2}$} \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+\hline
+ \text{} & 1 & \text{} \\
+\hline
+ \text{} & 1 & 8 \\
+ + & 1 & 3 \\
+ \text{} & 3 & 1 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{\fbox{$31$}}{2} \\
+ -9+1 & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -9+1=-8: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ \fbox{$-8$} & \frac{1}{2}+\frac{17}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{1}{2}+\frac{17}{2} \text{= }\frac{1+17}{2}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & \fbox{$\frac{1+17}{2}$} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 1+17=18: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & \frac{\fbox{$18$}}{2} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{gcd }\text{of }\text{18 }\text{and }2 \text{is }2, \text{so }\frac{18}{2}=\frac{2\times 9}{2\times 1}=\frac{2}{2}\times 9=9: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & \fbox{$9$} & 3+7 \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 3+7=10: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & \fbox{$10$} \\
+ -10-6 & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -10-6=-(10+6): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ \fbox{$-(10+6)$} & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 10+6=16: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -\fbox{$16$} & -\frac{7}{2}-\frac{1}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{7}{2}-\frac{1}{2} \text{= }\frac{-7-1}{2}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & \fbox{$\frac{-7-1}{2}$} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -7-1=-(7+1): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & \frac{\fbox{$-(7+1)$}}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 7+1=8: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & \frac{-\fbox{$8$}}{2} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{8}{2}=\frac{2\times 4}{2}=4: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & -\fbox{$4$} & -\frac{9}{2}-\frac{1}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{9}{2}-\frac{1}{2} \text{= }\frac{-9-1}{2}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & -4 & \fbox{$\frac{-9-1}{2}$} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -9-1=-(9+1): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & -4 & \frac{\fbox{$-(9+1)$}}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 9+1=10: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & -4 & \frac{-\fbox{$10$}}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{10}{2}=\frac{2\times 5}{2}=5: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \left(
+\begin{array}{ccc}
+ -\frac{21}{2} & -\frac{39}{2} & \frac{31}{2} \\
+ -8 & 9 & 10 \\
+ -16 & -4 & -\fbox{$5$} \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

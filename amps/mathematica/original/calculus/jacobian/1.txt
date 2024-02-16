@@ -1,0 +1,10 @@
+Problem:
+Find the jacobian of the vector valued function $\begin{pmatrix} f(x,y,z)\\ g(x,y,z) \\ h(x,y,z)\end{pmatrix}$ where $f(x,y,z) = \sin (x)$, $g(x,y,z) = y$, and $h(x,y,z) = z$
+Answer:
+$\left(
+\begin{array}{ccc}
+ \cos (x) & 0 & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1 \\
+\end{array}
+\right)$

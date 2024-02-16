@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $8^{14-x}8^{24-22 x} = 64^{17 x-13}$
+Answer:
+$\left\{\left\{x\to \frac{64}{57}\right\}\right\}$

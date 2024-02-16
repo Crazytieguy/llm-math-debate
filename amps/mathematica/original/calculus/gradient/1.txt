@@ -1,0 +1,4 @@
+Problem:
+Find the gradient of the function $f(x,y,z)$ where $f(x,y,z) = \cosh ^{-1}(z (x-y))$
+Answer:
+$\left\{\frac{z}{\sqrt{z (x-y)-1} \sqrt{z (x-y)+1}},-\frac{z}{\sqrt{z (x-y)-1} \sqrt{z (x-y)+1}},\frac{x-y}{\sqrt{z (x-y)-1} \sqrt{z (x-y)+1}}\right\}$

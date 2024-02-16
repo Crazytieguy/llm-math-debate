@@ -1,0 +1,116 @@
+Problem:
+Convert $2745$ to base $24$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Convert the following to base }24: \\
+ 2745_{10} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Determine }\text{the }\text{powers }\text{of }\text{24 }\text{that }\text{will }\text{be }\text{used }\text{as }\text{the }\text{places }\text{of }\text{the }\text{digits }\text{in }\text{the }\text{base-24 }\text{representation }\text{of }2745: \\
+ 
+\begin{array}{|c|c|c}
+\hline
+ \text{Power} & \text{Base}^{\text{Power}} & \text{Place value} \\
+\hline
+ 3 & 24^3 & 13824 \\
+\hline
+ 2 & 24^2 & 576 \\
+ 1 & 24^1 & 24 \\
+ 0 & 24^0 & 1 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Label }\text{each }\text{place }\text{of }\text{the }\text{base-24 }\text{representation }\text{of }\text{2745 }\text{with }\text{the }\text{appropriate }\text{power }\text{of }24: \\
+ 
+\begin{array}{ccccccc}
+ \text{Place} &   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & \_\_ & \_\_ & \_\_ & )_{\text{}_{24}} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Determine }\text{the }\text{value }\text{of }\text{the }\text{first }\text{digit }\text{from }\text{the }\text{right }\text{of }\text{2745 }\text{in }\text{base }24: \\
+ 
+\begin{array}{l}
+ \frac{2745}{24}=114 \text{with remainder} \fbox{$9$} \\
+ 
+\begin{array}{ccccccc}
+ \text{Place} &   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & \_\_ & \_\_ & 9 & )_{\text{}_{24}} \\
+\end{array}
+ \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Determine }\text{the }\text{value }\text{of }\text{the }\text{next }\text{digit }\text{from }\text{the }\text{right }\text{of }\text{2745 }\text{in }\text{base }24: \\
+ 
+\begin{array}{l}
+ \frac{114}{24}=4 \text{with remainder} \fbox{$18$} \\
+ 
+\begin{array}{ccccccc}
+ \text{Place} &   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & \_\_ & 18 & 9 & )_{\text{}_{24}} \\
+\end{array}
+ \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Determine }\text{the }\text{value }\text{of }\text{the }\text{last }\text{remaining }\text{digit }\text{of }\text{2745 }\text{in }\text{base }24: \\
+ 
+\begin{array}{l}
+ \frac{4}{24}=0 \text{with remainder} \fbox{$4$} \\
+ 
+\begin{array}{ccccccc}
+ \text{Place} &   &   & 24^2 & 24^1 & 24^0 &   \\
+   &   &   & \downarrow  & \downarrow  & \downarrow  &   \\
+ 2745_{10} & = & ( & 4 & 18 & 9 & )_{\text{}_{24}} \\
+\end{array}
+ \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Convert }\text{all }\text{digits }\text{that }\text{are }\text{greater }\text{than }\text{9 }\text{to }\text{their }\text{base }\text{24 }\text{alphabetical }\text{equivalent}: \\
+ 
+\begin{array}{ccc}
+ \text{Base-24 digit value} &   & \text{Base-24 digit} \\
+ 4 & \rightarrow  & 4 \\
+ 18 & \rightarrow  & \text{i} \\
+ 9 & \rightarrow  & 9 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{number }2745_{10} \text{is }\text{equivalent }\text{to }\text{4i9}_{24} \text{in }\text{base }24. \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 2745_{10}=\text{4i9}_{24} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

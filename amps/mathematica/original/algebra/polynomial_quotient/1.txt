@@ -1,0 +1,4 @@
+Problem:
+Find the quotient of $4 x^6+3 x^5-7 x^4+9 x^2+9 x-9$ when divided by $9 x-7$.
+Answer:
+$\frac{4 x^5}{9}+\frac{55 x^4}{81}-\frac{182 x^3}{729}-\frac{1274 x^2}{6561}+\frac{50131 x}{59049}+\frac{882358}{531441}$

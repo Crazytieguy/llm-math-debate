@@ -1,0 +1,5 @@
+Problem:
+Find the norm and argument (phase angle in radians) of $-4 e^{-\frac{179 i \pi }{180}}$.
+Answer:
+Norm: $4$
+Argument: $\frac{\pi }{180}$

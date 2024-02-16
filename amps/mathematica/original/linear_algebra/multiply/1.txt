@@ -1,0 +1,22 @@
+Problem:
+Multiply
+$\left(
+\begin{array}{c}
+ \frac{11}{10} \\
+ \frac{14}{5} \\
+ \frac{1}{10} \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ \frac{2}{5} \\
+\end{array}
+\right)$.
+Answer:
+$\left(
+\begin{array}{c}
+ \frac{11}{25} \\
+ \frac{28}{25} \\
+ \frac{1}{25} \\
+\end{array}
+\right)$

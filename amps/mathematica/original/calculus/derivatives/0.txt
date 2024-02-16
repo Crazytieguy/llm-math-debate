@@ -1,0 +1,5 @@
+Problem:
+Differentiate the following function:
+$\sin ^{-1}\left(\frac{10}{3}-7 x^4\right)-1$
+Answer:
+$-\frac{28 x^3}{\sqrt{1-\left(\frac{10}{3}-7 x^4\right)^2}}$

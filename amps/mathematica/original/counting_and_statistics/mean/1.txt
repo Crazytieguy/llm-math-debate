@@ -1,0 +1,4 @@
+Problem:
+Compute the mean of ${-4, -9, -4, -1}$.
+Answer:
+$-\frac{9}{2}$

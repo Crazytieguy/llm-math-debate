@@ -1,0 +1,4 @@
+Problem:
+Determine whether $2277$ is divisible by $-23$.
+Answer:
+$\text{True}$

@@ -1,0 +1,5 @@
+Problem:
+Find the coefficient of the sixth term in the series expansion of the following function around 6:
+$\frac{1}{256 x^4}$
+Answer:
+$0$

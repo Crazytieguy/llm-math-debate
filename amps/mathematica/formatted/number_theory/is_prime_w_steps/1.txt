@@ -1,0 +1,9 @@
+Test for primality:
+
+is $2$ a prime number?
+
+\hrule
+
+1. The only divisors of $2\text{ are }1\text{ and itself. This means }2$ is prime:
+
+Answer: $2$ is a prime number

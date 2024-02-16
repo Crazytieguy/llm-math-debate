@@ -1,0 +1,46 @@
+Problem:
+Compute the mode of ${-\frac{19}{2}, 10, -\frac{19}{2}, \frac{19}{2}, 0, 10, \frac{19}{2}, \frac{19}{2}, \frac{19}{2}, 10, 0, 10, 4, 0, 4, 10, 10, 4, 10, 4, 10, 10, \frac{19}{2}, 10, 4, -\frac{19}{2}, 10, 4}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the mode (commonest element) of the list}: \\
+ \left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right)=\left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right): \\
+ \left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{sorted }\text{list }\text{is}: \\
+ \left(-\frac{19}{2},-\frac{19}{2},-\frac{19}{2},0,0,0,4,4,4,4,4,4,\frac{19}{2},\frac{19}{2},\frac{19}{2},\frac{19}{2},\frac{19}{2},10,10,10,10,10,10,10,10,10,10,10\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{tally }\text{of }\text{each }\text{element }\text{is}: \\
+ 
+\begin{array}{cccccc}
+ \text{element} & -\frac{19}{2} & 0 & 4 & \frac{19}{2} & 10 \\
+ \text{tally} & 3 & 3 & 6 & 5 & 11 \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{element }\text{10 }\text{appears }\text{11 }\text{times. }\text{Thus }\text{the }\text{mode }\text{of }\text{the }\text{list }\text{is}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 10 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

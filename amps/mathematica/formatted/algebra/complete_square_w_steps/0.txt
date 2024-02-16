@@ -1,0 +1,47 @@
+Complete the square:
+
+$y^2-y-5 x^2+x-8=0$
+
+\hrule
+
+1. Add $8$ to both sides:
+
+$y^2-y-5 x^2+x=8$
+
+2. Group terms with $x\text{ and }y$ separately, leaving placeholder constants:
+
+$\left(-5 x^2+x+\underline{\text{   }}\right)+\left(y^2-y+\underline{\text{   }}\right)=\underline{\text{   }}+8$
+
+3. $\left(-5 x^2+x+\underline{\text{   }}\right)=-5 \left(x^2-\frac{x}{5}+\underline{\text{   }}\right):$
+
+$-5 \left(x^2-\frac{x}{5}+\underline{\text{   }}\right)+\left(y^2-y+\underline{\text{   }}\right)=\underline{\text{   }}+8$
+
+4. $\begin{array}{l}
+\text{Take one half of the coefficient of }x\text{ and square it. Then add it to both sides of the equation, multiplying by the factored constant }-5\text{ on the right. }\\
+\text{ Insert }\left(\frac{\frac{-1}{5}}{2}\right)^2=\frac{1}{100}\text{ on the left and }\frac{-5}{100}=-\frac{1}{20}\text{ on the right}: \\
+\end{array}$
+
+$-5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\underline{\text{   }}\right)=-\frac{1}{20}+8$
+
+5. $8-\frac{1}{20}=\frac{159}{20}$:
+
+$-5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\underline{\text{   }}\right)=\frac{159}{20}$
+
+6. $\begin{array}{l}
+\text{Take one half of the coefficient of }y\text{ and square it, then add it to both sides. }\\
+\text{ Add }\left(\frac{-1}{2}\right)^2=\frac{1}{4}\text{ to both sides}: \\
+\end{array}$
+
+$-5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\frac{1}{4}\right)=\frac{1}{4}+\frac{159}{20}$
+
+7. $\frac{159}{20}+\frac{1}{4}=\frac{41}{5}$:
+
+$-5 \left(x^2-\frac{x}{5}+\frac{1}{100}\right)+\left(y^2-y+\frac{1}{4}\right)=\frac{41}{5}$
+
+8. $x^2-\frac{x}{5}+\frac{1}{100}=\left(x-\frac{1}{10}\right)^2:$
+
+$-5 \left(x-\frac{1}{10}\right)^2+\left(y^2-y+\frac{1}{4}\right)=\frac{41}{5}$
+
+9. $y^2-y+\frac{1}{4}=\left(y-\frac{1}{2}\right)^2:$
+
+Answer: $-5 \left(x-\frac{1}{10}\right)^2+\left(y-\frac{1}{2}\right)^2=\frac{41}{5}$

@@ -1,0 +1,21 @@
+Problem:
+Subtract the second matrix from the first:
+$\left(
+\begin{array}{ccc}
+ -\frac{19}{3} & \frac{8}{3} & -\frac{41}{6} \\
+ -\frac{29}{3} & -\frac{29}{3} & -\frac{17}{2} \\
+\end{array}
+\right)$
+$\left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{7}{6} & -1 \\
+ \frac{35}{6} & \frac{29}{3} & -\frac{53}{6} \\
+\end{array}
+\right)$
+Answer:
+$\left(
+\begin{array}{ccc}
+ -\frac{11}{2} & \frac{3}{2} & -\frac{35}{6} \\
+ -\frac{31}{2} & -\frac{58}{3} & \frac{1}{3} \\
+\end{array}
+\right)$

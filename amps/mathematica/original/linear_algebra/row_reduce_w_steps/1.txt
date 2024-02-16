@@ -1,0 +1,72 @@
+Problem:
+Convert the following matrix to reduced row echelon form:
+$\left(
+\begin{array}{ccc}
+ 8 & 3 & 4 \\
+ -8 & 7 & -10 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Do row reduction}: \\
+ \left(
+\begin{array}{ccc}
+ 8 & 3 & 4 \\
+ -8 & 7 & -10 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Add }\text{row }1 \text{to }\text{row }2: \\
+ \left(
+\begin{array}{ccc}
+ 8 & 3 & 4 \\
+ 0 & 10 & -6 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{row }2 \text{by }10: \\
+ \left(
+\begin{array}{ccc}
+ 8 & 3 & 4 \\
+ 0 & 1 & -\frac{3}{5} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }3\, \times \, \text{(row }2) \text{from }\text{row }1: \\
+ \left(
+\begin{array}{ccc}
+ 8 & 0 & \frac{29}{5} \\
+ 0 & 1 & -\frac{3}{5} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{row }1 \text{by }8: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \left(
+\begin{array}{ccc}
+ 1 & 0 & \frac{29}{40} \\
+ 0 & 1 & -\frac{3}{5} \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

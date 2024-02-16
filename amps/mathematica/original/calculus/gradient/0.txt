@@ -1,0 +1,4 @@
+Problem:
+Find the gradient of the function $f(x,y,z)$ where $f(x,y,z) = \frac{x-y}{z}$
+Answer:
+$\left\{\frac{1}{z},-\frac{1}{z},-\frac{x-y}{z^2}\right\}$

@@ -1,0 +1,15 @@
+Problem:
+Multiply the scalar $\frac{9}{8}$ and the matrix
+$\left(
+\begin{array}{cccc}
+ -7 & 1 & 7 & 4 \\
+ 1 & 1 & 9 & 8 \\
+\end{array}
+\right)$.
+Answer:
+$\left(
+\begin{array}{cccc}
+ -\frac{63}{8} & \frac{9}{8} & \frac{63}{8} & \frac{9}{2} \\
+ \frac{9}{8} & \frac{9}{8} & \frac{81}{8} & 9 \\
+\end{array}
+\right)$

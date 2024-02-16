@@ -1,0 +1,178 @@
+Problem:
+Find the dot product of the following two vectors:
+$\left(
+\begin{array}{c}
+ -\frac{2}{e} \\
+ \frac{1}{e} \\
+ -\frac{26}{e} \\
+ \frac{6}{e} \\
+ \frac{10}{e} \\
+ \frac{13}{e} \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Take the dot product of the following vectors}: \\
+ \, \left(-\frac{2}{e},\frac{1}{e},-\frac{26}{e},\frac{6}{e},\frac{10}{e},\frac{13}{e}\right)\, .\, \left(-\frac{5}{e},\frac{23}{e},-\frac{7}{e},-\frac{8}{e},\frac{19}{e},-\frac{15}{e}\right)\,  \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Multiply }\text{the }\text{row }\text{vector }\text{with }\text{the }\text{column }\text{vector}: \\
+ \, \left(-\frac{2}{e},\frac{1}{e},-\frac{26}{e},\frac{6}{e},\frac{10}{e},\frac{13}{e}\right)\, .\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccc}
+ -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right): \\
+ -\frac{2 (-5)}{e e}=\frac{10}{e^2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccc}
+ -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right): \\
+ \frac{23}{e e}=\frac{23}{e^2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccc}
+ -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right): \\
+ -\frac{26 (-7)}{e e}=\frac{182}{e^2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccc}
+ -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right): \\
+ \frac{6 (-8)}{e e}=-\frac{48}{e^2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccc}
+ -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right): \\
+ \frac{10\ 19}{e e}=\frac{190}{e^2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccc}
+ -\frac{2}{e} & \frac{1}{e} & -\frac{26}{e} & \frac{6}{e} & \frac{10}{e} & \frac{13}{e} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ -\frac{5}{e} \\
+ \frac{23}{e} \\
+ -\frac{7}{e} \\
+ -\frac{8}{e} \\
+ \frac{19}{e} \\
+ -\frac{15}{e} \\
+\end{array}
+\right): \\
+ \frac{13 (-15)}{e e}=-\frac{195}{e^2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(-\frac{2}{e}\right)\, \left(-\frac{5}{e}\right)+\frac{23}{e e}+\left(-\frac{26}{e}\right)\, \left(-\frac{7}{e}\right)+\frac{6 (-8)}{e e}+\frac{10\ 19}{e e}+\frac{13 (-15)}{e e}: \\
+ \frac{10}{e^2}+\frac{23}{e^2}+\frac{182}{e^2}-\frac{48}{e^2}+\frac{190}{e^2}-\frac{195}{e^2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\text{like }\text{terms. }\frac{10}{e^2}+\frac{23}{e^2}+\frac{182}{e^2}-\frac{48}{e^2}+\frac{190}{e^2}-\frac{195}{e^2} \text{= }\frac{162}{e^2}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \frac{162}{e^2} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

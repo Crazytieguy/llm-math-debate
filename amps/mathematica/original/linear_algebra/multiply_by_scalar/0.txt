@@ -1,0 +1,17 @@
+Problem:
+Multiply the scalar $\frac{9}{100}$ and the matrix
+$\left(
+\begin{array}{cccc}
+ 9 & 1 & 6 & -10 \\
+ -2 & 8 & -3 & -10 \\
+ -7 & 9 & -3 & 5 \\
+\end{array}
+\right)$.
+Answer:
+$\left(
+\begin{array}{cccc}
+ \frac{81}{100} & \frac{9}{100} & \frac{27}{50} & -\frac{9}{10} \\
+ -\frac{9}{50} & \frac{18}{25} & -\frac{27}{100} & -\frac{9}{10} \\
+ -\frac{63}{100} & \frac{81}{100} & -\frac{27}{100} & \frac{9}{20} \\
+\end{array}
+\right)$

@@ -1,0 +1,4 @@
+Problem:
+If $x = 5$, then find $\frac{1}{x+\frac{1}{x+\frac{1}{x+\ddots}}}$.
+Answer:
+$\frac{1}{2} \left(\sqrt{29}-5\right)$

@@ -1,0 +1,62 @@
+Find the characteristic polynomial of the matrix $M\text{ with respect to the variable }\lambda$ :
+
+$M=\left(
+\begin{array}{cc}
+-\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -1 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. To find the characteristic polynomial of a matrix, subtract a variable multiplied by the identity matrix and take the determinant:
+
+$| M-\lambda  \mathbb{I}|$
+
+2. $\begin{array}{lll}
+| M-\lambda  \mathbb{I}|  & = & \left| 
+\begin{array}{cc}
+-\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -1 \\
+\end{array}
+-\lambda  
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right|  \\
+\text{  }& = & \left| 
+\begin{array}{cc}
+-\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -1 \\
+\end{array}
+-
+\begin{array}{cc}
+\lambda  & 0 \\
+ 0 & \lambda  \\
+\end{array}
+\right|  \\
+\end{array}$
+
+= $\left| 
+\begin{array}{cc}
+-\lambda -\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -\lambda -1 \\
+\end{array}
+\right|$
+
+3. Multiply along the diagonals and subtract:
+
+$\left(-\lambda -\frac{29}{4}\right) (-\lambda -1)-\left(-\frac{27}{4}\right)\, \left(-\frac{5}{2}\right)$
+
+4. $\left(-\lambda -\frac{29}{4}\right) (-\lambda -1)=\lambda ^2+\frac{33 \lambda }{4}+\frac{29}{4}$:
+
+= $\frac{29}{4}+\frac{33 \lambda }{4}+\lambda ^2-\left(-\frac{27}{4}\right)\, \left(-\frac{5}{2}\right)$
+
+5. $\frac{-27}{4}\times \frac{-5}{2}=\frac{135}{8}$:
+
+= $\left(\lambda ^2+\frac{33 \lambda }{4}+\frac{29}{4}\right)-\frac{135}{8}$
+
+6. $\left(\lambda ^2+\frac{33 \lambda }{4}+\frac{29}{4}\right)-\frac{135}{8}=\lambda ^2+\frac{33 \lambda }{4}-\frac{77}{8}$:
+
+Answer: = $\lambda ^2+\frac{33 \lambda }{4}-\frac{77}{8}$

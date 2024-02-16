@@ -1,0 +1,230 @@
+Find the null space of the matrix $M:$
+
+$M=\left(
+\begin{array}{cccc}
+-4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. The null space of matrix $M=\left(
+\begin{array}{cccc}
+-4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right)\text{ is the set of all vectors }v=\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)\text{ such that }M.v=0:$
+
+$\left(
+\begin{array}{cccc}
+-4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+2. Reduce the matrix $\left(
+\begin{array}{cccc}
+-4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right)$ to row echelon form:
+
+$\left(
+\begin{array}{cccc}
+-4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right)$
+
+3. Swap row $1\text{ with row }2:$
+
+$\left(
+\begin{array}{cccc}
+-10 & -4 & -9 & -5 \\
+ -4 & -2 & 7 & -2 \\
+\end{array}
+\right)$
+
+4. Subtract $\frac{2}{5}\, \times \,\text{ (row }1)\text{ from row }2:$
+
+$\left(
+\begin{array}{cccc}
+-10 & -4 & -9 & -5 \\
+ 0 & -\frac{2}{5} & \frac{53}{5} & 0 \\
+\end{array}
+\right)$
+
+5. Multiply row $2\text{ by }-\frac{5}{2}$:
+
+$\left(
+\begin{array}{cccc}
+-10 & -4 & -9 & -5 \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right)$
+
+6. Add $4\, \times \,\text{ (row }2)\text{ to row }1:$
+
+$\left(
+\begin{array}{cccc}
+-10 & 0 & -115 & -5 \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right)$
+
+7. Divide row $1\text{ by }-10:$
+
+$\left(
+\begin{array}{cccc}
+1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right)$
+
+8. Free variables in the null space $\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)\text{ correspond to the columns in }\left(
+\begin{array}{cccc}
+1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right)$ which have no pivot.
+
+Columns $3\text{ and }4\text{ are the only columns with no pivot, so we may take }x_3\text{ and }x_4$ to be the only free variables
+
+9. Multiply out the reduced matrix $\left(
+\begin{array}{cccc}
+1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right)\text{ with the proposed solution vector }\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cccc}
+1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+x_1+\frac{23 x_3}{2}+\frac{x_4}{2} \\
+ x_2-\frac{53 x_3}{2} \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+10. Solve the equations $\{
+\begin{array}{l}
+x_1+\frac{23 x_3}{2}+\frac{x_4}{2}=0 \\
+ x_2-\frac{53 x_3}{2}=0 \\
+\end{array}
+\text{  for }x_1\text{ and }x_2:$
+
+$\{
+\begin{array}{l}
+x_1=-\frac{23 x_3}{2}-\frac{x_4}{2} \\
+ x_2=\frac{53 x_3}{2} \\
+\end{array}$
+
+11. Rewrite $v\text{ in terms of the free variables }x_3\text{ and }x_4,\text{ and assign arbitrary real values of }x\text{ and }y$ to the variables:
+
+$v=\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+-\frac{23 x_3}{2}-\frac{x_4}{2} \\
+ \frac{53 x_3}{2} \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+-\frac{y}{2}-\frac{23 x}{2} \\
+ \frac{53 x}{2} \\
+ x \\
+ y \\
+\end{array}
+\right)\text{ for }x,y\in \mathbb{R}$
+
+12. Since the variables $x\text{ and }y\text{ are taken from }\mathbb{R},\text{ we can replace them with }2 x\text{ and }2 y$ respectively:
+
+$\left(
+\begin{array}{c}
+-\frac{y}{2}-\frac{23 x}{2} \\
+ \frac{53 x}{2} \\
+ x \\
+ y \\
+\end{array}
+\right)\, \rightarrow \, \left(
+\begin{array}{c}
+-\frac{1}{2} (2 y)-\frac{23 (2 x)}{2} \\
+ \frac{53 (2 x)}{2} \\
+ 2 x \\
+ 2 y \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+-y-23 x \\
+ 53 x \\
+ 2 x \\
+ 2 y \\
+\end{array}
+\right)\text{ for }x,y\in \mathbb{R}$
+
+13. Rewrite the solution vector $v=\left(
+\begin{array}{c}
+-y-23 x \\
+ 53 x \\
+ 2 x \\
+ 2 y \\
+\end{array}
+\right)$ in set notation:
+
+Answer: $\{\, (-y-23 x,53 x,2 x,2 y)\,\text{ $\, $: }x,y\in \mathbb{R}\}$

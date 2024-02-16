@@ -1,0 +1,11 @@
+Problem:
+Compute the rank of
+$\left(
+\begin{array}{c}
+ \frac{37}{10} \\
+ \frac{24}{5} \\
+ -\frac{3}{5} \\
+\end{array}
+\right)$.
+Answer:
+$1$

@@ -1,0 +1,5 @@
+Problem:
+Find the second derivative of the following function:
+$\log \left(x^2-4\right)$
+Answer:
+$-\frac{2 \left(x^2+4\right)}{\left(x^2-4\right)^2}$

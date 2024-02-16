@@ -1,0 +1,4 @@
+Problem:
+Convert $2410$ to base $13$.
+Answer:
+$1135_{13}$

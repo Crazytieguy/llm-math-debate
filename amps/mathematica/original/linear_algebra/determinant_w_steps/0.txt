@@ -1,0 +1,58 @@
+Problem:
+Find the determinant of the matrix
+$\left(
+\begin{array}{cc}
+ -2 & -5 \\
+ 2 & -4 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the determinant}: \\
+ \left| 
+\begin{array}{cc}
+ -2 & -5 \\
+ 2 & -4 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Multiply }\text{along }\text{the }\text{diagonals }\text{and }\text{subtract}: \\
+ (-2)\, (-4)-(-5)\, \times \, 2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -2 (-4) \text{= }8: \\
+ 8--5\times 2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -(-5) \text{= }5: \\
+ 8+5\times 2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 5\times 2 \text{= }10: \\
+ 8+10 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 8+10=18: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 18 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

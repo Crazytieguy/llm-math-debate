@@ -1,0 +1,4 @@
+Problem:
+Compute the range of ${-10, -3, 0, -3, -7, -3 \log (2), 3 \sqrt{2}, -5, 13 \log (2), 5, -\frac{17}{2}}$.
+Answer:
+$10+13 \log (2)$

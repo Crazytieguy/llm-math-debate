@@ -1,0 +1,15 @@
+Problem:
+Find the $\ell_\infty$ norm of the following vector:
+$\left(
+\begin{array}{c}
+ -\frac{29}{5} \\
+ \frac{42}{5} \\
+ -\frac{11}{5} \\
+ \frac{41}{5} \\
+ 9 \\
+ -\frac{2}{5} \\
+ \frac{33}{5} \\
+\end{array}
+\right)$.
+Answer:
+$9$

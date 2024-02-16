@@ -1,0 +1,6 @@
+Problem:
+Find the $x,y,z$ such that
+$5 x+4 z=5$
+$-10 x-3 y-3 z=2$
+Answer:
+$\{1,-4,0\}$

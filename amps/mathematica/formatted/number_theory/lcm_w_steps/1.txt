@@ -1,0 +1,30 @@
+Find the least common multiple:
+
+lcm$(-72,23)$
+
+\hrule
+
+1. Any multiple of a negative number is also a multiple of its absolute value:
+
+lcm$(-72,23)=\text{lcm}(72,23)$
+
+2. $\begin{array}{l}
+\text{Find the prime factorization of each integer}: \\
+\text{ The prime factorization of 72 is}: \\
+\end{array}$
+
+$72=2^3\times 3^2$
+
+3. The prime factorization of 23 is:
+
+$23=23^1$
+
+4. $\begin{array}{l}
+\text{Find the largest power of each prime factor }\\
+\text{ The largest power of }2\text{ that appears in the prime factorizations is }2^3 \\
+\text{ The largest power of }3\text{ that appears in the prime factorizations is }3^2 \\
+\text{ The largest power of 23 that appears in the prime factorizations is }23^1 \\
+\text{ Therefore lcm}(72,23)=\left(2^3\times 3^2\times 23^1=1656\right): \\
+\end{array}$
+
+Answer: lcm$(-72,23)=1656$

@@ -1,0 +1,59 @@
+Problem:
+Find the roots of the following polynomial: $-11 x^2-13 x+5$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Solve for }x: \\
+ -11 x^2-13 x+5=0 \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Divide }\text{both }\text{sides }\text{by }-11: \\
+ x^2+\frac{13 x}{11}-\frac{5}{11}=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{5}{11} \text{to }\text{both }\text{sides}: \\
+ x^2+\frac{13 x}{11}=\frac{5}{11} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{169}{484} \text{to }\text{both }\text{sides}: \\
+ x^2+\frac{13 x}{11}+\frac{169}{484}=\frac{389}{484} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+ \left(x+\frac{13}{22}\right)^2=\frac{389}{484} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}: \\
+ x+\frac{13}{22}=\frac{\sqrt{389}}{22}\text{ or }x+\frac{13}{22}=-\frac{\sqrt{389}}{22} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{13}{22} \text{from }\text{both }\text{sides}: \\
+ \fbox{$x=\frac{\sqrt{389}}{22}-\frac{13}{22}$}\text{ or }x+\frac{13}{22}=-\frac{\sqrt{389}}{22} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{13}{22} \text{from }\text{both }\text{sides}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & x=\frac{\sqrt{389}}{22}-\frac{13}{22}\text{ or }\fbox{$x=-\frac{13}{22}-\frac{\sqrt{389}}{22}$} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

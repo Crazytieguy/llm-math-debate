@@ -1,0 +1,4 @@
+Problem:
+Find the divergence of the vector field $f(x,y,z)\uvec{i} + g(x,y,z)\uvec{j} + h(x,y,z)\uvec{k}$ where $f(x,y,z) = \tan \left(\frac{z}{x}\right)$, $g(x,y,z) = y$, and $h(x,y,z) = \sqrt{x+y}$
+Answer:
+$1-\frac{z \sec ^2\left(\frac{z}{x}\right)}{x^2}$

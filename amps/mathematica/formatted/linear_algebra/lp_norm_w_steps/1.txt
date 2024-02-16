@@ -1,0 +1,13 @@
+Find the norm of the vector $\, (0,-7,-10,9,5,6,9)\,$ :
+
+$\| \, (0,-7,-10,9,5,6,9)\, \|$
+
+\hrule
+
+1. The formula for the 7-dimensional Euclidean norm comes from the 7-dimensional Pythagorean theorem:
+
+$\left\| \, \left(v_1,v_2,v_3,v_4,v_5,v_6,v_7\right)\, \right\| =\sqrt{v_1^2+v_2^2+v_3^2+v_4^2+v_5^2+v_6^2+v_7^2}$
+
+2. Substitute $\, (0,-7,-10,9,5,6,9)\,$ into the formula:
+
+Answer: $\| \, (0,-7,-10,9,5,6,9)\, \| =\sqrt{0^2+(-7)^2+(-10)^2+9^2+5^2+6^2+9^2}=2 \sqrt{93}$

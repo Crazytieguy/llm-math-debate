@@ -1,0 +1,57 @@
+Problem:
+Compute the trace of
+$\left(
+\begin{array}{cccc}
+ -3 e & -4 e & -2 e & -2 e \\
+ -2 e & -2 e & -4 e & -4 e \\
+ e & 3 e & 2 e & -3 e \\
+ -2 e & 3 e & -3 e & 3 e \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the trace of the matrix:} \\
+ \left(
+\begin{array}{cccc}
+ -3 e & -4 e & -2 e & -2 e \\
+ -2 e & -2 e & -4 e & -4 e \\
+ e & 3 e & 2 e & -3 e \\
+ -2 e & 3 e & -3 e & 3 e \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Locate }\text{the }\text{elements }\text{on }\text{the }\text{main }\text{diagonal}: \\
+ \left(
+\begin{array}{cccc}
+ -3 e & -4 e & -2 e & -2 e \\
+ -2 e & -2 e & -4 e & -4 e \\
+ e & 3 e & 2 e & -3 e \\
+ -2 e & 3 e & -3 e & 3 e \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }\text{out }\text{the }\text{sum }\text{of }\text{the }\text{elements }\text{on }\text{the }\text{main }\text{diagonal}: \\
+ -3 e\, \text{+$\, $}-2 e\, \text{+$\, $}2 e\, \text{+$\, $}3 e \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\text{like }\text{terms. }-3 e-2 e+2 e+3 e \text{= }0: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & 0 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,107 @@
+Find the inverse:
+
+$\left(
+\begin{array}{ccc}
+1 & 1 & 3 \\
+ 0 & 3 & 1 \\
+ -4 & -4 & -1 \\
+\end{array}
+\right)^{-1}$
+
+\hrule
+
+1. To find the inverse, augment the given matrix with the identity matrix and perform Gaussian elimination:
+
+$\left(
+\begin{array}{ccc|ccc}
+1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 1 & 0 & 1 & 0 \\
+ -4 & -4 & -1 & 0 & 0 & 1 \\
+\end{array}
+\right)$
+
+2. Add $4\, \times \,\text{ (row }1)\text{ to row }3:$
+
+$\left(
+\begin{array}{ccc|ccc}
+1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 1 & 0 & 1 & 0 \\
+ 0 & 0 & 11 & 4 & 0 & 1 \\
+\end{array}
+\right)$
+
+3. Divide row $3\text{ by }11:$
+
+$\left(
+\begin{array}{ccc|ccc}
+1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 1 & 0 & 1 & 0 \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right)$
+
+4. Subtract row $3\text{ from row }2:$
+
+$\left(
+\begin{array}{ccc|ccc}
+1 & 1 & 3 & 1 & 0 & 0 \\
+ 0 & 3 & 0 & -\frac{4}{11} & 1 & -\frac{1}{11} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right)$
+
+5. Subtract $3\, \times \,\text{ (row }3)\text{ from row }1:$
+
+$\left(
+\begin{array}{ccc|ccc}
+1 & 1 & 0 & -\frac{1}{11} & 0 & -\frac{3}{11} \\
+ 0 & 3 & 0 & -\frac{4}{11} & 1 & -\frac{1}{11} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right)$
+
+6. Divide row $2\text{ by }3:$
+
+$\left(
+\begin{array}{ccc|ccc}
+1 & 1 & 0 & -\frac{1}{11} & 0 & -\frac{3}{11} \\
+ 0 & 1 & 0 & -\frac{4}{33} & \frac{1}{3} & -\frac{1}{33} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right)$
+
+7. Subtract row $2\text{ from row }1:$
+
+$\left(
+\begin{array}{ccc|ccc}
+1 & 0 & 0 & \frac{1}{33} & -\frac{1}{3} & -\frac{8}{33} \\
+ 0 & 1 & 0 & -\frac{4}{33} & \frac{1}{3} & -\frac{1}{33} \\
+ 0 & 0 & 1 & \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right)$
+
+8. Read off the inverse:
+
+$\left(
+\begin{array}{ccc}
+1 & 1 & 3 \\
+ 0 & 3 & 1 \\
+ -4 & -4 & -1 \\
+\end{array}
+\right)^{-1}=\left(
+\begin{array}{ccc}
+\frac{1}{33} & -\frac{1}{3} & -\frac{8}{33} \\
+ -\frac{4}{33} & \frac{1}{3} & -\frac{1}{33} \\
+ \frac{4}{11} & 0 & \frac{1}{11} \\
+\end{array}
+\right)$
+
+9. Simplify by factoring out an appropriate term:
+
+Answer: $\frac{1}{33}\left(
+\begin{array}{ccc}
+1 & -11 & -8 \\
+ -4 & 11 & -1 \\
+ 12 & 0 & 3 \\
+\end{array}
+\right)$

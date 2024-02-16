@@ -1,0 +1,4 @@
+Problem:
+Find the least common multiple of $\left\{\frac{20}{7},-2,-\frac{38}{9}\right\}$.
+Answer:
+$380$

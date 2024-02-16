@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $\frac{3 x^2-9 x-22}{2 x^2-18 x+16}=0$
+Answer:
+$\left\{\left\{x\to \frac{1}{6} \left(9-\sqrt{345}\right)\right\},\left\{x\to \frac{1}{6} \left(9+\sqrt{345}\right)\right\}\right\}$

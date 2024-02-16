@@ -1,0 +1,4 @@
+Problem:
+Find the curl of the vector field $f(x,y,z)\uvec{i} + g(x,y,z)\uvec{j} + h(x,y,z)\uvec{k}$ where $f(x,y,z) = y+z$, $g(x,y,z) = \sqrt[3]{z}$, and $h(x,y,z) = \tan (z)$
+Answer:
+$\left\{-\frac{1}{3 \sqrt[3]{z}^2},1,-1\right\}$

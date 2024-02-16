@@ -1,0 +1,4 @@
+Problem:
+Compute the mean of ${-3, 7, -5, 2 \sqrt{5}, -\frac{23}{\pi }, -9, 3 \sqrt{3}, \frac{7}{e}, 2 \pi, -1, 2 \pi, \frac{1}{\sqrt{2}}}$.
+Answer:
+$\frac{1}{2} \left(\frac{1}{\sqrt{2}}+\frac{7}{e}\right)$

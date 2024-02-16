@@ -1,0 +1,5 @@
+Problem:
+Find the sixth order expansion of the following function around 6:
+$8 x^3$
+Answer:
+$8 (x-2)^3+48 (x-2)^2+96 (x-2)+64$

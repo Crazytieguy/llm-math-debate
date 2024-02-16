@@ -1,0 +1,6 @@
+Problem:
+Find the $x,y,z$ such that
+$-5 x+6 y+7 z=-10$
+$8 y-9 x=3$
+Answer:
+$\{5,6,-3\}$

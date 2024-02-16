@@ -1,0 +1,41 @@
+Problem:
+Simplify the following radical expression: $\sqrt{163}-\sqrt{192}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Simplify the following}: \\
+ \sqrt{163}-\sqrt{192} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \sqrt{192} \text{= }\sqrt{2^6\times 3} \text{= }2^3 \sqrt{3}: \\
+ \sqrt{163}-\fbox{$2^3 \sqrt{3}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2^3=2\times 2^2: \\
+ \sqrt{163}-\fbox{$2\times 2^2$} \sqrt{3} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2^2=4: \\
+ \sqrt{163}-2\times \fbox{$4$} \sqrt{3} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2\times 4 \text{= }8: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \sqrt{163}-\fbox{$8$} \sqrt{3} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

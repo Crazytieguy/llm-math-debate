@@ -1,0 +1,10 @@
+Problem:
+Find the determinant of the matrix
+$\left(
+\begin{array}{cc}
+ \frac{3}{10} & -\frac{13}{10} \\
+ \frac{19}{5} & -\frac{31}{10} \\
+\end{array}
+\right)$.
+Answer:
+$\frac{401}{100}$

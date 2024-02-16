@@ -1,0 +1,4 @@
+Problem:
+Determine the $n=3$ $2$-gonal number.
+Answer:
+$3$

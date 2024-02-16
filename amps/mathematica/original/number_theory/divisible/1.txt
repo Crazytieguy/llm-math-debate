@@ -1,0 +1,4 @@
+Problem:
+Determine whether $53856$ is divisible by $-34$.
+Answer:
+$\text{True}$

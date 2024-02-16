@@ -1,0 +1,460 @@
+Problem:
+Subtract the second matrix from the first:
+$\left(
+\begin{array}{ccc}
+ \frac{7}{2} & \frac{28}{3} & \frac{31}{6} \\
+ -\frac{14}{3} & -2 & -\frac{5}{3} \\
+\end{array}
+\right)$
+$\left(
+\begin{array}{ccc}
+ \frac{13}{3} & \frac{15}{2} & \frac{55}{6} \\
+ \frac{2}{3} & -\frac{31}{6} & \frac{19}{2} \\
+\end{array}
+\right)$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Simplify the following}: \\
+ \left(
+\begin{array}{ccc}
+ \frac{7}{2} & \frac{28}{3} & \frac{31}{6} \\
+ -\frac{14}{3} & -2 & -\frac{5}{3} \\
+\end{array}
+\right)-\left(
+\begin{array}{ccc}
+ \frac{13}{3} & \frac{15}{2} & \frac{55}{6} \\
+ \frac{2}{3} & -\frac{31}{6} & \frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ -1\left(
+\begin{array}{ccc}
+ \frac{13}{3} & \frac{15}{2} & \frac{55}{6} \\
+ \frac{2}{3} & -\frac{31}{6} & \frac{19}{2} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+ -\frac{13}{3} & -\frac{15}{2} & -\frac{55}{6} \\
+ -\frac{2}{3} & -\frac{-31}{6} & -\frac{19}{2} \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{ccc}
+ \frac{7}{2} & \frac{28}{3} & \frac{31}{6} \\
+ -\frac{14}{3} & -2 & -\frac{5}{3} \\
+\end{array}
+\right)+\fbox{$\left(
+\begin{array}{ccc}
+ -\frac{13}{3} & -\frac{15}{2} & -\frac{55}{6} \\
+ -\frac{2}{3} & -\frac{-31}{6} & -\frac{19}{2} \\
+\end{array}
+\right)$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -(-31) \text{= }31: \\
+ \left(
+\begin{array}{ccc}
+ \frac{7}{2} & \frac{28}{3} & \frac{31}{6} \\
+ -\frac{14}{3} & -2 & -\frac{5}{3} \\
+\end{array}
+\right)+\left(
+\begin{array}{ccc}
+ -\frac{13}{3} & -\frac{15}{2} & -\frac{55}{6} \\
+ -\frac{2}{3} & \frac{\fbox{$31$}}{6} & -\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{ccc}
+ \frac{7}{2} & \frac{28}{3} & \frac{31}{6} \\
+ -\frac{14}{3} & -2 & -\frac{5}{3} \\
+\end{array}
+\right)+\left(
+\begin{array}{ccc}
+ -\frac{13}{3} & -\frac{15}{2} & -\frac{55}{6} \\
+ -\frac{2}{3} & \frac{31}{6} & -\frac{19}{2} \\
+\end{array}
+\right)=\left(
+\begin{array}{ccc}
+ \frac{7}{2}-\frac{13}{3} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{ccc}
+ \frac{7}{2}-\frac{13}{3} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }\frac{7}{2}-\frac{13}{3} \text{over }\text{the }\text{common }\text{denominator }6. \frac{7}{2}-\frac{13}{3} \text{= }\frac{3\times 7}{6}+\frac{2 (-13)}{6}: \\
+ \left(
+\begin{array}{ccc}
+ \fbox{$\frac{3\times 7}{6}+\frac{2 (-13)}{6}$} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 3\times 7 \text{= }21: \\
+ \left(
+\begin{array}{ccc}
+ \frac{\fbox{$21$}}{6}+\frac{2 (-13)}{6} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2 (-13) \text{= }-26: \\
+ \left(
+\begin{array}{ccc}
+ \frac{21}{6}+\frac{\fbox{$-26$}}{6} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{21}{6}-\frac{26}{6} \text{= }\frac{21-26}{6}: \\
+ \left(
+\begin{array}{ccc}
+ \fbox{$\frac{21-26}{6}$} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 21-26 \text{= }-(26-21): \\
+ \left(
+\begin{array}{ccc}
+ \frac{\fbox{$-(26-21)$}}{6} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+ \text{} & 2 & 6 \\
+ - & 2 & 1 \\
+\hline
+ \text{} & 0 & 5 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{ccc}
+ \frac{-\fbox{$5$}}{6} & \frac{28}{3}-\frac{15}{2} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }\frac{28}{3}-\frac{15}{2} \text{over }\text{the }\text{common }\text{denominator }6. \frac{28}{3}-\frac{15}{2} \text{= }\frac{2\times 28}{6}+\frac{3 (-15)}{6}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \fbox{$\frac{2\times 28}{6}+\frac{3 (-15)}{6}$} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2\times 28 \text{= }56: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{\fbox{$56$}}{6}+\frac{3 (-15)}{6} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 3 (-15) \text{= }-45: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{56}{6}+\frac{\fbox{$-45$}}{6} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{56}{6}-\frac{45}{6} \text{= }\frac{56-45}{6}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \fbox{$\frac{56-45}{6}$} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+ \text{} & 5 & 6 \\
+ - & 4 & 5 \\
+\hline
+ \text{} & 1 & 1 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{\fbox{$11$}}{6} & \frac{31}{6}-\frac{55}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{31}{6}-\frac{55}{6} \text{= }\frac{31-55}{6}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & \fbox{$\frac{31-55}{6}$} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 31-55 \text{= }-(55-31): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & \frac{\fbox{$-(55-31)$}}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+ \text{} & 5 & 5 \\
+ - & 3 & 1 \\
+\hline
+ \text{} & 2 & 4 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & \frac{-\fbox{$24$}}{6} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{24}{6}=\frac{6\times 4}{6}=4: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -\fbox{$4$} \\
+ -\frac{14}{3}-\frac{2}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{14}{3}-\frac{2}{3} \text{= }\frac{-14-2}{3}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ \fbox{$\frac{-14-2}{3}$} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -14-2=-(14+2): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ \frac{\fbox{$-(14+2)$}}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 14+2=16: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ \frac{-\fbox{$16$}}{3} & -2+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }-2+\frac{31}{6} \text{over }\text{the }\text{common }\text{denominator }6. -2+\frac{31}{6} \text{= }\frac{6 (-2)}{6}+\frac{31}{6}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \fbox{$\frac{6 (-2)}{6}+\frac{31}{6}$} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 6 (-2) \text{= }-12: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{\fbox{$-12$}}{6}+\frac{31}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{12}{6}+\frac{31}{6} \text{= }\frac{-12+31}{6}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \fbox{$\frac{-12+31}{6}$} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -12+31=19: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{\fbox{$19$}}{6} & -\frac{5}{3}-\frac{19}{2} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Put }-\frac{5}{3}-\frac{19}{2} \text{over }\text{the }\text{common }\text{denominator }6. -\frac{5}{3}-\frac{19}{2} \text{= }\frac{2 (-5)}{6}+\frac{3 (-19)}{6}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{19}{6} & \fbox{$\frac{2 (-5)}{6}+\frac{3 (-19)}{6}$} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2 (-5) \text{= }-10: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{19}{6} & \frac{\fbox{$-10$}}{6}+\frac{3 (-19)}{6} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 3 (-19) \text{= }-57: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{19}{6} & \frac{-10}{6}+\frac{\fbox{$-57$}}{6} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{10}{6}-\frac{57}{6} \text{= }\frac{-10-57}{6}: \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{19}{6} & \fbox{$\frac{-10-57}{6}$} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -10-57=-(10+57): \\
+ \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{19}{6} & \frac{\fbox{$-(10+57)$}}{6} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{c}
+ 
+\begin{array}{ccc}
+\hline
+ \text{} & 5 & 7 \\
+\hline
+ + & 1 & 0 \\
+ \text{} & 6 & 7 \\
+\end{array}
+ \\
+\end{array}
+: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \left(
+\begin{array}{ccc}
+ -\frac{5}{6} & \frac{11}{6} & -4 \\
+ -\frac{16}{3} & \frac{19}{6} & \frac{-\fbox{$67$}}{6} \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

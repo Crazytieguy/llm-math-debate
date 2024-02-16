@@ -1,0 +1,4 @@
+Problem:
+Find the laplacian of the function $f(x,y,z)$ where $f(x,y,z) = y$
+Answer:
+$0$

@@ -1,0 +1,150 @@
+Problem:
+Convert the following matrix to reduced row echelon form:
+$\left(
+\begin{array}{cc}
+ 7 & -3 \\
+ -8 & -9 \\
+ -9 & 4 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Do row reduction}: \\
+ \left(
+\begin{array}{cc}
+ 7 & -3 \\
+ -8 & -9 \\
+ -9 & 4 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Swap }\text{row }1 \text{with }\text{row }3: \\
+ \left(
+\begin{array}{cc}
+ -9 & 4 \\
+ -8 & -9 \\
+ 7 & -3 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{8}{9}\, \times \, \text{(row }1) \text{from }\text{row }2: \\
+ \left(
+\begin{array}{cc}
+ -9 & 4 \\
+ 0 & -\frac{113}{9} \\
+ 7 & -3 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{7}{9}\, \times \, \text{(row }1) \text{to }\text{row }3: \\
+ \left(
+\begin{array}{cc}
+ -9 & 4 \\
+ 0 & -\frac{113}{9} \\
+ 0 & \frac{1}{9} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{1}{113}\, \times \, \text{(row }2) \text{to }\text{row }3: \\
+ \left(
+\begin{array}{cc}
+ -9 & 4 \\
+ 0 & -\frac{113}{9} \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Multiply }\text{row }2 \text{by }-\frac{9}{113}: \\
+ \left(
+\begin{array}{cc}
+ -9 & 4 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }4\, \times \, \text{(row }2) \text{from }\text{row }1: \\
+ \left(
+\begin{array}{cc}
+ -9 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{row }1 \text{by }-9: \\
+ \left(
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{This }\text{matrix }\text{is }\text{now }\text{in }\text{reduced }\text{row }\text{echelon }\text{form.$\backslash $nAll }\text{non-zero }\text{rows }\text{are }\text{above }\text{rows }\text{of }\text{all }\text{zeros:} \\
+ \left(
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Each }\text{pivot }\text{is }\text{1 }\text{and }\text{is }\text{strictly }\text{to }\text{the }\text{right }\text{of }\text{every }\text{pivot }\text{above }\text{it}: \\
+ \left(
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Each }\text{pivot }\text{is }\text{the }\text{only }\text{non-zero }\text{entry }\text{in }\text{its }\text{column}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \left(
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 1 \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

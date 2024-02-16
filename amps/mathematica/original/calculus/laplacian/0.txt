@@ -1,0 +1,4 @@
+Problem:
+Find the laplacian of the function $f(x,y,z)$ where $f(x,y,z) = \sinh ^{-1}\left(\frac{z}{x}\right)$
+Answer:
+$-\frac{z^3}{x^5 \left(\frac{z^2}{x^2}+1\right)^{3/2}}+\frac{2 z}{x^3 \sqrt{\frac{z^2}{x^2}+1}}-\frac{z}{x^3 \left(\frac{z^2}{x^2}+1\right)^{3/2}}$

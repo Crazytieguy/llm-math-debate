@@ -1,0 +1,4 @@
+Problem:
+Determine the KL Divergence between the empirical distributions $\{0.068,0.039,0.199,0.07,0.114,0.132,0.144,0.111,0.05\}$ and $\{0.093,0.02,0.254,0.064,0.141,0.064,0.154,0.069,0.078\}$.
+Answer:
+$0.07$

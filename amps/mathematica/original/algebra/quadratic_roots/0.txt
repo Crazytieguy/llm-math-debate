@@ -1,0 +1,4 @@
+Problem:
+Find the roots of the following polynomial: $15 x^2-4 x-4$
+Answer:
+$x=-\frac{2}{5}\lor x=\frac{2}{3}$

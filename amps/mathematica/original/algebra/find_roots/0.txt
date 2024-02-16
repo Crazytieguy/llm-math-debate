@@ -1,0 +1,4 @@
+Problem:
+Find all roots of the following function: $\cos ^{-1}(-6 x-8)=0$
+Answer:
+$\left\{\left\{x\to -\frac{3}{2}\right\}\right\}$

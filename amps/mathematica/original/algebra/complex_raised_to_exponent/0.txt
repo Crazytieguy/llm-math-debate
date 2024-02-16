@@ -1,0 +1,4 @@
+Problem:
+Simplify the following expression $\left(-\cos \left(\frac{3}{2}\right)-i \sin \left(\frac{3}{2}\right)\right)^8$
+Answer:
+$\cos (12)+i \sin (12)$

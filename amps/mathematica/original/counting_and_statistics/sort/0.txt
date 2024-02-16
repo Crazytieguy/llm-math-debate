@@ -1,0 +1,4 @@
+Problem:
+Sort ${9 \log (2), 8, 1, -\frac{48}{7}, \frac{11}{\sqrt{\pi }}, -5, \frac{8}{3}}$.
+Answer:
+${-\frac{48}{7}, -5, 1, \frac{8}{3}, \frac{11}{\sqrt{\pi }}, 9 \log (2), 8}$

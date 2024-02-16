@@ -1,0 +1,94 @@
+Problem:
+Find the characteristic polynomial of the following matrix:
+$\left(
+\begin{array}{cc}
+ -\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -1 \\
+\end{array}
+\right)$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the characteristic polynomial of the matrix }M\text{ with respect to the variable }\lambda : \\
+ M=\left(
+\begin{array}{cc}
+ -\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{To }\text{find }\text{the }\text{characteristic }\text{polynomial }\text{of }\text{a }\text{matrix, }\text{subtract }\text{a }\text{variable }\text{multiplied }\text{by }\text{the }\text{identity }\text{matrix }\text{and }\text{take }\text{the }\text{determinant}: \\
+ | M-\lambda  \mathbb{I}|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{lll}
+ | M-\lambda  \mathbb{I}|  & = & \left| 
+\begin{array}{cc}
+ -\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -1 \\
+\end{array}
+-\lambda  
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right|  \\
+ \text{} & = & \left| 
+\begin{array}{cc}
+ -\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -1 \\
+\end{array}
+-
+\begin{array}{cc}
+ \lambda  & 0 \\
+ 0 & \lambda  \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+  \text{= }\left| 
+\begin{array}{cc}
+ -\lambda -\frac{29}{4} & -\frac{27}{4} \\
+ -\frac{5}{2} & -\lambda -1 \\
+\end{array}
+\right|  \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Multiply }\text{along }\text{the }\text{diagonals }\text{and }\text{subtract}: \\
+ \left(-\lambda -\frac{29}{4}\right) (-\lambda -1)-\left(-\frac{27}{4}\right)\, \left(-\frac{5}{2}\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(-\lambda -\frac{29}{4}\right) (-\lambda -1)=\lambda ^2+\frac{33 \lambda }{4}+\frac{29}{4}: \\
+  \text{= }\frac{29}{4}+\frac{33 \lambda }{4}+\lambda ^2-\left(-\frac{27}{4}\right)\, \left(-\frac{5}{2}\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \frac{-27}{4}\times \frac{-5}{2}=\frac{135}{8}: \\
+  \text{= }\left(\lambda ^2+\frac{33 \lambda }{4}+\frac{29}{4}\right)-\frac{135}{8} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(\lambda ^2+\frac{33 \lambda }{4}+\frac{29}{4}\right)-\frac{135}{8}=\lambda ^2+\frac{33 \lambda }{4}-\frac{77}{8}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} &  \text{= }\lambda ^2+\frac{33 \lambda }{4}-\frac{77}{8} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

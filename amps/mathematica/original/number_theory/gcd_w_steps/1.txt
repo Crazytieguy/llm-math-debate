@@ -1,0 +1,59 @@
+Problem:
+Find the greatest common divisor of $\{241,-440,276\}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the greatest common divisor}: \\
+ \gcd (241,-440,276) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Any }\text{divisor }\text{of }\text{a }\text{negative }\text{number }\text{is }\text{also }\text{a }\text{divisor }\text{of }\text{its }\text{absolute }\text{value}: \\
+ \gcd (241,-440,276)=\gcd (241,440,276) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find }\text{the }\text{divisors }\text{of }\text{each }\text{integer }\text{and }\text{select }\text{the }\text{largest }\text{element }\text{they }\text{have }\text{in }\text{common}: \\
+ \text{The }\text{divisors }\text{of }\text{241 }\text{are}: \\
+\end{array}
+ \\
+ 1,241 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{divisors }\text{of }\text{440 }\text{are}: \\
+ 1,2,4,5,8,10,11,20,22,40,44,55,88,110,220,440 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{divisors }\text{of }\text{276 }\text{are}: \\
+ 1,2,3,4,6,12,23,46,69,92,138,276 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{The }\text{largest }\text{number }\text{common }\text{to }\text{all }\text{divisor }\text{lists }\text{is }1: \\
+ \text{divisors }\text{of }\text{241: }1,241 \\
+ \text{divisors }\text{of }\text{440: }1,2,4,5,8,10,11,20,22,40,44,55,88,110,220,440 \\
+ \text{divisors }\text{of }\text{276: }1,2,3,4,6,12,23,46,69,92,138,276 \\
+\end{array}
+ \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \gcd (241,-440,276)=1 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

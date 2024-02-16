@@ -1,0 +1,4 @@
+Problem:
+Find the inverse of the following function: $-\tan ^{-1}(7 x+6)$
+Answer:
+$\left\{\left\{x\to \fbox{$-\frac{\tan (y)}{7}-\frac{6}{7}\text{ if }-\frac{\pi }{2}<y<\frac{\pi }{2}$}\right\}\right\}$

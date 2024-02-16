@@ -1,0 +1,41 @@
+Problem:
+Compute the mean of ${8, -5}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the mean of the list}: \\
+ (8,-5)\text{} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{The }\text{mean }\text{of }\text{a }\text{list }\text{of }\text{numbers }\text{is }\text{given }\text{by}: \\
+ \frac{(\text{sum of elements})}{(\text{number of elements})} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ (\text{sum of elements}) \text{= }8-5: \\
+ \frac{8-5}{(\text{number of elements})} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Counting, }\text{we }\text{see }\text{that }\text{the }\text{list }\text{has }2 \text{elements}: \\
+ \frac{8-5}{2} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 8-5 \text{= }3: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \frac{3}{2}\approx 1.5 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

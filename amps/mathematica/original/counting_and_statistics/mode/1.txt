@@ -1,0 +1,4 @@
+Problem:
+Compute the mode of ${-\frac{5}{\sqrt{\pi }}, -\frac{17}{\sqrt{\pi }}, \frac{16}{\sqrt{\pi }}, \frac{6}{\sqrt{\pi }}, -\frac{3}{\sqrt{\pi }}, \frac{6}{\sqrt{\pi }}, -\frac{17}{\sqrt{\pi }}, \frac{9}{\sqrt{\pi }}, -\frac{3}{\sqrt{\pi }}, -\frac{3}{\sqrt{\pi }}, \frac{9}{\sqrt{\pi }}, -\frac{5}{\sqrt{\pi }}, -\frac{3}{\sqrt{\pi }}, \frac{9}{\sqrt{\pi }}, \frac{6}{\sqrt{\pi }}, -\frac{5}{\sqrt{\pi }}, -\frac{17}{\sqrt{\pi }}, \frac{6}{\sqrt{\pi }}, \frac{9}{\sqrt{\pi }}, \frac{6}{\sqrt{\pi }}, -\frac{17}{\sqrt{\pi }}, -\frac{17}{\sqrt{\pi }}, -\frac{17}{\sqrt{\pi }}, -\frac{17}{\sqrt{\pi }}, -\frac{5}{\sqrt{\pi }}, -\frac{5}{\sqrt{\pi }}, \frac{3}{\sqrt{\pi }}, \frac{6}{\sqrt{\pi }}, -\frac{5}{\sqrt{\pi }}}$.
+Answer:
+$\left\{-\frac{17}{\sqrt{\pi }}\right\}$

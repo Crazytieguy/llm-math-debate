@@ -1,0 +1,148 @@
+Find the characteristic polynomial of the matrix $M\text{ with respect to the variable }\lambda$ :
+
+$M=\left(
+    \begin{array}{ccc}
+0  & 6  & -1 \\
+        -4 & -9 & -5 \\
+        -7 & 1  & -2 \\
+      \end{array}
+    \right)$
+
+\hrule
+
+1. To find the characteristic polynomial of a matrix, subtract a variable multiplied by the identity matrix and take the determinant:
+
+$| M-\lambda  \mathbb{I}|$
+
+2. $\begin{array}{lll}
+| M-\lambda  \mathbb{I}| & = & \left|
+      \begin{array}{ccc}
+0  & 6  & -1 \\
+        -4 & -9 & -5 \\
+        -7 & 1  & -2 \\
+      \end{array}
+      -\lambda
+      \begin{array}{ccc}
+1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1 \\
+      \end{array}
+      \right|                               \\
+\text{                        }& = & \left|
+      \begin{array}{ccc}
+0  & 6  & -1 \\
+        -4 & -9 & -5 \\
+        -7 & 1  & -2 \\
+      \end{array}
+      -
+      \begin{array}{ccc}
+\lambda & 0       & 0       \\
+        0       & \lambda & 0       \\
+        0       & 0       & \lambda \\
+      \end{array}
+      \right|                               \\
+    \end{array}$
+
+= $\left|
+    \begin{array}{ccc}
+-\lambda & 6           & -1          \\
+      -4       & -\lambda -9 & -5          \\
+      -7       & 1           & -\lambda -2 \\
+    \end{array}
+    \right|$
+
+3. Row $3$ has as many or more ones than the others:
+
+= $\left|
+    \begin{array}{ccc}
+-\lambda & 6           & -1          \\
+      -4       & -\lambda -9 & -5          \\
+      -7       & 1           & -\lambda -2 \\
+    \end{array}
+    \right|$
+
+4. The determinant of the matrix $\left(
+    \begin{array}{ccc}
+-\lambda & 6           & -1          \\
+        -4       & -\lambda -9 & -5          \\
+        -7       & 1           & -\lambda -2 \\
+      \end{array}
+    \right)\text{ is given by }(-7)\, \left|
+    \begin{array}{cc}
+6           & -1 \\
+      -\lambda -9 & -5 \\
+    \end{array}
+    \right| +(-1)\, \left|
+    \begin{array}{cc}
+-\lambda & -1 \\
+      -4       & -5 \\
+    \end{array}
+    \right| +(-\lambda -2) \left|
+    \begin{array}{cc}
+-\lambda & 6           \\
+      -4       & -\lambda -9 \\
+    \end{array}
+    \right|$ :
+
+= $(-7)\, \left|
+    \begin{array}{cc}
+6           & -1 \\
+      -\lambda -9 & -5 \\
+    \end{array}
+    \right| +(-1)\, \left|
+    \begin{array}{cc}
+-\lambda & -1 \\
+      -4       & -5 \\
+    \end{array}
+    \right| +(-\lambda -2) \left|
+    \begin{array}{cc}
+-\lambda & 6           \\
+      -4       & -\lambda -9 \\
+    \end{array}
+    \right|$
+
+5. $(-7)\, \left|
+    \begin{array}{cc}
+6           & -1 \\
+      -\lambda -9 & -5 \\
+    \end{array}
+    \right| =(-7)\, (6 (-5)-(-1)\, -\lambda -9)=-7 (-\lambda -39)=-7 (-\lambda -39)$:
+
+= $-7 (-\lambda -39)+(-1)\, \left|
+    \begin{array}{cc}
+-\lambda & -1 \\
+      -4       & -5 \\
+    \end{array}
+    \right| +(-\lambda -2) \left|
+    \begin{array}{cc}
+-\lambda & 6           \\
+      -4       & -\lambda -9 \\
+    \end{array}
+    \right|$
+
+6. $(-1)\, \left|
+    \begin{array}{cc}
+-\lambda & -1 \\
+      -4       & -5 \\
+    \end{array}
+    \right| =(-1)\, (5 \lambda -(-1)\, (-4))=-(5 \lambda -4)=4-5 \lambda $:
+
+= $-7 (-\lambda -39)+4-5 \lambda +(-\lambda -2) \left|
+    \begin{array}{cc}
+-\lambda & 6           \\
+      -4       & -\lambda -9 \\
+    \end{array}
+    \right|$
+
+7. $(-\lambda -2) \left|
+    \begin{array}{cc}
+-\lambda & 6           \\
+      -4       & -\lambda -9 \\
+    \end{array}
+    \right| =(-\lambda -2) ((-\lambda ) (-\lambda -9)-6 (-4))=(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)=(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)$:
+
+= $-7 (-\lambda -39)+(4-5 \lambda )+(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)$
+
+8. $-7 (-\lambda -39)+(4-5 \lambda )+(-\lambda -2) \left(\lambda ^2+9 \lambda +24\right)\, =\, -\lambda ^3-11 \lambda ^2-40 \lambda +229:$
+
+Answer: = $-\lambda ^3-11 \lambda ^2-40 \lambda +229$

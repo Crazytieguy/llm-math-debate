@@ -1,0 +1,4 @@
+Problem:
+Find the modular multiplicative inverse $x$, or $x$ such that $1177x \equiv 1 \pmod{1519}$.
+Answer:
+$1177$

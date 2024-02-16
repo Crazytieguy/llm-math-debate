@@ -1,0 +1,29 @@
+Problem:
+Compute the median of ${-7, -1, -7, 0, 1, -1, 4, -1, -\frac{7}{\sqrt{2}}, -\frac{29}{3}, 2 e}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the median of the list}: \\
+ \left(-7,-1,-7,0,1,-1,4,-1,-\frac{7}{\sqrt{2}},-\frac{29}{3},2 e\right)\text{ = }\left(-7,-1,-7,0,1,-1,4,-1,-7\ 2^{-1/2},-\frac{29}{3},2 e\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{The }\text{list, }\text{sorted }\text{from }\text{smallest }\text{to }\text{largest, }\text{is}: \\
+ \left(-\frac{29}{3},-7,-7,-7\ 2^{-1/2},-1,-1,-1,0,1,4,2 e\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{median }\text{of }\text{the }\text{list }\left(-\frac{29}{3},-7,-7,-7 2^{-1/2},-1,-1,-1,0,1,4,2 e\right) \text{is }\text{the }\text{element }\text{in }\text{the }\text{middle, }\text{which }\text{is}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \fbox{$-1$} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

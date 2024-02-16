@@ -1,0 +1,118 @@
+Solve the following system:
+
+$\{
+        \begin{array}{l}
+-9 \sqrt{3} y-\sqrt{3} x+4 \sqrt{3}=0  \\
+            -11 \sqrt{3} y+4 \sqrt{3} x-\sqrt{3}=0 \\
+        \end{array}$
+
+\hrule
+
+1. Express the system in standard form:
+
+$\{
+        \begin{array}{l}
+-9 \sqrt{3} y-\sqrt{3} x=-4 \sqrt{3} \\
+            -11 \sqrt{3} y+4 \sqrt{3} x=\sqrt{3} \\
+        \end{array}$
+
+2. Express the system in matrix form:
+
+$\left(
+        \begin{array}{cc}
+-\sqrt{3}  & -9 \sqrt{3}  \\
+                4 \sqrt{3} & -11 \sqrt{3} \\
+            \end{array}
+        \right)\left(
+        \begin{array}{c}
+x \\
+                y \\
+            \end{array}
+        \right) = \left(
+        \begin{array}{c}
+-4 \sqrt{3} \\
+                \sqrt{3}    \\
+            \end{array}
+        \right)$
+
+3. Solve the system with Cramer's rule:
+
+$x=\frac{
+            \begin{array}{|c|c|}
+-4 \sqrt{3} & -9 \sqrt{3}  \\
+                \sqrt{3}    & -11 \sqrt{3} \\
+            \end{array}
+        }{
+            \begin{array}{|c|c|}
+-\sqrt{3}  & -9 \sqrt{3}  \\
+                4 \sqrt{3} & -11 \sqrt{3} \\
+            \end{array}
+        }\text{ and }y=\frac{
+            \begin{array}{|c|c|}
+-\sqrt{3}  & -4 \sqrt{3} \\
+                4 \sqrt{3} & \sqrt{3}    \\
+            \end{array}
+        }{
+            \begin{array}{|c|c|}
+-\sqrt{3}  & -9 \sqrt{3}  \\
+                4 \sqrt{3} & -11 \sqrt{3} \\
+            \end{array}
+        }$
+
+4. Evaluate the determinant
+
+$\begin{array}{|c|c|}
+-\sqrt{3}  & -9 \sqrt{3}  \\
+            4 \sqrt{3} & -11 \sqrt{3} \\
+        \end{array}
+        =141:$
+
+$x=\frac{
+            \begin{array}{|c|c|}
+-4 \sqrt{3} & -9 \sqrt{3}  \\
+                \sqrt{3}    & -11 \sqrt{3} \\
+            \end{array}
+        }{141}\text{ and }y=\frac{
+            \begin{array}{|c|c|}
+-\sqrt{3}  & -4 \sqrt{3} \\
+                4 \sqrt{3} & \sqrt{3}    \\
+            \end{array}
+        }{141}$
+
+5. Evaluate the determinant
+
+$\begin{array}{|c|c|}
+-4 \sqrt{3} & -9 \sqrt{3}  \\
+            \sqrt{3}    & -11 \sqrt{3} \\
+        \end{array}
+        =159:$
+
+$x=\frac{159}{141}\text{ and }y=\frac{
+            \begin{array}{|c|c|}
+-\sqrt{3}  & -4 \sqrt{3} \\
+                4 \sqrt{3} & \sqrt{3}    \\
+            \end{array}
+        }{141}$
+
+6. The gcd of 159 and 141 is $3,\text{ so }\frac{159}{141}=\frac{53\times 3}{47\times 3}=\frac{53}{47}$:
+
+$x=\frac{53}{47}\text{ and }y=\frac{
+            \begin{array}{|c|c|}
+-\sqrt{3}  & -4 \sqrt{3} \\
+                4 \sqrt{3} & \sqrt{3}    \\
+            \end{array}
+        }{141}$
+
+7. Evaluate the determinant
+
+$\begin{array}{|c|c|}
+-\sqrt{3}  & -4 \sqrt{3} \\
+            4 \sqrt{3} & \sqrt{3}    \\
+        \end{array}
+        =45:$
+
+$x=\frac{53}{47}\text{ and }y=\frac{45}{141}$
+
+8. The gcd of 45 and 141 is $3,\text{ so }\frac{45}{141}=\frac{15\times 3}{47\times 3}=\frac{15}{47}$:
+
+Answer: $x=\frac{53}{47}\text{ and }y=\frac{15}{47}$

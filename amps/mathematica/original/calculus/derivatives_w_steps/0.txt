@@ -1,0 +1,96 @@
+Problem:
+Differentiate the following function:
+$\sqrt[3]{6-\frac{x}{2}}+e^{-2 x-3}$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Possible derivation:} \\
+ \frac{d}{dx}\left(e^{-3-2 x}+\sqrt[3]{6-\frac{x}{2}}\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term:} \\
+  \text{= }\frac{d}{dx}\left(e^{-3-2 x}\right)+\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Using }\text{the }\text{chain }\text{rule, }\frac{d}{dx}\left(e^{-2 x-3}\right)=\frac{de^u}{du} \frac{du}{dx}, \text{where }u=-2 x-3 \text{and }\frac{d\text{}}{du}\left(e^u\right)=e^u: \\
+  \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)+\fbox{$e^{-3-2 x} \left(\frac{d}{dx}(-3-2 x)\right)$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term }\text{and }\text{factor }\text{out }\text{constants:} \\
+  \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)+\fbox{$\frac{d}{dx}(-3)-2 \left(\frac{d}{dx}(x)\right)$} e^{-3-2 x} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{derivative }\text{of }-3 \text{is }\text{zero}: \\
+  \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)+e^{-3-2 x} \left(-2 \left(\frac{d}{dx}(x)\right)+\fbox{$0$}\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+  \text{= }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Using }\text{the }\text{chain }\text{rule, }\frac{d}{dx}\left(\sqrt[3]{6-\frac{x}{2}}\right)=\frac{d\sqrt[3]{u}}{du} \frac{du}{dx}, \text{where }u=6-\frac{x}{2} \text{and }\frac{d\text{}}{du}\left(\sqrt[3]{u}\right)=\frac{1}{3 u^{2/3}}: \\
+  \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)+\fbox{$\frac{\frac{d}{dx}\left(6-\frac{x}{2}\right)}{3 \left(6-\frac{x}{2}\right)^{2/3}}$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Differentiate }\text{the }\text{sum }\text{term }\text{by }\text{term }\text{and }\text{factor }\text{out }\text{constants:} \\
+  \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)+\fbox{$\frac{d}{dx}(6)-\frac{1}{2} \left(\frac{d}{dx}(x)\right)$} \frac{1}{3 \left(6-\frac{x}{2}\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{derivative }\text{of }6 \text{is }\text{zero}: \\
+  \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)+\frac{-\frac{1}{2} \left(\frac{d}{dx}(x)\right)+\fbox{$0$}}{3 \left(6-\frac{x}{2}\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+  \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)-\frac{\frac{d}{dx}(x)}{6 \left(6-\frac{x}{2}\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{derivative }\text{of }x \text{is }1: \\
+  \text{= }-2 e^{-3-2 x} \left(\frac{d}{dx}(x)\right)-\fbox{$1$} \frac{1}{6 \left(6-\frac{x}{2}\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{derivative }\text{of }x \text{is }1: \\
+  \text{= }-\frac{1}{6 \left(6-\frac{x}{2}\right)^{2/3}}-\fbox{$1$} 2 e^{-3-2 x} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+  \text{= }-2 e^{-3-2 x}-\frac{1}{6 \left(6-\frac{x}{2}\right)^{2/3}} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify }\text{the }\text{expression}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} &  \text{= }-2 e^{-3-2 x}-\frac{1}{6 \sqrt[3]{6-\frac{x}{2}}^2} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

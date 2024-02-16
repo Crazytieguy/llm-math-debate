@@ -1,0 +1,24 @@
+Problem:
+Find the angle between the following two vectors:
+$\left(
+\begin{array}{c}
+ -1 \\
+ -1 \\
+ -1 \\
+ 1 \\
+ 0 \\
+ -1 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ 0 \\
+ -1 \\
+ -1 \\
+ 0 \\
+ -1 \\
+ -1 \\
+\end{array}
+\right)$.
+Answer:
+$\cos ^{-1}\left(\frac{3}{2 \sqrt{5}}\right)$

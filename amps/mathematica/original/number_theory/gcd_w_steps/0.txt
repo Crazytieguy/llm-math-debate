@@ -1,0 +1,52 @@
+Problem:
+Find the greatest common divisor of $\{-783,-198\}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the greatest common divisor}: \\
+ \gcd (-783,-198) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Any }\text{divisor }\text{of }\text{a }\text{negative }\text{number }\text{is }\text{also }\text{a }\text{divisor }\text{of }\text{its }\text{absolute }\text{value}: \\
+ \gcd (-783,-198)=\gcd (783,198) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find }\text{the }\text{divisors }\text{of }\text{each }\text{integer }\text{and }\text{select }\text{the }\text{largest }\text{element }\text{they }\text{have }\text{in }\text{common}: \\
+ \text{The }\text{divisors }\text{of }\text{783 }\text{are}: \\
+\end{array}
+ \\
+ 1,3,9,27,29,87,261,783 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{divisors }\text{of }\text{198 }\text{are}: \\
+ 1,2,3,6,9,11,18,22,33,66,99,198 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{The }\text{largest }\text{number }\text{common }\text{to }\text{both }\text{divisor }\text{lists }\text{is }9: \\
+ \text{divisors }\text{of }\text{783: }1,3,9,27,29,87,261,783 \\
+ \text{divisors }\text{of }\text{198: }1,2,3,6,9,11,18,22,33,66,99,198 \\
+\end{array}
+ \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \gcd (-783,-198)=9 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,29 @@
+Problem:
+Compute the Euler totient function $\phi(2)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Compute the Euler phi function for }2: \\
+ \phi (2) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Apply }\text{the }\text{the }\text{Euler }\text{phi }\text{function }\text{definition }\text{to }2: \\
+ \phi (2) \text{is }\text{the }\text{number }\text{of }\text{elements }\text{of }\{1,2\} \text{that }\text{are }\text{coprime }\text{to }2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 2 \text{is }\text{prime} \text{Since }\text{the }\text{divisors }\text{of }\text{a }\text{prime }\text{number }\text{are }\text{1 }\text{and }\text{itself, }\text{all }\text{positive }\text{integers }\text{less }\text{than }2 \text{are }\text{coprime }\text{to }2: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \phi (2)=1 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

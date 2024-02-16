@@ -1,0 +1,4 @@
+Problem:
+Find $x+y$ where $x=-\frac{38}{5}-\frac{31 i}{5}$ and $y=-4-\frac{31 i}{5}$
+Answer:
+$-\frac{58}{5}-\frac{62 i}{5}$

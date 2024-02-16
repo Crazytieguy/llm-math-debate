@@ -1,0 +1,28 @@
+Find the greatest common divisor:
+
+$\gcd (-783,-198)$
+
+\hrule
+
+1. Any divisor of a negative number is also a divisor of its absolute value:
+
+$\gcd (-783,-198)=\gcd (783,198)$
+
+2. $\begin{array}{l}
+\text{Find the divisors of each integer and select the largest element they have in common}: \\
+\text{ The divisors of 783 are}: \\
+\end{array}$
+
+$1,3,9,27,29,87,261,783$
+
+3. The divisors of 198 are:
+
+$1,2,3,6,9,11,18,22,33,66,99,198$
+
+4. $\begin{array}{l}
+\text{The largest number common to both divisor lists is }9: \\
+\text{ divisors of 783: }1,3,9,27,29,87,261,783 \\
+\text{ divisors of 198: }1,2,3,6,9,11,18,22,33,66,99,198 \\
+\end{array}$
+
+Answer: $\gcd (-783,-198)=9$

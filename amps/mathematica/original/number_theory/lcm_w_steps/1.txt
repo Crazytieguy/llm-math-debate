@@ -1,0 +1,54 @@
+Problem:
+Find the least common multiple of $\{-72,23\}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the least common multiple}: \\
+ \text{lcm}(-72,23) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Any }\text{multiple }\text{of }\text{a }\text{negative }\text{number }\text{is }\text{also }\text{a }\text{multiple }\text{of }\text{its }\text{absolute }\text{value}: \\
+ \text{lcm}(-72,23)=\text{lcm}(72,23) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find }\text{the }\text{prime }\text{factorization }\text{of }\text{each }\text{integer}: \\
+ \text{The }\text{prime }\text{factorization }\text{of }\text{72 }\text{is}: \\
+\end{array}
+ \\
+ 72=2^3\times 3^2 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{The }\text{prime }\text{factorization }\text{of }\text{23 }\text{is}: \\
+ 23=23^1 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the largest power of each prime factor} \\
+ \text{The }\text{largest }\text{power }\text{of }2 \text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }2^3 \\
+ \text{The }\text{largest }\text{power }\text{of }3 \text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }3^2 \\
+ \text{The }\text{largest }\text{power }\text{of }\text{23 }\text{that }\text{appears }\text{in }\text{the }\text{prime }\text{factorizations }\text{is }23^1 \\
+ \text{Therefore }\text{lcm}(72,23)=\left(2^3\times 3^2\times 23^1=1656\right): \\
+\end{array}
+ \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \text{lcm}(-72,23)=1656 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,60 @@
+Problem:
+Compute the (pseudo)inverse of
+$\left(
+\begin{array}{cc}
+ -1 & 4 \\
+ 2 & -5 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the inverse}: \\
+ \left(
+\begin{array}{cc}
+ -1 & 4 \\
+ 2 & -5 \\
+\end{array}
+\right)^{-1} \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Using }\text{a }\text{formula }\text{for }\text{the }\text{inverse }\text{of }\text{a }\text{2$\times $2 }\text{matrix, }\left(
+\begin{array}{cc}
+ -1 & 4 \\
+ 2 & -5 \\
+\end{array}
+\right)^{-1}=\frac{1}{-(-5)-2\times 4}\left(
+\begin{array}{cc}
+ -5 & -4 \\
+ -2 & -1 \\
+\end{array}
+\right): \\
+ \frac{1}{-(-5)-2\times 4}\left(
+\begin{array}{cc}
+ -5 & -4 \\
+ -2 & -1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Simplify: }\frac{1}{-(-5)-2\times 4}=-\frac{1}{3}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & -\frac{1}{3}\left(
+\begin{array}{cc}
+ -5 & -4 \\
+ -2 & -1 \\
+\end{array}
+\right) \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

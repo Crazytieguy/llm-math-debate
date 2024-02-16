@@ -1,0 +1,41 @@
+Problem:
+Compute the range of ${-5, \frac{3}{2}, -4, -\frac{279}{32}, -\frac{185}{64}, -4, -\frac{271}{32}, -\frac{113}{16}, 7, 5, -8, 9, -4, -3, 1}$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the range of the list}: \\
+ \left(-5,\frac{3}{2},-4,-\frac{279}{32},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,9,-4,-3,1\right)\text{ = }\left(-5,\frac{3}{2},-4,-\frac{279}{32},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,9,-4,-3,1\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{The }\text{range }\text{of }\text{a }\text{list }\text{is }\text{given }\text{by}: \\
+ (\text{largest element})-(\text{smallest element}) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(-5,\frac{3}{2},-4,-\frac{279}{32},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,\fbox{$9$},-4,-3,1\right)  \text{We }\text{see }\text{that }\text{the }\text{largest }\text{element }\text{is }9: \\
+ 9-(\text{smallest element}) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(-5,\frac{3}{2},-4,\fbox{$-\frac{279}{32}$},-\frac{185}{64},-4,-\frac{271}{32},-\frac{113}{16},7,5,-8,9,-4,-3,1\right)  \text{We }\text{see }\text{that }\text{the }\text{smallest }\text{element }\text{is }-\frac{279}{32}: \\
+ -\frac{-279}{32}+9 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ -\frac{-279}{32}+9=\frac{567}{32}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \frac{567}{32} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

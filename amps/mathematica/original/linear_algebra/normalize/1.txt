@@ -1,0 +1,17 @@
+Problem:
+Normalize the following vector:
+$\left(
+\begin{array}{c}
+ 2 \\
+ -1 \\
+ -1 \\
+\end{array}
+\right)$.
+Answer:
+$\left(
+\begin{array}{c}
+ \sqrt{\frac{2}{3}} \\
+ -\frac{1}{\sqrt{6}} \\
+ -\frac{1}{\sqrt{6}} \\
+\end{array}
+\right)$

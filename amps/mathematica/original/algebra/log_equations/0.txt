@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $\frac{\log (x+20)}{\log (7)}+\frac{\log (22-19 x)}{\log (7)}=\frac{\log (10 x+10)}{\log (7)}$
+Answer:
+$\left\{\left\{x\to \frac{1}{19} \left(-184-\sqrt{42026}\right)\right\},\left\{x\to \frac{1}{19} \left(-184+\sqrt{42026}\right)\right\}\right\}$

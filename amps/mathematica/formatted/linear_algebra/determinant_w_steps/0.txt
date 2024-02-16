@@ -1,0 +1,30 @@
+Find the determinant:
+
+$\left| 
+\begin{array}{cc}
+-2 & -5 \\
+ 2 & -4 \\
+\end{array}
+\right|$
+
+\hrule
+
+1. Multiply along the diagonals and subtract:
+
+$(-2)\, (-4)-(-5)\, \times \, 2$
+
+2. $-2 (-4) = 8:$
+
+$8--5\times 2$
+
+3. $-(-5) = 5:$
+
+$8+5\times 2$
+
+4. $5\times 2 = 10:$
+
+$8+10$
+
+5. $8+10=18:$
+
+Answer: $18$

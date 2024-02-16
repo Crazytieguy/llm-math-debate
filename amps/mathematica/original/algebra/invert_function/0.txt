@@ -1,0 +1,4 @@
+Problem:
+Find the inverse of the following function: $\sin ^{-1}\left(\frac{32 x}{5}+\frac{42}{5}\right)$
+Answer:
+$\left\{\left\{x\to \fbox{$\frac{1}{32} (5 \sin (y)-42)\text{ if }-\frac{\pi }{2}\leq y\leq \frac{\pi }{2}$}\right\}\right\}$

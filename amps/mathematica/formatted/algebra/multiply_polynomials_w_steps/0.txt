@@ -1,0 +1,9 @@
+Expand the following:
+
+$\left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right) \left(\frac{6 x}{e}+\frac{3}{e}\right)$
+
+\hrule
+
+1. $\left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right) \left(\frac{6 x}{e}+\frac{3}{e}\right)=\frac{3 \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}+\frac{6 x \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}$:
+
+Answer: $\frac{3 \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}+\frac{6 x \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}$

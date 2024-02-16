@@ -1,0 +1,4 @@
+Problem:
+Convert $1217$ to base $28$.
+Answer:
+$\text{1fd}_{28}$

@@ -1,0 +1,16 @@
+Problem:
+A polygon with $6$ vertices has the coordinates $\left(
+\begin{array}{cc}
+ 0.111 & 0.452 \\
+ 0.2 & 0.965 \\
+ 0.276 & 0.855 \\
+ 0.338 & 0.393 \\
+ 0.4 & 0.591 \\
+ 0.715 & 0.659 \\
+\end{array}
+\right)$. Estimate the polygon's interior angles (in radians), area, and perimeter. Also, classify the polygon as 'Simple' or 'Convex'.
+Answer:
+Perimeter: $2.16$ 
+Type: Simple 
+Area: $0.14$ 
+Angles: $\{0.73,5.46,0.66,1.15,0.43,4.13\}$

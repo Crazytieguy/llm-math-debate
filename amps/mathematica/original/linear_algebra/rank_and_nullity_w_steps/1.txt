@@ -1,0 +1,84 @@
+Problem:
+Compute the rank of
+$\left(
+\begin{array}{cc}
+ -9 & -2 \\
+ 0 & 6 \\
+ 6 & 4 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the rank of the matrix}: \\
+ M=\left(
+\begin{array}{cc}
+ -9 & -2 \\
+ 0 & 6 \\
+ 6 & 4 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Reduce }\text{matrix }M \text{to }\text{row }\text{echelon }\text{form}: \\
+ \left(
+\begin{array}{cc}
+ -9 & -2 \\
+ 0 & 6 \\
+ 6 & 4 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{2}{3}\, \times \, \text{(row }1) \text{to }\text{row }3: \\
+ \left(
+\begin{array}{cc}
+ -9 & -2 \\
+ 0 & 6 \\
+ 0 & \frac{8}{3} \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{4}{9}\, \times \, \text{(row }2) \text{from }\text{row }3: \\
+ \left(
+\begin{array}{cc}
+ -9 & -2 \\
+ 0 & 6 \\
+ 0 & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{There }\text{are }2 \text{nonzero }\text{rows }\text{in }\text{the }\text{row }\text{echelon }\text{form }\text{of }\text{the }\text{matrix, }\text{so }\text{the }\text{rank }\text{is }2: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \text{rank}\left(
+\begin{array}{cc}
+ -9 & -2 \\
+ 0 & 6 \\
+ 6 & 4 \\
+\end{array}
+\right) \text{= }\text{rank}\left(
+\begin{array}{cc}
+ -9 & -2 \\
+ 0 & 6 \\
+ 0 & 0 \\
+\end{array}
+\right)=2 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

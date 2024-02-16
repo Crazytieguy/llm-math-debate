@@ -1,0 +1,45 @@
+Find the geometric mean of the list:
+
+$(3,729,729,5)$
+
+\hrule
+
+1. The geometric mean of a list of numbers is given by:
+
+$(\text{product of elements})^{\frac{1}{(\text{number of elements})}}$
+
+2. $(\text{product of elements}) = 3\text{ $\times $ 729 $\times $ 729 $\times $ }5:$
+
+$\sqrt[(\text{number of elements})]{(3\text{ $\times $ 729 $\times $ 729 $\times $ }5)}$
+
+3. Counting, we see that the list has $4$ elements:
+
+$(3\text{ $\times $ 729 $\times $ 729 $\times $ }5)^{\frac{1}{4}} = \sqrt[4]{3\text{ $\times $ 729 $\times $ 729 $\times $ }5}$
+
+4. $3\text{ $\times $ 729 $\times $ 729 $\times $ }5=7971615:$
+
+$\sqrt[4]{7971615}$
+
+5. $\sqrt[4]{7971615} = \sqrt[4]{3^{13}\times 5} = 3^3 \sqrt[4]{3} \sqrt[4]{5}$:
+
+$3^3 \sqrt[4]{3} \sqrt[4]{5}$
+
+6. $3^3=3\times 3^2:$
+
+$3\times 3^2 \sqrt[4]{3} \sqrt[4]{5}$
+
+7. $3^2=9:$
+
+$3\times 9 \sqrt[4]{3} \sqrt[4]{5}$
+
+8. $3\times 9 = 27:$
+
+$27 \sqrt[4]{3} \sqrt[4]{5}$
+
+9. $\sqrt[4]{3} \sqrt[4]{5}=\sqrt[4]{3\times 5}$:
+
+$27 \sqrt[4]{3\times 5}$
+
+10. $3\times 5 = 15:$
+
+Answer: $27 \sqrt[4]{15}$

@@ -1,0 +1,4 @@
+Problem:
+Compute the geometric mean of ${64, 49, -4}$.
+Answer:
+$4 \sqrt[3]{-1} 14^{2/3}$

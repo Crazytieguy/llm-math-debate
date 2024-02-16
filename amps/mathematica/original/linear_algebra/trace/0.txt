@@ -1,0 +1,14 @@
+Problem:
+Compute the trace of
+$\left(
+\begin{array}{cccccc}
+ 4 & 1 & -\frac{4}{3} & -5 & 1 & \frac{4}{3} \\
+ \frac{19}{3} & -\frac{28}{3} & -\frac{25}{3} & \frac{23}{3} & 9 & 2 \\
+ 3 & -7 & -\frac{19}{3} & \frac{8}{3} & \frac{7}{3} & \frac{29}{3} \\
+ -\frac{13}{3} & \frac{1}{3} & \frac{13}{3} & \frac{22}{3} & -\frac{2}{3} & \frac{13}{3} \\
+ -9 & -\frac{10}{3} & \frac{28}{3} & -1 & 6 & -1 \\
+ \frac{7}{3} & -\frac{2}{3} & 1 & -\frac{7}{3} & -\frac{1}{3} & -\frac{8}{3} \\
+\end{array}
+\right)$.
+Answer:
+$-1$

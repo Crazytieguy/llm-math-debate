@@ -1,0 +1,46 @@
+Problem:
+Compute the rank of
+$\left(
+\begin{array}{c}
+ -5 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the rank of the matrix}: \\
+ M=\left(
+\begin{array}{c}
+ -5 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{As }\text{each }\text{row }\text{of }\text{matrix }M \text{has }\text{only }\text{zeroes }\text{to }\text{the }\text{left }\text{of }\text{the }\text{main }\text{diagonal, }\text{it }\text{is }\text{in }\text{row }\text{echelon }\text{form}: \\
+ \left(
+\begin{array}{c}
+ -5 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{There }\text{is }1 \text{nonzero }\text{row }\text{in }\text{the }\text{row }\text{echelon }\text{matrix, }\text{so }\text{the }\text{rank }\text{is }1: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \text{rank}\left(
+\begin{array}{c}
+ -5 \\
+\end{array}
+\right)=1 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,4 @@
+Problem:
+Are the following numbers relatively prime (coprime)? $\{-312,73,-200\}$.
+Answer:
+$\text{False}$

@@ -1,0 +1,124 @@
+Problem:
+Find the eigenvalues of the following matrix:
+$\left(
+\begin{array}{cc}
+ \frac{42}{5} & -4 \\
+ -\frac{9}{5} & 1 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find all the eigenvalues of the matrix }M: \\
+ M=\left(
+\begin{array}{cc}
+ \frac{42}{5} & -4 \\
+ -\frac{9}{5} & 1 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Find }\lambda \in \mathbb{C} \text{such }\text{that }M v=\lambda  v \text{for }\text{some }\text{nonzero }\text{vector }v: \\
+ M v=\lambda  v \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Rewrite }\text{the }\text{equation }M v=\lambda  v \text{as }(M-\mathbb{I} \lambda ) v=0: \\
+ (M-\mathbb{I} \lambda ) v=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Find }\text{all }\lambda  \text{such }\text{that }| M-\mathbb{I} \lambda | =0: \\
+ | M-\mathbb{I} \lambda | =0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 
+\begin{array}{lll}
+ M-\mathbb{I} \lambda  & = & \fbox{$\left(
+\begin{array}{cc}
+ \frac{42}{5} & -4 \\
+ -\frac{9}{5} & 1 \\
+\end{array}
+\right)$}-\fbox{$\left(
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right)$} \lambda  \\
+ \text{} & = & \left(
+\begin{array}{cc}
+ \frac{42}{5}-\lambda  & -4 \\
+ -\frac{9}{5} & 1-\lambda  \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ \left| 
+\begin{array}{cc}
+ \frac{42}{5}-\lambda  & -4 \\
+ -\frac{9}{5} & 1-\lambda  \\
+\end{array}
+\right| =0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left| 
+\begin{array}{cc}
+ \frac{42}{5}-\lambda  & -4 \\
+ -\frac{9}{5} & 1-\lambda  \\
+\end{array}
+\right| =\lambda ^2-\frac{47 \lambda }{5}+\frac{6}{5}: \\
+ \lambda ^2-\frac{47 \lambda }{5}+\frac{6}{5}=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{6}{5} \text{from }\text{both }\text{sides}: \\
+ \lambda ^2-\frac{47 \lambda }{5}=-\frac{6}{5} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{2209}{100} \text{to }\text{both }\text{sides}: \\
+ \lambda ^2-\frac{47 \lambda }{5}+\frac{2209}{100}=\frac{2089}{100} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Write }\text{the }\text{left }\text{hand }\text{side }\text{as }\text{a }\text{square}: \\
+ \left(\lambda -\frac{47}{10}\right)^2=\frac{2089}{100} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Take }\text{the }\text{square }\text{root }\text{of }\text{both }\text{sides}: \\
+ \lambda -\frac{47}{10}=\frac{\sqrt{2089}}{10}\text{ or }\lambda -\frac{47}{10}=-\frac{\sqrt{2089}}{10} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{47}{10} \text{to }\text{both }\text{sides}: \\
+ \fbox{$\lambda =\frac{47}{10}+\frac{\sqrt{2089}}{10}$}\text{ or }\lambda -\frac{47}{10}=-\frac{\sqrt{2089}}{10} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }\frac{47}{10} \text{to }\text{both }\text{sides}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \lambda =\frac{47}{10}+\frac{\sqrt{2089}}{10}\text{ or }\fbox{$\lambda =\frac{47}{10}-\frac{\sqrt{2089}}{10}$} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

@@ -1,0 +1,4 @@
+Problem:
+Find all real solutions to $5^{-\frac{5 x}{2}-\frac{11}{2}}5^{-6 x-\frac{3}{2}} = 25^{21 x+4}$
+Answer:
+$\left\{\left\{x\to -\frac{30}{101}\right\}\right\}$

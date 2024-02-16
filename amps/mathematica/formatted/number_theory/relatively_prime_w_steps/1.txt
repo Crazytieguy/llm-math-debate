@@ -1,0 +1,13 @@
+Determine if the following numbers are coprime to each other:
+
+$906\text{ and }877$
+
+\hrule
+
+1. By definition, these numbers are coprime if their gcd is $1:$
+
+$\gcd (906,877)=1$
+
+2. Since these numbers have a gcd equal to $1,$ they are coprime:
+
+Answer: 906 and $877$ are coprime

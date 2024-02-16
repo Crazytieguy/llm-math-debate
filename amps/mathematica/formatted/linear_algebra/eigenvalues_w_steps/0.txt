@@ -1,0 +1,82 @@
+Find all the eigenvalues of the matrix $M:$
+
+$M=\left(
+\begin{array}{cc}
+\frac{42}{5} & -4 \\
+ -\frac{9}{5} & 1 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. Find $\lambda \in \mathbb{C}\text{ such that }M v=\lambda  v\text{ for some nonzero vector }v:$
+
+$M v=\lambda  v$
+
+2. Rewrite the equation $M v=\lambda  v\text{ as }(M-\mathbb{I} \lambda ) v=0:$
+
+$(M-\mathbb{I} \lambda ) v=0$
+
+3. Find all $\lambda\text{  such that }| M-\mathbb{I} \lambda | =0:$
+
+$| M-\mathbb{I} \lambda | =0$
+
+4. $\begin{array}{lll}
+M-\mathbb{I} \lambda  & = & \left(
+\begin{array}{cc}
+\frac{42}{5} & -4 \\
+ -\frac{9}{5} & 1 \\
+\end{array}
+\right)-\left(
+\begin{array}{cc}
+1 & 0 \\
+ 0 & 1 \\
+\end{array}
+\right) \lambda  \\
+\text{  }& = & \left(
+\begin{array}{cc}
+\frac{42}{5}-\lambda  & -4 \\
+ -\frac{9}{5} & 1-\lambda  \\
+\end{array}
+\right) \\
+\end{array}$
+
+$\left| 
+\begin{array}{cc}
+\frac{42}{5}-\lambda  & -4 \\
+ -\frac{9}{5} & 1-\lambda  \\
+\end{array}
+\right| =0$
+
+5. $\left| 
+\begin{array}{cc}
+\frac{42}{5}-\lambda  & -4 \\
+ -\frac{9}{5} & 1-\lambda  \\
+\end{array}
+\right| =\lambda ^2-\frac{47 \lambda }{5}+\frac{6}{5}$:
+
+$\lambda ^2-\frac{47 \lambda }{5}+\frac{6}{5}=0$
+
+6. Subtract $\frac{6}{5}$ from both sides:
+
+$\lambda ^2-\frac{47 \lambda }{5}=-\frac{6}{5}$
+
+7. Add $\frac{2209}{100}$ to both sides:
+
+$\lambda ^2-\frac{47 \lambda }{5}+\frac{2209}{100}=\frac{2089}{100}$
+
+8. Write the left hand side as a square:
+
+$\left(\lambda -\frac{47}{10}\right)^2=\frac{2089}{100}$
+
+9. Take the square root of both sides:
+
+$\lambda -\frac{47}{10}=\frac{\sqrt{2089}}{10}\text{ or }\lambda -\frac{47}{10}=-\frac{\sqrt{2089}}{10}$
+
+10. Add $\frac{47}{10}$ to both sides:
+
+$\lambda =\frac{47}{10}+\frac{\sqrt{2089}}{10}\text{ or }\lambda -\frac{47}{10}=-\frac{\sqrt{2089}}{10}$
+
+11. Add $\frac{47}{10}$ to both sides:
+
+Answer: $\lambda =\frac{47}{10}+\frac{\sqrt{2089}}{10}\text{ or }\lambda =\frac{47}{10}-\frac{\sqrt{2089}}{10}$

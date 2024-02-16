@@ -1,0 +1,5 @@
+Problem:
+Solve for $y=f(x)$ given the following parametric equations:
+$y(t)=2 \left(56 t^2+420 t+789\right), x(t)=16 t^2+120 t+225$
+Answer:
+$y=7 x+3$

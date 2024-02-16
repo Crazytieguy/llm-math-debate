@@ -1,0 +1,24 @@
+Problem:
+Add the two matrices
+$\left(
+\begin{array}{cc}
+ 6 & -2 \\
+ 8 & 2 \\
+ -7 & -10 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{cc}
+ 7 & -8 \\
+ 8 & -2 \\
+ -7 & -7 \\
+\end{array}
+\right)$
+Answer:
+$\left(
+\begin{array}{cc}
+ 13 & -10 \\
+ 16 & 0 \\
+ -14 & -17 \\
+\end{array}
+\right)$

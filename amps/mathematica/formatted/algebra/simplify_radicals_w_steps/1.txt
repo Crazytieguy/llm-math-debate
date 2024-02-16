@@ -1,0 +1,21 @@
+Simplify the following:
+
+$\sqrt{163}-\sqrt{192}$
+
+\hrule
+
+1. $\sqrt{192} = \sqrt{2^6\times 3} = 2^3 \sqrt{3}$:
+
+$\sqrt{163}-2^3 \sqrt{3}$
+
+2. $2^3=2\times 2^2:$
+
+$\sqrt{163}-2\times 2^2 \sqrt{3}$
+
+3. $2^2=4:$
+
+$\sqrt{163}-2\times 4 \sqrt{3}$
+
+4. $2\times 4 = 8:$
+
+Answer: $\sqrt{163}-8 \sqrt{3}$

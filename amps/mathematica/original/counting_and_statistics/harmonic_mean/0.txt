@@ -1,0 +1,4 @@
+Problem:
+Compute the harmonic mean of ${19, \frac{13}{3}, \frac{47}{3}, 12}$.
+Answer:
+$\frac{557232}{59981}$

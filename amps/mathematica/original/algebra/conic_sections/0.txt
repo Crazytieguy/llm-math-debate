@@ -1,0 +1,14 @@
+Problem:
+Given the equation $5 x^2-x+10 y^2-7 y-9=0$, rewrite and classify the conic and state relevant properties.
+Answer:
+Classification: Ellipse
+Equation: $5 \left(x-\frac{1}{10}\right)^2+10 \left(y-\frac{7}{20}\right)^2=\frac{411}{40}$
+Foci: $\left(
+\begin{array}{cc}
+ \frac{1}{20} \left(2-\sqrt{411}\right) & \frac{7}{20} \\
+ \frac{1}{20} \left(2+\sqrt{411}\right) & \frac{7}{20} \\
+\end{array}
+\right)$
+Eccentricity: $\frac{1}{\sqrt{2}}$
+Center: $\left\{\frac{1}{2} \left(\frac{1}{20} \left(2-\sqrt{411}\right)+\frac{1}{20} \left(2+\sqrt{411}\right)\right),\frac{7}{20}\right\}$
+Area Enclosed: $\frac{411 \pi }{200 \sqrt{2}}$

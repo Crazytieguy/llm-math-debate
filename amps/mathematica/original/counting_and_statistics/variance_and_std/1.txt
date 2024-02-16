@@ -1,0 +1,4 @@
+Problem:
+Compute the sample variance of ${15, 3, -5}$.
+Answer:
+$\frac{304}{3}$

@@ -1,0 +1,4 @@
+Problem:
+Find the distance from the point ${-3, \frac{13}{5}}$ to the line $-\frac{21 x}{5}-\frac{24 y}{5}+\frac{1}{5}=0$.
+Answer:
+$\frac{8}{15 \sqrt{113}}$

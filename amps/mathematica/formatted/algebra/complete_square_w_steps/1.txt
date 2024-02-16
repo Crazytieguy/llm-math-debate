@@ -1,0 +1,51 @@
+Complete the square:
+
+$-10 y^2+10 y+4 x^2-3 x+4=0$
+
+\hrule
+
+1. Subtract $4$ from both sides:
+
+$-10 y^2+10 y+4 x^2-3 x=-4$
+
+2. Group terms with $x\text{ and }y$ separately, leaving placeholder constants:
+
+$\left(4 x^2-3 x+\underline{\text{   }}\right)+\left(-10 y^2+10 y+\underline{\text{   }}\right)=\underline{\text{   }}-4$
+
+3. $\left(4 x^2-3 x+\underline{\text{   }}\right)=4 \left(x^2-\frac{3 x}{4}+\underline{\text{   }}\right):$
+
+$4 \left(x^2-\frac{3 x}{4}+\underline{\text{   }}\right)+\left(-10 y^2+10 y+\underline{\text{   }}\right)=\underline{\text{   }}-4$
+
+4. $\left(-10 y^2+10 y+\underline{\text{   }}\right)=-10 \left(y^2-y+\underline{\text{   }}\right):$
+
+$4 \left(x^2-\frac{3 x}{4}+\underline{\text{   }}\right)+-10 \left(y^2-y+\underline{\text{   }}\right)=\underline{\text{   }}-4$
+
+5. $\begin{array}{l}
+\text{Take one half of the coefficient of }x\text{ and square it. Then add it to both sides of the equation, multiplying by the factored constant }4\text{ on the right. }\\
+\text{ Insert }\left(\frac{\frac{-3}{4}}{2}\right)^2=\frac{9}{64}\text{ on the left and }4\times \frac{9}{64}=\frac{9}{16}\text{ on the right}: \\
+\end{array}$
+
+$4 \left(x^2-\frac{3 x}{4}+\frac{9}{64}\right)-10 \left(y^2-y+\underline{\text{   }}\right)=\frac{9}{16}-4$
+
+6. $\frac{9}{16}-4=-\frac{55}{16}$:
+
+$4 \left(x^2-\frac{3 x}{4}+\frac{9}{64}\right)-10 \left(y^2-y+\underline{\text{   }}\right)=-\frac{55}{16}$
+
+7. $\begin{array}{l}
+\text{Take one half of the coefficient of }y\text{ and square it. Then add it to both sides of the equation, multiplying by the factored constant }-10\text{ on the right. }\\
+\text{ Insert }\left(\frac{-1}{2}\right)^2=\frac{1}{4}\text{ on the left and }\frac{-10}{4}=-\frac{5}{2}\text{ on the right}: \\
+\end{array}$
+
+$4 \left(x^2-\frac{3 x}{4}+\frac{9}{64}\right)-10 \left(y^2-y+\frac{1}{4}\right)=-\frac{5}{2}-\frac{55}{16}$
+
+8. $-\frac{55}{16}-\frac{5}{2}=-\frac{95}{16}$:
+
+$4 \left(x^2-\frac{3 x}{4}+\frac{9}{64}\right)-10 \left(y^2-y+\frac{1}{4}\right)=-\frac{95}{16}$
+
+9. $x^2-\frac{3 x}{4}+\frac{9}{64}=\left(x-\frac{3}{8}\right)^2:$
+
+$4 \left(x-\frac{3}{8}\right)^2-10 \left(y^2-y+\frac{1}{4}\right)=-\frac{95}{16}$
+
+10. $y^2-y+\frac{1}{4}=\left(y-\frac{1}{2}\right)^2:$
+
+Answer: $4 \left(x-\frac{3}{8}\right)^2-\text{10 }\left(y-\frac{1}{2}\right)^2=-\frac{95}{16}$

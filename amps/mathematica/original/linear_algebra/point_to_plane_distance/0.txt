@@ -1,0 +1,4 @@
+Problem:
+Find the distance from the point ${4, -1}$ to the line $-x-y-4=0$.
+Answer:
+$\frac{7}{\sqrt{2}}$

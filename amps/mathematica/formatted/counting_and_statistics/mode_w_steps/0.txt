@@ -1,0 +1,24 @@
+Find the mode (commonest element) of the list:
+
+$\left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right)$
+
+\hrule
+
+1. $\left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right)=\left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right):$
+
+$\left(-\frac{19}{2},10,-\frac{19}{2},\frac{19}{2},0,10,\frac{19}{2},\frac{19}{2},\frac{19}{2},10,0,10,4,0,4,10,10,4,10,4,10,10,\frac{19}{2},10,4,-\frac{19}{2},10,4\right)$
+
+2. The sorted list is:
+
+$\left(-\frac{19}{2},-\frac{19}{2},-\frac{19}{2},0,0,0,4,4,4,4,4,4,\frac{19}{2},\frac{19}{2},\frac{19}{2},\frac{19}{2},\frac{19}{2},10,10,10,10,10,10,10,10,10,10,10\right)$
+
+3. The tally of each element is:
+
+$\begin{array}{cccccc}
+\text{element }& -\frac{19}{2} & 0 & 4 & \frac{19}{2} & 10 \\
+\text{ tally }& 3 & 3 & 6 & 5 & 11 \\
+\end{array}$
+
+4. The element 10 appears 11 times. Thus the mode of the list is:
+
+Answer: $10$

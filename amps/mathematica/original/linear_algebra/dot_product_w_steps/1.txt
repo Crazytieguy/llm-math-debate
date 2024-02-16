@@ -1,0 +1,244 @@
+Problem:
+Find the dot product of the following two vectors:
+$\left(
+\begin{array}{c}
+ 8 \\
+ 4 \\
+ 4 \\
+ 8 \\
+ 0 \\
+ -9 \\
+ -3 \\
+ 7 \\
+\end{array}
+\right)$ and
+$\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Take the dot product of the following vectors}: \\
+ \, (8,4,4,8,0,-9,-3,7)\, .\, (4,-6,-4,-5,7,5,2,-9)\,  \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{Multiply }\text{the }\text{row }\text{vector }\text{with }\text{the }\text{column }\text{vector}: \\
+ \, (8,4,4,8,0,-9,-3,7)\, .\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ 8\ 4=32 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ 4 (-6)=-24 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ 4 (-4)=-16 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ 8 (-5)=-40 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ 0\ 7=0 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ -9\ 5=-45 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ -3\ 2=-6 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \left(
+\begin{array}{cccccccc}
+ 8 & 4 & 4 & 8 & 0 & -9 & -3 & 7 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ 4 \\
+ -6 \\
+ -4 \\
+ -5 \\
+ 7 \\
+ 5 \\
+ 2 \\
+ -9 \\
+\end{array}
+\right): \\
+ 7 (-9)=-63 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 8\ 4+4 (-6)+4 (-4)+8 (-5)+0\ 7+(-9)\, \times \, 5+(-3)\, \times \, 2+7 (-9): \\
+ 32-24-16-40+0-45-6-63 \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 32-24-16-40+0-45-6-63=32-24-16-40-45-6-63: \\
+ \fbox{$32-24-16-40-45-6-63$} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ 32-24-16-40-45-6-63=-162: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & -162 \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

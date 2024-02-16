@@ -1,0 +1,5 @@
+Problem:
+Solve the following system of two equations: 
+$-24 x+2 y-8=0$, $2 x-9 y-21=0$
+Answer:
+$x=-\frac{57}{106}$, $y=-\frac{130}{53}$

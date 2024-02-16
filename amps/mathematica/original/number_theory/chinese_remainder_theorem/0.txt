@@ -1,0 +1,7 @@
+Problem:
+Find the smallest $x$ such that
+$x \equiv 0 \pmod{17}$
+$x \equiv 6 \pmod{4}$
+$x \equiv 2 \pmod{3}$
+Answer:
+$170$

@@ -1,0 +1,10 @@
+Problem:
+Find the characteristic polynomial of the following matrix:
+$\left(
+\begin{array}{cc}
+ -\frac{19}{6} & -\frac{16}{3} \\
+ -\frac{49}{6} & -\frac{43}{6} \\
+\end{array}
+\right)$
+Answer:
+$x^2+\frac{31 x}{3}-\frac{751}{36}$

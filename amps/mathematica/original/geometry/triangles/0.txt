@@ -1,0 +1,9 @@
+Problem:
+A angle-angle-side triangle has angles $14 {}^{\circ}$ and $66 {}^{\circ}$ and a side of length $3.76$. Determine the centroid, circumcenter, incenter, orthocenter, nine point center, and symmedian point of the triangle.
+Answer:
+Circumcenter: $\{7.65304,-1.34944\}$ 
+Centroid: $\{9.69428,1.14498\}$ 
+NinePointCenter: $\{10.7149,2.39218\}$ 
+Orthocenter: $\{13.7768,6.13381\}$ 
+SymmedianPoint: $\{14.0291,1.78823\}$ 
+Incenter: $\{12.8723,1.58052\}$

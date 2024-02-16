@@ -1,0 +1,200 @@
+Find the null space of the matrix $M:$
+
+$M=\left(
+\begin{array}{ccc}
+1 & -7 & 7 \\
+ -2 & 2 & 8 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. The null space of matrix $M=\left(
+\begin{array}{ccc}
+1 & -7 & 7 \\
+ -2 & 2 & 8 \\
+\end{array}
+\right)\text{ is the set of all vectors }v=\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+\end{array}
+\right)\text{ such that }M.v=0:$
+
+$\left(
+\begin{array}{ccc}
+1 & -7 & 7 \\
+ -2 & 2 & 8 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+2. Reduce the matrix $\left(
+\begin{array}{ccc}
+1 & -7 & 7 \\
+ -2 & 2 & 8 \\
+\end{array}
+\right)$ to row echelon form:
+
+$\left(
+\begin{array}{ccc}
+1 & -7 & 7 \\
+ -2 & 2 & 8 \\
+\end{array}
+\right)$
+
+3. Add $2\, \times \,\text{ (row }1)\text{ to row }2:$
+
+$\left(
+\begin{array}{ccc}
+1 & -7 & 7 \\
+ 0 & -12 & 22 \\
+\end{array}
+\right)$
+
+4. Divide row $2\text{ by }-12:$
+
+$\left(
+\begin{array}{ccc}
+1 & -7 & 7 \\
+ 0 & 1 & -\frac{11}{6} \\
+\end{array}
+\right)$
+
+5. Add $7\, \times \,\text{ (row }2)\text{ to row }1:$
+
+$\left(
+\begin{array}{ccc}
+1 & 0 & -\frac{35}{6} \\
+ 0 & 1 & -\frac{11}{6} \\
+\end{array}
+\right)$
+
+6. Free variables in the null space $\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+\end{array}
+\right)\text{ correspond to the columns in }\left(
+\begin{array}{ccc}
+1 & 0 & -\frac{35}{6} \\
+ 0 & 1 & -\frac{11}{6} \\
+\end{array}
+\right)$ which have no pivot.
+
+Column $3\text{ is the only column with no pivot, so we may take }x_3$ to be the only free variable
+
+7. Multiply out the reduced matrix $\left(
+\begin{array}{ccc}
+1 & 0 & -\frac{35}{6} \\
+ 0 & 1 & -\frac{11}{6} \\
+\end{array}
+\right)\text{ with the proposed solution vector }\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{ccc}
+1 & 0 & -\frac{35}{6} \\
+ 0 & 1 & -\frac{11}{6} \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+x_1-\frac{35 x_3}{6} \\
+ x_2-\frac{11 x_3}{6} \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+0 \\
+ 0 \\
+\end{array}
+\right)$
+
+8. Solve the equations $\{
+\begin{array}{l}
+x_1-\frac{35 x_3}{6}=0 \\
+ x_2-\frac{11 x_3}{6}=0 \\
+\end{array}
+\text{  for }x_1\text{ and }x_2:$
+
+$\{
+\begin{array}{l}
+x_1=\frac{35 x_3}{6} \\
+ x_2=\frac{11 x_3}{6} \\
+\end{array}$
+
+9. Rewrite $v\text{ in terms of the free variable }x_3,\text{ and assign it an arbitrary real value of }x:$
+
+$v=\left(
+\begin{array}{c}
+x_1 \\
+ x_2 \\
+ x_3 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+\frac{35 x_3}{6} \\
+ \frac{11 x_3}{6} \\
+ x_3 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+\frac{35 x}{6} \\
+ \frac{11 x}{6} \\
+ x \\
+\end{array}
+\right)\text{ for }x\in \mathbb{R}$
+
+10. Since $x\text{ is taken from }\mathbb{R},\text{ we can replace it with }6 x:$
+
+$\left(
+\begin{array}{c}
+\frac{35 x}{6} \\
+ \frac{11 x}{6} \\
+ x \\
+\end{array}
+\right)\, \rightarrow \, \left(
+\begin{array}{c}
+\frac{35 (6 x)}{6} \\
+ \frac{11 (6 x)}{6} \\
+ 6 x \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+35 x \\
+ 11 x \\
+ 6 x \\
+\end{array}
+\right)\text{ for }x\in \mathbb{R}$
+
+11. Rewrite the solution vector $v=\left(
+\begin{array}{c}
+35 x \\
+ 11 x \\
+ 6 x \\
+\end{array}
+\right)$ in set notation:
+
+Answer: $\{\, (35 x,11 x,6 x)\,\text{ $\, $: }x\in \mathbb{R}\}$

@@ -1,0 +1,13 @@
+Compute the Euler phi function for $2:$
+
+$\phi (2)$
+
+\hrule
+
+1. Apply the the Euler phi function definition to $2:$
+
+$\phi (2)\text{ is the number of elements of }\{1,2\}\text{ that are coprime to }2$
+
+2. $2\text{ is prime Since the divisors of a prime number are 1 and itself, all positive integers less than }2\text{ are coprime to }2:$
+
+Answer: $\phi (2)=1$

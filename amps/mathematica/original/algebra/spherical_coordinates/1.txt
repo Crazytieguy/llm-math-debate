@@ -1,0 +1,4 @@
+Problem:
+Convert the following vector to spherical coordinates $(x, y, z) = (9, 10, \frac{1}{\sqrt{5}})$
+Answer:
+$\left\{\sqrt{\frac{906}{5}},\tan ^{-1}\left(\sqrt{905}\right),\tan ^{-1}\left(\frac{10}{9}\right)\right\}$

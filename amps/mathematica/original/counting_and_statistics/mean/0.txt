@@ -1,0 +1,4 @@
+Problem:
+Compute the mean of ${9, -4}$.
+Answer:
+$\frac{5}{2}$

@@ -1,0 +1,4 @@
+Problem:
+Are the following numbers relatively prime (coprime)? $\{707,-385,188\}$.
+Answer:
+$\text{False}$

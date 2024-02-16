@@ -1,0 +1,4 @@
+Problem:
+Complete the square for the following quadratic: $-x^2+7 x-11$
+Answer:
+$\frac{5}{4}-\left(x-\frac{7}{2}\right)^2$

@@ -1,0 +1,5 @@
+Problem:
+Find the range of the following function:
+$\frac{\log \left(4 x^2-3\right)}{(3 x-4)^4}$
+Answer:
+$y\in \mathbb{R}$

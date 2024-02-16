@@ -1,0 +1,5 @@
+Problem:
+Find the integral of the following function:
+$\frac{\sqrt{2} \left(\left(x^2+1\right) \sec ^2(x+9)+x \tan (x+9)\right)}{\sqrt{x^2+1}}$
+Answer:
+$\sqrt{2} \sqrt{x^2+1} \tan (x+9)$

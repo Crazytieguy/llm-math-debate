@@ -1,0 +1,4 @@
+Problem:
+Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \frac{1}{16} (7 x+2)^4, q(x) = \frac{1}{16} (12 x+5)^4$
+Answer:
+$\frac{23137 x^4}{16}+\frac{4663 x^3}{2}+\frac{2847 x^2}{2}+389 x+\frac{641}{16}$

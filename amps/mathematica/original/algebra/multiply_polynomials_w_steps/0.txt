@@ -1,0 +1,23 @@
+Problem:
+Multiply and expand $p(x) = -\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}$ and $q(x) = \frac{6 x}{e}+\frac{3}{e}$
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Expand the following}: \\
+ \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right) \left(\frac{6 x}{e}+\frac{3}{e}\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right) \left(\frac{6 x}{e}+\frac{3}{e}\right)=\frac{3 \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}+\frac{6 x \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \frac{3 \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e}+\frac{6 x \left(-\frac{26 x^2}{e}-\frac{14 x}{e}+\frac{27}{e}\right)}{e} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

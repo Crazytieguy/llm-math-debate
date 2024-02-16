@@ -1,0 +1,3 @@
+Find the intersection of the following sets, namely ${-6, -3, 4, 1, -1, -7, 5, 9, 7, 0, -8} \cap {1, 0, -7, 4, -3, 10, 3, -10, 6}$.
+Answer:
+${-7, -3, 0, 1, 4}$

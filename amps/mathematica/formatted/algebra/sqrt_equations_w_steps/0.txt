@@ -1,0 +1,69 @@
+Solve for $x:$
+
+$\sqrt{4 x+5}+\sqrt{14 x+11}=13$
+
+\hrule
+
+1. $\left(\sqrt{4 x+5}+\sqrt{14 x+11}\right)^2=16+18 x+2 \sqrt{4 x+5} \sqrt{14 x+11}=16+18 x+2 \sqrt{(4 x+5) (14 x+11)}=169:$
+
+$16+18 x+2 \sqrt{(4 x+5) (14 x+11)}=169$
+
+2. Subtract $18 x+16$ from both sides:
+
+$2 \sqrt{(4 x+5) (14 x+11)}=153-18 x$
+
+3. Raise both sides to the power of two:
+
+$4 (4 x+5) (14 x+11)=(153-18 x)^2$
+
+4. Expand out terms of the left hand side:
+
+$224 x^2+456 x+220=(153-18 x)^2$
+
+5. Expand out terms of the right hand side:
+
+$224 x^2+456 x+220=324 x^2-5508 x+23409$
+
+6. Subtract $324 x^2-5508 x+23409$ from both sides:
+
+$-100 x^2+5964 x-23189=0$
+
+7. Divide both sides by $-100:$
+
+$x^2-\frac{1491 x}{25}+\frac{23189}{100}=0$
+
+8. Subtract $\frac{23189}{100}$ from both sides:
+
+$x^2-\frac{1491 x}{25}=-\frac{23189}{100}$
+
+9. Add $\frac{2223081}{2500}$ to both sides:
+
+$x^2-\frac{1491 x}{25}+\frac{2223081}{2500}=\frac{410839}{625}$
+
+10. Write the left hand side as a square:
+
+$\left(x-\frac{1491}{50}\right)^2=\frac{410839}{625}$
+
+11. Take the square root of both sides:
+
+$x-\frac{1491}{50}=\frac{13 \sqrt{2431}}{25}\text{ or }x-\frac{1491}{50}=-\frac{13 \sqrt{2431}}{25}$
+
+12. Add $\frac{1491}{50}$ to both sides:
+
+$x=\frac{1491}{50}+\frac{13 \sqrt{2431}}{25}\text{ or }x-\frac{1491}{50}=-\frac{13 \sqrt{2431}}{25}$
+
+13. Add $\frac{1491}{50}$ to both sides:
+
+$x=\frac{1491}{50}+\frac{13 \sqrt{2431}}{25}\text{ or }x=\frac{1491}{50}-\frac{13 \sqrt{2431}}{25}$
+
+14. $\sqrt{4 x+5}+\sqrt{14 x+11}\text{ $\approx $ }13.:$
+
+So this solution is correct
+
+15. $\sqrt{4 x+5}+\sqrt{14 x+11}\text{ $\approx $ }43.1221:$
+
+So this solution is incorrect
+
+16. The solution is:
+
+Answer: $x=\frac{1491}{50}-\frac{13 \sqrt{2431}}{25}$

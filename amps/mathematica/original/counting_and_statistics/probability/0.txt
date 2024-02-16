@@ -1,0 +1,4 @@
+Problem:
+Find the probability that $-2.37 < -4.5 x^2-1. x+4.7 < 0.99$ where $x \sim $ \text{NormalDistribution}[-1.,1.6].
+Answer:
+$0.12$

@@ -1,0 +1,4 @@
+Problem:
+Simplify the following radical expression: $\left(\sqrt{90}+\sqrt{60}\right)+\left(\sqrt{49}+\sqrt{32}\right)$.
+Answer:
+$7+4 \sqrt{2}+3 \sqrt{10}+2 \sqrt{15}$

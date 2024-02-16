@@ -1,0 +1,10 @@
+Problem:
+Find the eigenvalues of the following matrix:
+$\left(
+\begin{array}{cc}
+ -9 & 3 \\
+ 10 & -6 \\
+\end{array}
+\right)$.
+Answer:
+$\left\{\frac{1}{2} \left(-15-\sqrt{129}\right),\frac{1}{2} \left(\sqrt{129}-15\right)\right\}$

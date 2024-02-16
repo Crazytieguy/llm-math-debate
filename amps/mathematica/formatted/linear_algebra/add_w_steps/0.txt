@@ -1,0 +1,204 @@
+Simplify the following:
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{6} & \frac{53}{6} \\
+ \frac{13}{6} & -\frac{2}{3} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+\frac{10}{3} & -\frac{1}{2} \\
+ 2 & 9 \\
+\end{array}
+\right)$
+
+\hrule
+
+1. $\left(
+\begin{array}{cc}
+-\frac{19}{6} & \frac{53}{6} \\
+ \frac{13}{6} & -\frac{2}{3} \\
+\end{array}
+\right)+\left(
+\begin{array}{cc}
+\frac{10}{3} & -\frac{1}{2} \\
+ 2 & 9 \\
+\end{array}
+\right)=\left(
+\begin{array}{cc}
+-\frac{19}{6}+\frac{10}{3} & \frac{53}{6}-\frac{1}{2} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right):$
+
+$\left(
+\begin{array}{cc}
+-\frac{19}{6}+\frac{10}{3} & \frac{53}{6}-\frac{1}{2} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+2. Put $-\frac{19}{6}+\frac{10}{3}\text{ over the common denominator }6. -\frac{19}{6}+\frac{10}{3} = \frac{-19}{6}+\frac{2\times 10}{6}$:
+
+$\left(
+\begin{array}{cc}
+\frac{-19}{6}+\frac{2\times 10}{6} & \frac{53}{6}-\frac{1}{2} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+3. $2\times 10 = 20:$
+
+$\left(
+\begin{array}{cc}
+\frac{-19}{6}+\frac{20}{6} & \frac{53}{6}-\frac{1}{2} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+4. $-\frac{19}{6}+\frac{20}{6} = \frac{-19+20}{6}$:
+
+$\left(
+\begin{array}{cc}
+\frac{-19+20}{6} & \frac{53}{6}-\frac{1}{2} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+5. $-19+20=1:$
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{53}{6}-\frac{1}{2} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+6. Put $\frac{53}{6}-\frac{1}{2}\text{ over the common denominator }6. \frac{53}{6}-\frac{1}{2} = \frac{53}{6}-\frac{3}{6}$:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{53}{6}-\frac{3}{6} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+7. $\frac{53}{6}-\frac{3}{6} = \frac{53-3}{6}$:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{53-3}{6} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+8. $\begin{array}{c}
+\begin{array}{ccc}
+\text{ }& 5 & 3 \\
+ - &\text{  }& 3 \\
+\hline
+\text{  }& 5 & 0 \\
+\end{array}
+ \\
+\end{array}$
+
+:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{50}{6} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+9. The gcd of 50 and $6\text{ is }2,\text{ so }\frac{50}{6}=\frac{2\times 25}{2\times 3}=\frac{2}{2}\times \frac{25}{3}=\frac{25}{3}$:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{13}{6}+2 & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+10. Put $\frac{13}{6}+2\text{ over the common denominator }6. \frac{13}{6}+2 = \frac{13}{6}+\frac{6\times 2}{6}$:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{13}{6}+\frac{6\times 2}{6} & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+11. $6\times 2 = 12:$
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{13}{6}+\frac{12}{6} & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+12. $\frac{13}{6}+\frac{12}{6} = \frac{13+12}{6}$:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{13+12}{6} & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+13. $\begin{array}{c}
+\begin{array}{ccc}
+\hline
+\text{  }& 1 & 3 \\
+\hline
+ + & 1 & 2 \\
+\text{  }& 2 & 5 \\
+\end{array}
+ \\
+\end{array}$
+
+:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{25}{6} & -\frac{2}{3}+9 \\
+\end{array}
+\right)$
+
+14. Put $-\frac{2}{3}+9\text{ over the common denominator }3. -\frac{2}{3}+9 = \frac{-2}{3}+\frac{3\times 9}{3}$:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{25}{6} & \frac{-2}{3}+\frac{3\times 9}{3} \\
+\end{array}
+\right)$
+
+15. $3\times 9 = 27:$
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{25}{6} & \frac{-2}{3}+\frac{27}{3} \\
+\end{array}
+\right)$
+
+16. $-\frac{2}{3}+\frac{27}{3} = \frac{-2+27}{3}$:
+
+$\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{25}{6} & \frac{-2+27}{3} \\
+\end{array}
+\right)$
+
+17. $-2+27=25:$
+
+Answer: $\left(
+\begin{array}{cc}
+\frac{1}{6} & \frac{25}{3} \\
+ \frac{25}{6} & \frac{25}{3} \\
+\end{array}
+\right)$

@@ -1,0 +1,33 @@
+Solve for $x:$
+
+$-11 x^2-13 x+5=0$
+
+\hrule
+
+1. Divide both sides by $-11:$
+
+$x^2+\frac{13 x}{11}-\frac{5}{11}=0$
+
+2. Add $\frac{5}{11}$ to both sides:
+
+$x^2+\frac{13 x}{11}=\frac{5}{11}$
+
+3. Add $\frac{169}{484}$ to both sides:
+
+$x^2+\frac{13 x}{11}+\frac{169}{484}=\frac{389}{484}$
+
+4. Write the left hand side as a square:
+
+$\left(x+\frac{13}{22}\right)^2=\frac{389}{484}$
+
+5. Take the square root of both sides:
+
+$x+\frac{13}{22}=\frac{\sqrt{389}}{22}\text{ or }x+\frac{13}{22}=-\frac{\sqrt{389}}{22}$
+
+6. Subtract $\frac{13}{22}$ from both sides:
+
+$x=\frac{\sqrt{389}}{22}-\frac{13}{22}\text{ or }x+\frac{13}{22}=-\frac{\sqrt{389}}{22}$
+
+7. Subtract $\frac{13}{22}$ from both sides:
+
+Answer: $x=\frac{\sqrt{389}}{22}-\frac{13}{22}\text{ or }x=-\frac{13}{22}-\frac{\sqrt{389}}{22}$

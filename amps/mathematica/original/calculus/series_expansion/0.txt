@@ -1,0 +1,5 @@
+Problem:
+Find the second order expansion of the following function around 2:
+$-\sqrt[3]{x}$
+Answer:
+$\frac{(x-5)^2}{45\ 5^{2/3}}-\frac{x-5}{3\ 5^{2/3}}-\sqrt[3]{5}$

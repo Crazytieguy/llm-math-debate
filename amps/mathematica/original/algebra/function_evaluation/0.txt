@@ -1,0 +1,4 @@
+Problem:
+Evaluate the function $f(x)=\log \left(\frac{7 x^5}{2}+7\right)+\tan \left(\frac{7}{2}-\frac{13 x}{2}\right)$ at the point $x=28$
+Answer:
+$\log (60236295)-\tan \left(\frac{357}{2}\right) = 18.556$

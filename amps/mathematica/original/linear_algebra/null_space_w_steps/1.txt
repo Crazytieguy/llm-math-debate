@@ -1,0 +1,275 @@
+Problem:
+Give a list of vectors that forms a basis for the null space of the following matrix:
+$\left(
+\begin{array}{cccc}
+ -4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right)$.
+Answer:
+\begin{array}{l}
+ 
+\begin{array}{l}
+ \text{Find the null space of the matrix }M: \\
+ M=\left(
+\begin{array}{cccc}
+ -4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+\hline
+ 
+\begin{array}{l}
+ \text{The }\text{null }\text{space }\text{of }\text{matrix }M=\left(
+\begin{array}{cccc}
+ -4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right) \text{is }\text{the }\text{set }\text{of }\text{all }\text{vectors }v=\left(
+\begin{array}{c}
+ x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right) \text{such }\text{that }M.v=0: \\
+ \left(
+\begin{array}{cccc}
+ -4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Reduce }\text{the }\text{matrix }\left(
+\begin{array}{cccc}
+ -4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right) \text{to }\text{row }\text{echelon }\text{form}: \\
+ \left(
+\begin{array}{cccc}
+ -4 & -2 & 7 & -2 \\
+ -10 & -4 & -9 & -5 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Swap }\text{row }1 \text{with }\text{row }2: \\
+ \left(
+\begin{array}{cccc}
+ -10 & -4 & -9 & -5 \\
+ -4 & -2 & 7 & -2 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Subtract }\frac{2}{5}\, \times \, \text{(row }1) \text{from }\text{row }2: \\
+ \left(
+\begin{array}{cccc}
+ -10 & -4 & -9 & -5 \\
+ 0 & -\frac{2}{5} & \frac{53}{5} & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Multiply }\text{row }2 \text{by }-\frac{5}{2}: \\
+ \left(
+\begin{array}{cccc}
+ -10 & -4 & -9 & -5 \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Add }4\, \times \, \text{(row }2) \text{to }\text{row }1: \\
+ \left(
+\begin{array}{cccc}
+ -10 & 0 & -115 & -5 \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Divide }\text{row }1 \text{by }-10: \\
+ \left(
+\begin{array}{cccc}
+ 1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Free }\text{variables }\text{in }\text{the }\text{null }\text{space }\left(
+\begin{array}{c}
+ x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right) \text{correspond }\text{to }\text{the }\text{columns }\text{in }\left(
+\begin{array}{cccc}
+ 1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right) \text{which }\text{have }\text{no }\text{pivot.} \\
+ \text{Columns }3 \text{and }4 \text{are }\text{the }\text{only }\text{columns }\text{with }\text{no }\text{pivot, }\text{so }\text{we }\text{may }\text{take }x_3 \text{and }x_4 \text{to }\text{be }\text{the }\text{only }\text{free }\text{variables} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Multiply }\text{out }\text{the }\text{reduced }\text{matrix }\left(
+\begin{array}{cccc}
+ 1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right) \text{with }\text{the }\text{proposed }\text{solution }\text{vector }\left(
+\begin{array}{c}
+ x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right): \\
+ \left(
+\begin{array}{cccc}
+ 1 & 0 & \frac{23}{2} & \frac{1}{2} \\
+ 0 & 1 & -\frac{53}{2} & 0 \\
+\end{array}
+\right).\left(
+\begin{array}{c}
+ x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ x_1+\frac{23 x_3}{2}+\frac{x_4}{2} \\
+ x_2-\frac{53 x_3}{2} \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+\end{array}
+\right) \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Solve }\text{the }\text{equations }\{
+\begin{array}{l}
+ x_1+\frac{23 x_3}{2}+\frac{x_4}{2}=0 \\
+ x_2-\frac{53 x_3}{2}=0 \\
+\end{array}
+  \text{for }x_1 \text{and }x_2: \\
+ \{
+\begin{array}{l}
+ x_1=-\frac{23 x_3}{2}-\frac{x_4}{2} \\
+ x_2=\frac{53 x_3}{2} \\
+\end{array}
+ \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Rewrite }v \text{in }\text{terms }\text{of }\text{the }\text{free }\text{variables }x_3 \text{and }x_4, \text{and }\text{assign }\text{arbitrary }\text{real }\text{values }\text{of }x \text{and }y \text{to }\text{the }\text{variables}: \\
+ v=\left(
+\begin{array}{c}
+ x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ -\frac{23 x_3}{2}-\frac{x_4}{2} \\
+ \frac{53 x_3}{2} \\
+ x_3 \\
+ x_4 \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ -\frac{y}{2}-\frac{23 x}{2} \\
+ \frac{53 x}{2} \\
+ x \\
+ y \\
+\end{array}
+\right)\text{ for }x,y\in \mathbb{R} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Since }\text{the }\text{variables }x \text{and }y \text{are }\text{taken }\text{from }\mathbb{R}, \text{we }\text{can }\text{replace }\text{them }\text{with }2 x \text{and }2 y \text{respectively}: \\
+ \left(
+\begin{array}{c}
+ -\frac{y}{2}-\frac{23 x}{2} \\
+ \frac{53 x}{2} \\
+ x \\
+ y \\
+\end{array}
+\right)\, \rightarrow \, \left(
+\begin{array}{c}
+ -\frac{1}{2} (2 y)-\frac{23 (2 x)}{2} \\
+ \frac{53 (2 x)}{2} \\
+ 2 x \\
+ 2 y \\
+\end{array}
+\right)=\left(
+\begin{array}{c}
+ -y-23 x \\
+ 53 x \\
+ 2 x \\
+ 2 y \\
+\end{array}
+\right)\text{ for }x,y\in \mathbb{R} \\
+\end{array}
+ \\
+ 
+\begin{array}{l}
+ \text{Rewrite }\text{the }\text{solution }\text{vector }v=\left(
+\begin{array}{c}
+ -y-23 x \\
+ 53 x \\
+ 2 x \\
+ 2 y \\
+\end{array}
+\right) \text{in }\text{set }\text{notation}: \\
+ \fbox{$
+\begin{array}{ll}
+ \text{Answer:} &  \\
+ \text{} & \{\, (-y-23 x,53 x,2 x,2 y)\, \text{$\, $: }x,y\in \mathbb{R}\} \\
+\end{array}
+$} \\
+\end{array}
+ \\
+\end{array}

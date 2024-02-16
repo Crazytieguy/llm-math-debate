@@ -1,0 +1,4 @@
+Problem:
+If $x = \frac{9}{10}$, then find $\frac{1}{x+\frac{1}{x+\frac{1}{x+\ddots}}}$.
+Answer:
+$\frac{1}{20} \left(\sqrt{481}-9\right)$
