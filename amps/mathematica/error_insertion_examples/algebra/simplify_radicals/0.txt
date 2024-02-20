@@ -1,14 +1,17 @@
 Given the following problem:
 
 ```
+
 Simplify the following:
 
 $\sqrt{\sqrt{164}}+\sqrt{129}$
+
 ```
 
 And correct solution:
 
 ```
+
 1. Multiply exponents. $\sqrt{\sqrt{164}}=\sqrt[4]{164}$:
 
 $\sqrt[4]{164}+\sqrt{129}$
@@ -16,6 +19,7 @@ $\sqrt[4]{164}+\sqrt{129}$
 2. $\sqrt[4]{164} = \sqrt[4]{2^2\times 41} = \sqrt{2} \sqrt[4]{41}$:
 
 Answer: $\sqrt{2} \sqrt[4]{41}+\sqrt{129}$
+
 ```
 
 Insert an error into step 2.
