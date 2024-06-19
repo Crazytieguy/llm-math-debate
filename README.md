@@ -2,7 +2,7 @@
 
 How good is training via Debate at incentivizing honesty? Will debate hold up against models that are initially fine tuned to trick the judge, or are reinforced more for winning with a wrong solution than winning with a correct solution?
 
-This is my mostly abandoned [MATS 5.0](https://www.matsprogram.org/) project under the mentorship of David Rein and Julian Michael of the NYU Alignment Research Group.
+This is my mostly abandoned [MATS 5.0](https://www.matsprogram.org/) project under the mentorship of David Rein and Julian Michael of the NYU Alignment Research Group. It was abandoned because open source models were demonstrably too dumb to interface with the level of math in the AMPS dataset.
 
 ## Current state
 
